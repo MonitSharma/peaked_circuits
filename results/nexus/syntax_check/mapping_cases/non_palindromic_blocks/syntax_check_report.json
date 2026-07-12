@@ -1,17 +1,17 @@
 {
   "architecture": "arm64",
   "configuration_hash": null,
-  "created_at": "2026-07-12T09:44:35.313856Z",
+  "created_at": "2026-07-12T09:48:40.576142Z",
   "diagnostics": [],
   "emulator_or_hardware_execution": false,
   "final_status": "COMPLETED",
-  "git_commit": "5e6013e9318a7db465cdad61fa4a337e5fc6ff79",
+  "git_commit": "828d0d91fb338892209d3e8b53fb68db7db83c27",
   "git_dirty": true,
   "hqcs_used": false,
   "input_hashes": {
     "results/qir/mapping_cases/non_palindromic_blocks/circuit.bc": "9955983d933d2da9d54365ec4fe58ef3196d34e6cfb5d9ae3a77805aa08cacab"
   },
-  "job_ref": "de1782c8-542c-4fce-9171-ac67d78f4ac1",
+  "job_ref": "92a49c62-75f7-4eb1-ba55-69bb1747d09d",
   "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
   "package_versions": {
     "PyYAML": "6.0.3",
@@ -35,7 +35,7 @@
   "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
   "provider_result_order_verified": false,
   "python_version": "3.13.7",
-  "qir_artifact_ref": "d17441f6-fa36-45d3-84fc-4aa366fe0f8f",
+  "qir_artifact_ref": "17e3f76c-b12b-4bdc-8ca6-185856426a9d",
   "qir_sha256": "9955983d933d2da9d54365ec4fe58ef3196d34e6cfb5d9ae3a77805aa08cacab",
   "random_seed": null,
   "reported_cost_hqcs": null,
