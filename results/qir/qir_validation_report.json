@@ -22,7 +22,7 @@
     "source_metadata_agrees": true
   },
   "configuration_hash": null,
-  "created_at": "2026-07-12T09:33:52.434645Z",
+  "created_at": "2026-07-12T09:44:01.374703Z",
   "diagnostics": [],
   "evidence_levels": [
     "structural",
@@ -30,7 +30,7 @@
   ],
   "export_report_path": "results/qir/qir_export_report.json",
   "fixture_semantic_validation_level": "structural_only_no_local_qir_execution_engine",
-  "git_commit": "444ce77e79dbf18ab6d2906c6c7708d99904e1b9",
+  "git_commit": "5e6013e9318a7db465cdad61fa4a337e5fc6ff79",
   "git_dirty": true,
   "input_hashes": {
     "results/qir/p12.ll": "c003298ea5c57f963f7f9bf5ca4c94a38fc76db10582a5cc859c621ad358c820"

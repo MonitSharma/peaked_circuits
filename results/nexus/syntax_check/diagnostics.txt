@@ -1,1 +1,1 @@
-Nexus syntax check blocked: artifact Git commit does not match the current commit
+Nexus syntax check blocked: working tree has uncommitted code changes since artifact generation

@@ -1,13 +1,13 @@
 {
   "architecture": "arm64",
   "configuration_hash": null,
-  "created_at": "2026-07-12T09:32:35.334171Z",
+  "created_at": "2026-07-12T09:42:20.086354Z",
   "diagnostics": [
-    "Nexus syntax check blocked: artifact Git commit does not match the current commit"
+    "Nexus syntax check blocked: working tree has uncommitted code changes since artifact generation"
   ],
   "emulator_or_hardware_execution": false,
   "final_status": null,
-  "git_commit": "444ce77e79dbf18ab6d2906c6c7708d99904e1b9",
+  "git_commit": "5e6013e9318a7db465cdad61fa4a337e5fc6ff79",
   "git_dirty": true,
   "hqcs_used": false,
   "input_hashes": {},

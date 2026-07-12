@@ -1,11 +1,11 @@
 {
   "architecture": "arm64",
-  "completion_timestamp": "2026-07-12T09:34:40.548691Z",
+  "completion_timestamp": "2026-07-12T09:44:40.098719Z",
   "configuration_hash": null,
-  "created_at": "2026-07-12T09:34:41.241813Z",
+  "created_at": "2026-07-12T09:44:40.400161Z",
   "emulator_or_hardware_execution": false,
   "final_status": "COMPLETED",
-  "git_commit": "444ce77e79dbf18ab6d2906c6c7708d99904e1b9",
+  "git_commit": "5e6013e9318a7db465cdad61fa4a337e5fc6ff79",
   "git_dirty": true,
   "hqcs_used": false,
   "input_hashes": {
@@ -33,14 +33,14 @@
   },
   "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
   "python_version": "3.13.7",
-  "qir_artifact_ref": "67a0c1f1-3157-4103-a0ff-9aa016b13066",
+  "qir_artifact_ref": "1ef37f0b-02ce-4762-99dd-e5eacfe74948",
   "random_seed": null,
   "reported_cost_hqcs": null,
   "schema_version": "1.0",
   "source_qasm_sha256": "604f7ac61a257719473e8e2ee4e07bcddde150eed49a4d4447cca2a3344d9afc",
-  "submission_timestamp": "2026-07-12T09:34:32.431505Z",
+  "submission_timestamp": "2026-07-12T09:44:36.612939Z",
   "submitted_qir_sha256": "93255f1658f6f6dbd5a8d1c2e58aac9a0445b66fe430a365f3e8a28277a92d7b",
-  "syntax_check_job_ref": "054303ed-ffd9-4188-9be0-c72df872614e",
+  "syntax_check_job_ref": "d66db821-e859-4910-8ee1-00abe73f368a",
   "target": "Helios-1SC",
   "target_classification": "syntax_checker"
 }

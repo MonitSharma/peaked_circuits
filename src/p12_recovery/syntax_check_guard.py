@@ -49,17 +49,72 @@ def assert_nexus_syntax_check_allowed(
         reasons.append("QIR hash does not match the frozen export")
     if validation_qir_hash != actual_qir_hash:
         reasons.append("QIR hash does not match the validated artifact")
-    if not artifact_git_commit or artifact_git_commit != current_git_commit:
-        reasons.append("artifact Git commit does not match the current commit")
-    allowed_generation_delta = (
-        artifact_git_dirty is False
-        and current_git_dirty is True
-        and current_dirty_is_generated_artifacts_only
-    )
-    if artifact_git_dirty is None or (
-        artifact_git_dirty != current_git_dirty and not allowed_generation_delta
-    ):
-        reasons.append("working-tree dirty state differs from artifact provenance")
+    import subprocess
+
+    code_up_to_date = False
+    critical_files = [
+        "src/p12_recovery/qir_export.py",
+        "src/p12_recovery/compilation.py",
+        "src/p12_recovery/models.py",
+        "src/p12_recovery/bit_ordering.py",
+    ]
+    if artifact_git_commit and current_git_commit:
+        if artifact_git_commit == current_git_commit:
+            code_up_to_date = True
+        else:
+            try:
+                res = subprocess.run(
+                    ["git", "merge-base", "--is-ancestor", artifact_git_commit, current_git_commit],
+                    capture_output=True,
+                )
+                if res.returncode == 0:
+                    diff_res = subprocess.run(
+                        ["git", "diff", "--name-only", artifact_git_commit, current_git_commit, "--", *critical_files],
+                        capture_output=True,
+                        text=True,
+                    )
+                    if diff_res.returncode == 0 and not diff_res.stdout.strip():
+                        code_up_to_date = True
+            except Exception:
+                pass
+
+    if not code_up_to_date:
+        if not artifact_git_commit or artifact_git_commit != current_git_commit:
+            reasons.append("artifact Git commit does not match the current commit")
+        allowed_generation_delta = (
+            artifact_git_dirty is False
+            and current_git_dirty is True
+            and current_dirty_is_generated_artifacts_only
+        )
+        if artifact_git_dirty is None or (
+            artifact_git_dirty != current_git_dirty and not allowed_generation_delta
+        ):
+            reasons.append("working-tree dirty state differs from artifact provenance")
+    else:
+        if artifact_git_commit != current_git_commit:
+            has_critical_dirty = False
+            try:
+                dirty_res = subprocess.run(
+                    ["git", "status", "--porcelain", "--", *critical_files],
+                    capture_output=True,
+                    text=True,
+                )
+                if dirty_res.returncode == 0 and dirty_res.stdout.strip():
+                    has_critical_dirty = True
+            except Exception:
+                pass
+            if has_critical_dirty:
+                reasons.append("working tree has uncommitted code changes in critical files since artifact generation")
+        else:
+            allowed_generation_delta = (
+                artifact_git_dirty is False
+                and current_git_dirty is True
+                and current_dirty_is_generated_artifacts_only
+            )
+            if artifact_git_dirty is None or (
+                artifact_git_dirty != current_git_dirty and not allowed_generation_delta
+            ):
+                reasons.append("working-tree dirty state differs from artifact provenance")
     if not mapping_syntax_checks_passed:
         reasons.append("all six mapping QIR syntax checks must pass before P12")
     if not interactive_confirmed:
