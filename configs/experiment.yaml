@@ -1,0 +1,8 @@
+schema_version: "1.0"
+status: draft
+backend: null
+shot_ladder: [10, 20, 50, 100, 250, 500, 1000, 2000]
+primary_method: bitwise_majority
+canonical_order: logical_q0_to_q97_left_to_right
+hardware_execution: false
+

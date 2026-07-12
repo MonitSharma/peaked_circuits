@@ -1,0 +1,458 @@
+{
+  "$defs": {
+    "GateStatistics": {
+      "additionalProperties": false,
+      "properties": {
+        "barriers": {
+          "title": "Barriers",
+          "type": "integer"
+        },
+        "circuit_depth": {
+          "title": "Circuit Depth",
+          "type": "integer"
+        },
+        "conditional_operations": {
+          "title": "Conditional Operations",
+          "type": "integer"
+        },
+        "counts_by_gate": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Counts By Gate",
+          "type": "object"
+        },
+        "greater_than_two_qubit_gates": {
+          "title": "Greater Than Two Qubit Gates",
+          "type": "integer"
+        },
+        "measurements": {
+          "title": "Measurements",
+          "type": "integer"
+        },
+        "one_qubit_depth": {
+          "title": "One Qubit Depth",
+          "type": "integer"
+        },
+        "one_qubit_gates": {
+          "title": "One Qubit Gates",
+          "type": "integer"
+        },
+        "resets": {
+          "title": "Resets",
+          "type": "integer"
+        },
+        "total_operations": {
+          "title": "Total Operations",
+          "type": "integer"
+        },
+        "two_qubit_depth": {
+          "title": "Two Qubit Depth",
+          "type": "integer"
+        },
+        "two_qubit_gates": {
+          "title": "Two Qubit Gates",
+          "type": "integer"
+        },
+        "unsupported_instructions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unsupported Instructions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "total_operations",
+        "counts_by_gate",
+        "one_qubit_gates",
+        "two_qubit_gates",
+        "greater_than_two_qubit_gates",
+        "barriers",
+        "resets",
+        "measurements",
+        "conditional_operations",
+        "unsupported_instructions",
+        "circuit_depth",
+        "one_qubit_depth",
+        "two_qubit_depth"
+      ],
+      "title": "GateStatistics",
+      "type": "object"
+    },
+    "InteractionGraphStatistics": {
+      "additionalProperties": false,
+      "properties": {
+        "active_nodes": {
+          "title": "Active Nodes",
+          "type": "integer"
+        },
+        "all_qubits_participate": {
+          "title": "All Qubits Participate",
+          "type": "boolean"
+        },
+        "average_shortest_path_length": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Average Shortest Path Length"
+        },
+        "component_diameters": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Component Diameters",
+          "type": "array"
+        },
+        "component_sizes": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Component Sizes",
+          "type": "array"
+        },
+        "connected_components": {
+          "title": "Connected Components",
+          "type": "integer"
+        },
+        "degree_histogram": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Degree Histogram",
+          "type": "object"
+        },
+        "degree_max": {
+          "title": "Degree Max",
+          "type": "number"
+        },
+        "degree_mean": {
+          "title": "Degree Mean",
+          "type": "number"
+        },
+        "degree_median": {
+          "title": "Degree Median",
+          "type": "number"
+        },
+        "degree_min": {
+          "title": "Degree Min",
+          "type": "number"
+        },
+        "density": {
+          "title": "Density",
+          "type": "number"
+        },
+        "diameter": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Diameter"
+        },
+        "frequent_pairs": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Frequent Pairs",
+          "type": "array"
+        },
+        "fully_connected": {
+          "title": "Fully Connected",
+          "type": "boolean"
+        },
+        "number_of_edges": {
+          "title": "Number Of Edges",
+          "type": "integer"
+        },
+        "number_of_nodes": {
+          "title": "Number Of Nodes",
+          "type": "integer"
+        },
+        "weighted_degree_max": {
+          "title": "Weighted Degree Max",
+          "type": "number"
+        },
+        "weighted_degree_mean": {
+          "title": "Weighted Degree Mean",
+          "type": "number"
+        },
+        "weighted_degree_median": {
+          "title": "Weighted Degree Median",
+          "type": "number"
+        },
+        "weighted_degree_min": {
+          "title": "Weighted Degree Min",
+          "type": "number"
+        }
+      },
+      "required": [
+        "number_of_nodes",
+        "active_nodes",
+        "number_of_edges",
+        "density",
+        "connected_components",
+        "component_sizes",
+        "degree_min",
+        "degree_mean",
+        "degree_median",
+        "degree_max",
+        "degree_histogram",
+        "weighted_degree_min",
+        "weighted_degree_mean",
+        "weighted_degree_median",
+        "weighted_degree_max",
+        "diameter",
+        "component_diameters",
+        "average_shortest_path_length",
+        "frequent_pairs",
+        "fully_connected",
+        "all_qubits_participate"
+      ],
+      "title": "InteractionGraphStatistics",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "all_numerical_angles_finite": {
+      "title": "All Numerical Angles Finite",
+      "type": "boolean"
+    },
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "circuit_name": {
+      "title": "Circuit Name",
+      "type": "string"
+    },
+    "classical_registers": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Classical Registers",
+      "type": "array"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "depth_definition": {
+      "title": "Depth Definition",
+      "type": "string"
+    },
+    "gates": {
+      "$ref": "#/$defs/GateStatistics"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "has_symbolic_parameters": {
+      "title": "Has Symbolic Parameters",
+      "type": "boolean"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "interaction_graph": {
+      "$ref": "#/$defs/InteractionGraphStatistics"
+    },
+    "maximum_rotation_angle": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Maximum Rotation Angle"
+    },
+    "measured_qubits": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Measured Qubits",
+      "type": "array"
+    },
+    "minimum_rotation_angle": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Minimum Rotation Angle"
+    },
+    "number_of_classical_bits": {
+      "title": "Number Of Classical Bits",
+      "type": "integer"
+    },
+    "number_of_qubits": {
+      "title": "Number Of Qubits",
+      "type": "integer"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "parser": {
+      "title": "Parser",
+      "type": "string"
+    },
+    "parser_version": {
+      "title": "Parser Version",
+      "type": "string"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "qasm_version": {
+      "title": "Qasm Version",
+      "type": "string"
+    },
+    "quantum_registers": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Quantum Registers",
+      "type": "array"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_contains_measurements": {
+      "title": "Source Contains Measurements",
+      "type": "boolean"
+    },
+    "source_path": {
+      "title": "Source Path",
+      "type": "string"
+    },
+    "source_sha256": {
+      "title": "Source Sha256",
+      "type": "string"
+    },
+    "symbolic_parameter_count": {
+      "title": "Symbolic Parameter Count",
+      "type": "integer"
+    },
+    "unmeasured_qubits": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Unmeasured Qubits",
+      "type": "array"
+    },
+    "unused_qubits": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Unused Qubits",
+      "type": "array"
+    },
+    "used_qubits": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Used Qubits",
+      "type": "array"
+    }
+  },
+  "required": [
+    "circuit_name",
+    "source_path",
+    "source_sha256",
+    "qasm_version",
+    "parser",
+    "parser_version",
+    "number_of_qubits",
+    "number_of_classical_bits",
+    "quantum_registers",
+    "classical_registers",
+    "used_qubits",
+    "unused_qubits",
+    "measured_qubits",
+    "unmeasured_qubits",
+    "source_contains_measurements",
+    "gates",
+    "has_symbolic_parameters",
+    "symbolic_parameter_count",
+    "all_numerical_angles_finite",
+    "minimum_rotation_angle",
+    "maximum_rotation_angle",
+    "interaction_graph",
+    "depth_definition"
+  ],
+  "title": "CircuitInspectionReport",
+  "type": "object"
+}

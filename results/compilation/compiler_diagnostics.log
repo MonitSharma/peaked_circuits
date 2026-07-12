@@ -1,0 +1,6 @@
+{
+  "exception_type": "RuntimeError",
+  "sanitized_message": "No target device configured; compilation is environment-limited",
+  "stage": "target_configuration",
+  "suggested_next_step": "Configure a currently available Quantinuum target, then rerun compile-only validation."
+}

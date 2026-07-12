@@ -1,0 +1,168 @@
+{
+  "$defs": {
+    "RecoveryCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "canonical_bitstring": {
+          "title": "Canonical Bitstring",
+          "type": "string"
+        },
+        "confidence": {
+          "additionalProperties": true,
+          "title": "Confidence",
+          "type": "object"
+        },
+        "configuration_hash": {
+          "title": "Configuration Hash",
+          "type": "string"
+        },
+        "input_shot_count": {
+          "title": "Input Shot Count",
+          "type": "integer"
+        },
+        "method_name": {
+          "title": "Method Name",
+          "type": "string"
+        },
+        "number_of_qubits": {
+          "title": "Number Of Qubits",
+          "type": "integer"
+        },
+        "parameters": {
+          "additionalProperties": true,
+          "title": "Parameters",
+          "type": "object"
+        },
+        "runtime_seconds": {
+          "title": "Runtime Seconds",
+          "type": "number"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "method_name",
+        "canonical_bitstring",
+        "number_of_qubits",
+        "input_shot_count",
+        "runtime_seconds",
+        "configuration_hash"
+      ],
+      "title": "RecoveryCandidate",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "candidates": {
+      "items": {
+        "$ref": "#/$defs/RecoveryCandidate"
+      },
+      "title": "Candidates",
+      "type": "array"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "method_agreement": {
+      "additionalProperties": true,
+      "title": "Method Agreement",
+      "type": "object"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "scores": {
+      "additionalProperties": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Scores",
+      "type": "object"
+    }
+  },
+  "required": [
+    "candidates",
+    "method_agreement"
+  ],
+  "title": "RecoveryReport",
+  "type": "object"
+}

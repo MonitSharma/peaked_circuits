@@ -1,0 +1,51 @@
+{
+  "architecture": "arm64",
+  "arguments": [
+    "-q"
+  ],
+  "backend_mode": "offline",
+  "command": "synthetic",
+  "configuration_hash": "e0844effa904a79a374b5480d03d3e38480864a3491adadd4a914a4fd564d96b",
+  "configuration_path": "/private/var/folders/tm/6bh1bn3x6pgfgp8nvpknylq40000gn/T/pytest-of-monitsharma/pytest-2/test_synthetic_smoke0/synthetic.yaml",
+  "created_at": "2026-07-12T04:48:09.112173Z",
+  "credentials_detected": false,
+  "dirty_working_tree": null,
+  "end_timestamp": "2026-07-12T04:48:09.083936Z",
+  "exit_status": 0,
+  "git_commit": null,
+  "hardware_execution_attempted": false,
+  "input_hashes": {
+    "/private/var/folders/tm/6bh1bn3x6pgfgp8nvpknylq40000gn/T/pytest-of-monitsharma/pytest-2/test_synthetic_smoke0/synthetic.yaml": "e0844effa904a79a374b5480d03d3e38480864a3491adadd4a914a4fd564d96b"
+  },
+  "input_paths": {
+    "/private/var/folders/tm/6bh1bn3x6pgfgp8nvpknylq40000gn/T/pytest-of-monitsharma/pytest-2/test_synthetic_smoke0/synthetic.yaml": "e0844effa904a79a374b5480d03d3e38480864a3491adadd4a914a4fd564d96b"
+  },
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "output_paths": {
+    "/Users/monitsharma/Documents/quantum_advantage_tracker/p12-helios-recovery/results/synthetic/synthetic_report.json": "9612ad05bd7d22b3bcc09d26e9d15c7e497d59230b4e59b36662f212e7796b70",
+    "/Users/monitsharma/Documents/quantum_advantage_tracker/p12-helios-recovery/results/synthetic/synthetic_report.md": "3f2463ba72072e1cf2c320a95d298f2f0136f7285cc661870d0ff55866b7da22",
+    "/Users/monitsharma/Documents/quantum_advantage_tracker/p12-helios-recovery/results/synthetic/synthetic_summary.csv": "1a38489c2593bd6a1edb4e1a7474571f19fb726b9884a4d4431a4b4ff0ae680d"
+  },
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.1",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "3.0.3",
+    "pydantic": "2.13.4",
+    "pytket": "2.18.1",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.1",
+    "qiskit": null,
+    "rich": "15.0.0",
+    "scipy": "1.18.0",
+    "typer": "0.26.8"
+  },
+  "paid_resources_consumed": false,
+  "python_version": "3.13.7",
+  "random_seed": 4,
+  "run_id": "20260712T044808Z-93d560d3",
+  "schema_version": "1.0",
+  "start_timestamp": "2026-07-12T04:48:08.119181Z"
+}

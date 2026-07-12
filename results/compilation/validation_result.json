@@ -1,0 +1,14 @@
+{
+  "diagnostics": [
+    "Compilation or backend validation remains incomplete"
+  ],
+  "passed": false,
+  "predicates": {
+    "backend_validation_passed": false,
+    "compilation_succeeded": false,
+    "exactly_98_logical_qubits": false,
+    "hardware_not_attempted": true,
+    "paid_resources_not_consumed": true,
+    "source_hash_recorded": true
+  }
+}

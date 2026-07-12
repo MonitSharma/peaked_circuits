@@ -1,0 +1,49 @@
+{
+  "architecture": "arm64",
+  "arguments": [
+    "validate"
+  ],
+  "backend_mode": "compile_only",
+  "command": "validate",
+  "configuration_hash": null,
+  "configuration_path": null,
+  "created_at": "2026-07-12T04:48:35.987222Z",
+  "credentials_detected": false,
+  "dirty_working_tree": null,
+  "end_timestamp": "2026-07-12T04:48:35.959398Z",
+  "exit_status": 0,
+  "git_commit": null,
+  "hardware_execution_attempted": false,
+  "input_hashes": {
+    "/Users/monitsharma/Documents/quantum_advantage_tracker/p12-helios-recovery/results/compilation/compilation_report.json": "6c1ee13a79cc4b53c89c8346ee9a7a40723ab219e90b30f2fe149dadd1e6db81"
+  },
+  "input_paths": {
+    "/Users/monitsharma/Documents/quantum_advantage_tracker/p12-helios-recovery/results/compilation/compilation_report.json": "6c1ee13a79cc4b53c89c8346ee9a7a40723ab219e90b30f2fe149dadd1e6db81"
+  },
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "output_paths": {
+    "/Users/monitsharma/Documents/quantum_advantage_tracker/p12-helios-recovery/results/compilation/validation_result.json": "b04622370875d7fc2d7e3141283745fab1a6b716afee8cc552a8c170dbb4c7d9"
+  },
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.1",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "3.0.3",
+    "pydantic": "2.13.4",
+    "pytket": "2.18.1",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.1",
+    "qiskit": null,
+    "rich": "15.0.0",
+    "scipy": "1.18.0",
+    "typer": "0.26.8"
+  },
+  "paid_resources_consumed": false,
+  "python_version": "3.13.7",
+  "random_seed": null,
+  "run_id": "20260712T044835Z-8282f188",
+  "schema_version": "1.0",
+  "start_timestamp": "2026-07-12T04:48:35.958957Z"
+}
