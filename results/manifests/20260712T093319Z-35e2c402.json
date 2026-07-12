@@ -1,18 +1,26 @@
 {
   "architecture": "arm64",
-  "configuration_hash": null,
-  "created_at": "2026-07-12T09:32:35.334171Z",
-  "diagnostics": [
-    "Nexus syntax check blocked: artifact Git commit does not match the current commit"
+  "arguments": [
+    "export-mapping-qir"
   ],
-  "emulator_or_hardware_execution": false,
-  "final_status": null,
+  "backend_mode": "local_qir_mapping_export",
+  "command": "export-mapping-qir",
+  "configuration_hash": null,
+  "configuration_path": null,
+  "created_at": "2026-07-12T09:33:21.715448Z",
+  "credentials_detected": false,
+  "dirty_working_tree": true,
+  "end_timestamp": "2026-07-12T09:33:21.644399Z",
+  "exit_status": 0,
   "git_commit": "444ce77e79dbf18ab6d2906c6c7708d99904e1b9",
   "git_dirty": true,
-  "hqcs_used": false,
+  "hardware_execution_attempted": false,
   "input_hashes": {},
-  "job_ref": null,
+  "input_paths": {},
   "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "output_paths": {
+    "results/qir/mapping_cases/mapping_qir_export_report.json": "8b565e255e18b29bc50d9961dd58953a71ede82fabbf1e7ab06e196635c66e7b"
+  },
   "package_versions": {
     "PyYAML": "6.0.3",
     "matplotlib": "3.11.0",
@@ -32,16 +40,10 @@
     "scipy": "1.18.0",
     "typer": "0.26.8"
   },
-  "project_ref": null,
-  "provider_result_order_verified": false,
+  "paid_resources_consumed": false,
   "python_version": "3.13.7",
-  "qir_artifact_ref": null,
-  "qir_sha256": "c003298ea5c57f963f7f9bf5ca4c94a38fc76db10582a5cc859c621ad358c820",
   "random_seed": null,
-  "reported_cost_hqcs": null,
+  "run_id": "20260712T093319Z-35e2c402",
   "schema_version": "1.0",
-  "source_qasm_sha256": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d",
-  "status": "blocked",
-  "target": "Helios-1SC",
-  "target_classification": "syntax_checker"
+  "start_timestamp": "2026-07-12T09:33:19.350066Z"
 }

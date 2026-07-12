@@ -1,0 +1,1 @@
+Nexus syntax check blocked: artifact Git commit does not match the current commit
