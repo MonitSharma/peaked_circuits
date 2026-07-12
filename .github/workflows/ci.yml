@@ -10,10 +10,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "${{ matrix.python }}"}
-      - run: pip install -e '.[dev]'
+      - run: pip install -e '.[dev,quantum]'
       - run: ruff check .
       - run: mypy src
       - run: pytest --cov -m 'not hardware and not integration'
       - run: p12-recovery schemas --check
       - run: p12-recovery synthetic --config configs/synthetic.yaml --smoke
-
+      - run: p12-recovery mapping-check --mode offline
+      - run: p12-recovery export-qir --output results/qir/p12.ll
+      - run: p12-recovery validate-qir --input results/qir/p12.ll
+      - run: p12-recovery export-mapping-qir
+      - run: p12-recovery public-audit

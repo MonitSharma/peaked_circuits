@@ -1,0 +1,230 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "calibration_metadata": {
+      "additionalProperties": true,
+      "title": "Calibration Metadata",
+      "type": "object"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "device_name": {
+      "title": "Device Name",
+      "type": "string"
+    },
+    "execution_time_seconds": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Execution Time Seconds"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "job_id": {
+      "title": "Job Id",
+      "type": "string"
+    },
+    "job_label": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Job Label"
+    },
+    "job_status": {
+      "default": "retrieved",
+      "title": "Job Status",
+      "type": "string"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "provider": {
+      "default": "quantinuum",
+      "title": "Provider",
+      "type": "string"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "queue_time_seconds": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Queue Time Seconds"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "raw_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Raw Counts",
+      "type": "object"
+    },
+    "raw_register_layout": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Raw Register Layout",
+      "type": "array"
+    },
+    "raw_result_order": {
+      "enum": [
+        "msb_left",
+        "lsb_left"
+      ],
+      "title": "Raw Result Order",
+      "type": "string"
+    },
+    "raw_shots": {
+      "items": {},
+      "title": "Raw Shots",
+      "type": "array"
+    },
+    "reported_cost_hqcs": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reported Cost Hqcs"
+    },
+    "requested_shots": {
+      "title": "Requested Shots",
+      "type": "integer"
+    },
+    "retrieval_timestamp": {
+      "format": "date-time",
+      "title": "Retrieval Timestamp",
+      "type": "string"
+    },
+    "returned_shots": {
+      "title": "Returned Shots",
+      "type": "integer"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "submitted_circuit_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Submitted Circuit Hash"
+    }
+  },
+  "required": [
+    "device_name",
+    "job_id",
+    "requested_shots",
+    "returned_shots",
+    "raw_register_layout",
+    "raw_result_order"
+  ],
+  "title": "ProviderRawResult",
+  "type": "object"
+}

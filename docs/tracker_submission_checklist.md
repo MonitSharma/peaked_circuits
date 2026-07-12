@@ -12,4 +12,8 @@
 - Notes: TBD
 - Authors: TBD
 - Institutions: TBD
-
+- Provider-result hash: TBD
+- Measurement-mapping hash: TBD
+- Protocol-freeze hash: TBD
+- Mapping-validation evidence: TBD
+- Cost provenance: TBD

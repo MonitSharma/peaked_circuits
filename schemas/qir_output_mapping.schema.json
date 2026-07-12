@@ -1,0 +1,205 @@
+{
+  "$defs": {
+    "QIROutputMappingEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "canonical_position": {
+          "title": "Canonical Position",
+          "type": "integer"
+        },
+        "logical_qubit_index": {
+          "title": "Logical Qubit Index",
+          "type": "integer"
+        },
+        "logical_qubit_name": {
+          "title": "Logical Qubit Name",
+          "type": "string"
+        },
+        "mapping_confidence": {
+          "const": "verified_locally",
+          "default": "verified_locally",
+          "title": "Mapping Confidence",
+          "type": "string"
+        },
+        "mapping_source": {
+          "default": "explicit_final_measurement_order",
+          "title": "Mapping Source",
+          "type": "string"
+        },
+        "provider_result_position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider Result Position"
+        },
+        "pytket_qubit_index": {
+          "title": "Pytket Qubit Index",
+          "type": "integer"
+        },
+        "qir_qubit_index": {
+          "title": "Qir Qubit Index",
+          "type": "integer"
+        },
+        "qir_result_index": {
+          "title": "Qir Result Index",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "logical_qubit_index",
+        "logical_qubit_name",
+        "pytket_qubit_index",
+        "qir_qubit_index",
+        "qir_result_index",
+        "canonical_position"
+      ],
+      "title": "QIROutputMappingEntry",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "entries": {
+      "items": {
+        "$ref": "#/$defs/QIROutputMappingEntry"
+      },
+      "title": "Entries",
+      "type": "array"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "logical_to_qir_mapping_verified": {
+      "title": "Logical To Qir Mapping Verified",
+      "type": "boolean"
+    },
+    "number_of_qubits": {
+      "title": "Number Of Qubits",
+      "type": "integer"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "provider_result_order_verified": {
+      "const": false,
+      "default": false,
+      "title": "Provider Result Order Verified",
+      "type": "boolean"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "qir_profile": {
+      "title": "Qir Profile",
+      "type": "string"
+    },
+    "qir_sha256": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Qir Sha256"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "number_of_qubits",
+    "entries",
+    "logical_to_qir_mapping_verified",
+    "qir_profile"
+  ],
+  "title": "QIROutputMapping",
+  "type": "object"
+}

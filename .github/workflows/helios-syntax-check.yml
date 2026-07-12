@@ -1,0 +1,44 @@
+name: guarded-helios-syntax-check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  syntax-check:
+    # A self-hosted runner must already have an authenticated qnexus browser session.
+    # No Nexus token is stored in this repository or passed as workflow input.
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e '.[dev,quantum]'
+      - name: Discover exact Nexus targets
+        run: |
+          p12-recovery devices --refresh --json
+          jq -e '.authenticated_access == true' results/backend/available_devices.json
+          jq -e 'any(.devices[]; .provider_api == "nexus" and .device_name == "Helios-1SC" and .target_type == "syntax_checker")' results/backend/available_devices.json
+          jq -e 'any(.devices[]; .provider_api == "nexus" and .device_name == "Helios-1E" and .target_type == "emulator")' results/backend/available_devices.json
+          jq -e 'any(.devices[]; .provider_api == "nexus" and .device_name == "Helios-1" and .target_type == "hardware")' results/backend/available_devices.json
+      - run: p12-recovery export-qir --output results/qir/p12.ll
+      - run: p12-recovery validate-qir --input results/qir/p12.ll
+      - run: p12-recovery export-mapping-qir
+      - name: Syntax-check mapping cases only
+        env:
+          P12_ENABLE_NEXUS_SYNTAX_CHECK: "1"
+        run: printf 'y\n' | p12-recovery nexus-syntax-check --target Helios-1SC --mapping-cases --submit-syntax-check
+      - name: Syntax-check P12 only after mapping cases pass
+        env:
+          P12_ENABLE_NEXUS_SYNTAX_CHECK: "1"
+        run: printf 'y\n' | p12-recovery nexus-syntax-check --target Helios-1SC --qir results/qir/p12.ll --submit-syntax-check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sanitized-helios-syntax-reports
+          path: |
+            results/backend/
+            results/qir/*.json
+            results/qir/*.md
+            results/qir/mapping_cases/**/*.json
+            results/nexus/syntax_check/

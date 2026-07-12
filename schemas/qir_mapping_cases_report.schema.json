@@ -1,0 +1,193 @@
+{
+  "$defs": {
+    "QIRMappingCaseExport": {
+      "additionalProperties": false,
+      "properties": {
+        "case_name": {
+          "title": "Case Name",
+          "type": "string"
+        },
+        "expected_canonical_string": {
+          "title": "Expected Canonical String",
+          "type": "string"
+        },
+        "export_report_path": {
+          "title": "Export Report Path",
+          "type": "string"
+        },
+        "mapping_path": {
+          "title": "Mapping Path",
+          "type": "string"
+        },
+        "qir_path": {
+          "title": "Qir Path",
+          "type": "string"
+        },
+        "qir_sha256": {
+          "title": "Qir Sha256",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "passed",
+            "failed"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "case_name",
+        "expected_canonical_string",
+        "qir_path",
+        "qir_sha256",
+        "export_report_path",
+        "mapping_path",
+        "status"
+      ],
+      "title": "QIRMappingCaseExport",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "cases": {
+      "items": {
+        "$ref": "#/$defs/QIRMappingCaseExport"
+      },
+      "title": "Cases",
+      "type": "array"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "logical_to_qir_mapping_verified": {
+      "title": "Logical To Qir Mapping Verified",
+      "type": "boolean"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "passed_cases": {
+      "title": "Passed Cases",
+      "type": "integer"
+    },
+    "provider_result_order_verified": {
+      "const": false,
+      "default": false,
+      "title": "Provider Result Order Verified",
+      "type": "boolean"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "reversal_sensitive": {
+      "title": "Reversal Sensitive",
+      "type": "boolean"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "failed"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "total_cases": {
+      "title": "Total Cases",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "status",
+    "cases",
+    "total_cases",
+    "passed_cases",
+    "reversal_sensitive",
+    "logical_to_qir_mapping_verified"
+  ],
+  "title": "QIRMappingCasesReport",
+  "type": "object"
+}

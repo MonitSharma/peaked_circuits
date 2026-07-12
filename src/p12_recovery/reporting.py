@@ -13,7 +13,7 @@ import numpy as np
 from pydantic import BaseModel
 
 from .hashing import sha256_file
-from .models import RunManifest
+from .models import ReportBase, RunManifest
 
 PACKAGES = [
     "p12-helios-recovery",
@@ -28,6 +28,9 @@ PACKAGES = [
     "rich",
     "pytket",
     "pytket-quantinuum",
+    "pytket-qir",
+    "pyqir",
+    "qnexus",
     "pytket-qiskit",
     "qiskit",
 ]
@@ -62,8 +65,74 @@ def git_state(root: Path) -> tuple[str | None, bool | None]:
         return None, None
 
 
+def git_dirty_paths(root: Path) -> list[str]:
+    try:
+        output = subprocess.run(
+            ["git", "status", "--porcelain"],
+            cwd=root,
+            text=True,
+            capture_output=True,
+            check=True,
+        ).stdout
+    except (OSError, subprocess.CalledProcessError):
+        return []
+    paths: list[str] = []
+    for line in output.splitlines():
+        value = line[3:].strip()
+        if " -> " in value:
+            value = value.split(" -> ", 1)[1]
+        paths.append(value.strip('"'))
+    return paths
+
+
+def repository_root(path: Path) -> Path | None:
+    candidate = path if path.is_dir() else path.parent
+    while not candidate.exists() and candidate != candidate.parent:
+        candidate = candidate.parent
+    try:
+        output = subprocess.run(
+            ["git", "rev-parse", "--show-toplevel"],
+            cwd=candidate,
+            text=True,
+            capture_output=True,
+            check=True,
+        ).stdout.strip()
+        return Path(output).resolve()
+    except (OSError, subprocess.CalledProcessError):
+        return None
+
+
+def relative_identifier(path: Path, root: Path) -> str:
+    resolved = path.resolve()
+    try:
+        return resolved.relative_to(root.resolve()).as_posix()
+    except ValueError:
+        return f"external:{resolved.name}"
+
+
+def _sanitize_paths(value: Any, root: Path | None) -> Any:
+    if isinstance(value, dict):
+        return {
+            str(_sanitize_paths(key, root)): _sanitize_paths(item, root)
+            for key, item in value.items()
+        }
+    if isinstance(value, list):
+        return [_sanitize_paths(item, root) for item in value]
+    if isinstance(value, tuple):
+        return [_sanitize_paths(item, root) for item in value]
+    if isinstance(value, str) and Path(value).is_absolute():
+        path = Path(value)
+        return relative_identifier(path, root) if root else f"external:{path.name}"
+    return value
+
+
 def write_json(path: Path, value: BaseModel | dict[str, Any] | list[Any]) -> None:
+    root = repository_root(path)
+    if isinstance(value, ReportBase) and root:
+        commit, dirty = git_state(root)
+        value = value.model_copy(update={"git_commit": commit, "git_dirty": dirty})
     payload: Any = value.model_dump(mode="json") if isinstance(value, BaseModel) else value
+    payload = _sanitize_paths(payload, root)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, sort_keys=True, default=str) + "\n")
 
@@ -171,8 +240,16 @@ def write_manifest(
     end = datetime.now(UTC)
     commit, dirty = git_state(root)
     run_id = f"{start.strftime('%Y%m%dT%H%M%SZ')}-{uuid.uuid4().hex[:8]}"
-    input_paths = {str(path): sha256_file(path) for path in (inputs or []) if path.is_file()}
-    output_paths = {str(path): sha256_file(path) for path in (outputs or []) if path.is_file()}
+    input_paths = {
+        relative_identifier(path, root): sha256_file(path)
+        for path in (inputs or [])
+        if path.is_file()
+    }
+    output_paths = {
+        relative_identifier(path, root): sha256_file(path)
+        for path in (outputs or [])
+        if path.is_file()
+    }
     manifest = RunManifest(
         run_id=run_id,
         command=command,
@@ -181,11 +258,12 @@ def write_manifest(
         end_timestamp=end,
         exit_status=exit_status,
         git_commit=commit,
+        git_dirty=dirty,
         dirty_working_tree=dirty,
         package_versions=package_versions(),
         input_paths=input_paths,
         output_paths=output_paths,
-        configuration_path=str(config) if config else None,
+        configuration_path=relative_identifier(config, root) if config else None,
         configuration_hash=sha256_file(config) if config and config.is_file() else None,
         random_seed=seed,
         backend_mode=backend_mode,

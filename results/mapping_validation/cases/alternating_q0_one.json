@@ -1,0 +1,10 @@
+{
+  "canonical_output": null,
+  "case_name": "alternating_q0_one",
+  "compiled_circuit_hash": null,
+  "mapping_correct": null,
+  "prepared_circuit_hash": "e763ef23e06f434ae8b7df7d3864cbcbd1149f8b8ad088c33a9c61a844a1c4d2",
+  "prepared_logical_string": "10101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010",
+  "raw_provider_output": null,
+  "status": "prepared"
+}

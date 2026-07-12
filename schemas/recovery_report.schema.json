@@ -99,6 +99,18 @@
       "default": null,
       "title": "Git Commit"
     },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
     "input_hashes": {
       "additionalProperties": {
         "type": "string"

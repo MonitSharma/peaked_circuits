@@ -1,0 +1,6 @@
+{
+  "canonical_order": "logical_q0_to_q97_left_to_right",
+  "case_name": "all_zeros",
+  "expected_canonical_string": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "provider_result_position": null
+}

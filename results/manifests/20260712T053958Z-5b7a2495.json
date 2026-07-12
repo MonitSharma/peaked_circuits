@@ -1,0 +1,51 @@
+{
+  "architecture": "arm64",
+  "arguments": [
+    "inspect"
+  ],
+  "backend_mode": "offline",
+  "command": "inspect",
+  "configuration_hash": null,
+  "configuration_path": null,
+  "created_at": "2026-07-12T05:40:01.041639Z",
+  "credentials_detected": false,
+  "dirty_working_tree": true,
+  "end_timestamp": "2026-07-12T05:40:00.993804Z",
+  "exit_status": 0,
+  "git_commit": "08cd2b40f5a711f2af2d623482a02786df859f93",
+  "git_dirty": true,
+  "hardware_execution_attempted": false,
+  "input_hashes": {
+    "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
+  },
+  "input_paths": {
+    "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
+  },
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "output_paths": {
+    "results/inspection/inspection_report.json": "84e84086e34dbba5972ecce7e3ebe4e6f524c5248cf7f8dc9dda4c9dab4e6d24",
+    "results/inspection/inspection_report.md": "ffede73bfffd9bd981f6205c5ab1efb1dfbdf15cba87c7f104ce94c6e1bfd87f"
+  },
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.1",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "3.0.3",
+    "pydantic": "2.13.4",
+    "pytket": "2.18.1",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.1",
+    "qiskit": null,
+    "rich": "15.0.0",
+    "scipy": "1.18.0",
+    "typer": "0.26.8"
+  },
+  "paid_resources_consumed": false,
+  "python_version": "3.13.7",
+  "random_seed": null,
+  "run_id": "20260712T053958Z-5b7a2495",
+  "schema_version": "1.0",
+  "start_timestamp": "2026-07-12T05:39:58.445290Z"
+}

@@ -1,0 +1,125 @@
+{
+  "architecture": "arm64",
+  "configuration_hash": null,
+  "created_at": "2026-07-12T09:19:48.574117Z",
+  "findings": [
+    {
+      "check": "no_dot_env",
+      "details": "No committed .env files",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "no_credential_files",
+      "details": "No credential-like files",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "no_token_values",
+      "details": "No token-like values",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "no_local_absolute_paths",
+      "details": "No local home-directory paths",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "no_hidden_target",
+      "details": "No 98-bit hidden target field",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "correct_repository_url",
+      "details": "CITATION.cff repository URL",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "correct_author",
+      "details": "Monit Sharma software authorship metadata",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "license_present",
+      "details": "Apache-2.0 license present",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "reports_record_commit",
+      "details": "ReportBase JSON artifacts record a Git commit",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "reports_have_hash_fields",
+      "details": "ReportBase JSON artifacts include input hash provenance",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "no_raw_private_provider_metadata",
+      "details": "Provider raw results are not part of a public release",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "generated_data_ignored",
+      "details": "Provider/canonical/hardware generated data are ignored",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "no_local_nexus_auth_cache",
+      "details": "No Nexus token, browser-login, or local authentication cache is in the repository",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "qir_artifacts_sanitized",
+      "details": "QIR text and bitcode contain no local paths or credential-like values",
+      "passed": true,
+      "paths": []
+    },
+    {
+      "check": "nexus_reports_sanitized",
+      "details": "Nexus syntax-check reports contain sanitized references and diagnostics",
+      "passed": true,
+      "paths": []
+    }
+  ],
+  "git_commit": "08cd2b40f5a711f2af2d623482a02786df859f93",
+  "git_dirty": true,
+  "input_hashes": {},
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.1",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "2.3.3",
+    "pydantic": "2.13.4",
+    "pyqir": "0.12.5",
+    "pytket": "2.18.1",
+    "pytket-qir": "2.0.0",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.1",
+    "qiskit": null,
+    "qnexus": "0.46.0",
+    "rich": "13.9.4",
+    "scipy": "1.18.0",
+    "typer": "0.26.8"
+  },
+  "passed": true,
+  "python_version": "3.13.7",
+  "random_seed": null,
+  "scanned_files": 229,
+  "schema_version": "1.0"
+}

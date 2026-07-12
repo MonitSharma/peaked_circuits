@@ -6,6 +6,6 @@ version: 0.1.0
 date-released: 2026-07-12
 license: Apache-2.0
 authors:
-  - name: "P12 Helios Recovery contributors"
-repository-code: "https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io"
-
+  - family-names: Sharma
+    given-names: Monit
+repository-code: "https://github.com/MonitSharma/p12-helios-recovery"

@@ -4,6 +4,6 @@ Status: **blocked**
 
 Target: `None`
 
-Blocker: No target device configured; compilation is environment-limited
+Blocker: RuntimeError: No exact discovered target configured
 
-No hardware submission was attempted and no paid resources were consumed.
+Implicit swaps are disabled; unknown permutations block success. No job was submitted.

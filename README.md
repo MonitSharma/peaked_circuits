@@ -7,6 +7,23 @@ whether a transparent, preregistered Quantinuum execution and post-processing pr
 the target bits. **Milestone 1 never submits hardware jobs, consumes HQCs, requests credentials, or
 claims that the hidden peak has been solved.**
 
+The software is Monit Sharma's recovery and reproducibility pipeline. The byte-preserved P12 QASM is
+an upstream Quantum Advantage Tracker artifact; the circuit construction and scientific work remain
+attributable to their original authors. Including it does not claim authorship of the circuit.
+
+## Milestone 3 scope
+
+Milestone 2 adds authenticated Nexus/Helios discovery, legacy local exact-target compilation,
+permutation-safe measurement tracing, saved-result import, canonical normalization, deterministic
+mapping circuits, cost-evidence reporting, protocol freeze gates, evidence-based readiness, and a
+public-release audit. The Helios HUGR/QIR transition is detected and blocked rather than routed
+through the obsolete H-series interface. Paid hardware execution remains disabled.
+
+Milestone 3 adds deterministic P12 QIR export, LLVM/pyqir validation, an explicit 98-entry
+logical-to-QIR result map, six reversal-sensitive QIR mapping cases, and a separately guarded
+`Helios-1SC` Nexus syntax-check path. It does not execute `Helios-1E` or `Helios-1`, does not resolve
+provider result order, and cannot claim hardware readiness.
+
 ## Set up
 
 Python 3.11 or newer is required.
@@ -44,6 +61,85 @@ leftmost character and `q[97]` is the rightmost. Provider strings are never sile
 Conversion requires an explicit logical-to-classical map, provider display order, and classical
 register layout; ambiguity is an error. See [docs/bit_ordering.md](docs/bit_ordering.md).
 
+## Recommended Milestone 2 workflow
+
+```bash
+python -c "import qnexus as qnx; qnx.login()"  # browser login; do not paste credentials
+p12-recovery devices --only-p12-compatible
+export P12_QUANTINUUM_DEVICE="<exact-discovered-device-name>"
+# For Helios, review docs/helios_nexus.md and stop before any remote write/job.
+p12-recovery compile --config configs/compilation.yaml
+p12-recovery validate
+p12-recovery mapping-check --target "$P12_QUANTINUUM_DEVICE" --mode emulator
+p12-recovery estimate-cost --target "$P12_QUANTINUUM_DEVICE" --shots 20,100,250,500,1000,2000
+p12-recovery freeze-protocol
+p12-recovery build-report
+p12-recovery public-audit
+```
+
+Run `freeze-protocol` only after Tracker evaluation rules are confirmed. It requires a clean commit
+and complete target, mapping, cost, and protocol evidence.
+
+### Discovery and target-specific compilation
+
+`devices` merges two distinct official SDK surfaces. It uses authenticated
+`qnexus.devices.get_all()` for current Nexus/Helios access and retains
+`QuantinuumBackend.available_devices()` only as legacy H-series metadata whose account access is
+explicitly unverified. Helios names are passed as `system_name` to
+`qnexus.models.HeliosConfig`; H-series configuration uses `device_name`. Target names must match
+authenticated Nexus discovery exactly. CLI `--target` overrides configuration, which overrides
+`P12_QUANTINUUM_DEVICE`. Compilation verifies SDK support for `preserve_qubit_names=true` and
+`allow_implicit_swaps=false`, records `CompilationUnit.initial_map/final_map`, and fails on an unknown
+permutation.
+
+The current Milestone 2 `compile` command never uploads a circuit or starts a Nexus job. A Helios
+target therefore produces a structured blocker until a separately guarded HUGR/QIR Nexus compilation
+workflow is implemented and explicitly authorized. See [docs/helios_nexus.md](docs/helios_nexus.md).
+
+### Result import and mapping circuits
+
+`import-quantinuum-result` retrieves only an existing job or reads a saved raw result. Raw and
+canonical data are stored separately, and recovery receives only exact 98-bit canonical counts after
+order, layout, mapping, width, and shot-total validation. `mapping-check` creates six endpoint,
+sparse, block, and alternating patterns that expose reversals. It can compile them but does not submit
+them; imported emulator observations are needed to finish validation.
+
+### Cost, readiness, and public audit
+
+Cost reports contain only provider-supported evidence; an unavailable API produces `unsupported`,
+never an invented HQC formula. Readiness is derived from hashed evidence and is capped at
+`READY_FOR_EMULATOR_MAPPING_VALIDATION`; hardware readiness is not exposed. `public-audit` checks
+credentials, tokens, local paths, private raw metadata, citation, license, and report provenance
+without changing repository visibility.
+
+## Milestone 3 local workflow
+
+```bash
+p12-recovery export-qir \
+  --source circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm \
+  --output results/qir/p12.ll
+p12-recovery validate-qir --input results/qir/p12.ll
+p12-recovery export-mapping-qir
+p12-recovery build-report
+p12-recovery public-audit
+```
+
+The exporter uses the official `pytket-qir` API with the base QIR profile. Because the converter
+limits each classical register to 64 bits, the canonical output is represented by 98 explicit
+one-bit result registers. Each logical `q[i]` is locally verified against QIR qubit/result `i`, while
+`provider_result_position` stays null.
+
+The optional remote command is intentionally double-armed and fixed to the free syntax checker:
+
+```bash
+export P12_ENABLE_NEXUS_SYNTAX_CHECK=1
+p12-recovery nexus-syntax-check --target Helios-1SC --mapping-cases --submit-syntax-check
+p12-recovery nexus-syntax-check --target Helios-1SC --qir results/qir/p12.ll --submit-syntax-check
+```
+
+Do not substitute `Helios-1E` or `Helios-1`; the guard refuses both. See
+[docs/milestone_3.md](docs/milestone_3.md).
+
 ## Recovery and reproducibility
 
 The primary method is bitwise majority. Most-frequent observation, weighted observed medoid, and
@@ -66,7 +162,7 @@ artifact-producing CLI operation writes a run manifest.
 
 Credentials alone can never trigger submission. The central guard checks the CLI flag, two explicit
 environment values, interactive confirmation, target mode, and readiness—and then still blocks,
-because Milestone 1 deliberately contains no functioning submission implementation. Never store
+because Milestone 2 deliberately contains no functioning submission implementation. Never store
 credentials in this repository.
 
 ## Limitations
@@ -80,4 +176,3 @@ predicates pass. Accuracy against the real hidden target is unavailable locally.
 
 Use `CITATION.cff`. The upstream QASM remains the work of its original authors and is identified by
 its Tracker commit, path, retrieval time, and SHA-256 digest.
-

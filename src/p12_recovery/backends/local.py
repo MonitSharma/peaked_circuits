@@ -34,4 +34,4 @@ class LocalBackend:
 
     def submit(self, circuit: Any, shots: int) -> Any:
         del circuit, shots
-        raise NotImplementedError("Milestone 1 exposes no execution path")
+        raise NotImplementedError("Milestone 2 exposes no paid execution path")
