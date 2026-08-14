@@ -35,3 +35,11 @@ QIR, verify the LLVM module and 98 logical measurement pairs, then syntax-check 
 mapping cases in their frozen order. P12 may be sent to `Helios-1SC` only after all six pass. A syntax
 check is provider-validity evidence, not a measurement-order observation. `Helios-1E` and `Helios-1`
 remain outside this protocol.
+
+## Milestone 4 emulator gate
+
+Provider cost-confidence evidence precedes mapping execution. Run the six frozen cases sequentially
+with minimal shots, a per-job cap, and the ideal MPS Helios configuration. Preserve labeled raw QIR
+records before normalization. Compare each raw layout with that program's declared QIR output-call
+order, then normalize labels `m000[0]` through `m097[0]`. A P12 pilot is optional, blinded, and
+limited to 20 shots. Physical hardware and hidden-target scoring remain prohibited.

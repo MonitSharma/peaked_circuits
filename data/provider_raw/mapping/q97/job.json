@@ -1,0 +1,11 @@
+{
+  "bitcode_sha256": "ff2b394602b288024c4cf5da8baca3b3369979d9a702ad06db1d5fe702668396",
+  "final_status": "COMPLETED",
+  "job_ref": "fe82ec40-a6d5-48e9-829b-1a3cda316cdb",
+  "max_cost": 6.0,
+  "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
+  "qir_artifact_ref": "f7932a7b-62a4-48f0-8fd0-655fba960550",
+  "shots": 3,
+  "submitted_at": "2026-07-12T13:43:37.406035+00:00",
+  "target": "Helios-1E"
+}

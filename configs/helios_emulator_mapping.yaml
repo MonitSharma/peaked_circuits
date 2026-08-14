@@ -1,0 +1,28 @@
+schema_version: "1.0"
+
+target:
+  system_name: "Helios-1E"
+  require_authenticated_discovery: true
+  require_target_type: emulator
+
+execution:
+  shots_per_case: 3
+  max_cost_per_job: null
+  submit_sequentially: true
+  stop_on_first_failure: true
+  simulator: MatrixProductStateSimulator
+  simulator_backend: auto
+  simulator_chi: 128
+  simulator_zero_threshold: 0.01
+  error_model: NoErrorModel
+  n_qubits: 98
+
+mapping:
+  minimum_majority_fraction: 0.67
+  require_exactly_98_outputs: true
+  require_unique_mapping: true
+  reject_ambiguous_layout: true
+
+safety:
+  physical_hardware_forbidden: true
+  require_interactive_confirmation: true

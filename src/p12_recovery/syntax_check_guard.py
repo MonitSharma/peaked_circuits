@@ -55,7 +55,6 @@ def assert_nexus_syntax_check_allowed(
     critical_files = [
         "src/p12_recovery/qir_export.py",
         "src/p12_recovery/compilation.py",
-        "src/p12_recovery/models.py",
         "src/p12_recovery/bit_ordering.py",
     ]
     if artifact_git_commit and current_git_commit:

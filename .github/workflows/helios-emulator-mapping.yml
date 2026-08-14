@@ -1,0 +1,51 @@
+name: manually-guarded-helios-emulator-mapping
+
+on:
+  workflow_dispatch:
+    inputs:
+      mapping_case:
+        description: One deterministic mapping case only
+        required: true
+        default: all_zeros
+        type: choice
+        options:
+          - all_zeros
+          - q0
+          - q97
+          - q0_q7_q31_q64_q97
+          - non_palindromic_blocks
+          - alternating_q0_one
+      max_cost:
+        description: Positive per-job HQC ceiling based on cost evidence
+        required: true
+        type: string
+
+jobs:
+  one-mapping-case:
+    # Requires a deliberately configured self-hosted runner with an authenticated Nexus session.
+    # This workflow contains no Helios-1 target and cannot run automatically.
+    runs-on: self-hosted
+    environment: helios-emulator-manual
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e '.[dev,quantum]'
+      - run: p12-recovery devices --refresh --json
+      - name: Verify exact emulator discovery
+        run: jq -e '.authenticated_access and any(.devices[]; .provider_api == "nexus" and .device_name == "Helios-1E" and .target_type == "emulator")' results/backend/available_devices.json
+      - name: Obtain provider cost evidence
+        run: p12-recovery nexus-cost --target Helios-1E --mapping-cases --shots 3
+      - name: Execute one explicitly selected mapping case
+        env:
+          P12_ENABLE_HELIOS_EMULATOR: "1"
+        run: printf 'y\n' | p12-recovery emulator-mapping-check --target Helios-1E --mapping-case '${{ inputs.mapping_case }}' --shots 3 --max-cost '${{ inputs.max_cost }}' --execute-emulator
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: helios-emulator-mapping-evidence
+          path: |
+            results/nexus/cost/
+            results/nexus/emulator_mapping/
+            data/provider_raw/mapping/

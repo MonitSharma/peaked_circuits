@@ -5,6 +5,18 @@
       "title": "Architecture",
       "type": "string"
     },
+    "bitcode_sha256": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Bitcode Sha256"
+    },
     "configuration_hash": {
       "anyOf": [
         {
@@ -202,6 +214,18 @@
     "target_classification": {
       "title": "Target Classification",
       "type": "string"
+    },
+    "text_qir_sha256": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Text Qir Sha256"
     }
   },
   "required": [

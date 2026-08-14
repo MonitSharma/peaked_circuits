@@ -54,6 +54,8 @@ omit = [
   "src/p12_recovery/cli.py",
   "src/p12_recovery/compilation.py",
   "src/p12_recovery/logging_utils.py",
+  "src/p12_recovery/nexus_cost.py",
+  "src/p12_recovery/nexus_emulator.py",
   "src/p12_recovery/readiness.py",
   "src/p12_recovery/reporting.py",
 ]

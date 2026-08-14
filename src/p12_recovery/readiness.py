@@ -12,6 +12,7 @@ from .hardware_guard import HardwareSubmissionBlocked, assert_hardware_submissio
 from .hashing import read_sha256sums, sha256_file
 from .models import (
     CompilationReport,
+    EmulatorMappingAggregateReport,
     HardwareReadinessReport,
     MappingSyntaxCheckAggregateReport,
     MappingValidationReport,
@@ -101,6 +102,14 @@ def _commit_tagged(root: Path, commit: str | None) -> bool:
 
 
 def readiness_state_from_checks(checks: dict[str, bool | None], *, offline: bool) -> ReadinessState:
+    if checks.get("p12_emulator_pilot_complete"):
+        return ReadinessState.P12_EMULATOR_PILOT_COMPLETE
+    if checks.get("ready_for_p12_emulator_pilot"):
+        return ReadinessState.READY_FOR_P12_EMULATOR_PILOT
+    if checks.get("emulator_mapping_validation_passed") and checks.get(
+        "provider_result_order_verified"
+    ):
+        return ReadinessState.EMULATOR_MAPPING_VALIDATED
     if checks.get("mapping_case_syntax_checks_passed") and checks.get("p12_syntax_check_passed"):
         return ReadinessState.READY_FOR_EMULATOR_MAPPING_VALIDATION
     if all(
@@ -137,7 +146,11 @@ def build_readiness(root: Path) -> HardwareReadinessReport:
     qir_mapping_path = root / "results/qir/qir_output_mapping.json"
     mapping_qir_path = root / "results/qir/mapping_cases/mapping_qir_export_report.json"
     mapping_syntax_path = root / "results/nexus/syntax_check/mapping_cases_report.json"
-    p12_syntax_path = root / "results/nexus/syntax_check/syntax_check_report.json"
+    p12_syntax_path = root / "results/nexus/syntax_check/p12/syntax_check_report.json"
+    emulator_mapping_path = root / "results/nexus/emulator_mapping/emulator_mapping_report.json"
+    provider_mapping_path = root / "results/nexus/emulator_mapping/provider_output_mapping.json"
+    p12_cost_path = root / "results/nexus/cost/p12_cost.json"
+    pilot_path = root / "results/nexus/p12_emulator/pilot_report.json"
     compilation: CompilationReport | None = None
     if compilation_path.is_file():
         try:
@@ -186,6 +199,15 @@ def build_readiness(root: Path) -> HardwareReadinessReport:
         p12_syntax = NexusSyntaxCheckReport.model_validate_json(p12_syntax_path.read_text())
     except Exception:
         p12_syntax = None
+    try:
+        emulator_mapping = EmulatorMappingAggregateReport.model_validate_json(
+            emulator_mapping_path.read_text()
+        )
+    except Exception:
+        emulator_mapping = None
+    provider_mapping = _load_json(provider_mapping_path)
+    p12_cost = _load_json(p12_cost_path)
+    pilot = _load_json(pilot_path)
     source_frozen = (
         qasm.is_file()
         and sums.is_file()
@@ -258,8 +280,35 @@ def build_readiness(root: Path) -> HardwareReadinessReport:
             and mapping_syntax.all_mapping_qir_syntax_checks == "passed"
         ),
         "p12_syntax_check_passed": bool(p12_syntax and p12_syntax.status == "passed"),
-        "provider_result_order_verified": False,
-        "emulator_mapping_validation_passed": False,
+        "p12_submitted_bitcode_hash_matches": bool(
+            p12_syntax and qir_export and p12_syntax.bitcode_sha256 == qir_export.qir_bitcode_sha256
+        ),
+        "p12_target_is_helios_1sc": bool(
+            p12_syntax
+            and p12_syntax.target == "Helios-1SC"
+            and p12_syntax.target_classification == "syntax_checker"
+        ),
+        "provider_result_order_verified": bool(
+            emulator_mapping
+            and emulator_mapping.provider_result_order_verified
+            and provider_mapping.get("provider_result_order_verified") is True
+            and provider_mapping.get("resolved_positions") == 98
+        ),
+        "emulator_mapping_validation_passed": bool(
+            emulator_mapping
+            and emulator_mapping.status == "passed"
+            and emulator_mapping.emulator_mapping_validation_passed
+        ),
+        "ready_for_p12_emulator_pilot": bool(
+            emulator_mapping
+            and emulator_mapping.status == "passed"
+            and p12_cost.get("status") == "supported"
+        ),
+        "p12_emulator_pilot_complete": bool(
+            pilot.get("status") == "passed"
+            and pilot.get("hidden_target_scored") is False
+            and pilot.get("normalized_width") == 98
+        ),
     }
     evidence_paths: dict[str, Path | None] = {
         "source_hash_frozen": sums,
@@ -287,8 +336,12 @@ def build_readiness(root: Path) -> HardwareReadinessReport:
         "mapping_case_qir_exports_passed": mapping_qir_path,
         "mapping_case_syntax_checks_passed": mapping_syntax_path,
         "p12_syntax_check_passed": p12_syntax_path,
-        "provider_result_order_verified": None,
-        "emulator_mapping_validation_passed": None,
+        "p12_submitted_bitcode_hash_matches": p12_syntax_path,
+        "p12_target_is_helios_1sc": p12_syntax_path,
+        "provider_result_order_verified": provider_mapping_path,
+        "emulator_mapping_validation_passed": emulator_mapping_path,
+        "ready_for_p12_emulator_pilot": p12_cost_path,
+        "p12_emulator_pilot_complete": pilot_path,
     }
     evidence = [
         _evidence(
@@ -332,8 +385,8 @@ def build_readiness(root: Path) -> HardwareReadinessReport:
     markdown = f"# Hardware readiness\n\nState: **{state.value}**\n\n"
     markdown += "\n".join(f"- [{'x' if passed else ' '}] {name}" for name, passed in checks.items())
     markdown += (
-        "\n\nMilestone 3 stops before emulator or hardware execution. Provider result order "
-        "remains unresolved.\n"
+        "\n\nMilestone 4 stops before physical hardware execution. Syntax acceptance, emulator "
+        "mapping validation, and recovery accuracy are distinct evidence levels.\n"
     )
     (root / "docs").mkdir(parents=True, exist_ok=True)
     (root / "docs/hardware_readiness.md").write_text(markdown)

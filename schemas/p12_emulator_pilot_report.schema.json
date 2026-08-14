@@ -1,0 +1,204 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "diagnostics": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Diagnostics",
+      "type": "array"
+    },
+    "failure_stage": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Failure Stage"
+    },
+    "final_status": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Final Status"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "hidden_target_scored": {
+      "const": false,
+      "default": false,
+      "title": "Hidden Target Scored",
+      "type": "boolean"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "job_ref": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Job Ref"
+    },
+    "max_cost": {
+      "title": "Max Cost",
+      "type": "number"
+    },
+    "normalized_width": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Normalized Width"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "reported_cost_hqcs": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reported Cost Hqcs"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "shots": {
+      "title": "Shots",
+      "type": "integer"
+    },
+    "simulator_configuration": {
+      "additionalProperties": true,
+      "title": "Simulator Configuration",
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "failed",
+        "blocked",
+        "not_run"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "target": {
+      "title": "Target",
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "target",
+    "shots",
+    "max_cost"
+  ],
+  "title": "P12EmulatorPilotReport",
+  "type": "object"
+}

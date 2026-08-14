@@ -1,0 +1,146 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "authenticated_discovery": {
+      "title": "Authenticated Discovery",
+      "type": "boolean"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "cost_evidence_exists": {
+      "title": "Cost Evidence Exists",
+      "type": "boolean"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "environment_authorized": {
+      "title": "Environment Authorized",
+      "type": "boolean"
+    },
+    "execute_emulator_flag": {
+      "title": "Execute Emulator Flag",
+      "type": "boolean"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "interactive_confirmed": {
+      "title": "Interactive Confirmed",
+      "type": "boolean"
+    },
+    "max_cost": {
+      "title": "Max Cost",
+      "type": "number"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "physical_hardware_forbidden": {
+      "const": true,
+      "default": true,
+      "title": "Physical Hardware Forbidden",
+      "type": "boolean"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "target": {
+      "title": "Target",
+      "type": "string"
+    },
+    "target_classification": {
+      "title": "Target Classification",
+      "type": "string"
+    }
+  },
+  "required": [
+    "target",
+    "target_classification",
+    "execute_emulator_flag",
+    "environment_authorized",
+    "authenticated_discovery",
+    "cost_evidence_exists",
+    "max_cost",
+    "interactive_confirmed"
+  ],
+  "title": "EmulatorAuthorizationEvidence",
+  "type": "object"
+}
