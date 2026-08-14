@@ -1,0 +1,58 @@
+{
+  "architecture": "arm64",
+  "arguments": [
+    "nexus-syntax-check",
+    "--target",
+    "Helios-1SC",
+    "--mapping-case",
+    "q0_q7_q31_q64_q97",
+    "--submit-syntax-check"
+  ],
+  "backend_mode": "nexus_syntax_checker_only",
+  "command": "nexus-syntax-check",
+  "configuration_hash": "423974b1b75daf82d1bf5de9d86552cd063e7cc2c0988465058eecfdae4783dc",
+  "configuration_path": "configs/nexus_syntax_check.yaml",
+  "created_at": "2026-07-12T09:25:27.445567Z",
+  "credentials_detected": true,
+  "dirty_working_tree": true,
+  "end_timestamp": "2026-07-12T09:25:27.348208Z",
+  "exit_status": 1,
+  "git_commit": "08cd2b40f5a711f2af2d623482a02786df859f93",
+  "git_dirty": true,
+  "hardware_execution_attempted": false,
+  "input_hashes": {
+    "configs/nexus_syntax_check.yaml": "423974b1b75daf82d1bf5de9d86552cd063e7cc2c0988465058eecfdae4783dc",
+    "results/qir/p12.ll": "09aba5cc5a8f225c6404dbd263dda84aa346bf0fd96280101c6b63f9370de49b"
+  },
+  "input_paths": {
+    "configs/nexus_syntax_check.yaml": "423974b1b75daf82d1bf5de9d86552cd063e7cc2c0988465058eecfdae4783dc",
+    "results/qir/p12.ll": "09aba5cc5a8f225c6404dbd263dda84aa346bf0fd96280101c6b63f9370de49b"
+  },
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "output_paths": {},
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.1",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "2.3.3",
+    "pydantic": "2.13.4",
+    "pyqir": "0.12.5",
+    "pytket": "2.18.1",
+    "pytket-qir": "2.0.0",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.1",
+    "qiskit": null,
+    "qnexus": "0.46.0",
+    "rich": "13.9.4",
+    "scipy": "1.18.0",
+    "typer": "0.26.8"
+  },
+  "paid_resources_consumed": false,
+  "python_version": "3.13.7",
+  "random_seed": null,
+  "run_id": "20260712T092508Z-31b48c65",
+  "schema_version": "1.0",
+  "start_timestamp": "2026-07-12T09:25:08.514630Z"
+}

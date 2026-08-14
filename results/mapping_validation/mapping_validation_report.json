@@ -1,0 +1,98 @@
+{
+  "architecture": "arm64",
+  "cases": [
+    {
+      "canonical_output": null,
+      "case_name": "all_zeros",
+      "compiled_circuit_hash": null,
+      "mapping_correct": null,
+      "prepared_circuit_hash": "7a2024f8a60312ac494dccc929c0cf73bb70c6f7b953fdabc4537b5a6c574cc6",
+      "prepared_logical_string": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "raw_provider_output": null,
+      "status": "prepared"
+    },
+    {
+      "canonical_output": null,
+      "case_name": "q0",
+      "compiled_circuit_hash": null,
+      "mapping_correct": null,
+      "prepared_circuit_hash": "8c5c539dbdf863ad4d78f3fbb11c1ee2019448d7799904af66a34b3ada2d4863",
+      "prepared_logical_string": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "raw_provider_output": null,
+      "status": "prepared"
+    },
+    {
+      "canonical_output": null,
+      "case_name": "q97",
+      "compiled_circuit_hash": null,
+      "mapping_correct": null,
+      "prepared_circuit_hash": "ae0b59c2cf8e1a6dcde454144f8e057c33f33a723edc3d5f1bb3d623ace14854",
+      "prepared_logical_string": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+      "raw_provider_output": null,
+      "status": "prepared"
+    },
+    {
+      "canonical_output": null,
+      "case_name": "q0_q7_q31_q64_q97",
+      "compiled_circuit_hash": null,
+      "mapping_correct": null,
+      "prepared_circuit_hash": "e05d6fa045210c68508dad68c539154728bb24cf0c905d1e39edb525dfe4da44",
+      "prepared_logical_string": "10000001000000000000000000000001000000000000000000000000000000001000000000000000000000000000000001",
+      "raw_provider_output": null,
+      "status": "prepared"
+    },
+    {
+      "canonical_output": null,
+      "case_name": "non_palindromic_blocks",
+      "compiled_circuit_hash": null,
+      "mapping_correct": null,
+      "prepared_circuit_hash": "bd2f6bf443f22c7a63cba1dbc3192b5d6ebaeb92bef104c708d6b80c47f325b2",
+      "prepared_logical_string": "11100000000000111111111111111110000000000000000000000000000011111110000000000000000000000000000000",
+      "raw_provider_output": null,
+      "status": "prepared"
+    },
+    {
+      "canonical_output": null,
+      "case_name": "alternating_q0_one",
+      "compiled_circuit_hash": null,
+      "mapping_correct": null,
+      "prepared_circuit_hash": "e763ef23e06f434ae8b7df7d3864cbcbd1149f8b8ad088c33a9c61a844a1c4d2",
+      "prepared_logical_string": "10101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010",
+      "raw_provider_output": null,
+      "status": "prepared"
+    }
+  ],
+  "configuration_hash": null,
+  "created_at": "2026-07-12T05:49:59.653219Z",
+  "diagnostics": [
+    "Milestone 2 has no process_circuit path; import emulator results to validate provider ordering"
+  ],
+  "git_commit": "08cd2b40f5a711f2af2d623482a02786df859f93",
+  "git_dirty": true,
+  "input_hashes": {},
+  "mode": "offline",
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.1",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "3.0.3",
+    "pydantic": "2.13.4",
+    "pytket": "2.18.1",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.1",
+    "qiskit": null,
+    "rich": "15.0.0",
+    "scipy": "1.18.0",
+    "typer": "0.26.8"
+  },
+  "passed_cases": 0,
+  "python_version": "3.13.7",
+  "random_seed": null,
+  "schema_version": "1.0",
+  "status": "incomplete",
+  "target": null,
+  "total_cases": 6
+}

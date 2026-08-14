@@ -19,7 +19,19 @@ allowed except invalid/incomplete provider records documented before target scor
 version changes require a new manifest and renewed validation. Recovery method changes are exploratory
 unless preregistered before target access.
 
+Protocol freeze additionally requires a clean Git commit, an exact discovered target, passing backend
+predicates, compiled hash, zero-unknown-permutation measurement mapping, six passing mapping cases,
+provider cost provenance, and explicit analysis and shot policies. Tracker rules must be confirmed
+before freezing.
+
 The target remains blinded during circuit execution, normalization, candidate selection, and bootstrap
 analysis. A frozen candidate and repository commit are sent through the Tracker-confirmed evaluation
 route. Target metadata must never be mined to infer the answer.
 
+## Milestone 3 QIR gate
+
+Before any provider mapping experiment, freeze the P12 source hash, export deterministic base-profile
+QIR, verify the LLVM module and 98 logical measurement pairs, then syntax-check the six deterministic
+mapping cases in their frozen order. P12 may be sent to `Helios-1SC` only after all six pass. A syntax
+check is provider-validity evidence, not a measurement-order observation. `Helios-1E` and `Helios-1`
+remain outside this protocol.

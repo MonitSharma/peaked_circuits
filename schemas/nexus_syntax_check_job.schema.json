@@ -1,0 +1,185 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "completion_timestamp": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Completion Timestamp"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "emulator_or_hardware_execution": {
+      "const": false,
+      "default": false,
+      "title": "Emulator Or Hardware Execution",
+      "type": "boolean"
+    },
+    "final_status": {
+      "title": "Final Status",
+      "type": "string"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "hqcs_used": {
+      "const": false,
+      "default": false,
+      "title": "Hqcs Used",
+      "type": "boolean"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "project_ref": {
+      "title": "Project Ref",
+      "type": "string"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "qir_artifact_ref": {
+      "title": "Qir Artifact Ref",
+      "type": "string"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "reported_cost_hqcs": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reported Cost Hqcs"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_qasm_sha256": {
+      "title": "Source Qasm Sha256",
+      "type": "string"
+    },
+    "submission_timestamp": {
+      "format": "date-time",
+      "title": "Submission Timestamp",
+      "type": "string"
+    },
+    "submitted_qir_sha256": {
+      "title": "Submitted Qir Sha256",
+      "type": "string"
+    },
+    "syntax_check_job_ref": {
+      "title": "Syntax Check Job Ref",
+      "type": "string"
+    },
+    "target": {
+      "const": "Helios-1SC",
+      "title": "Target",
+      "type": "string"
+    },
+    "target_classification": {
+      "const": "syntax_checker",
+      "title": "Target Classification",
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_ref",
+    "qir_artifact_ref",
+    "syntax_check_job_ref",
+    "target",
+    "target_classification",
+    "submission_timestamp",
+    "final_status",
+    "submitted_qir_sha256",
+    "source_qasm_sha256"
+  ],
+  "title": "NexusSyntaxCheckJob",
+  "type": "object"
+}

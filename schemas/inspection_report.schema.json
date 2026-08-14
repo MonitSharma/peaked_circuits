@@ -280,6 +280,18 @@
       "default": null,
       "title": "Git Commit"
     },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
     "has_symbolic_parameters": {
       "title": "Has Symbolic Parameters",
       "type": "boolean"

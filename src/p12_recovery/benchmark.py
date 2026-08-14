@@ -9,7 +9,8 @@ import numpy as np
 import pandas as pd
 
 from .bootstrap import bootstrap_recovery
-from .models import RecoveryCandidate, RecoveryReport, SyntheticExperimentConfig
+from .hashing import hash_config
+from .models import RecoveryCandidate, RecoveryReport, SyntheticExperimentConfig, utc_now
 from .recovery import (
     bitwise_majority_string,
     cluster_consensus,
@@ -18,7 +19,7 @@ from .recovery import (
     score_as_dict,
     weighted_observed_medoid,
 )
-from .reporting import package_versions, write_json
+from .reporting import git_state, package_versions, repository_root, write_json
 from .synthetic import (
     aggregate_shots,
     asymmetric_readout_shots,
@@ -77,6 +78,8 @@ def _generate(
 def run_synthetic_benchmark(
     config: SyntheticExperimentConfig, output_dir: Path, figures_dir: Path, *, smoke: bool = False
 ) -> dict[str, Any]:
+    root = repository_root(output_dir)
+    commit, dirty = git_state(root) if root else (None, None)
     target = config.targets.get("explicit_target") or random_target(
         config.number_of_qubits, seed=config.seed
     )
@@ -93,14 +96,13 @@ def run_synthetic_benchmark(
             candidate.method_name: score_as_dict(candidate.canonical_bitstring, target)
             for candidate in candidates
         }
-        bootstraps = []
+        bootstraps: list[dict[str, Any]] = []
         for method_index, method in enumerate(METHODS):
-            bootstraps.append(
-                bootstrap_recovery(
-                    counts, method, replicates=replicates, seed=seed + 1000 + method_index
-                ).model_dump(mode="json")
-            )
-        for candidate, bootstrap in zip(candidates, bootstraps, strict=True):
+            bootstrap_model = bootstrap_recovery(
+                counts, method, replicates=replicates, seed=seed + 1000 + method_index
+            ).model_copy(update={"git_commit": commit, "git_dirty": dirty})
+            bootstraps.append(bootstrap_model.model_dump(mode="json"))
+        for candidate, bootstrap_data in zip(candidates, bootstraps, strict=True):
             score = scores[candidate.method_name]
             rows.append(
                 {
@@ -113,8 +115,8 @@ def run_synthetic_benchmark(
                     "percentage_correct": score["percentage_correct"],
                     "hamming_distance": score["hamming_distance"],
                     "runtime_seconds": candidate.runtime_seconds,
-                    "bootstrap_exact_stability": bootstrap["exact_match_stability"],
-                    "bootstrap_stable_bits": bootstrap["stable_bits"],
+                    "bootstrap_exact_stability": bootstrap_data["exact_match_stability"],
+                    "bootstrap_stable_bits": bootstrap_data["stable_bits"],
                 }
             )
         reports.append(
@@ -127,6 +129,8 @@ def run_synthetic_benchmark(
                     scores=scores,
                     random_seed=seed,
                     package_versions=package_versions(),
+                    git_commit=commit,
+                    git_dirty=dirty,
                 ).model_dump(mode="json"),
                 "bootstrap": bootstraps,
             }
@@ -136,6 +140,9 @@ def run_synthetic_benchmark(
     dataframe.to_csv(output_dir / "synthetic_summary.csv", index=False)
     payload = {
         "schema_version": "1.0",
+        "created_at": utc_now().isoformat(),
+        "git_commit": commit,
+        "git_dirty": dirty,
         "seed": config.seed,
         "configuration": config.model_dump(mode="json"),
         "smoke": smoke,
@@ -144,6 +151,7 @@ def run_synthetic_benchmark(
         "settings": reports,
         "summary_rows": rows,
         "package_versions": package_versions(),
+        "input_hashes": {"synthetic_configuration": hash_config(config.model_dump(mode="json"))},
     }
     write_json(output_dir / "synthetic_report.json", payload)
     best = dataframe.groupby("method")["percentage_correct"].mean().sort_values(ascending=False)

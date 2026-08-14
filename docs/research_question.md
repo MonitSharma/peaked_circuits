@@ -13,6 +13,5 @@ Primary endpoint: percentage of the 98 hidden bits recovered correctly. Secondar
 exact recovery, Hamming distance, bootstrap stability, per-bit confidence, method agreement, runtime,
 and compilation overhead.
 
-Nonclaims: Milestone 1 does not recover P12, establish hardware executability, demonstrate quantum
+Nonclaims: Milestones 1 and 2 do not recover P12, establish hardware executability, demonstrate quantum
 advantage, or establish that small-circuit validation proves full-circuit semantics.
-

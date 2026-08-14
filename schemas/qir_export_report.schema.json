@@ -1,0 +1,243 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "canonical_order": {
+      "const": "logical_q0_to_q97_left_to_right",
+      "title": "Canonical Order",
+      "type": "string"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "conversion_api": {
+      "title": "Conversion Api",
+      "type": "string"
+    },
+    "conversion_preflight_passed": {
+      "title": "Conversion Preflight Passed",
+      "type": "boolean"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "logical_to_qir_mapping_verified": {
+      "title": "Logical To Qir Mapping Verified",
+      "type": "boolean"
+    },
+    "measurement_count": {
+      "title": "Measurement Count",
+      "type": "integer"
+    },
+    "omitted_operation_count": {
+      "default": 0,
+      "title": "Omitted Operation Count",
+      "type": "integer"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "provider_result_order_verified": {
+      "const": false,
+      "default": false,
+      "title": "Provider Result Order Verified",
+      "type": "boolean"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "qir_bitcode_path": {
+      "title": "Qir Bitcode Path",
+      "type": "string"
+    },
+    "qir_bitcode_sha256": {
+      "title": "Qir Bitcode Sha256",
+      "type": "string"
+    },
+    "qir_bitcode_size_bytes": {
+      "title": "Qir Bitcode Size Bytes",
+      "type": "integer"
+    },
+    "qir_format": {
+      "title": "Qir Format",
+      "type": "string"
+    },
+    "qir_path": {
+      "title": "Qir Path",
+      "type": "string"
+    },
+    "qir_profile": {
+      "title": "Qir Profile",
+      "type": "string"
+    },
+    "qir_sha256": {
+      "title": "Qir Sha256",
+      "type": "string"
+    },
+    "qir_size_bytes": {
+      "title": "Qir Size Bytes",
+      "type": "integer"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_measurements": {
+      "title": "Source Measurements",
+      "type": "integer"
+    },
+    "source_operations": {
+      "title": "Source Operations",
+      "type": "integer"
+    },
+    "source_qasm_path": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Qasm Path"
+    },
+    "source_qasm_sha256": {
+      "title": "Source Qasm Sha256",
+      "type": "string"
+    },
+    "source_qubits": {
+      "title": "Source Qubits",
+      "type": "integer"
+    },
+    "source_two_qubit_gates": {
+      "title": "Source Two Qubit Gates",
+      "type": "integer"
+    },
+    "status": {
+      "enum": [
+        "success",
+        "failed"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "transformed_operation_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Transformed Operation Counts",
+      "type": "object"
+    },
+    "transformed_operations": {
+      "title": "Transformed Operations",
+      "type": "integer"
+    },
+    "unsupported_operations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unsupported Operations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "status",
+    "source_qasm_sha256",
+    "source_qubits",
+    "source_operations",
+    "source_two_qubit_gates",
+    "source_measurements",
+    "transformed_operation_counts",
+    "transformed_operations",
+    "measurement_count",
+    "canonical_order",
+    "qir_format",
+    "qir_profile",
+    "qir_path",
+    "qir_sha256",
+    "qir_size_bytes",
+    "qir_bitcode_path",
+    "qir_bitcode_sha256",
+    "qir_bitcode_size_bytes",
+    "conversion_api",
+    "conversion_preflight_passed",
+    "logical_to_qir_mapping_verified"
+  ],
+  "title": "QIRExportReport",
+  "type": "object"
+}

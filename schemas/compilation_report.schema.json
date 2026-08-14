@@ -3,10 +3,39 @@
     "BackendDescriptor": {
       "additionalProperties": false,
       "properties": {
+        "access_status": {
+          "default": "unknown",
+          "title": "Access Status",
+          "type": "string"
+        },
         "available": {
           "default": true,
           "title": "Available",
           "type": "boolean"
+        },
+        "backend_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Backend Version"
+        },
+        "classical_register_limit": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Classical Register Limit"
         },
         "credentials_detected": {
           "default": false,
@@ -25,6 +54,29 @@
           "default": null,
           "title": "Device Name"
         },
+        "gate_set": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Gate Set",
+          "type": "array"
+        },
+        "has_at_least_98_qubits": {
+          "default": false,
+          "title": "Has At Least 98 Qubits",
+          "type": "boolean"
+        },
+        "metadata_source": {
+          "default": "unknown",
+          "enum": [
+            "live_api",
+            "cached",
+            "offline",
+            "unknown"
+          ],
+          "title": "Metadata Source",
+          "type": "string"
+        },
         "notes": {
           "items": {
             "type": "string"
@@ -32,9 +84,36 @@
           "title": "Notes",
           "type": "array"
         },
+        "p12_compatible": {
+          "default": false,
+          "title": "P12 Compatible",
+          "type": "boolean"
+        },
         "provider": {
           "title": "Provider",
           "type": "string"
+        },
+        "provider_api": {
+          "default": "unknown",
+          "title": "Provider Api",
+          "type": "string"
+        },
+        "provider_metadata": {
+          "additionalProperties": true,
+          "title": "Provider Metadata",
+          "type": "object"
+        },
+        "qubit_capacity": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Qubit Capacity"
         },
         "sdk_versions": {
           "additionalProperties": {
@@ -51,20 +130,18 @@
           "type": "object"
         },
         "target_type": {
-          "enum": [
-            "local",
-            "emulator",
-            "syntax_checker",
-            "physical",
-            "unknown"
-          ],
+          "default": "unknown",
           "title": "Target Type",
+          "type": "string"
+        },
+        "target_type_source": {
+          "default": "unknown",
+          "title": "Target Type Source",
           "type": "string"
         }
       },
       "required": [
-        "provider",
-        "target_type"
+        "provider"
       ],
       "title": "BackendDescriptor",
       "type": "object"
@@ -150,6 +227,11 @@
       "title": "Created At",
       "type": "string"
     },
+    "effective_compilation_config": {
+      "additionalProperties": true,
+      "title": "Effective Compilation Config",
+      "type": "object"
+    },
     "end_timestamp": {
       "format": "date-time",
       "title": "End Timestamp",
@@ -180,12 +262,29 @@
       "default": null,
       "title": "Git Commit"
     },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
     "input_hashes": {
       "additionalProperties": {
         "type": "string"
       },
       "title": "Input Hashes",
       "type": "object"
+    },
+    "mapping_complete": {
+      "default": false,
+      "title": "Mapping Complete",
+      "type": "boolean"
     },
     "operating_system": {
       "title": "Operating System",
@@ -249,6 +348,11 @@
       ],
       "title": "Status",
       "type": "string"
+    },
+    "unknown_permutation_count": {
+      "default": 0,
+      "title": "Unknown Permutation Count",
+      "type": "integer"
     },
     "validation": {
       "anyOf": [

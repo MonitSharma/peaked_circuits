@@ -22,7 +22,12 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-quantum = ["pytket>=2.0", "pytket-quantinuum>=0.50"]
+quantum = [
+  "pytket>=2.18",
+  "pytket-quantinuum>=0.56",
+  "pytket-qir>=2.0,<3",
+  "qnexus>=0.46,<0.47",
+]
 qiskit = ["qiskit>=1.2", "pytket-qiskit>=0.60"]
 dev = ["pytest>=8.2", "pytest-cov>=5", "ruff>=0.6", "mypy>=1.11", "types-PyYAML>=6.0"]
 
@@ -72,5 +77,12 @@ packages = ["p12_recovery"]
 warn_unused_ignores = false
 
 [[tool.mypy.overrides]]
-module = ["scipy.*", "pandas.*", "matplotlib.*", "networkx.*", "pytket.*"]
+module = [
+  "scipy.*",
+  "pandas.*",
+  "matplotlib.*",
+  "networkx.*",
+  "pytket.*",
+  "qnexus.*",
+]
 ignore_missing_imports = true

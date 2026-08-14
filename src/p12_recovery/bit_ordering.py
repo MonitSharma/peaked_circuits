@@ -38,12 +38,22 @@ def _classical_raw_positions(
     return {classical: position for position, classical in enumerate(flattened)}
 
 
+def classical_raw_positions(
+    register_layout: list[dict[str, Any]], sdk_string_order: str
+) -> dict[int, int]:
+    return _classical_raw_positions(register_layout, sdk_string_order)
+
+
 def build_measurement_mapping(
     *,
     logical_to_classical: dict[int, int],
     sdk_string_order: str,
     register_layout: list[dict[str, Any]],
     logical_to_physical: dict[int, int] | None = None,
+    logical_to_compiled_name: dict[int, str] | None = None,
+    logical_to_compiled_index: dict[int, int | None] | None = None,
+    mapping_source: str = "explicit_logical_to_classical",
+    mapping_confidence: str = "high",
 ) -> MeasurementMapping:
     number = len(logical_to_classical)
     if set(logical_to_classical) != set(range(number)):
@@ -55,13 +65,23 @@ def build_measurement_mapping(
         raise ValueError("Measurement mapping references missing classical bits")
     if logical_to_physical is not None and set(logical_to_physical) != set(range(number)):
         raise ValueError("Logical-to-physical mapping is incomplete")
+    classical_registers: dict[int, str] = {}
+    for register in register_layout:
+        for classical in register["classical_indices"]:
+            classical_registers[classical] = str(register.get("name", "unnamed"))
     entries = [
         MeasurementEntry(
             logical_qubit_index=logical,
+            logical_qubit_name=f"q[{logical}]",
+            compiled_qubit_name=(logical_to_compiled_name or {}).get(logical, f"q[{logical}]"),
+            compiled_qubit_index=(logical_to_compiled_index or {}).get(logical, logical),
             physical_qubit_index=(logical_to_physical or {}).get(logical),
+            classical_register_name=classical_registers[classical],
             classical_bit_index=classical,
-            raw_string_position=raw_positions[classical],
-            canonical_string_position=logical,
+            raw_provider_position=raw_positions[classical],
+            canonical_position=logical,
+            mapping_source=mapping_source,
+            mapping_confidence=mapping_confidence,  # type: ignore[arg-type]
         )
         for logical, classical in sorted(logical_to_classical.items())
     ]
@@ -108,3 +128,29 @@ def canonical_to_raw_bitstring(canonical: str, mapping: MeasurementMapping) -> s
     for entry in mapping.entries:
         raw[entry.raw_string_position] = canonical[entry.canonical_string_position]
     return "".join(raw)
+
+
+def provider_value_to_raw_string(value: Any) -> str:
+    """Convert provider strings or flat binary arrays without changing order."""
+    if isinstance(value, str):
+        return _bits(value)
+    if isinstance(value, (list, tuple)):
+        if any(item not in (0, 1, "0", "1") for item in value):
+            raise ValueError("Provider arrays must contain only binary values")
+        return "".join(str(item) for item in value)
+    raise ValueError(f"Unsupported provider result value: {type(value).__name__}")
+
+
+def raw_value_to_canonical(value: Any, mapping: MeasurementMapping) -> str:
+    raw = provider_value_to_raw_string(value)
+    raw_length = sum(len(r["classical_indices"]) for r in mapping.register_layout)
+    if len(raw) != raw_length:
+        raise ValueError(
+            f"Provider output width {len(raw)} does not match layout width {raw_length}"
+        )
+    result = ["?"] * mapping.number_of_qubits
+    for entry in mapping.entries:
+        result[entry.canonical_position] = raw[entry.raw_provider_position]
+    if "?" in result or len(result) != mapping.number_of_qubits:
+        raise ValueError("Measurement mapping is incomplete")
+    return "".join(result)

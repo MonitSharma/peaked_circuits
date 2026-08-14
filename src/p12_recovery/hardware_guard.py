@@ -32,5 +32,5 @@ def assert_hardware_submission_allowed(
     if not interactive_confirmed:
         reasons.append("interactive confirmation has not been completed")
     # Even a fully armed call remains unavailable in this milestone.
-    reasons.append("Milestone 1 has no functioning hardware submission command")
+    reasons.append("Milestone 3 has no paid hardware execution implementation")
     raise HardwareSubmissionBlocked("Hardware submission blocked: " + "; ".join(reasons))

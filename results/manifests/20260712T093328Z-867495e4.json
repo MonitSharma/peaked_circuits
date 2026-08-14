@@ -1,0 +1,58 @@
+{
+  "architecture": "arm64",
+  "arguments": [
+    "export-qir"
+  ],
+  "backend_mode": "local_qir_export",
+  "command": "export-qir",
+  "configuration_hash": null,
+  "configuration_path": null,
+  "created_at": "2026-07-12T09:33:34.680274Z",
+  "credentials_detected": false,
+  "dirty_working_tree": true,
+  "end_timestamp": "2026-07-12T09:33:34.568896Z",
+  "exit_status": 0,
+  "git_commit": "444ce77e79dbf18ab6d2906c6c7708d99904e1b9",
+  "git_dirty": true,
+  "hardware_execution_attempted": false,
+  "input_hashes": {
+    "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
+  },
+  "input_paths": {
+    "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
+  },
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "output_paths": {
+    "results/qir/p12.bc": "c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d",
+    "results/qir/p12.ll": "c003298ea5c57f963f7f9bf5ca4c94a38fc76db10582a5cc859c621ad358c820",
+    "results/qir/qir_export_report.json": "729f4e0b19c6dcd53ce50e3139e9e6a2c7af38348cd847a6ac5c3aee20c21ec7",
+    "results/qir/qir_export_report.md": "ef854815e2042c4aad7272118ef0b81ec3269ef11b64b402af5fa17a389f211c",
+    "results/qir/qir_manifest.json": "6e895840010e5ca2eb2d5c87c2f28edb231c24e886de2ca0ab05e567be72fd9c",
+    "results/qir/qir_output_mapping.json": "5f1b9f16a145d65df524f47a9b9e808d625c8063a3cce4e115714aa84af40c60"
+  },
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.1",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "2.3.3",
+    "pydantic": "2.13.4",
+    "pyqir": "0.12.5",
+    "pytket": "2.18.1",
+    "pytket-qir": "2.0.0",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.1",
+    "qiskit": null,
+    "qnexus": "0.46.0",
+    "rich": "13.9.4",
+    "scipy": "1.18.0",
+    "typer": "0.26.8"
+  },
+  "paid_resources_consumed": false,
+  "python_version": "3.13.7",
+  "random_seed": null,
+  "run_id": "20260712T093328Z-867495e4",
+  "schema_version": "1.0",
+  "start_timestamp": "2026-07-12T09:33:28.894733Z"
+}

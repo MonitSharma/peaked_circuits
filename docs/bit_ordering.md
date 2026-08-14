@@ -13,3 +13,7 @@ With registers `a=[c0,c1]` and `b=[c2,c3,c4]`, an MSB-left provider may display 
 Logical-to-physical routing and physical-to-classical measurement are composed into the machine-readable
 `MeasurementMapping`; neither decimal qubit labels nor string positions are inferred lexically.
 
+Milestone 2 records logical and compiled names, optional physical index, classical register/bit, raw
+provider position, canonical position, mapping source, and confidence. Renamed or multiple registers
+and scratch bits are allowed only with explicit provider ordering. Arrays are consumed in returned
+order and are never silently reversed.

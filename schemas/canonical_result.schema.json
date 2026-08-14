@@ -1,0 +1,159 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "all_outputs_length_98": {
+      "title": "All Outputs Length 98",
+      "type": "boolean"
+    },
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "canonical_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Canonical Counts",
+      "type": "object"
+    },
+    "canonical_shots": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Canonical Shots",
+      "type": "array"
+    },
+    "canonicalized_shots": {
+      "title": "Canonicalized Shots",
+      "type": "integer"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "conversion_warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Conversion Warnings",
+      "type": "array"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "job_id": {
+      "title": "Job Id",
+      "type": "string"
+    },
+    "measurement_mapping_hash": {
+      "title": "Measurement Mapping Hash",
+      "type": "string"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "rejected_records": {
+      "default": 0,
+      "title": "Rejected Records",
+      "type": "integer"
+    },
+    "rejection_reasons": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Rejection Reasons",
+      "type": "array"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_provider_result_hash": {
+      "title": "Source Provider Result Hash",
+      "type": "string"
+    }
+  },
+  "required": [
+    "job_id",
+    "source_provider_result_hash",
+    "measurement_mapping_hash",
+    "canonical_counts",
+    "canonicalized_shots",
+    "all_outputs_length_98"
+  ],
+  "title": "CanonicalResult",
+  "type": "object"
+}
