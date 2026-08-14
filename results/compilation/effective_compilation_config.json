@@ -1,0 +1,10 @@
+{
+  "allow_implicit_swaps": false,
+  "device_name": null,
+  "device_name_source": null,
+  "optimization_level": 1,
+  "preserve_qubit_names": true,
+  "seed": 12345,
+  "target_2qb_gate": null,
+  "timeout_seconds": 1800
+}

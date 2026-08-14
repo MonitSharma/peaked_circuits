@@ -2,13 +2,14 @@
   "architecture": "arm64",
   "circuit_id": "peaked_circuit_P12_Hqap_98x2457",
   "configuration_hash": null,
-  "created_at": "2026-07-12T04:48:20.013630Z",
+  "created_at": "2026-07-12T05:39:57.222479Z",
   "file_size_bytes": 649544,
-  "git_commit": null,
+  "git_commit": "08cd2b40f5a711f2af2d623482a02786df859f93",
+  "git_dirty": true,
   "input_hashes": {
     "data/classically-verifiable-problems/circuit-models.json": "2736db0cae7b81a552d701ba08b81b79c00c335b8af24317bf15e0be63b6dc62"
   },
-  "local_path": "/Users/monitsharma/Documents/quantum_advantage_tracker/p12-helios-recovery/circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm",
+  "local_path": "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm",
   "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
   "package_versions": {
     "PyYAML": "6.0.3",
@@ -28,7 +29,7 @@
   },
   "python_version": "3.13.7",
   "random_seed": null,
-  "retrieval_timestamp_utc": "2026-07-12T04:48:19.989188Z",
+  "retrieval_timestamp_utc": "2026-07-12T05:39:57.197821Z",
   "schema_version": "1.0",
   "sha256": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d",
   "source_commit_sha": "066cf2372574c2471bbb7fdfdd2344748db164d9",

@@ -4,7 +4,7 @@
   "circuit_name": "peaked_circuit_P12_Hqap_98x2457",
   "classical_registers": [],
   "configuration_hash": null,
-  "created_at": "2026-07-12T04:52:20.484107Z",
+  "created_at": "2026-07-12T05:39:59.980772Z",
   "depth_definition": "ASAP scheduling over relevant operations; 1q/2q depth ignore operations of other arities",
   "gates": {
     "barriers": 0,
@@ -24,10 +24,11 @@
     "two_qubit_gates": 2457,
     "unsupported_instructions": []
   },
-  "git_commit": null,
+  "git_commit": "08cd2b40f5a711f2af2d623482a02786df859f93",
+  "git_dirty": true,
   "has_symbolic_parameters": false,
   "input_hashes": {
-    "/Users/monitsharma/Documents/quantum_advantage_tracker/p12-helios-recovery/circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
+    "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
   },
   "interaction_graph": {
     "active_nodes": 98,
@@ -247,7 +248,7 @@
   "random_seed": null,
   "schema_version": "1.0",
   "source_contains_measurements": false,
-  "source_path": "/Users/monitsharma/Documents/quantum_advantage_tracker/p12-helios-recovery/circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm",
+  "source_path": "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm",
   "source_sha256": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d",
   "symbolic_parameter_count": 0,
   "unmeasured_qubits": [

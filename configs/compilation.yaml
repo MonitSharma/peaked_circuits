@@ -1,17 +1,23 @@
-schema_version: "1.0"
+schema_version: "2.0"
 source_circuit: circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm
 backend:
   provider: quantinuum
+  api_surface: auto
   device_name: null
   mode: compile_only
+  require_live_metadata: true
 compiler:
   optimization_level: 1
   timeout_seconds: 1800
+  preserve_qubit_names: true
+  allow_implicit_swaps: false
+  target_2qb_gate: null
   seed: 12345
 measurement:
   append_measure_all: true
   canonical_order: logical_q0_to_q97_left_to_right
+  require_exactly_98_outputs: true
 output:
   directory: results/compilation
   export_qasm: true
-
+  export_provider_payload: true

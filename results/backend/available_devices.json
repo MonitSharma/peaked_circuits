@@ -1,0 +1,1390 @@
+{
+  "architecture": "arm64",
+  "authenticated_access": true,
+  "configuration_hash": null,
+  "created_at": "2026-07-12T08:52:24.206532Z",
+  "devices": [
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": 4000,
+      "credentials_detected": true,
+      "device_name": "H2-2E",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "batching": true,
+          "connectivity": "all-to-all",
+          "max_classical_register_width": 63,
+          "max_n_shots": 10000,
+          "n_gate_zones": "4",
+          "n_qubits_stb": 56,
+          "n_qubits_sv": 36,
+          "noise_specs": {
+            "1q_fault_probability": {
+              "p1": 7.3e-05
+            },
+            "2q_fault_probability": {
+              "p2": 0.00129
+            },
+            "bit_flip_measurement_probability": {
+              "p_meas_0": 0.0009,
+              "p_meas_1": 0.0018
+            },
+            "coherent_to_incoherent_factor": 2.0,
+            "crosstalk_probability": {
+              "p_crosstalk_init": 9.6e-06,
+              "p_crosstalk_meas": 8.8e-06
+            },
+            "dephasing_rates": {
+              "linear_dephasing_rate": 0.0028,
+              "quadratic_dephasing_rate": 0.043
+            },
+            "fit_parameters": {
+              "przz_a": 1.518,
+              "przz_b": 0.241,
+              "przz_c": 1.518,
+              "przz_d": 0.241,
+              "przz_power": 1.0
+            },
+            "init_fault_probability": {
+              "p_init": 4e-05
+            },
+            "ratio_spontaneous_emission": {
+              "p1_emission_ratio": 0.32,
+              "p2_emission_ratio": 0.59
+            }
+          },
+          "supported_languages": [
+            "OPENQASM 2.0",
+            "QIR 1.0"
+          ],
+          "system_type": "emulator",
+          "wasm": true
+        },
+        "nexus_hosted": false,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 56,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "emulator",
+      "target_type_source": "BackendInfo.misc.system_type"
+    },
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": 4000,
+      "credentials_detected": true,
+      "device_name": "H2-1E",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "batching": true,
+          "connectivity": "all-to-all",
+          "max_classical_register_width": 63,
+          "max_n_shots": 10000,
+          "n_gate_zones": "4",
+          "n_qubits_stb": 56,
+          "n_qubits_sv": 32,
+          "noise_specs": {
+            "1q_fault_probability": {
+              "p1": 1.89e-05
+            },
+            "2q_fault_probability": {
+              "p2": 0.00105
+            },
+            "bit_flip_measurement_probability": {
+              "p_meas_0": 0.0006,
+              "p_meas_1": 0.00139
+            },
+            "coherent_to_incoherent_factor": 2.0,
+            "crosstalk_probability": {
+              "p_crosstalk_init": 3.3e-06,
+              "p_crosstalk_meas": 3.3e-06
+            },
+            "dephasing_rates": {
+              "linear_dephasing_rate": 0.0028,
+              "quadratic_dephasing_rate": 0.043
+            },
+            "fit_parameters": {
+              "przz_a": 1.518,
+              "przz_b": 0.241,
+              "przz_c": 1.518,
+              "przz_d": 0.241,
+              "przz_power": 1.0
+            },
+            "init_fault_probability": {
+              "p_init": 4e-05
+            },
+            "ratio_spontaneous_emission": {
+              "p1_emission_ratio": 0.54,
+              "p2_emission_ratio": 0.255
+            }
+          },
+          "supported_languages": [
+            "OPENQASM 2.0",
+            "QIR 1.0"
+          ],
+          "system_type": "emulator",
+          "wasm": true
+        },
+        "nexus_hosted": false,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 56,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "emulator",
+      "target_type_source": "BackendInfo.misc.system_type"
+    },
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": 4000,
+      "credentials_detected": true,
+      "device_name": "Helios-1SC",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": true,
+      "metadata_source": "live_api",
+      "notes": [
+        "Helios systems require qnexus.models.HeliosConfig(system_name=...), not the legacy QuantinuumConfig(device_name=...) submission path."
+      ],
+      "p12_compatible": true,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "connectivity": "all-to-all",
+          "max_classical_register_width": 63,
+          "max_n_shots": 10000,
+          "supported_languages": [
+            "OPENQASM 2.0",
+            "QIR 1.0",
+            "HUGR-LLVM 0.1",
+            "QIS 1.0"
+          ],
+          "system_type": "emulator",
+          "wasm": true
+        },
+        "nexus_hosted": false,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 98,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "syntax_checker",
+      "target_type_source": "authenticated_nexus_system_name"
+    },
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": 4000,
+      "credentials_detected": true,
+      "device_name": "H2-1SC",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "max_classical_register_width": 63,
+          "max_n_shots": 10000,
+          "supported_languages": [
+            "OPENQASM 2.0",
+            "QIR 1.0"
+          ],
+          "system_type": "syntax checker",
+          "wasm": true
+        },
+        "nexus_hosted": false,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 56,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "syntax checker",
+      "target_type_source": "BackendInfo.misc.system_type"
+    },
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": 4000,
+      "credentials_detected": true,
+      "device_name": "Helios-1E",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": true,
+      "metadata_source": "live_api",
+      "notes": [
+        "Helios systems require qnexus.models.HeliosConfig(system_name=...), not the legacy QuantinuumConfig(device_name=...) submission path."
+      ],
+      "p12_compatible": true,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "batching": true,
+          "connectivity": "all-to-all",
+          "max_classical_register_width": 63,
+          "max_n_shots": 10000,
+          "n_gate_zones": "5",
+          "n_qubits_stb": 20,
+          "n_qubits_sv": 20,
+          "supported_languages": [
+            "OPENQASM 2.0",
+            "QIR 1.0",
+            "HUGR-LLVM 0.1",
+            "QIS 1.0"
+          ],
+          "system_type": "emulator",
+          "wasm": true
+        },
+        "nexus_hosted": false,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 98,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "emulator",
+      "target_type_source": "authenticated_nexus_system_name"
+    },
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": 4000,
+      "credentials_detected": true,
+      "device_name": "H2-1",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "batching": true,
+          "benchmarks": {
+            "qv": {
+              "date": "2024-08-11",
+              "value": 2097152.0
+            }
+          },
+          "connectivity": "all-to-all",
+          "emulator": "H2-1E",
+          "max_classical_register_width": 63,
+          "max_n_shots": 10000,
+          "n_gate_zones": "4",
+          "noise_specs": {
+            "1q_gate_error": {
+              "p1": 1.89e-05,
+              "p1_unc": 4.23e-06
+            },
+            "2q_gate_error": {
+              "p2": 0.00105,
+              "p2_unc": 8.08e-05
+            },
+            "crosstalk_error": {
+              "p_crosstalk_meas": 6.65e-06,
+              "p_crosstalk_meas_unc": 8.98e-07
+            },
+            "date": "2025-04-30",
+            "memory_error": {
+              "memory_error": 0.000203,
+              "memory_error_unc": 2.34e-05
+            },
+            "spam_error": {
+              "p_meas_0": 0.0006,
+              "p_meas_0_unc": 8.16e-05,
+              "p_meas_1": 0.00139,
+              "p_meas_1_unc": 0.000124
+            }
+          },
+          "supported_languages": [
+            "OPENQASM 2.0",
+            "QIR 1.0"
+          ],
+          "syntax_checker": "H2-1SC",
+          "system_type": "hardware",
+          "wasm": true
+        },
+        "nexus_hosted": false,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 56,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "hardware",
+      "target_type_source": "BackendInfo.misc.system_type"
+    },
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": 4000,
+      "credentials_detected": true,
+      "device_name": "H2-2SC",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "max_classical_register_width": 63,
+          "max_n_shots": 10000,
+          "supported_languages": [
+            "OPENQASM 2.0",
+            "QIR 1.0"
+          ],
+          "system_type": "syntax checker",
+          "wasm": true
+        },
+        "nexus_hosted": false,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 56,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "syntax checker",
+      "target_type_source": "BackendInfo.misc.system_type"
+    },
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": 4000,
+      "credentials_detected": true,
+      "device_name": "H2-2",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "batching": true,
+          "benchmarks": {
+            "qv": {
+              "date": "2025-09-08",
+              "value": 33554432.0
+            }
+          },
+          "connectivity": "all-to-all",
+          "emulator": "H2-2E",
+          "max_classical_register_width": 63,
+          "max_n_shots": 10000,
+          "n_gate_zones": "4",
+          "noise_specs": {
+            "1q_gate_error": {
+              "p1": 2.8e-05,
+              "p1_unc": 3.6e-06
+            },
+            "2q_gate_error": {
+              "p2": 0.00083,
+              "p2_unc": 4.8e-05
+            },
+            "crosstalk_error": {
+              "p_crosstalk_meas": 2.2e-05,
+              "p_crosstalk_meas_unc": 5.3e-07
+            },
+            "date": "2025-08-28",
+            "memory_error": {
+              "memory_error": 0.00012,
+              "memory_error_unc": 2e-05
+            },
+            "spam_error": {
+              "p_meas_0": 0.00067,
+              "p_meas_0_unc": 8.7e-05,
+              "p_meas_1": 0.0012,
+              "p_meas_1_unc": 0.00011
+            }
+          },
+          "supported_languages": [
+            "OPENQASM 2.0",
+            "QIR 1.0"
+          ],
+          "syntax_checker": "H2-2SC",
+          "system_type": "hardware",
+          "wasm": true
+        },
+        "nexus_hosted": false,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 56,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "hardware",
+      "target_type_source": "BackendInfo.misc.system_type"
+    },
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": null,
+      "credentials_detected": true,
+      "device_name": "Helios-1",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": true,
+      "metadata_source": "live_api",
+      "notes": [
+        "Helios systems require qnexus.models.HeliosConfig(system_name=...), not the legacy QuantinuumConfig(device_name=...) submission path."
+      ],
+      "p12_compatible": true,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "batching": true,
+          "connectivity": "all-to-all",
+          "emulator": "Helios-1E",
+          "max_classical_register_width": 64,
+          "max_n_shots": 10000,
+          "n_gate_zones": "4",
+          "noise_specs": {
+            "1q_gate_error": {
+              "p1": 2.5e-05,
+              "p1_unc": 1e-06
+            },
+            "2q_gate_error": {
+              "p2": 0.00079,
+              "p2_unc": 2e-05
+            },
+            "crosstalk_error": {
+              "p_crosstalk_meas": 4.8e-05,
+              "p_crosstalk_meas_unc": 1e-06
+            },
+            "date": "2025-11-05",
+            "memory_error": {
+              "memory_error": 0.0006,
+              "memory_error_unc": 3e-05
+            },
+            "spam_error": {
+              "p_meas_0": 0.0008,
+              "p_meas_0_unc": 0.0001,
+              "p_meas_1": 0.00016,
+              "p_meas_1_unc": 5e-05
+            }
+          },
+          "supported_languages": [
+            "OPENQASM 2.0",
+            "QIR 1.0",
+            "HUGR-LLVM 0.1",
+            "QIS 1.0"
+          ],
+          "syntax_checker": "Helios-1SC",
+          "system_type": "hardware",
+          "wasm": true
+        },
+        "nexus_hosted": false,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 98,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "hardware",
+      "target_type_source": "authenticated_nexus_system_name"
+    },
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": 4000,
+      "credentials_detected": true,
+      "device_name": "H1-1LE",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "batching": false,
+          "n_shots": 10000,
+          "syntax_checker": "H1-1SC",
+          "system_type": "local_emulator",
+          "wasm": true
+        },
+        "nexus_hosted": true,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 20,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "local_emulator",
+      "target_type_source": "BackendInfo.misc.system_type"
+    },
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": 4000,
+      "credentials_detected": true,
+      "device_name": "H2-1LE",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "batching": false,
+          "n_shots": 10000,
+          "syntax_checker": "H2-1SC",
+          "system_type": "local_emulator",
+          "wasm": true
+        },
+        "nexus_hosted": true,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 26,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "local_emulator",
+      "target_type_source": "BackendInfo.misc.system_type"
+    },
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": 120,
+      "credentials_detected": true,
+      "device_name": "H1-Emulator",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "batching": true,
+          "n_shots": 10000,
+          "noise_specs": {
+            "1q_fault_probability": {
+              "p1": 2.1e-05
+            },
+            "2q_fault_probability": {
+              "p2": 0.00088
+            },
+            "bit_flip_measurement_probability": {
+              "p_meas_0": 0.001,
+              "p_meas_1": 0.004
+            },
+            "coherent_to_incoherent_factor": 2.5,
+            "crosstalk_probability": {
+              "p_crosstalk_init": 5.02e-06,
+              "p_crosstalk_meas": 1.45e-05
+            },
+            "date": "2024-06-04",
+            "dephasing_rates": {
+              "linear_dephasing_rate": 0.0,
+              "quadratic_dephasing_rate": 0.122
+            },
+            "fit_parameters": {
+              "przz_a": 1.651,
+              "przz_b": 0.175,
+              "przz_c": 1.651,
+              "przz_d": 0.175,
+              "przz_power": 1.0
+            },
+            "init_fault_probability": {
+              "p_init": 3.62e-05
+            },
+            "ratio_spontaneous_emission": {
+              "p1_emission_ratio": 0.54,
+              "p2_emission_ratio": 0.43
+            }
+          },
+          "system_type": "local_emulator",
+          "wasm": true
+        },
+        "nexus_hosted": true,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 20,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "local_emulator",
+      "target_type_source": "BackendInfo.misc.system_type"
+    },
+    {
+      "access_status": "listed_for_authenticated_nexus_account",
+      "available": true,
+      "backend_version": "0.55.6",
+      "classical_register_limit": 1000,
+      "credentials_detected": true,
+      "device_name": "H2-Emulator",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "nexus",
+      "provider_metadata": {
+        "api_surface": "nexus",
+        "backend_name": "Quantinuum",
+        "misc": {
+          "batching": true,
+          "n_shots": 10000,
+          "noise_specs": {
+            "1q_fault_probability": {
+              "p1": 2.9e-05
+            },
+            "2q_fault_probability": {
+              "p2": 0.00128
+            },
+            "bit_flip_measurement_probability": {
+              "p_meas_0": 0.0005,
+              "p_meas_1": 0.0025
+            },
+            "coherent_to_incoherent_factor": 2.0,
+            "crosstalk_probability": {
+              "p_crosstalk_init": 9.6e-06,
+              "p_crosstalk_meas": 7.4e-06
+            },
+            "date": "2024-06-04",
+            "dephasing_rates": {
+              "linear_dephasing_rate": 0.0028,
+              "quadratic_dephasing_rate": 0.043
+            },
+            "fit_parameters": {
+              "przz_a": 1.518,
+              "przz_b": 0.241,
+              "przz_c": 1.518,
+              "przz_d": 0.241,
+              "przz_power": 1.0
+            },
+            "init_fault_probability": {
+              "p_init": 4e-05
+            },
+            "ratio_spontaneous_emission": {
+              "p1_emission_ratio": 0.32,
+              "p2_emission_ratio": 0.48
+            }
+          },
+          "system_type": "local_emulator",
+          "wasm": true
+        },
+        "nexus_hosted": true,
+        "stored_backend_name": "EmulatorEnabledQuantinuumBackend",
+        "supports_fast_feedforward": true,
+        "supports_midcircuit_measurement": true,
+        "supports_reset": true
+      },
+      "qubit_capacity": 26,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "local_emulator",
+      "target_type_source": "BackendInfo.misc.system_type"
+    },
+    {
+      "access_status": "legacy_metadata_accessible_account_access_unverified",
+      "available": true,
+      "backend_version": "0.59.1",
+      "classical_register_limit": 4000,
+      "credentials_detected": false,
+      "device_name": "H1-1",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "legacy_pytket_quantinuum",
+      "provider_metadata": {
+        "batching": true,
+        "benchmarks": {
+          "qv": {
+            "date": "2024-04-04",
+            "value": 1048576.0
+          }
+        },
+        "connectivity": "all-to-all",
+        "emulator": "H1-1E",
+        "max_classical_register_width": 63,
+        "max_n_shots": 10000,
+        "n_gate_zones": "5",
+        "noise_specs": {
+          "1q_gate_error": {
+            "p1": 1.8e-05,
+            "p1_unc": 2.93e-06
+          },
+          "2q_gate_error": {
+            "p2": 0.000973,
+            "p2_unc": 6.23e-05
+          },
+          "crosstalk_error": {
+            "p_crosstalk_meas": 4.1e-05,
+            "p_crosstalk_meas_unc": 1.7e-06
+          },
+          "date": "2025-05-02",
+          "memory_error": {
+            "memory_error": 0.000222,
+            "memory_error_unc": 9.16e-05
+          },
+          "spam_error": {
+            "p_meas_0": 0.00122,
+            "p_meas_0_unc": 0.000105,
+            "p_meas_1": 0.00343,
+            "p_meas_1_unc": 0.000176
+          }
+        },
+        "supported_languages": [
+          "OPENQASM 2.0",
+          "QIR 1.0"
+        ],
+        "syntax_checker": "H1-1SC",
+        "system_type": "hardware",
+        "wasm": true
+      },
+      "qubit_capacity": 20,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "hardware",
+      "target_type_source": "BackendInfo.misc.system_type"
+    },
+    {
+      "access_status": "legacy_metadata_accessible_account_access_unverified",
+      "available": true,
+      "backend_version": "0.59.1",
+      "classical_register_limit": 4000,
+      "credentials_detected": false,
+      "device_name": "H2-1",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "legacy_pytket_quantinuum",
+      "provider_metadata": {
+        "batching": true,
+        "benchmarks": {
+          "qv": {
+            "date": "2024-08-11",
+            "value": 2097152.0
+          }
+        },
+        "connectivity": "all-to-all",
+        "emulator": "H2-1E",
+        "max_classical_register_width": 63,
+        "max_n_shots": 10000,
+        "n_gate_zones": "4",
+        "noise_specs": {
+          "1q_gate_error": {
+            "p1": 1.89e-05,
+            "p1_unc": 4.23e-06
+          },
+          "2q_gate_error": {
+            "p2": 0.00105,
+            "p2_unc": 8.08e-05
+          },
+          "crosstalk_error": {
+            "p_crosstalk_meas": 6.65e-06,
+            "p_crosstalk_meas_unc": 8.98e-07
+          },
+          "date": "2025-04-30",
+          "memory_error": {
+            "memory_error": 0.000203,
+            "memory_error_unc": 2.34e-05
+          },
+          "spam_error": {
+            "p_meas_0": 0.0006,
+            "p_meas_0_unc": 8.16e-05,
+            "p_meas_1": 0.00139,
+            "p_meas_1_unc": 0.000124
+          }
+        },
+        "supported_languages": [
+          "OPENQASM 2.0",
+          "QIR 1.0"
+        ],
+        "syntax_checker": "H2-1SC",
+        "system_type": "hardware",
+        "wasm": true
+      },
+      "qubit_capacity": 56,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "hardware",
+      "target_type_source": "BackendInfo.misc.system_type"
+    },
+    {
+      "access_status": "legacy_metadata_accessible_account_access_unverified",
+      "available": true,
+      "backend_version": "0.59.1",
+      "classical_register_limit": 4000,
+      "credentials_detected": false,
+      "device_name": "H2-2",
+      "gate_set": [
+        "Barrier",
+        "ClExpr",
+        "CopyBits",
+        "ExplicitModifier",
+        "ExplicitPredicate",
+        "JobShotNum",
+        "Measure",
+        "MultiBit",
+        "PhasedX",
+        "RNGBound",
+        "RNGIndex",
+        "RNGNum",
+        "RNGSeed",
+        "RangePredicate",
+        "Reset",
+        "Rz",
+        "SetBits",
+        "TK2",
+        "WASM",
+        "ZZMax",
+        "ZZPhase"
+      ],
+      "has_at_least_98_qubits": false,
+      "metadata_source": "live_api",
+      "notes": [],
+      "p12_compatible": false,
+      "provider": "quantinuum",
+      "provider_api": "legacy_pytket_quantinuum",
+      "provider_metadata": {
+        "batching": true,
+        "benchmarks": {
+          "qv": {
+            "date": "2025-09-08",
+            "value": 33554432.0
+          }
+        },
+        "connectivity": "all-to-all",
+        "emulator": "H2-2E",
+        "max_classical_register_width": 63,
+        "max_n_shots": 10000,
+        "n_gate_zones": "4",
+        "noise_specs": {
+          "1q_gate_error": {
+            "p1": 2.8e-05,
+            "p1_unc": 3.6e-06
+          },
+          "2q_gate_error": {
+            "p2": 0.00083,
+            "p2_unc": 4.8e-05
+          },
+          "crosstalk_error": {
+            "p_crosstalk_meas": 2.2e-05,
+            "p_crosstalk_meas_unc": 5.3e-07
+          },
+          "date": "2025-08-28",
+          "memory_error": {
+            "memory_error": 0.00012,
+            "memory_error_unc": 2e-05
+          },
+          "spam_error": {
+            "p_meas_0": 0.00067,
+            "p_meas_0_unc": 8.7e-05,
+            "p_meas_1": 0.0012,
+            "p_meas_1_unc": 0.00011
+          }
+        },
+        "supported_languages": [
+          "OPENQASM 2.0",
+          "QIR 1.0"
+        ],
+        "syntax_checker": "H2-2SC",
+        "system_type": "hardware",
+        "wasm": true
+      },
+      "qubit_capacity": 56,
+      "sdk_versions": {
+        "pytket": "2.18.1",
+        "pytket-quantinuum": "0.59.1",
+        "qnexus": "0.46.0"
+      },
+      "target_type": "hardware",
+      "target_type_source": "BackendInfo.misc.system_type"
+    }
+  ],
+  "diagnostics": [],
+  "discovery_surfaces": {
+    "legacy_pytket_quantinuum": "success_access_unverified",
+    "nexus": "success"
+  },
+  "git_commit": "08cd2b40f5a711f2af2d623482a02786df859f93",
+  "git_dirty": true,
+  "input_hashes": {},
+  "live_api_access": true,
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "package_versions": {
+    "pytket": "2.18.1",
+    "pytket-quantinuum": "0.59.1",
+    "qnexus": "0.46.0"
+  },
+  "python_version": "3.13.7",
+  "random_seed": null,
+  "schema_version": "1.0",
+  "status": "success"
+}

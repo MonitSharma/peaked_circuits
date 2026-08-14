@@ -1,0 +1,54 @@
+{
+  "architecture": "arm64",
+  "arguments": [
+    "synthetic",
+    "--config",
+    "configs/synthetic.yaml"
+  ],
+  "backend_mode": "offline",
+  "command": "synthetic",
+  "configuration_hash": "95e3bdaab0dd41c50b2349c1fd51250b050138269ab1cc4731db0e0e54871d23",
+  "configuration_path": "configs/synthetic.yaml",
+  "created_at": "2026-07-12T05:46:54.255806Z",
+  "credentials_detected": false,
+  "dirty_working_tree": true,
+  "end_timestamp": "2026-07-12T05:46:54.211614Z",
+  "exit_status": 0,
+  "git_commit": "08cd2b40f5a711f2af2d623482a02786df859f93",
+  "git_dirty": true,
+  "hardware_execution_attempted": false,
+  "input_hashes": {
+    "configs/synthetic.yaml": "95e3bdaab0dd41c50b2349c1fd51250b050138269ab1cc4731db0e0e54871d23"
+  },
+  "input_paths": {
+    "configs/synthetic.yaml": "95e3bdaab0dd41c50b2349c1fd51250b050138269ab1cc4731db0e0e54871d23"
+  },
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "output_paths": {
+    "results/synthetic/synthetic_report.json": "649b719f7cb8ebf388cbb6b07915cb2703fc0dc91e01c8341856ac1e7c480718",
+    "results/synthetic/synthetic_report.md": "0e494d3b34b91031a1709d1e833249e5779d83011bae13f009f1f8b3ee7bac26",
+    "results/synthetic/synthetic_summary.csv": "540ba37cf8bf9ed1b3c73d61293f8bc406acb1b7f6819cbecc216da619e210d3"
+  },
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.1",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "3.0.3",
+    "pydantic": "2.13.4",
+    "pytket": "2.18.1",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.1",
+    "qiskit": null,
+    "rich": "15.0.0",
+    "scipy": "1.18.0",
+    "typer": "0.26.8"
+  },
+  "paid_resources_consumed": false,
+  "python_version": "3.13.7",
+  "random_seed": 12345,
+  "run_id": "20260712T054644Z-a1546fab",
+  "schema_version": "1.0",
+  "start_timestamp": "2026-07-12T05:46:44.131457Z"
+}

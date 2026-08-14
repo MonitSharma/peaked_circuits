@@ -1,0 +1,6 @@
+{
+  "canonical_order": "logical_q0_to_q97_left_to_right",
+  "case_name": "q0",
+  "expected_canonical_string": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "provider_result_position": null
+}

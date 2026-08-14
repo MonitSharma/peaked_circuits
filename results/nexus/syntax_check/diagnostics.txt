@@ -1,0 +1,1 @@
+Nexus syntax check blocked: working tree has uncommitted code changes since artifact generation

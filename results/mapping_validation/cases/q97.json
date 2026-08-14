@@ -1,0 +1,10 @@
+{
+  "canonical_output": null,
+  "case_name": "q97",
+  "compiled_circuit_hash": null,
+  "mapping_correct": null,
+  "prepared_circuit_hash": "ae0b59c2cf8e1a6dcde454144f8e057c33f33a723edc3d5f1bb3d623ace14854",
+  "prepared_logical_string": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+  "raw_provider_output": null,
+  "status": "prepared"
+}

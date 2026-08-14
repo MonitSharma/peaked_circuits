@@ -1,59 +1,86 @@
 {
   "architecture": "arm64",
   "backend": {
+    "access_status": "not_tested",
     "available": true,
+    "backend_version": null,
+    "classical_register_limit": null,
     "credentials_detected": false,
     "device_name": null,
+    "gate_set": [],
+    "has_at_least_98_qubits": false,
+    "metadata_source": "offline",
     "notes": [
-      "Target classification is name-based until backend metadata is available",
-      "Detected get_compiled_circuit signature: (self, circuit: pytket._tket.circuit.Circuit, optimisation_level: int = 2, timeout: int = 300) -> pytket._tket.circuit.Circuit",
-      "Generic compiler seed is recorded but the detected compile method does not accept it"
+      "Run `p12-recovery devices` to obtain live metadata"
     ],
+    "p12_compatible": false,
     "provider": "quantinuum",
+    "provider_metadata": {},
+    "qubit_capacity": null,
     "sdk_versions": {
       "pytket": "2.18.1",
       "pytket-quantinuum": "0.59.1"
     },
-    "target_type": "unknown"
+    "target_type": "unknown",
+    "target_type_source": "metadata_not_loaded"
   },
   "compiled": null,
   "configuration": {
     "backend": {
       "device_name": null,
       "mode": "compile_only",
-      "provider": "quantinuum"
+      "provider": "quantinuum",
+      "require_live_metadata": true
     },
     "compiler": {
+      "allow_implicit_swaps": false,
       "optimization_level": 1,
+      "preserve_qubit_names": true,
       "seed": 12345,
+      "target_2qb_gate": null,
       "timeout_seconds": 1800
     },
     "measurement": {
       "append_measure_all": true,
-      "canonical_order": "logical_q0_to_q97_left_to_right"
+      "canonical_order": "logical_q0_to_q97_left_to_right",
+      "require_exactly_98_outputs": true
     },
     "output": {
       "directory": "results/compilation",
+      "export_provider_payload": true,
       "export_qasm": true
     },
-    "schema_version": "1.0",
+    "schema_version": "2.0",
     "source_circuit": "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm"
   },
-  "configuration_hash": "cd0a77bc0178b25c6896e5eae1809e668ebd7ccb24342e69f8f435b523fb4ac5",
-  "created_at": "2026-07-12T04:54:19.409142Z",
-  "end_timestamp": "2026-07-12T04:54:19.397357Z",
+  "configuration_hash": "b5e8321bba342e0e2f5a1e9a89e49316af1b65db005b33ef01f6be94a50c5702",
+  "created_at": "2026-07-12T05:46:59.805674Z",
+  "effective_compilation_config": {
+    "allow_implicit_swaps": false,
+    "device_name": null,
+    "device_name_source": null,
+    "optimization_level": 1,
+    "preserve_qubit_names": true,
+    "seed": 12345,
+    "target_2qb_gate": null,
+    "timeout_seconds": 1800
+  },
+  "end_timestamp": "2026-07-12T05:46:59.789284Z",
   "failure": {
     "exception_type": "RuntimeError",
-    "sanitized_message": "No target device configured; compilation is environment-limited",
+    "sanitized_message": "RuntimeError: No exact discovered target configured",
     "stage": "target_configuration",
-    "suggested_next_step": "Configure a currently available Quantinuum target, then rerun compile-only validation."
+    "suggested_next_step": "Run devices, choose an exact compatible target, and retry compile-only validation."
   },
-  "git_commit": null,
+  "git_commit": "08cd2b40f5a711f2af2d623482a02786df859f93",
+  "git_dirty": true,
   "input_hashes": {
-    "/Users/monitsharma/Documents/quantum_advantage_tracker/p12-helios-recovery/circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
+    "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
   },
+  "mapping_complete": false,
   "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
   "original": {
+    "frozen_source_hash": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d",
     "gate_counts": {
       "cz": 2457,
       "u": 9828
@@ -91,8 +118,9 @@
   "python_version": "3.13.7",
   "random_seed": 12345,
   "schema_version": "1.0",
-  "start_timestamp": "2026-07-12T04:54:19.397280Z",
+  "start_timestamp": "2026-07-12T05:46:59.788660Z",
   "status": "blocked",
+  "unknown_permutation_count": 98,
   "validation": null,
-  "wall_clock_seconds": 5.545800013351254e-05
+  "wall_clock_seconds": 0.0005893750021641608
 }

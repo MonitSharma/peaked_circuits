@@ -36,4 +36,4 @@ def test_every_required_blocking_condition() -> None:
     assert "readiness" in call(readiness_passed=False)
     assert "compile-only" in call(device_is_physical=True, backend_mode="compile_only")
     assert "interactive" in call(interactive_confirmed=False)
-    assert "no functioning" in call()  # default tests can never submit either
+    assert "no paid hardware execution" in call()  # default tests can never submit either
