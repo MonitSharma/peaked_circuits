@@ -1,0 +1,14 @@
+# CPU MPO + unswapping environment.
+#
+# The launcher loads the solver source from vendor/peaked-mpo-solver (or from
+# --solver-root); the solver is intentionally not installed as a package here.
+# These versions are the validated upstream numerical stack. They are suitable
+# for the server's Python 3.12 environment and keep CPU results reproducible.
+cotengra==0.7.5
+numba==0.65.0
+numpy==2.2.6
+qiskit==1.4.5
+qiskit-quimb==0.0.10
+quimb==1.11.2
+rich>=13.7
+scipy==1.15.3

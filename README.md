@@ -37,6 +37,24 @@ p12-recovery build-report
 Or run `make milestone-1`. Compilation produces a structured blocked report when no configured
 Quantinuum target or required access is available. Hardware execution is not a CLI command.
 
+## CPU simulation
+
+The project includes a launcher for the public MPO + unswapping CPU solver used in [QAT issue #153](https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io/issues/153).
+The recommended starting point is macOS, using the reproducible setup and P9
+benchmark in [docs/mac_mpo_workflow.md](docs/mac_mpo_workflow.md):
+
+```bash
+bash scripts/setup_mac.sh
+source .venv-mpo-mac/bin/activate
+bash scripts/benchmark_p9_mac.sh
+```
+
+The setup installs the main development environment plus compile-only quantum
+SDKs; it does not submit hardware jobs or consume HQCs.
+
+The launcher never submits hardware work. Server-specific installation and
+bounded P12 trial commands are in [docs/cpu_mpo_simulation.md](docs/cpu_mpo_simulation.md).
+
 ## Canonical bit order
 
 A canonical candidate has 98 characters. Position `i` is logical qubit `q[i]`: `q[0]` is the
