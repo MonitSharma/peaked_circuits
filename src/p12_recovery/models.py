@@ -505,6 +505,8 @@ class NexusSyntaxCheckJob(ReportBase):
     completion_timestamp: datetime | None = None
     final_status: str
     submitted_qir_sha256: str
+    text_qir_sha256: str | None = None
+    bitcode_sha256: str | None = None
     source_qasm_sha256: str
     reported_cost_hqcs: float | None = None
     hqcs_used: Literal[False] = False
@@ -517,6 +519,8 @@ class NexusSyntaxCheckReport(ReportBase):
     target: str
     target_classification: str
     qir_sha256: str
+    text_qir_sha256: str | None = None
+    bitcode_sha256: str | None = None
     source_qasm_sha256: str
     project_ref: str | None = None
     qir_artifact_ref: str | None = None
@@ -558,6 +562,98 @@ class CostEstimateReport(ReportBase):
     manual_action_required: bool = False
 
 
+class NexusCostItem(FrozenModel):
+    program_name: str
+    bitcode_sha256: str
+    target: Literal["Helios-1E"]
+    shots: int
+    estimated_hqcs: float
+    confidence: float
+    cost_job_ref: str | None = None
+    provider_timestamp: datetime = Field(default_factory=utc_now)
+    api_used: str = "qnexus.qir.cost_confidence"
+    remote_costing_job_created: Literal[True] = True
+
+
+class NexusCostReport(ReportBase):
+    schema_version: str = "1.0"
+    status: Literal["supported", "failed"]
+    target: str
+    items: list[NexusCostItem] = Field(default_factory=list)
+    api_used: str
+    remote_costing_job_created: bool
+    cost_job_reference_available_from_api: bool = False
+    diagnostics: list[str] = Field(default_factory=list)
+
+
+class RawProviderResultReport(ReportBase):
+    schema_version: str = "1.0"
+    target: str
+    case_name: str
+    job_ref: str
+    result_ref: str
+    result_type: str
+    raw_payload: Any
+    raw_payload_sha256: str
+    requested_shots: int
+    returned_shots: int
+    reported_cost_hqcs: float | None = None
+
+
+class ProviderOutputMappingReport(ReportBase):
+    schema_version: str = "1.0"
+    provider_result_order_verified: bool
+    emulator_mapping_validation_passed: bool
+    resolved_positions: int
+    unresolved_positions: int
+    provider_layout: list[str]
+    entries: list[dict[str, Any]]
+    case_reports: dict[str, Any]
+
+
+class EmulatorMappingAggregateReport(ReportBase):
+    schema_version: str = "1.0"
+    status: Literal["passed", "failed", "incomplete"]
+    target: str
+    ordered_cases: list[str]
+    case_statuses: dict[str, Any]
+    provider_result_order_verified: bool = False
+    emulator_mapping_validation_passed: bool = False
+    resolved_positions: int = 0
+    unresolved_positions: int = 98
+    max_cost_per_job: float
+    shots_per_case: int
+
+
+class EmulatorAuthorizationEvidence(ReportBase):
+    schema_version: str = "1.0"
+    target: str
+    target_classification: str
+    execute_emulator_flag: bool
+    environment_authorized: bool
+    authenticated_discovery: bool
+    cost_evidence_exists: bool
+    max_cost: float
+    interactive_confirmed: bool
+    physical_hardware_forbidden: Literal[True] = True
+
+
+class P12EmulatorPilotReport(ReportBase):
+    schema_version: str = "1.0"
+    status: Literal["passed", "failed", "blocked", "not_run"]
+    target: str
+    shots: int
+    max_cost: float
+    job_ref: str | None = None
+    final_status: str | None = None
+    failure_stage: str | None = None
+    diagnostics: list[str] = Field(default_factory=list)
+    simulator_configuration: dict[str, Any] = Field(default_factory=dict)
+    reported_cost_hqcs: float | None = None
+    normalized_width: int | None = None
+    hidden_target_scored: Literal[False] = False
+
+
 class ProtocolFreezeRecord(ReportBase):
     status: Literal["frozen"]
     protocol_hash: str
@@ -573,6 +669,9 @@ class ReadinessState(StrEnum):
     READY_FOR_QIR_EXPORT = "READY_FOR_QIR_EXPORT"
     READY_FOR_SYNTAX_CHECK = "READY_FOR_SYNTAX_CHECK"
     READY_FOR_EMULATOR_MAPPING_VALIDATION = "READY_FOR_EMULATOR_MAPPING_VALIDATION"
+    EMULATOR_MAPPING_VALIDATED = "EMULATOR_MAPPING_VALIDATED"
+    READY_FOR_P12_EMULATOR_PILOT = "READY_FOR_P12_EMULATOR_PILOT"
+    P12_EMULATOR_PILOT_COMPLETE = "P12_EMULATOR_PILOT_COMPLETE"
 
 
 class ReadinessEvidence(FrozenModel):

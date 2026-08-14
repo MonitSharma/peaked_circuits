@@ -17,3 +17,9 @@ qubits/results, and contains the locally expected logical measurement pairs. A s
 `Helios-1SC` result would add provider-syntax evidence only. Neither determines the order in which a
 future emulator result is displayed, so `provider_result_position` remains unresolved until real
 `Helios-1E` mapping results are imported in a later milestone.
+
+Milestone 4 supplied those observations. Nexus QIR output is labeled, and raw order follows each
+program's declared output calls; it is not one universal identity or reversal across programs. The
+six deterministic cases establish faithful normalization only. They do not measure P12 accuracy,
+emulator fidelity, hardware performance, or quantum advantage. Stable emulator candidates and
+bootstrap stability are not correctness and are not Tracker scores.

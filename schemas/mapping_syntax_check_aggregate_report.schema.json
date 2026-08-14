@@ -10,9 +10,7 @@
       "type": "string"
     },
     "case_statuses": {
-      "additionalProperties": {
-        "type": "string"
-      },
+      "additionalProperties": true,
       "title": "Case Statuses",
       "type": "object"
     },

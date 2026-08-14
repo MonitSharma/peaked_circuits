@@ -63,3 +63,9 @@ uses no hardware HQCs and stores only sanitized project, artifact, and job ident
 Local completion reaches `READY_FOR_SYNTAX_CHECK`. Successful mapping and P12 syntax checks can reach
 `READY_FOR_EMULATOR_MAPPING_VALIDATION`. Milestone 3 has no hardware readiness state. Provider output
 order and emulator mapping validation remain deliberately false.
+
+## Milestone 4 handoff
+
+The separately guarded Milestone 4 workflow has now crossed this historical ceiling. P12 passed
+`Helios-1SC`, and real `Helios-1E` evidence resolved all provider labels. See `docs/milestone_4.md`;
+none of that later evidence changes what syntax checking itself proves.

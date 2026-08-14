@@ -158,6 +158,18 @@ p12-recovery nexus-syntax-check --target Helios-1SC --qir results/qir/p12.ll --s
 Do not substitute `Helios-1E` or `Helios-1`; the guard refuses both. See
 [docs/milestone_3.md](docs/milestone_3.md).
 
+Milestone 4 adds a separate cost-capped emulator boundary:
+
+```bash
+p12-recovery nexus-cost --target Helios-1E --mapping-cases --shots 3
+export P12_ENABLE_HELIOS_EMULATOR=1
+p12-recovery emulator-mapping-check --target Helios-1E --shots 3 --max-cost 6.0 --execute-emulator
+```
+
+Six jobs resolved all 98 labeled Nexus positions. `Helios-1` remains impossible through these
+commands. The optional `p12-emulator-pilot` is capped at 20 shots and remains unrun. See
+[docs/milestone_4.md](docs/milestone_4.md).
+
 ## Recovery and reproducibility
 
 The primary method is bitwise majority. Most-frequent observation, weighted observed medoid, and
@@ -178,10 +190,10 @@ artifact-producing CLI operation writes a run manifest.
 
 ## Hardware safety
 
-Credentials alone can never trigger submission. The central guard checks the CLI flag, two explicit
-environment values, interactive confirmation, target mode, and readiness—and then still blocks,
-because Milestone 2 deliberately contains no functioning submission implementation. Never store
-credentials in this repository.
+Credentials alone can never trigger submission. Syntax, emulator, and future hardware work have
+separate guards. Emulator execution requires exact target discovery, cost evidence, a positive
+per-job ceiling, environment authorization, a CLI flag, and confirmation. Never store credentials
+in this repository.
 
 ## Limitations
 

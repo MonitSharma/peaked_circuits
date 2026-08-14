@@ -1,0 +1,156 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "case_name": {
+      "title": "Case Name",
+      "type": "string"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "job_ref": {
+      "title": "Job Ref",
+      "type": "string"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "raw_payload": {
+      "title": "Raw Payload"
+    },
+    "raw_payload_sha256": {
+      "title": "Raw Payload Sha256",
+      "type": "string"
+    },
+    "reported_cost_hqcs": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reported Cost Hqcs"
+    },
+    "requested_shots": {
+      "title": "Requested Shots",
+      "type": "integer"
+    },
+    "result_ref": {
+      "title": "Result Ref",
+      "type": "string"
+    },
+    "result_type": {
+      "title": "Result Type",
+      "type": "string"
+    },
+    "returned_shots": {
+      "title": "Returned Shots",
+      "type": "integer"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "target": {
+      "title": "Target",
+      "type": "string"
+    }
+  },
+  "required": [
+    "target",
+    "case_name",
+    "job_ref",
+    "result_ref",
+    "result_type",
+    "raw_payload",
+    "raw_payload_sha256",
+    "requested_shots",
+    "returned_shots"
+  ],
+  "title": "RawProviderResultReport",
+  "type": "object"
+}

@@ -22,7 +22,13 @@ data/hardware/*
 !data/hardware/.gitkeep
 data/provider_raw/*
 !data/provider_raw/.gitkeep
+!data/provider_raw/mapping/
+!data/provider_raw/mapping/**
+!data/provider_raw/p12_emulator/
+!data/provider_raw/p12_emulator/**
 data/canonical/*
 !data/canonical/.gitkeep
+!data/canonical/p12_emulator/
+!data/canonical/p12_emulator/**
 results/jobs/*
 !results/jobs/.gitkeep

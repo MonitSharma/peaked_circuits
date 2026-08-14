@@ -1,0 +1,2112 @@
+{
+  "bitcode_sha256": "02906680da43531844e0c0633a04829932c12d29bc24246a8193031469a29ba6",
+  "canonical_output": "10000001000000000000000000000001000000000000000000000000000000001000000000000000000000000000000001",
+  "expected_output": "10000001000000000000000000000001000000000000000000000000000000001000000000000000000000000000000001",
+  "final_status": "COMPLETED",
+  "inconsistent_fields": [],
+  "job_ref": "c45e451a-aece-4d33-b6a6-08f8e6317889",
+  "max_cost": 6.0,
+  "minimum_majority_fraction": 1.0,
+  "output_width": 98,
+  "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
+  "provider_structure": {
+    "headers": [
+      [
+        "schema_id",
+        "labeled"
+      ],
+      [
+        "schema_version",
+        "2.1"
+      ]
+    ],
+    "metadata": [
+      [
+        "entry_point"
+      ],
+      [
+        "qir_profiles",
+        "custom"
+      ],
+      [
+        "required_num_qubits",
+        "98"
+      ],
+      [
+        "required_num_results",
+        "98"
+      ]
+    ],
+    "raw_type": "QIRResult",
+    "shot_count": 3,
+    "values": [
+      {
+        "bit_value": 0,
+        "provider_index": 0,
+        "provider_name": "m001[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[7]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 1,
+        "provider_name": "m002[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[8]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 2,
+        "provider_name": "m003[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[9]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 3,
+        "provider_name": "m004[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[10]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 4,
+        "provider_name": "m005[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[11]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 5,
+        "provider_name": "m006[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[12]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 6,
+        "provider_name": "m008[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[13]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 7,
+        "provider_name": "m009[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[14]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 8,
+        "provider_name": "m010[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[15]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 9,
+        "provider_name": "m011[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[16]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 10,
+        "provider_name": "m012[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[17]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 11,
+        "provider_name": "m013[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[18]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 12,
+        "provider_name": "m014[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[19]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 13,
+        "provider_name": "m015[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[20]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 14,
+        "provider_name": "m016[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[21]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 15,
+        "provider_name": "m017[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[22]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 16,
+        "provider_name": "m018[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[23]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 17,
+        "provider_name": "m019[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[24]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 18,
+        "provider_name": "m020[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[25]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 19,
+        "provider_name": "m021[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[26]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 20,
+        "provider_name": "m022[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[27]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 21,
+        "provider_name": "m023[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[28]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 22,
+        "provider_name": "m024[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[29]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 23,
+        "provider_name": "m025[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[30]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 24,
+        "provider_name": "m026[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[31]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 25,
+        "provider_name": "m027[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[32]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 26,
+        "provider_name": "m028[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[33]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 27,
+        "provider_name": "m029[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[34]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 28,
+        "provider_name": "m030[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[35]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 29,
+        "provider_name": "m032[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[36]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 30,
+        "provider_name": "m033[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[37]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 31,
+        "provider_name": "m034[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[38]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 32,
+        "provider_name": "m035[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[39]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 33,
+        "provider_name": "m036[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[40]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 34,
+        "provider_name": "m037[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[41]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 35,
+        "provider_name": "m038[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[42]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 36,
+        "provider_name": "m039[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[43]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 37,
+        "provider_name": "m040[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[44]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 38,
+        "provider_name": "m041[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[45]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 39,
+        "provider_name": "m042[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[46]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 40,
+        "provider_name": "m043[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[47]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 41,
+        "provider_name": "m044[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[48]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 42,
+        "provider_name": "m045[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[49]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 43,
+        "provider_name": "m046[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[50]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 44,
+        "provider_name": "m047[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[51]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 45,
+        "provider_name": "m048[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[52]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 46,
+        "provider_name": "m049[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[53]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 47,
+        "provider_name": "m050[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[54]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 48,
+        "provider_name": "m051[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[55]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 49,
+        "provider_name": "m052[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[56]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 50,
+        "provider_name": "m053[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[57]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 51,
+        "provider_name": "m054[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[58]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 52,
+        "provider_name": "m055[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[59]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 53,
+        "provider_name": "m056[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[60]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 54,
+        "provider_name": "m057[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[61]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 55,
+        "provider_name": "m058[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[62]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 56,
+        "provider_name": "m059[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[63]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 57,
+        "provider_name": "m060[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[64]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 58,
+        "provider_name": "m061[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[65]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 59,
+        "provider_name": "m062[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[66]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 60,
+        "provider_name": "m063[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[67]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 61,
+        "provider_name": "m065[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[68]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 62,
+        "provider_name": "m066[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[69]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 63,
+        "provider_name": "m067[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[70]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 64,
+        "provider_name": "m068[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[71]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 65,
+        "provider_name": "m069[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[72]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 66,
+        "provider_name": "m070[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[73]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 67,
+        "provider_name": "m071[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[74]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 68,
+        "provider_name": "m072[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[75]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 69,
+        "provider_name": "m073[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[76]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 70,
+        "provider_name": "m074[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[77]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 71,
+        "provider_name": "m075[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[78]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 72,
+        "provider_name": "m076[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[79]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 73,
+        "provider_name": "m077[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[80]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 74,
+        "provider_name": "m078[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[81]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 75,
+        "provider_name": "m079[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[82]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 76,
+        "provider_name": "m080[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[83]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 77,
+        "provider_name": "m081[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[84]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 78,
+        "provider_name": "m082[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[85]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 79,
+        "provider_name": "m083[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[86]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 80,
+        "provider_name": "m084[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[87]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 81,
+        "provider_name": "m085[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[88]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 82,
+        "provider_name": "m086[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[89]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 83,
+        "provider_name": "m087[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[90]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 84,
+        "provider_name": "m088[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[91]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 85,
+        "provider_name": "m089[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[92]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 86,
+        "provider_name": "m090[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[93]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 87,
+        "provider_name": "m091[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[94]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 88,
+        "provider_name": "m092[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[95]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 89,
+        "provider_name": "m093[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[96]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 90,
+        "provider_name": "m094[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[97]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 91,
+        "provider_name": "m095[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[98]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 92,
+        "provider_name": "m096[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[99]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 93,
+        "provider_name": "m000[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[100]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 94,
+        "provider_name": "m007[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[101]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 95,
+        "provider_name": "m031[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[102]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 96,
+        "provider_name": "m064[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[103]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 97,
+        "provider_name": "m097[0]",
+        "shot_index": 0,
+        "source_path": "results.lines[104]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 0,
+        "provider_name": "m001[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[107]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 1,
+        "provider_name": "m002[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[108]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 2,
+        "provider_name": "m003[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[109]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 3,
+        "provider_name": "m004[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[110]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 4,
+        "provider_name": "m005[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[111]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 5,
+        "provider_name": "m006[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[112]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 6,
+        "provider_name": "m008[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[113]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 7,
+        "provider_name": "m009[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[114]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 8,
+        "provider_name": "m010[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[115]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 9,
+        "provider_name": "m011[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[116]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 10,
+        "provider_name": "m012[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[117]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 11,
+        "provider_name": "m013[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[118]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 12,
+        "provider_name": "m014[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[119]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 13,
+        "provider_name": "m015[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[120]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 14,
+        "provider_name": "m016[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[121]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 15,
+        "provider_name": "m017[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[122]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 16,
+        "provider_name": "m018[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[123]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 17,
+        "provider_name": "m019[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[124]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 18,
+        "provider_name": "m020[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[125]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 19,
+        "provider_name": "m021[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[126]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 20,
+        "provider_name": "m022[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[127]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 21,
+        "provider_name": "m023[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[128]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 22,
+        "provider_name": "m024[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[129]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 23,
+        "provider_name": "m025[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[130]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 24,
+        "provider_name": "m026[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[131]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 25,
+        "provider_name": "m027[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[132]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 26,
+        "provider_name": "m028[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[133]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 27,
+        "provider_name": "m029[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[134]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 28,
+        "provider_name": "m030[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[135]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 29,
+        "provider_name": "m032[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[136]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 30,
+        "provider_name": "m033[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[137]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 31,
+        "provider_name": "m034[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[138]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 32,
+        "provider_name": "m035[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[139]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 33,
+        "provider_name": "m036[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[140]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 34,
+        "provider_name": "m037[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[141]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 35,
+        "provider_name": "m038[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[142]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 36,
+        "provider_name": "m039[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[143]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 37,
+        "provider_name": "m040[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[144]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 38,
+        "provider_name": "m041[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[145]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 39,
+        "provider_name": "m042[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[146]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 40,
+        "provider_name": "m043[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[147]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 41,
+        "provider_name": "m044[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[148]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 42,
+        "provider_name": "m045[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[149]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 43,
+        "provider_name": "m046[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[150]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 44,
+        "provider_name": "m047[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[151]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 45,
+        "provider_name": "m048[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[152]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 46,
+        "provider_name": "m049[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[153]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 47,
+        "provider_name": "m050[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[154]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 48,
+        "provider_name": "m051[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[155]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 49,
+        "provider_name": "m052[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[156]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 50,
+        "provider_name": "m053[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[157]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 51,
+        "provider_name": "m054[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[158]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 52,
+        "provider_name": "m055[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[159]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 53,
+        "provider_name": "m056[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[160]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 54,
+        "provider_name": "m057[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[161]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 55,
+        "provider_name": "m058[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[162]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 56,
+        "provider_name": "m059[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[163]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 57,
+        "provider_name": "m060[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[164]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 58,
+        "provider_name": "m061[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[165]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 59,
+        "provider_name": "m062[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[166]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 60,
+        "provider_name": "m063[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[167]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 61,
+        "provider_name": "m065[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[168]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 62,
+        "provider_name": "m066[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[169]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 63,
+        "provider_name": "m067[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[170]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 64,
+        "provider_name": "m068[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[171]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 65,
+        "provider_name": "m069[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[172]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 66,
+        "provider_name": "m070[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[173]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 67,
+        "provider_name": "m071[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[174]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 68,
+        "provider_name": "m072[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[175]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 69,
+        "provider_name": "m073[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[176]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 70,
+        "provider_name": "m074[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[177]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 71,
+        "provider_name": "m075[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[178]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 72,
+        "provider_name": "m076[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[179]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 73,
+        "provider_name": "m077[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[180]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 74,
+        "provider_name": "m078[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[181]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 75,
+        "provider_name": "m079[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[182]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 76,
+        "provider_name": "m080[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[183]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 77,
+        "provider_name": "m081[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[184]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 78,
+        "provider_name": "m082[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[185]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 79,
+        "provider_name": "m083[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[186]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 80,
+        "provider_name": "m084[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[187]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 81,
+        "provider_name": "m085[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[188]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 82,
+        "provider_name": "m086[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[189]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 83,
+        "provider_name": "m087[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[190]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 84,
+        "provider_name": "m088[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[191]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 85,
+        "provider_name": "m089[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[192]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 86,
+        "provider_name": "m090[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[193]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 87,
+        "provider_name": "m091[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[194]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 88,
+        "provider_name": "m092[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[195]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 89,
+        "provider_name": "m093[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[196]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 90,
+        "provider_name": "m094[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[197]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 91,
+        "provider_name": "m095[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[198]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 92,
+        "provider_name": "m096[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[199]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 93,
+        "provider_name": "m000[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[200]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 94,
+        "provider_name": "m007[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[201]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 95,
+        "provider_name": "m031[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[202]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 96,
+        "provider_name": "m064[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[203]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 97,
+        "provider_name": "m097[0]",
+        "shot_index": 1,
+        "source_path": "results.lines[204]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 0,
+        "provider_name": "m001[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[207]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 1,
+        "provider_name": "m002[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[208]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 2,
+        "provider_name": "m003[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[209]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 3,
+        "provider_name": "m004[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[210]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 4,
+        "provider_name": "m005[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[211]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 5,
+        "provider_name": "m006[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[212]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 6,
+        "provider_name": "m008[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[213]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 7,
+        "provider_name": "m009[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[214]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 8,
+        "provider_name": "m010[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[215]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 9,
+        "provider_name": "m011[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[216]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 10,
+        "provider_name": "m012[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[217]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 11,
+        "provider_name": "m013[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[218]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 12,
+        "provider_name": "m014[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[219]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 13,
+        "provider_name": "m015[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[220]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 14,
+        "provider_name": "m016[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[221]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 15,
+        "provider_name": "m017[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[222]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 16,
+        "provider_name": "m018[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[223]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 17,
+        "provider_name": "m019[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[224]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 18,
+        "provider_name": "m020[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[225]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 19,
+        "provider_name": "m021[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[226]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 20,
+        "provider_name": "m022[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[227]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 21,
+        "provider_name": "m023[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[228]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 22,
+        "provider_name": "m024[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[229]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 23,
+        "provider_name": "m025[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[230]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 24,
+        "provider_name": "m026[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[231]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 25,
+        "provider_name": "m027[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[232]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 26,
+        "provider_name": "m028[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[233]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 27,
+        "provider_name": "m029[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[234]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 28,
+        "provider_name": "m030[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[235]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 29,
+        "provider_name": "m032[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[236]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 30,
+        "provider_name": "m033[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[237]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 31,
+        "provider_name": "m034[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[238]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 32,
+        "provider_name": "m035[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[239]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 33,
+        "provider_name": "m036[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[240]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 34,
+        "provider_name": "m037[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[241]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 35,
+        "provider_name": "m038[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[242]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 36,
+        "provider_name": "m039[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[243]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 37,
+        "provider_name": "m040[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[244]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 38,
+        "provider_name": "m041[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[245]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 39,
+        "provider_name": "m042[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[246]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 40,
+        "provider_name": "m043[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[247]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 41,
+        "provider_name": "m044[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[248]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 42,
+        "provider_name": "m045[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[249]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 43,
+        "provider_name": "m046[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[250]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 44,
+        "provider_name": "m047[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[251]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 45,
+        "provider_name": "m048[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[252]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 46,
+        "provider_name": "m049[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[253]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 47,
+        "provider_name": "m050[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[254]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 48,
+        "provider_name": "m051[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[255]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 49,
+        "provider_name": "m052[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[256]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 50,
+        "provider_name": "m053[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[257]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 51,
+        "provider_name": "m054[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[258]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 52,
+        "provider_name": "m055[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[259]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 53,
+        "provider_name": "m056[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[260]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 54,
+        "provider_name": "m057[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[261]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 55,
+        "provider_name": "m058[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[262]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 56,
+        "provider_name": "m059[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[263]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 57,
+        "provider_name": "m060[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[264]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 58,
+        "provider_name": "m061[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[265]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 59,
+        "provider_name": "m062[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[266]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 60,
+        "provider_name": "m063[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[267]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 61,
+        "provider_name": "m065[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[268]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 62,
+        "provider_name": "m066[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[269]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 63,
+        "provider_name": "m067[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[270]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 64,
+        "provider_name": "m068[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[271]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 65,
+        "provider_name": "m069[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[272]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 66,
+        "provider_name": "m070[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[273]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 67,
+        "provider_name": "m071[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[274]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 68,
+        "provider_name": "m072[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[275]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 69,
+        "provider_name": "m073[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[276]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 70,
+        "provider_name": "m074[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[277]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 71,
+        "provider_name": "m075[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[278]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 72,
+        "provider_name": "m076[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[279]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 73,
+        "provider_name": "m077[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[280]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 74,
+        "provider_name": "m078[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[281]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 75,
+        "provider_name": "m079[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[282]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 76,
+        "provider_name": "m080[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[283]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 77,
+        "provider_name": "m081[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[284]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 78,
+        "provider_name": "m082[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[285]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 79,
+        "provider_name": "m083[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[286]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 80,
+        "provider_name": "m084[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[287]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 81,
+        "provider_name": "m085[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[288]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 82,
+        "provider_name": "m086[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[289]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 83,
+        "provider_name": "m087[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[290]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 84,
+        "provider_name": "m088[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[291]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 85,
+        "provider_name": "m089[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[292]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 86,
+        "provider_name": "m090[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[293]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 87,
+        "provider_name": "m091[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[294]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 88,
+        "provider_name": "m092[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[295]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 89,
+        "provider_name": "m093[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[296]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 90,
+        "provider_name": "m094[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[297]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 91,
+        "provider_name": "m095[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[298]"
+      },
+      {
+        "bit_value": 0,
+        "provider_index": 92,
+        "provider_name": "m096[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[299]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 93,
+        "provider_name": "m000[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[300]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 94,
+        "provider_name": "m007[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[301]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 95,
+        "provider_name": "m031[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[302]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 96,
+        "provider_name": "m064[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[303]"
+      },
+      {
+        "bit_value": 1,
+        "provider_index": 97,
+        "provider_name": "m097[0]",
+        "shot_index": 2,
+        "source_path": "results.lines[304]"
+      }
+    ]
+  },
+  "qir_artifact_ref": "89a586e9-f4ba-4798-b5d5-1697d92fec51",
+  "raw_payload_sha256": "75fefd93c99c7d2d913f1130b8f5f3f1415fc2064188f322b28878d394bae6a4",
+  "reported_cost_hqcs": 5.59,
+  "shots": 3,
+  "shots_requested": 3,
+  "shots_returned": 3,
+  "status": "passed",
+  "submitted_at": "2026-07-12T13:43:52.480193+00:00",
+  "target": "Helios-1E"
+}

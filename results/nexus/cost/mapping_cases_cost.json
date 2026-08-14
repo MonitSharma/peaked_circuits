@@ -1,0 +1,120 @@
+{
+  "api_used": "qnexus.qir.cost_confidence",
+  "architecture": "arm64",
+  "configuration_hash": null,
+  "cost_job_reference_available_from_api": false,
+  "created_at": "2026-07-12T13:40:54.616739Z",
+  "diagnostics": [
+    "qnexus 0.46 cost_confidence creates a remote costing job but returns only (estimate, confidence) tuples; its job reference is not exposed by this API."
+  ],
+  "git_commit": "c80f72c53d5a183ccc6dfead4296a497534dd789",
+  "git_dirty": true,
+  "input_hashes": {
+    "results/qir/mapping_cases/all_zeros/circuit.bc": "f091b3815514059a3d49a701bf7ad5702a44ccae3cfcc563a866481672bf2d86",
+    "results/qir/mapping_cases/alternating_q0_one/circuit.bc": "93255f1658f6f6dbd5a8d1c2e58aac9a0445b66fe430a365f3e8a28277a92d7b",
+    "results/qir/mapping_cases/non_palindromic_blocks/circuit.bc": "9955983d933d2da9d54365ec4fe58ef3196d34e6cfb5d9ae3a77805aa08cacab",
+    "results/qir/mapping_cases/q0/circuit.bc": "4cc3c194877b916ebae4fb7f4adceddfc6eed9b4ad22cffc2a1ab32c5f37a3d3",
+    "results/qir/mapping_cases/q0_q7_q31_q64_q97/circuit.bc": "02906680da43531844e0c0633a04829932c12d29bc24246a8193031469a29ba6",
+    "results/qir/mapping_cases/q97/circuit.bc": "ff2b394602b288024c4cf5da8baca3b3369979d9a702ad06db1d5fe702668396"
+  },
+  "items": [
+    {
+      "api_used": "qnexus.qir.cost_confidence",
+      "bitcode_sha256": "f091b3815514059a3d49a701bf7ad5702a44ccae3cfcc563a866481672bf2d86",
+      "confidence": 95.0,
+      "cost_job_ref": null,
+      "estimated_hqcs": 6.0,
+      "program_name": "all_zeros",
+      "provider_timestamp": "2026-07-12T13:40:54.592312Z",
+      "remote_costing_job_created": true,
+      "shots": 3,
+      "target": "Helios-1E"
+    },
+    {
+      "api_used": "qnexus.qir.cost_confidence",
+      "bitcode_sha256": "4cc3c194877b916ebae4fb7f4adceddfc6eed9b4ad22cffc2a1ab32c5f37a3d3",
+      "confidence": 95.0,
+      "cost_job_ref": null,
+      "estimated_hqcs": 6.0,
+      "program_name": "q0",
+      "provider_timestamp": "2026-07-12T13:40:54.592312Z",
+      "remote_costing_job_created": true,
+      "shots": 3,
+      "target": "Helios-1E"
+    },
+    {
+      "api_used": "qnexus.qir.cost_confidence",
+      "bitcode_sha256": "ff2b394602b288024c4cf5da8baca3b3369979d9a702ad06db1d5fe702668396",
+      "confidence": 95.0,
+      "cost_job_ref": null,
+      "estimated_hqcs": 6.0,
+      "program_name": "q97",
+      "provider_timestamp": "2026-07-12T13:40:54.592312Z",
+      "remote_costing_job_created": true,
+      "shots": 3,
+      "target": "Helios-1E"
+    },
+    {
+      "api_used": "qnexus.qir.cost_confidence",
+      "bitcode_sha256": "02906680da43531844e0c0633a04829932c12d29bc24246a8193031469a29ba6",
+      "confidence": 95.0,
+      "cost_job_ref": null,
+      "estimated_hqcs": 6.0,
+      "program_name": "q0_q7_q31_q64_q97",
+      "provider_timestamp": "2026-07-12T13:40:54.592312Z",
+      "remote_costing_job_created": true,
+      "shots": 3,
+      "target": "Helios-1E"
+    },
+    {
+      "api_used": "qnexus.qir.cost_confidence",
+      "bitcode_sha256": "9955983d933d2da9d54365ec4fe58ef3196d34e6cfb5d9ae3a77805aa08cacab",
+      "confidence": 95.0,
+      "cost_job_ref": null,
+      "estimated_hqcs": 6.0,
+      "program_name": "non_palindromic_blocks",
+      "provider_timestamp": "2026-07-12T13:40:54.592312Z",
+      "remote_costing_job_created": true,
+      "shots": 3,
+      "target": "Helios-1E"
+    },
+    {
+      "api_used": "qnexus.qir.cost_confidence",
+      "bitcode_sha256": "93255f1658f6f6dbd5a8d1c2e58aac9a0445b66fe430a365f3e8a28277a92d7b",
+      "confidence": 95.0,
+      "cost_job_ref": null,
+      "estimated_hqcs": 6.0,
+      "program_name": "alternating_q0_one",
+      "provider_timestamp": "2026-07-12T13:40:54.592312Z",
+      "remote_costing_job_created": true,
+      "shots": 3,
+      "target": "Helios-1E"
+    }
+  ],
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.1",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "2.3.3",
+    "pydantic": "2.13.4",
+    "pyqir": "0.12.5",
+    "pytket": "2.18.1",
+    "pytket-qir": "2.0.0",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.1",
+    "qiskit": null,
+    "qnexus": "0.46.0",
+    "rich": "13.9.4",
+    "scipy": "1.18.0",
+    "typer": "0.26.8"
+  },
+  "python_version": "3.13.7",
+  "random_seed": null,
+  "remote_costing_job_created": true,
+  "schema_version": "1.0",
+  "status": "supported",
+  "target": "Helios-1E"
+}

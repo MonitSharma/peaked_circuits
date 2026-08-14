@@ -207,6 +207,8 @@ def submit_validated_syntax_check(
         completion_timestamp=completed,
         final_status=final_status,
         submitted_qir_sha256=export.qir_bitcode_sha256,
+        text_qir_sha256=export.qir_sha256,
+        bitcode_sha256=export.qir_bitcode_sha256,
         source_qasm_sha256=export.source_qasm_sha256,
         reported_cost_hqcs=float(reported_cost) if reported_cost is not None else None,
         package_versions=package_versions(),
@@ -228,6 +230,8 @@ def submit_validated_syntax_check(
         target="Helios-1SC",
         target_classification="syntax_checker",
         qir_sha256=export.qir_bitcode_sha256,
+        text_qir_sha256=export.qir_sha256,
+        bitcode_sha256=export.qir_bitcode_sha256,
         source_qasm_sha256=export.source_qasm_sha256,
         project_ref=_safe_ref(project),
         qir_artifact_ref=_safe_ref(qir_ref),
@@ -243,11 +247,22 @@ def submit_validated_syntax_check(
         "# Nexus Helios-1SC syntax check\n\n"
         f"Status: **{report.status}**  \n"
         f"Target: `{report.target}` (`{report.target_classification}`)  \n"
-        f"Submitted bitcode SHA-256: `{report.qir_sha256}`  \n"
+        f"Text QIR SHA-256: `{report.text_qir_sha256}`  \n"
+        f"Submitted bitcode SHA-256: `{report.bitcode_sha256}`  \n"
         f"Reported prospective cost: `{report.reported_cost_hqcs}` HQC  \n"
         "HQCs used: **false**. Emulator/hardware execution: **false**.\n"
     )
     return report
+
+
+def update_mapping_aggregate_with_p12(root: Path, status: str) -> None:
+    """Record the P12 syntax outcome without changing mapping-case evidence."""
+    path = root / "results/nexus/syntax_check/mapping_cases_report.json"
+    if not path.is_file():
+        return
+    aggregate = MappingSyntaxCheckAggregateReport.model_validate_json(path.read_text())
+    updated = aggregate.model_copy(update={"p12_qir_syntax_check": status})
+    write_json(path, updated)
 
 
 def submit_mapping_syntax_checks(

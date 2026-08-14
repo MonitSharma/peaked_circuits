@@ -1,0 +1,21 @@
+{
+  "bitcode_sha256": "c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d",
+  "final_status": "ERROR",
+  "hidden_target_scored": false,
+  "job_name": "p12-pilot-20260712T152155",
+  "job_ref": "606ec69a-c94a-4a11-a088-32c988453336",
+  "max_cost": 13.0,
+  "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
+  "reported_cost_hqcs": 0.0,
+  "shots": 1,
+  "simulator_configuration": {
+    "backend": "auto",
+    "chi": null,
+    "diagnosis": "Unbounded auto MPS selected a CuTensorNet path that rejected RZZ.",
+    "historical_configuration": true,
+    "precision": 32,
+    "type": "MatrixProductStateSimulator",
+    "zero_threshold": null
+  },
+  "target": "Helios-1E"
+}

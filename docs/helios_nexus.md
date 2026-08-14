@@ -72,3 +72,16 @@ bitcode. The syntax checker is configured with `HeliosConfig(system_name="Helios
 does not require `max_cost` for an `SC` target. A later emulator milestone must retrieve provider
 register metadata and resolve provider output order. Treating Helios as a legacy
 `QuantinuumBackend("Helios-1")` remains blocked.
+
+## Current Helios-1E emulator shape
+
+Current Nexus rejects a Helios emulator job without `emulator_config`. The deterministic 98-qubit
+mapping programs use `HeliosEmulatorConfig(n_qubits=98)` with
+`MatrixProductStateSimulator()` and `NoErrorModel()`. The execute call separately supplies
+`n_qubits=[98]` and `max_cost=[...]`. MPS fits this zero-entanglement layout workload, while the ideal
+error model prevents fidelity noise from obscuring the ordering experiment. This configuration does
+not authorize physical `Helios-1`.
+
+For the entangling P12 pilot, the MPS simulator is bounded with `backend="auto"`, `chi=128`, and
+`zero_threshold=0.01`. The bound may truncate entanglement and therefore cannot support fidelity or
+accuracy claims. It exists only to test the blinded provider-to-canonical pipeline.

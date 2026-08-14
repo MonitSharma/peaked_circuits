@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Annotated, cast
 
 import typer
+import yaml
 from pydantic import BaseModel
 from rich.console import Console
 
@@ -28,6 +29,10 @@ from .config import load_model
 from .constants import DEFAULT_QASM
 from .cost_estimation import estimate_costs
 from .counts_io import load_aggregated_counts
+from .emulator_guard import (
+    HeliosEmulatorExecutionBlocked,
+    assert_helios_emulator_execution_allowed,
+)
 from .hashing import read_sha256sums, sha256_file
 from .mapping_validation import run_mapping_validation
 from .models import (
@@ -36,27 +41,42 @@ from .models import (
     CircuitInspectionReport,
     CompilationReport,
     CostEstimateReport,
+    EmulatorAuthorizationEvidence,
+    EmulatorMappingAggregateReport,
     MappingSyntaxCheckAggregateReport,
     MappingValidationReport,
     MeasurementMapping,
+    NexusCostReport,
     NexusSyntaxCheckConfig,
     NexusSyntaxCheckJob,
     NexusSyntaxCheckReport,
+    P12EmulatorPilotReport,
     ProtocolFreezeRecord,
+    ProviderOutputMappingReport,
     ProviderRawResult,
     PublicAuditReport,
     QIRExportReport,
     QIRMappingCasesReport,
     QIROutputMapping,
     QIRValidationReport,
+    RawProviderResultReport,
     ReadinessEvidenceReport,
     RecoveryReport,
     RunManifest,
     SyntheticExperimentConfig,
 )
+from .nexus_cost import (
+    estimate_nexus_qir_costs,
+    mapping_cost_programs,
+    p12_cost_program,
+    write_nexus_cost_report,
+)
+from .nexus_emulator import execute_mapping_cases, execute_p12_pilot
 from .nexus_syntax_check import (
+    MAPPING_CASE_ORDER,
     submit_mapping_syntax_checks,
     submit_validated_syntax_check,
+    update_mapping_aggregate_with_p12,
     write_blocked_syntax_report,
     write_failed_syntax_report,
 )
@@ -579,6 +599,7 @@ def nexus_syntax_check_command(
         path.startswith(generated_prefixes) for path in dirty_paths
     )
     actual_hash = sha256_file(qir_path) if qir_path.is_file() else ""
+
     def authorize(confirmed: bool) -> None:
         assert_nexus_syntax_check_allowed(
             submit_syntax_check=submit_syntax_check,
@@ -639,6 +660,7 @@ def nexus_syntax_check_command(
                 export=export,
                 project_name=project_name,
                 timeout_seconds=timeout,
+                output_directory=root / "results/nexus/syntax_check/p12",
             )
         except Exception as exc:
             diagnostic = sanitize_diagnostic(exc)
@@ -648,6 +670,7 @@ def nexus_syntax_check_command(
                 source_hash=export.source_qasm_sha256,
                 diagnostic=diagnostic,
             )
+        update_mapping_aggregate_with_p12(root, syntax_result.status)
         console.print(f"P12 syntax check: {syntax_result.status}")
         exit_status = 0 if syntax_result.status == "passed" else 1
     write_manifest(
@@ -686,6 +709,249 @@ def estimate_cost(
         backend_mode="cost_estimation_only",
     )
     console.print(f"Cost estimation status: {report.status}")
+
+
+@app.command(name="nexus-cost")
+def nexus_cost_command(
+    target: Annotated[str, typer.Option("--target")] = "Helios-1E",
+    qir: Annotated[Path | None, typer.Option("--qir")] = None,
+    artifact: Annotated[Path | None, typer.Option("--artifact")] = None,
+    mapping_cases: Annotated[bool, typer.Option("--mapping-cases")] = False,
+    shots: Annotated[str, typer.Option("--shots")] = "1",
+) -> None:
+    """Create provider-supported QIR cost-confidence evidence for Helios-1E."""
+    root, start = _root(), datetime.now(UTC)
+    if target != "Helios-1E":
+        raise typer.BadParameter("Cost evidence is restricted to exact target Helios-1E")
+    discovery = discover_quantinuum_report()
+    descriptor = next(
+        (
+            device
+            for device in discovery.devices
+            if device.provider_api == "nexus" and device.device_name == target
+        ),
+        None,
+    )
+    if (
+        not discovery.authenticated_access
+        or descriptor is None
+        or descriptor.target_type != "emulator"
+    ):
+        raise typer.BadParameter(
+            "Authenticated Nexus discovery must classify Helios-1E as emulator"
+        )
+    shot_values = [int(value.strip()) for value in shots.split(",") if value.strip()]
+    if mapping_cases:
+        if qir is not None or artifact is not None:
+            raise typer.BadParameter("--mapping-cases cannot be combined with --qir/--artifact")
+        programs = mapping_cost_programs(root)
+    else:
+        selected = qir or artifact or Path("results/qir/p12.ll")
+        selected = selected if selected.is_absolute() else root / selected
+        programs = p12_cost_program(root, selected)
+    report = estimate_nexus_qir_costs(root, target=target, programs=programs, shots=shot_values)
+    output = write_nexus_cost_report(root, report, mapping_cases=mapping_cases)
+    write_manifest(
+        root,
+        command="nexus-cost",
+        arguments=sys.argv[1:],
+        start=start,
+        exit_status=0 if report.status == "supported" else 1,
+        outputs=[output, root / "results/nexus/cost/cost_report.md"],
+        backend_mode="nexus_remote_costing_job",
+        credentials_detected=True,
+    )
+    console.print(f"Nexus cost evidence: {report.status} ({len(report.items)} estimates)")
+    if report.status != "supported":
+        raise typer.Exit(1)
+
+
+@app.command(name="emulator-mapping-check")
+def emulator_mapping_check_command(
+    target: Annotated[str, typer.Option("--target")] = "Helios-1E",
+    mapping_case: Annotated[str | None, typer.Option("--mapping-case")] = None,
+    shots: Annotated[int, typer.Option("--shots", min=1)] = 3,
+    max_cost: Annotated[float | None, typer.Option("--max-cost")] = None,
+    execute_emulator: Annotated[bool, typer.Option("--execute-emulator")] = False,
+    config: Annotated[Path, typer.Option("--config")] = Path(
+        "configs/helios_emulator_mapping.yaml"
+    ),
+) -> None:
+    """Cost-capped deterministic output-layout validation on Helios-1E only."""
+    root, start = _root(), datetime.now(UTC)
+    if mapping_case is not None and mapping_case not in MAPPING_CASE_ORDER:
+        raise typer.BadParameter(f"Unknown mapping case: {mapping_case}")
+    config_path = config if config.is_absolute() else root / config
+    settings = yaml.safe_load(config_path.read_text())
+    threshold = float(settings["mapping"]["minimum_majority_fraction"])
+    discovery = discover_quantinuum_report()
+    nexus_devices = [device for device in discovery.devices if device.provider_api == "nexus"]
+    descriptor = next((device for device in nexus_devices if device.device_name == target), None)
+    target_type = descriptor.target_type if descriptor else "unknown"
+    discovered = {device.device_name for device in nexus_devices if device.device_name}
+    syntax = MappingSyntaxCheckAggregateReport.model_validate_json(
+        (root / "results/nexus/syntax_check/mapping_cases_report.json").read_text()
+    )
+    syntax_passed = syntax.status == "passed" and syntax.all_mapping_qir_syntax_checks == "passed"
+    cost_path = root / "results/nexus/cost/mapping_cases_cost.json"
+    cost = (
+        NexusCostReport.model_validate_json(cost_path.read_text()) if cost_path.is_file() else None
+    )
+    selected = [mapping_case] if mapping_case else MAPPING_CASE_ORDER
+    cost_evidence = bool(
+        cost
+        and cost.status == "supported"
+        and all(
+            any(item.program_name == name and item.shots == shots for item in cost.items)
+            for name in selected
+        )
+    )
+    programs = {name: (path, expected) for name, path, expected in mapping_cost_programs(root)}
+    hashes_match = all(sha256_file(programs[name][0]) == programs[name][1] for name in selected)
+
+    def authorize(confirmed: bool) -> None:
+        assert_helios_emulator_execution_allowed(
+            execute_emulator=execute_emulator,
+            environment=os.environ,
+            target=target,
+            target_classification=target_type,
+            authenticated_discovery=discovery.authenticated_access,
+            discovered_targets=discovered,
+            mapping_syntax_checks_passed=syntax_passed,
+            p12_syntax_check_passed=True,
+            cost_evidence_exists=cost_evidence,
+            max_cost=max_cost,
+            expected_bitcode_hash="mapping-artifacts-verified",
+            actual_bitcode_hash="mapping-artifacts-verified" if hashes_match else "mismatch",
+            mapping_validation_passed=False,
+            is_p12_pilot=False,
+            interactive_confirmed=confirmed,
+        )
+
+    try:
+        authorize(True)
+        confirmed = typer.confirm(
+            "This operation starts a paid or quota-consuming emulator job on Helios-1E. "
+            "It will not execute on physical hardware. The specified max_cost is a strict "
+            "spending ceiling. Continue?"
+        )
+        authorize(confirmed)
+    except HeliosEmulatorExecutionBlocked as exc:
+        console.print(str(exc))
+        raise typer.Exit(1) from exc
+    assert max_cost is not None
+    report = execute_mapping_cases(
+        root,
+        target=target,
+        shots=shots,
+        max_cost=max_cost,
+        case_filter=mapping_case,
+        minimum_majority_fraction=threshold,
+    )
+    write_manifest(
+        root,
+        command="emulator-mapping-check",
+        arguments=sys.argv[1:],
+        start=start,
+        exit_status=0 if report.status in {"passed", "incomplete"} else 1,
+        outputs=[root / "results/nexus/emulator_mapping", root / "data/provider_raw/mapping"],
+        config=config_path,
+        backend_mode="cost_capped_helios_1e_emulator",
+        credentials_detected=True,
+    )
+    console.print(
+        f"Emulator mapping: {report.status}; resolved {report.resolved_positions}/98 positions"
+    )
+    if report.status == "failed":
+        raise typer.Exit(1)
+
+
+@app.command(name="p12-emulator-pilot")
+def p12_emulator_pilot_command(
+    target: Annotated[str, typer.Option("--target")] = "Helios-1E",
+    shots: Annotated[int, typer.Option("--shots", min=1, max=20)] = 10,
+    max_cost: Annotated[float | None, typer.Option("--max-cost")] = None,
+    execute_emulator: Annotated[bool, typer.Option("--execute-emulator")] = False,
+) -> None:
+    """Run an optional, blinded, at-most-20-shot P12 pipeline pilot on Helios-1E."""
+    root, start = _root(), datetime.now(UTC)
+    discovery = discover_quantinuum_report()
+    nexus_devices = [device for device in discovery.devices if device.provider_api == "nexus"]
+    descriptor = next((device for device in nexus_devices if device.device_name == target), None)
+    discovered = {device.device_name for device in nexus_devices if device.device_name}
+    mapping_syntax = MappingSyntaxCheckAggregateReport.model_validate_json(
+        (root / "results/nexus/syntax_check/mapping_cases_report.json").read_text()
+    )
+    p12_syntax = NexusSyntaxCheckReport.model_validate_json(
+        (root / "results/nexus/syntax_check/p12/syntax_check_report.json").read_text()
+    )
+    mapping = EmulatorMappingAggregateReport.model_validate_json(
+        (root / "results/nexus/emulator_mapping/emulator_mapping_report.json").read_text()
+    )
+    cost_path = root / "results/nexus/cost/p12_cost.json"
+    cost = (
+        NexusCostReport.model_validate_json(cost_path.read_text()) if cost_path.is_file() else None
+    )
+    cost_evidence = bool(
+        cost
+        and cost.status == "supported"
+        and any(item.program_name == "p12" and item.shots == shots for item in cost.items)
+    )
+    export = QIRExportReport.model_validate_json(
+        (root / "results/qir/qir_export_report.json").read_text()
+    )
+    actual_hash = sha256_file(root / export.qir_bitcode_path)
+
+    def authorize(confirmed: bool) -> None:
+        assert_helios_emulator_execution_allowed(
+            execute_emulator=execute_emulator,
+            environment=os.environ,
+            target=target,
+            target_classification=descriptor.target_type if descriptor else "unknown",
+            authenticated_discovery=discovery.authenticated_access,
+            discovered_targets=discovered,
+            mapping_syntax_checks_passed=(mapping_syntax.status == "passed"),
+            p12_syntax_check_passed=(p12_syntax.status == "passed"),
+            cost_evidence_exists=cost_evidence,
+            max_cost=max_cost,
+            expected_bitcode_hash=export.qir_bitcode_sha256,
+            actual_bitcode_hash=actual_hash,
+            mapping_validation_passed=(mapping.status == "passed"),
+            is_p12_pilot=True,
+            interactive_confirmed=confirmed,
+        )
+
+    try:
+        authorize(True)
+        confirmed = typer.confirm(
+            "This operation starts a paid or quota-consuming P12 emulator pilot on Helios-1E. "
+            "It will not execute on physical hardware, will use at most 20 shots, and max_cost "
+            "is a strict spending ceiling. Continue?"
+        )
+        authorize(confirmed)
+    except HeliosEmulatorExecutionBlocked as exc:
+        console.print(str(exc))
+        raise typer.Exit(1) from exc
+    assert max_cost is not None
+    report = execute_p12_pilot(root, target=target, shots=shots, max_cost=max_cost)
+    write_manifest(
+        root,
+        command="p12-emulator-pilot",
+        arguments=sys.argv[1:],
+        start=start,
+        exit_status=0 if report.status == "passed" else 1,
+        outputs=[root / "results/nexus/p12_emulator", root / "data/canonical/p12_emulator"],
+        backend_mode="blinded_cost_capped_helios_1e_pilot",
+        credentials_detected=True,
+    )
+    if report.status == "failed":
+        console.print(
+            f"P12 emulator pilot failed at {report.failure_stage}; job={report.job_ref}; "
+            f"reported_cost_hqcs={report.reported_cost_hqcs}. "
+            "Diagnostics were preserved; hidden target scored: false"
+        )
+        raise typer.Exit(1)
+    console.print(f"P12 emulator pilot: {report.status}; hidden target scored: false")
 
 
 @app.command(name="freeze-protocol")
@@ -746,6 +1012,13 @@ SCHEMA_MODELS: dict[str, type[BaseModel]] = {
     "nexus_syntax_check_report.schema.json": NexusSyntaxCheckReport,
     "mapping_syntax_check_aggregate_report.schema.json": MappingSyntaxCheckAggregateReport,
     "cost_estimate_report.schema.json": CostEstimateReport,
+    "nexus_cost_report.schema.json": NexusCostReport,
+    "emulator_job_report.schema.json": EmulatorMappingAggregateReport,
+    "raw_provider_result_report.schema.json": RawProviderResultReport,
+    "provider_output_mapping_report.schema.json": ProviderOutputMappingReport,
+    "emulator_mapping_aggregate_report.schema.json": EmulatorMappingAggregateReport,
+    "p12_emulator_pilot_report.schema.json": P12EmulatorPilotReport,
+    "emulator_authorization_evidence.schema.json": EmulatorAuthorizationEvidence,
     "protocol_freeze_record.schema.json": ProtocolFreezeRecord,
     "readiness_evidence_report.schema.json": ReadinessEvidenceReport,
     "public_audit_report.schema.json": PublicAuditReport,

@@ -55,7 +55,10 @@
         "READY_FOR_COMPILE_ONLY",
         "READY_FOR_QIR_EXPORT",
         "READY_FOR_SYNTAX_CHECK",
-        "READY_FOR_EMULATOR_MAPPING_VALIDATION"
+        "READY_FOR_EMULATOR_MAPPING_VALIDATION",
+        "EMULATOR_MAPPING_VALIDATED",
+        "READY_FOR_P12_EMULATOR_PILOT",
+        "P12_EMULATOR_PILOT_COMPLETE"
       ],
       "title": "ReadinessState",
       "type": "string"
