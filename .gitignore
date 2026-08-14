@@ -1,4 +1,7 @@
 .venv/
+.venv-mpo/
+_upstream_peaked_mpo_solver/
+vendor/peaked-mpo-solver/
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -9,6 +12,8 @@ htmlcov/
 .env
 *.egg-info/
 results/**/*.tmp
+results/cpu_server_probe.json
+results/simulation/
 data/hardware/*
 !data/hardware/.gitkeep
 
