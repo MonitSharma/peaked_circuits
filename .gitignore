@@ -1,7 +1,10 @@
+# Environments & Virtual Environments
 .venv/
 .venv-mpo/
 _upstream_peaked_mpo_solver/
 vendor/peaked-mpo-solver/
+
+# Python Cache & Testing
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -9,15 +12,38 @@ __pycache__/
 htmlcov/
 .mypy_cache/
 .ruff_cache/
+*.egg-info/
+
+# OS & Editor
+.DS_Store
+._*
+.vscode/
+.idea/
+.claude/
+*.swp
+
+# Secrets & Credentials
 .env
 .qnx/
 .qnexus/
 nexus_auth*
 nexus_tokens*
-*.egg-info/
-results/**/*.tmp
-results/cpu_server_probe.json
-results/simulation/
+
+# Logs & Console Dumps
+*.log
+*.out
+
+# Sweep & Experiment Directories (Root Level)
+cutoff*/
+mps_*/
+layer_*/
+lazyproxy_*/
+maxbond256_*/
+stopbond256_*/
+threshold*/
+p9_regression_*/
+
+# Data Whitelists
 data/hardware/*
 !data/hardware/.gitkeep
 data/provider_raw/*
@@ -30,5 +56,14 @@ data/canonical/*
 !data/canonical/.gitkeep
 !data/canonical/p12_emulator/
 !data/canonical/p12_emulator/**
+
+# Results
+results/**/*.tmp
+results/cpu_server_probe.json
+results/simulation/
 results/jobs/*
 !results/jobs/.gitkeep
+results/p9_optimization/
+results/p9_rescale*/
+results/p11_diagnosis/
+results/p11_research/
