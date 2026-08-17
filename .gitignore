@@ -1,6 +1,7 @@
 # Environments & Virtual Environments
 .venv/
 .venv-mpo/
+.venv-mpo-mac/
 _upstream_peaked_mpo_solver/
 vendor/peaked-mpo-solver/
 
@@ -33,7 +34,10 @@ nexus_tokens*
 *.log
 *.out
 
-# Sweep & Experiment Directories (Root Level)
+# Local Experiment Runs & Sweeps
+experiments/runs/
+experiments/**/*.log
+experiments/**/*.out
 cutoff*/
 mps_*/
 layer_*/
@@ -42,6 +46,12 @@ maxbond256_*/
 stopbond256_*/
 threshold*/
 p9_regression_*/
+
+# Documentation Whitelists
+!experiments/README.md
+!results/README.md
+!tools/README.md
+!scripts/README.md
 
 # Data Whitelists
 data/hardware/*
