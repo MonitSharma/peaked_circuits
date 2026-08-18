@@ -1,11 +1,11 @@
-# P12 Helios Recovery
+# P12 Helios Recovery — `p12_quantum`
+
+> **Branch:** `p12_quantum`  
+> **Objective / Task:** Tackle the **P12 peaked circuit** (`peaked_circuit_P12_Hqap_98x2457`) on the **Quantinuum Helios backend**. This branch is dedicated to compilation, QIR validation, result order mapping, emulator/syntax-checking (`Helios-1SC`), and executing the recovery protocol against the Quantinuum Helios backend.
 
 This repository is a research-grade, independent feasibility and reproducibility pipeline for
 recovering the hidden peak of Quantum Advantage Tracker circuit
-`peaked_circuit_P12_Hqap_98x2457` (98 qubits; 2,457 registered gates). The scientific question is
-whether a transparent, preregistered Quantinuum execution and post-processing protocol can recover
-the target bits. **Milestone 1 never submits hardware jobs, consumes HQCs, requests credentials, or
-claims that the hidden peak has been solved.**
+`peaked_circuit_P12_Hqap_98x2457` (98 qubits; 2,457 registered gates) using the Quantinuum Helios backend.
 
 The software is Monit Sharma's recovery and reproducibility pipeline. The byte-preserved P12 QASM is
 an upstream Quantum Advantage Tracker artifact; the circuit construction and scientific work remain
