@@ -2,12 +2,12 @@
   "architecture": "arm64",
   "authenticated_access": true,
   "configuration_hash": null,
-  "created_at": "2026-07-12T08:52:24.206532Z",
+  "created_at": "2026-08-20T23:02:43.341800Z",
   "devices": [
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": 4000,
       "credentials_detected": true,
       "device_name": "H2-2E",
@@ -102,7 +102,7 @@
       "qubit_capacity": 56,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "emulator",
@@ -111,7 +111,7 @@
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": 4000,
       "credentials_detected": true,
       "device_name": "H2-1E",
@@ -206,7 +206,7 @@
       "qubit_capacity": 56,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "emulator",
@@ -215,7 +215,7 @@
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": 4000,
       "credentials_detected": true,
       "device_name": "Helios-1SC",
@@ -275,7 +275,7 @@
       "qubit_capacity": 98,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "syntax_checker",
@@ -284,7 +284,7 @@
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": 4000,
       "credentials_detected": true,
       "device_name": "H2-1SC",
@@ -339,7 +339,7 @@
       "qubit_capacity": 56,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "syntax checker",
@@ -348,7 +348,7 @@
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": 4000,
       "credentials_detected": true,
       "device_name": "Helios-1E",
@@ -412,7 +412,7 @@
       "qubit_capacity": 98,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "emulator",
@@ -421,7 +421,7 @@
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": 4000,
       "credentials_detected": true,
       "device_name": "H2-1",
@@ -512,7 +512,7 @@
       "qubit_capacity": 56,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "hardware",
@@ -521,7 +521,7 @@
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": 4000,
       "credentials_detected": true,
       "device_name": "H2-2SC",
@@ -576,7 +576,7 @@
       "qubit_capacity": 56,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "syntax checker",
@@ -585,7 +585,7 @@
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": 4000,
       "credentials_detected": true,
       "device_name": "H2-2",
@@ -676,7 +676,7 @@
       "qubit_capacity": 56,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "hardware",
@@ -685,7 +685,7 @@
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": null,
       "credentials_detected": true,
       "device_name": "Helios-1",
@@ -774,7 +774,7 @@
       "qubit_capacity": 98,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "hardware",
@@ -783,7 +783,7 @@
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": 4000,
       "credentials_detected": true,
       "device_name": "H1-1LE",
@@ -835,7 +835,7 @@
       "qubit_capacity": 20,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "local_emulator",
@@ -844,7 +844,7 @@
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": 4000,
       "credentials_detected": true,
       "device_name": "H2-1LE",
@@ -896,7 +896,7 @@
       "qubit_capacity": 26,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "local_emulator",
@@ -905,7 +905,7 @@
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": 120,
       "credentials_detected": true,
       "device_name": "H1-Emulator",
@@ -992,7 +992,7 @@
       "qubit_capacity": 20,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "local_emulator",
@@ -1001,7 +1001,7 @@
     {
       "access_status": "listed_for_authenticated_nexus_account",
       "available": true,
-      "backend_version": "0.55.6",
+      "backend_version": "0.59.1",
       "classical_register_limit": 1000,
       "credentials_detected": true,
       "device_name": "H2-Emulator",
@@ -1088,7 +1088,7 @@
       "qubit_capacity": 26,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "local_emulator",
@@ -1097,7 +1097,7 @@
     {
       "access_status": "legacy_metadata_accessible_account_access_unverified",
       "available": true,
-      "backend_version": "0.59.1",
+      "backend_version": "0.59.2",
       "classical_register_limit": 4000,
       "credentials_detected": false,
       "device_name": "H1-1",
@@ -1179,7 +1179,7 @@
       "qubit_capacity": 20,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "hardware",
@@ -1188,7 +1188,7 @@
     {
       "access_status": "legacy_metadata_accessible_account_access_unverified",
       "available": true,
-      "backend_version": "0.59.1",
+      "backend_version": "0.59.2",
       "classical_register_limit": 4000,
       "credentials_detected": false,
       "device_name": "H2-1",
@@ -1270,7 +1270,7 @@
       "qubit_capacity": 56,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "hardware",
@@ -1279,7 +1279,7 @@
     {
       "access_status": "legacy_metadata_accessible_account_access_unverified",
       "available": true,
-      "backend_version": "0.59.1",
+      "backend_version": "0.59.2",
       "classical_register_limit": 4000,
       "credentials_detected": false,
       "device_name": "H2-2",
@@ -1361,7 +1361,7 @@
       "qubit_capacity": 56,
       "sdk_versions": {
         "pytket": "2.18.1",
-        "pytket-quantinuum": "0.59.1",
+        "pytket-quantinuum": "0.59.2",
         "qnexus": "0.46.0"
       },
       "target_type": "hardware",
@@ -1373,17 +1373,17 @@
     "legacy_pytket_quantinuum": "success_access_unverified",
     "nexus": "success"
   },
-  "git_commit": "08cd2b40f5a711f2af2d623482a02786df859f93",
+  "git_commit": "f6fcbbd0149f89f4e82c319b3bdba864421b17d8",
   "git_dirty": true,
   "input_hashes": {},
   "live_api_access": true,
-  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit",
   "package_versions": {
     "pytket": "2.18.1",
-    "pytket-quantinuum": "0.59.1",
+    "pytket-quantinuum": "0.59.2",
     "qnexus": "0.46.0"
   },
-  "python_version": "3.13.7",
+  "python_version": "3.12.9",
   "random_seed": null,
   "schema_version": "1.0",
   "status": "success"

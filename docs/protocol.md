@@ -7,8 +7,10 @@ The frozen circuit identity is `peaked_circuit_P12_Hqap_98x2457`; its hash and u
 configured 98-qubit Quantinuum system. No historical device name is assumed.
 
 The primary method is bitwise majority in canonical logical-qubit order. Secondary methods are most
-frequent observed string, weighted observed medoid, and hierarchical cluster consensus. Planned shot
-ladder: 10, 20, 50, 100, 250, 500, 1,000, 2,000, subject to approved cost and access. Primary endpoint:
+frequent observed string, weighted observed medoid, and hierarchical cluster consensus. The fresh
+provider costing ladder covers 1, 10, 20, 50, 100, 250, 350, 375, 400, 410, 420, 425, 430, 500,
+1,000, and 2,000 shots. The recommended future independent batch is 400 shots with a 2,742-HQC
+max-cost cap under the 3,000-HQC monthly allocation. Primary endpoint:
 percentage of hidden bits recovered. Secondary endpoints: exact match, Hamming distance, bootstrap
 stability, and per-bit confidence.
 
@@ -43,3 +45,12 @@ with minimal shots, a per-job cap, and the ideal MPS Helios configuration. Prese
 records before normalization. Compare each raw layout with that program's declared QIR output-call
 order, then normalize labels `m000[0]` through `m097[0]`. A P12 pilot is optional, blinded, and
 limited to 20 shots. Physical hardware and hidden-target scoring remain prohibited.
+
+## Future hardware batch plan
+
+The first physical batch remains a future, explicitly authorized action. Use 400 shots and
+`max_cost=2742` HQC as the current conservative plan. Preserve each monthly batch independently,
+freeze the discovery candidate before confirmation, and analyze cumulative data with batch-aware
+bootstrap and leave-one-batch-out checks once at least three batches exist. The fresh syntax and
+cost evidence is recorded in `docs/P12_PREHARDWARE_READINESS_AND_COST.md`; no physical execution
+was performed while obtaining it.
