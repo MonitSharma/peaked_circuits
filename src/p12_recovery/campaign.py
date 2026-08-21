@@ -103,7 +103,8 @@ class CampaignState(BaseModel):
     protocol_version: str
     protocol_hash: str | None = None
     monthly_hqc_budget: float = 3000
-    recommended_shots_per_batch: int | None = 400
+    user_spend_ceiling_hqc: float = 1500
+    recommended_shots_per_batch: int | None = 200
     recommended_max_cost: float | None = None
     status: CampaignStatus = CampaignStatus.PREPARED
     next_batch_number: int = 1
@@ -122,14 +123,26 @@ class CampaignState(BaseModel):
             raise ValueError("External target scoring is forbidden in this campaign state")
         if self.monthly_hqc_budget != 3000:
             raise ValueError("Monthly campaign budget must remain 3000 HQC")
+        if self.user_spend_ceiling_hqc <= 0 or self.user_spend_ceiling_hqc > self.monthly_hqc_budget:
+            raise ValueError("User spend ceiling must be positive and within the monthly budget")
         return self
 
 
-def operational_max_cost(predicted_hqc: float, *, budget: float = 3000, reserve: float = 50, allowance: float = 100) -> float:
+def operational_max_cost(
+    predicted_hqc: float,
+    *,
+    budget: float = 3000,
+    reserve: float = 50,
+    allowance: float = 100,
+    user_ceiling: float | None = None,
+) -> float:
     """Derive a cap with a fixed reserve and transparent prediction allowance."""
     if predicted_hqc <= 0 or budget <= reserve:
         raise ValueError("Invalid budget or provider estimate")
-    return round(min(budget - reserve, predicted_hqc + allowance), 2)
+    effective_budget = min(budget, user_ceiling) if user_ceiling is not None else budget
+    if effective_budget <= reserve:
+        raise ValueError("Effective budget must exceed reserve")
+    return round(min(effective_budget - reserve, predicted_hqc + allowance), 2)
 
 
 class CampaignStore:
@@ -156,7 +169,7 @@ class CampaignStore:
             if os.path.exists(temp_name):
                 os.unlink(temp_name)
 
-    def initialize(self, *, source: Path, qir: Path, bitcode: Path, protocol_version: str = "3.0", recommended_shots: int | None = 400, predicted_hqc: float | None = None) -> CampaignState:
+    def initialize(self, *, source: Path, qir: Path, bitcode: Path, protocol_version: str = "3.0", recommended_shots: int | None = 200, predicted_hqc: float | None = None, user_spend_ceiling_hqc: float = 1500) -> CampaignState:
         source_hash, qir_hash, bitcode_hash = sha256_file(source), sha256_file(qir), sha256_file(bitcode)
         if self.path.is_file():
             state = self.load()
@@ -169,7 +182,8 @@ class CampaignStore:
             qir_bitcode_sha256=bitcode_hash,
             protocol_version=protocol_version,
             recommended_shots_per_batch=recommended_shots,
-            recommended_max_cost=operational_max_cost(predicted_hqc) if predicted_hqc else None,
+            user_spend_ceiling_hqc=user_spend_ceiling_hqc,
+            recommended_max_cost=operational_max_cost(predicted_hqc, user_ceiling=user_spend_ceiling_hqc) if predicted_hqc else None,
         )
         self.save(state)
         return state

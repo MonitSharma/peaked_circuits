@@ -141,18 +141,21 @@ def _ensure_campaign(root: Path, batch_id: str, shots: int, max_cost: float | No
         qir=root / "results/qir/p12.ll",
         bitcode=root / "results/qir/p12.bc",
         protocol_version="3.0",
-        recommended_shots=400,
+        recommended_shots=200,
         predicted_hqc=predicted,
+        user_spend_ceiling_hqc=1500,
     )
     config = yaml.safe_load((root / "configs/experiment.yaml").read_text())
     state.protocol_hash = str(config.get("protocol_hash") or hash_config(config))
     if batch_id not in state.batches:
         role = BatchRole.DISCOVERY if batch_id == "batch_001" else BatchRole.CONFIRMATION if batch_id == "batch_002" else BatchRole.ADDITIONAL_REPLICATION
-        batch = store.create_batch(state, role=role, shots=shots, max_cost=max_cost or (operational_max_cost(predicted) if predicted else None))
+        batch = store.create_batch(state, role=role, shots=shots, max_cost=max_cost or (operational_max_cost(predicted, budget=state.monthly_hqc_budget, user_ceiling=state.user_spend_ceiling_hqc) if predicted else None))
     else:
         batch = state.batches[batch_id]
         if batch.requested_shots != shots:
             raise typer.BadParameter(f"Existing {batch_id} uses {batch.requested_shots} shots")
+        if batch.status == BatchStatus.PLANNED and batch.max_cost is None and max_cost is not None:
+            batch.max_cost = max_cost
     current_commit, current_dirty = git_state(root)
     if batch.repository_git_sha != current_commit:
         batch.repository_git_sha = current_commit
@@ -481,7 +484,7 @@ def build_report() -> None:
 @app.command(name="hardware-preflight")
 def hardware_preflight_command(
     batch: Annotated[str, typer.Option("--batch")] = "batch_001",
-    shots: Annotated[int, typer.Option("--shots", min=1)] = 400,
+    shots: Annotated[int, typer.Option("--shots", min=1)] = 200,
     max_cost: Annotated[float | None, typer.Option("--max-cost")] = None,
 ) -> None:
     """Validate a future physical batch without submitting it."""
@@ -509,7 +512,7 @@ def hardware_preflight_command(
 @app.command(name="hardware-submit")
 def hardware_submit_command(
     batch: Annotated[str, typer.Option("--batch")] = "batch_001",
-    shots: Annotated[int, typer.Option("--shots", min=1)] = 400,
+    shots: Annotated[int, typer.Option("--shots", min=1)] = 200,
     max_cost: Annotated[float | None, typer.Option("--max-cost")] = None,
     execute_hardware: Annotated[bool, typer.Option("--execute-hardware")] = False,
     dry_run: Annotated[bool, typer.Option("--dry-run")] = False,

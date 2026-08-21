@@ -34,6 +34,7 @@ class HardwarePreflightReport(BaseModel):
     predicted_hqc: float | None
     recommended_max_cost: float | None
     monthly_budget_hqc: float = 3000
+    user_spend_ceiling_hqc: float = 1500
     checks: dict[str, bool]
     blockers: list[str] = Field(default_factory=list)
     authorization_checks: dict[str, bool] = Field(
@@ -75,6 +76,7 @@ class HardwarePreflight(BaseModel):
     explicit_environment_authorized: bool = False
     explicit_cli_authorized: bool = False
     typed_confirmation: bool = False
+    user_spend_ceiling_hqc: float = 1500
 
     @property
     def structural_passed(self) -> bool:
@@ -91,7 +93,7 @@ class HardwarePreflight(BaseModel):
                 self.predicted_hqc > 0,
                 self.requested_shots > 0,
                 self.max_cost > 0,
-                self.max_cost <= 3000,
+                self.max_cost <= min(3000, self.user_spend_ceiling_hqc),
                 self.max_cost >= self.predicted_hqc,
                 self.protocol_frozen,
                 self.campaign_valid,
@@ -111,10 +113,10 @@ def assert_hardware_preflight(preflight: HardwarePreflight) -> None:
         "syntax_check": preflight.syntax_check_passed,
         "provider_mapping": preflight.mapping_verified,
         "fresh_cost": preflight.predicted_hqc > 0,
-        "shots_within_cost": preflight.predicted_hqc < 3000,
+        "shots_within_cost": preflight.predicted_hqc < min(3000, preflight.user_spend_ceiling_hqc),
         "shots_positive": preflight.requested_shots > 0,
         "max_cost_positive": preflight.max_cost > 0,
-        "max_cost_within_budget": preflight.max_cost <= 3000,
+        "max_cost_within_budget": preflight.max_cost <= min(3000, preflight.user_spend_ceiling_hqc),
         "max_cost_covers_prediction": preflight.max_cost >= preflight.predicted_hqc,
         "protocol_frozen": preflight.protocol_frozen,
         "campaign_valid": preflight.campaign_valid,
@@ -150,10 +152,10 @@ def build_preflight_report(root: Path, state: CampaignState, batch_id: str, *, d
         "syntax_check": syntax.get("status") == "passed" and syntax.get("target") == "Helios-1SC",
         "provider_mapping": mapping.get("provider_result_order_verified") is True and mapping.get("resolved_positions") == 98,
         "fresh_cost": predicted_hqc is not None and predicted_hqc > 0 and cost_fresh and (cost_item or {}).get("bitcode_sha256") == state.qir_bitcode_sha256,
-        "shots_within_cost": predicted_hqc is not None and predicted_hqc < state.monthly_hqc_budget,
+        "shots_within_cost": predicted_hqc is not None and predicted_hqc < min(state.monthly_hqc_budget, state.user_spend_ceiling_hqc),
         "shots_positive": batch.requested_shots > 0,
         "max_cost_positive": max_cost is not None and max_cost > 0,
-        "max_cost_within_budget": max_cost is not None and max_cost <= state.monthly_hqc_budget,
+        "max_cost_within_budget": max_cost is not None and max_cost <= min(state.monthly_hqc_budget, state.user_spend_ceiling_hqc),
         "max_cost_covers_prediction": max_cost is not None and predicted_hqc is not None and max_cost >= predicted_hqc,
         "protocol_frozen": state.protocol_version == "3.0" and state.protocol_hash is not None,
         "campaign_valid": not state.external_target_scored,
@@ -166,6 +168,7 @@ def build_preflight_report(root: Path, state: CampaignState, batch_id: str, *, d
         requested_shots=batch.requested_shots,
         predicted_hqc=predicted_hqc,
         recommended_max_cost=max_cost,
+        user_spend_ceiling_hqc=state.user_spend_ceiling_hqc,
         checks=checks,
         blockers=blockers,
     )

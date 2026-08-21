@@ -2,7 +2,7 @@
   "architecture": "arm64",
   "authenticated_access": true,
   "configuration_hash": null,
-  "created_at": "2026-08-20T23:02:43.341800Z",
+  "created_at": "2026-08-21T11:58:01.302832Z",
   "devices": [
     {
       "access_status": "listed_for_authenticated_nexus_account",
@@ -1373,7 +1373,7 @@
     "legacy_pytket_quantinuum": "success_access_unverified",
     "nexus": "success"
   },
-  "git_commit": "f6fcbbd0149f89f4e82c319b3bdba864421b17d8",
+  "git_commit": "5b75ec288dace7a64c85523bb9f448e7e7f6d910",
   "git_dirty": true,
   "input_hashes": {},
   "live_api_access": true,

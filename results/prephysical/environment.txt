@@ -1,0 +1,12 @@
+Python: 3.12.9
+Environment: .venv
+Platform: macOS arm64
+Physical execution authorization variables present: none
+qnexus: 0.46.0
+pytket: 2.18.1
+pytket-quantinuum: 0.59.2
+pytket-qir: 2.0.0
+pyqir: 0.12.5
+pytest: 9.1.1
+ruff: 0.16.4
+mypy: 2.3.1

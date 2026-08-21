@@ -22,7 +22,8 @@ secondary_methods:
 campaign:
   id: p12-helios-physical
   monthly_hqc_budget: 3000
-  nominal_shots_per_batch: 400
+  nominal_shots_per_batch: 200
+  user_spend_ceiling_hqc: 1500
   maximum_planned_batches: 5
   adaptive_stopping: true
 batch_roles:
@@ -31,7 +32,7 @@ batch_roles:
   batch_003_plus: replication_if_needed
 external_target_query_policy:
   iterative_feedback_allowed: false
-primary_shots: 400
+primary_shots: 200
 pilot_shots: 100
 smoke_test_shots: 20
 primary_endpoint:
@@ -50,4 +51,4 @@ valid_shot_policy:
   never_exclude_for_recovery_quality: true
 target_blinded: true
 hardware_execution: false
-protocol_hash: d563bbd262ae78d5e8e016062b32a333fa7113b271e08c233278f4c5f83e15e4
+protocol_hash: d88ea05069834adad820c75046022a678cda2a43ba9944ebf6793133a41898c5

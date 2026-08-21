@@ -1,0 +1,15 @@
+pytket==2.18.1
+pytket-quantinuum==0.59.2
+pytket-qir==2.0.0
+pyqir==0.12.5
+qnexus==0.46.0
+numpy==2.5.2
+scipy==1.18.0
+pandas==2.3.3
+pydantic==2.13.4
+PyYAML==6.0.3
+typer==0.27.1
+rich==13.9.4
+pytest==9.1.1
+ruff==0.16.4
+mypy==2.3.1
