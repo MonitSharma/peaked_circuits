@@ -1,5 +1,5 @@
-schema_version: "2.0"
-status: draft
+schema_version: "3.0"
+status: frozen
 tracker_protocol_confirmed: false
 circuit:
   id: peaked_circuit_P12_Hqap_98x2457
@@ -7,9 +7,9 @@ circuit:
   compiled_hash: null
 backend:
   api_surface: nexus
-  system_name: null
-  device_name: null
-  target_type: null
+  system_name: Helios-1
+  device_name: Helios-1
+  target_type: hardware
 compilation:
   preserve_qubit_names: true
   allow_implicit_swaps: false
@@ -21,7 +21,19 @@ secondary_methods:
   - most_frequent_string
   - weighted_observed_medoid
   - cluster_consensus
-primary_shots: 2000
+campaign:
+  id: p12-helios-physical
+  monthly_hqc_budget: 3000
+  nominal_shots_per_batch: 400
+  maximum_planned_batches: 5
+  adaptive_stopping: true
+batch_roles:
+  batch_001: discovery
+  batch_002: confirmation
+  batch_003_plus: replication_if_needed
+external_target_query_policy:
+  iterative_feedback_allowed: false
+primary_shots: 400
 pilot_shots: 100
 smoke_test_shots: 20
 primary_endpoint:

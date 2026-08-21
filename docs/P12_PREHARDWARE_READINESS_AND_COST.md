@@ -49,15 +49,17 @@ API: `qnexus.qir.cost_confidence` with provider costing system `Helios-1`. Confi
 
 - Largest tested count under 3,000 HQC: **430 shots**.
 - Recommended operational count: **400 shots/month**.
-- Recommended future `max_cost`: **2742 HQC**.
-- Safety margin against the monthly allocation: **258 HQC**.
+- Fresh prediction: **2742 HQC** at 400 shots.
+- Operational `max_cost` is derived at runtime as prediction + 100 HQC allowance,
+  capped at 3000 - 50 HQC reserve: **2842 HQC** for this estimate.
 - Estimated cumulative campaign duration at 400 shots/month:
   - 800 shots: 2 months
   - 1200 shots: 3 months
   - 1600 shots: 4 months
   - 2000 shots: 5 months
 
-These are planning values only. No physical hardware batch was submitted.
+These are planning values only. No physical hardware batch was submitted. The Milestone 5
+preflight and dry-run artifacts are under `hardware_campaign/`.
 
 ## Safety record
 

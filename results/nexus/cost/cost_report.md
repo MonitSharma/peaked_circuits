@@ -4,7 +4,9 @@
 
 The costing system was `Helios-1`; no execution API was called. Under the 3,000-HQC monthly
 allocation, the largest tested point that fits is 430 shots at 2,948 HQC. The recommended
-future batch is 400 shots with `max_cost=2742` HQC, leaving 258 HQC headroom.
+future batch is 400 shots with a fresh prediction of 2742 HQC. The operational cap is derived
+at runtime as prediction + 100 HQC allowance, bounded by the 3000-HQC budget less a 50-HQC reserve;
+for this estimate it is `max_cost=2842` HQC.
 
 | Program | Shots | Estimated HQC | Confidence |
 |---|---:|---:|---:|

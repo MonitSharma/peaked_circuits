@@ -48,8 +48,9 @@ limited to 20 shots. Physical hardware and hidden-target scoring remain prohibit
 
 ## Future hardware batch plan
 
-The first physical batch remains a future, explicitly authorized action. Use 400 shots and
-`max_cost=2742` HQC as the current conservative plan. Preserve each monthly batch independently,
+The first physical batch remains a future, explicitly authorized action. Use 400 shots and derive
+the operational cap from fresh costing (`prediction + 100` HQC, bounded by `3000 - 50` HQC reserve).
+For the current 2742-HQC estimate this yields `max_cost=2842` HQC. Preserve each monthly batch independently,
 freeze the discovery candidate before confirmation, and analyze cumulative data with batch-aware
 bootstrap and leave-one-batch-out checks once at least three batches exist. The fresh syntax and
 cost evidence is recorded in `docs/P12_PREHARDWARE_READINESS_AND_COST.md`; no physical execution
