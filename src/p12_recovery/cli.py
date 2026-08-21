@@ -145,7 +145,7 @@ def _ensure_campaign(root: Path, batch_id: str, shots: int, max_cost: float | No
         predicted_hqc=predicted,
     )
     config = yaml.safe_load((root / "configs/experiment.yaml").read_text())
-    state.protocol_hash = hash_config(config)
+    state.protocol_hash = str(config.get("protocol_hash") or hash_config(config))
     if batch_id not in state.batches:
         role = BatchRole.DISCOVERY if batch_id == "batch_001" else BatchRole.CONFIRMATION if batch_id == "batch_002" else BatchRole.ADDITIONAL_REPLICATION
         batch = store.create_batch(state, role=role, shots=shots, max_cost=max_cost or (operational_max_cost(predicted) if predicted else None))
