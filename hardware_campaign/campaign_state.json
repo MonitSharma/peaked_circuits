@@ -21,7 +21,7 @@
       "source_qasm_sha256": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d",
       "qir_sha256": "c003298ea5c57f963f7f9bf5ca4c94a38fc76db10582a5cc859c621ad358c820",
       "qir_bitcode_sha256": "c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d",
-      "repository_git_sha": "60a82744b4af2c036a64ac1ff6c431cde12f0d74",
+      "repository_git_sha": "44eff11da490da9b2fe5c5f6d88cef9fbd6ed60b",
       "protocol_hash": "d563bbd262ae78d5e8e016062b32a333fa7113b271e08c233278f4c5f83e15e4",
       "target": "Helios-1",
       "provider_job_name": null,
