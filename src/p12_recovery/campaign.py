@@ -180,6 +180,8 @@ class CampaignStore:
             raise ValueError(f"Batch already exists: {batch_id}")
         if state.active_job is not None:
             raise ValueError("An active physical job already exists; use hardware-status or hardware-retrieve")
+        if role == BatchRole.CONFIRMATION and state.candidate_freeze is None:
+            raise ValueError("Batch 002 confirmation requires a frozen discovery candidate")
         batch = BatchRecord(batch_id=batch_id, role=role, source_qasm_sha256=state.source_qasm_sha256, qir_sha256=state.qir_sha256, qir_bitcode_sha256=state.qir_bitcode_sha256, protocol_hash=state.protocol_hash, requested_shots=shots, max_cost=max_cost)
         state.batches[batch_id] = batch
         state.next_batch_number += 1
@@ -200,5 +202,11 @@ class CampaignStore:
             state.status = CampaignStatus.HARDWARE_BATCH_ACTIVE
         if batch.status in {BatchStatus.COMPLETED, BatchStatus.RETRIEVED, BatchStatus.NORMALIZED, BatchStatus.ANALYZED, BatchStatus.FAILED} and state.active_job and state.active_job.get("batch_id") == batch_id:
             state.active_job = None
+        state.completed_batches = sorted(
+            batch_id for batch_id, item in state.batches.items() if item.status in {BatchStatus.RETRIEVED, BatchStatus.NORMALIZED, BatchStatus.ANALYZED}
+        )
+        state.cumulative_valid_shots = sum(item.valid_shots for item in state.batches.values())
+        if state.candidate_freeze is not None and state.status == CampaignStatus.PREPARED:
+            state.status = CampaignStatus.DISCOVERY_CANDIDATE_FROZEN
         self.save(state)
         return batch

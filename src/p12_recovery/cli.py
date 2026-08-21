@@ -22,8 +22,10 @@ from .backends.quantinuum import (
     quantinuum_available,
     sanitize_diagnostic,
 )
+from .batch_analysis import analyze_batch, analyze_batches
 from .benchmark import run_synthetic_benchmark
-from .campaign import BatchRole, CampaignStore, operational_max_cost
+from .campaign import BatchRole, BatchStatus, CampaignStatus, CampaignStore, operational_max_cost
+from .candidate_freeze import freeze_candidate
 from .circuit_inspection import inspect_circuit
 from .compilation import compile_from_config, validate_existing
 from .config import load_model
@@ -153,6 +155,27 @@ def _ensure_campaign(root: Path, batch_id: str, shots: int, max_cost: float | No
             raise typer.BadParameter(f"Existing {batch_id} uses {batch.requested_shots} shots")
     store.save(state)
     return store, state, batch
+
+
+def _refresh_p12_cost(root: Path, shots: int) -> NexusCostReport:
+    """Refresh exactly one P12 cost row immediately before a hardware preflight."""
+    qir_path = root / "results/qir/p12.ll"
+    fresh = estimate_nexus_qir_costs(
+        root,
+        target="Helios-1E",
+        programs=p12_cost_program(root, qir_path),
+        shots=[shots],
+    )
+    if fresh.status != "supported":
+        return fresh
+    path = root / "results/nexus/cost/p12_cost.json"
+    existing = NexusCostReport.model_validate_json(path.read_text()) if path.is_file() else fresh
+    refreshed = [
+        item for item in existing.items if not (item.program_name == "p12" and item.shots == shots)
+    ] + fresh.items
+    merged = existing.model_copy(update={"status": "supported", "items": refreshed})
+    write_nexus_cost_report(root, merged, mapping_cases=False)
+    return merged
 
 
 def _version(package: str) -> str | None:
@@ -456,11 +479,13 @@ def hardware_preflight_command(
 ) -> None:
     """Validate a future physical batch without submitting it."""
     root, start = _root(), datetime.now(UTC)
+    fresh_cost = _refresh_p12_cost(root, shots)
+    if fresh_cost.status != "supported":
+        raise typer.BadParameter("Fresh provider cost estimation failed")
     _store, state, record = _ensure_campaign(root, batch, shots, max_cost)
     discovery = discover_quantinuum_report().model_dump(mode="json")
-    cost_payload = json.loads((root / "results/nexus/cost/p12_cost.json").read_text())
-    item = next((value for value in cost_payload.get("items", []) if value.get("shots") == shots), None)
-    predicted = float(item["estimated_hqcs"]) if item else None
+    item = next((value for value in fresh_cost.items if value.program_name == "p12" and value.shots == shots), None)
+    predicted = item.estimated_hqcs if item else None
     report = build_preflight_report(root, state, batch, discovery=discovery, predicted_hqc=predicted, max_cost=record.max_cost)
     directory = root / "hardware_campaign" / batch / "preflight"
     directory.mkdir(parents=True, exist_ok=True)
@@ -484,11 +509,13 @@ def hardware_submit_command(
 ) -> None:
     """Render or, only with all explicit gates, submit one physical batch."""
     root, start = _root(), datetime.now(UTC)
+    fresh_cost = _refresh_p12_cost(root, shots)
+    if fresh_cost.status != "supported":
+        raise typer.BadParameter("Fresh provider cost estimation failed")
     _store, state, record = _ensure_campaign(root, batch, shots, max_cost)
     discovery = discover_quantinuum_report().model_dump(mode="json")
-    cost_payload = json.loads((root / "results/nexus/cost/p12_cost.json").read_text())
-    item = next((value for value in cost_payload.get("items", []) if value.get("shots") == shots), None)
-    predicted = float(item["estimated_hqcs"]) if item else None
+    item = next((value for value in fresh_cost.items if value.program_name == "p12" and value.shots == shots), None)
+    predicted = item.estimated_hqcs if item else None
     report = build_preflight_report(root, state, batch, discovery=discovery, predicted_hqc=predicted, max_cost=record.max_cost)
     if dry_run or not execute_hardware:
         deterministic_name = f"p12-physical-{batch}-{state.qir_bitcode_sha256[:8]}-{(state.protocol_hash or '')[:8]}"
@@ -536,6 +563,79 @@ def hardware_reconcile_command(batch: Annotated[str, typer.Option("--batch")]) -
     state = CampaignStore(root).load()
     job_id = reconcile_hardware_batch(root, state, batch)
     console.print(f"Reconciled {batch} to existing provider job {job_id}")
+
+
+@app.command(name="analyze-hardware-batch")
+def analyze_hardware_batch_command(
+    batch: Annotated[str, typer.Option("--batch")],
+    counts: Annotated[Path, typer.Option("--counts")],
+) -> None:
+    """Analyze one canonical batch without accessing any target."""
+    root, start = _root(), datetime.now(UTC)
+    state = CampaignStore(root).load()
+    if batch not in state.batches:
+        raise typer.BadParameter(f"Unknown batch: {batch}")
+    counts_path = counts if counts.is_absolute() else root / counts
+    payload = load_aggregated_counts(counts_path)
+    report = analyze_batch(payload["counts"])
+    output = root / "hardware_campaign" / batch / "analysis" / "analysis.json"
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    CampaignStore(root).update_batch(state, batch, status=BatchStatus.ANALYZED, valid_shots=payload["shots"], analysis_hash=sha256_file(output))
+    write_manifest(root, command="analyze-hardware-batch", arguments=sys.argv[1:], start=start, exit_status=0, inputs=[counts_path], outputs=[output], backend_mode="offline_target_blind_analysis")
+    console.print(f"Analyzed {batch}: {report['primary_candidate']}")
+
+
+@app.command(name="analyze-cumulative")
+def analyze_cumulative_command(
+    counts: Annotated[list[Path], typer.Option("--counts")],
+) -> None:
+    """Analyze independent canonical batches with pooled and leave-one-batch-out diagnostics."""
+    root, start = _root(), datetime.now(UTC)
+    paths = [path if path.is_absolute() else root / path for path in counts]
+    if not paths:
+        raise typer.BadParameter("Provide at least one --counts path")
+    payloads = [load_aggregated_counts(path) for path in paths]
+    report = analyze_batches([payload["counts"] for payload in payloads])
+    output = root / "hardware_campaign" / "cumulative" / "analysis.json"
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
+    write_manifest(root, command="analyze-cumulative", arguments=sys.argv[1:], start=start, exit_status=0, inputs=paths, outputs=[output], backend_mode="offline_target_blind_analysis")
+    console.print(f"Analyzed {len(paths)} independent batches")
+
+
+@app.command(name="freeze-candidate")
+def freeze_candidate_command(
+    batch: Annotated[str, typer.Option("--batch")],
+    candidate: Annotated[str | None, typer.Option("--candidate")] = None,
+    counts: Annotated[Path | None, typer.Option("--counts")] = None,
+) -> None:
+    """Freeze the discovery candidate and unlock confirmation batches."""
+    root = _root()
+    store = CampaignStore(root)
+    state = store.load()
+    if state.batches.get(batch) is None or state.batches[batch].role != BatchRole.DISCOVERY:
+        raise typer.BadParameter("Candidate freezing requires an existing discovery batch")
+    analysis_path = root / "hardware_campaign" / batch / "analysis" / "analysis.json"
+    if candidate is None:
+        if not analysis_path.is_file():
+            raise typer.BadParameter("Run analyze-hardware-batch or provide --candidate")
+        candidate = json.loads(analysis_path.read_text())["primary_candidate"]
+    counts_path = counts if counts and counts.is_absolute() else root / counts if counts else None
+    if counts_path is None:
+        raise typer.BadParameter("Provide --counts so the freeze is hash-addressed")
+    payload = load_aggregated_counts(counts_path)
+    protocol_hash = state.protocol_hash or ""
+    frozen = freeze_candidate(candidate, counts=payload["counts"], source_paths=[counts_path], protocol_hash=protocol_hash)
+    freeze_path = root / "hardware_campaign" / batch / "candidate_freeze.json"
+    if freeze_path.is_file() and json.loads(freeze_path.read_text()).get("freeze_hash") != frozen["freeze_hash"]:
+        raise typer.BadParameter("Candidate freeze already exists with different content")
+    freeze_path.parent.mkdir(parents=True, exist_ok=True)
+    freeze_path.write_text(json.dumps(frozen, indent=2, sort_keys=True) + "\n")
+    state.candidate_freeze = frozen
+    state.status = CampaignStatus.DISCOVERY_CANDIDATE_FROZEN
+    store.save(state)
+    console.print(f"Candidate frozen: {frozen['candidate_sha256']}")
 
 
 @app.command(name="campaign-status")
