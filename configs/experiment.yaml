@@ -6,10 +6,8 @@ circuit:
   source_hash: 868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d
   compiled_hash: c003298ea5c57f963f7f9bf5ca4c94a38fc76db10582a5cc859c621ad358c820
 backend:
-  api_surface: nexus
-  system_name: Helios-1
-  device_name: Helios-1
-  target_type: hardware
+  device_name: null
+  target_type: unknown
 compilation:
   preserve_qubit_names: true
   allow_implicit_swaps: false
@@ -52,4 +50,4 @@ valid_shot_policy:
   never_exclude_for_recovery_quality: true
 target_blinded: true
 hardware_execution: false
-protocol_hash: 4574cdc40b0e1ffdb0198a81d0bc6a767718405c3139c78e187a7e10db0495e3
+protocol_hash: d563bbd262ae78d5e8e016062b32a333fa7113b271e08c233278f4c5f83e15e4
