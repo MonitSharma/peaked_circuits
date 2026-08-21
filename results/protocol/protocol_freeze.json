@@ -1,0 +1,94 @@
+{
+  "architecture": "arm64",
+  "configuration": {
+    "backend": {
+      "device_name": null,
+      "target_type": "unknown"
+    },
+    "batch_roles": {
+      "batch_001": "discovery",
+      "batch_002": "confirmation",
+      "batch_003_plus": "replication_if_needed"
+    },
+    "campaign": {
+      "adaptive_stopping": true,
+      "id": "p12-helios-physical",
+      "maximum_planned_batches": 5,
+      "monthly_hqc_budget": 3000,
+      "nominal_shots_per_batch": 400
+    },
+    "circuit": {
+      "compiled_hash": "c003298ea5c57f963f7f9bf5ca4c94a38fc76db10582a5cc859c621ad358c820",
+      "id": "peaked_circuit_P12_Hqap_98x2457",
+      "source_hash": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
+    },
+    "compilation": {
+      "allow_implicit_swaps": false,
+      "optimization_level": 1,
+      "preserve_qubit_names": true
+    },
+    "external_target_query_policy": {
+      "iterative_feedback_allowed": false
+    },
+    "hardware_execution": false,
+    "pilot_shots": 100,
+    "primary_analysis": {
+      "method": "bitwise_majority",
+      "tie_policy": "deterministic_zero_with_uncertainty_flag"
+    },
+    "primary_endpoint": {
+      "name": "percentage_bits_correct",
+      "total_bits": 98
+    },
+    "primary_shots": 400,
+    "protocol_hash": "4574cdc40b0e1ffdb0198a81d0bc6a767718405c3139c78e187a7e10db0495e3",
+    "schema_version": "3.0",
+    "secondary_endpoints": [
+      "exact_match",
+      "hamming_distance",
+      "bootstrap_stability",
+      "per_bit_confidence",
+      "method_agreement"
+    ],
+    "secondary_methods": [
+      "most_frequent_string",
+      "weighted_observed_medoid",
+      "cluster_consensus"
+    ],
+    "smoke_test_shots": 20,
+    "status": "frozen",
+    "target_blinded": true,
+    "tracker_protocol_confirmed": false,
+    "valid_shot_policy": {
+      "exclude_only": [
+        "malformed_provider_record",
+        "provider_declared_incomplete_record"
+      ],
+      "never_exclude_for_recovery_quality": true
+    }
+  },
+  "configuration_hash": null,
+  "configuration_path": "configs/experiment.yaml",
+  "created_at": "2026-08-21T02:27:30.039336Z",
+  "git_commit": "3657b0852f0de5be6d8c392c2129abab43048c5d",
+  "git_dirty": true,
+  "input_hashes": {},
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit",
+  "package_versions": {},
+  "prerequisites": {
+    "compiled_hash_exists": true,
+    "mapping_validation_passed": true,
+    "measurement_mapping_exists": true,
+    "primary_method_explicit": true,
+    "provider_cost_exists": true,
+    "shot_counts_explicit": true,
+    "source_hash_exists": true,
+    "target_identified": true,
+    "target_validation_passed": true
+  },
+  "protocol_hash": "4574cdc40b0e1ffdb0198a81d0bc6a767718405c3139c78e187a7e10db0495e3",
+  "python_version": "3.12.9",
+  "random_seed": null,
+  "schema_version": "1.0",
+  "status": "frozen"
+}
