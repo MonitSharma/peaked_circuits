@@ -113,5 +113,7 @@ def freeze_protocol(root: Path, config_path: Path) -> ProtocolFreezeRecord:
         git_commit=commit,
         git_dirty=False,
     )
-    write_json(root / "results/protocol/protocol_freeze.json", record)
+    protocol_output = root / "results/protocol/protocol_freeze.json"
+    protocol_output.parent.mkdir(parents=True, exist_ok=True)
+    protocol_output.write_text(record.model_dump_json(indent=2) + "\n")
     return record
