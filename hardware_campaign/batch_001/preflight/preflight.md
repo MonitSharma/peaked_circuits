@@ -1,6 +1,6 @@
 # batch_001 hardware preflight
 
-Status: **blocked**
+Status: **passed**
 
 - [x] exact_target
 - [x] hardware_target
@@ -19,8 +19,5 @@ Status: **blocked**
 - [x] protocol_frozen
 - [x] campaign_valid
 - [x] no_active_job
-- [ ] environment_authorized
-- [ ] cli_authorized
-- [ ] typed_confirmation
 
 `hardware_submission_authorized_by_user = false`

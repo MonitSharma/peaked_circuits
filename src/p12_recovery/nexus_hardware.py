@@ -36,11 +36,22 @@ class HardwarePreflightReport(BaseModel):
     monthly_budget_hqc: float = 3000
     checks: dict[str, bool]
     blockers: list[str] = Field(default_factory=list)
+    authorization_checks: dict[str, bool] = Field(
+        default_factory=lambda: {
+            "environment_authorized": False,
+            "cli_authorized": False,
+            "typed_confirmation": False,
+        }
+    )
     hardware_submission_authorized_by_user: bool = False
     created_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
 
     @property
     def passed(self) -> bool:
+        return not self.blockers and all(self.checks.values())
+
+    @property
+    def structural_passed(self) -> bool:
         return not self.blockers and all(self.checks.values())
 
 
@@ -64,6 +75,29 @@ class HardwarePreflight(BaseModel):
     explicit_environment_authorized: bool = False
     explicit_cli_authorized: bool = False
     typed_confirmation: bool = False
+
+    @property
+    def structural_passed(self) -> bool:
+        return all(
+            (
+                self.target == "Helios-1",
+                self.target_type == "hardware",
+                self.qubit_capacity >= P12_QUBITS,
+                len(self.source_qasm_sha256) == 64,
+                len(self.qir_sha256) == 64,
+                len(self.bitcode_sha256) == 64,
+                self.syntax_check_passed,
+                self.mapping_verified,
+                self.predicted_hqc > 0,
+                self.requested_shots > 0,
+                self.max_cost > 0,
+                self.max_cost <= 3000,
+                self.max_cost >= self.predicted_hqc,
+                self.protocol_frozen,
+                self.campaign_valid,
+                self.no_active_job,
+            )
+        )
 
 
 def assert_hardware_preflight(preflight: HardwarePreflight) -> None:
@@ -120,15 +154,20 @@ def build_preflight_report(root: Path, state: CampaignState, batch_id: str, *, d
         "protocol_frozen": state.protocol_version == "3.0" and state.protocol_hash is not None,
         "campaign_valid": not state.external_target_scored,
         "no_active_job": state.active_job is None,
-        "environment_authorized": False,
-        "cli_authorized": False,
-        "typed_confirmation": False,
     }
     blockers = [name for name, passed in checks.items() if not passed]
-    return HardwarePreflightReport(batch_id=batch_id, target=target.get("device_name", "missing"), requested_shots=batch.requested_shots, predicted_hqc=predicted_hqc, recommended_max_cost=max_cost, checks=checks, blockers=blockers)
+    return HardwarePreflightReport(
+        batch_id=batch_id,
+        target=target.get("device_name", "missing"),
+        requested_shots=batch.requested_shots,
+        predicted_hqc=predicted_hqc,
+        recommended_max_cost=max_cost,
+        checks=checks,
+        blockers=blockers,
+    )
 
 
-def dry_run_hardware_batch(root: Path, preflight: HardwarePreflightReport, *, project_name: str = "p12-helios-recovery") -> dict[str, Any]:
+def dry_run_hardware_batch(root: Path, preflight: HardwarePreflightReport, *, project_name: str = "p12-helios-recovery", job_name: str | None = None) -> dict[str, Any]:
     """Render intended provider parameters; deliberately makes no provider call."""
     return {
         "dry_run": True,
@@ -138,34 +177,38 @@ def dry_run_hardware_batch(root: Path, preflight: HardwarePreflightReport, *, pr
         "max_cost": preflight.recommended_max_cost,
         "batch_id": preflight.batch_id,
         "project_name": project_name,
-        "job_name": f"p12-physical-{preflight.batch_id}",
+        "job_name": job_name or f"p12-physical-{preflight.batch_id}",
         "hardware_submission_authorized_by_user": False,
         "blockers": preflight.blockers,
     }
 
 
 def submit_hardware_batch(root: Path, state: CampaignState, batch_id: str, *, preflight: HardwarePreflight, execute_hardware: bool = False, environment: dict[str, str] | None = None, interactive_confirmed: bool = False, client_module: Any | None = None) -> dict[str, str]:
-    """Submit exactly once after all gates pass; never called by this Milestone."""
+    """Submit exactly once; a pending batch always requires explicit reconciliation."""
     store = CampaignStore(root)
     batch = state.batches.get(batch_id)
     if batch is None:
         raise KeyError(batch_id)
-    if state.active_job is not None or batch.execution_job_ref or batch.status in {BatchStatus.SUBMITTED, BatchStatus.RUNNING, BatchStatus.COMPLETED}:
+    if state.active_job is not None or batch.execution_job_ref or batch.status in {BatchStatus.SUBMISSION_PENDING, BatchStatus.SUBMITTED, BatchStatus.RUNNING, BatchStatus.COMPLETED}:
         raise PhysicalSubmissionDisabled("Batch already has a submitted/active job; use hardware-status or hardware-retrieve")
     env = environment or os.environ
     armed = preflight.model_copy(update={"explicit_environment_authorized": env.get("P12_ENABLE_PHYSICAL_HELIOS") == "1", "explicit_cli_authorized": execute_hardware, "typed_confirmation": interactive_confirmed})
     assert_hardware_preflight(armed)
     if env.get("P12_CONFIRM_PAID_EXECUTION") != HARDWARE_CONFIRMATION:
         raise PhysicalSubmissionDisabled("Paid-execution confirmation phrase is missing")
+    if not preflight.structural_passed:
+        raise PhysicalSubmissionDisabled("Structural hardware preflight has not passed")
     qnx = client_module or importlib.import_module("qnexus")
+    job_name = f"p12-physical-{batch_id}-{state.qir_bitcode_sha256[:8]}-{(state.protocol_hash or '')[:8]}"
+    CampaignStore(root).update_batch(state, batch_id, status=BatchStatus.SUBMISSION_PENDING, provider_job_name=job_name)
     project = qnx.projects.get_or_create(name="p12-helios-recovery", description="P12 physical campaign")
-    artifact = qnx.qir.upload(qir=(root / "results/qir/p12.bc").read_bytes(), name=f"p12-physical-{batch_id}", project=project, description="Frozen P12 QIR for explicitly authorized hardware")
-    job = qnx.start_execute_job(programs=[artifact], n_shots=[batch.requested_shots], backend_config=qnx.models.HeliosConfig(system_name="Helios-1"), project=project, name=f"p12-physical-{batch_id}", max_cost=batch.max_cost)
+    artifact = qnx.qir.upload(qir=(root / "results/qir/p12.bc").read_bytes(), name=job_name, project=project, description="Frozen P12 QIR for explicitly authorized hardware")
+    job = qnx.start_execute_job(programs=[artifact], n_shots=[batch.requested_shots], backend_config=qnx.models.HeliosConfig(system_name="Helios-1"), project=project, name=job_name, max_cost=batch.max_cost)
     project_ref = str(getattr(project, "id", project))
     artifact_ref = str(getattr(artifact, "id", artifact))
     job_ref = str(getattr(job, "id", job))
     store.update_batch(state, batch_id, status=BatchStatus.SUBMITTED, nexus_project_ref=project_ref, qir_artifact_ref=artifact_ref, execution_job_ref=job_ref, submission_timestamp=datetime.now(UTC))
-    return {"project_ref": project_ref, "qir_artifact_ref": artifact_ref, "job_ref": job_ref}
+    return {"project_ref": project_ref, "qir_artifact_ref": artifact_ref, "job_ref": job_ref, "job_name": job_name}
 
 
 def poll_hardware_batch(root: Path, state: CampaignState, batch_id: str, *, client_module: Any | None = None) -> dict[str, Any]:
@@ -173,8 +216,30 @@ def poll_hardware_batch(root: Path, state: CampaignState, batch_id: str, *, clie
     if batch is None or not batch.execution_job_ref:
         raise ValueError("No saved hardware job exists for this batch")
     qnx = client_module or importlib.import_module("qnexus")
-    status = qnx.jobs.get(batch.execution_job_ref)
-    return {"batch_id": batch_id, "job_ref": batch.execution_job_ref, "status": str(getattr(status, "status", status))}
+    job_ref = qnx.jobs.get(id=batch.execution_job_ref)
+    status = qnx.jobs.status(job_ref)
+    status_text = str(getattr(status, "value", getattr(status, "status", status)))
+    CampaignStore(root).update_batch(state, batch_id, status=_status_from_provider(status_text))
+    return {"batch_id": batch_id, "job_ref": batch.execution_job_ref, "status": status_text}
+
+
+def reconcile_hardware_batch(root: Path, state: CampaignState, batch_id: str, *, client_module: Any | None = None) -> str:
+    """Resolve a pending submission by deterministic provider job name only."""
+    batch = state.batches.get(batch_id)
+    if batch is None or batch.status != BatchStatus.SUBMISSION_PENDING or not batch.provider_job_name:
+        raise PhysicalSubmissionDisabled("Only a SUBMISSION_PENDING batch can be reconciled")
+    qnx = client_module or importlib.import_module("qnexus")
+    try:
+        job_ref = qnx.jobs.get(name=batch.provider_job_name)
+    except Exception as exc:
+        raise PhysicalSubmissionDisabled("No matching Nexus job found; explicit recovery action is required") from exc
+    if isinstance(job_ref, (list, tuple)):
+        if len(job_ref) != 1:
+            raise PhysicalSubmissionDisabled("Nexus reconciliation is ambiguous; refusing to attach or resubmit")
+        job_ref = job_ref[0]
+    job_id = str(getattr(job_ref, "id", job_ref))
+    CampaignStore(root).update_batch(state, batch_id, status=BatchStatus.SUBMITTED, execution_job_ref=job_id)
+    return job_id
 
 
 def retrieve_hardware_batch(root: Path, state: CampaignState, batch_id: str, *, client_module: Any | None = None) -> Path:
@@ -182,13 +247,80 @@ def retrieve_hardware_batch(root: Path, state: CampaignState, batch_id: str, *, 
     if batch is None or not batch.execution_job_ref:
         raise ValueError("No saved hardware job exists for this batch")
     qnx = client_module or importlib.import_module("qnexus")
-    results = list(qnx.jobs.results(batch.execution_job_ref, allow_incomplete=False))
+    job_ref = qnx.jobs.get(id=batch.execution_job_ref)
+    results = list(qnx.jobs.results(job_ref, allow_incomplete=False))
     directory = root / "hardware_campaign" / batch_id / "provider"
     directory.mkdir(parents=True, exist_ok=True)
     refs = [str(getattr(item, "id", item)) for item in results]
+    job_payload = _jsonable(job_ref)
+    (directory / "job.json").write_text(json.dumps(job_payload, indent=2, sort_keys=True) + "\n")
     (directory / "result_ref.json").write_text(json.dumps(refs, indent=2) + "\n")
-    CampaignStore(root).update_batch(state, batch_id, status=BatchStatus.RETRIEVED, result_refs=refs, returned_shots=batch.requested_shots)
+    first = results[0] if results else None
+    _download_artifact(first, "raw_result.json", directory, "download_result")
+    _download_artifact(first, "backend_info.json", directory, "download_backend_info")
+    _download_artifact(first, "submitted_input.bc", directory, "get_input", binary=True)
+    manifest = {"job_ref": batch.execution_job_ref, "result_refs": refs, "returned_shots": _returned_shots(first), "reported_cost_hqcs": _cost(first, job_ref)}
+    (directory / "provider_manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+    sums = []
+    for path in sorted(directory.iterdir()):
+        if path.name != "SHA256SUMS" and path.is_file():
+            sums.append(f"{sha256_file(path)}  {path.name}")
+    (directory / "SHA256SUMS").write_text("\n".join(sums) + "\n")
+    CampaignStore(root).update_batch(state, batch_id, status=BatchStatus.RETRIEVED, result_refs=refs, returned_shots=_returned_shots(first), actual_reported_hqc=_cost(first, job_ref))
     return directory
+
+
+def _status_from_provider(status: str) -> BatchStatus:
+    normalized = status.upper()
+    if normalized in {"COMPLETED", "SUCCEEDED", "SUCCESS"}:
+        return BatchStatus.COMPLETED
+    if normalized in {"FAILED", "ERROR", "CANCELLED"}:
+        return BatchStatus.FAILED
+    return BatchStatus.RUNNING
+
+
+def _jsonable(value: Any) -> Any:
+    if hasattr(value, "model_dump"):
+        return value.model_dump(mode="json")
+    if hasattr(value, "to_dict"):
+        return value.to_dict()
+    if isinstance(value, (str, int, float, bool)) or value is None:
+        return value
+    return str(value)
+
+
+def _download_artifact(ref: Any, filename: str, directory: Path, method: str, *, binary: bool = False) -> None:
+    if ref is None or not hasattr(ref, method):
+        return
+    value = getattr(ref, method)()
+    path = directory / filename
+    if binary and isinstance(value, (bytes, bytearray)):
+        path.write_bytes(value)
+    elif hasattr(value, "to_json"):
+        path.write_text(value.to_json())
+    elif isinstance(value, (bytes, bytearray)):
+        path.write_bytes(value)
+    else:
+        path.write_text(json.dumps(_jsonable(value), indent=2, sort_keys=True) + "\n")
+
+
+def _returned_shots(ref: Any) -> int:
+    value = getattr(ref, "n_shots", getattr(ref, "shots", 0)) if ref is not None else 0
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return 0
+
+
+def _cost(*refs: Any) -> float | None:
+    for ref in refs:
+        value = getattr(ref, "cost", getattr(ref, "reported_cost_hqcs", None))
+        if value is not None:
+            try:
+                return float(value)
+            except (TypeError, ValueError):
+                pass
+    return None
 
 
 def _load(path: Path) -> dict[str, Any]:

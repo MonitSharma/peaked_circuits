@@ -77,6 +77,8 @@ from .nexus_hardware import (
     HardwarePreflight,
     build_preflight_report,
     dry_run_hardware_batch,
+    poll_hardware_batch,
+    reconcile_hardware_batch,
     retrieve_hardware_batch,
     submit_hardware_batch,
 )
@@ -489,11 +491,12 @@ def hardware_submit_command(
     predicted = float(item["estimated_hqcs"]) if item else None
     report = build_preflight_report(root, state, batch, discovery=discovery, predicted_hqc=predicted, max_cost=record.max_cost)
     if dry_run or not execute_hardware:
-        rendered = dry_run_hardware_batch(root, report)
+        deterministic_name = f"p12-physical-{batch}-{state.qir_bitcode_sha256[:8]}-{(state.protocol_hash or '')[:8]}"
+        rendered = dry_run_hardware_batch(root, report, job_name=deterministic_name)
         console.print_json(json.dumps(rendered, sort_keys=True))
         write_manifest(root, command="hardware-submit-dry-run", arguments=sys.argv[1:], start=start, exit_status=0, outputs=[], backend_mode="hardware_dry_run")
         return
-    if not report.passed:
+    if not report.structural_passed:
         raise typer.BadParameter("; ".join(report.blockers))
     confirmed = typer.confirm(f"Type approval for {batch}: Helios-1, {shots} shots, predicted {predicted} HQC, max_cost {record.max_cost} HQC. Continue?")
     result = submit_hardware_batch(root, state, batch, preflight=HardwarePreflight(target="Helios-1", target_type="hardware", qubit_capacity=98, source_qasm_sha256=state.source_qasm_sha256, qir_sha256=state.qir_sha256, bitcode_sha256=state.qir_bitcode_sha256, syntax_check_passed=True, mapping_verified=True, predicted_hqc=predicted or 0, requested_shots=shots, max_cost=record.max_cost or 0, protocol_frozen=True, campaign_valid=True, no_active_job=True), execute_hardware=True, interactive_confirmed=confirmed)
@@ -502,7 +505,7 @@ def hardware_submit_command(
 
 @app.command(name="hardware-status")
 def hardware_status_command(batch: Annotated[str | None, typer.Option("--batch")] = None) -> None:
-    """Inspect saved campaign/job state; never resubmit."""
+    """Query saved provider jobs and persist status; never resubmit."""
     root = _root()
     state = CampaignStore(root).load()
     selected = [batch] if batch else list(state.batches)
@@ -510,7 +513,11 @@ def hardware_status_command(batch: Annotated[str | None, typer.Option("--batch")
         record = state.batches.get(batch_id)
         if record is None:
             raise typer.BadParameter(f"Unknown batch: {batch_id}")
-        console.print(f"{batch_id}: role={record.role} status={record.status} job={record.execution_job_ref or 'none'}")
+        if not record.execution_job_ref:
+            console.print(f"{batch_id}: role={record.role} status={record.status} job=none")
+            continue
+        result = poll_hardware_batch(root, state, batch_id)
+        console.print(f"{batch_id}: role={record.role} status={result['status']} job={result['job_ref']}")
 
 
 @app.command(name="hardware-retrieve")
@@ -520,6 +527,15 @@ def hardware_retrieve_command(batch: Annotated[str, typer.Option("--batch")]) ->
     state = CampaignStore(root).load()
     directory = retrieve_hardware_batch(root, state, batch)
     console.print(f"Retrieved {batch} into {directory}")
+
+
+@app.command(name="hardware-reconcile")
+def hardware_reconcile_command(batch: Annotated[str, typer.Option("--batch")]) -> None:
+    """Reconcile a persisted pending submission by deterministic provider name."""
+    root = _root()
+    state = CampaignStore(root).load()
+    job_id = reconcile_hardware_batch(root, state, batch)
+    console.print(f"Reconciled {batch} to existing provider job {job_id}")
 
 
 @app.command(name="campaign-status")
