@@ -2,7 +2,7 @@
   "local_matches_remote": false,
   "remote_branch": "p12_quantum",
   "remote_sha": "5b75ec288dace7a64c85523bb9f448e7e7f6d910",
-  "local_sha": "e4b6f9eccf79634dea23ea5b0bfe5ebc58c11665",
+  "local_sha": "056f3190b9c946680b5cac7d5a7ccecd100d009e",
   "source_sha256": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d",
   "qir_sha256": "c003298ea5c57f963f7f9bf5ca4c94a38fc76db10582a5cc859c621ad358c820",
   "qir_bitcode_sha256": "c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d",
