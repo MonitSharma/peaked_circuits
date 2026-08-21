@@ -9,12 +9,9 @@
     "measurement_mapping_complete",
     "mapping_validation_passed",
     "cost_estimate_obtained",
-    "shot_protocol_frozen",
-    "recovery_method_frozen",
     "tracker_protocol_confirmed",
     "repository_commit_tagged",
     "p12_emulator_pilot_complete",
-    "protocol_frozen",
     "repository_clean",
     "candidate_frozen",
     "hardware_batch_active",
@@ -49,25 +46,25 @@
     "p12_submitted_bitcode_hash_matches": true,
     "p12_syntax_check_passed": true,
     "p12_target_is_helios_1sc": true,
-    "protocol_frozen": false,
+    "protocol_frozen": true,
     "provider_result_order_verified": true,
     "qir_export_completed": true,
     "qir_hash_recorded": true,
     "qir_structural_validation_passed": true,
     "ready_for_p12_emulator_pilot": true,
     "reconciliation_tested": true,
-    "recovery_method_frozen": false,
+    "recovery_method_frozen": true,
     "repository_clean": false,
     "repository_commit_recorded": true,
     "repository_commit_tagged": false,
-    "shot_protocol_frozen": false,
+    "shot_protocol_frozen": true,
     "source_hash_frozen": true,
     "synthetic_tests_passed": true,
     "target_validity_passed": false,
     "tracker_protocol_confirmed": false
   },
   "configuration_hash": null,
-  "created_at": "2026-08-21T02:25:57.600998Z",
+  "created_at": "2026-08-21T02:30:47.166259Z",
   "evidence": [
     {
       "check": "source_hash_frozen",
@@ -155,23 +152,23 @@
     },
     {
       "check": "shot_protocol_frozen",
-      "details": "Missing or failing prerequisite",
-      "evidence_hash": null,
-      "evidence_path": null,
-      "passed": false
+      "details": "Evidence present and valid",
+      "evidence_hash": "5949b4bac7d31a168055745e2ed8073cf99841d8ad4f52dd0166d2790cd24ca6",
+      "evidence_path": "results/protocol/protocol_freeze.json",
+      "passed": true
     },
     {
       "check": "recovery_method_frozen",
-      "details": "Missing or failing prerequisite",
-      "evidence_hash": null,
-      "evidence_path": null,
-      "passed": false
+      "details": "Evidence present and valid",
+      "evidence_hash": "5949b4bac7d31a168055745e2ed8073cf99841d8ad4f52dd0166d2790cd24ca6",
+      "evidence_path": "results/protocol/protocol_freeze.json",
+      "passed": true
     },
     {
       "check": "tracker_protocol_confirmed",
       "details": "Missing or failing prerequisite",
-      "evidence_hash": null,
-      "evidence_path": null,
+      "evidence_hash": "5949b4bac7d31a168055745e2ed8073cf99841d8ad4f52dd0166d2790cd24ca6",
+      "evidence_path": "results/protocol/protocol_freeze.json",
       "passed": false
     },
     {
@@ -275,7 +272,7 @@
     {
       "check": "ready_for_p12_emulator_pilot",
       "details": "Evidence present and valid",
-      "evidence_hash": "1fdd5170a3934195ae1e184801ad996679d86cba3993792423ff31202264308f",
+      "evidence_hash": "b778c1d5c676248ab5496d9e2df64905a7d1a79aee1c3a9309a95826f9bb65e5",
       "evidence_path": "results/nexus/cost/p12_cost.json",
       "passed": true
     },
@@ -303,35 +300,35 @@
     {
       "check": "campaign_state_initialized",
       "details": "Evidence present and valid",
-      "evidence_hash": "c1b78e575ec6557bc3f5ea43d7e4d7380a3cefed74dab65c69c22f1ff12078f2",
+      "evidence_hash": "240c5e3d2c4fd64d5693611887a0d1aca797d8fc9196ce0a60277a7ca79d5d90",
       "evidence_path": "hardware_campaign/campaign_state.json",
       "passed": true
     },
     {
       "check": "batch_resume_supported",
       "details": "Evidence present and valid",
-      "evidence_hash": "c1b78e575ec6557bc3f5ea43d7e4d7380a3cefed74dab65c69c22f1ff12078f2",
+      "evidence_hash": "240c5e3d2c4fd64d5693611887a0d1aca797d8fc9196ce0a60277a7ca79d5d90",
       "evidence_path": "hardware_campaign/campaign_state.json",
       "passed": true
     },
     {
       "check": "duplicate_submission_guarded",
       "details": "Evidence present and valid",
-      "evidence_hash": "c1b78e575ec6557bc3f5ea43d7e4d7380a3cefed74dab65c69c22f1ff12078f2",
+      "evidence_hash": "240c5e3d2c4fd64d5693611887a0d1aca797d8fc9196ce0a60277a7ca79d5d90",
       "evidence_path": "hardware_campaign/campaign_state.json",
       "passed": true
     },
     {
       "check": "protocol_frozen",
-      "details": "Missing or failing prerequisite",
-      "evidence_hash": null,
-      "evidence_path": null,
-      "passed": false
+      "details": "Evidence present and valid",
+      "evidence_hash": "5949b4bac7d31a168055745e2ed8073cf99841d8ad4f52dd0166d2790cd24ca6",
+      "evidence_path": "results/protocol/protocol_freeze.json",
+      "passed": true
     },
     {
       "check": "fresh_costing",
       "details": "Evidence present and valid",
-      "evidence_hash": "1fdd5170a3934195ae1e184801ad996679d86cba3993792423ff31202264308f",
+      "evidence_hash": "b778c1d5c676248ab5496d9e2df64905a7d1a79aee1c3a9309a95826f9bb65e5",
       "evidence_path": "results/nexus/cost/p12_cost.json",
       "passed": true
     },
@@ -359,26 +356,26 @@
     {
       "check": "candidate_frozen",
       "details": "Missing or failing prerequisite",
-      "evidence_hash": "c1b78e575ec6557bc3f5ea43d7e4d7380a3cefed74dab65c69c22f1ff12078f2",
+      "evidence_hash": "240c5e3d2c4fd64d5693611887a0d1aca797d8fc9196ce0a60277a7ca79d5d90",
       "evidence_path": "hardware_campaign/campaign_state.json",
       "passed": false
     },
     {
       "check": "hardware_batch_active",
       "details": "Missing or failing prerequisite",
-      "evidence_hash": "c1b78e575ec6557bc3f5ea43d7e4d7380a3cefed74dab65c69c22f1ff12078f2",
+      "evidence_hash": "240c5e3d2c4fd64d5693611887a0d1aca797d8fc9196ce0a60277a7ca79d5d90",
       "evidence_path": "hardware_campaign/campaign_state.json",
       "passed": false
     },
     {
       "check": "hardware_batch_retrieved",
       "details": "Missing or failing prerequisite",
-      "evidence_hash": "c1b78e575ec6557bc3f5ea43d7e4d7380a3cefed74dab65c69c22f1ff12078f2",
+      "evidence_hash": "240c5e3d2c4fd64d5693611887a0d1aca797d8fc9196ce0a60277a7ca79d5d90",
       "evidence_path": "hardware_campaign/campaign_state.json",
       "passed": false
     }
   ],
-  "git_commit": "96cd5394adb1c3cf14e7ef9944e5ea43532143bf",
+  "git_commit": "3fef5e37d77aef99720e0e287c348967c48a7594",
   "git_dirty": true,
   "hardware_execution_enabled": false,
   "input_hashes": {
