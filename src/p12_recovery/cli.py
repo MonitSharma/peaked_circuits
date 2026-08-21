@@ -153,6 +153,11 @@ def _ensure_campaign(root: Path, batch_id: str, shots: int, max_cost: float | No
         batch = state.batches[batch_id]
         if batch.requested_shots != shots:
             raise typer.BadParameter(f"Existing {batch_id} uses {batch.requested_shots} shots")
+    current_commit, current_dirty = git_state(root)
+    if batch.repository_git_sha != current_commit:
+        batch.repository_git_sha = current_commit
+    if current_dirty:
+        raise typer.BadParameter("Campaign provenance requires a clean Git tree")
     store.save(state)
     return store, state, batch
 
