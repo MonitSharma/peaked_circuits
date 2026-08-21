@@ -156,6 +156,8 @@ def _ensure_campaign(root: Path, batch_id: str, shots: int, max_cost: float | No
     current_commit, current_dirty = git_state(root)
     if batch.repository_git_sha != current_commit:
         batch.repository_git_sha = current_commit
+    if batch.protocol_hash != state.protocol_hash:
+        batch.protocol_hash = state.protocol_hash
     if current_dirty:
         raise typer.BadParameter("Campaign provenance requires a clean Git tree")
     store.save(state)
