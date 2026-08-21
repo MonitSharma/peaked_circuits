@@ -64,7 +64,7 @@
     "tracker_protocol_confirmed": false
   },
   "configuration_hash": null,
-  "created_at": "2026-08-21T02:30:47.166259Z",
+  "created_at": "2026-08-21T02:31:40.256119Z",
   "evidence": [
     {
       "check": "source_hash_frozen",
@@ -272,7 +272,7 @@
     {
       "check": "ready_for_p12_emulator_pilot",
       "details": "Evidence present and valid",
-      "evidence_hash": "b778c1d5c676248ab5496d9e2df64905a7d1a79aee1c3a9309a95826f9bb65e5",
+      "evidence_hash": "e9ac68e174e71168c536d154b6ecfd912ad16964b74526f4dbf5c68d5833a748",
       "evidence_path": "results/nexus/cost/p12_cost.json",
       "passed": true
     },
@@ -300,21 +300,21 @@
     {
       "check": "campaign_state_initialized",
       "details": "Evidence present and valid",
-      "evidence_hash": "240c5e3d2c4fd64d5693611887a0d1aca797d8fc9196ce0a60277a7ca79d5d90",
+      "evidence_hash": "c43b0f5d1a5f2363ebc88634af765e86800d1ec6a5a67053ea6132b160636cbb",
       "evidence_path": "hardware_campaign/campaign_state.json",
       "passed": true
     },
     {
       "check": "batch_resume_supported",
       "details": "Evidence present and valid",
-      "evidence_hash": "240c5e3d2c4fd64d5693611887a0d1aca797d8fc9196ce0a60277a7ca79d5d90",
+      "evidence_hash": "c43b0f5d1a5f2363ebc88634af765e86800d1ec6a5a67053ea6132b160636cbb",
       "evidence_path": "hardware_campaign/campaign_state.json",
       "passed": true
     },
     {
       "check": "duplicate_submission_guarded",
       "details": "Evidence present and valid",
-      "evidence_hash": "240c5e3d2c4fd64d5693611887a0d1aca797d8fc9196ce0a60277a7ca79d5d90",
+      "evidence_hash": "c43b0f5d1a5f2363ebc88634af765e86800d1ec6a5a67053ea6132b160636cbb",
       "evidence_path": "hardware_campaign/campaign_state.json",
       "passed": true
     },
@@ -328,7 +328,7 @@
     {
       "check": "fresh_costing",
       "details": "Evidence present and valid",
-      "evidence_hash": "b778c1d5c676248ab5496d9e2df64905a7d1a79aee1c3a9309a95826f9bb65e5",
+      "evidence_hash": "e9ac68e174e71168c536d154b6ecfd912ad16964b74526f4dbf5c68d5833a748",
       "evidence_path": "results/nexus/cost/p12_cost.json",
       "passed": true
     },
@@ -356,26 +356,26 @@
     {
       "check": "candidate_frozen",
       "details": "Missing or failing prerequisite",
-      "evidence_hash": "240c5e3d2c4fd64d5693611887a0d1aca797d8fc9196ce0a60277a7ca79d5d90",
+      "evidence_hash": "c43b0f5d1a5f2363ebc88634af765e86800d1ec6a5a67053ea6132b160636cbb",
       "evidence_path": "hardware_campaign/campaign_state.json",
       "passed": false
     },
     {
       "check": "hardware_batch_active",
       "details": "Missing or failing prerequisite",
-      "evidence_hash": "240c5e3d2c4fd64d5693611887a0d1aca797d8fc9196ce0a60277a7ca79d5d90",
+      "evidence_hash": "c43b0f5d1a5f2363ebc88634af765e86800d1ec6a5a67053ea6132b160636cbb",
       "evidence_path": "hardware_campaign/campaign_state.json",
       "passed": false
     },
     {
       "check": "hardware_batch_retrieved",
       "details": "Missing or failing prerequisite",
-      "evidence_hash": "240c5e3d2c4fd64d5693611887a0d1aca797d8fc9196ce0a60277a7ca79d5d90",
+      "evidence_hash": "c43b0f5d1a5f2363ebc88634af765e86800d1ec6a5a67053ea6132b160636cbb",
       "evidence_path": "hardware_campaign/campaign_state.json",
       "passed": false
     }
   ],
-  "git_commit": "3fef5e37d77aef99720e0e287c348967c48a7594",
+  "git_commit": "60a82744b4af2c036a64ac1ff6c431cde12f0d74",
   "git_dirty": true,
   "hardware_execution_enabled": false,
   "input_hashes": {
