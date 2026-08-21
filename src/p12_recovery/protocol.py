@@ -9,7 +9,7 @@ import yaml
 from .config import load_yaml
 from .hashing import hash_config
 from .models import CompilationReport, MappingValidationReport, ProtocolFreezeRecord
-from .reporting import git_state, write_json
+from .reporting import git_state
 
 
 class ProtocolFreezeBlocked(RuntimeError):
