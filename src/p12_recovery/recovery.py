@@ -101,7 +101,11 @@ def weighted_observed_medoid(
     started = time.perf_counter()
     strings, weights, bits = _matrix(counts)
     unique = len(strings)
-    exact = unique <= exact_threshold
+    # The medoid is a weighted objective over every observed string.  Keep the
+    # exact path through at least 2,000 unique strings; this is important for
+    # P12 because a top-frequency subset can exclude the true basin center.
+    exact_limit = max(2000, exact_threshold)
+    exact = unique <= exact_limit
     if exact:
         candidates = np.arange(unique)
     else:
@@ -120,6 +124,7 @@ def weighted_observed_medoid(
         started,
         parameters={
             "exact_threshold": exact_threshold,
+            "exact_limit": exact_limit,
             "approximate_candidates": approximate_candidates,
             "exact": exact,
         },
@@ -140,14 +145,10 @@ def cluster_consensus(
     started = time.perf_counter()
     strings, weights, bits = _matrix(counts)
     shots = int(weights.sum())
-    approximate = len(strings) > exact_threshold
-    if approximate:
-        selected_indices = sorted(
-            range(len(strings)), key=lambda i: (-int(weights[i]), strings[i])
-        )[:exact_threshold]
-        strings = [strings[i] for i in selected_indices]
-        weights = weights[selected_indices]
-        bits = bits[selected_indices]
+    # Cluster all observed strings.  `exact_threshold` remains in the public
+    # signature for protocol compatibility, but is no longer used to silently
+    # discard low-frequency observations.
+    approximate = False
     if len(strings) == 1:
         labels = np.array([1])
     else:

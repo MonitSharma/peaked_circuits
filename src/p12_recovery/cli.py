@@ -7,7 +7,7 @@ import platform
 import sys
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Annotated, cast
+from typing import Annotated, Any, cast
 
 import typer
 import yaml
@@ -23,6 +23,7 @@ from .backends.quantinuum import (
     sanitize_diagnostic,
 )
 from .benchmark import run_synthetic_benchmark
+from .campaign import BatchRole, CampaignStore, operational_max_cost
 from .circuit_inspection import inspect_circuit
 from .compilation import compile_from_config, validate_existing
 from .config import load_model
@@ -33,7 +34,7 @@ from .emulator_guard import (
     HeliosEmulatorExecutionBlocked,
     assert_helios_emulator_execution_allowed,
 )
-from .hashing import read_sha256sums, sha256_file
+from .hashing import hash_config, read_sha256sums, sha256_file
 from .mapping_validation import run_mapping_validation
 from .models import (
     AvailableDevicesReport,
@@ -72,6 +73,13 @@ from .nexus_cost import (
     write_nexus_cost_report,
 )
 from .nexus_emulator import execute_mapping_cases, execute_p12_pilot
+from .nexus_hardware import (
+    HardwarePreflight,
+    build_preflight_report,
+    dry_run_hardware_batch,
+    retrieve_hardware_batch,
+    submit_hardware_batch,
+)
 from .nexus_syntax_check import (
     MAPPING_CASE_ORDER,
     submit_mapping_syntax_checks,
@@ -117,6 +125,32 @@ def _root() -> Path:
     if (current / "pyproject.toml").is_file():
         return current
     raise typer.BadParameter("Run the CLI from the p12-helios-recovery repository root")
+
+
+def _ensure_campaign(root: Path, batch_id: str, shots: int, max_cost: float | None) -> tuple[CampaignStore, Any, Any]:
+    store = CampaignStore(root)
+    cost_payload = json.loads((root / "results/nexus/cost/p12_cost.json").read_text())
+    item = next((value for value in cost_payload.get("items", []) if value.get("shots") == shots), None)
+    predicted = float(item["estimated_hqcs"]) if item else None
+    state = store.initialize(
+        source=root / "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm",
+        qir=root / "results/qir/p12.ll",
+        bitcode=root / "results/qir/p12.bc",
+        protocol_version="3.0",
+        recommended_shots=400,
+        predicted_hqc=predicted,
+    )
+    config = yaml.safe_load((root / "configs/experiment.yaml").read_text())
+    state.protocol_hash = hash_config(config)
+    if batch_id not in state.batches:
+        role = BatchRole.DISCOVERY if batch_id == "batch_001" else BatchRole.CONFIRMATION if batch_id == "batch_002" else BatchRole.ADDITIONAL_REPLICATION
+        batch = store.create_batch(state, role=role, shots=shots, max_cost=max_cost or (operational_max_cost(predicted) if predicted else None))
+    else:
+        batch = state.batches[batch_id]
+        if batch.requested_shots != shots:
+            raise typer.BadParameter(f"Existing {batch_id} uses {batch.requested_shots} shots")
+    store.save(state)
+    return store, state, batch
 
 
 def _version(package: str) -> str | None:
@@ -410,6 +444,92 @@ def build_report() -> None:
         outputs=[output, root / "docs/hardware_readiness.md"],
     )
     console.print(report.state)
+
+
+@app.command(name="hardware-preflight")
+def hardware_preflight_command(
+    batch: Annotated[str, typer.Option("--batch")] = "batch_001",
+    shots: Annotated[int, typer.Option("--shots", min=1)] = 400,
+    max_cost: Annotated[float | None, typer.Option("--max-cost")] = None,
+) -> None:
+    """Validate a future physical batch without submitting it."""
+    root, start = _root(), datetime.now(UTC)
+    _store, state, record = _ensure_campaign(root, batch, shots, max_cost)
+    discovery = discover_quantinuum_report().model_dump(mode="json")
+    cost_payload = json.loads((root / "results/nexus/cost/p12_cost.json").read_text())
+    item = next((value for value in cost_payload.get("items", []) if value.get("shots") == shots), None)
+    predicted = float(item["estimated_hqcs"]) if item else None
+    report = build_preflight_report(root, state, batch, discovery=discovery, predicted_hqc=predicted, max_cost=record.max_cost)
+    directory = root / "hardware_campaign" / batch / "preflight"
+    directory.mkdir(parents=True, exist_ok=True)
+    (directory / "preflight.json").write_text(report.model_dump_json(indent=2) + "\n")
+    (directory / "preflight.md").write_text(
+        f"# {batch} hardware preflight\n\nStatus: **{'passed' if report.passed else 'blocked'}**\n\n"
+        + "\n".join(f"- [{'x' if value else ' '}] {key}" for key, value in report.checks.items())
+        + "\n\n`hardware_submission_authorized_by_user = false`\n"
+    )
+    write_manifest(root, command="hardware-preflight", arguments=sys.argv[1:], start=start, exit_status=0, outputs=[directory / "preflight.json", directory / "preflight.md"], backend_mode="hardware_preflight_only")
+    console.print(f"Hardware preflight {batch}: {'passed' if report.passed else 'blocked'}")
+
+
+@app.command(name="hardware-submit")
+def hardware_submit_command(
+    batch: Annotated[str, typer.Option("--batch")] = "batch_001",
+    shots: Annotated[int, typer.Option("--shots", min=1)] = 400,
+    max_cost: Annotated[float | None, typer.Option("--max-cost")] = None,
+    execute_hardware: Annotated[bool, typer.Option("--execute-hardware")] = False,
+    dry_run: Annotated[bool, typer.Option("--dry-run")] = False,
+) -> None:
+    """Render or, only with all explicit gates, submit one physical batch."""
+    root, start = _root(), datetime.now(UTC)
+    _store, state, record = _ensure_campaign(root, batch, shots, max_cost)
+    discovery = discover_quantinuum_report().model_dump(mode="json")
+    cost_payload = json.loads((root / "results/nexus/cost/p12_cost.json").read_text())
+    item = next((value for value in cost_payload.get("items", []) if value.get("shots") == shots), None)
+    predicted = float(item["estimated_hqcs"]) if item else None
+    report = build_preflight_report(root, state, batch, discovery=discovery, predicted_hqc=predicted, max_cost=record.max_cost)
+    if dry_run or not execute_hardware:
+        rendered = dry_run_hardware_batch(root, report)
+        console.print_json(json.dumps(rendered, sort_keys=True))
+        write_manifest(root, command="hardware-submit-dry-run", arguments=sys.argv[1:], start=start, exit_status=0, outputs=[], backend_mode="hardware_dry_run")
+        return
+    if not report.passed:
+        raise typer.BadParameter("; ".join(report.blockers))
+    confirmed = typer.confirm(f"Type approval for {batch}: Helios-1, {shots} shots, predicted {predicted} HQC, max_cost {record.max_cost} HQC. Continue?")
+    result = submit_hardware_batch(root, state, batch, preflight=HardwarePreflight(target="Helios-1", target_type="hardware", qubit_capacity=98, source_qasm_sha256=state.source_qasm_sha256, qir_sha256=state.qir_sha256, bitcode_sha256=state.qir_bitcode_sha256, syntax_check_passed=True, mapping_verified=True, predicted_hqc=predicted or 0, requested_shots=shots, max_cost=record.max_cost or 0, protocol_frozen=True, campaign_valid=True, no_active_job=True), execute_hardware=True, interactive_confirmed=confirmed)
+    console.print_json(json.dumps(result, sort_keys=True))
+
+
+@app.command(name="hardware-status")
+def hardware_status_command(batch: Annotated[str | None, typer.Option("--batch")] = None) -> None:
+    """Inspect saved campaign/job state; never resubmit."""
+    root = _root()
+    state = CampaignStore(root).load()
+    selected = [batch] if batch else list(state.batches)
+    for batch_id in selected:
+        record = state.batches.get(batch_id)
+        if record is None:
+            raise typer.BadParameter(f"Unknown batch: {batch_id}")
+        console.print(f"{batch_id}: role={record.role} status={record.status} job={record.execution_job_ref or 'none'}")
+
+
+@app.command(name="hardware-retrieve")
+def hardware_retrieve_command(batch: Annotated[str, typer.Option("--batch")]) -> None:
+    """Retrieve an existing saved job without creating a new one."""
+    root = _root()
+    state = CampaignStore(root).load()
+    directory = retrieve_hardware_batch(root, state, batch)
+    console.print(f"Retrieved {batch} into {directory}")
+
+
+@app.command(name="campaign-status")
+def campaign_status_command() -> None:
+    """Show persistent campaign and batch state."""
+    root = _root()
+    state = CampaignStore(root).load()
+    console.print(f"Campaign: {state.campaign_id}\nCircuit: {state.circuit_id}\nStatus: {state.status}\nCumulative valid shots: {state.cumulative_valid_shots}")
+    for record in state.batches.values():
+        console.print(f"  {record.batch_id}: role={record.role} status={record.status} shots={record.requested_shots} job={record.execution_job_ref or 'none'}")
 
 
 @app.command(name="import-quantinuum-result")

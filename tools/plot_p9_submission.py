@@ -49,7 +49,7 @@ def main() -> None:
     ax.set_title("P9 MettleQ samples — seed 123, exact oracle recovered")
     ax.grid(axis="x", linestyle="--", alpha=0.35)
     ax.set_axisbelow(True)
-    for bar, value in zip(bars, values):
+    for bar, value in zip(bars, values, strict=True):
         ax.text(value + 0.8, bar.get_y() + bar.get_height() / 2, str(value), va="center")
     fig.tight_layout()
     fig.savefig(args.output_dir / "p9_mettleq_samples.png", dpi=220)
@@ -71,7 +71,7 @@ def main() -> None:
     ax.set_title("P9 seed-123 runtime on the same M3 Pro")
     ax.grid(axis="y", linestyle="--", alpha=0.35)
     ax.set_axisbelow(True)
-    for bar, value in zip(bars, times):
+    for bar, value in zip(bars, times, strict=True):
         ax.text(bar.get_x() + bar.get_width() / 2, value + max(times) * 0.02,
                 f"{value:.1f} s", ha="center", va="bottom")
     fig.tight_layout()

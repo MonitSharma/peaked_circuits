@@ -18,12 +18,11 @@ from __future__ import annotations
 
 import argparse
 import csv
-import hashlib
 import json
-import math
+from collections.abc import Iterable
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Iterable, Optional
+from typing import Any
 
 # Known circuit hashes -> label, so runs are classified without trusting the
 # free-text path (paths differ across machines/worktrees).
@@ -32,7 +31,7 @@ CIRCUIT_BY_SHA = {
 }
 
 
-def _sha_label(sha: Optional[str], qasm: Optional[str]) -> str:
+def _sha_label(sha: str | None, qasm: str | None) -> str:
     if sha and sha in CIRCUIT_BY_SHA:
         return CIRCUIT_BY_SHA[sha]
     if qasm:
@@ -43,7 +42,7 @@ def _sha_label(sha: Optional[str], qasm: Optional[str]) -> str:
     return "unknown"
 
 
-def _read_json(path: Path) -> Optional[dict]:
+def _read_json(path: Path) -> dict | None:
     try:
         return json.loads(path.read_text())
     except Exception:
@@ -72,54 +71,54 @@ class RunSummary:
     family: str  # 'mpo' or 'mps'
     circuit: str
     # config knobs (mpo)
-    cutoff: Optional[float] = None
-    max_bond: Optional[int] = None
-    center_ratio: Optional[float] = None
-    unswap_threshold: Optional[float] = None
-    unswap_select_mode: Optional[str] = None
-    route_proxy_weight: Optional[float] = None
-    route_proxy_lookahead: Optional[int] = None
-    route_proxy_policy: Optional[str] = None
-    alignment_weight: Optional[float] = None
-    max_swaps_per_step: Optional[int] = None
-    trigger_max_bond: Optional[int] = None
-    dtype: Optional[str] = None
-    max_work_gates: Optional[int] = None
-    seed: Optional[int] = None
+    cutoff: float | None = None
+    max_bond: int | None = None
+    center_ratio: float | None = None
+    unswap_threshold: float | None = None
+    unswap_select_mode: str | None = None
+    route_proxy_weight: float | None = None
+    route_proxy_lookahead: int | None = None
+    route_proxy_policy: str | None = None
+    alignment_weight: float | None = None
+    max_swaps_per_step: int | None = None
+    trigger_max_bond: int | None = None
+    dtype: str | None = None
+    max_work_gates: int | None = None
+    seed: int | None = None
     # config knobs (mps)
-    dmax: Optional[int] = None
-    eps: Optional[float] = None
-    routing_strategy: Optional[str] = None
-    routing_lookahead: Optional[int] = None
+    dmax: int | None = None
+    eps: float | None = None
+    routing_strategy: str | None = None
+    routing_lookahead: int | None = None
     # outcome / trajectory
-    total_work_gates: Optional[int] = None
-    gates_completed: Optional[int] = None
-    wall_time_s: Optional[float] = None
-    cycles: Optional[int] = None
-    peak_max_bond: Optional[int] = None
-    peak_total_elems: Optional[int] = None
-    peak_rss_bytes: Optional[int] = None
-    no_progress_cycles_final: Optional[int] = None
-    status: Optional[str] = None
+    total_work_gates: int | None = None
+    gates_completed: int | None = None
+    wall_time_s: float | None = None
+    cycles: int | None = None
+    peak_max_bond: int | None = None
+    peak_total_elems: int | None = None
+    peak_rss_bytes: int | None = None
+    no_progress_cycles_final: int | None = None
+    status: str | None = None
     # rescored progress metrics
-    gates_per_hour: Optional[float] = None
-    gates_last_third: Optional[int] = None
-    time_last_third_s: Optional[float] = None
-    rate_last_third_gph: Optional[float] = None
-    stalled: Optional[bool] = None
+    gates_per_hour: float | None = None
+    gates_last_third: int | None = None
+    time_last_third_s: float | None = None
+    rate_last_third_gph: float | None = None
+    stalled: bool | None = None
     # stage time breakdown (fraction of wall)
-    frac_unswap: Optional[float] = None
-    frac_rewire: Optional[float] = None
-    frac_absorb: Optional[float] = None
+    frac_unswap: float | None = None
+    frac_rewire: float | None = None
+    frac_absorb: float | None = None
     # mps specifics
-    discarded_weight_sum: Optional[float] = None
-    mps_bond_mean_final: Optional[float] = None
-    planned_lookahead_swaps: Optional[int] = None
-    planned_restore_swaps: Optional[int] = None
+    discarded_weight_sum: float | None = None
+    mps_bond_mean_final: float | None = None
+    planned_lookahead_swaps: int | None = None
+    planned_restore_swaps: int | None = None
     trajectory: list[dict] = field(default_factory=list)
 
 
-def parse_mpo_run(name: str, run_dir: Path) -> Optional[RunSummary]:
+def parse_mpo_run(name: str, run_dir: Path) -> RunSummary | None:
     live = run_dir / "live_stats.jsonl"
     if not live.is_file():
         return None
@@ -151,8 +150,8 @@ def parse_mpo_run(name: str, run_dir: Path) -> Optional[RunSummary]:
 
     # Walk records: build trajectory from cycle summaries, track peaks and
     # cumulative time-in-stage via consecutive-timestamp deltas.
-    prev_t: Optional[float] = None
-    prev_stage: Optional[str] = None
+    prev_t: float | None = None
+    prev_stage: str | None = None
     stage_time: dict[str, float] = {}
     last_t = 0.0
     peak_bond = 0
@@ -235,7 +234,6 @@ def _rescored_last_third(s: RunSummary, traj: list[dict]) -> None:
     if len(pts) < 3:
         return
     n = len(pts)
-    cut = pts[max(0, n - max(2, n // 3)) - 1] if n >= 3 else pts[0]
     start = pts[max(0, n - max(2, n // 3)) - 1]
     end = pts[-1]
     dg = end["gates_consumed"] - start["gates_consumed"]
@@ -249,12 +247,11 @@ def _rescored_last_third(s: RunSummary, traj: list[dict]) -> None:
         s.stalled = dg < 2
 
 
-def parse_mps_run(name: str, run_dir: Path) -> Optional[RunSummary]:
+def parse_mps_run(name: str, run_dir: Path) -> RunSummary | None:
     manifest = _read_json(run_dir / "manifest.json")
     summary = _read_json(run_dir / "summary.json")
     if not manifest and not summary:
         return None
-    src = summary or manifest or {}
     cfg = (manifest or {}).get("configuration", {}) or (summary or {}).get("configuration", {})
     routing = (summary or manifest or {}).get("routing", {})
     circuit = _sha_label((manifest or summary or {}).get("qasm_sha256"), cfg.get("qasm"))
@@ -296,7 +293,7 @@ def parse_mps_run(name: str, run_dir: Path) -> Optional[RunSummary]:
     return s
 
 
-def classify_and_parse(run_dir: Path) -> Optional[RunSummary]:
+def classify_and_parse(run_dir: Path) -> RunSummary | None:
     name = run_dir.name
     if (run_dir / "live_stats.jsonl").is_file():
         return parse_mpo_run(name, run_dir)

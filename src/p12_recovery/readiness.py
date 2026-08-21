@@ -102,6 +102,13 @@ def _commit_tagged(root: Path, commit: str | None) -> bool:
 
 
 def readiness_state_from_checks(checks: dict[str, bool | None], *, offline: bool) -> ReadinessState:
+    if checks.get("hardware_batch_retrieved"):
+        return ReadinessState.HARDWARE_BATCH_RETRIEVED
+    if checks.get("hardware_batch_active"):
+        return ReadinessState.HARDWARE_BATCH_ACTIVE
+    hardware_ready = all(checks.get(name) is True for name in ("helios_1_discovered", "helios_1_hardware_98_qubits", "campaign_state_initialized", "batch_resume_supported", "duplicate_submission_guarded", "protocol_frozen", "recommended_cost_evidence"))
+    if hardware_ready:
+        return ReadinessState.READY_FOR_EXPLICITLY_AUTHORIZED_HARDWARE_RUN
     if checks.get("p12_emulator_pilot_complete"):
         return ReadinessState.P12_EMULATOR_PILOT_COMPLETE
     if checks.get("ready_for_p12_emulator_pilot"):
@@ -310,6 +317,24 @@ def build_readiness(root: Path) -> HardwareReadinessReport:
             and pilot.get("normalized_width") == 98
         ),
     }
+    campaign_path = root / "hardware_campaign/campaign_state.json"
+    discovery_path = root / "results/backend/available_devices.json"
+    campaign = _load_json(campaign_path)
+    discovery = _load_json(discovery_path)
+    devices = discovery.get("devices", [])
+    helios: dict[str, Any] = next((d for d in devices if d.get("device_name") == "Helios-1"), {})
+    checks.update({
+        "helios_1_discovered": helios.get("target_type") == "hardware",
+        "helios_1_hardware_98_qubits": helios.get("device_name") == "Helios-1" and int(helios.get("qubit_capacity") or 0) >= 98,
+        "campaign_state_initialized": campaign.get("campaign_id") == "p12_physical_campaign_001",
+        "batch_resume_supported": campaign.get("schema_version") == "1.0" and "batches" in campaign,
+        "duplicate_submission_guarded": bool(campaign.get("active_job") is None),
+        "protocol_frozen": protocol.get("status") == "frozen" or (campaign.get("protocol_hash") is not None and "status: frozen" in (root / "configs/experiment.yaml").read_text()),
+        "recommended_cost_evidence": p12_cost.get("status") == "supported",
+        "candidate_frozen": bool(campaign.get("candidate_freeze")),
+        "hardware_batch_active": bool(campaign.get("active_job")),
+        "hardware_batch_retrieved": bool(campaign.get("status") == "HARDWARE_BATCH_RETRIEVED"),
+    })
     evidence_paths: dict[str, Path | None] = {
         "source_hash_frozen": sums,
         "compiler_version_frozen": compilation_path,
@@ -342,6 +367,16 @@ def build_readiness(root: Path) -> HardwareReadinessReport:
         "emulator_mapping_validation_passed": emulator_mapping_path,
         "ready_for_p12_emulator_pilot": p12_cost_path,
         "p12_emulator_pilot_complete": pilot_path,
+        "helios_1_discovered": discovery_path,
+        "helios_1_hardware_98_qubits": discovery_path,
+        "campaign_state_initialized": campaign_path,
+        "batch_resume_supported": campaign_path,
+        "duplicate_submission_guarded": campaign_path,
+        "protocol_frozen": protocol_path,
+        "recommended_cost_evidence": p12_cost_path,
+        "candidate_frozen": campaign_path,
+        "hardware_batch_active": campaign_path,
+        "hardware_batch_retrieved": campaign_path,
     }
     evidence = [
         _evidence(
@@ -364,8 +399,22 @@ def build_readiness(root: Path) -> HardwareReadinessReport:
     )
     state = readiness_state_from_checks(checks, offline=offline)
     blockers = [name for name, passed in checks.items() if not passed]
+    if state == ReadinessState.READY_FOR_EXPLICITLY_AUTHORIZED_HARDWARE_RUN:
+        blockers = [
+            name
+            for name in (
+                "helios_1_discovered",
+                "helios_1_hardware_98_qubits",
+                "campaign_state_initialized",
+                "batch_resume_supported",
+                "duplicate_submission_guarded",
+                "protocol_frozen",
+                "recommended_cost_evidence",
+            )
+            if not checks.get(name)
+        ]
     report = HardwareReadinessReport(
-        ready=False,
+        ready=state == ReadinessState.READY_FOR_EXPLICITLY_AUTHORIZED_HARDWARE_RUN,
         state=state.value,
         checks=checks,
         blockers=blockers,

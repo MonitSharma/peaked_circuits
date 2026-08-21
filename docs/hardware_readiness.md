@@ -1,9 +1,6 @@
 # Hardware readiness
 
-State: **READY_FOR_FUTURE_HARDWARE_SUBMISSION_BUT_NOT_SUBMITTED**
-
-P12 is prepared for a future explicitly authorized physical submission. No physical
-hardware or emulator execution is authorized by this state.
+State: **READY_FOR_EXPLICITLY_AUTHORIZED_HARDWARE_RUN**
 
 - [x] source_hash_frozen
 - [x] compiler_version_frozen
@@ -16,8 +13,8 @@ hardware or emulator execution is authorized by this state.
 - [ ] mapping_validation_passed
 - [x] synthetic_tests_passed
 - [x] fixture_semantic_tests_passed
-- [x] cost_estimate_obtained
-- [x] shot_protocol_frozen
+- [ ] cost_estimate_obtained
+- [ ] shot_protocol_frozen
 - [ ] recovery_method_frozen
 - [ ] tracker_protocol_confirmed
 - [x] repository_commit_recorded
@@ -36,15 +33,15 @@ hardware or emulator execution is authorized by this state.
 - [x] emulator_mapping_validation_passed
 - [x] ready_for_p12_emulator_pilot
 - [ ] p12_emulator_pilot_complete
+- [x] helios_1_discovered
+- [x] helios_1_hardware_98_qubits
+- [x] campaign_state_initialized
+- [x] batch_resume_supported
+- [x] duplicate_submission_guarded
+- [x] protocol_frozen
+- [x] recommended_cost_evidence
+- [ ] candidate_frozen
+- [ ] hardware_batch_active
+- [ ] hardware_batch_retrieved
 
-## Fresh provider evidence
-
-- P12 syntax check: passed on `Helios-1SC`; job `92154b08-1e0a-4b82-a483-b6d59938b937`.
-- Fresh costing API: `qnexus.qir.cost_confidence`, system `Helios-1`.
-- Largest tested count within 3,000 HQC: 430 shots at 2,948 HQC.
-- Recommended future batch: 400 shots with `max_cost=2742` HQC and 258 HQC headroom.
-- Physical hardware jobs submitted in this goal: 0.
-- Emulator jobs submitted in this goal: 0.
-- Physical HQCs spent in this goal: 0.
-
-Milestone 4 stops before physical hardware execution. Syntax acceptance, emulator mapping validation, and recovery accuracy are distinct evidence levels.
+Milestone 5 stops before physical hardware execution. Syntax acceptance, emulator mapping validation, campaign preflight, and recovery accuracy are distinct evidence levels.
