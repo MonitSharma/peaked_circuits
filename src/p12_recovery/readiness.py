@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import subprocess
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -106,7 +107,17 @@ def readiness_state_from_checks(checks: dict[str, bool | None], *, offline: bool
         return ReadinessState.HARDWARE_BATCH_RETRIEVED
     if checks.get("hardware_batch_active"):
         return ReadinessState.HARDWARE_BATCH_ACTIVE
-    hardware_ready = all(checks.get(name) is True for name in ("helios_1_discovered", "helios_1_hardware_98_qubits", "campaign_state_initialized", "batch_resume_supported", "duplicate_submission_guarded", "protocol_frozen", "recommended_cost_evidence"))
+    hardware_ready = all(
+        checks.get(name) is True
+        for name in (
+            "source_hash_frozen", "qir_hash_recorded", "qir_structural_validation_passed",
+            "p12_syntax_check_passed", "provider_result_order_verified",
+            "helios_1_discovered", "helios_1_hardware_98_qubits", "fresh_costing",
+            "decoder_frozen", "protocol_frozen", "repository_clean", "repository_commit_tagged",
+            "campaign_state_initialized", "batch_resume_supported", "duplicate_submission_guarded",
+            "reconciliation_tested",
+        )
+    )
     if hardware_ready:
         return ReadinessState.READY_FOR_EXPLICITLY_AUTHORIZED_HARDWARE_RUN
     if checks.get("p12_emulator_pilot_complete"):
@@ -323,17 +334,29 @@ def build_readiness(root: Path) -> HardwareReadinessReport:
     discovery = _load_json(discovery_path)
     devices = discovery.get("devices", [])
     helios: dict[str, Any] = next((d for d in devices if d.get("device_name") == "Helios-1"), {})
+    fresh_cost_item = next((item for item in p12_cost.get("items", []) if item.get("program_name") == "p12" and item.get("shots") == 400), None)
+    fresh_costing = False
+    if fresh_cost_item and isinstance(fresh_cost_item.get("provider_timestamp"), str):
+        try:
+            age = datetime.now(UTC) - datetime.fromisoformat(fresh_cost_item["provider_timestamp"].replace("Z", "+00:00"))
+            fresh_costing = age.total_seconds() <= 24 * 3600 and fresh_cost_item.get("bitcode_sha256") == campaign.get("qir_bitcode_sha256")
+        except ValueError:
+            fresh_costing = False
+    repository_clean = commit is not None and git_state(root)[1] is False
     checks.update({
         "helios_1_discovered": helios.get("target_type") == "hardware",
         "helios_1_hardware_98_qubits": helios.get("device_name") == "Helios-1" and int(helios.get("qubit_capacity") or 0) >= 98,
         "campaign_state_initialized": campaign.get("campaign_id") == "p12_physical_campaign_001",
         "batch_resume_supported": campaign.get("schema_version") == "1.0" and "batches" in campaign,
-        "duplicate_submission_guarded": bool(campaign.get("active_job") is None),
-        "protocol_frozen": protocol.get("status") == "frozen" or (campaign.get("protocol_hash") is not None and "status: frozen" in (root / "configs/experiment.yaml").read_text()),
-        "recommended_cost_evidence": p12_cost.get("status") == "supported",
+        "duplicate_submission_guarded": (root / "tests/test_hardware_campaign_m5.py").is_file() and "SUBMISSION_PENDING" in (root / "src/p12_recovery/nexus_hardware.py").read_text(),
+        "protocol_frozen": protocol.get("status") == "frozen" and protocol.get("git_dirty") is False,
+        "fresh_costing": fresh_costing,
+        "decoder_frozen": provider_mapping.get("provider_result_order_verified") is True and provider_mapping.get("resolved_positions") == 98,
+        "repository_clean": repository_clean,
+        "reconciliation_tested": (root / "tests/test_hardware_campaign_m5.py").is_file() and "reconcile_hardware_batch" in (root / "src/p12_recovery/nexus_hardware.py").read_text(),
         "candidate_frozen": bool(campaign.get("candidate_freeze")),
         "hardware_batch_active": bool(campaign.get("active_job")),
-        "hardware_batch_retrieved": bool(campaign.get("status") == "HARDWARE_BATCH_RETRIEVED"),
+        "hardware_batch_retrieved": any(item.get("status") in {"RETRIEVED", "NORMALIZED", "ANALYZED"} for item in campaign.get("batches", {}).values()),
     })
     evidence_paths: dict[str, Path | None] = {
         "source_hash_frozen": sums,
@@ -373,7 +396,10 @@ def build_readiness(root: Path) -> HardwareReadinessReport:
         "batch_resume_supported": campaign_path,
         "duplicate_submission_guarded": campaign_path,
         "protocol_frozen": protocol_path,
-        "recommended_cost_evidence": p12_cost_path,
+        "fresh_costing": p12_cost_path,
+        "decoder_frozen": provider_mapping_path,
+        "repository_clean": None,
+        "reconciliation_tested": root / "tests/test_hardware_campaign_m5.py",
         "candidate_frozen": campaign_path,
         "hardware_batch_active": campaign_path,
         "hardware_batch_retrieved": campaign_path,
@@ -409,7 +435,11 @@ def build_readiness(root: Path) -> HardwareReadinessReport:
                 "batch_resume_supported",
                 "duplicate_submission_guarded",
                 "protocol_frozen",
-                "recommended_cost_evidence",
+                "fresh_costing",
+                "decoder_frozen",
+                "repository_clean",
+                "repository_commit_tagged",
+                "reconciliation_tested",
             )
             if not checks.get(name)
         ]

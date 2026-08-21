@@ -33,6 +33,11 @@ def freeze_protocol(root: Path, config_path: Path) -> ProtocolFreezeRecord:
     mapping_path = root / "results/compilation/measurement_mapping.json"
     mapping_validation_path = root / "results/mapping_validation/mapping_validation_report.json"
     cost_path = root / "results/cost/cost_estimate.json"
+    qir_export = root / "results/qir/qir_export_report.json"
+    qir_validation = root / "results/qir/qir_validation_report.json"
+    qir_mapping = root / "results/qir/qir_output_mapping.json"
+    provider_mapping = root / "results/nexus/emulator_mapping/provider_output_mapping.json"
+    nexus_cost = root / "results/nexus/cost/p12_cost.json"
     prerequisites: dict[str, bool] = {}
     compilation: CompilationReport | None = None
     if compilation_path.is_file():
@@ -45,29 +50,27 @@ def freeze_protocol(root: Path, config_path: Path) -> ProtocolFreezeRecord:
     _require(
         bool(config.get("circuit", {}).get("source_hash")), "source_hash_exists", prerequisites
     )
+    qir_export_payload = json.loads(qir_export.read_text()) if qir_export.is_file() else {}
+    qir_validation_payload = json.loads(qir_validation.read_text()) if qir_validation.is_file() else {}
+    qir_mapping_payload = json.loads(qir_mapping.read_text()) if qir_mapping.is_file() else {}
+    provider_mapping_payload = json.loads(provider_mapping.read_text()) if provider_mapping.is_file() else {}
+    _require(bool((compilation and compilation.compiled and compilation.compiled.get("compiled_qasm_hash")) or qir_export_payload.get("qir_sha256")), "compiled_hash_exists", prerequisites)
     _require(
-        bool(
-            compilation and compilation.compiled and compilation.compiled.get("compiled_qasm_hash")
-        ),
-        "compiled_hash_exists",
-        prerequisites,
+        bool((compilation and compilation.backend.device_name) or config.get("backend", {}).get("device_name")), "target_identified", prerequisites
     )
     _require(
-        bool(compilation and compilation.backend.device_name), "target_identified", prerequisites
-    )
-    _require(
-        bool(compilation and compilation.validation and compilation.validation.passed),
+        bool((compilation and compilation.validation and compilation.validation.passed) or qir_validation_payload.get("status") == "passed"),
         "target_validation_passed",
         prerequisites,
     )
-    _require(mapping_path.is_file(), "measurement_mapping_exists", prerequisites)
+    _require(mapping_path.is_file() or len(qir_mapping_payload.get("entries", [])) == 98, "measurement_mapping_exists", prerequisites)
     _require(
-        bool(mapping_report and mapping_report.status == "passed"),
+        bool((mapping_report and mapping_report.status == "passed") or provider_mapping_payload.get("provider_result_order_verified") is True),
         "mapping_validation_passed",
         prerequisites,
     )
     _require(
-        cost_path.is_file() and json.loads(cost_path.read_text()).get("status") == "supported",
+        (cost_path.is_file() and json.loads(cost_path.read_text()).get("status") == "supported") or (nexus_cost.is_file() and json.loads(nexus_cost.read_text()).get("status") == "supported"),
         "provider_cost_exists",
         prerequisites,
     )
@@ -88,15 +91,15 @@ def freeze_protocol(root: Path, config_path: Path) -> ProtocolFreezeRecord:
     failed = [name for name, passed in prerequisites.items() if not passed]
     if failed:
         raise ProtocolFreezeBlocked("Protocol prerequisites are incomplete: " + ", ".join(failed))
-    if compilation is None or compilation.compiled is None:
-        raise ProtocolFreezeBlocked("Compilation evidence became unavailable during freeze")
+    if compilation is None and not qir_export_payload.get("qir_sha256"):
+        raise ProtocolFreezeBlocked("Compilation or QIR evidence became unavailable during freeze")
     frozen: dict[str, Any] = dict(config)
     frozen["status"] = "frozen"
     frozen["circuit"] = dict(frozen["circuit"])
-    frozen["circuit"]["compiled_hash"] = compilation.compiled["compiled_qasm_hash"]
+    frozen["circuit"]["compiled_hash"] = (compilation.compiled["compiled_qasm_hash"] if compilation and compilation.compiled else qir_export_payload["qir_sha256"])
     frozen["backend"] = {
-        "device_name": compilation.backend.device_name,
-        "target_type": compilation.backend.target_type,
+        "device_name": compilation.backend.device_name if compilation else config.get("backend", {}).get("device_name"),
+        "target_type": compilation.backend.target_type if compilation else config.get("backend", {}).get("target_type", "hardware"),
     }
     protocol_hash = hash_config(frozen)
     frozen["protocol_hash"] = protocol_hash

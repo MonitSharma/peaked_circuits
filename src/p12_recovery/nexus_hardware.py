@@ -136,6 +136,10 @@ def build_preflight_report(root: Path, state: CampaignState, batch_id: str, *, d
     syntax = _load(root / "results/nexus/syntax_check/p12/syntax_check_report.json")
     mapping = _load(root / "results/nexus/emulator_mapping/provider_output_mapping.json")
     qir_export = _load(root / "results/qir/qir_export_report.json")
+    cost_report = _load(root / "results/nexus/cost/p12_cost.json")
+    cost_item = next((item for item in cost_report.get("items", []) if item.get("program_name") == "p12" and item.get("shots") == batch.requested_shots), None)
+    cost_timestamp = _parse_timestamp(cost_item.get("provider_timestamp")) if cost_item else None
+    cost_fresh = cost_timestamp is not None and (datetime.now(UTC) - cost_timestamp).total_seconds() <= 24 * 3600
     checks = {
         "exact_target": target.get("device_name") == "Helios-1",
         "hardware_target": target.get("target_type") == "hardware",
@@ -145,7 +149,7 @@ def build_preflight_report(root: Path, state: CampaignState, batch_id: str, *, d
         "bitcode_hash": state.qir_bitcode_sha256 == qir_export.get("qir_bitcode_sha256") and sha256_file(root / "results/qir/p12.bc") == state.qir_bitcode_sha256,
         "syntax_check": syntax.get("status") == "passed" and syntax.get("target") == "Helios-1SC",
         "provider_mapping": mapping.get("provider_result_order_verified") is True and mapping.get("resolved_positions") == 98,
-        "fresh_cost": predicted_hqc is not None and predicted_hqc > 0,
+        "fresh_cost": predicted_hqc is not None and predicted_hqc > 0 and cost_fresh and (cost_item or {}).get("bitcode_sha256") == state.qir_bitcode_sha256,
         "shots_within_cost": predicted_hqc is not None and predicted_hqc < state.monthly_hqc_budget,
         "shots_positive": batch.requested_shots > 0,
         "max_cost_positive": max_cost is not None and max_cost > 0,
@@ -329,3 +333,12 @@ def _load(path: Path) -> dict[str, Any]:
         return value if isinstance(value, dict) else {}
     except (OSError, json.JSONDecodeError):
         return {}
+
+
+def _parse_timestamp(value: Any) -> datetime | None:
+    if not isinstance(value, str):
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None

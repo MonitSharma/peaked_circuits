@@ -1,6 +1,6 @@
 # Hardware readiness
 
-State: **READY_FOR_EXPLICITLY_AUTHORIZED_HARDWARE_RUN**
+State: **READY_FOR_P12_EMULATOR_PILOT**
 
 - [x] source_hash_frozen
 - [x] compiler_version_frozen
@@ -38,10 +38,13 @@ State: **READY_FOR_EXPLICITLY_AUTHORIZED_HARDWARE_RUN**
 - [x] campaign_state_initialized
 - [x] batch_resume_supported
 - [x] duplicate_submission_guarded
-- [x] protocol_frozen
-- [x] recommended_cost_evidence
+- [ ] protocol_frozen
+- [x] fresh_costing
+- [x] decoder_frozen
+- [ ] repository_clean
+- [x] reconciliation_tested
 - [ ] candidate_frozen
 - [ ] hardware_batch_active
 - [ ] hardware_batch_retrieved
 
-Milestone 5 stops before physical hardware execution. Syntax acceptance, emulator mapping validation, campaign preflight, and recovery accuracy are distinct evidence levels.
+Milestone 4 stops before physical hardware execution. Syntax acceptance, emulator mapping validation, and recovery accuracy are distinct evidence levels.
