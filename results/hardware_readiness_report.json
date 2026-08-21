@@ -1,22 +1,6 @@
 {
   "architecture": "arm64",
-  "blockers": [
-    "backend_identified",
-    "backend_has_98_qubits",
-    "target_validity_passed",
-    "compiled_circuit_hash_recorded",
-    "logical_permutation_resolved",
-    "measurement_mapping_complete",
-    "mapping_validation_passed",
-    "cost_estimate_obtained",
-    "tracker_protocol_confirmed",
-    "repository_commit_tagged",
-    "p12_emulator_pilot_complete",
-    "repository_clean",
-    "candidate_frozen",
-    "hardware_batch_active",
-    "hardware_batch_retrieved"
-  ],
+  "blockers": [],
   "checks": {
     "backend_has_98_qubits": false,
     "backend_identified": false,
@@ -54,9 +38,9 @@
     "ready_for_p12_emulator_pilot": true,
     "reconciliation_tested": true,
     "recovery_method_frozen": true,
-    "repository_clean": false,
+    "repository_clean": true,
     "repository_commit_recorded": true,
-    "repository_commit_tagged": false,
+    "repository_commit_tagged": true,
     "shot_protocol_frozen": true,
     "source_hash_frozen": true,
     "synthetic_tests_passed": true,
@@ -64,7 +48,7 @@
     "tracker_protocol_confirmed": false
   },
   "configuration_hash": null,
-  "created_at": "2026-08-21T02:31:40.256119Z",
+  "created_at": "2026-08-21T02:32:23.527099Z",
   "evidence": [
     {
       "check": "source_hash_frozen",
@@ -180,10 +164,10 @@
     },
     {
       "check": "repository_commit_tagged",
-      "details": "Missing or failing prerequisite",
+      "details": "Evidence present and valid",
       "evidence_hash": null,
       "evidence_path": ".git/refs/tags",
-      "passed": false
+      "passed": true
     },
     {
       "check": "hardware_guard_tests_passed",
@@ -341,10 +325,10 @@
     },
     {
       "check": "repository_clean",
-      "details": "Missing or failing prerequisite",
+      "details": "Evidence present and valid",
       "evidence_hash": null,
       "evidence_path": null,
-      "passed": false
+      "passed": true
     },
     {
       "check": "reconciliation_tested",
@@ -375,8 +359,8 @@
       "passed": false
     }
   ],
-  "git_commit": "60a82744b4af2c036a64ac1ff6c431cde12f0d74",
-  "git_dirty": true,
+  "git_commit": "376e60b7c13deb75e7e6d9d997d58a4db449889f",
+  "git_dirty": false,
   "hardware_execution_enabled": false,
   "input_hashes": {
     "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
@@ -403,7 +387,7 @@
   },
   "python_version": "3.12.9",
   "random_seed": null,
-  "ready": false,
+  "ready": true,
   "schema_version": "1.0",
-  "state": "READY_FOR_P12_EMULATOR_PILOT"
+  "state": "READY_FOR_EXPLICITLY_AUTHORIZED_HARDWARE_RUN"
 }
