@@ -14,8 +14,8 @@ State: **READY_FOR_P12_EMULATOR_PILOT**
 - [x] synthetic_tests_passed
 - [x] fixture_semantic_tests_passed
 - [ ] cost_estimate_obtained
-- [ ] shot_protocol_frozen
-- [ ] recovery_method_frozen
+- [x] shot_protocol_frozen
+- [x] recovery_method_frozen
 - [ ] tracker_protocol_confirmed
 - [x] repository_commit_recorded
 - [ ] repository_commit_tagged
@@ -38,7 +38,7 @@ State: **READY_FOR_P12_EMULATOR_PILOT**
 - [x] campaign_state_initialized
 - [x] batch_resume_supported
 - [x] duplicate_submission_guarded
-- [ ] protocol_frozen
+- [x] protocol_frozen
 - [x] fresh_costing
 - [x] decoder_frozen
 - [ ] repository_clean
