@@ -54,6 +54,7 @@ class BatchRecord(BaseModel):
     repository_git_sha: str | None = None
     protocol_hash: str | None = None
     target: str = "Helios-1"
+    provider_job_name: str | None = None
     requested_shots: int
     predicted_hqc: float | None = None
     cost_confidence: float | None = None
@@ -85,6 +86,8 @@ class BatchRecord(BaseModel):
             raise ValueError("requested_shots must be positive")
         if self.target != "Helios-1":
             raise ValueError("Physical batches are restricted to Helios-1")
+        if self.provider_job_name and not self.provider_job_name.startswith("p12-physical-"):
+            raise ValueError("Provider job names must use the deterministic P12 prefix")
         return self
 
 

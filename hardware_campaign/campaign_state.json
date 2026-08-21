@@ -24,6 +24,7 @@
       "repository_git_sha": "1181a229691b5002ad1d02b823673af60bf1c2b2",
       "protocol_hash": "8e9687bbf8c5620cb192705ddd0ab60f9cb17c16331764028a0468cc311bcde4",
       "target": "Helios-1",
+      "provider_job_name": null,
       "requested_shots": 400,
       "predicted_hqc": null,
       "cost_confidence": null,
