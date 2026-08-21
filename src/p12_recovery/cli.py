@@ -484,10 +484,10 @@ def hardware_preflight_command(
 ) -> None:
     """Validate a future physical batch without submitting it."""
     root, start = _root(), datetime.now(UTC)
+    _store, state, record = _ensure_campaign(root, batch, shots, max_cost)
     fresh_cost = _refresh_p12_cost(root, shots)
     if fresh_cost.status != "supported":
         raise typer.BadParameter("Fresh provider cost estimation failed")
-    _store, state, record = _ensure_campaign(root, batch, shots, max_cost)
     discovery = discover_quantinuum_report().model_dump(mode="json")
     item = next((value for value in fresh_cost.items if value.program_name == "p12" and value.shots == shots), None)
     predicted = item.estimated_hqcs if item else None
@@ -514,10 +514,10 @@ def hardware_submit_command(
 ) -> None:
     """Render or, only with all explicit gates, submit one physical batch."""
     root, start = _root(), datetime.now(UTC)
+    _store, state, record = _ensure_campaign(root, batch, shots, max_cost)
     fresh_cost = _refresh_p12_cost(root, shots)
     if fresh_cost.status != "supported":
         raise typer.BadParameter("Fresh provider cost estimation failed")
-    _store, state, record = _ensure_campaign(root, batch, shots, max_cost)
     discovery = discover_quantinuum_report().model_dump(mode="json")
     item = next((value for value in fresh_cost.items if value.program_name == "p12" and value.shots == shots), None)
     predicted = item.estimated_hqcs if item else None
