@@ -1,0 +1,10 @@
+{
+  "authenticated_access": true,
+  "remote_discovery_timestamp": "2026-08-21T11:58:01.302832Z",
+  "targets": {
+    "Helios-1SC": {"classification": "syntax_checker", "qubits": 98, "p12_compatible": true},
+    "Helios-1E": {"classification": "emulator", "qubits": 98, "p12_compatible": true},
+    "Helios-1": {"classification": "hardware", "qubits": 98, "p12_compatible": true}
+  },
+  "physical_execution_attempted": false
+}
