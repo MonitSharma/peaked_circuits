@@ -79,7 +79,7 @@ def _tree_rss_bytes(root_pid: int) -> int:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--solver-root", type=Path,
-                    default=Path("/Users/monitsharma/code_projects/qat/peaked-mpo-solver"))
+                    default=Path("vendor/peaked-mpo-solver"))
     ap.add_argument("--qasm", type=Path, required=True)
     ap.add_argument("--outdir", type=Path, required=True)
     ap.add_argument("--tag", default="p11")
