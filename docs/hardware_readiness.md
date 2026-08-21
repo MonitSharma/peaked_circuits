@@ -1,6 +1,6 @@
 # Hardware readiness
 
-State: **READY_FOR_P12_EMULATOR_PILOT**
+State: **READY_FOR_EXPLICITLY_AUTHORIZED_HARDWARE_RUN**
 
 - [x] source_hash_frozen
 - [x] compiler_version_frozen
@@ -18,7 +18,7 @@ State: **READY_FOR_P12_EMULATOR_PILOT**
 - [x] recovery_method_frozen
 - [ ] tracker_protocol_confirmed
 - [x] repository_commit_recorded
-- [ ] repository_commit_tagged
+- [x] repository_commit_tagged
 - [x] hardware_guard_tests_passed
 - [x] qir_export_completed
 - [x] qir_hash_recorded
@@ -41,7 +41,7 @@ State: **READY_FOR_P12_EMULATOR_PILOT**
 - [x] protocol_frozen
 - [x] fresh_costing
 - [x] decoder_frozen
-- [ ] repository_clean
+- [x] repository_clean
 - [x] reconciliation_tested
 - [ ] candidate_frozen
 - [ ] hardware_batch_active
