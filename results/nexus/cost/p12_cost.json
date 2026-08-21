@@ -7,8 +7,8 @@
   "diagnostics": [
     "qnexus 0.46 cost_confidence creates a remote costing job but returns only (estimate, confidence) tuples; its job reference is not exposed by this API."
   ],
-  "git_commit": "88fe2a0d0378284b4cda830ffa2adabd39e6dbd2",
-  "git_dirty": false,
+  "git_commit": "fc520894b9c35e7be1a691c9dcd1421ea57cad8b",
+  "git_dirty": true,
   "input_hashes": {
     "results/qir/p12.bc": "c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d"
   },
@@ -200,7 +200,7 @@
       "cost_job_ref": null,
       "estimated_hqcs": 2742.0,
       "program_name": "p12",
-      "provider_timestamp": "2026-08-21T02:29:01.753334Z",
+      "provider_timestamp": "2026-08-21T02:29:49.681319Z",
       "remote_costing_job_created": true,
       "shots": 400,
       "target": "Helios-1E"
