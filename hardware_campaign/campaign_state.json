@@ -11,14 +11,16 @@
   "user_spend_ceiling_hqc": 1500.0,
   "recommended_shots_per_batch": 200,
   "recommended_max_cost": null,
-  "status": "PREPARED",
+  "status": "DISCOVERY_CANDIDATE_FROZEN",
   "next_batch_number": 2,
-  "completed_batches": [],
+  "completed_batches": [
+    "batch_001"
+  ],
   "batches": {
     "batch_001": {
       "batch_id": "batch_001",
       "role": "discovery",
-      "status": "RETRIEVED",
+      "status": "ANALYZED",
       "source_qasm_sha256": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d",
       "qir_sha256": "c003298ea5c57f963f7f9bf5ca4c94a38fc76db10582a5cc859c621ad358c820",
       "qir_bitcode_sha256": "c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d",
@@ -44,9 +46,9 @@
       "provider_input_hash": null,
       "raw_result_hash": null,
       "canonical_result_hash": null,
-      "analysis_hash": null,
+      "analysis_hash": "7833cefd1d24c12b9c401d6f34ffd6d355ba0376cf18d6ddefeec56855a291e9",
       "candidate_freeze_relation": null,
-      "valid_shots": 0,
+      "valid_shots": 200,
       "invalid_shots": 0,
       "failure_reason": "Provider QIR payload contains 20090 labeled bit records (205 98-record cycles), with five END markers fused onto OUTPUT lines and inconsistent START/END chunk delimiters; requested 200 shots cannot yet be verified.",
       "history": [
@@ -93,12 +95,32 @@
             "returned_shots": null,
             "actual_reported_hqc": 1373.4
           }
+        },
+        {
+          "timestamp": "2026-08-25T22:31:51.823147+00:00",
+          "updates": {
+            "status": "ANALYZED",
+            "valid_shots": 200,
+            "analysis_hash": "7833cefd1d24c12b9c401d6f34ffd6d355ba0376cf18d6ddefeec56855a291e9"
+          }
         }
       ]
     }
   },
   "active_job": null,
-  "cumulative_valid_shots": 0,
-  "candidate_freeze": null,
+  "cumulative_valid_shots": 200,
+  "candidate_freeze": {
+    "status": "frozen",
+    "candidate": "10110001110010110111000100111100110011010110111100111101010111101111001100000000101000100000111100",
+    "candidate_sha256": "7b0c741082ffc3cfa1702fc3d9574892b1f8173f7381c149eee66a6c7b5c7403",
+    "canonical_input_sha256": "3d17e4cff73a6e09c2750debbbe8a8743f19a0728a39850b284402635fab431e",
+    "source_hashes": {
+      "/Users/monitsharma/Downloads/p12_quantum/hardware_campaign/batch_001/reconstruction/reconstructed_counts.json": "b28ba3f8f40f860e186add9b70d03d01c18a732a9b2f14d667adc658bd85ab1b"
+    },
+    "protocol_hash": "d88ea05069834adad820c75046022a678cda2a43ba9944ebf6793133a41898c5",
+    "external_target_scored": false,
+    "target_accessed": false,
+    "freeze_hash": "88ef097c045943dce0e5846237ad443aff99b9c6995ae54da4732daa7ca4891b"
+  },
   "external_target_scored": false
 }
