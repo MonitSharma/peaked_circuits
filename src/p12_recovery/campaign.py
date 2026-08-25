@@ -220,7 +220,7 @@ class CampaignStore:
         if batch.status in {BatchStatus.COMPLETED, BatchStatus.RETRIEVED, BatchStatus.NORMALIZED, BatchStatus.ANALYZED, BatchStatus.FAILED} and state.active_job and state.active_job.get("batch_id") == batch_id:
             state.active_job = None
         state.completed_batches = sorted(
-            batch_id for batch_id, item in state.batches.items() if item.status in {BatchStatus.RETRIEVED, BatchStatus.NORMALIZED, BatchStatus.ANALYZED}
+            batch_id for batch_id, item in state.batches.items() if item.status in {BatchStatus.NORMALIZED, BatchStatus.ANALYZED}
         )
         state.cumulative_valid_shots = sum(item.valid_shots for item in state.batches.values())
         if state.candidate_freeze is not None and state.status == CampaignStatus.PREPARED:

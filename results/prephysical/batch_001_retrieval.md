@@ -12,8 +12,8 @@
 
 ## Evidence preserved
 
-The raw provider QIR text, job metadata, result reference, backend metadata, submitted input bitcode, manifest, and SHA-256 checksums are preserved under `hardware_campaign/batch_001/provider/`.
+The raw provider QIR text, job metadata, result reference, backend metadata, submitted QIR reference, actual submitted input bitcode, manifest, and SHA-256 checksums are preserved under `hardware_campaign/batch_001/provider/`. The actual submitted bitcode hashes to `c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d`, matching the frozen `results/qir/p12.bc`.
 
 ## Integrity issue
 
-The downloaded QIR text contains 20,090 labeled `OUTPUT RESULT` records, which equals 205 blocks of 98 outputs. The payload has inconsistent chunk delimiters: 37 ordinary `START`/`END` records followed by five additional chunks without `END` delimiters. Therefore the provider job is complete, but the returned data is not yet accepted as a verifier-clean 200-shot dataset. No canonicalization, recovery analysis, bootstrap analysis, or quantum-advantage claim has been run on this payload.
+The downloaded QIR text currently contains 20,085 labeled `OUTPUT RESULT` records: 200 complete 98-record diagnostic cycles plus five incomplete cycles. The payload has inconsistent chunk delimiters: 37 ordinary `START`/`END` groups followed by five additional chunks without `END` delimiters. Therefore the provider job is complete, but the returned data is not yet accepted as a verifier-clean 200-shot dataset. No canonicalization, recovery analysis, bootstrap analysis, or quantum-advantage claim has been run on this payload.

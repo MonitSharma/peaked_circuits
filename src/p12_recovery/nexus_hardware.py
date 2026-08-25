@@ -265,15 +265,17 @@ def retrieve_hardware_batch(root: Path, state: CampaignState, batch_id: str, *, 
     first = results[0] if results else None
     _download_artifact(first, "raw_result.json", directory, "download_result")
     _download_artifact(first, "backend_info.json", directory, "download_backend_info")
-    _download_artifact(first, "submitted_input.bc", directory, "get_input", binary=True)
-    manifest = {"job_ref": batch.execution_job_ref, "result_refs": refs, "returned_shots": _returned_shots(first), "reported_cost_hqcs": _cost(first, job_ref)}
+    _download_artifact(first, "submitted_input_ref.json", directory, "get_input")
+    _download_actual_qir(first, directory / "submitted_input.bc")
+    returned_shots = _returned_shots(first)
+    manifest = {"job_ref": batch.execution_job_ref, "result_refs": refs, "returned_shots": returned_shots, "reported_cost_hqcs": _cost(first, job_ref)}
     (directory / "provider_manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
     sums = []
     for path in sorted(directory.iterdir()):
         if path.name != "SHA256SUMS" and path.is_file():
             sums.append(f"{sha256_file(path)}  {path.name}")
     (directory / "SHA256SUMS").write_text("\n".join(sums) + "\n")
-    CampaignStore(root).update_batch(state, batch_id, status=BatchStatus.RETRIEVED, result_refs=refs, returned_shots=_returned_shots(first), actual_reported_hqc=_cost(first, job_ref))
+    CampaignStore(root).update_batch(state, batch_id, status=BatchStatus.RETRIEVED, result_refs=refs, returned_shots=returned_shots, actual_reported_hqc=_cost(first, job_ref))
     return directory
 
 
@@ -313,7 +315,19 @@ def _download_artifact(ref: Any, filename: str, directory: Path, method: str, *,
         path.write_text(json.dumps(_jsonable(value), indent=2, sort_keys=True) + "\n")
 
 
-def _returned_shots(ref: Any) -> int:
+def _download_actual_qir(ref: Any, path: Path) -> None:
+    if ref is None or not hasattr(ref, "get_input"):
+        return
+    input_ref = ref.get_input()
+    if isinstance(input_ref, (bytes, bytearray)):
+        path.write_bytes(input_ref)
+        return
+    if not hasattr(input_ref, "download_qir"):
+        return
+    path.write_bytes(input_ref.download_qir())
+
+
+def _returned_shots(ref: Any) -> int | None:
     value = getattr(ref, "n_shots", getattr(ref, "shots", 0)) if ref is not None else 0
     try:
         shots = int(value)
@@ -325,10 +339,19 @@ def _returned_shots(ref: Any) -> int:
         payload = ref.download_result()
         text = getattr(payload, "results", payload)
         if isinstance(text, str):
-            return sum(1 for line in text.splitlines() if line == "START")
+            lines = text.splitlines()
+            starts = [index for index, line in enumerate(lines) if line == "START"]
+            if not starts:
+                return None
+            valid = True
+            for start, end in zip(starts, starts[1:] + [len(lines)]):
+                block = lines[start:end]
+                outputs = [line for line in block if line.startswith("OUTPUT\tRESULT\t")]
+                valid = valid and len(outputs) == P12_QUBITS and any(line.startswith("END\t") for line in block)
+            return len(starts) if valid else None
     except Exception:
         pass
-    return 0
+    return None
 
 
 def _cost(*refs: Any) -> float | None:

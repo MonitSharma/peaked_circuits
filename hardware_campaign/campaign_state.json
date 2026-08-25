@@ -13,9 +13,7 @@
   "recommended_max_cost": null,
   "status": "PREPARED",
   "next_batch_number": 2,
-  "completed_batches": [
-    "batch_001"
-  ],
+  "completed_batches": [],
   "batches": {
     "batch_001": {
       "batch_id": "batch_001",
@@ -50,7 +48,7 @@
       "candidate_freeze_relation": null,
       "valid_shots": 0,
       "invalid_shots": 0,
-      "failure_reason": "Provider QIR payload contains 20090 labeled bit records (205 blocks of 98) with inconsistent START/END chunk delimiters; requested 200 shots cannot yet be verified.",
+      "failure_reason": "Provider QIR payload contains 20085 labeled bit records: 200 complete 98-record cycles plus 5 incomplete cycles, with inconsistent START/END chunk delimiters; requested 200 shots cannot yet be verified.",
       "history": [
         {
           "timestamp": "2026-08-25T12:58:38.919225+00:00",
@@ -71,6 +69,28 @@
               "2e7cee36-577a-48d2-a848-ed1e7848b3fc"
             ],
             "returned_shots": 42,
+            "actual_reported_hqc": 1373.4
+          }
+        },
+        {
+          "timestamp": "2026-08-25T13:28:10.280088+00:00",
+          "updates": {
+            "status": "RETRIEVED",
+            "result_refs": [
+              "2e7cee36-577a-48d2-a848-ed1e7848b3fc"
+            ],
+            "returned_shots": null,
+            "actual_reported_hqc": 1373.4
+          }
+        },
+        {
+          "timestamp": "2026-08-25T13:29:13.255569+00:00",
+          "updates": {
+            "status": "RETRIEVED",
+            "result_refs": [
+              "2e7cee36-577a-48d2-a848-ed1e7848b3fc"
+            ],
+            "returned_shots": null,
             "actual_reported_hqc": 1373.4
           }
         }
