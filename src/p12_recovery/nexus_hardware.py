@@ -303,6 +303,8 @@ def _download_artifact(ref: Any, filename: str, directory: Path, method: str, *,
     path = directory / filename
     if binary and isinstance(value, (bytes, bytearray)):
         path.write_bytes(value)
+    elif hasattr(value, "results") and isinstance(value.results, str):
+        path.write_text(value.results)
     elif hasattr(value, "to_json"):
         path.write_text(value.to_json())
     elif isinstance(value, (bytes, bytearray)):
@@ -314,9 +316,19 @@ def _download_artifact(ref: Any, filename: str, directory: Path, method: str, *,
 def _returned_shots(ref: Any) -> int:
     value = getattr(ref, "n_shots", getattr(ref, "shots", 0)) if ref is not None else 0
     try:
-        return int(value)
+        shots = int(value)
+        if shots:
+            return shots
     except (TypeError, ValueError):
-        return 0
+        pass
+    try:
+        payload = ref.download_result()
+        text = getattr(payload, "results", payload)
+        if isinstance(text, str):
+            return sum(1 for line in text.splitlines() if line == "START")
+    except Exception:
+        pass
+    return 0
 
 
 def _cost(*refs: Any) -> float | None:

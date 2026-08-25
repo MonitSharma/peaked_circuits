@@ -1,0 +1,50 @@
+{
+  "architecture": "arm64",
+  "arguments": [
+    "devices"
+  ],
+  "backend_mode": "discovery_only",
+  "command": "devices",
+  "configuration_hash": null,
+  "configuration_path": null,
+  "created_at": "2026-08-25T08:33:45.697722Z",
+  "credentials_detected": false,
+  "dirty_working_tree": true,
+  "end_timestamp": "2026-08-25T08:33:45.642956Z",
+  "exit_status": 0,
+  "git_commit": "125707fb7d3cc90f89860ee71f604ee3c23d9a93",
+  "git_dirty": true,
+  "hardware_execution_attempted": false,
+  "input_hashes": {},
+  "input_paths": {},
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit",
+  "output_paths": {
+    "results/backend/available_devices.json": "999ceb02b184815531e80ca510f3a8b9b4ac7ea9f683ff170291933479185fcf",
+    "results/backend/available_devices.md": "86de285e80a0daf3f71879800c4f42fe5285d52b44d2758f0d4db4f0adf469fd"
+  },
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.1",
+    "networkx": "3.6.1",
+    "numpy": "2.5.2",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "2.3.3",
+    "pydantic": "2.13.4",
+    "pyqir": "0.12.5",
+    "pytket": "2.18.1",
+    "pytket-qir": "2.0.0",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.2",
+    "qiskit": null,
+    "qnexus": "0.46.0",
+    "rich": "13.9.4",
+    "scipy": "1.18.1",
+    "typer": "0.27.1"
+  },
+  "paid_resources_consumed": false,
+  "python_version": "3.12.9",
+  "random_seed": null,
+  "run_id": "20260825T083318Z-9e260e9a",
+  "schema_version": "1.0",
+  "start_timestamp": "2026-08-25T08:33:18.864269Z"
+}

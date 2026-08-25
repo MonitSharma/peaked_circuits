@@ -86,8 +86,11 @@ class BatchRecord(BaseModel):
             raise ValueError("requested_shots must be positive")
         if self.target != "Helios-1":
             raise ValueError("Physical batches are restricted to Helios-1")
-        if self.provider_job_name and not self.provider_job_name.startswith("p12-physical-"):
-            raise ValueError("Provider job names must use the deterministic P12 prefix")
+        if self.provider_job_name and not (
+            self.provider_job_name.startswith("p12-physical-")
+            or self.provider_job_name.startswith("p12_physical_")
+        ):
+            raise ValueError("Provider job names must use a deterministic P12 physical prefix")
         return self
 
 

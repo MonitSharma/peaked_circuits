@@ -2,7 +2,7 @@
   "architecture": "arm64",
   "authenticated_access": true,
   "configuration_hash": null,
-  "created_at": "2026-08-21T11:58:01.302832Z",
+  "created_at": "2026-08-25T08:33:45.551895Z",
   "devices": [
     {
       "access_status": "listed_for_authenticated_nexus_account",
@@ -1373,8 +1373,8 @@
     "legacy_pytket_quantinuum": "success_access_unverified",
     "nexus": "success"
   },
-  "git_commit": "5b75ec288dace7a64c85523bb9f448e7e7f6d910",
-  "git_dirty": true,
+  "git_commit": "125707fb7d3cc90f89860ee71f604ee3c23d9a93",
+  "git_dirty": false,
   "input_hashes": {},
   "live_api_access": true,
   "operating_system": "macOS-26.5.2-arm64-arm-64bit",
