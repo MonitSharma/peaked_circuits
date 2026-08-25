@@ -1441,6 +1441,8 @@
   ],
   "framed_groups_with_98_outputs": 37,
   "framed_groups_with_end": 37,
+  "framing_repaired_path": "/Users/monitsharma/Downloads/p12_quantum/hardware_campaign/batch_001/provider/raw_result_framing_repaired.qir",
+  "framing_repaired_sha256": "4574f32a59af083ba3f4f859af79aaf9acae392b5fc613d758c5ac430cf12c38",
   "frozen_bitcode_sha256": "c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d",
   "fused_end_lines": [
     8123,

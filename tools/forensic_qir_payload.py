@@ -70,6 +70,11 @@ def main() -> None:
     root = Path(__file__).resolve().parents[1]
     source = root / "hardware_campaign/batch_001/provider/raw_result.json"
     report = inspect(source)
+    repaired = re.sub(r"(OUTPUT\tRESULT\t[01]\tm\d{3}\[0\])(?=END\t)", r"\1\n", source.read_text())
+    repaired_path = root / "hardware_campaign/batch_001/provider/raw_result_framing_repaired.qir"
+    repaired_path.write_text(repaired)
+    report["framing_repaired_path"] = str(repaired_path)
+    report["framing_repaired_sha256"] = hashlib.sha256(repaired.encode()).hexdigest()
     submitted_input = root / "hardware_campaign/batch_001/provider/submitted_input.bc"
     report["submitted_input_bitcode_sha256"] = hashlib.sha256(submitted_input.read_bytes()).hexdigest()
     report["frozen_bitcode_sha256"] = hashlib.sha256((root / "results/qir/p12.bc").read_bytes()).hexdigest()
