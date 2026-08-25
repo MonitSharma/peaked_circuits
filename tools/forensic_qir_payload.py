@@ -8,7 +8,7 @@ import re
 from pathlib import Path
 
 
-OUTPUT_RE = re.compile(r"^OUTPUT\tRESULT\t([01])\t(m\d{3}\[0\])$")
+OUTPUT_RE = re.compile(r"^OUTPUT\tRESULT\t([01])\t(m\d{3}\[0\])(END\t.*)?$")
 EXPECTED = {f"m{index:03d}[0]" for index in range(98)}
 
 
@@ -17,6 +17,7 @@ def inspect(path: Path) -> dict[str, object]:
     lines = text.splitlines()
     records: list[tuple[str, str]] = []
     malformed = []
+    fused_end_lines = []
     for line_number, line in enumerate(lines, start=1):
         if not line.startswith("OUTPUT\tRESULT"):
             continue
@@ -25,6 +26,8 @@ def inspect(path: Path) -> dict[str, object]:
             malformed.append(line_number)
         else:
             records.append((match.group(2), match.group(1)))
+            if match.group(3):
+                fused_end_lines.append(line_number)
 
     cycles = [records[index : index + 98] for index in range(0, len(records), 98)]
     cycle_reports = []
@@ -54,6 +57,7 @@ def inspect(path: Path) -> dict[str, object]:
         "record_cycle_count": len(cycles),
         "complete_record_cycles": sum(bool(item["complete_label_set"]) for item in cycle_reports),
         "malformed_output_lines": malformed,
+        "fused_end_lines": fused_end_lines,
         "start_count": len(starts),
         "framed_groups_with_98_outputs": sum(item["output_records"] == 98 for item in framed_groups),
         "framed_groups_with_end": sum(bool(item["has_end"]) for item in framed_groups),

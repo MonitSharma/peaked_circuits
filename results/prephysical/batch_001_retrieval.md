@@ -16,4 +16,4 @@ The raw provider QIR text, job metadata, result reference, backend metadata, sub
 
 ## Integrity issue
 
-The downloaded QIR text currently contains 20,085 labeled `OUTPUT RESULT` records: 200 complete 98-record diagnostic cycles plus five incomplete cycles. The payload has inconsistent chunk delimiters: 37 ordinary `START`/`END` groups followed by five additional chunks without `END` delimiters. Therefore the provider job is complete, but the returned data is not yet accepted as a verifier-clean 200-shot dataset. No canonicalization, recovery analysis, bootstrap analysis, or quantum-advantage claim has been run on this payload.
+The downloaded QIR text contains 20,090 labeled `OUTPUT RESULT` records, forming 205 fixed-width 98-record diagnostic cycles. Five `END` markers are fused directly onto the final `OUTPUT` line of a cycle, and the payload has 42 `START` markers but only 37 standalone `END` markers. Therefore the provider job is complete, but the returned data is not yet accepted as a verifier-clean 200-shot dataset. No canonicalization, recovery analysis, bootstrap analysis, or quantum-advantage claim has been run on this payload.

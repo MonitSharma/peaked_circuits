@@ -11,7 +11,7 @@ Please investigate this completed Nexus result without changing or rerunning the
 - Result status: `COMPLETED`, `Program has completed`
 - Frozen submitted bitcode SHA-256: `c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d`
 
-The downloaded labeled QIR payload contains 20,085 `OUTPUT RESULT` records. Independent fixed-width inspection finds 200 complete 98-record label cycles and 5 incomplete cycles. The payload has 42 `START` markers, only 37 `END` markers, and repeated headers/chunk boundaries. The current raw payload and all hashes are preserved in `hardware_campaign/batch_001/provider/`.
+The downloaded labeled QIR payload contains 20,090 `OUTPUT RESULT` records, equivalent to 205 fixed-width 98-record cycles. Five `END` markers are fused directly onto final `OUTPUT` lines. The payload has 42 `START` markers, only 37 standalone `END` markers, and repeated headers/chunk boundaries. The current raw payload and all hashes are preserved in `hardware_campaign/batch_001/provider/`.
 
 Questions:
 

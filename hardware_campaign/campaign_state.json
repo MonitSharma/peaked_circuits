@@ -48,7 +48,7 @@
       "candidate_freeze_relation": null,
       "valid_shots": 0,
       "invalid_shots": 0,
-      "failure_reason": "Provider QIR payload contains 20085 labeled bit records: 200 complete 98-record cycles plus 5 incomplete cycles, with inconsistent START/END chunk delimiters; requested 200 shots cannot yet be verified.",
+      "failure_reason": "Provider QIR payload contains 20090 labeled bit records (205 98-record cycles), with five END markers fused onto OUTPUT lines and inconsistent START/END chunk delimiters; requested 200 shots cannot yet be verified.",
       "history": [
         {
           "timestamp": "2026-08-25T12:58:38.919225+00:00",
