@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch_002",
+  "role": "confirmation",
+  "target": "Helios-1",
+  "target_type": "hardware",
+  "requested_shots": 200,
+  "predicted_hqc": 1374.0,
+  "cost_confidence": 95.0,
+  "max_cost_hqc": 1500.0,
+  "cost_source": "historical provider estimate for frozen QIR; fresh estimate required if endpoint is available",
+  "provider_call_made": false,
+  "job_submitted": false,
+  "active_job": null,
+  "candidate_freeze_relation": "batch_001_discovery_candidate",
+  "external_target_scored": false,
+  "target_accessed": false,
+  "blockers_before_submission": [
+    "final_current_cost_check",
+    "final_current_hqc_balance_check",
+    "explicit_user_submission_authorization"
+  ]
+}

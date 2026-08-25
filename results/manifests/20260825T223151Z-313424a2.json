@@ -1,0 +1,57 @@
+{
+  "architecture": "arm64",
+  "arguments": [
+    "analyze-hardware-batch",
+    "--batch",
+    "batch_001",
+    "--counts",
+    "hardware_campaign/batch_001/reconstruction/reconstructed_counts.json"
+  ],
+  "backend_mode": "offline_target_blind_analysis",
+  "command": "analyze-hardware-batch",
+  "configuration_hash": null,
+  "configuration_path": null,
+  "created_at": "2026-08-25T22:31:51.871054Z",
+  "credentials_detected": false,
+  "dirty_working_tree": true,
+  "end_timestamp": "2026-08-25T22:31:51.823891Z",
+  "exit_status": 0,
+  "git_commit": "2f61fec2041c1fcaa0db9ac356ade7f928f217d2",
+  "git_dirty": true,
+  "hardware_execution_attempted": false,
+  "input_hashes": {
+    "hardware_campaign/batch_001/reconstruction/reconstructed_counts.json": "b28ba3f8f40f860e186add9b70d03d01c18a732a9b2f14d667adc658bd85ab1b"
+  },
+  "input_paths": {
+    "hardware_campaign/batch_001/reconstruction/reconstructed_counts.json": "b28ba3f8f40f860e186add9b70d03d01c18a732a9b2f14d667adc658bd85ab1b"
+  },
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit",
+  "output_paths": {
+    "hardware_campaign/batch_001/analysis/analysis.json": "7833cefd1d24c12b9c401d6f34ffd6d355ba0376cf18d6ddefeec56855a291e9"
+  },
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.1",
+    "networkx": "3.6.1",
+    "numpy": "2.5.2",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "2.3.3",
+    "pydantic": "2.13.4",
+    "pyqir": "0.12.5",
+    "pytket": "2.18.1",
+    "pytket-qir": "2.0.0",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.2",
+    "qiskit": null,
+    "qnexus": "0.46.0",
+    "rich": "13.9.4",
+    "scipy": "1.18.1",
+    "typer": "0.27.1"
+  },
+  "paid_resources_consumed": false,
+  "python_version": "3.12.9",
+  "random_seed": null,
+  "run_id": "20260825T223151Z-313424a2",
+  "schema_version": "1.0",
+  "start_timestamp": "2026-08-25T22:31:51.311075Z"
+}
