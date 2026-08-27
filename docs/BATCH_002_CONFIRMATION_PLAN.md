@@ -20,6 +20,10 @@ Batch 002 is an independent confirmation of the pre-registered Batch 001 collisi
 - Planning estimate: `1374 HQC`, confidence `95%`
 - Hard maximum cost: `1500 HQC`
 
+The co-primary thresholds have the following indicative operating characteristics under the simple fixed-centre uniform null (`n = 200`): cluster mass ≥1: `3.48e-2`; ≥2: `6.11e-4`; ≥3: `7.13e-6`; ≥4: `6.21e-8`; ≥5: `4.31e-10`. Choosing 5 as the strong-reproduction threshold is deliberately conservative: masses 1–4 remain weak/directional rather than being promoted to success based on nominal significance.
+
+Using the Batch 001 point estimate and halo multiplier (`16/3 ≈ 5.3` cluster shots per exact hit), the indicative probability that both co-primary endpoints are zero is `<1e-4` at a 1.5% peak, `1.1e-4` at 0.75%, and `2.2e-2` at 0.3% (the lower end of the approximate Batch 001 interval). These power figures are not guarantees: the 5.3 multiplier is estimated from one batch and has wide uncertainty. They justify the double-zero closure rule while making its approximately 2% pessimistic type-II risk explicit.
+
 The current estimate is the previously recorded provider estimate for this frozen QIR. A fresh provider estimate should be attempted during final preflight; if the endpoint is unavailable, retain this fallback explicitly rather than silently changing the cap.
 
 ## Submission boundary
@@ -44,6 +48,10 @@ If the provider repeats the Batch 001 framing behavior, preserve the raw payload
 8. Only after independent analysis, compute the pooled 400-shot diagnostics.
 9. Decide whether Batch 003 is warranted using the predeclared rules below.
 
+## Temporal stability check
+
+For each batch, record one-based provider positions for shots inside the fixed radius-31 ball and run the pre-registered KS statistic against uniform provider position. Compute its permutation p-value by randomly permuting the fixed-centre membership labels over the batch positions, using a documented seed and number of permutations. This is a supporting diagnostic, not a co-primary endpoint; temporal clumping is a red flag for drift or an episodic attractor. Batch 001 had positions `[42, 46, 48, 51, 57, 84, 88, 90, 98, 126, 134, 135, 158, 161, 169, 178]`, `D = 0.211`, permutation `p = 0.38`.
+
 ## Pre-registered thresholds and decision rules
 
 - Do not use hidden-target scoring, external oracle feedback, or adaptive candidate selection.
@@ -56,7 +64,17 @@ If the provider repeats the Batch 001 framing behavior, preserve the raw payload
 
 The radius-31 choice was made after inspecting the Batch 001 distance distribution. It is frozen for Batch 002, and the cluster endpoint is deliberately defined around the fixed pre-registered Batch 001 string. Selecting a new Batch 002 cluster would reintroduce a look-elsewhere degree of freedom.
 
+## Instrumental-attractor control
+
+Batch 002 can establish recurrence on the same circuit and machine, but cannot by itself distinguish a circuit peak from a Helios-specific attractor, correlated leakage, sticky detection state, or compilation/QIR artifact. The planned discriminating control is a decoy circuit with the same 98-qubit width, two-qubit gate count, depth, compilation path, and QIR export path, but randomized single-qubit parameters so that no target peak is planted by construction. The decoy is a separate proposed experiment, not part of the current Batch 002 authorization: the working estimate is 100 shots at approximately 690 HQC. A comparable decoy cluster would support an instrumental explanation; its absence would strengthen, but not prove, the circuit-peak interpretation.
+
+Before the decoy is funded, perform the free partial check against Batch 001 metadata for correlations with final-layer single-qubit gates, known-poor qubits, and all-zero/all-one attractors. Record the result without changing the frozen candidate or radius.
+
 The nominal uniform-null probability of at least one exact match in 200 fresh 98-bit shots is approximately `200 / 2^98 = 6.31e-28`, conditional on the string being fixed before Batch 002. This is not a circuit-specific classical null and is not, by itself, a quantum-advantage proof.
+
+## Reporting commitment
+
+Recurrence of the pre-registered string is reproducibility evidence only. It is not a quantum-advantage result without an appropriate classical baseline and any required Tracker verification. If the string recurs but is later rejected or does not match the hidden target, report that outcome as a hardware/circuit or instrumental observation rather than retracting the recurrence analysis. No public submission is made by this plan.
 
 ## Shot numbering
 
