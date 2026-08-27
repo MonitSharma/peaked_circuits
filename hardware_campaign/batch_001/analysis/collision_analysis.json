@@ -1,16 +1,21 @@
 {
   "cluster_candidate": "10100011110010100111000100011100110001011111011100111001010110101011001001000000101000100000111100",
   "cluster_candidate_hamming_to_mode": 0,
+  "cluster_centre_look_elsewhere_bounds": {
+    "13": 2.7339907836678716e-27,
+    "15": 1.4077777673441477e-32
+  },
+  "cluster_fixed_centre_binomial_upper_tail": 1.5595153910894565e-37,
   "cluster_radius": 31,
   "cluster_shots": 16,
   "cluster_uniform_expected_shots": 0.03545338559868336,
-  "cluster_uniform_poisson_upper_tail": 2.8801372357242654e-37,
   "external_target_scored": false,
   "mapping_invariant_statistics": [
     "mode_multiplicity",
     "pair_hamming_distances",
     "cluster_mass"
   ],
+  "maximum_observed_centre_mass": 16,
   "mean_pairwise_hamming_distance": 48.53025125628141,
   "mode_indices": [
     90,
@@ -19,25 +24,26 @@
   ],
   "mode_multiplicity": 3,
   "mode_string": "10100011110010100111000100011100110001011111011100111001010110101011001001000000101000100000111100",
+  "multiplicity_union_bounds": {
+    "at_least_3": 1.3077293225508518e-53,
+    "at_least_4": 2.0322845782279051e-81
+  },
+  "pair_p_values": null,
   "pair_statistics": {
     "0": {
       "observed_pairs": 3,
-      "poisson_upper_tail": 4.1265703523767316e-77,
       "uniform_expected_pairs": 6.279332805559254e-26
     },
     "1": {
       "observed_pairs": 6,
-      "poisson_upper_tail": 8.016036373733708e-143,
       "uniform_expected_pairs": 6.2165394775036614e-24
     },
     "20": {
       "observed_pairs": 25,
-      "poisson_upper_tail": 1.6213473773150042e-139,
       "uniform_expected_pairs": 2.857731009640591e-05
     },
     "30": {
       "observed_pairs": 68,
-      "poisson_upper_tail": 9.016372931899824e-85,
       "uniform_expected_pairs": 1.553775254212975
     }
   },
