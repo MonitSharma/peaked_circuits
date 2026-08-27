@@ -4,7 +4,7 @@ Status: prepared, not submitted.
 
 ## Purpose
 
-Batch 002 is an independent confirmation of the frozen Batch 001 discovery candidate. It must be analyzed independently before any pooling or decision about a third batch.
+Batch 002 is an independent confirmation of the pre-registered Batch 001 collision/cluster hypothesis. It must be analyzed independently before any pooling or decision about a third batch.
 
 ## Frozen inputs
 
@@ -14,6 +14,7 @@ Batch 002 is an independent confirmation of the frozen Batch 001 discovery candi
 - Requested shots: exactly `200`
 - Batch role: `confirmation`
 - Batch 001 candidate freeze hash: `7b0c741082ffc3cfa1702fc3d9574892b1f8173f7381c149eee66a6c7b5c7403`
+- Batch 001 collision hypothesis: `hardware_campaign/batch_001/collision_hypothesis.json`
 - Protocol hash: `d88ea05069834adad820c75046022a678cda2a43ba9944ebf6793133a41898c5`
 - Frozen QIR bitcode SHA-256: `c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d`
 - Planning estimate: `1374 HQC`, confidence `95%`
@@ -36,18 +37,23 @@ If the provider repeats the Batch 001 framing behavior, preserve the raw payload
 1. Retrieve and preserve the raw result.
 2. Validate shot framing and reconstruct only under the predeclared structural rule.
 3. Analyze Batch 002 independently; do not pool first.
-4. Compute its bitwise-majority candidate, per-bit margins, Wilson intervals, exact-binomial tests with BH/FDR and Holm corrections, decoder diagnostics, Hamming basins, split-half stability, random-subsample Hamming distributions, bootstrap stability, and provider-order blocks.
-5. Compare Batch 002 with the frozen Batch 001 candidate and record Hamming distance and anchor-bit agreement.
-6. Only after independent analysis, compute the pooled 400-shot candidate.
-7. Decide whether Batch 003 is warranted using the predeclared rules below.
+4. Use the pre-registered primary endpoint: exact-match count of the Batch 001 collision string.
+5. Use secondary endpoints: pair counts at radii 0, 1, 20, and 30; cluster mass within radius 31; cluster-restricted majority; split-half stability; random-subsample Hamming distributions; and provider-order blocks.
+6. Compute per-bit diagnostics and exact-binomial tests with BH/FDR and Holm corrections as descriptive secondary analyses, not as post-hoc anchor selection.
+7. Compare Batch 002 with the frozen Batch 001 collision hypothesis and record exact-match count, cluster overlap, and candidate Hamming distances.
+8. Only after independent analysis, compute the pooled 400-shot diagnostics.
+9. Decide whether Batch 003 is warranted using the predeclared rules below.
 
 ## Decision rules
 
 - Do not use hidden-target scoring, external oracle feedback, or adaptive candidate selection.
-- Do not call Batch 001 or Batch 002 a validated answer based on one majority string alone.
-- Favor stopping after Batch 002 if the two independent candidates agree closely, stability improves materially, and anchor bits replicate.
-- Consider Batch 003 only if Batch 002 is directionally consistent but still noisy, with disagreements concentrated in low-margin positions.
+- Do not call Batch 001 or Batch 002 a validated answer based on one exact hit alone; recurrence must be interpreted with the cluster and classical-baseline evidence.
+- Treat one or more exact matches to the pre-registered string as strong recurrence evidence under the uniform null, while keeping the quantum-advantage claim separate.
+- Favor stopping after Batch 002 if exact recurrence and cluster structure reproduce, stability improves materially, and the predeclared secondary endpoints agree.
+- Consider Batch 003 only if Batch 002 is directionally consistent but still noisy, with cluster evidence but limited recurrence.
 - Stop and diagnose rather than automatically spending Batch 003 if Batch 002 strongly disagrees with Batch 001 or shows a different distributional structure.
+
+The nominal uniform-null probability of at least one exact match in 200 fresh 98-bit shots is approximately `200 / 2^98 = 6.31e-28`, conditional on the string being fixed before Batch 002. This is not a circuit-specific classical null and is not, by itself, a quantum-advantage proof.
 
 ## Shot numbering
 
@@ -55,4 +61,4 @@ Each provider job starts its own physical shot sequence at 1. Batch 002 is there
 
 ## Current scientific interpretation
 
-Batch 001 currently contains detectable aggregate marginal structure but an unstable discovery candidate. Its candidate is frozen as a hypothesis, not validated. Batch 002 is the next independent reproducibility test.
+Batch 001 currently contains a sparse collision/cluster structure with a repeated 98-bit mode and an unstable coordinate-wise majority candidate. The majority candidate remains frozen for provenance; the collision string and endpoints are separately pre-registered for Batch 002. Batch 002 is the next independent reproducibility test.

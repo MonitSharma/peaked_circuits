@@ -134,7 +134,7 @@
       "raw_result_hash": null,
       "canonical_result_hash": null,
       "analysis_hash": null,
-      "candidate_freeze_relation": "batch_001_discovery_candidate",
+      "candidate_freeze_relation": "batch_001_collision_hypothesis",
       "valid_shots": 0,
       "invalid_shots": 0,
       "failure_reason": null,

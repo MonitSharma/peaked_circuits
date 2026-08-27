@@ -31,4 +31,4 @@ The candidate is frozen as the Batch 001 discovery candidate, with `external_tar
 - The primary candidate appeared in 0/200 bootstrap modal draws under the repository’s 200-replicate bootstrap.
 - No shot lies within Hamming distance 5 of the primary candidate.
 
-These diagnostics indicate a weak/unstable discovery signal. The candidate is frozen for a future confirmation comparison, not presented as a quantum-advantage result. No confirmation hardware job was submitted.
+These diagnostics indicate that coordinate-wise majority is a weak/unstable estimator for this sparse distribution. The collision/cluster analysis is recorded separately in `batch_001_collision_analysis.md`; the majority candidate remains frozen for provenance, not presented as a quantum-advantage result. No confirmation hardware job was submitted.
