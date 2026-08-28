@@ -280,7 +280,7 @@ def retrieve_hardware_batch(root: Path, state: CampaignState, batch_id: str, *, 
 
 
 def _status_from_provider(status: str) -> BatchStatus:
-    normalized = status.upper()
+    normalized = status.upper().rsplit(".", 1)[-1]
     if normalized in {"COMPLETED", "SUCCEEDED", "SUCCESS"}:
         return BatchStatus.COMPLETED
     if normalized in {"FAILED", "ERROR", "CANCELLED"}:
