@@ -1,0 +1,22 @@
+{
+  "authorization": "Explicit user authorization in current task for exactly 50 P11 hardware shots.",
+  "job_id": "c902a6a1-0e91-48cf-b5ba-44831fcc7726",
+  "job_name": "p11-physical-50-20260828",
+  "max_cost_hqc": 300.0,
+  "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
+  "qir_artifact_ref": "5b01c739-15ec-4892-8f93-7dd96c448eaf",
+  "qir_bitcode_sha256": "a25a9a74e2aa99c4f76250448b4721511a5d8f01bc4d70db1f45d4a3c41ab465",
+  "qir_operation_counts": {
+    "CZ": 1999,
+    "Measure": 98,
+    "Rx": 6828,
+    "Rz": 13656
+  },
+  "qir_qubits": 98,
+  "requested_shots": 50,
+  "source_path": "/Users/monitsharma/Downloads/P11_hqap_1999.qasm",
+  "source_qasm_sha256": "1373d50c8a42b1ca745d202391767c417ddac56db95182ac2aced019231b3372",
+  "submitted_at": "2026-08-28T10:33:43.804421+00:00",
+  "target": "Helios-1",
+  "target_type": "hardware"
+}
