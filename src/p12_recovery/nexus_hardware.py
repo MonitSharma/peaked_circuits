@@ -226,7 +226,15 @@ def poll_hardware_batch(root: Path, state: CampaignState, batch_id: str, *, clie
     job_ref = qnx.jobs.get(id=batch.execution_job_ref)
     status = qnx.jobs.status(job_ref)
     status_text = str(getattr(status, "value", getattr(status, "status", status)))
-    CampaignStore(root).update_batch(state, batch_id, status=_status_from_provider(status_text))
+    mapped_status = _status_from_provider(status_text)
+    updates: dict[str, Any] = {"status": mapped_status}
+    if mapped_status == BatchStatus.FAILED:
+        updates["failure_reason"] = str(
+            getattr(status, "error_detail", None)
+            or getattr(status, "message", None)
+            or "Provider reported job failure"
+        )
+    CampaignStore(root).update_batch(state, batch_id, **updates)
     return {"batch_id": batch_id, "job_ref": batch.execution_job_ref, "status": status_text}
 
 

@@ -11,7 +11,7 @@
   "user_spend_ceiling_hqc": 1500.0,
   "recommended_shots_per_batch": 200,
   "recommended_max_cost": null,
-  "status": "DISCOVERY_CANDIDATE_FROZEN",
+  "status": "HARDWARE_BATCH_ACTIVE",
   "next_batch_number": 3,
   "completed_batches": [
     "batch_001"
@@ -109,14 +109,14 @@
     "batch_002": {
       "batch_id": "batch_002",
       "role": "confirmation",
-      "status": "PLANNED",
+      "status": "FAILED",
       "source_qasm_sha256": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d",
       "qir_sha256": "c003298ea5c57f963f7f9bf5ca4c94a38fc76db10582a5cc859c621ad358c820",
       "qir_bitcode_sha256": "c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d",
-      "repository_git_sha": "7d65be77280a03e21d4dcc6a30cb5e1720c9ec48",
+      "repository_git_sha": "64a51387c0ea06be25d1e8d2e351961dcbce555f",
       "protocol_hash": "d88ea05069834adad820c75046022a678cda2a43ba9944ebf6793133a41898c5",
       "target": "Helios-1",
-      "provider_job_name": null,
+      "provider_job_name": "p12-physical-batch_002-c6996dfb-d88ea050",
       "requested_shots": 200,
       "predicted_hqc": 1374.0,
       "cost_confidence": 95.0,
@@ -124,7 +124,7 @@
       "actual_reported_hqc": null,
       "nexus_project_ref": null,
       "qir_artifact_ref": null,
-      "execution_job_ref": null,
+      "execution_job_ref": "312578d7-3c13-4dd9-aee2-c19c6eb5bd33",
       "result_refs": [],
       "submission_timestamp": null,
       "completion_timestamp": null,
@@ -137,7 +137,7 @@
       "candidate_freeze_relation": "batch_001_collision_hypothesis",
       "valid_shots": 0,
       "invalid_shots": 0,
-      "failure_reason": null,
+      "failure_reason": "Submission error: Job max-cost exceeds available credits. (code: 1002)",
       "history": [
         {
           "timestamp": "2026-08-25T22:48:28.584537+00:00",
@@ -146,6 +146,39 @@
             "cost_confidence": 95.0,
             "repository_git_sha": "8512db878d285cad51698f8a0304d4dc3c6703dc",
             "candidate_freeze_relation": "batch_001_discovery_candidate"
+          }
+        },
+        {
+          "timestamp": "2026-08-28T08:20:31.772021+00:00",
+          "updates": {
+            "status": "SUBMISSION_PENDING",
+            "provider_job_name": "p12-physical-batch_002-c6996dfb-d88ea050"
+          }
+        },
+        {
+          "timestamp": "2026-08-28T08:21:15.312282+00:00",
+          "updates": {
+            "status": "SUBMITTED",
+            "execution_job_ref": "312578d7-3c13-4dd9-aee2-c19c6eb5bd33"
+          }
+        },
+        {
+          "timestamp": "2026-08-28T08:21:24.618618+00:00",
+          "updates": {
+            "status": "RUNNING"
+          }
+        },
+        {
+          "timestamp": "2026-08-28T08:22:08.549887+00:00",
+          "updates": {
+            "status": "FAILED"
+          }
+        },
+        {
+          "timestamp": "2026-08-28T08:22:27.444351+00:00",
+          "updates": {
+            "status": "FAILED",
+            "failure_reason": "Submission error: Job max-cost exceeds available credits. (code: 1002)"
           }
         }
       ]
