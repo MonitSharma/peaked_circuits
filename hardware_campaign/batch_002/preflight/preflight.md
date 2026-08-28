@@ -1,14 +1,23 @@
-# Batch 002 preflight
+# batch_002 hardware preflight
 
-- Batch: `batch_002`
-- Role: confirmation
-- Target: `Helios-1` hardware
-- Requested shots: `200`
-- Planning estimate: `1374 HQC` (95% confidence; recorded historical fallback)
-- Hard maximum cost: `1500 HQC`
-- Candidate relation: frozen Batch 001 discovery candidate
-- Provider call made: **false**
-- Job submitted: **false**
-- Active job: **none**
+Status: **passed**
 
-This is a preparation artifact for next week. Final preflight must recheck exact target, frozen QIR hashes, mapping/syntax evidence, current provider cost if available, current HQC balance, and explicit user authorization. No Batch 002 provider job name or execution reference exists yet.
+- [x] exact_target
+- [x] hardware_target
+- [x] 98_qubit_capacity
+- [x] source_hash
+- [x] qir_hash
+- [x] bitcode_hash
+- [x] syntax_check
+- [x] provider_mapping
+- [x] fresh_cost
+- [x] shots_within_cost
+- [x] shots_positive
+- [x] max_cost_positive
+- [x] max_cost_within_budget
+- [x] max_cost_covers_prediction
+- [x] protocol_frozen
+- [x] campaign_valid
+- [x] no_active_job
+
+`hardware_submission_authorized_by_user = false`
