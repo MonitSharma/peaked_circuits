@@ -190,13 +190,14 @@ def dry_run_hardware_batch(root: Path, preflight: HardwarePreflightReport, *, pr
     }
 
 
-def submit_hardware_batch(root: Path, state: CampaignState, batch_id: str, *, preflight: HardwarePreflight, execute_hardware: bool = False, environment: dict[str, str] | None = None, interactive_confirmed: bool = False, client_module: Any | None = None) -> dict[str, str]:
+def submit_hardware_batch(root: Path, state: CampaignState, batch_id: str, *, preflight: HardwarePreflight, execute_hardware: bool = False, environment: dict[str, str] | None = None, interactive_confirmed: bool = False, client_module: Any | None = None, allow_uncapped: bool = False) -> dict[str, str]:
     """Submit exactly once; a pending batch always requires explicit reconciliation."""
     store = CampaignStore(root)
     batch = state.batches.get(batch_id)
     if batch is None:
         raise KeyError(batch_id)
-    if state.active_job is not None or batch.execution_job_ref or batch.status in {BatchStatus.SUBMISSION_PENDING, BatchStatus.SUBMITTED, BatchStatus.RUNNING, BatchStatus.COMPLETED}:
+    failed_preexecution_retry = allow_uncapped and batch.status == BatchStatus.FAILED and batch.actual_reported_hqc is None
+    if state.active_job is not None or (batch.execution_job_ref and not failed_preexecution_retry) or batch.status in {BatchStatus.SUBMISSION_PENDING, BatchStatus.SUBMITTED, BatchStatus.RUNNING, BatchStatus.COMPLETED}:
         raise PhysicalSubmissionDisabled("Batch already has a submitted/active job; use hardware-status or hardware-retrieve")
     env = environment or os.environ
     armed = preflight.model_copy(update={"explicit_environment_authorized": env.get("P12_ENABLE_PHYSICAL_HELIOS") == "1", "explicit_cli_authorized": execute_hardware, "typed_confirmation": interactive_confirmed})
@@ -206,11 +207,15 @@ def submit_hardware_batch(root: Path, state: CampaignState, batch_id: str, *, pr
     if not preflight.structural_passed:
         raise PhysicalSubmissionDisabled("Structural hardware preflight has not passed")
     qnx = client_module or importlib.import_module("qnexus")
-    job_name = f"p12-physical-{batch_id}-{state.qir_bitcode_sha256[:8]}-{(state.protocol_hash or '')[:8]}"
+    retry_suffix = "-uncapped-retry" if failed_preexecution_retry else ""
+    job_name = f"p12-physical-{batch_id}-{state.qir_bitcode_sha256[:8]}-{(state.protocol_hash or '')[:8]}{retry_suffix}"
     CampaignStore(root).update_batch(state, batch_id, status=BatchStatus.SUBMISSION_PENDING, provider_job_name=job_name)
     project = qnx.projects.get_or_create(name="p12-helios-recovery", description="P12 physical campaign")
     artifact = qnx.qir.upload(qir=(root / "results/qir/p12.bc").read_bytes(), name=job_name, project=project, description="Frozen P12 QIR for explicitly authorized hardware")
-    job = qnx.start_execute_job(programs=[artifact], n_shots=[batch.requested_shots], backend_config=qnx.models.HeliosConfig(system_name="Helios-1"), project=project, name=job_name, max_cost=batch.max_cost)
+    job_kwargs = {"programs": [artifact], "n_shots": [batch.requested_shots], "backend_config": qnx.models.HeliosConfig(system_name="Helios-1"), "project": project, "name": job_name}
+    if not allow_uncapped:
+        job_kwargs["max_cost"] = batch.max_cost
+    job = qnx.start_execute_job(**job_kwargs)
     project_ref = str(getattr(project, "id", project))
     artifact_ref = str(getattr(artifact, "id", artifact))
     job_ref = str(getattr(job, "id", job))

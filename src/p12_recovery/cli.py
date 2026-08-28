@@ -516,6 +516,7 @@ def hardware_submit_command(
     max_cost: Annotated[float | None, typer.Option("--max-cost")] = None,
     execute_hardware: Annotated[bool, typer.Option("--execute-hardware")] = False,
     dry_run: Annotated[bool, typer.Option("--dry-run")] = False,
+    allow_uncapped: Annotated[bool, typer.Option("--allow-uncapped", help="Explicitly omit the provider max_cost guard for a failed pre-execution retry.")] = False,
 ) -> None:
     """Render or, only with all explicit gates, submit one physical batch."""
     root, start = _root(), datetime.now(UTC)
@@ -536,7 +537,7 @@ def hardware_submit_command(
     if not report.structural_passed:
         raise typer.BadParameter("; ".join(report.blockers))
     confirmed = typer.confirm(f"Type approval for {batch}: Helios-1, {shots} shots, predicted {predicted} HQC, max_cost {record.max_cost} HQC. Continue?")
-    result = submit_hardware_batch(root, state, batch, preflight=HardwarePreflight(target="Helios-1", target_type="hardware", qubit_capacity=98, source_qasm_sha256=state.source_qasm_sha256, qir_sha256=state.qir_sha256, bitcode_sha256=state.qir_bitcode_sha256, syntax_check_passed=True, mapping_verified=True, predicted_hqc=predicted or 0, requested_shots=shots, max_cost=record.max_cost or 0, protocol_frozen=True, campaign_valid=True, no_active_job=True), execute_hardware=True, interactive_confirmed=confirmed)
+    result = submit_hardware_batch(root, state, batch, preflight=HardwarePreflight(target="Helios-1", target_type="hardware", qubit_capacity=98, source_qasm_sha256=state.source_qasm_sha256, qir_sha256=state.qir_sha256, bitcode_sha256=state.qir_bitcode_sha256, syntax_check_passed=True, mapping_verified=True, predicted_hqc=predicted or 0, requested_shots=shots, max_cost=record.max_cost or 0, protocol_frozen=True, campaign_valid=True, no_active_job=True), execute_hardware=True, interactive_confirmed=confirmed, allow_uncapped=allow_uncapped)
     console.print_json(json.dumps(result, sort_keys=True))
 
 
