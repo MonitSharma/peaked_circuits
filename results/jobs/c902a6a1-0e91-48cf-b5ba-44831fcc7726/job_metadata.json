@@ -1,0 +1,682 @@
+{
+  "architecture": "arm64",
+  "configuration_hash": null,
+  "created_at": "2026-08-28T23:10:23.204989Z",
+  "device_name": "Helios-1",
+  "execution_time_seconds": 229.924343,
+  "git_commit": "b43ac96ee975f9990d550442d6d188d1ba2758a4",
+  "git_dirty": true,
+  "input_hashes": {},
+  "job_id": "c902a6a1-0e91-48cf-b5ba-44831fcc7726",
+  "job_label": "p11-physical-50-20260828",
+  "job_status": "completed",
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit",
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.1",
+    "networkx": "3.6.1",
+    "numpy": "2.5.2",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "2.3.3",
+    "pydantic": "2.13.4",
+    "pyqir": "0.12.5",
+    "pytket": "2.18.1",
+    "pytket-qir": "2.0.0",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.2",
+    "qiskit": null,
+    "qnexus": "0.46.0",
+    "rich": "13.9.4",
+    "scipy": "1.18.1",
+    "typer": "0.27.1"
+  },
+  "provider": "quantinuum",
+  "provider_metadata": {
+    "calibration_metadata": {
+      "all_edge_gate_errors": null,
+      "all_node_gate_errors": null,
+      "all_readout_errors": null,
+      "architecture": {
+        "nodes": [
+          [
+            "fcNode",
+            [
+              0
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              1
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              2
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              3
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              4
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              5
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              6
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              7
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              8
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              9
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              10
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              11
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              12
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              13
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              14
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              15
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              16
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              17
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              18
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              19
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              20
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              21
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              22
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              23
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              24
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              25
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              26
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              27
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              28
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              29
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              30
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              31
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              32
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              33
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              34
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              35
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              36
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              37
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              38
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              39
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              40
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              41
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              42
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              43
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              44
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              45
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              46
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              47
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              48
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              49
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              50
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              51
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              52
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              53
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              54
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              55
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              56
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              57
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              58
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              59
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              60
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              61
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              62
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              63
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              64
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              65
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              66
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              67
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              68
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              69
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              70
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              71
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              72
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              73
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              74
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              75
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              76
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              77
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              78
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              79
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              80
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              81
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              82
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              83
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              84
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              85
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              86
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              87
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              88
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              89
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              90
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              91
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              92
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              93
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              94
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              95
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              96
+            ]
+          ],
+          [
+            "fcNode",
+            [
+              97
+            ]
+          ]
+        ]
+      },
+      "averaged_edge_gate_errors": null,
+      "averaged_node_gate_errors": null,
+      "averaged_readout_errors": null,
+      "device_name": "Helios-1",
+      "gate_set": [
+        36
+      ],
+      "misc": {
+        "noise_specs": {
+          "1q_gate_error": {
+            "p1": 2.5e-05,
+            "p1_unc": 1e-06
+          },
+          "2q_gate_error": {
+            "p2": 0.00079,
+            "p2_unc": 2e-05
+          },
+          "crosstalk_error": {
+            "p_crosstalk_meas": 4.8e-05,
+            "p_crosstalk_meas_unc": 1e-06
+          },
+          "date": "2025-11-05",
+          "memory_error": {
+            "memory_error": 0.0006,
+            "memory_error_unc": 3e-05
+          },
+          "spam_error": {
+            "p_meas_0": 0.0008,
+            "p_meas_0_unc": 0.0001,
+            "p_meas_1": 0.00016,
+            "p_meas_1_unc": 5e-05
+          }
+        }
+      },
+      "n_cl_reg": null,
+      "name": "Helios-1 Snapshot",
+      "supports_fast_feedforward": true,
+      "supports_midcircuit_measurement": true,
+      "supports_reset": true,
+      "version": "0.1.0"
+    }
+  },
+  "python_version": "3.12.9",
+  "queue_time_seconds": 10732.063968,
+  "random_seed": null,
+  "reported_cost_hqcs": 282.98,
+  "requested_shots": 50,
+  "retrieval_timestamp": "2026-08-28T23:10:23.205018Z",
+  "returned_shots": 51,
+  "schema_version": "1.0",
+  "submitted_circuit_hash": "a25a9a74e2aa99c4f76250448b4721511a5d8f01bc4d70db1f45d4a3c41ab465"
+}

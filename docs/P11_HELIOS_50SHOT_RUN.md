@@ -1,6 +1,6 @@
 # P11 Helios-1 50-shot run
 
-Status: submitted; awaiting provider completion.
+Status: completed and retrieved.
 
 This run follows the P12 campaign provenance procedure: the supplied P11 QASM
 was converted deterministically to QIR, the source and QIR hashes were checked,
@@ -20,6 +20,26 @@ provider result will be retrieved without candidate-dependent filtering.
 - QIR artifact: `5b01c739-15ec-4892-8f93-7dd96c448eaf`
 - Source QASM SHA-256: `1373d50c8a42b1ca745d202391767c417ddac56db95182ac2aced019231b3372`
 - Submitted QIR SHA-256: `a25a9a74e2aa99c4f76250448b4721511a5d8f01bc4d70db1f45d4a3c41ab465`
+
+## Retrieved result
+
+- Provider status: `COMPLETED`
+- Requested/complete returned shots: **50/51**
+- Reported cost: **282.98 HQC**
+- Queue time: approximately **10,732 seconds**
+- Execution time: approximately **230 seconds**
+- Most frequent returned string: `01111110011011000111010110011001001001111011110000001001101101011011101111000010110011000001011001`
+- Mode multiplicity: **2**
+- Radius-31 cluster around the observed mode: **2 shots**
+
+The provider fused the final five shot frames into one section. The raw payload
+contains 4,998 labeled measurements, exactly 51 complete 98-bit records, so
+the extraction chunks globally by the 98 measurement labels and records the
+requested/returned discrepancy rather than dropping or fabricating shots.
+
+The P11 sample does not show a strong P12-like collision/cluster structure in
+this 50-shot run. See the preserved raw data and independent analysis under
+`hardware_campaign/p11_batch_001/` and `results/jobs/`.
 
 ## Analysis commitment
 
