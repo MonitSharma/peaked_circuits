@@ -4,8 +4,8 @@
   "expected_output": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "final_status": "COMPLETED",
   "inconsistent_fields": [],
-  "job_ref": "1a1c284d-9f9b-4a7f-add8-99c51224a137",
-  "max_cost": 6.0,
+  "job_ref": "d08bb72a-34e7-4379-9506-dde6904ec682",
+  "max_cost": 100.0,
   "minimum_majority_fraction": 1.0,
   "output_width": 98,
   "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
@@ -2100,13 +2100,13 @@
       }
     ]
   },
-  "qir_artifact_ref": "a68e7155-21b4-4bd2-946f-509687c3735d",
+  "qir_artifact_ref": "81171d34-ff76-47e1-bf86-1e77e3cc2492",
   "raw_payload_sha256": "30a5ede1aeb95d41a4ea46292d7f6a13573ecc779f6503abde7da031a969a409",
   "reported_cost_hqcs": 5.58,
   "shots": 3,
   "shots_requested": 3,
   "shots_returned": 3,
   "status": "passed",
-  "submitted_at": "2026-07-12T13:42:20.396602+00:00",
+  "submitted_at": "2026-08-28T09:31:21.666034+00:00",
   "target": "Helios-1E"
 }
