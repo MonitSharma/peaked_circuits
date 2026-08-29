@@ -1,0 +1,21 @@
+{
+  "source_qasm": "/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm",
+  "source_qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "backend": "ibm_fez",
+  "backend_num_qubits": 156,
+  "backend_pending_jobs_at_selection": 3,
+  "backend_operational": true,
+  "selection_rule": "minimum pending_jobs among operational non-simulator backends with >=40 qubits; name tie-break",
+  "optimization_level": 3,
+  "logical_qubits": 40,
+  "logical_depth": 130,
+  "logical_size": 2744,
+  "logical_two_qubit_gates": 888,
+  "transpiled_qubits": 156,
+  "transpiled_depth": 2052,
+  "transpiled_size": 20150,
+  "transpiled_two_qubit_gates": 4044,
+  "transpilation_overhead_depth": 15.784615384615385,
+  "transpilation_overhead_two_qubit": 4.554054054054054,
+  "transpiled_at_epoch": 1787995751.8130932
+}
