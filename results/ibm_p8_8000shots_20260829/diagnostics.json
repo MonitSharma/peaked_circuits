@@ -1,0 +1,36 @@
+{
+  "job_id": "da9aefce74ec73aji450",
+  "shots": 8000,
+  "unique_bitstrings": 8000,
+  "max_multiplicity": 1,
+  "all_unique": true,
+  "candidates": {
+    "candidate_A": {
+      "best_overlap": 31,
+      "best_shot_count": 1,
+      "mean_overlap": 19.983625
+    },
+    "candidate_B": {
+      "best_overlap": 30,
+      "best_shot_count": 1,
+      "mean_overlap": 19.920375
+    },
+    "circuitperm_consensus": {
+      "best_overlap": 32,
+      "best_shot_count": 1,
+      "mean_overlap": 19.925125
+    },
+    "circuitperm_seed": {
+      "best_overlap": 31,
+      "best_shot_count": 1,
+      "mean_overlap": 19.756125
+    }
+  },
+  "raw_majority_bitstring": "0110000001011100011001101111011101111001",
+  "raw_majority_overlaps": {
+    "candidate_A": 23,
+    "candidate_B": 17,
+    "circuitperm_consensus": 21,
+    "circuitperm_seed": 18
+  }
+}
