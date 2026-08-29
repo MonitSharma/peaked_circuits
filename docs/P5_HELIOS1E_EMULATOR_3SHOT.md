@@ -1,6 +1,6 @@
 # P5 Helios-1E emulator pipeline test
 
-Status: submitted and provider-reported `RUNNING`; no hardware execution.
+Status: provider-reported `ERROR`; no hardware execution.
 
 - Branch: `p12_quantum`
 - Circuit: `/Users/monitsharma/Downloads/P5_granite_summit.qasm`
@@ -16,9 +16,10 @@ Status: submitted and provider-reported `RUNNING`; no hardware execution.
 - Submitted bitcode SHA-256: `c21ea71e6433e5d95d1b8494e5a98675717a96e61a41b4e529353c1b99b0ad9a`
 
 The explicit 44-qubit `HeliosEmulatorConfig` used an MPS simulator and
-`NoErrorModel`. The run is a pipeline/framing test only; its samples must not
-be treated as a P5 solution or quantum-advantage evidence. The provider
-currently reports 5 HQC for the running job, within the 100-HQC ceiling.
+`NoErrorModel`. The 5,720-gate entangling circuit exceeded Selene's backend/per-shot
+timeout before returning samples. The provider-reported cost was 0 HQC. The run
+is a pipeline/framing test only; its failure must not be treated as a P5 solution
+or quantum-advantage evidence.
 
 The submission metadata, source QASM, measured QIR, and bitcode are preserved
-under `results/emulator/p5_helios1e_3shot_20260829/`. Retrieval remains pending.
+under `results/emulator/p5_helios1e_3shot_20260829/`. No result payload was returned.

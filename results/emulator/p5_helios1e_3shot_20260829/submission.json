@@ -13,6 +13,9 @@
   "qir_artifact_ref": "cc530fb0-93bb-46ab-a8a8-b6f71864a5ba",
   "job_ref": "58332d6a-56dd-408c-88bf-c7bdade95325",
   "submission_timestamp_utc": "2026-08-29T00:34:49.564745+00:00",
-  "status": "SUBMITTED",
+  "status": "ERROR",
+  "error_detail": "Selene error: Timeout: Timed out waiting for shot results: Expired timers: 'backend_startup', 'per_shot' (code: 1000)",
+  "reported_cost_hqc": 0.0,
+  "error_timestamp_utc": "2026-08-29T01:05:45.811209+00:00",
   "hidden_target_scored": false
 }
