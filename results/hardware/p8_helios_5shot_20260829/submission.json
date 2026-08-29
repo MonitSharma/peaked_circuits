@@ -1,0 +1,19 @@
+{
+  "schema": "p8-helios-physical-submission-v1",
+  "branch": "p12_quantum",
+  "source_qasm": "/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm",
+  "source_qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "submitted_qir_sha256": "ed36e11775ffb2b0009a9218ee284c614b3a55e0db01056f71a997d010c35e05",
+  "submitted_bitcode_sha256": "a5c3df07b4e08db4a2a5a18c12b84d7b5c925719568ec1b837a4ec3d15bb70bf",
+  "target": "Helios-1",
+  "requested_shots": 5,
+  "max_cost_hqc": 35.0,
+  "job_name": "p8-physical-5-20260829",
+  "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
+  "qir_artifact_ref": "fd9fa174-23b6-4000-8c2a-c9686f53598a",
+  "job_ref": "dd2089ba-1e84-4b46-b104-f848e48e4bcc",
+  "submission_timestamp_utc": "2026-08-29T00:02:11.574643+00:00",
+  "status": "SUBMITTED",
+  "hardware_execution_authorized": true,
+  "raw_result_path": null
+}
