@@ -1,0 +1,22 @@
+{
+  "schema": "ibm-p8-physical-submission-v1",
+  "branch": "p12_quantum",
+  "source_qasm": "/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm",
+  "source_qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "backend": "ibm_fez",
+  "backend_num_qubits": 156,
+  "backend_pending_jobs_at_submission": 2,
+  "backend_operational": true,
+  "shots": 1000,
+  "optimization_level": 3,
+  "logical_qubits": 40,
+  "logical_depth": 130,
+  "logical_two_qubit_gates": 888,
+  "transpiled_qubits": 156,
+  "transpiled_depth": 2052,
+  "transpiled_two_qubit_gates": 4044,
+  "transpiled_qpy_sha256": "dcf805cac45cbe21a0a453a0aeb37510dedff64e98d200debcbcc111cef2f5f2",
+  "submitted_at_epoch": 1787995823.8912709,
+  "job_id": "da9adcke74ec73aji33g",
+  "submission_recorded_at_epoch": 1787995826.409725
+}
