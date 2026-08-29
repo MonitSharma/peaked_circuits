@@ -1,0 +1,18 @@
+{
+  "schema": "p5-helios1e-emulator-v1",
+  "branch": "p12_quantum",
+  "source_qasm": "/Users/monitsharma/Downloads/P5_granite_summit.qasm",
+  "source_qasm_sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+  "submitted_qir_sha256": "6ad242faa0facbf8184164ff5846912aa79c5c3aaece08cbdb6a9304799fd58b",
+  "submitted_bitcode_sha256": "c21ea71e6433e5d95d1b8494e5a98675717a96e61a41b4e529353c1b99b0ad9a",
+  "target": "Helios-1E",
+  "requested_shots": 3,
+  "max_cost_hqc": 100.0,
+  "job_name": "p5-helios1e-emulator-3-20260829",
+  "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
+  "qir_artifact_ref": "cc530fb0-93bb-46ab-a8a8-b6f71864a5ba",
+  "job_ref": "58332d6a-56dd-408c-88bf-c7bdade95325",
+  "submission_timestamp_utc": "2026-08-29T00:34:49.564745+00:00",
+  "status": "SUBMITTED",
+  "hidden_target_scored": false
+}
