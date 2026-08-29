@@ -1,6 +1,6 @@
 # P8 Helios-1 5-shot exploratory run
 
-Status: submitted; awaiting provider execution and retrieval.
+Status: completed and retrieved.
 
 This run follows the P11/P12 provenance procedure. The raw source QASM was
 converted deterministically to measured QIR after decomposing the custom
@@ -21,6 +21,10 @@ converted deterministically to measured QIR after decomposing the custom
 - Submitted QIR SHA-256: `ed36e11775ffb2b0009a9218ee284c614b3a55e0db01056f71a997d010c35e05`
 - Submitted bitcode SHA-256: `a5c3df07b4e08db4a2a5a18c12b84d7b5c925719568ec1b837a4ec3d15bb70bf`
 - Initial provider status: `SUBMITTED`
+- Final provider status: `COMPLETED`
+- Result reference: `609b7544-2bc0-4be0-8a55-cfc632e7082a`
+- Returned shots: **5/5**
+- Provider-reported cost: **30.3 HQC**
 
 The source QASM contains 40 qubits and 888 custom `iswap` operations. The
 submitted artifact contains explicit measurement of all 40 logical qubits.
@@ -29,8 +33,12 @@ cost-confidence estimate was 31 HQC at 5 shots.
 
 ## Retrieval commitment
 
-When the job reaches a terminal state, preserve the provider payload, result
-references, returned-shot count, reported cost, queue time, execution time,
-backend metadata, and checksums before any candidate analysis. Analyze these
-five shots as exploratory hardware evidence only; they cannot establish a
-P8 answer or a quantum-advantage claim by themselves.
+The raw provider payload returned exactly five complete 40-result records with
+consistent framing. All five logical-label-ordered strings were unique. Their
+pairwise Hamming distances ranged from 17 to 28, with no collision or tight
+cluster. These five shots are exploratory hardware evidence only; they do not
+establish a P8 answer or a quantum-advantage claim.
+
+The raw payload and reconstructed shots are preserved under
+`results/hardware/p8_helios_5shot_20260829/`, together with the result
+reference, timing, cost, and checksums.

@@ -1,0 +1,49 @@
+{
+  "schema": "p8-helios-physical-result-v1",
+  "job_ref": "dd2089ba-1e84-4b46-b104-f848e48e4bcc",
+  "result_ref": "609b7544-2bc0-4be0-8a55-cfc632e7082a",
+  "target": "Helios-1",
+  "status": "JobStatusEnum.COMPLETED",
+  "requested_shots": 5,
+  "returned_shots": 5,
+  "reported_cost_hqc": 30.3,
+  "submitted_time": "2026-08-29 00:02:15.906449+00:00",
+  "queued_time": "2026-08-29 00:02:25.594148+00:00",
+  "running_time": null,
+  "completed_time": "2026-08-29 08:09:30.009480+00:00",
+  "raw_result_sha256": "2a15aff559656085d2e4cb9db075ccde512f550c31b1170edb6bf6f5e4bed707",
+  "headers": [
+    [
+      "schema_id",
+      "labeled"
+    ],
+    [
+      "schema_version",
+      "2.1"
+    ]
+  ],
+  "metadata": [
+    [
+      "entry_point"
+    ],
+    [
+      "qir_profiles",
+      "custom"
+    ],
+    [
+      "required_num_qubits",
+      "40"
+    ],
+    [
+      "required_num_results",
+      "40"
+    ]
+  ],
+  "provider_output_widths": [
+    40
+  ],
+  "unique_logical_strings": 5,
+  "multiplicity_histogram": {
+    "1": 5
+  }
+}
