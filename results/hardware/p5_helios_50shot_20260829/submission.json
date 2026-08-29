@@ -1,0 +1,23 @@
+{
+  "schema": "p5-helios-physical-submission-v1",
+  "branch": "p12_quantum",
+  "problem": "P5",
+  "source_qasm": "/Users/monitsharma/Downloads/P5_granite_summit.qasm",
+  "source_qasm_sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+  "submitted_qir_sha256": "d1833a31e803f19da1c34ebc5f3669418023f394894b47b69ba38f2ab07258ba",
+  "submitted_bitcode_sha256": "44fbb59d51a8f0e427866c7e7b9c087ccf40843be6d339397ae39f823b21e982",
+  "target": "Helios-1",
+  "requested_shots": 50,
+  "max_cost_hqc": 300.0,
+  "provider_estimate_hqc": 237.0,
+  "provider_estimate_confidence_percent": 95.0,
+  "job_name": "p5-physical-50-20260829",
+  "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
+  "qir_artifact_ref": "8102e0df-a2a0-48ea-b09f-17ed516c2b8e",
+  "job_ref": "af68d5a2-44f5-4465-8f79-62642cbc5380",
+  "submission_timestamp_utc": "2026-08-29T01:15:31.967810+00:00",
+  "status": "ERROR",
+  "error_detail": "Submission error: Job max-cost exceeds available credits. (code: 1002)",
+  "provider_terminal_timestamp_utc": "2026-08-29T01:15:35.113318+00:00",
+  "hidden_target_scored": false
+}
