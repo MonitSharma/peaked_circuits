@@ -1,0 +1,42 @@
+{
+  "schema": "p6-p8-helios-cost-confidence-v1",
+  "checked_at_utc": "2026-08-30T05:57:33.188134+00:00",
+  "cost_endpoint_target": "Helios-1",
+  "syntax_checker_target": "Helios-1SC",
+  "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
+  "execution_submitted": false,
+  "rows": [
+    {
+      "problem": "P6",
+      "shots": 50,
+      "source_qasm_sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
+      "bitcode_sha256": "a7f64070d2fe4aa4569c77e967489bb4373d45b5ed75e848d9eac4f38579303b",
+      "estimated_hqc": 431.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "problem": "P6",
+      "shots": 200,
+      "source_qasm_sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
+      "bitcode_sha256": "a7f64070d2fe4aa4569c77e967489bb4373d45b5ed75e848d9eac4f38579303b",
+      "estimated_hqc": 1708.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "problem": "P8",
+      "shots": 50,
+      "source_qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+      "bitcode_sha256": "19e7f3c6a7f7fd3d2e5c626e851b6edce4bb8c1ddcdacdb7067d0285f6f5e0a8",
+      "estimated_hqc": 259.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "problem": "P8",
+      "shots": 200,
+      "source_qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+      "bitcode_sha256": "19e7f3c6a7f7fd3d2e5c626e851b6edce4bb8c1ddcdacdb7067d0285f6f5e0a8",
+      "estimated_hqc": 1018.0,
+      "confidence_percent": 95.0
+    }
+  ]
+}
