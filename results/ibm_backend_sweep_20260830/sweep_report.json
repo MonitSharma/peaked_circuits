@@ -1,0 +1,16 @@
+{
+  "schema": "ibm-backend-transpilation-sweep-v1",
+  "backend": "ibm_fez",
+  "backend_num_qubits": 156,
+  "backend_pending_jobs_at_start": 3,
+  "selection": "requested ibm_fez from prior least-busy transpilation; no execution submitted",
+  "optimization_level": 3,
+  "approximation_degree": 1.0,
+  "seeds_per_circuit": 30,
+  "circuits": [
+    "/Users/monitsharma/Downloads/P6_titan_pinnacle.qasm",
+    "/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm"
+  ],
+  "rows": 60,
+  "results_dir": "/Users/monitsharma/Downloads/p12_quantum/results/ibm_backend_sweep_20260830"
+}
