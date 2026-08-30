@@ -1,0 +1,219 @@
+{
+  "schema": "p8-local-hybrid-diagnostics-v1",
+  "answer_blind": true,
+  "external_target_scored": false,
+  "sample_source": "/Users/monitsharma/Code/p12-helios-recovery/results/peaked_portal_p1_p10/mettleq/p8_D64_c1e2_seed123/samples.tsv",
+  "sample_sha256": "da1211e4558a30b82ef0d21f9cc2c417f3194b10731dc210e16c5ca3d7c6b93d",
+  "shots": 1000,
+  "candidate_pool_frozen": true,
+  "candidate_pool_sha256": "74cb19523cb9a5e7cb2c1086bcbe8a6158b7d2580d39f51f20e466ce223a5101",
+  "observable_proxy": "empirical classical samples; not IBM measurements",
+  "top_abs_correlations": [
+    {
+      "i": 23,
+      "j": 24,
+      "zizj": 0.988
+    },
+    {
+      "i": 15,
+      "j": 23,
+      "zizj": 0.978
+    },
+    {
+      "i": 15,
+      "j": 24,
+      "zizj": 0.966
+    },
+    {
+      "i": 16,
+      "j": 23,
+      "zizj": 0.952
+    },
+    {
+      "i": 16,
+      "j": 24,
+      "zizj": 0.944
+    },
+    {
+      "i": 23,
+      "j": 35,
+      "zizj": 0.94
+    },
+    {
+      "i": 15,
+      "j": 16,
+      "zizj": 0.93
+    },
+    {
+      "i": 24,
+      "j": 35,
+      "zizj": 0.928
+    },
+    {
+      "i": 15,
+      "j": 35,
+      "zizj": 0.922
+    },
+    {
+      "i": 2,
+      "j": 23,
+      "zizj": 0.9
+    },
+    {
+      "i": 16,
+      "j": 35,
+      "zizj": 0.892
+    },
+    {
+      "i": 2,
+      "j": 24,
+      "zizj": 0.888
+    },
+    {
+      "i": 2,
+      "j": 15,
+      "zizj": 0.878
+    },
+    {
+      "i": 21,
+      "j": 23,
+      "zizj": -0.866
+    },
+    {
+      "i": 2,
+      "j": 16,
+      "zizj": 0.864
+    },
+    {
+      "i": 21,
+      "j": 24,
+      "zizj": -0.862
+    },
+    {
+      "i": 15,
+      "j": 21,
+      "zizj": -0.856
+    },
+    {
+      "i": 2,
+      "j": 35,
+      "zizj": 0.848
+    },
+    {
+      "i": 28,
+      "j": 34,
+      "zizj": -0.84
+    },
+    {
+      "i": 16,
+      "j": 21,
+      "zizj": -0.83
+    }
+  ],
+  "uncertain_bits_by_abs_mean": [
+    12,
+    34,
+    11,
+    25,
+    18,
+    17,
+    32,
+    22,
+    6,
+    28
+  ],
+  "z_means": [
+    0.714,
+    0.252,
+    -0.9,
+    0.374,
+    -0.322,
+    -0.284,
+    -0.092,
+    -0.288,
+    -0.448,
+    0.572,
+    -0.552,
+    0.042,
+    0.034,
+    0.296,
+    0.61,
+    -0.978,
+    -0.952,
+    0.062,
+    -0.05,
+    0.712,
+    -0.46,
+    0.866,
+    -0.086,
+    -1.0,
+    -0.988,
+    0.046,
+    0.626,
+    0.286,
+    0.128,
+    0.328,
+    -0.726,
+    -0.32,
+    -0.078,
+    -0.226,
+    -0.036,
+    -0.94,
+    -0.792,
+    0.392,
+    -0.704,
+    -0.776
+  ],
+  "candidate_scores": [
+    {
+      "candidate": "0010111110100001101010111000001111111011",
+      "linear_Z_score": 18.338,
+      "top20_pair_score": 18.072,
+      "combined_score_lambda_0.25": 22.856,
+      "sample_exact_count": 0
+    },
+    {
+      "candidate": "0110100010111101110010011101101100011011",
+      "linear_Z_score": 13.766,
+      "top20_pair_score": 18.072,
+      "combined_score_lambda_0.25": 18.284,
+      "sample_exact_count": 0
+    },
+    {
+      "candidate": "1000100010111001111101001011111010010011",
+      "linear_Z_score": 1.7739999999999998,
+      "top20_pair_score": -1.6959999999999997,
+      "combined_score_lambda_0.25": 1.3499999999999999,
+      "sample_exact_count": 0
+    },
+    {
+      "candidate": "1001100010111101101101110011111010010011",
+      "linear_Z_score": 0.7539999999999999,
+      "top20_pair_score": -1.664,
+      "combined_score_lambda_0.25": 0.3379999999999999,
+      "sample_exact_count": 0
+    },
+    {
+      "candidate": "1001100010111101111101101011111010010011",
+      "linear_Z_score": 0.6059999999999999,
+      "top20_pair_score": -1.6959999999999997,
+      "combined_score_lambda_0.25": 0.18199999999999994,
+      "sample_exact_count": 0
+    },
+    {
+      "candidate": "1001101010111101111101101011111010010001",
+      "linear_Z_score": -0.618,
+      "top20_pair_score": -1.6959999999999997,
+      "combined_score_lambda_0.25": -1.0419999999999998,
+      "sample_exact_count": 0
+    },
+    {
+      "candidate": "0101010001111100110101000111001001001000",
+      "linear_Z_score": -6.93,
+      "top20_pair_score": 5.568,
+      "combined_score_lambda_0.25": -5.538,
+      "sample_exact_count": 0
+    }
+  ],
+  "hardware_gate": "Do not submit until reduced observable circuit is implemented and locally validated."
+}

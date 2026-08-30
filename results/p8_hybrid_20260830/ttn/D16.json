@@ -1,0 +1,9 @@
+{
+  "schema": "p12-p8-ttn-run-v1",
+  "problem": "P8",
+  "method_family": "TTN",
+  "status": "ABORTED",
+  "answer_blind": true,
+  "error_type": "TimeoutError",
+  "error": "wall_limit"
+}
