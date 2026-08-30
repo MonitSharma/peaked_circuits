@@ -16,6 +16,11 @@ The D=8 candidate is therefore a provisional member of the candidate pool,
 not a promoted answer. The D=16 result shows that simply increasing the bond
 dimension is not currently an efficient path on this Mac.
 
+Post-freeze evaluation subsequently reported an overlap of **19/40** for the
+D=8 candidate. This is held-out validation only; it was not used to alter the
+candidate pool or tune the simulation. It confirms that the bounded D=8 TTN
+candidate is not reliable enough to justify hardware verification.
+
 ## Frozen candidate and observable prototype
 
 Seven candidates were frozen before any new hardware data was consulted. The
