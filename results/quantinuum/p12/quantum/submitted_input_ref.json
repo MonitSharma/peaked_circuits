@@ -1,0 +1,24 @@
+{
+  "annotations": {
+    "created": "2026-08-25 11:39:59.870626+00:00",
+    "description": "Frozen P12 QIR",
+    "modified": "2026-08-25 11:39:59.895473+00:00",
+    "name": "p12_physical_sqd",
+    "properties": {}
+  },
+  "id": "1c740c9a-ddc9-4d81-b901-7aa95da20f51",
+  "project": {
+    "annotations": {
+      "created": "2026-07-12 09:03:28.726990+00:00",
+      "description": "P12 Helios-1SC syntax validation only; no emulator or hardware execution",
+      "modified": "2026-07-12 09:03:28.726990+00:00",
+      "name": "p12-helios-recovery",
+      "properties": {}
+    },
+    "archived": false,
+    "contents_modified": "2026-08-25 12:56:30.438377+00:00",
+    "id": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
+    "type": "ProjectRef"
+  },
+  "type": "QIRRef"
+}

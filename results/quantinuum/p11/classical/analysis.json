@@ -1,0 +1,29 @@
+{
+  "cluster_candidate": "01111110011011000111010110011001001001111011110000001001101101011011101111000010110011000001011001",
+  "cluster_candidate_hamming_to_mode": 0,
+  "cluster_radius": 31,
+  "cluster_size": 2,
+  "device": "Helios-1",
+  "external_target_scored": false,
+  "job_id": "c902a6a1-0e91-48cf-b5ba-44831fcc7726",
+  "max_pairwise_hamming": 65,
+  "mean_pairwise_hamming": 41.97176470588235,
+  "min_pairwise_hamming": 0,
+  "mode_indices": [
+    0,
+    46
+  ],
+  "mode_multiplicity": 2,
+  "mode_string": "01111110011011000111010110011001001001111011110000001001101101011011101111000010110011000001011001",
+  "note": "P11 has no preregistered fixed candidate. Exploratory only; pair counts have no Poisson p-values.",
+  "pair_counts_descriptive_only": {
+    "0": 1,
+    "1": 2,
+    "20": 52,
+    "30": 136
+  },
+  "quantum_advantage_claim": false,
+  "requested_shots": 50,
+  "returned_shots": 51,
+  "schema_version": "1.0"
+}

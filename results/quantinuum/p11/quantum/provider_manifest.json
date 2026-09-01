@@ -1,0 +1,17 @@
+{
+  "framing": {
+    "end_markers": 47,
+    "labeled_measurements": 4998,
+    "note": "The final five shot frames were fused into one section; global 98-label chunking recovered all complete records.",
+    "shots_from_global_98_label_chunks": 51,
+    "start_markers": 47
+  },
+  "job_ref": "c902a6a1-0e91-48cf-b5ba-44831fcc7726",
+  "raw_payload_sha256": "1dc8ea57b2471df562bc68b9f0a783eea94e3aa2a4ea2a67f4e04c99d8c57be6",
+  "reported_cost_hqcs": 282.98,
+  "requested_shots": 50,
+  "result_refs": [
+    "79a2e0c8-8fbd-49a2-85a3-223672016c06"
+  ],
+  "returned_shots": 51
+}

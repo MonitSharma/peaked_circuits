@@ -1,0 +1,56 @@
+{
+  "annotations": {
+    "created": "2026-08-28 10:33:43.683103+00:00",
+    "description": "",
+    "modified": "2026-08-28 13:36:40.650684+00:00",
+    "name": "p11-physical-50-20260828",
+    "properties": {}
+  },
+  "backend_config_store": {
+    "attempt_batching": false,
+    "batch_id": null,
+    "emulator_config": null,
+    "max_batch_cost": 0.0,
+    "max_cost": null,
+    "options": null,
+    "system_name": "Helios-1",
+    "type": "HeliosConfig"
+  },
+  "id": "c902a6a1-0e91-48cf-b5ba-44831fcc7726",
+  "job_type": "execute",
+  "last_message": "The job is completed.",
+  "last_status": "COMPLETED",
+  "last_status_detail": [
+    "COMPLETED",
+    "The job is completed.",
+    null,
+    "2026-08-28T13:36:40.650684Z",
+    "2026-08-28T10:33:58.662373Z",
+    "2026-08-28T10:33:48.345560Z",
+    "2026-08-28T13:32:50.726341Z",
+    null,
+    null,
+    null,
+    282.98
+  ],
+  "project": {
+    "annotations": {
+      "created": "2026-07-12 09:03:28.726990+00:00",
+      "description": "P12 Helios-1SC syntax validation only; no emulator or hardware execution",
+      "modified": "2026-07-12 09:03:28.726990+00:00",
+      "name": "p12-helios-recovery",
+      "properties": {}
+    },
+    "archived": false,
+    "contents_modified": "2026-08-28 13:36:40.650684+00:00",
+    "id": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
+    "type": "ProjectRef"
+  },
+  "system": {
+    "id": "79c6091c-39d5-4a01-9a86-dd456048dfaf",
+    "name": "Helios-1",
+    "provider_name": "Quantinuum",
+    "type": "SystemRef"
+  },
+  "type": "ExecuteJobRef"
+}

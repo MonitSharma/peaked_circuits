@@ -1,0 +1,13 @@
+{
+  "candidate": "10110001110010110111000100111100110011010110111100111101010111101111001100000000101000100000111100",
+  "candidate_sha256": "7b0c741082ffc3cfa1702fc3d9574892b1f8173f7381c149eee66a6c7b5c7403",
+  "canonical_input_sha256": "3d17e4cff73a6e09c2750debbbe8a8743f19a0728a39850b284402635fab431e",
+  "external_target_scored": false,
+  "freeze_hash": "88ef097c045943dce0e5846237ad443aff99b9c6995ae54da4732daa7ca4891b",
+  "protocol_hash": "d88ea05069834adad820c75046022a678cda2a43ba9944ebf6793133a41898c5",
+  "source_hashes": {
+    "/Users/monitsharma/Downloads/p12_quantum/hardware_campaign/batch_001/reconstruction/reconstructed_counts.json": "b28ba3f8f40f860e186add9b70d03d01c18a732a9b2f14d667adc658bd85ab1b"
+  },
+  "status": "frozen",
+  "target_accessed": false
+}
