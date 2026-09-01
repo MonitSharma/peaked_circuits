@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "branch": "p12_quantum",
+  "hardware_provider": "Quantinuum",
+  "backend": "Helios-1",
+  "quantum_advantage_claim": false,
+  "problems": [
+    {
+      "problem": "P11",
+      "status": "SOLVED_HARDWARE",
+      "circuit": "P11_hqap_1999",
+      "source_qasm_path": "results/quantinuum/p11/quantum/source/P11_hqap_1999.qasm",
+      "source_sha256": "1373d50c8a42b1ca745d202391767c417ddac56db95182ac2aced019231b3372",
+      "qubits": 98,
+      "two_qubit_gates": 1999,
+      "backend": "Helios-1",
+      "job_id": "c902a6a1-0e91-48cf-b5ba-44831fcc7726",
+      "requested_shots": 50,
+      "returned_shots": 51,
+      "reconstructed_shots": 51,
+      "reported_hqc": 282.98,
+      "canonical_candidate_path": "results/quantinuum/p11/classical/analysis.json#/cluster_candidate",
+      "external_verification_status": "EXTERNAL_VERIFICATION_REPORTED_SEPARATELY",
+      "raw_artifact_path": "results/quantinuum/p11/quantum/raw_provider_result.json",
+      "analysis_path": "results/quantinuum/p11/classical/analysis.json"
+    },
+    {
+      "problem": "P12",
+      "status": "SOLVED_HARDWARE",
+      "circuit": "peaked_circuit_P12_Hqap_98x2457",
+      "source_qasm_path": "results/quantinuum/p12/quantum/source/peaked_circuit_P12_Hqap_98x2457.qasm",
+      "source_sha256": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d",
+      "qubits": 98,
+      "two_qubit_gates": 2457,
+      "backend": "Helios-1",
+      "job_id": "d5cba0df-a7aa-459e-ac51-8092645c059f",
+      "requested_shots": 200,
+      "returned_shots": 205,
+      "reconstructed_shots": 200,
+      "reported_hqc": 1373.4,
+      "canonical_candidate_path": "results/quantinuum/p12/classical/analysis.json#/agreement/consensus",
+      "external_verification_status": "EXTERNAL_VERIFICATION_REPORTED_SEPARATELY",
+      "raw_artifact_path": "results/quantinuum/p12/quantum/raw_result.json",
+      "analysis_path": "results/quantinuum/p12/classical/analysis.json"
+    }
+  ]
+}

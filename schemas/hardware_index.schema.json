@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "branch", "hardware_provider", "backend", "quantum_advantage_claim", "problems"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "branch": {"const": "p12_quantum"},
+    "hardware_provider": {"const": "Quantinuum"},
+    "backend": {"const": "Helios-1"},
+    "quantum_advantage_claim": {"const": false},
+    "problems": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["problem", "status", "circuit", "source_qasm_path", "source_sha256", "qubits", "two_qubit_gates", "backend", "job_id", "requested_shots", "reconstructed_shots", "reported_hqc", "canonical_candidate_path", "external_verification_status", "raw_artifact_path", "analysis_path"],
+        "properties": {
+          "problem": {"enum": ["P11", "P12"]},
+          "status": {"const": "SOLVED_HARDWARE"},
+          "circuit": {"type": "string"},
+          "source_qasm_path": {"type": "string"},
+          "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "qubits": {"const": 98},
+          "two_qubit_gates": {"type": "integer", "minimum": 1},
+          "backend": {"const": "Helios-1"},
+          "job_id": {"type": "string", "minLength": 1},
+          "requested_shots": {"type": "integer", "minimum": 1},
+          "returned_shots": {"type": "integer", "minimum": 1},
+          "reconstructed_shots": {"type": "integer", "minimum": 1},
+          "reported_hqc": {"type": "number", "exclusiveMinimum": 0},
+          "canonical_candidate_path": {"type": "string"},
+          "external_verification_status": {"type": "string"},
+          "raw_artifact_path": {"type": "string"},
+          "analysis_path": {"type": "string"}
+        }
+      }
+    }
+  }
+}

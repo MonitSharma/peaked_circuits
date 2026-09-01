@@ -1,17 +1,27 @@
 # P12 Helios Recovery — `p12_quantum`
 
 > **Branch:** `p12_quantum`  
-> **Objective / Task:** Tackle the **P12 peaked circuit** (`peaked_circuit_P12_Hqap_98x2457`) on the **Quantinuum Helios backend**. This branch is dedicated to compilation, QIR validation, result order mapping, emulator/syntax-checking (`Helios-1SC`), and executing the recovery protocol against the Quantinuum Helios backend.
+> **Scope:** Offline-auditable Quantinuum Helios hardware recovery records for P11 and P12.
 
-This repository is a research-grade, independent feasibility and reproducibility pipeline for
-recovering the hidden peak of Quantum Advantage Tracker circuit
-`peaked_circuit_P12_Hqap_98x2457` (98 qubits; 2,457 registered gates) using the Quantinuum Helios backend.
+This branch preserves the source circuits, compiled artifacts, provider jobs, raw results,
+canonical shots, recovery analyses, costs, and timing evidence for the completed P11 and P12
+Helios-1 runs. Successful recovery is not itself a quantum-advantage claim.
 
 The software is Monit Sharma's recovery and reproducibility pipeline. The byte-preserved P12 QASM is
 an upstream Quantum Advantage Tracker artifact; the circuit construction and scientific work remain
 attributable to their original authors. Including it does not claim authorship of the circuit.
 
-## Milestone 3 scope
+## Headline hardware results
+
+| Problem | Backend | Shots | Cost | Outcome |
+|---|---|---:|---:|---|
+| P11 | Helios-1 | 50 requested / 51 returned | 282.98 HQC | Weak exploratory cluster; later external answer reported |
+| P12 | Helios-1 | 200 reconstructed | 1,373.4 HQC | Three observed-data decoders agreed; later external verification reported |
+
+See [`results/quantinuum/README.md`](results/quantinuum/README.md), the canonical
+[`P11 page`](problems/P11/README.md), and [`P12 page`](problems/P12/README.md).
+
+## Branch scope and historical implementation
 
 Milestone 2 adds authenticated Nexus/Helios discovery, legacy local exact-target compilation,
 permutation-safe measurement tracing, saved-result import, canonical normalization, deterministic
@@ -79,7 +89,7 @@ leftmost character and `q[97]` is the rightmost. Provider strings are never sile
 Conversion requires an explicit logical-to-classical map, provider display order, and classical
 register layout; ambiguity is an error. See [docs/bit_ordering.md](docs/bit_ordering.md).
 
-## Recommended Milestone 2 workflow
+## Historical Milestone 2 workflow
 
 ```bash
 python -c "import qnexus as qnx; qnx.login()"  # browser login; do not paste credentials
@@ -130,7 +140,7 @@ never an invented HQC formula. Readiness is derived from hashed evidence and is 
 credentials, tokens, local paths, private raw metadata, citation, license, and report provenance
 without changing repository visibility.
 
-## Milestone 3 local workflow
+## Historical Milestone 3 local workflow
 
 ```bash
 p12-recovery export-qir \
@@ -170,13 +180,19 @@ Six jobs resolved all 98 labeled Nexus positions. `Helios-1` remains impossible 
 commands. The optional `p12-emulator-pilot` is capped at 20 shots and remains unrun. See
 [docs/milestone_4.md](docs/milestone_4.md).
 
-## Recovery and reproducibility
+## How recovery works
 
-The primary method is bitwise majority. Most-frequent observation, weighted observed medoid, and
-hierarchical-cluster consensus are registered secondary methods. Synthetic independent, asymmetric,
-correlated-burst, and mixture noise are deterministic under explicit seeds. Important inputs and
-generated circuit artifacts are SHA-256 hashed; JSON reports accompany Markdown summaries; every
-artifact-producing CLI operation writes a run manifest.
+The pipeline fixes logical bit order, preserves provider framing, normalizes shots, and applies
+target-blind mode, Hamming/cluster, weighted-medoid, majority, bootstrap, and stability diagnostics.
+P12's most-frequent, weighted-medoid, and cluster-consensus methods agreed. P11's observed
+recurrence was weak. Pair counts are descriptive only because pair events are dependent.
+
+## Offline reproduction and safety
+
+See [`REPRODUCIBILITY_QUANTUM.md`](REPRODUCIBILITY_QUANTUM.md),
+[`docs/quantum/HARDWARE_SAFETY.md`](docs/quantum/HARDWARE_SAFETY.md), and
+[`docs/quantum/QUANTINUUM_RESEARCH_OVERVIEW.md`](docs/quantum/QUANTINUUM_RESEARCH_OVERVIEW.md).
+Default CI and ordinary commands do not submit paid hardware jobs.
 
 ## Repository map
 
@@ -186,7 +202,9 @@ artifact-producing CLI operation writes a run manifest.
 - `results`: generated reports, figures, compilation artifacts, and manifests
 - `schemas`: Pydantic-generated report schemas
 - `tests`: offline unit tests plus separately marked integration/hardware tests
-- `docs`: research question, draft protocol, interpretation, and readiness checklists
+- `problems/P11`, `problems/P12`: canonical problem pages
+- `results/quantinuum`: organized hardware evidence and machine-readable index
+- `docs/quantum`: research narrative, lineage, safety, figures, interpretation, and merge guidance
 
 ## Hardware safety
 
@@ -197,10 +215,9 @@ in this repository.
 
 ## Limitations
 
-Full 98-qubit statevector simulation is intentionally excluded. QASM round-trip and small-circuit
-semantic checks do not establish full P12 semantic equivalence. A successful parse does not imply
-backend validity. Hardware executability may only be claimed after a configured current target's
-predicates pass. Accuracy against the real hidden target is unavailable locally.
+Full 98-qubit statevector simulation is intentionally excluded. Classical-analysis wall time was
+not retained for the historical hardware runs. QASM/QIR validation and saved-result analysis do not
+establish a quantum-advantage claim; comparable classical resource accounting remains necessary.
 
 ## Citation
 
