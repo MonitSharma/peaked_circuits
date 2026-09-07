@@ -1,0 +1,21 @@
+{
+  "status": "SUBMITTED",
+  "submitted_at_utc": "2026-09-07T10:15:28.241507+00:00",
+  "target": "Helios-1E",
+  "shots": 1,
+  "max_cost_hqc": 100.0,
+  "job_name": "p6_native_zzphase_helios1e_chi64_probe_20260907",
+  "job_id": "d217edb0-b227-4dd1-9f2d-84abc5be5b60",
+  "project_id": "d314b58b-4592-4d95-8195-b1c0565a9f54",
+  "qir_artifact_id": "888cb81e-6767-4f74-998c-d9b788d3485d",
+  "bitcode_sha256": "494b1003132a910ca0a4f39bbb41f258561d4f7091f8d495fcd8f94e4f09c851",
+  "native_zzphase_preserved": true,
+  "simulator": {
+    "backend": "auto",
+    "chi": 64,
+    "zero_threshold": 0.02,
+    "error_model": "NoErrorModel"
+  },
+  "final_emulator_accuracy_probe": true,
+  "physical_hardware_submitted": false
+}

@@ -25,6 +25,20 @@ analysis and the later external verification reported in the project history.
 The result is recurrence/recovery evidence; it is not, on its own, a
 quantum-advantage claim.
 
+## Positive-control audit (2026-09-07)
+
+The saved 200-shot canonical reconstruction was reanalysed locally, without
+provider access, additional HQC spend, or hidden-target lookup. Most-frequent,
+weighted observed medoid, and cluster consensus independently recovered the
+externally accepted string. Coordinate-wise bitwise majority remained 13 bits
+away. This validates the recovery pipeline on P12 while preserving the
+important distinction between a successful decoder and a quantum-advantage
+claim.
+
+The machine-readable audit is retained at
+`results/quantinuum/positive_control_audit_20260907/audit.json` and the
+summary at `results/quantinuum/positive_control_audit_20260907/audit.md`.
+
 ## Reproducibility boundary
 
 The source circuit, submitted artifact, provider metadata, raw result, repaired

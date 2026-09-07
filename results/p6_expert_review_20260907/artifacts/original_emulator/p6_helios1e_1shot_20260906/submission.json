@@ -1,0 +1,16 @@
+{
+  "status": "ERROR",
+  "submitted_at_utc": "2026-09-05T20:08:22.698149+00:00",
+  "target": "Helios-1E",
+  "shots": 1,
+  "max_cost_hqc": 100.0,
+  "job_name": "p6_helios1e_emulator_probe_1",
+  "job_id": "66ef5d34-e0a6-4328-b0f8-499759b94dcb",
+  "project_id": "99b33076-5295-4f59-9b5c-f18c0dc112d2",
+  "qir_artifact_id": "83110a70-77cb-4c25-afd8-07c6d0595c3e",
+  "bitcode_sha256": "0109765b16777c76347857cf91860cd99f7ad6c42ae5a7a991399e484a16f155",
+  "hardware_execution": false,
+  "purpose": "pipeline_probe_only",
+  "reported_cost_hqc": 0.0,
+  "error_detail": "Selene error: Panic (#100001): ErrorModelPlugin: handle_operations failed; failed to apply RZZ gate; cudaErrorMemoryAllocation; SimulatorPlugin rzz failed (code: 1000)."
+}

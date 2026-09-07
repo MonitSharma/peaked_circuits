@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "stage": "discovery",
+  "job_name": "p6_physical_discovery_100",
+  "backend": "Helios-1",
+  "job_id": "19c66922-84e0-4f78-99a7-5392f98a4143",
+  "provider_attempt_refs": [
+    "0b3d7080-02a2-435f-8121-71475a1ed9fe",
+    "5fec92c1-58d0-4d66-847c-fa826eec06e2"
+  ],
+  "result_id": "b1c7d16c-48b9-4e22-a483-b05031eb566b",
+  "qir_artifact_id": "95c62602-c19b-4e3d-87a4-67409e306cd2",
+  "requested_shots": 100,
+  "returned_shots": 100,
+  "reported_hqc": 856.04,
+  "max_cost_hqc": 900.0,
+  "source_qasm_sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
+  "submitted_bitcode_sha256": "0109765b16777c76347857cf91860cd99f7ad6c42ae5a7a991399e484a16f155",
+  "submitted_at_utc": "2026-09-07T02:31:39.638790+00:00",
+  "queued_at_utc": "2026-09-07T02:32:13.748844+00:00",
+  "running_at_utc": "2026-09-07T02:38:26.584938+00:00",
+  "completed_at_utc": "2026-09-07T02:50:05.124118+00:00",
+  "provider_execution_seconds": null,
+  "provider_queue_seconds": null,
+  "raw_result_path": "results/hardware/p6_helios_100shot_20260907/raw_result.json",
+  "raw_result_sha256": "15dfee36868d296a6791fc07a976c0012d228864868658766c74fb1221f9e7ad",
+  "canonical_shots_path": null,
+  "canonical_shots_sha256": null,
+  "status": "ANALYZED",
+  "failure_reason": "Submission error: Job max-cost exceeds available credits. (code: 1002); provider status ERROR; no queue or running time and no cost reported.",
+  "external_target_scored": false,
+  "candidate_freeze": {
+    "status": "PROVISIONAL_DISCOVERY_CANDIDATE",
+    "candidate": "01001001111111011000101110111001110111101110010011000011111101",
+    "candidate_sha256": "86f699c9cbae9b9df8c97c3b982d9cbd158a036ed839f8e28faecb9fcd7ea429",
+    "methods_agreeing": ["most_frequent", "cluster_consensus"],
+    "frozen_at_utc": "2026-09-07T02:58:42Z",
+    "analysis_path": "results/hardware/p6_helios_100shot_20260907/analysis.json",
+    "framing_note": "Provider reported 100 shots, while the raw payload contained 103 complete 62-record frames and 28 END markers; first-100 and all-frame analyses selected the same candidate."
+  },
+  "analysis_path": "results/hardware/p6_helios_two_batch_analysis_20260907/analysis.json",
+  "pooled_decision": "NO_REPRODUCIBLE_CANDIDATE",
+  "notes": "Raw provider result preserved unchanged. Independent and pooled two-batch analysis found no reproducible candidate; confirmation remains unsubmitted.",
+  "submission_attempts": [
+    {
+      "attempted_at_utc": "2026-09-05T10:02:23.846959+00:00",
+      "outcome": "provider_rejected_prequeue",
+      "job_id": "5fec92c1-58d0-4d66-847c-fa826eec06e2"
+    },
+    {
+      "attempted_at_utc": "2026-09-07T02:31:39.638790+00:00",
+      "outcome": "provider_accepted",
+      "job_id": "19c66922-84e0-4f78-99a7-5392f98a4143"
+    }
+  ]
+}

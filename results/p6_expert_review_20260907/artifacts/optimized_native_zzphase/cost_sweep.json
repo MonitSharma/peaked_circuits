@@ -1,0 +1,80 @@
+{
+  "schema": "p6-optimized-provider-compatible-cost-sweep-v1",
+  "checked_at_utc": "2026-09-07T07:00:44.940801+00:00",
+  "syntax_checker_target": "Helios-1SC",
+  "cost_endpoint_target": "Helios-1",
+  "source_qasm": "/Users/monitsharma/Code/p12-helios-recovery/.claude/worktrees/p6-peaked-circuit-classical-8be972/results/hardware/p6_optimized_compile_20260907/p6_optimized.qasm",
+  "source_qasm_sha256": "a8e25d43905b6ceee9b18f5a567277b0cf7df20b82ed756275a0cb865e1e9792",
+  "qir_path": "/Users/monitsharma/Code/p12-helios-recovery/.claude/worktrees/p6-peaked-circuit-classical-8be972/results/hardware/p6_optimized_compile_20260907/p6_provider_compatible.qir.ll",
+  "qir_sha256": "76856d1e3f4d4016f899596886aad24ed1bef5eb1f5ea1b82d8a46e416a0cac8",
+  "bitcode_path": "/Users/monitsharma/Code/p12-helios-recovery/.claude/worktrees/p6-peaked-circuit-classical-8be972/results/hardware/p6_optimized_compile_20260907/p6_provider_compatible.qir.bc",
+  "bitcode_sha256": "1039546e1b522ba4a3d3d35e4a6f4b7f345baa4a753867dea0cc6bf0b124b11a",
+  "provider_gate_counts": {
+    "Rz": 54718,
+    "Rx": 27434,
+    "Ry": 0,
+    "CZ": 5596,
+    "X": 0
+  },
+  "qubits": 62,
+  "measurements": 62,
+  "project_ref": "df23a7fd-5965-4ec1-a987-1231aba2cbac",
+  "execution_submitted": false,
+  "emulator_execution_submitted": false,
+  "rows": [
+    {
+      "shots": 1,
+      "estimated_hqc": 22.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 5,
+      "estimated_hqc": 90.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 10,
+      "estimated_hqc": 174.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 20,
+      "estimated_hqc": 342.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 50,
+      "estimated_hqc": 846.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 100,
+      "estimated_hqc": 1686.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 150,
+      "estimated_hqc": 2526.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 200,
+      "estimated_hqc": 3366.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 300,
+      "estimated_hqc": 5046.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 400,
+      "estimated_hqc": 6727.0,
+      "confidence_percent": 95.0
+    }
+  ],
+  "diagnostics": [
+    "The 2798-ZZPhase offline decomposition was rebased to 5596 CZ gates for the current provider-compatible QIR path.",
+    "Helios-1SC is a syntax-check target; shot-scaled HQC estimates came from the Helios-1 cost-confidence endpoint."
+  ]
+}

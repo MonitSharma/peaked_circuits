@@ -1,0 +1,23 @@
+{
+  "schema": "p6-helios-physical-submission-v1",
+  "branch": "p12_quantum",
+  "problem": "P6",
+  "source_qasm": "/Users/monitsharma/Downloads/P6_titan_pinnacle.qasm",
+  "source_qasm_sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
+  "submitted_qir_sha256": "df85f59d7885f8b166326f459c39eedd0faf605300591b6825e897d5e1caba77",
+  "submitted_bitcode_sha256": "0109765b16777c76347857cf91860cd99f7ad6c42ae5a7a991399e484a16f155",
+  "target": "Helios-1",
+  "requested_shots": 50,
+  "max_cost_hqc": 500.0,
+  "provider_estimate_hqc": 431.0,
+  "provider_estimate_confidence_percent": 95.0,
+  "job_name": "p6-physical-50-20260829",
+  "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
+  "qir_artifact_ref": "59e444f7-c0f9-4597-a1d4-63a8394d1d57",
+  "job_ref": "cd5d0823-988a-4b35-93ca-419125c9df97",
+  "submission_timestamp_utc": "2026-08-29T01:15:39.310391+00:00",
+  "status": "ERROR",
+  "error_detail": "Submission error: Job max-cost exceeds available credits. (code: 1002)",
+  "provider_terminal_timestamp_utc": "2026-08-29T01:15:43.935195+00:00",
+  "hidden_target_scored": false
+}

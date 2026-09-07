@@ -1,0 +1,65 @@
+{
+  "schema": "p6-helios-cost-sweep-v1",
+  "checked_at_utc": "2026-09-01T08:38:24.010057+00:00",
+  "source_qasm": "/Users/monitsharma/Downloads/P6_titan_pinnacle.qasm",
+  "source_qasm_sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
+  "bitcode_path": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_50shot_20260829/submitted.qir.bc",
+  "bitcode_sha256": "0109765b16777c76347857cf91860cd99f7ad6c42ae5a7a991399e484a16f155",
+  "syntax_checker_target": "Helios-1SC",
+  "cost_endpoint_target": "Helios-1",
+  "project_ref": "d41d4d96-38a7-44b7-833f-d7cf0038eb14",
+  "execution_submitted": false,
+  "emulator_execution_submitted": false,
+  "rows": [
+    {
+      "shots": 1,
+      "estimated_hqc": 14.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 5,
+      "estimated_hqc": 48.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 10,
+      "estimated_hqc": 91.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 20,
+      "estimated_hqc": 176.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 50,
+      "estimated_hqc": 431.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 100,
+      "estimated_hqc": 857.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 150,
+      "estimated_hqc": 1282.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 200,
+      "estimated_hqc": 1708.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 300,
+      "estimated_hqc": 2559.0,
+      "confidence_percent": 95.0
+    },
+    {
+      "shots": 400,
+      "estimated_hqc": 3410.0,
+      "confidence_percent": 95.0
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "regenerated_ir_matches_saved": true,
+  "bitcode_ir_matches_saved": false,
+  "qubits": 62,
+  "source_matches_original": true,
+  "canonical_ir_equal": true,
+  "regenerated_bitcode_equal": true
+}

@@ -1,0 +1,25 @@
+{
+  "status": "RETRIEVED",
+  "submitted_at_utc": "2026-09-07T10:56:08.839882+00:00",
+  "target": "Helios-1E",
+  "shots": 1,
+  "max_cost_hqc": 100.0,
+  "job_name": "p6_native_zzphase_helios1e_chi32_retry_20260907",
+  "job_id": "b71f6f7a-2462-49a1-9bc6-7ebac434f0c9",
+  "project_id": "d314b58b-4592-4d95-8195-b1c0565a9f54",
+  "qir_artifact_id": "3530b2f6-bbac-4953-ac6e-b17f59eedd07",
+  "bitcode_sha256": "494b1003132a910ca0a4f39bbb41f258561d4f7091f8d495fcd8f94e4f09c851",
+  "native_zzphase_preserved": true,
+  "simulator": {
+    "backend": "auto",
+    "chi": 32,
+    "zero_threshold": 0.05,
+    "error_model": "NoErrorModel"
+  },
+  "confirmation_probe": true,
+  "physical_hardware_submitted": false,
+  "result_id": "f430b711-e409-4e95-b0ff-de538ea6fa6b",
+  "reported_hqc": 13.96,
+  "raw_result_path": "/Users/monitsharma/Code/p12-helios-recovery/.claude/worktrees/p6-peaked-circuit-classical-8be972/results/hardware/p6_optimized_compile_20260907/native_zzphase_helios1e_chi32_retry/raw_result.txt",
+  "raw_result_sha256": "ff1f38c610bf6dcface8e36d00fb546fc3dd556fb03fd5e380c270ea7a2ec2fa"
+}

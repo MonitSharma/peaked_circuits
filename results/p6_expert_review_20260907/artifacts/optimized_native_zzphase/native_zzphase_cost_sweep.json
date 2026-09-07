@@ -1,0 +1,80 @@
+{
+  "schema": "p6-native-zzphase-cost-sweep-v1",
+  "checked_at_utc": "2026-09-07T07:10:45.338633+00:00",
+  "syntax_checker_target": "Helios-1SC",
+  "cost_endpoint_target": "Helios-1",
+  "qir_path": "/Users/monitsharma/Code/p12-helios-recovery/.claude/worktrees/p6-peaked-circuit-classical-8be972/results/hardware/p6_optimized_compile_20260907/p6_native_zzphase.qir.ll",
+  "qir_sha256": "0d68e1ad66e1619e30dfd2a8f7d9f22b7da1eec9dd4ae4815a09493425f56283",
+  "bitcode_path": "/Users/monitsharma/Code/p12-helios-recovery/.claude/worktrees/p6-peaked-circuit-classical-8be972/results/hardware/p6_optimized_compile_20260907/p6_native_zzphase.qir.bc",
+  "bitcode_sha256": "494b1003132a910ca0a4f39bbb41f258561d4f7091f8d495fcd8f94e4f09c851",
+  "project_ref": "4832d1ba-9f6e-4189-82d9-9c1ab020f5eb",
+  "execution_submitted": false,
+  "emulator_execution_submitted": false,
+  "hardware_execution_submitted": false,
+  "rows": [
+    {
+      "shots": 1,
+      "estimated_hqc": 15.0,
+      "confidence_percent": 95.0,
+      "average_hqc_per_shot": 15.0
+    },
+    {
+      "shots": 5,
+      "estimated_hqc": 50.0,
+      "confidence_percent": 95.0,
+      "average_hqc_per_shot": 10.0
+    },
+    {
+      "shots": 10,
+      "estimated_hqc": 95.0,
+      "confidence_percent": 95.0,
+      "average_hqc_per_shot": 9.5
+    },
+    {
+      "shots": 20,
+      "estimated_hqc": 185.0,
+      "confidence_percent": 95.0,
+      "average_hqc_per_shot": 9.25
+    },
+    {
+      "shots": 50,
+      "estimated_hqc": 454.0,
+      "confidence_percent": 95.0,
+      "average_hqc_per_shot": 9.08
+    },
+    {
+      "shots": 100,
+      "estimated_hqc": 902.0,
+      "confidence_percent": 95.0,
+      "average_hqc_per_shot": 9.02
+    },
+    {
+      "shots": 150,
+      "estimated_hqc": 1351.0,
+      "confidence_percent": 95.0,
+      "average_hqc_per_shot": 9.006666666666666
+    },
+    {
+      "shots": 200,
+      "estimated_hqc": 1799.0,
+      "confidence_percent": 95.0,
+      "average_hqc_per_shot": 8.995
+    },
+    {
+      "shots": 300,
+      "estimated_hqc": 2696.0,
+      "confidence_percent": 95.0,
+      "average_hqc_per_shot": 8.986666666666666
+    },
+    {
+      "shots": 400,
+      "estimated_hqc": 3593.0,
+      "confidence_percent": 95.0,
+      "average_hqc_per_shot": 8.9825
+    }
+  ],
+  "diagnostics": [
+    "Helios-1SC performs syntax validation only; shot-scaled HQC estimates come from the Helios-1 cost-confidence endpoint.",
+    "Native ZZPhase was preserved; the QIR contains 2,798 ZZPhase gates and zero CZ gates."
+  ]
+}

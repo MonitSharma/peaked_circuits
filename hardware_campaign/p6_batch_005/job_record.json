@@ -1,0 +1,32 @@
+{
+  "status": "RETRIEVED",
+  "stage": "independent_discovery_batch_5",
+  "submitted_at_utc": "2026-09-07T05:39:37.897801+00:00",
+  "target": "Helios-1",
+  "shots": 100,
+  "max_cost_hqc": 900.0,
+  "job_name": "p6_physical_discovery_100_batch5",
+  "job_id": "35bab525-cea9-48ac-bdd0-9a3e067a2dea",
+  "project_id": "1553d6d3-4a1a-4a4b-b606-482b599de921",
+  "qir_artifact_id": "392bebf5-9641-41e4-8416-248e859fd2e0",
+  "bitcode_sha256": "0109765b16777c76347857cf91860cd99f7ad6c42ae5a7a991399e484a16f155",
+  "candidate_target_used": false,
+  "retrieval_method": "original_qsys_chunks",
+  "result_id": "9a7f565b-75f5-4541-b03c-3c2929f1ba01",
+  "returned_shots": 100,
+  "reported_hqc": 856.04,
+  "queued_at_utc": "2026-09-07T05:39:50.348418+00:00",
+  "running_at_utc": "2026-09-07T05:44:06.766075+00:00",
+  "completed_at_utc": "2026-09-07T05:56:02.533199+00:00",
+  "chunk_counts": [
+    25,
+    30,
+    25,
+    20
+  ],
+  "raw_result_path": "results/hardware/p6_helios_100shot_20260907_batch5/shots.json",
+  "corrected_unique": 100,
+  "status_after_analysis": "ANALYZED",
+  "analysis_path": "results/hardware/p6_five_batch_corrected_analysis_20260907/analysis.json",
+  "pooled_decision": "NO_REPRODUCIBLE_CANDIDATE"
+}

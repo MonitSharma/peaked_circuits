@@ -1,0 +1,42 @@
+{
+  "generated_at_utc": "2026-09-07T06:54:03.229588+00:00",
+  "offline_fidelity_proxy": "not a provider calibration and not a hardware prediction",
+  "optimized": {
+    "cx": 0,
+    "cz": 0,
+    "depth": 756,
+    "qubits": 62,
+    "tk2": 0,
+    "total_gates": 19040,
+    "zzphase": 2798
+  },
+  "optimized_qasm": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_optimized_compile_20260907/p6_optimized.qasm",
+  "optimized_sha256": "a8e25d43905b6ceee9b18f5a567277b0cf7df20b82ed756275a0cb865e1e9792",
+  "original": {
+    "cx": 0,
+    "cz": 3494,
+    "depth": 416,
+    "qubits": 62,
+    "tk2": 0,
+    "total_gates": 10486,
+    "zzphase": 0
+  },
+  "passes": [
+    "FullPeepholeOptimise(allow_swaps=False,target_2qb_gate=TK2)",
+    "NormaliseTK2",
+    "DecomposeTK2(allow_swaps=False,ZZPhase_fidelity=offline_proxy)"
+  ],
+  "peephole_tk2": {
+    "cx": 0,
+    "cz": 0,
+    "depth": 365,
+    "qubits": 62,
+    "tk2": 2593,
+    "total_gates": 7835,
+    "zzphase": 0
+  },
+  "provider_submission_performed": false,
+  "schema_version": "p6-optimized-compile-v1",
+  "source_qasm": "/Users/monitsharma/Code/p12-helios-recovery/.claude/worktrees/p6-peaked-circuit-classical-8be972/results/hardware/p6_helios_50shot_20260829/source.qasm",
+  "source_sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4"
+}

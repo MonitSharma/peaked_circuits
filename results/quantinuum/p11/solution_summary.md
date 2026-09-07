@@ -26,3 +26,17 @@ presented as a result of target-blind statistics alone.
 The raw provider payload, normalized shots, submitted input, source hash, QIR
 hash, job metadata, and analysis outputs are all retained under this folder.
 No quantum-advantage claim is made here.
+
+## Positive-control audit (2026-09-07)
+
+The saved canonical shot records were reanalysed locally, without provider
+access, additional HQC spend, or hidden-target lookup. Weighted observed
+medoid and cluster consensus both recovered the externally accepted string
+exactly. Bitwise majority was one bit away; the simple frequency mode was 37
+bits away. This confirms that the medoid/cluster recovery pipeline can recover
+the accepted P11 answer from the retained data, while also showing why the
+simple mode should not be treated as decisive.
+
+The machine-readable audit is retained at
+`results/quantinuum/positive_control_audit_20260907/audit.json` and the
+summary at `results/quantinuum/positive_control_audit_20260907/audit.md`.

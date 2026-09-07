@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "p6_batch_001",
+  "branch": "p12_quantum",
+  "problem": "P6",
+  "circuit": "P6_titan_pinnacle",
+  "backend": "Helios-1",
+  "source_qasm_path": "results/hardware/p6_helios_50shot_20260829/source.qasm",
+  "source_qasm_sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
+  "submitted_bitcode_path": "results/hardware/p6_helios_50shot_20260829/submitted.qir.bc",
+  "submitted_bitcode_sha256": "0109765b16777c76347857cf91860cd99f7ad6c42ae5a7a991399e484a16f155",
+  "qubits": 62,
+  "two_qubit_gates": 3494,
+  "stages": [
+    {
+      "name": "discovery",
+      "job_name": "p6_physical_discovery_100",
+      "shots": 100,
+      "estimated_hqc": 857.0,
+      "max_cost_hqc": 900.0,
+      "purpose": "target_blind_candidate_discovery"
+    },
+    {
+      "name": "confirmation",
+      "job_name": "p6_physical_confirmation_100",
+      "shots": 100,
+      "estimated_hqc": 857.0,
+      "max_cost_hqc": 900.0,
+      "purpose": "fixed_candidate_holdout_confirmation"
+    }
+  ],
+  "analysis": {
+    "candidate_methods": ["most_frequent", "weighted_observed_medoid", "cluster_consensus", "bitwise_majority_diagnostic"],
+    "confirmation_radius": 15,
+    "exact_and_radius_endpoints_co_primary": true,
+    "external_target_used_before_freeze": false,
+    "quantum_advantage_claim": false
+  },
+  "operator_gate": {
+    "discovery_must_complete_before_confirmation": true,
+    "confirmation_auto_submit": false,
+    "explicit_user_approval_required": true,
+    "approval_must_name_frozen_candidate": true
+  },
+  "status": "TWO_BATCHES_ANALYZED_NO_REPRODUCIBLE_CANDIDATE"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "SUBMITTED",
+  "submitted_at_utc": "2026-09-04T23:18:37.312819+00:00",
+  "target": "Helios-1E",
+  "shots": 1,
+  "max_cost_hqc": 100.0,
+  "job_name": "p6_helios1e_emulator_probe_1",
+  "job_id": "1967ffd2-3fe5-4a3e-b089-6e51b75cc5b7",
+  "project_id": "99b33076-5295-4f59-9b5c-f18c0dc112d2",
+  "qir_artifact_id": "e2a976c5-c53b-4700-9415-fe6742afaef3",
+  "bitcode_sha256": "0109765b16777c76347857cf91860cd99f7ad6c42ae5a7a991399e484a16f155",
+  "hardware_execution": false,
+  "purpose": "pipeline_probe_only"
+}

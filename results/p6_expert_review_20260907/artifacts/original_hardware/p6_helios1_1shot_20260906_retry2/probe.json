@@ -1,0 +1,16 @@
+{
+  "status": "REJECTED_PREQUEUE",
+  "submitted_at_utc": "2026-09-06T02:21:11.610613+00:00",
+  "target": "Helios-1",
+  "shots": 1,
+  "max_cost_hqc": 20.0,
+  "job_name": "p6_helios1_hardware_probe_1",
+  "job_id": "3ce5bec7-7002-4ada-9138-cafdb1f49be6",
+  "project_id": "39e5fd17-0931-4260-94d6-63707f8b5e0a",
+  "qir_artifact_id": "537d5fd2-0caf-43e7-825b-6d4d08b1e26f",
+  "bitcode_sha256": "0109765b16777c76347857cf91860cd99f7ad6c42ae5a7a991399e484a16f155",
+  "probe_only": true,
+  "planned_discovery_untouched": true,
+  "reported_cost_hqc": null,
+  "error_detail": "Submission error: Job max-cost exceeds available credits. (code: 1002); provider rejected before queueing."
+}

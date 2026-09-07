@@ -1,0 +1,32 @@
+{
+  "schema": "p6-native-zzphase-helios1sc-syntax-v1",
+  "checked_at_utc": "2026-09-07T07:08:21.235993+00:00",
+  "target": "Helios-1SC",
+  "target_classification": "syntax_checker",
+  "source_qasm_sha256": "a8e25d43905b6ceee9b18f5a567277b0cf7df20b82ed756275a0cb865e1e9792",
+  "qir_sha256": "0d68e1ad66e1619e30dfd2a8f7d9f22b7da1eec9dd4ae4815a09493425f56283",
+  "bitcode_sha256": "494b1003132a910ca0a4f39bbb41f258561d4f7091f8d495fcd8f94e4f09c851",
+  "gate_counts": {
+    "Rz": 29536,
+    "Rx": 16242,
+    "Ry": 0,
+    "ZZPhase": 2798,
+    "CZ": 0,
+    "X": 0
+  },
+  "qubits": 62,
+  "measurements": 62,
+  "project_ref": "1e7b23ef-e938-475e-a219-3c4acd6d34ef",
+  "qir_ref": "4966fd34-1b5a-4194-ac29-937173a731b8",
+  "job_ref": "06215946-2e5f-488b-8414-57b4fc4a7266",
+  "final_status": "COMPLETED",
+  "result_ref": "00000000-0000-0000-0000-000000000000",
+  "reported_cost_hqcs": null,
+  "execution_submitted": false,
+  "emulator_execution_submitted": false,
+  "hardware_execution_submitted": false,
+  "notes": [
+    "Native ZZPhase was preserved in the QIR; no CZ rebase was used.",
+    "Helios-1SC syntax validation is not shot execution and does not produce a shot-cost ladder."
+  ]
+}

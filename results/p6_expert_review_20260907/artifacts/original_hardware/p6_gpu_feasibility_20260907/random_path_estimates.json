@@ -1,0 +1,18 @@
+[
+  {
+    "optimizer": "random-greedy",
+    "seconds": 263.8806225419976,
+    "largest_log2": 110,
+    "largest_elements": "1298074214633706907132624082305024",
+    "opt_flops": "4302305497167318060418785797078119258842937424",
+    "path_length": 10609
+  },
+  {
+    "optimizer": "random-greedy-128",
+    "seconds": 1030.4194610420382,
+    "largest_log2": 108,
+    "largest_elements": "324518553658426726783156020576256",
+    "opt_flops": "22644207942392463831681679209960379801126448",
+    "path_length": 10609
+  }
+]

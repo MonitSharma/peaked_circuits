@@ -1,0 +1,562 @@
+{
+  "schema_version": "p6-candidate-reconciliation-v1",
+  "target_blind": true,
+  "external_overlap_scores_used_for_selection": false,
+  "framing": [
+    {
+      "path": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907/raw_result.json",
+      "raw_sha256": "15dfee36868d296a6791fc07a976c0012d228864868658766c74fb1221f9e7ad",
+      "frames_used": 100
+    },
+    {
+      "path": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907_batch2/raw_result.json",
+      "raw_sha256": "8dca0fe3a6e4cc6aeb376df4a2fa7e252ac85f2d8aabbc143f1609e8dd230b5a",
+      "frames_used": 100
+    },
+    {
+      "path": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907_batch3/raw_result.json",
+      "raw_sha256": "763d0d01aab1c0611d8138eaf540f26cf9ce8581f5bf4a34942e03581df91249",
+      "frames_used": 100
+    }
+  ],
+  "hardware_shot_count": 300,
+  "candidate_rows": [
+    {
+      "name": "pooled_bitwise_majority",
+      "bitstring": "11101100110110000001001011010101111101001110010101111111110101",
+      "prior_external_overlap_descriptive_only": null,
+      "nearest_hamming_all_300": 12,
+      "mean_hamming_all_300": 27.73,
+      "shots_at_or_below_10_all_300": 0,
+      "shots_at_or_below_15_all_300": 3,
+      "shots_at_or_below_20_all_300": 15,
+      "exact_observed_count_all_300": 0,
+      "per_batch": [
+        {
+          "nearest_hamming": 12,
+          "mean_hamming": 27.48,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 1,
+          "shots_at_or_below_20": 5,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 17,
+          "mean_hamming": 28.05,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 3,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 12,
+          "mean_hamming": 27.66,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 2,
+          "shots_at_or_below_20": 7,
+          "exact_count": 0
+        }
+      ]
+    },
+    {
+      "name": "pooled_medoid",
+      "bitstring": "11101100110110100000001011000100111100011010000101101110100001",
+      "prior_external_overlap_descriptive_only": null,
+      "nearest_hamming_all_300": 0,
+      "mean_hamming_all_300": 28.55,
+      "shots_at_or_below_10_all_300": 1,
+      "shots_at_or_below_15_all_300": 3,
+      "shots_at_or_below_20_all_300": 19,
+      "exact_observed_count_all_300": 1,
+      "per_batch": [
+        {
+          "nearest_hamming": 0,
+          "mean_hamming": 28.34,
+          "shots_at_or_below_10": 1,
+          "shots_at_or_below_15": 2,
+          "shots_at_or_below_20": 6,
+          "exact_count": 1
+        },
+        {
+          "nearest_hamming": 17,
+          "mean_hamming": 29.07,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 8,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 15,
+          "mean_hamming": 28.24,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 1,
+          "shots_at_or_below_20": 5,
+          "exact_count": 0
+        }
+      ]
+    },
+    {
+      "name": "hardware_batch2_mode",
+      "bitstring": "10100100010110100010001111100110001100001100100111100101111101",
+      "prior_external_overlap_descriptive_only": "38/62",
+      "nearest_hamming_all_300": 0,
+      "mean_hamming_all_300": 29.756666666666668,
+      "shots_at_or_below_10_all_300": 5,
+      "shots_at_or_below_15_all_300": 5,
+      "shots_at_or_below_20_all_300": 11,
+      "exact_observed_count_all_300": 5,
+      "per_batch": [
+        {
+          "nearest_hamming": 20,
+          "mean_hamming": 30.22,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 2,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 0,
+          "mean_hamming": 29.13,
+          "shots_at_or_below_10": 5,
+          "shots_at_or_below_15": 5,
+          "shots_at_or_below_20": 5,
+          "exact_count": 5
+        },
+        {
+          "nearest_hamming": 16,
+          "mean_hamming": 29.92,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 4,
+          "exact_count": 0
+        }
+      ]
+    },
+    {
+      "name": "hardware_batch1_mode",
+      "bitstring": "01001001111111011000101110111001110111101110010011000011111101",
+      "prior_external_overlap_descriptive_only": "33/62",
+      "nearest_hamming_all_300": 0,
+      "mean_hamming_all_300": 29.85,
+      "shots_at_or_below_10_all_300": 4,
+      "shots_at_or_below_15_all_300": 4,
+      "shots_at_or_below_20_all_300": 13,
+      "exact_observed_count_all_300": 4,
+      "per_batch": [
+        {
+          "nearest_hamming": 0,
+          "mean_hamming": 28.88,
+          "shots_at_or_below_10": 4,
+          "shots_at_or_below_15": 4,
+          "shots_at_or_below_20": 6,
+          "exact_count": 4
+        },
+        {
+          "nearest_hamming": 20,
+          "mean_hamming": 30.35,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 1,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 20,
+          "mean_hamming": 30.32,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 6,
+          "exact_count": 0
+        }
+      ]
+    },
+    {
+      "name": "hardware_batch3_mode",
+      "bitstring": "01111001011111011100111001100001001110001010000011010011110001",
+      "prior_external_overlap_descriptive_only": null,
+      "nearest_hamming_all_300": 0,
+      "mean_hamming_all_300": 30.463333333333335,
+      "shots_at_or_below_10_all_300": 5,
+      "shots_at_or_below_15_all_300": 5,
+      "shots_at_or_below_20_all_300": 11,
+      "exact_observed_count_all_300": 5,
+      "per_batch": [
+        {
+          "nearest_hamming": 19,
+          "mean_hamming": 30.56,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 5,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 18,
+          "mean_hamming": 31.51,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 1,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 0,
+          "mean_hamming": 29.32,
+          "shots_at_or_below_10": 5,
+          "shots_at_or_below_15": 5,
+          "shots_at_or_below_20": 5,
+          "exact_count": 5
+        }
+      ]
+    },
+    {
+      "name": "classical_mettleq",
+      "bitstring": "11011011110101011010100010111011001100010100000011100001110010",
+      "prior_external_overlap_descriptive_only": "34/62",
+      "nearest_hamming_all_300": 19,
+      "mean_hamming_all_300": 30.69,
+      "shots_at_or_below_10_all_300": 0,
+      "shots_at_or_below_15_all_300": 0,
+      "shots_at_or_below_20_all_300": 1,
+      "exact_observed_count_all_300": 0,
+      "per_batch": [
+        {
+          "nearest_hamming": 19,
+          "mean_hamming": 30.58,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 1,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 21,
+          "mean_hamming": 30.37,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 0,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 23,
+          "mean_hamming": 31.12,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 0,
+          "exact_count": 0
+        }
+      ]
+    },
+    {
+      "name": "classical_d128_extract",
+      "bitstring": "11100011000101111111011101011001110100110110000011010010010010",
+      "prior_external_overlap_descriptive_only": "30/62",
+      "nearest_hamming_all_300": 20,
+      "mean_hamming_all_300": 30.963333333333335,
+      "shots_at_or_below_10_all_300": 0,
+      "shots_at_or_below_15_all_300": 0,
+      "shots_at_or_below_20_all_300": 1,
+      "exact_observed_count_all_300": 0,
+      "per_batch": [
+        {
+          "nearest_hamming": 21,
+          "mean_hamming": 30.6,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 0,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 22,
+          "mean_hamming": 31.37,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 0,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 20,
+          "mean_hamming": 30.92,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 1,
+          "exact_count": 0
+        }
+      ]
+    },
+    {
+      "name": "classical_best_score_constrained",
+      "bitstring": "10101111111011011111110000011010110011000101000101101111111000",
+      "prior_external_overlap_descriptive_only": "40/62",
+      "nearest_hamming_all_300": 21,
+      "mean_hamming_all_300": 31.023333333333333,
+      "shots_at_or_below_10_all_300": 0,
+      "shots_at_or_below_15_all_300": 0,
+      "shots_at_or_below_20_all_300": 0,
+      "exact_observed_count_all_300": 0,
+      "per_batch": [
+        {
+          "nearest_hamming": 22,
+          "mean_hamming": 30.8,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 0,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 24,
+          "mean_hamming": 31.45,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 0,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 21,
+          "mean_hamming": 30.82,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 0,
+          "exact_count": 0
+        }
+      ]
+    },
+    {
+      "name": "classical_d512_predicted",
+      "bitstring": "11000011111011111011011100000110110000100101001001000110110110",
+      "prior_external_overlap_descriptive_only": "35/62",
+      "nearest_hamming_all_300": 20,
+      "mean_hamming_all_300": 31.383333333333333,
+      "shots_at_or_below_10_all_300": 0,
+      "shots_at_or_below_15_all_300": 0,
+      "shots_at_or_below_20_all_300": 1,
+      "exact_observed_count_all_300": 0,
+      "per_batch": [
+        {
+          "nearest_hamming": 23,
+          "mean_hamming": 31.5,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 0,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 22,
+          "mean_hamming": 31.25,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 0,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 20,
+          "mean_hamming": 31.4,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 1,
+          "exact_count": 0
+        }
+      ]
+    },
+    {
+      "name": "classical_d128_seed789",
+      "bitstring": "10001000011000101110100011011010110011010011111000100100011000",
+      "prior_external_overlap_descriptive_only": null,
+      "nearest_hamming_all_300": 19,
+      "mean_hamming_all_300": 31.776666666666667,
+      "shots_at_or_below_10_all_300": 0,
+      "shots_at_or_below_15_all_300": 0,
+      "shots_at_or_below_20_all_300": 1,
+      "exact_observed_count_all_300": 0,
+      "per_batch": [
+        {
+          "nearest_hamming": 19,
+          "mean_hamming": 31.6,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 1,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 24,
+          "mean_hamming": 31.33,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 0,
+          "exact_count": 0
+        },
+        {
+          "nearest_hamming": 23,
+          "mean_hamming": 32.4,
+          "shots_at_or_below_10": 0,
+          "shots_at_or_below_15": 0,
+          "shots_at_or_below_20": 0,
+          "exact_count": 0
+        }
+      ]
+    }
+  ],
+  "candidate_family": {
+    "full_coordinate_consensus": "11101011111111011010111100111011110100000100000011000011110000",
+    "candidate_family_medoid": "11011011110101011010100010111011001100010100000011100001110010",
+    "pairwise_hamming_matrix": {
+      "classical_mettleq": {
+        "classical_mettleq": 0,
+        "classical_d128_seed789": 33,
+        "classical_best_score_constrained": 28,
+        "classical_d128_extract": 26,
+        "classical_d512_predicted": 31,
+        "hardware_batch1_mode": 25,
+        "hardware_batch2_mode": 30,
+        "hardware_batch3_mode": 25,
+        "pooled_bitwise_majority": 34,
+        "pooled_medoid": 34
+      },
+      "classical_d128_seed789": {
+        "classical_mettleq": 33,
+        "classical_d128_seed789": 0,
+        "classical_best_score_constrained": 25,
+        "classical_d128_extract": 35,
+        "classical_d512_predicted": 34,
+        "hardware_batch1_mode": 34,
+        "hardware_batch2_mode": 35,
+        "hardware_batch3_mode": 40,
+        "pooled_bitwise_majority": 37,
+        "pooled_medoid": 33
+      },
+      "classical_best_score_constrained": {
+        "classical_mettleq": 28,
+        "classical_d128_seed789": 25,
+        "classical_best_score_constrained": 0,
+        "classical_d128_extract": 32,
+        "classical_d512_predicted": 23,
+        "hardware_batch1_mode": 29,
+        "hardware_batch2_mode": 36,
+        "hardware_batch3_mode": 33,
+        "pooled_bitwise_majority": 30,
+        "pooled_medoid": 34
+      },
+      "classical_d128_extract": {
+        "classical_mettleq": 26,
+        "classical_d128_seed789": 35,
+        "classical_best_score_constrained": 32,
+        "classical_d128_extract": 0,
+        "classical_d512_predicted": 23,
+        "hardware_batch1_mode": 29,
+        "hardware_batch2_mode": 38,
+        "hardware_batch3_mode": 27,
+        "pooled_bitwise_majority": 34,
+        "pooled_medoid": 34
+      },
+      "classical_d512_predicted": {
+        "classical_mettleq": 31,
+        "classical_d128_seed789": 34,
+        "classical_best_score_constrained": 23,
+        "classical_d128_extract": 23,
+        "classical_d512_predicted": 0,
+        "hardware_batch1_mode": 30,
+        "hardware_batch2_mode": 33,
+        "hardware_batch3_mode": 36,
+        "pooled_bitwise_majority": 35,
+        "pooled_medoid": 33
+      },
+      "hardware_batch1_mode": {
+        "classical_mettleq": 25,
+        "classical_d128_seed789": 34,
+        "classical_best_score_constrained": 29,
+        "classical_d128_extract": 29,
+        "classical_d512_predicted": 30,
+        "hardware_batch1_mode": 0,
+        "hardware_batch2_mode": 33,
+        "hardware_batch3_mode": 20,
+        "pooled_bitwise_majority": 25,
+        "pooled_medoid": 33
+      },
+      "hardware_batch2_mode": {
+        "classical_mettleq": 30,
+        "classical_d128_seed789": 35,
+        "classical_best_score_constrained": 36,
+        "classical_d128_extract": 38,
+        "classical_d512_predicted": 33,
+        "hardware_batch1_mode": 33,
+        "hardware_batch2_mode": 0,
+        "hardware_batch3_mode": 31,
+        "pooled_bitwise_majority": 22,
+        "pooled_medoid": 20
+      },
+      "hardware_batch3_mode": {
+        "classical_mettleq": 25,
+        "classical_d128_seed789": 40,
+        "classical_best_score_constrained": 33,
+        "classical_d128_extract": 27,
+        "classical_d512_predicted": 36,
+        "hardware_batch1_mode": 20,
+        "hardware_batch2_mode": 31,
+        "hardware_batch3_mode": 0,
+        "pooled_bitwise_majority": 29,
+        "pooled_medoid": 29
+      },
+      "pooled_bitwise_majority": {
+        "classical_mettleq": 34,
+        "classical_d128_seed789": 37,
+        "classical_best_score_constrained": 30,
+        "classical_d128_extract": 34,
+        "classical_d512_predicted": 35,
+        "hardware_batch1_mode": 25,
+        "hardware_batch2_mode": 22,
+        "hardware_batch3_mode": 29,
+        "pooled_bitwise_majority": 0,
+        "pooled_medoid": 12
+      },
+      "pooled_medoid": {
+        "classical_mettleq": 34,
+        "classical_d128_seed789": 33,
+        "classical_best_score_constrained": 34,
+        "classical_d128_extract": 34,
+        "classical_d512_predicted": 33,
+        "hardware_batch1_mode": 33,
+        "hardware_batch2_mode": 20,
+        "hardware_batch3_mode": 29,
+        "pooled_bitwise_majority": 12,
+        "pooled_medoid": 0
+      }
+    },
+    "leave_one_out": [
+      {
+        "omitted_source": "classical_mettleq",
+        "consensus": "11100001011111011010011100000000110100000100000011000011110000",
+        "distance_to_full_consensus": 9
+      },
+      {
+        "omitted_source": "classical_d128_seed789",
+        "consensus": "11000001010111011010001100100001000100000100000011000011110000",
+        "distance_to_full_consensus": 12
+      },
+      {
+        "omitted_source": "classical_best_score_constrained",
+        "consensus": "11001001111111011010101000100010000100000100000011000011110000",
+        "distance_to_full_consensus": 9
+      },
+      {
+        "omitted_source": "classical_d128_extract",
+        "consensus": "11101001010111011010101000111001000100000100000011000011110000",
+        "distance_to_full_consensus": 8
+      },
+      {
+        "omitted_source": "classical_d512_predicted",
+        "consensus": "11100011010111011010011000000010000100000100000011000011110000",
+        "distance_to_full_consensus": 11
+      },
+      {
+        "omitted_source": "hardware_batch1_mode",
+        "consensus": "11001011111111011010111000011001110100000100000011000011110000",
+        "distance_to_full_consensus": 4
+      },
+      {
+        "omitted_source": "hardware_batch2_mode",
+        "consensus": "11000011110111011010001100011010110100000100000011000011110000",
+        "distance_to_full_consensus": 7
+      }
+    ]
+  },
+  "interpretation": {
+    "decision": "NO_NEW_VERIFIED_CANDIDATE",
+    "reason": "No prior candidate has a reproducible tight hardware cluster across all three batches; external overlaps are post-hoc diagnostics and cannot validate a new string."
+  }
+}

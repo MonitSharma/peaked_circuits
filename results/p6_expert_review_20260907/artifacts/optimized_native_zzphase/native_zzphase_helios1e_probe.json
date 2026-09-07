@@ -1,0 +1,15 @@
+{
+  "status": "SUBMITTED",
+  "submitted_at_utc": "2026-09-07T09:01:38.813437+00:00",
+  "target": "Helios-1E",
+  "shots": 1,
+  "max_cost_hqc": 100.0,
+  "job_name": "p6_native_zzphase_helios1e_probe_20260907",
+  "job_id": "799101ba-5807-493e-86d0-eceb60107cc9",
+  "project_id": "d314b58b-4592-4d95-8195-b1c0565a9f54",
+  "qir_artifact_id": "6160dc24-e91d-463d-a883-fb392eb99b24",
+  "bitcode_path": "/Users/monitsharma/Code/p12-helios-recovery/.claude/worktrees/p6-peaked-circuit-classical-8be972/results/hardware/p6_optimized_compile_20260907/p6_native_zzphase.qir.bc",
+  "bitcode_sha256": "494b1003132a910ca0a4f39bbb41f258561d4f7091f8d495fcd8f94e4f09c851",
+  "native_zzphase_preserved": true,
+  "physical_hardware_submitted": false
+}
