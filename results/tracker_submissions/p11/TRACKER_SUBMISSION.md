@@ -20,10 +20,13 @@
 10101110111010011111100010110011101011101011111001010101101100001110101110010000010100001001100000
 ```
 
-The provider returned 51 complete records for 50 requested shots. The package
-preserves that fact and the provider framing details. The saved canonical-shot
-audit recovered the accepted string with the weighted observed-medoid and
-cluster-consensus procedures; the target was not used by those procedures.
+The provider result reconstructed to 51 complete records for 50 requested
+shots. One record was an exact duplicate: reconstructed index 46 equals index
+0 in all 98 bits. The package preserves the raw 51-record reconstruction and
+uses the corrected 50-record dataset for active analysis. The saved
+canonical-shot audit recovered the accepted string with the weighted
+observed-medoid and cluster-consensus procedures; the target was not used by
+those procedures.
 
 ## Evidence and reproduction
 
@@ -43,9 +46,8 @@ Apple Silicon Mac. It does not include Python interpreter startup, plotting, or
 provider time.
 
 The figure shows the top-20 observed-string frequencies and Hamming distances
-from each shot to the recovered candidate. It is descriptive: this 51-shot P11
-run does not show a large exact-string frequency peak, and the recovered
-candidate is a medoid rather than a high-frequency observed mode.
+from each corrected shot to the recovered candidate. It is descriptive: the
+recovered candidate is a medoid rather than a high-frequency observed mode.
 
 The recovery statistics are recurrence/reconstruction evidence only. No
 quantum-advantage claim is made in this package.

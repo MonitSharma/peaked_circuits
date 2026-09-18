@@ -2,12 +2,12 @@
 
 ## Hardware and classical procedure
 
-The 50-shot Helios-1 result was preserved verbatim, normalized into complete
-98-bit records, and analyzed independently of any hidden target. The retained
-analysis computed the mode, radius-31 cluster, cluster-restricted majority,
-Hamming diagnostics, bootstrap output, and recovery metadata. The observed
-mode/cluster was weak, so this batch is evidence of an exploratory hardware
-sample rather than a target-blind proof of the answer.
+The 50-shot Helios-1 result was preserved verbatim, reconstructed into 51
+complete 98-bit records by the provider framing parser, and audited for
+duplicates. Reconstructed record 46 exactly duplicated record 0, so it was
+removed from the active 50-shot analysis while the raw 51-record reconstruction
+was retained. The corrected analysis computed the mode, Hamming diagnostics,
+and deterministic recovery methods independently of any hidden target.
 
 ## Reported answer
 

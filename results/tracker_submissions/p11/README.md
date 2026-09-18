@@ -7,7 +7,8 @@
 - Job: `c902a6a1-0e91-48cf-b5ba-44831fcc7726`
 - Job name: `p11-physical-50-20260828`
 - Requested shots: 50
-- Returned complete records: 51
+- Raw reconstructed records: 51
+- Corrected independent records analyzed: 50
 - Reported cost: 282.98 HQC
 - Status: `COMPLETED`
 
@@ -25,11 +26,16 @@ recovery methods. See [`classical/runtime_audit.json`](classical/runtime_audit.j
 
 ## How the result was handled
 
-The provider fused the final five shot frames. The raw payload was normalized
-into 51 complete 98-bit records without candidate-dependent filtering. The
-analysis used the observed mode and a radius-31 cluster/cluster-restricted
-majority as exploratory diagnostics. Pair counts are descriptive only; no
-invalid independent-Poisson p-values are used.
+The provider fused shot frames near the end of the result. The raw payload was
+reconstructed into 51 complete 98-bit records, but reconstructed record 46 is
+an exact duplicate of record 0. It is therefore retained as a raw diagnostic
+and removed from the active 50-shot analysis. See
+[`classical/raw/duplicate_frame_repair.json`](classical/raw/duplicate_frame_repair.json)
+and [`classical/raw_reconstructed_51/`](classical/raw_reconstructed_51/).
+
+The corrected analysis uses the observed mode, weighted observed medoid, and
+cluster-consensus diagnostics. Pair counts are descriptive only; no invalid
+independent-Poisson p-values are used.
 
 The target-blind retained analysis found only a weak exploratory structure
 (mode multiplicity 2; radius-31 cluster size 2). A later externally reported
@@ -40,8 +46,9 @@ not be confused with the target-blind analysis candidate.
 
 - [`quantum/`](quantum/) — source QASM, submitted bitcode, provider job/result
   metadata, raw provider outputs, and checksums.
-- [`classical/`](classical/) — normalization, recovery, bootstrap, canonical
-  shots, and analysis outputs.
+- [`classical/`](classical/) — corrected 50-shot normalization, recovery,
+  canonical shots, and analysis outputs; the raw 51-record diagnostic is under
+  `classical/raw_reconstructed_51/`.
 - [`protocol/`](protocol/) — run and routing documentation.
 - [`timing.md`](timing.md) and [`solution_summary.md`](solution_summary.md) —
   report-ready summaries.

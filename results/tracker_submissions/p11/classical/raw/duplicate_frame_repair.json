@@ -1,0 +1,15 @@
+{
+  "schema_version": "p11-duplicate-frame-repair-v1",
+  "provider_requested_shots": 50,
+  "raw_reconstructed_records": 51,
+  "corrected_independent_records": 50,
+  "removed_reconstructed_index": 46,
+  "duplicate_of_reconstructed_index": 0,
+  "duplicate_bitstring": "01111110011011000111010110011001001001111011110000001001101101011011101111000010110011000001011001",
+  "duplicate_count_before_repair": 2,
+  "duplicate_count_after_repair": 1,
+  "basis": "Exact equality of all 98 canonical bits; the raw provider text contains fused shot framing near the final records.",
+  "target_used": false,
+  "raw_source": "results/tracker_submissions/p11/classical/raw_reconstructed_51/c902a6a1-0e91-48cf-b5ba-44831fcc7726.shots.jsonl",
+  "corrected_output": "results/tracker_submissions/p11/classical/raw/c902a6a1-0e91-48cf-b5ba-44831fcc7726.shots.jsonl"
+}

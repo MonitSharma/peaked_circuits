@@ -1,29 +1,23 @@
 {
-  "cluster_candidate": "01111110011011000111010110011001001001111011110000001001101101011011101111000010110011000001011001",
-  "cluster_candidate_hamming_to_mode": 0,
-  "cluster_radius": 31,
-  "cluster_size": 2,
-  "device": "Helios-1",
-  "external_target_scored": false,
+  "schema_version": "p11-corrected-analysis-v1",
   "job_id": "c902a6a1-0e91-48cf-b5ba-44831fcc7726",
-  "max_pairwise_hamming": 65,
-  "mean_pairwise_hamming": 41.97176470588235,
-  "min_pairwise_hamming": 0,
-  "mode_indices": [
-    0,
-    46
-  ],
-  "mode_multiplicity": 2,
-  "mode_string": "01111110011011000111010110011001001001111011110000001001101101011011101111000010110011000001011001",
-  "note": "P11 has no preregistered fixed candidate. Exploratory only; pair counts have no Poisson p-values.",
-  "pair_counts_descriptive_only": {
-    "0": 1,
-    "1": 2,
-    "20": 52,
-    "30": 136
-  },
-  "quantum_advantage_claim": false,
+  "device": "Helios-1",
   "requested_shots": 50,
-  "returned_shots": 51,
-  "schema_version": "1.0"
+  "raw_reconstructed_shots": 51,
+  "corrected_analysis_shots": 50,
+  "duplicate_frame_repair": "classical/raw/duplicate_frame_repair.json",
+  "mode_string": "00000100011010100001100110101011110000101011101010110101110111001001101001011011010001111101110010",
+  "mode_multiplicity": 1,
+  "mode_indices": [23],
+  "cluster_radius": 31,
+  "cluster_size": 1,
+  "cluster_candidate": "00000100011010100001100110101011110000101011101010110101110111001001101001011011010001111101110010",
+  "cluster_candidate_hamming_to_mode": 0,
+  "mean_pairwise_hamming": 41.91102040816327,
+  "pair_counts_descriptive_only": {"0": 0, "1": 1, "20": 51, "30": 135, "31": 138},
+  "external_target_scored": false,
+  "quantum_advantage_claim": false,
+  "note": "The raw provider reconstruction contained 51 records for 50 requested shots. Reconstructed index 46 was an exact duplicate of index 0 and was removed before all active analysis. The 51-record artifacts remain under classical/raw_reconstructed_51/.",
+  "weighted_observed_medoid": "10101110111010011111100010110011101011101011111001010101101100001110101110010000010100001001100000",
+  "cluster_consensus": "10101110111010011111100010110011101011101011111001010101101100001110101110010000010100001001100000"
 }
