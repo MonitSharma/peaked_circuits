@@ -19,7 +19,7 @@ item implies 237.588 s of runtime. These are distinct provider timing fields;
 see [`timing.md`](timing.md).
 
 The original run did not retain classical start/end timestamps. We therefore
-reran the deterministic packaged reanalysis and measured it locally: **0.016120542
+reran the deterministic packaged reanalysis and measured it locally: **0.010313208
 seconds wall time** for loading, validating, counting, and computing the four
 recovery methods. See [`classical/runtime_audit.json`](classical/runtime_audit.json).
 

@@ -11,7 +11,7 @@
     "python": "3.12.9"
   },
   "externally_supplied_accepted_answer": "10100011110010100111000100011100110001011111011100111001010110101011001001000000101000100000111100",
-  "generated_at_utc": "2026-09-18T03:39:13.985759+00:00",
+  "generated_at_utc": "2026-09-18T04:38:41.326257+00:00",
   "input": {
     "bit_length": 98,
     "path": "results/tracker_submissions/p12/classical/raw/reconstructed_200_shots.jsonl",
@@ -125,10 +125,10 @@
   "provider_job_id": "d5cba0df-a7aa-459e-ac51-8092645c059f",
   "quantum_advantage_claim": false,
   "runtime": {
-    "cpu_seconds": 0.01417999999999997,
+    "cpu_seconds": 0.010313000000000017,
     "measurement_clock": "time.perf_counter and time.process_time",
     "measurement_scope": "input loading, validation, counts, and four recovery methods",
-    "wall_seconds": 0.016120541957207024
+    "wall_seconds": 0.010313207982107997
   },
   "schema_version": "tracker-classical-runtime-v1"
 }

@@ -9,7 +9,7 @@
 - Quantum runtime: `237.588 seconds` of nested provider execution time
 - End-to-end submission-to-completion time: `4580.972377 seconds` (reported separately)
 - Outer running-to-completion time: `4160.855590 seconds` (reported separately)
-- Classical runtime: `0.016120542 seconds` measured wall time for the packaged reanalysis
+- Classical runtime: `0.010313208 seconds` measured wall time for the packaged reanalysis
 - Quantum compute resource: `Quantinuum Helios-1`
 - Classical compute resource: `Apple Silicon Mac, local deterministic post-processing`
 - Authors: `Monit Sharma`

@@ -19,7 +19,7 @@ approximately 10,732 s and 230 s. See [`timing.md`](timing.md) for the
 reporting-safe wording and timestamps available in the artifacts.
 
 The original run did not retain classical start/end timestamps. We therefore
-reran the deterministic packaged reanalysis and measured it locally: **0.007269500
+reran the deterministic packaged reanalysis and measured it locally: **0.005715375
 seconds wall time** for loading, validating, counting, and computing the four
 recovery methods. See [`classical/runtime_audit.json`](classical/runtime_audit.json).
 

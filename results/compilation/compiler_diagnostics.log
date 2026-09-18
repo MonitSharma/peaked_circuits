@@ -1,6 +1,0 @@
-{
-  "exception_type": "RuntimeError",
-  "sanitized_message": "RuntimeError: No exact discovered target configured",
-  "stage": "target_configuration",
-  "suggested_next_step": "Run devices, choose an exact compatible target, and retry compile-only validation."
-}

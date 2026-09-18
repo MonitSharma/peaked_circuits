@@ -54,7 +54,7 @@ Independent researcher
 
 ### Classical runtime (seconds)
 
-0.007269500
+0.005715375
 
 ### Compute resources (quantum)
 
@@ -113,7 +113,7 @@ Independent researcher
 
 ### Classical runtime (seconds)
 
-0.016120542
+0.010313208
 
 ### Compute resources (quantum)
 

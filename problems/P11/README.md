@@ -38,7 +38,8 @@ quantum-advantage claim.
 ## Classical branch history
 
 The earlier classical-method work is preserved in
-[`classical_history/`](classical_history/). It is kept separate from the
+[`archive/other_peaked_circuits/p11_classical/`](../../archive/other_peaked_circuits/p11_classical/).
+It is kept separate from the
 hardware result so historical nonconvergence is not confused with the later
 accepted hardware recovery.
 

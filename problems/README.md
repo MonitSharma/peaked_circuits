@@ -10,7 +10,7 @@ audited without duplicating large files.
 Status: **hardware recovery externally accepted**.
 
 - [Problem summary](P11/README.md)
-- [Classical-method history](P11/classical_history/README.md)
+- [Classical-method history](../archive/other_peaked_circuits/p11_classical/README.md)
 - [Full tracker evidence package](../results/tracker_submissions/p11/)
 
 ## P12 — peaked_circuit_P12_Hqap_98x2457
@@ -22,4 +22,3 @@ Status: **hardware recovery externally accepted**.
 
 Both statuses describe recovery of the accepted bitstring. They are not, by
 themselves, quantum-advantage claims.
-

@@ -3,9 +3,9 @@ requires = ["hatchling>=1.25"]
 build-backend = "hatchling.build"
 
 [project]
-name = "p12-helios-recovery"
+name = "peaked-circuit"
 version = "0.1.0"
-description = "Reproducible, hardware-safe recovery pipeline for the QAT P12 peaked circuit"
+description = "Reproducible, auditable recovery records for the P11 and P12 peaked circuits"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "Apache-2.0" }
@@ -32,6 +32,7 @@ qiskit = ["qiskit>=1.2", "pytket-qiskit>=0.60"]
 dev = ["pytest>=8.2", "pytest-cov>=5", "ruff>=0.6", "mypy>=1.11", "types-PyYAML>=6.0"]
 
 [project.scripts]
+peaked-circuit = "p12_recovery.cli:app"
 p12-recovery = "p12_recovery.cli:app"
 
 [tool.hatch.build.targets.wheel]

@@ -8,7 +8,7 @@
 - Method: `Quantinuum Helios-1 hardware, 50 requested shots`
 - Quantum runtime: `229.924343 seconds` of provider execution time
 - Quantum queue/submission time: `10732.063968 seconds` (reported separately)
-- Classical runtime: `0.007269500 seconds` measured wall time for the packaged reanalysis
+- Classical runtime: `0.005715375 seconds` measured wall time for the packaged reanalysis
 - Quantum compute resource: `Quantinuum Helios-1`
 - Classical compute resource: `Apple Silicon Mac, local deterministic post-processing`
 - Authors: `Monit Sharma`

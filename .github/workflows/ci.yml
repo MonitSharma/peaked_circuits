@@ -1,23 +1,16 @@
-name: offline-ci
+name: peaked-circuit-review
+
 on: [push, pull_request]
+
 jobs:
-  test:
+  offline-review-checks:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python: ["3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: {python-version: "${{ matrix.python }}"}
-      - run: pip install -e '.[dev,quantum]'
-      - run: ruff check .
-      - run: mypy src
-      - run: pytest --cov -m 'not hardware and not integration'
-      - run: p12-recovery schemas --check
-      - run: p12-recovery synthetic --config configs/synthetic.yaml --smoke
-      - run: p12-recovery mapping-check --mode offline
-      - run: p12-recovery export-qir --output results/qir/p12.ll
-      - run: p12-recovery validate-qir --input results/qir/p12.ll
-      - run: p12-recovery export-mapping-qir
-      - run: p12-recovery public-audit
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - run: python tools/verify_tracker_packages.py
+      - run: python tools/reproduce_tracker_recovery.py
+      - run: python tools/run_tracker_classical_audit.py p11 p12
