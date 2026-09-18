@@ -1,4 +1,9 @@
-# P12 hardware-recovery record
+# P12 — hardware recovery record
+
+## Status
+
+`SOLVED_HARDWARE`: the recovered 98-bit answer was externally accepted. This
+is a recovery result, not a standalone quantum-advantage claim.
 
 ## Circuit
 
@@ -33,6 +38,7 @@ quantum-advantage claim.
 
 ## Evidence and reproduction
 
-Start at [`results/quantinuum/p12/README.md`](../../results/quantinuum/p12/README.md).
+Start at the [P12 tracker package](../../results/tracker_submissions/p12/) and
+its [package README](../../results/tracker_submissions/p12/TRACKER_SUBMISSION.md).
 The complete raw provider framing, repaired artifact, reconstruction manifest,
 canonical shots, counts, and analyses are available offline.

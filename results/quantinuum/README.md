@@ -1,4 +1,4 @@
-# Quantinuum hardware evidence
+# Quantinuum hardware evidence (historical layout)
 
 This directory is a self-contained evidence package for the two problems that
 were run on Quantinuum Helios-1 hardware in the `p12_quantum` branch.
@@ -21,8 +21,10 @@ per-problem summaries rather than reconstructed or estimated after the fact.
 - [`p12/`](p12/) — P12 source, Helios-1 submission/result artifacts, repaired
   framing record, reconstructed 200-shot dataset, validation, and protocol.
 
-The original artifacts remain in their historical locations elsewhere in the
-repository. The files here are organized copies for review and reporting.
+The current public-facing layout is [`results/tracker_submissions/`](../tracker_submissions/),
+which adds measured classical runtimes, plots, issue templates, and package-wide
+SHA256 manifests. This directory is retained as the historical evidence layout
+so existing links and provenance remain stable.
 
 ## Interpretation boundary
 

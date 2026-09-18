@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch_001",
+  "target": "Helios-1",
+  "requested_shots": 400,
+  "predicted_hqc": 2742.0,
+  "recommended_max_cost": 2842.0,
+  "monthly_budget_hqc": 3000.0,
+  "checks": {
+    "exact_target": true,
+    "hardware_target": true,
+    "98_qubit_capacity": true,
+    "source_hash": true,
+    "qir_hash": true,
+    "bitcode_hash": true,
+    "syntax_check": true,
+    "provider_mapping": true,
+    "fresh_cost": true,
+    "shots_within_cost": true,
+    "shots_positive": true,
+    "max_cost_positive": true,
+    "max_cost_within_budget": true,
+    "max_cost_covers_prediction": true,
+    "protocol_frozen": true,
+    "campaign_valid": true,
+    "no_active_job": true
+  },
+  "blockers": [],
+  "authorization_checks": {
+    "environment_authorized": false,
+    "cli_authorized": false,
+    "typed_confirmation": false
+  },
+  "hardware_submission_authorized_by_user": false,
+  "created_at": "2026-08-21T02:31:38.366601Z"
+}

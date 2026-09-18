@@ -1,0 +1,16 @@
+{
+  "createdAt": "2026-09-08",
+  "url": null,
+  "name": "Quantinuum Helios recovery for peaked_circuit_P12_Hqap_98x2457",
+  "circuit": "peaked_circuit_P12_Hqap_98x2457",
+  "value": "100%",
+  "method": "Quantinuum Helios-1 hardware, 200 reconstructed shots",
+  "methodProof": "https://github.com/monitsharma/p12-helios-recovery/tree/p12_quantum/results/tracker_submissions/p12",
+  "authors": ["Monit Sharma"],
+  "institutions": ["Independent researcher"],
+  "runtimeQuantum": 237.588,
+  "runtimeClassical": 0.016120542,
+  "computeResourcesQuantum": "Quantinuum Helios-1",
+  "computeResourcesClassical": "Apple Silicon Mac, local deterministic post-processing",
+  "notes": "Accepted P12 recovery; no quantum-advantage claim."
+}

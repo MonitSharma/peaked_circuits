@@ -50,3 +50,14 @@ In-depth tensor network routing diagnostics for the P11 peaked circuit:
 ## 4. Local Execution & Sweeps
 
 - Heavy, uncommitted parameter sweep run directories and raw checkpoint files are organized in [`../experiments/runs/`](../experiments/runs/) to keep this repository clean and lightweight.
+
+## 5. P11/P12 public evidence packages
+
+The canonical human-facing problem index is [`../problems/`](../problems/).
+The self-contained packages for the externally accepted P11 and P12 hardware
+recoveries are in [`tracker_submissions/`](./tracker_submissions/). They contain
+the source QASM, raw provider artifacts, normalized shots, plots, measured
+classical runtimes, reproducibility scripts, and tracker issue drafts.
+
+The older [`quantinuum/`](./quantinuum/) layout is retained for historical link
+compatibility and is not the preferred entry point for a new reader.

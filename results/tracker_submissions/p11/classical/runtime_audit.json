@@ -1,0 +1,182 @@
+{
+  "candidates": {
+    "bitwise_majority": "10101110111010011111100010110011101011101011111001010101101100001110101111010000010100001001100000",
+    "cluster_consensus": "10101110111010011111100010110011101011101011111001010101101100001110101110010000010100001001100000",
+    "most_frequent": "01111110011011000111010110011001001001111011110000001001101101011011101111000010110011000001011001",
+    "weighted_observed_medoid": "10101110111010011111100010110011101011101011111001010101101100001110101110010000010100001001100000"
+  },
+  "environment": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.12.9"
+  },
+  "externally_supplied_accepted_answer": "10101110111010011111100010110011101011101011111001010101101100001110101110010000010100001001100000",
+  "generated_at_utc": "2026-09-18T03:39:13.943585+00:00",
+  "input": {
+    "bit_length": 98,
+    "path": "results/tracker_submissions/p11/classical/raw/c902a6a1-0e91-48cf-b5ba-44831fcc7726.shots.jsonl",
+    "shots": 51,
+    "unique_strings": 50
+  },
+  "matches_accepted_answer": {
+    "bitwise_majority": false,
+    "cluster_consensus": true,
+    "most_frequent": false,
+    "weighted_observed_medoid": true
+  },
+  "method": {
+    "hidden_target_lookup": false,
+    "implementation": "src/p12_recovery/recovery.py",
+    "name": "Deterministic frequency, majority, weighted observed medoid, and cluster consensus reanalysis",
+    "provider_contacted": false
+  },
+  "method_agreement": {
+    "consensus": "10101110111010011111100010110011101011101011111001010101101100001110101110010000010100001001100000",
+    "disagreement_positions": [
+      0,
+      1,
+      3,
+      8,
+      13,
+      15,
+      16,
+      20,
+      21,
+      23,
+      26,
+      28,
+      30,
+      32,
+      36,
+      39,
+      46,
+      49,
+      51,
+      52,
+      53,
+      61,
+      63,
+      65,
+      67,
+      73,
+      75,
+      78,
+      80,
+      83,
+      84,
+      85,
+      88,
+      92,
+      93,
+      94,
+      97
+    ],
+    "low_confidence_positions": [
+      0,
+      1,
+      3,
+      8,
+      13,
+      15,
+      16,
+      20,
+      21,
+      23,
+      26,
+      28,
+      30,
+      32,
+      36,
+      39,
+      46,
+      49,
+      51,
+      52,
+      53,
+      61,
+      63,
+      65,
+      67,
+      73,
+      75,
+      78,
+      80,
+      83,
+      84,
+      85,
+      88,
+      92,
+      93,
+      94,
+      97
+    ],
+    "methods": [
+      "most_frequent",
+      "bitwise_majority",
+      "weighted_observed_medoid",
+      "cluster_consensus"
+    ],
+    "pairwise_hamming_distance": [
+      [
+        0,
+        36,
+        37,
+        37
+      ],
+      [
+        36,
+        0,
+        1,
+        1
+      ],
+      [
+        37,
+        1,
+        0,
+        0
+      ],
+      [
+        37,
+        1,
+        0,
+        0
+      ]
+    ],
+    "pairwise_percentage_agreement": [
+      [
+        100.0,
+        63.265306122448976,
+        62.244897959183675,
+        62.244897959183675
+      ],
+      [
+        63.265306122448976,
+        100.0,
+        98.9795918367347,
+        98.9795918367347
+      ],
+      [
+        62.244897959183675,
+        98.9795918367347,
+        100.0,
+        100.0
+      ],
+      [
+        62.244897959183675,
+        98.9795918367347,
+        100.0,
+        100.0
+      ]
+    ]
+  },
+  "problem": "p11",
+  "provider_job_id": "c902a6a1-0e91-48cf-b5ba-44831fcc7726",
+  "quantum_advantage_claim": false,
+  "runtime": {
+    "cpu_seconds": 0.005106999999999973,
+    "measurement_clock": "time.perf_counter and time.process_time",
+    "measurement_scope": "input loading, validation, counts, and four recovery methods",
+    "wall_seconds": 0.007269499939866364
+  },
+  "schema_version": "tracker-classical-runtime-v1"
+}

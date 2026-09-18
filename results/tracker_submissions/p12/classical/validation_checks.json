@@ -1,0 +1,70 @@
+{
+  "candidate": "10110001110010110111000100111100110011010110111100111101010111101111001100000000101000100000111100",
+  "external_target_scored": false,
+  "framing_sensitivity": {
+    "excluded_cycles": [
+      37,
+      82,
+      120,
+      165,
+      201
+    ],
+    "hamming_difference": 2,
+    "potentially_sensitive_positions": [
+      1,
+      5,
+      25,
+      26,
+      38,
+      40,
+      43,
+      53,
+      54,
+      71,
+      74,
+      77,
+      89
+    ],
+    "raw_205_candidate": "10110001110010110111000100111100110011010110111100111011010111101111001100000000101000100000111100",
+    "reconstructed_200_candidate": "10110001110010110111000100111100110011010110111100111101010111101111001100000000101000100000111100"
+  },
+  "independent_rerun": {
+    "recomputed_candidate": "10110001110010110111000100111100110011010110111100111101010111101111001100000000101000100000111100",
+    "recomputed_counts_sha256": "29d3dc036af2bd72bee364d82f16d74a0d2ab297168f9ede6b1d2bc759315c7d",
+    "recomputed_shots": 200,
+    "stored_counts_equal": true
+  },
+  "random_baseline": {
+    "candidate_match_count": 0,
+    "margin_threshold_95_percent": 27.718585822512665,
+    "max_random_bits_over_threshold": 15,
+    "mean_random_bits_over_threshold": 5.465,
+    "observed_bits_over_threshold": 28,
+    "replicates": 200
+  },
+  "random_subsampling": {
+    "100": {
+      "match_probability": 0.0,
+      "replicates": 200
+    },
+    "150": {
+      "match_probability": 0.0,
+      "replicates": 200
+    },
+    "200": {
+      "match_probability": 1.0,
+      "replicates": 200
+    },
+    "50": {
+      "match_probability": 0.0,
+      "replicates": 200
+    }
+  },
+  "split_half": {
+    "first_100": "10100001110110100111000100111100010001110110101100111001010111101111001101001010101000100000110100",
+    "hamming_between_halves": 31,
+    "hamming_first_to_full": 12,
+    "hamming_second_to_full": 19,
+    "second_100": "10110111111010010110000111011110100011011110111100111110010111101011001000100000101000101000111010"
+  }
+}

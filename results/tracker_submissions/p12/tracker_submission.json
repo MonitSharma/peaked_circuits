@@ -1,0 +1,29 @@
+{
+  "schema": "quantum-advantage-tracker.classically-verifiable-submission.v1",
+  "name": "Quantinuum Helios recovery for peaked_circuit_P12_Hqap_98x2457",
+  "circuit": "peaked_circuit_P12_Hqap_98x2457",
+  "value": "100%",
+  "method": "Quantinuum Helios-1 hardware, 200 reconstructed shots",
+  "methodProof": "https://github.com/monitsharma/p12-helios-recovery/tree/p12_quantum/results/tracker_submissions/p12",
+  "authors": ["Monit Sharma"],
+  "institutions": ["Independent researcher"],
+  "runtimeQuantum": 237.588,
+  "runtimeClassical": 0.016120542,
+  "computeResourcesQuantum": "Quantinuum Helios-1",
+  "computeResourcesClassical": "Apple Silicon Mac, local deterministic post-processing",
+  "notes": "Accepted P12 recovery; no quantum-advantage claim.",
+  "providerJobId": "d5cba0df-a7aa-459e-ac51-8092645c059f",
+  "requestedShots": 200,
+  "reconstructedShots": 200,
+  "answer": "10100011110010100111000100011100110001011111011100111001010110101011001001000000101000100000111100",
+  "answerStatus": "externally accepted",
+  "quantumSubmissionToCompletionSeconds": 4580.972377,
+  "quantumRunningToCompletionSeconds": 4160.855590,
+  "quantumNestedExecutionSeconds": 237.588,
+  "framingRepair": {
+    "rawCycles": 205,
+    "excludedReplicaCycles": 5,
+    "algorithm": "batch001_segment_overlap_v1"
+  },
+  "quantumAdvantageClaim": false
+}

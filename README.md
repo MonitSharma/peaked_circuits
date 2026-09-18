@@ -18,8 +18,12 @@ attributable to their original authors. Including it does not claim authorship o
 | P11 | Helios-1 | 50 requested / 51 returned | 282.98 HQC | Weak exploratory cluster; later external answer reported |
 | P12 | Helios-1 | 200 reconstructed | 1,373.4 HQC | Three observed-data decoders agreed; later external verification reported |
 
-See [`results/quantinuum/README.md`](results/quantinuum/README.md), the canonical
+See the [problem archive](problems/README.md), the canonical
 [`P11 page`](problems/P11/README.md), and [`P12 page`](problems/P12/README.md).
+
+For tracker submission packages containing the exact QASM, provider artifacts,
+normalized shots, plots, measured classical runtimes, and issue drafts, see
+[`results/tracker_submissions/`](results/tracker_submissions/).
 
 ## Branch scope and historical implementation
 

@@ -1,10 +1,14 @@
-# P11 hardware-recovery record
+# P11 — hardware recovery record
+
+## Status
+
+`SOLVED_HARDWARE`: the recovered 98-bit answer was externally accepted. This
+is a recovery result, not a standalone quantum-advantage claim.
 
 ## Circuit
 
-`P11_hqap_1999`: 98 qubits and 1,999 CZ gates. The source was supplied as
-`/Users/monitsharma/Downloads/P11_hqap_1999.qasm` and copied byte-for-byte into
-the evidence package. SHA-256:
+`P11_hqap_1999`: 98 qubits and 1,999 CZ gates. The source is preserved in the
+evidence package byte-for-byte. SHA-256:
 `1373d50c8a42b1ca745d202391767c417ddac56db95182ac2aced019231b3372`.
 
 ## Hardware run
@@ -26,13 +30,21 @@ normalized records. The observed mode multiplicity and cluster size were both
 ## External verification
 
 The later externally reported answer is kept separate in
-[`results/quantinuum/p11/solution_summary.md`](../../results/quantinuum/p11/solution_summary.md).
+[`results/tracker_submissions/p11/solution_summary.md`](../../results/tracker_submissions/p11/solution_summary.md).
 It was not used as an analysis input. The normalized project status is
 `SOLVED_HARDWARE` with external verification reported separately; this is not a
 quantum-advantage claim.
 
+## Classical branch history
+
+The earlier classical-method work is preserved in
+[`classical_history/`](classical_history/). It is kept separate from the
+hardware result so historical nonconvergence is not confused with the later
+accepted hardware recovery.
+
 ## Evidence and reproduction
 
-Start at [`results/quantinuum/p11/README.md`](../../results/quantinuum/p11/README.md).
+Start at the [P11 tracker package](../../results/tracker_submissions/p11/) and
+its [package README](../../results/tracker_submissions/p11/TRACKER_SUBMISSION.md).
 An auditor can inspect the raw payload, provider metadata, canonical shots,
 analysis JSON/Markdown, and checksums without rerunning hardware.
