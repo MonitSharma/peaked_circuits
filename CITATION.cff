@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility pipeline, please cite this repository."
-title: "Peaked Circuit: P11 and P12 Helios Recovery"
+title: "peaked_circuits: P11 and P12 Helios Recovery"
 type: software
 version: 0.1.0
 date-released: 2026-07-12

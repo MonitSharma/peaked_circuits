@@ -1,9 +1,12 @@
-# Peaked Circuit — P11/P12 quantum recovery
+# peaked_circuits — P11/P12 quantum recovery
 
 This repository is the focused, reproducible research record for the P11 and
 P12 peaked circuits run on Quantinuum Helios-1 hardware. The hardware produced
 noisy 98-bit samples; deterministic classical decoding was then used to recover
 the accepted bitstrings.
+
+The repository is titled **peaked_circuits**. The active research scope is
+limited to P11 and P12; earlier circuit work remains archived for provenance.
 
 ## Executive summary
 
@@ -15,6 +18,14 @@ the accepted bitstrings.
 The P11 and P12 answers were externally accepted. This is evidence of
 successful recovery from hardware samples; it is not, by itself, a claim of
 quantum advantage.
+
+## External verification
+
+The results were submitted through the [BlueQubit Peaked Portal leaderboard](https://app.bluequbit.io/hackathons/oEOtLSSrPSVH60Ah?tab=leaderboard).
+The supplied leaderboard screenshot shows Monit Sharma ranked first with a
+score of **2570/2570**, confirming that the submitted P11/P12 solutions were
+accepted by the portal. The raw hardware records and the deterministic
+recovery evidence remain available in the linked P11 and P12 packages below.
 
 ## What was run
 
