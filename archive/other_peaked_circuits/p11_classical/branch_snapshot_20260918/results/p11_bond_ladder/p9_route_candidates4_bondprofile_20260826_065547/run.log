@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/monitsharma/.conda/envs/p9-openblas/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Users/monitsharma/.conda/envs/p9-openblas/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/monitsharma/code_projects/qat/peaked-mpo-solver/src/p9solver/cli.py", line 980, in <module>
+    main()
+  File "/Users/monitsharma/code_projects/qat/peaked-mpo-solver/src/p9solver/cli.py", line 665, in main
+    circuit = QuantumCircuit.from_qasm_file(str(qasm_path))
+  File "/Users/monitsharma/.conda/envs/p9-openblas/lib/python3.10/site-packages/qiskit/circuit/quantumcircuit.py", line 4097, in from_qasm_file
+    return qasm2.load(
+  File "/Users/monitsharma/.conda/envs/p9-openblas/lib/python3.10/site-packages/qiskit/qasm2/__init__.py", line 644, in load
+    _normalize_path(filename),
+  File "/Users/monitsharma/.conda/envs/p9-openblas/lib/python3.10/site-packages/qiskit/qasm2/__init__.py", line 559, in _normalize_path
+    raise FileNotFoundError(str(path))
+FileNotFoundError: /Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm

@@ -1,0 +1,26 @@
+{
+  "schema": "unswap-prior-audit-v1",
+  "files_scanned": [
+    "results/p11_diagnosis/confirm_maxswap1_25g.log",
+    "results/p11_diagnosis/ab_maxswap1.log",
+    "results/p11_diagnosis/ab_uncapped.log",
+    "results/p11_diagnosis/ab_maxswap4.log",
+    "results/p11_diagnosis/decisive_maxswap1_c128_300g.log",
+    "results/p11_diagnosis/decisive_maxswap1_c128_300g/ms1/run.log",
+    "results/p11_diagnosis/stall_routeproxy_w2_look16_200g/r/run.log",
+    "results/p11_diagnosis/confirm_maxswap1_25g/ms1/run.log",
+    "results/p11_diagnosis/rescale_check_bond_70g/r/run.log",
+    "results/p11_diagnosis/stall_control_bond_200g/r/run.log",
+    "results/p11_diagnosis/ab_maxswap4/r/run.log",
+    "results/p11_diagnosis/ab_uncapped/r/run.log",
+    "results/p11_diagnosis/ab_maxswap1/r/run.log",
+    "results/p11_diagnosis/solve_routeproxy_nonbond_300g/r/run.log",
+    "results/p11_diagnosis/solve_control_bond_300g/r/run.log",
+    "results/p11_diagnosis/solve_routeproxy_nb_cap6_300g/r/run.log",
+    "results/p11_diagnosis/smoke_upstream/up10/run.log",
+    "results/p11_research/baseline_100gates/run.log"
+  ],
+  "records": 14550,
+  "pair_identity_available": false,
+  "decision": "aggregate-only-soft-prior-not-constructed"
+}

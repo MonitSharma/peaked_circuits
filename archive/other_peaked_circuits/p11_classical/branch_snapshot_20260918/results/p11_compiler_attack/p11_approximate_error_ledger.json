@@ -1,0 +1,49 @@
+{
+  "ledger": [
+    {
+      "accepted": 0,
+      "rows": [
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 5300,
+          "stop": 5310,
+          "tolerance": 1e-08
+        }
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "accepted": 0,
+      "rows": [
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 5300,
+          "stop": 5310,
+          "tolerance": 1e-06
+        }
+      ],
+      "tolerance": 1e-06
+    },
+    {
+      "accepted": 0,
+      "rows": [
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 5300,
+          "stop": 5310,
+          "tolerance": 0.0001
+        }
+      ],
+      "tolerance": 0.0001
+    }
+  ],
+  "p9_56_of_56_preserved": true,
+  "source": "results/p11_compiler_attack/p11_local_synthesis_q2/summary.json",
+  "verdict": "BRANCH_NO_GO"
+}

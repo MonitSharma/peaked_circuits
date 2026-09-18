@@ -1,0 +1,12 @@
+{
+  "measurement_order_qiskit": [
+    {
+      "clbit": 0,
+      "qubit": 1
+    },
+    {
+      "clbit": 1,
+      "qubit": 0
+    }
+  ]
+}

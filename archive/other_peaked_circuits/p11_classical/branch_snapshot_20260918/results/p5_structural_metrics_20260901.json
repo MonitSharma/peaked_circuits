@@ -1,0 +1,45 @@
+{
+  "answer_blind": true,
+  "circuits": [
+    {
+      "depth": 173,
+      "gate_counts": {
+        "cz": 1892,
+        "u3": 3828
+      },
+      "interaction_edge_events": 1892,
+      "interaction_edges": 578,
+      "interaction_span_max": 43,
+      "interaction_span_mean": 15.54968287526427,
+      "natural_order_cutwidth": 304,
+      "natural_order_cutwidth_mean": 203.13953488372093,
+      "one_qubit_ops": 3828,
+      "path": "C:\\Users\\monitsharma\\Downloads\\SMU-Quantum\\p12-helios-recovery\\results\\expert_review_p5_p6_p8_20260828\\inputs\\P5_granite_summit.qasm",
+      "qubits": 44,
+      "sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+      "total_ops": 5720,
+      "two_qubit_ops": 1892,
+      "work_gate_proxy": 5720
+    },
+    {
+      "depth": 173,
+      "gate_counts": {
+        "cz": 1892,
+        "u3": 3828
+      },
+      "interaction_edge_events": 1892,
+      "interaction_edges": 578,
+      "interaction_span_max": 43,
+      "interaction_span_mean": 15.54968287526427,
+      "natural_order_cutwidth": 304,
+      "natural_order_cutwidth_mean": 203.13953488372093,
+      "one_qubit_ops": 3828,
+      "path": "C:\\Users\\monitsharma\\Downloads\\SMU-Quantum\\p12-helios-recovery\\results\\expert_review_p5_p6_p8_20260828\\inputs\\P5_granite_summit.qasm",
+      "qubits": 44,
+      "sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+      "total_ops": 5720,
+      "two_qubit_ops": 1892,
+      "work_gate_proxy": 5720
+    }
+  ]
+}

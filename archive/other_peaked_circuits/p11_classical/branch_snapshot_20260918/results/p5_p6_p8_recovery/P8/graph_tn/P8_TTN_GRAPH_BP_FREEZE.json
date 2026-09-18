@@ -1,0 +1,15 @@
+{
+  "schema": "p12-p8-ttn-derived-graph-bp-freeze-v1",
+  "problem": "P8",
+  "method_family": "TTN-derived-graph-BP",
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "answer_blind": true,
+  "evaluation_status": "NOT_RUN_AT_FREEZE",
+  "promotion_status": "METHOD_REJECTED_BOND_UNSTABLE_CORRELATED_DIAGNOSTIC",
+  "candidates": [
+    {"source": "weighted_TTN_D4", "candidate": "0100001111010010101110000010010101000110", "candidate_sha256": "a4867b39b26e6af1eff4b935ed9bbaba694eba8cdebe981df3e5499071e801d4", "iterations": 17, "factor_min": 0.0002908688870775505},
+    {"source": "weighted_TTN_D8", "candidate": "1110001001101101111100100110000000010010", "candidate_sha256": "d0691281a810c2fbe30de01db3b136f78cba5a3556ed46fe361005c0b63de4f1", "iterations": 18, "factor_min": 0.000049262338323988}
+  ],
+  "pairwise_hamming_distance": 19,
+  "reason": "Both BP runs converged with positive factors, but the correlated TTN-derived outputs are unstable across bond levels and are not independent evidence."
+}

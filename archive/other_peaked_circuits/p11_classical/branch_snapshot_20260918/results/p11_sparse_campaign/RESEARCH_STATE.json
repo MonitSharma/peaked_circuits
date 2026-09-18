@@ -1,0 +1,31 @@
+{
+  "blindness": "INTACT",
+  "phase": "P9_GATE_DECISION",
+  "exact_validation": {"status": "PASS", "circuits": 4, "tolerance": "1e-10 fidelity error"},
+  "qstvec_status": "NO_GO_QSTVEC",
+  "bass_fixed_status": "NO_GO_BASS_FIXED",
+  "bass_adaptive_status": "NO_GO_BASS_ADAPTIVE_FEASIBILITY",
+  "p9_budget_results": [
+    {"method": "qstvec", "k": 16384, "target_present": false, "top1_hamming": 29, "runtime_s": 29.392085667001083},
+    {"method": "bass_fixed", "k": 16384, "target_present": false, "top1_hamming": 30, "runtime_s": 75.31741420799517},
+    {"method": "bass_adaptive", "k": 16384, "status": "bounded_timeout", "observation_s": 630},
+    {"method": "qstvec", "k": 65536, "target_present": false, "top1_hamming": 30, "runtime_s": 132.2398612079851},
+    {"method": "bass_fixed", "k": 65536, "target_present": false, "top1_hamming": 30, "runtime_s": 778.5248541659967}
+  ],
+  "qstvec_gate": "NO_GO_QSTVEC",
+  "bass_gate": "NO_GO_BASS",
+  "bass_adaptation_effect": "not_estimable: k=16384 adaptive run exceeded bounded observation without completing",
+  "port_98_status": "NOT_AUTHORIZED",
+  "p11_probe_status": "NOT_AUTHORIZED_P9_GATE_FAILED",
+  "open_questions": [
+    "Do all three adapters reproduce exact small circuits?",
+    "Does any method preserve the known P9 peak at a feasible matched k?",
+    "Can BASS adaptive recover computational-Z output without dense reconstruction?"
+  ],
+  "next_action": "Stop sparse campaign; do not port 98-bit keys or run P11",
+  "terminal_state": "NO_GO_SPARSE_METHODS_ON_P9",
+  "upstream": {
+    "qstvec": {"commit": "545614fa196e2a77d96d408e0cdf39520684b251", "dirty": false},
+    "bass": {"commit": "e591cf97316026da0cb681f787406361d1e5106e", "dirty": false}
+  }
+}

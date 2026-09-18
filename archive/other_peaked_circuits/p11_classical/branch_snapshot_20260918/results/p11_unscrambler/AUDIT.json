@@ -1,0 +1,23 @@
+{
+  "branch": "research/p11-hqap-unscrambler",
+  "base_commit": "7636481",
+  "p9_qasm_sha256": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35",
+  "p11_qasm_sha256": "1373d50c8a42b1ca745d202391767c417ddac56db95182ac2aced019231b3372",
+  "machine": "Mac15,7 / Apple Silicon / 36 GB",
+  "python": "3.13.7",
+  "packages": {
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "matplotlib": "3.11.0",
+    "qiskit": "1.4.6"
+  },
+  "historical_directories_preserved": [
+    "results/p11_diagnosis",
+    "results/p11_research",
+    "results/p11_distillation"
+  ],
+  "p11_answer_consulted": false,
+  "hardware_or_emulator_consulted": false,
+  "tests": "129 passed",
+  "decision": "P9 structural Gate A NO-GO; P11 structural recovery not started"
+}

@@ -1,0 +1,437 @@
+{
+  "schema": "bluequbit-p1-v2-qstvec-sharp-run-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "configuration": {
+    "top_k": 16384,
+    "p_frac": 1.0,
+    "max_seconds": 120.0,
+    "strategy": "public_qstvec_sharp_peak_exact_block_builder"
+  },
+  "block_count": 1427,
+  "progress": {
+    "blocks_completed": 1427,
+    "blocks_total": 1427,
+    "aborted": null
+  },
+  "runtime_s": 12.740306249994319,
+  "final_support": 16384,
+  "top1": "001110000111110111000100000111101100",
+  "top1_probability_renormalized": 0.0017203005525796699,
+  "trace": [
+    {
+      "block": 0,
+      "event_count": 2,
+      "support": 4,
+      "top1": "000000000000000000000000000000000000",
+      "top1_probability_renormalized": 0.6379076121299802
+    },
+    {
+      "block": 25,
+      "event_count": 70,
+      "support": 16384,
+      "top1": "000000001101100011010000010101010011",
+      "top1_probability_renormalized": 0.0004195936634950583
+    },
+    {
+      "block": 50,
+      "event_count": 155,
+      "support": 16384,
+      "top1": "011011111001001000011000000001011010",
+      "top1_probability_renormalized": 0.0006732777321009052
+    },
+    {
+      "block": 75,
+      "event_count": 234,
+      "support": 16384,
+      "top1": "101110011100101000001000000011111010",
+      "top1_probability_renormalized": 0.0018117727854561842
+    },
+    {
+      "block": 100,
+      "event_count": 321,
+      "support": 16384,
+      "top1": "001010100000101110010101011010111110",
+      "top1_probability_renormalized": 0.0024021443011234584
+    },
+    {
+      "block": 125,
+      "event_count": 396,
+      "support": 16384,
+      "top1": "000110100001100010111111000000110101",
+      "top1_probability_renormalized": 0.0014032136234422596
+    },
+    {
+      "block": 150,
+      "event_count": 471,
+      "support": 16384,
+      "top1": "000110110010100000110001000101100001",
+      "top1_probability_renormalized": 0.0009450506334127741
+    },
+    {
+      "block": 175,
+      "event_count": 555,
+      "support": 16384,
+      "top1": "100111111010000010000101010111100011",
+      "top1_probability_renormalized": 0.0018134146778632145
+    },
+    {
+      "block": 200,
+      "event_count": 630,
+      "support": 16384,
+      "top1": "100110111010110001101001110000011010",
+      "top1_probability_renormalized": 0.002953452807593738
+    },
+    {
+      "block": 225,
+      "event_count": 705,
+      "support": 16384,
+      "top1": "100110011010010000001011000011000010",
+      "top1_probability_renormalized": 0.0009592022118950942
+    },
+    {
+      "block": 250,
+      "event_count": 786,
+      "support": 16384,
+      "top1": "101011111001001111001001100011000011",
+      "top1_probability_renormalized": 0.0011317836031729243
+    },
+    {
+      "block": 275,
+      "event_count": 864,
+      "support": 16384,
+      "top1": "111011101011000011101101100000000111",
+      "top1_probability_renormalized": 0.0012968534012060347
+    },
+    {
+      "block": 300,
+      "event_count": 942,
+      "support": 16384,
+      "top1": "000010101011000010110001100100000111",
+      "top1_probability_renormalized": 0.001089362191831359
+    },
+    {
+      "block": 325,
+      "event_count": 1017,
+      "support": 16384,
+      "top1": "010000100111100011100100101110000111",
+      "top1_probability_renormalized": 0.0005265224794842879
+    },
+    {
+      "block": 350,
+      "event_count": 1092,
+      "support": 16384,
+      "top1": "111000110111100001100000101010101111",
+      "top1_probability_renormalized": 0.0017251323497637957
+    },
+    {
+      "block": 375,
+      "event_count": 1170,
+      "support": 16384,
+      "top1": "111000110111001011001000111001100111",
+      "top1_probability_renormalized": 0.0031656654354007417
+    },
+    {
+      "block": 400,
+      "event_count": 1245,
+      "support": 16384,
+      "top1": "110001101101001011100010011011111011",
+      "top1_probability_renormalized": 0.0012068613235124736
+    },
+    {
+      "block": 425,
+      "event_count": 1320,
+      "support": 16384,
+      "top1": "110001111000100110000110111111110011",
+      "top1_probability_renormalized": 0.0010981417027048162
+    },
+    {
+      "block": 450,
+      "event_count": 1398,
+      "support": 16384,
+      "top1": "110101011000010110100110000001110010",
+      "top1_probability_renormalized": 0.0022407686731314522
+    },
+    {
+      "block": 475,
+      "event_count": 1473,
+      "support": 16384,
+      "top1": "100101011000010111001010011011010000",
+      "top1_probability_renormalized": 0.0017404901500466747
+    },
+    {
+      "block": 500,
+      "event_count": 1551,
+      "support": 16384,
+      "top1": "100100011011011101001001110010111110",
+      "top1_probability_renormalized": 0.0017560993865485266
+    },
+    {
+      "block": 525,
+      "event_count": 1626,
+      "support": 16384,
+      "top1": "100101111011111101110111001000010010",
+      "top1_probability_renormalized": 0.002387987114295838
+    },
+    {
+      "block": 550,
+      "event_count": 1701,
+      "support": 16384,
+      "top1": "000011110011100001000011101001010010",
+      "top1_probability_renormalized": 0.0017489830985575137
+    },
+    {
+      "block": 575,
+      "event_count": 1785,
+      "support": 16384,
+      "top1": "000000010000101001010001010011100000",
+      "top1_probability_renormalized": 0.0009920215451620614
+    },
+    {
+      "block": 600,
+      "event_count": 1860,
+      "support": 16384,
+      "top1": "001000011100101001000001000011100010",
+      "top1_probability_renormalized": 0.0006770877978875855
+    },
+    {
+      "block": 625,
+      "event_count": 1941,
+      "support": 16384,
+      "top1": "010011111100100000000001011101011111",
+      "top1_probability_renormalized": 0.0013787558675556336
+    },
+    {
+      "block": 650,
+      "event_count": 2016,
+      "support": 16384,
+      "top1": "000001111100100011000000011011011011",
+      "top1_probability_renormalized": 0.0007536702006545183
+    },
+    {
+      "block": 675,
+      "event_count": 2091,
+      "support": 16384,
+      "top1": "110100101001100010111100111000011111",
+      "top1_probability_renormalized": 0.00024122495741935713
+    },
+    {
+      "block": 700,
+      "event_count": 2166,
+      "support": 16384,
+      "top1": "000100101100001100011010111101010100",
+      "top1_probability_renormalized": 0.0002906546856549646
+    },
+    {
+      "block": 725,
+      "event_count": 2244,
+      "support": 16384,
+      "top1": "100101100100111110100010101111101100",
+      "top1_probability_renormalized": 0.000375593157751574
+    },
+    {
+      "block": 750,
+      "event_count": 2319,
+      "support": 16384,
+      "top1": "001000000000101110100100101111100000",
+      "top1_probability_renormalized": 0.001384682080591291
+    },
+    {
+      "block": 775,
+      "event_count": 2394,
+      "support": 16384,
+      "top1": "001000000000101110100001100011001101",
+      "top1_probability_renormalized": 0.00039541314450856424
+    },
+    {
+      "block": 800,
+      "event_count": 2472,
+      "support": 16384,
+      "top1": "010010100011101110100100111101101001",
+      "top1_probability_renormalized": 0.0005114382235711641
+    },
+    {
+      "block": 825,
+      "event_count": 2547,
+      "support": 16384,
+      "top1": "011100000101001011101010010100101101",
+      "top1_probability_renormalized": 0.0006331226809863771
+    },
+    {
+      "block": 850,
+      "event_count": 2622,
+      "support": 16384,
+      "top1": "100000010111011011101110100001100111",
+      "top1_probability_renormalized": 0.0008318946412249376
+    },
+    {
+      "block": 875,
+      "event_count": 2703,
+      "support": 16384,
+      "top1": "100000010101100011101111100010100000",
+      "top1_probability_renormalized": 0.0015319234936900313
+    },
+    {
+      "block": 900,
+      "event_count": 2778,
+      "support": 16384,
+      "top1": "101100111101110101100111111010011000",
+      "top1_probability_renormalized": 0.0007444573806784363
+    },
+    {
+      "block": 925,
+      "event_count": 2856,
+      "support": 16384,
+      "top1": "101100011111110001001001011110011000",
+      "top1_probability_renormalized": 0.000972509575191218
+    },
+    {
+      "block": 950,
+      "event_count": 2931,
+      "support": 16384,
+      "top1": "011110101101110101101001011111001100",
+      "top1_probability_renormalized": 0.0015515754590772677
+    },
+    {
+      "block": 975,
+      "event_count": 3006,
+      "support": 16384,
+      "top1": "001000101100100110001000111001000101",
+      "top1_probability_renormalized": 0.0014567722032911787
+    },
+    {
+      "block": 1000,
+      "event_count": 3081,
+      "support": 16384,
+      "top1": "001010101101011011011100111001100110",
+      "top1_probability_renormalized": 0.0006081866858882535
+    },
+    {
+      "block": 1025,
+      "event_count": 3159,
+      "support": 16384,
+      "top1": "001000000100011101011110100010100110",
+      "top1_probability_renormalized": 0.0012279990321764516
+    },
+    {
+      "block": 1050,
+      "event_count": 3234,
+      "support": 16384,
+      "top1": "001000011110000011001111010100110011",
+      "top1_probability_renormalized": 0.0013399049906454967
+    },
+    {
+      "block": 1075,
+      "event_count": 3309,
+      "support": 16384,
+      "top1": "001101100010010000011111000100011111",
+      "top1_probability_renormalized": 0.0007786403717510605
+    },
+    {
+      "block": 1100,
+      "event_count": 3387,
+      "support": 16384,
+      "top1": "011101100011101010001001000000011000",
+      "top1_probability_renormalized": 0.0013761707659109032
+    },
+    {
+      "block": 1125,
+      "event_count": 3465,
+      "support": 16384,
+      "top1": "001001101101010011000101111110011000",
+      "top1_probability_renormalized": 0.0007532619776157813
+    },
+    {
+      "block": 1150,
+      "event_count": 3543,
+      "support": 16384,
+      "top1": "111010101100010001110111011100011001",
+      "top1_probability_renormalized": 0.0010038077111053942
+    },
+    {
+      "block": 1175,
+      "event_count": 3621,
+      "support": 16384,
+      "top1": "101010111100010000111001101100011001",
+      "top1_probability_renormalized": 0.0010438556709762659
+    },
+    {
+      "block": 1200,
+      "event_count": 3696,
+      "support": 16384,
+      "top1": "100000111000100000100001010100010001",
+      "top1_probability_renormalized": 0.0016151222220378296
+    },
+    {
+      "block": 1225,
+      "event_count": 3774,
+      "support": 16384,
+      "top1": "000110101010001001000010010010110011",
+      "top1_probability_renormalized": 0.0009222230020875017
+    },
+    {
+      "block": 1250,
+      "event_count": 3852,
+      "support": 16384,
+      "top1": "001110111011101100110011110111010110",
+      "top1_probability_renormalized": 0.0009585354117311864
+    },
+    {
+      "block": 1275,
+      "event_count": 3936,
+      "support": 16384,
+      "top1": "011101111011111110000111100101010000",
+      "top1_probability_renormalized": 0.0007994159929771294
+    },
+    {
+      "block": 1300,
+      "event_count": 4014,
+      "support": 16384,
+      "top1": "001111111010101010110110111111010101",
+      "top1_probability_renormalized": 0.001545782666020223
+    },
+    {
+      "block": 1325,
+      "event_count": 4095,
+      "support": 16384,
+      "top1": "101111011111100100111010001111011111",
+      "top1_probability_renormalized": 0.0015064436232647483
+    },
+    {
+      "block": 1350,
+      "event_count": 4173,
+      "support": 16384,
+      "top1": "001111101100001101111010001110010111",
+      "top1_probability_renormalized": 0.001192646667733588
+    },
+    {
+      "block": 1375,
+      "event_count": 4251,
+      "support": 16384,
+      "top1": "011010101100001111110000100110100011",
+      "top1_probability_renormalized": 0.0018760276780629879
+    },
+    {
+      "block": 1400,
+      "event_count": 4329,
+      "support": 16384,
+      "top1": "010101000110001100100000100110100100",
+      "top1_probability_renormalized": 0.0007722787879808214
+    },
+    {
+      "block": 1425,
+      "event_count": 4404,
+      "support": 16384,
+      "top1": "000000001111110111000100000011101100",
+      "top1_probability_renormalized": 0.0018309479554460494
+    },
+    {
+      "block": 1426,
+      "event_count": 4407,
+      "support": 16384,
+      "top1": "001110000111110111000100000111101100",
+      "top1_probability_renormalized": 0.0017203005525796699
+    }
+  ],
+  "decision": "INCONCLUSIVE_UNLESS_REPEATED_ACROSS_K"
+}

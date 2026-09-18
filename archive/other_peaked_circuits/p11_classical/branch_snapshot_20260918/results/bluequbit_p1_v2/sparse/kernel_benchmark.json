@@ -1,0 +1,12 @@
+{
+  "schema": "bluequbit-p1-v2-sparse-kernel-benchmark-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "support": 65536,
+  "cz_gates": 100,
+  "specialized_seconds": 0.01083445898257196,
+  "generic_seconds": 1.1758885000017472,
+  "speedup": 108.5322766825046,
+  "max_abs_error": 0.0,
+  "support_preserved": true
+}

@@ -1,0 +1,608 @@
+{
+  "qasm": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
+  "tag": "p6_full_d128_samples1000",
+  "num_qubits": 62,
+  "initial_ops": {
+    "u3": 6992,
+    "cz": 3494
+  },
+  "consolidated_ops": {
+    "unitary": 2593
+  },
+  "compress_time_s": 709.986496792,
+  "stats_rows": 3886,
+  "run_status": "complete",
+  "environment": {
+    "python": "3.10.16 (main, Feb 12 2025, 15:03:04) [Clang 19.1.6 ]",
+    "python_executable": "<repo>/.venv-p9-isolated/bin/python",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "qiskit": "1.4.5",
+    "quimb": "1.11.2",
+    "numpy": "2.2.6",
+    "numpy_config": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"15.0.0\",\n      \"commands\": \"cc\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.1.0\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"15.0.0\",\n      \"commands\": \"c++\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"build\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    }\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"accelerate\",\n      \"found\": true,\n      \"version\": \"unknown\",\n      \"detection method\": \"system\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    },\n    \"lapack\": {\n      \"name\": \"accelerate\",\n      \"found\": true,\n      \"version\": \"unknown\",\n      \"detection method\": \"system\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/private/var/folders/<redacted>\",\n    \"version\": \"3.10\"\n  },\n  \"SIMD Extensions\": {\n    \"baseline\": [\n      \"NEON\",\n      \"NEON_FP16\",\n      \"NEON_VFPV4\",\n      \"ASIMD\"\n    ],\n    \"found\": [\n      \"ASIMDHP\"\n    ],\n    \"not found\": [\n      \"ASIMDFHM\"\n    ]\n  }\n}\n",
+    "thread_env": {},
+    "numpy_runtime": "WARNING: `threadpoolctl` not found in system! Install it by `pip install threadpoolctl`. Once installed, try `np.show_runtime` again for more detailed build information\n[{'numpy_version': '2.2.6',\n  'python': '3.10.16 (main, Feb 12 2025, 15:03:04) [Clang 19.1.6 ]',\n  'uname': uname_result(system='Darwin', node='<redacted>', release='25.6.0', version='Darwin Kernel Version 25.6.0: Fri Jul 31 19:16:36 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6030', machine='arm64')},\n {'simd_extensions': {'baseline': ['NEON', 'NEON_FP16', 'NEON_VFPV4', 'ASIMD'],\n                      'found': ['ASIMDHP'],\n                      'not_found': ['ASIMDFHM']}}]\n",
+    "numpy_multiarray_umath": "<repo>/.venv-p9-isolated/lib/python3.10/site-packages/numpy/_core/_multiarray_umath.cpython-310-darwin.so",
+    "scipy": "1.15.3",
+    "scipy_config": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"15.0.0\",\n      \"commands\": \"cc\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.0.12\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"15.0.0\",\n      \"commands\": \"c++\"\n    },\n    \"fortran\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld64\",\n      \"version\": \"13.3.0\",\n      \"commands\": \"gfortran\"\n    },\n    \"pythran\": {\n      \"version\": \"0.17.0\",\n      \"include directory\": \"../../../../../../private/var/folders/<redacted>\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"build\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"cross-compiled\": false\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"Accelerate\",\n      \"found\": true,\n      \"version\": \"unknown\",\n      \"detection method\": \"extraframeworks\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    },\n    \"lapack\": {\n      \"name\": \"Accelerate\",\n      \"found\": true,\n      \"version\": \"unknown\",\n      \"detection method\": \"extraframeworks\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    },\n    \"pybind11\": {\n      \"name\": \"pybind11\",\n      \"version\": \"2.13.6\",\n      \"detection method\": \"config-tool\",\n      \"include directory\": \"unknown\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/private/var/folders/<redacted>\",\n    \"version\": \"3.10\"\n  }\n}\n",
+    "scipy_flapack": "<repo>/.venv-p9-isolated/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-darwin.so"
+  },
+  "parameters": {
+    "qasm": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
+    "outdir": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P6/mpo/full_d128_samples1000",
+    "tag": "p6_full_d128_samples1000",
+    "samples": 1000,
+    "decoder": "beam",
+    "decoder_beam_width": 8,
+    "expected_bitstring": "",
+    "seed": 123,
+    "max_bond": 128,
+    "cutoff": 0.005,
+    "unswap_threshold": 500000.0,
+    "center_ratio": 0.5,
+    "max_its": 20,
+    "sabre_trials": 90,
+    "post_sabre_trials": 50,
+    "absorb_score": "total_elems",
+    "route_candidates": 1,
+    "route_score": "none",
+    "route_score_lookahead": 8,
+    "parallel_route_candidates": false,
+    "route_candidate_workers": null,
+    "route_seed_stride": 1009,
+    "unswap_select_mode": "bond",
+    "unswap_alignment_weight": 0.0,
+    "unswap_alignment_protect_gain": null,
+    "unswap_alignment_max_replacements": null,
+    "unswap_alignment_tie_loss": 1.0,
+    "unswap_route_proxy_weight": 0.0,
+    "unswap_route_proxy_lookahead": 8,
+    "unswap_route_proxy_include_swaps": false,
+    "unswap_route_proxy_allow_nonbond": false,
+    "unswap_route_proxy_policy": "veto",
+    "unswap_route_proxy_min_benefit": 1.0,
+    "unswap_route_proxy_max_bond_loss": 0.0,
+    "unswap_route_proxy_protect_gain": null,
+    "unswap_route_proxy_max_cycles": null,
+    "unswap_pair_lookahead_limit": 8,
+    "swap_gate_representation": "current",
+    "max_unswap_cycles": null,
+    "max_work_gates": null,
+    "abort_after_no_progress_unswap_cycles": 20,
+    "parallel_absorb_probes": false,
+    "parallel_rewire": false,
+    "adaptive_parallel_rewire": false,
+    "adaptive_parallel_rewire_min_speedup": 1.15,
+    "unswap_probe_max_bond": null,
+    "unswap_probe_cutoff": null,
+    "reuse_full_swap_probe": true,
+    "unswap_trigger_max_bond": null,
+    "unswap_max_swaps_per_step": null,
+    "unswap_hot_bonds": 0,
+    "unswap_hot_radius": 0,
+    "unswap_adaptive_stop_max_bond": null,
+    "unswap_adaptive_stop_min_rel_improvement": null,
+    "unswap_adaptive_stop_min_iteration": 0,
+    "skip_sampling": false,
+    "plots": false,
+    "plot_interval_s": 30.0,
+    "console_log_level": "WARNING"
+  },
+  "partial": false,
+  "leftover_left_layers": 2,
+  "leftover_right_layers": 2,
+  "final_max_bond": 19,
+  "final_total_elems": 10960,
+  "stage_rows": {
+    "rewiring": 22,
+    "absorbing": 3452,
+    "unswapping": 390,
+    "unswap_cycle_summary": 10,
+    "cycle_progress": 10,
+    "termination": 1,
+    "timing_summary": 1
+  },
+  "peak_max_bond": 128.0,
+  "peak_total_elems": 596060.0,
+  "peak_total_shapes": 5114.0,
+  "last_work_consumed": 2593.0,
+  "termination_reason": "completed",
+  "termination_detail": null,
+  "termination_unswap_cycle": 10,
+  "initial_rewire_time_s": 2.3268089160000045,
+  "initial_rewire_wall_time_s": 2.327686416000006,
+  "post_unswap_rewire_time_s": 25.154856373000143,
+  "post_unswap_rewire_wall_time_s": 25.164480082999944,
+  "absorb_probe_time_s": 323.852117741002,
+  "absorb_probe_wall_time_s": 325.74536352500104,
+  "absorb_lookahead_time_s": 0.0,
+  "unswap_time_s": 58.970625291999966,
+  "rewire_time_s": 27.481665289000148,
+  "accounted_time_s": 412.19765410600115,
+  "rewire_wall_time_s": 27.49216649899995,
+  "accounted_wall_time_s": 412.20815531600095,
+  "truncation_diagnostics": {
+    "max_bond_limit": 128.0,
+    "rows_at_max_bond": 98,
+    "rows_at_max_bond_by_stage": {
+      "absorbing": 87,
+      "unswapping": 11
+    },
+    "absorb_probe_left_hits_max_bond": 115,
+    "absorb_probe_right_hits_max_bond": 94,
+    "selected_absorbs_hit_max_bond": 87,
+    "absorb_probe_left_over_unswap_threshold": 25,
+    "absorb_probe_right_over_unswap_threshold": 1,
+    "first_stage_at_max_bond": "absorbing",
+    "first_unswap_cycle_at_max_bond": null,
+    "first_time_at_max_bond_s": 4.3062506660000395
+  },
+  "materialize_time_s": 0.021909249999907843,
+  "sample_time_s": 13.328725750000103,
+  "sample_total_time_s": 13.350635000000011,
+  "samples": 1000,
+  "sample_unique_raw": 1000,
+  "sample_unique_permuted": 1000,
+  "sample_peak_count": 1,
+  "sample_peak_fraction": 0.001,
+  "predicted_bitstring": "11100011000101111010111111011011010100110110010010010010101000",
+  "top_permuted_samples": [
+    [
+      "11100011000101111010111111011011010100110110010010010010101000",
+      1
+    ],
+    [
+      "11111001100001111010110111011001100100110101010011010010010000",
+      1
+    ],
+    [
+      "00111011000101100110111111011011110110111110010000010110010000",
+      1
+    ],
+    [
+      "11111011001101110101110101011001011100111100010000010010010010",
+      1
+    ],
+    [
+      "01101011000000010001011111011000100100110101001000010010010010",
+      1
+    ],
+    [
+      "01100011000101110000011100011001110100010110010011010010010000",
+      1
+    ],
+    [
+      "11110001100101101111010100011001100100110100010001010010011010",
+      1
+    ],
+    [
+      "11101001000100110111011111011001101010111110000011010011011000",
+      1
+    ],
+    [
+      "01111000100111110101110101011010100000111110010000010010110000",
+      1
+    ],
+    [
+      "11100011000101111011011101011001010100110101000011010010000010",
+      1
+    ]
+  ],
+  "measurement_perm": [
+    27,
+    42,
+    7,
+    33,
+    17,
+    1,
+    20,
+    22,
+    13,
+    52,
+    16,
+    57,
+    9,
+    46,
+    53,
+    24,
+    54,
+    0,
+    36,
+    8,
+    28,
+    14,
+    59,
+    11,
+    55,
+    43,
+    3,
+    26,
+    30,
+    37,
+    40,
+    41,
+    39,
+    38,
+    56,
+    58,
+    45,
+    44,
+    61,
+    29,
+    10,
+    35,
+    49,
+    48,
+    25,
+    34,
+    32,
+    23,
+    18,
+    2,
+    19,
+    51,
+    5,
+    6,
+    50,
+    31,
+    60,
+    47,
+    15,
+    12,
+    21,
+    4
+  ],
+  "samples_path": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P6/mpo/full_d128_samples1000/p6_full_d128_samples1000/samples.tsv",
+  "decoder": "beam",
+  "decoder_bitwise_map": "11100111000101110111010101011001111100110110000010010010010010",
+  "decoder_marginals": [
+    {
+      "p0": 0.35056639839066184,
+      "p1": 0.6494336016093383,
+      "bias": 0.29886720321867644
+    },
+    {
+      "p0": 0.16961544666656594,
+      "p1": 0.830384553333434,
+      "bias": 0.6607691066668681
+    },
+    {
+      "p0": 0.012544898573913712,
+      "p1": 0.9874551014260863,
+      "bias": 0.9749102028521726
+    },
+    {
+      "p0": 0.7288044339495657,
+      "p1": 0.2711955660504343,
+      "bias": -0.4576088678991314
+    },
+    {
+      "p0": 0.6594254772008155,
+      "p1": 0.3405745227991846,
+      "bias": -0.31885095440163086
+    },
+    {
+      "p0": 0.47512353509975275,
+      "p1": 0.5248764649002473,
+      "bias": 0.04975292980049456
+    },
+    {
+      "p0": 0.30405853130804233,
+      "p1": 0.6959414686919577,
+      "bias": 0.3918829373839154
+    },
+    {
+      "p0": 0.07961167825727235,
+      "p1": 0.9203883217427277,
+      "bias": 0.8407766434854553
+    },
+    {
+      "p0": 0.869592636879332,
+      "p1": 0.13040736312066803,
+      "bias": -0.7391852737586639
+    },
+    {
+      "p0": 0.9950321087568738,
+      "p1": 0.0049678912431261974,
+      "bias": -0.9900642175137475
+    },
+    {
+      "p0": 0.7654380092062653,
+      "p1": 0.2345619907937347,
+      "bias": -0.5308760184125305
+    },
+    {
+      "p0": 0.1797731195245756,
+      "p1": 0.8202268804754245,
+      "bias": 0.6404537609508489
+    },
+    {
+      "p0": 0.5,
+      "p1": 0.5,
+      "bias": 0.0
+    },
+    {
+      "p0": 0.4801816890928195,
+      "p1": 0.5198183109071806,
+      "bias": 0.03963662181436106
+    },
+    {
+      "p0": 0.0978191152875539,
+      "p1": 0.9021808847124461,
+      "bias": 0.8043617694248921
+    },
+    {
+      "p0": 0.2899730410824398,
+      "p1": 0.7100269589175602,
+      "bias": 0.42005391783512036
+    },
+    {
+      "p0": 0.5000000000000001,
+      "p1": 0.5,
+      "bias": -1.1102230246251565e-16
+    },
+    {
+      "p0": 0.4736874787396784,
+      "p1": 0.5263125212603216,
+      "bias": 0.05262504252064315
+    },
+    {
+      "p0": 0.22227132107838987,
+      "p1": 0.7777286789216101,
+      "bias": 0.5554573578432203
+    },
+    {
+      "p0": 0.38729978972617285,
+      "p1": 0.6127002102738272,
+      "bias": 0.2254004205476543
+    },
+    {
+      "p0": 0.5491622942482848,
+      "p1": 0.4508377057517152,
+      "bias": -0.09832458849656955
+    },
+    {
+      "p0": 0.057038195641060406,
+      "p1": 0.9429618043589396,
+      "bias": 0.8859236087178792
+    },
+    {
+      "p0": 0.5083255488075787,
+      "p1": 0.49167445119242126,
+      "bias": -0.016651097615157484
+    },
+    {
+      "p0": 0.05827347587035213,
+      "p1": 0.9417265241296479,
+      "bias": 0.8834530482592957
+    },
+    {
+      "p0": 0.6094390625632563,
+      "p1": 0.39056093743674375,
+      "bias": -0.21887812512651256
+    },
+    {
+      "p0": 0.09753373202592719,
+      "p1": 0.9024662679740727,
+      "bias": 0.8049325359481455
+    },
+    {
+      "p0": 0.5,
+      "p1": 0.5,
+      "bias": 0.0
+    },
+    {
+      "p0": 0.013348197563437235,
+      "p1": 0.9866518024365628,
+      "bias": 0.9733036048731256
+    },
+    {
+      "p0": 0.0060280332681852365,
+      "p1": 0.9939719667318149,
+      "bias": 0.9879439334636296
+    },
+    {
+      "p0": 0.9994005346076682,
+      "p1": 0.0005994653923317864,
+      "bias": -0.9988010692153364
+    },
+    {
+      "p0": 0.5928858931229264,
+      "p1": 0.40711410687707356,
+      "bias": -0.18577178624585283
+    },
+    {
+      "p0": 0.17944439277333213,
+      "p1": 0.820555607226668,
+      "bias": 0.6411112144533359
+    },
+    {
+      "p0": 0.1885629814374796,
+      "p1": 0.8114370185625205,
+      "bias": 0.6228740371250409
+    },
+    {
+      "p0": 0.32481534131865586,
+      "p1": 0.6751846586813441,
+      "bias": 0.3503693173626883
+    },
+    {
+      "p0": 0.49999997267109275,
+      "p1": 0.5000000273289072,
+      "bias": 5.46578144966503e-08
+    },
+    {
+      "p0": 0.14696847671282423,
+      "p1": 0.8530315232871757,
+      "bias": 0.7060630465743515
+    },
+    {
+      "p0": 0.5116224029218609,
+      "p1": 0.48837759707813905,
+      "bias": -0.02324480584372185
+    },
+    {
+      "p0": 0.9059750511873377,
+      "p1": 0.09402494881266239,
+      "bias": -0.8119501023746752
+    },
+    {
+      "p0": 0.054028544590917,
+      "p1": 0.9459714554090829,
+      "bias": 0.8919429108181659
+    },
+    {
+      "p0": 0.49999999999999994,
+      "p1": 0.5000000000000001,
+      "bias": 1.6653345369377348e-16
+    },
+    {
+      "p0": 0.7992119682694293,
+      "p1": 0.20078803173057058,
+      "bias": -0.5984239365388587
+    },
+    {
+      "p0": 0.12301816185912437,
+      "p1": 0.8769818381408756,
+      "bias": 0.7539636762817512
+    },
+    {
+      "p0": 0.4600546286341038,
+      "p1": 0.5399453713658962,
+      "bias": 0.07989074273179236
+    },
+    {
+      "p0": 0.8353269694497366,
+      "p1": 0.16467303055026333,
+      "bias": -0.6706539388994732
+    },
+    {
+      "p0": 0.9866707400007748,
+      "p1": 0.013329259999225152,
+      "bias": -0.9733414800015496
+    },
+    {
+      "p0": 0.6389900660391322,
+      "p1": 0.3610099339608678,
+      "bias": -0.27798013207826444
+    },
+    {
+      "p0": 0.9769214621402528,
+      "p1": 0.023078537859747165,
+      "bias": -0.9538429242805057
+    },
+    {
+      "p0": 0.9981598349481994,
+      "p1": 0.0018401650518006356,
+      "bias": -0.9963196698963988
+    },
+    {
+      "p0": 0.39786774763506033,
+      "p1": 0.6021322523649397,
+      "bias": 0.2042645047298794
+    },
+    {
+      "p0": 0.5025939037428366,
+      "p1": 0.4974060962571634,
+      "bias": -0.005187807485673213
+    },
+    {
+      "p0": 0.9302267545843725,
+      "p1": 0.06977324541562749,
+      "bias": -0.8604535091687451
+    },
+    {
+      "p0": 0.18782384161258336,
+      "p1": 0.8121761583874167,
+      "bias": 0.6243523167748334
+    },
+    {
+      "p0": 0.9565677056053398,
+      "p1": 0.04343229439466019,
+      "bias": -0.9131354112106795
+    },
+    {
+      "p0": 0.7181156782298644,
+      "p1": 0.2818843217701356,
+      "bias": -0.4362313564597288
+    },
+    {
+      "p0": 0.014287486810582896,
+      "p1": 0.985712513189417,
+      "bias": 0.9714250263788341
+    },
+    {
+      "p0": 0.7779994553086339,
+      "p1": 0.2220005446913661,
+      "bias": -0.5559989106172678
+    },
+    {
+      "p0": 0.5000000000000001,
+      "p1": 0.49999999999999994,
+      "bias": -1.6653345369377348e-16
+    },
+    {
+      "p0": 0.06366138999220394,
+      "p1": 0.936338610007796,
+      "bias": 0.872677220015592
+    },
+    {
+      "p0": 0.8252818277685857,
+      "p1": 0.1747181722314144,
+      "bias": -0.6505636555371713
+    },
+    {
+      "p0": 0.8993059423462423,
+      "p1": 0.10069405765375769,
+      "bias": -0.7986118846924846
+    },
+    {
+      "p0": 0.23364907342528193,
+      "p1": 0.7663509265747181,
+      "bias": 0.5327018531494362
+    },
+    {
+      "p0": 0.9627690331094316,
+      "p1": 0.03723096689056838,
+      "bias": -0.9255380662188633
+    }
+  ],
+  "decoder_time_s": 0.018252624999831824,
+  "decoder_beam_width": 8,
+  "decoder_topk": [
+    {
+      "bitstring": "11100011000101111111011101011001110100110110000010010010010010",
+      "probability": 3.476839357648275e-07
+    },
+    {
+      "bitstring": "11100011000101111111011101011001110100110110000011010010010010",
+      "probability": 3.320827334490015e-07
+    },
+    {
+      "bitstring": "11100011000101111111011101011001110110110110000010010010010010",
+      "probability": 3.3188743128089147e-07
+    },
+    {
+      "bitstring": "11100011000100111111011101011001110100110110000010010010010010",
+      "probability": 3.211727175493873e-07
+    },
+    {
+      "bitstring": "11100011000101111111011101011001110110110110000011010010010010",
+      "probability": 3.1699504647714803e-07
+    },
+    {
+      "bitstring": "11100011000100111111011101011001110100110110000011010010010010",
+      "probability": 3.0676112118446987e-07
+    },
+    {
+      "bitstring": "11100011000100111111011101011001110110110110000010010010010010",
+      "probability": 3.0658071098536996e-07
+    },
+    {
+      "bitstring": "11100011000101111011011101011001110100110110000011010010010010",
+      "probability": 3.063925493585928e-07
+    }
+  ]
+}

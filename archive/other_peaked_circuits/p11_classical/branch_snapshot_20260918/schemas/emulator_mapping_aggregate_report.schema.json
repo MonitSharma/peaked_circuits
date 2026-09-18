@@ -1,0 +1,159 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "case_statuses": {
+      "additionalProperties": true,
+      "title": "Case Statuses",
+      "type": "object"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "emulator_mapping_validation_passed": {
+      "default": false,
+      "title": "Emulator Mapping Validation Passed",
+      "type": "boolean"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "max_cost_per_job": {
+      "title": "Max Cost Per Job",
+      "type": "number"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "ordered_cases": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Ordered Cases",
+      "type": "array"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "provider_result_order_verified": {
+      "default": false,
+      "title": "Provider Result Order Verified",
+      "type": "boolean"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "resolved_positions": {
+      "default": 0,
+      "title": "Resolved Positions",
+      "type": "integer"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "shots_per_case": {
+      "title": "Shots Per Case",
+      "type": "integer"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "failed",
+        "incomplete"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "target": {
+      "title": "Target",
+      "type": "string"
+    },
+    "unresolved_positions": {
+      "default": 98,
+      "title": "Unresolved Positions",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "status",
+    "target",
+    "ordered_cases",
+    "case_statuses",
+    "max_cost_per_job",
+    "shots_per_case"
+  ],
+  "title": "EmulatorMappingAggregateReport",
+  "type": "object"
+}

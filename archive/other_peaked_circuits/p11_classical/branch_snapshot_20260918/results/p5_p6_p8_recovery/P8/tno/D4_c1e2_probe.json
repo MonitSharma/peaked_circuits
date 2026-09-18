@@ -1,0 +1,57 @@
+{
+  "method_family": "TNO",
+  "status": "TIMEOUT",
+  "answer_blind": true,
+  "max_bond": 4,
+  "cutoff": 0.01,
+  "trace": [
+    {
+      "distance": 0,
+      "max_bond": 4,
+      "num_tensors": 40,
+      "elapsed_s": 0.12184270803118125
+    },
+    {
+      "distance": 4,
+      "max_bond": 4,
+      "num_tensors": 40,
+      "elapsed_s": 1.296442124992609
+    },
+    {
+      "distance": 8,
+      "max_bond": 4,
+      "num_tensors": 40,
+      "elapsed_s": 9.807303374982439
+    },
+    {
+      "distance": 12,
+      "max_bond": 4,
+      "num_tensors": 40,
+      "elapsed_s": 46.32372195797507
+    },
+    {
+      "distance": 16,
+      "max_bond": 4,
+      "num_tensors": 40,
+      "elapsed_s": 70.14904258301249
+    },
+    {
+      "distance": 20,
+      "max_bond": 4,
+      "num_tensors": 40,
+      "elapsed_s": 112.41220866702497
+    },
+    {
+      "distance": 24,
+      "max_bond": 4,
+      "num_tensors": 40,
+      "elapsed_s": 132.3728449579794
+    }
+  ],
+  "joint_map_claim": false,
+  "schema": "p12-p8-tno-probe-v1",
+  "problem": "P8",
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "runtime_s": 133.54530645895284,
+  "peak_rss_bytes": 1772863488
+}

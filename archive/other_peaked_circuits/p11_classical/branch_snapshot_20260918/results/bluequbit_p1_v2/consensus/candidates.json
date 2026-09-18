@@ -1,0 +1,809 @@
+{
+  "summary": {
+    "schema": "bluequbit-p1-v2-consensus-v1",
+    "blind": true,
+    "n_bits": 36,
+    "method_names": [
+      "distillation_weak",
+      "mps_weak",
+      "sparse_top1"
+    ],
+    "bits": [
+      {
+        "bit_index_msb_string": 0,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 3,
+          "1": 1
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "0"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 1,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 3
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "0",
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 2,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 1,
+          "1": 3
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 3,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 3
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "0",
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 4,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 1,
+          "1": 3
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 5,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 6,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "0"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 7,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 3,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "0",
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 8,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 3,
+          "1": 1
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "0"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 9,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 1,
+          "1": 3
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 10,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 1,
+          "1": 3
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 11,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 1,
+          "1": 3
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 12,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 3,
+          "1": 1
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "0"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 13,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 3,
+          "1": 1
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "0"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 14,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 15,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 3,
+          "1": 1
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "0"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 16,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 17,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 3,
+          "1": 1
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "0"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 18,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 19,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 20,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 1,
+          "1": 3
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 21,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 3,
+          "1": 1
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "0"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 22,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 23,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 24,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 3,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "0",
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 25,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 3
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "0",
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 26,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 3
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "0",
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 27,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 28,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 3,
+          "1": 1
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "0"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 29,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 3,
+          "1": 1
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "0"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 30,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 1,
+          "1": 3
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 31,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 32,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 1,
+          "1": 3
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 33,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "0"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 34,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "1"
+          ],
+          "distillation_weak": [
+            "0"
+          ]
+        }
+      },
+      {
+        "bit_index_msb_string": 35,
+        "classification": "UNRESOLVED",
+        "selected_value": null,
+        "value_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "supporting_methods": {
+          "sparse_top1": [
+            "0",
+            "1"
+          ],
+          "mps_weak": [
+            "0"
+          ],
+          "distillation_weak": [
+            "1"
+          ]
+        }
+      }
+    ],
+    "strongly_supported": 0,
+    "weakly_supported": 0,
+    "unresolved": 36,
+    "full_candidate": null,
+    "decision": "NO_CONVERGED_BLIND_CANDIDATE"
+  },
+  "candidate_sources": {
+    "sparse": {
+      "k16384": "011010000100001110100000001110010101",
+      "k4096": "110011001101000101010101000101100101",
+      "k4096_cz_first": "110011001101000101010101000101100101",
+      "k65536": "011110000101000000011110110110111001",
+      "blocks_k16384_q2": "100100101101111110100001101111100110",
+      "blocks_k262144_q3_fixed": "001011011111010000001101111100100000",
+      "blocks_k4096_q2": "010011000101110001111111001110101011",
+      "blocks_k4096_q3": "111100100011011010001000101000000101",
+      "blocks_k65536_q2": "001000000111001101000101011111011110",
+      "blocks_k65536_q2_p99": "100111101101011001111000100010000001",
+      "blocks_k65536_q3": "101101000011100000110001111011000011",
+      "blocks_k65536_q3_ufirst": "010001101010000001011110000010110101",
+      "qstvec_sharp_p1_k16384": "001110000111110111000100000111101100",
+      "qstvec_sharp_p1_k65536": "001001111000110000100010001111001001"
+    },
+    "mps": {
+      "mettleq_mps_d64_fiedler_lookahead4": "011110100111000000001000011000101110",
+      "mettleq_mps_d64_fiedler_lookahead4_seed7": "011110100111000000001000011000101110"
+    },
+    "distillation": {
+      "p1_D64_c128_s10000_seed1234": "001111010111001010111011000100111001",
+      "p1_D64_c128_s10000_seed5678": "001011000111001010111011000100111001",
+      "p1_D64_c128_s1000_seed1234": "011111010111001010111011000100111001",
+      "p1_D64_c128_s1000_seed5678": "011011000111001010111011111100111001"
+    }
+  }
+}

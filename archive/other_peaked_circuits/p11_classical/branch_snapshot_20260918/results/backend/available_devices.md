@@ -1,0 +1,24 @@
+# Available Quantinuum devices
+
+Status: **success**
+
+Authenticated Nexus access: **True**
+
+| Device | API surface | Type | Qubits | P12 compatible | Gate set | Access status |
+|---|---|---:|---:|---:|---|---|
+| H2-2E | nexus | emulator | 56 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| H2-1E | nexus | emulator | 56 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| Helios-1SC | nexus | syntax_checker | 98 | yes | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| H2-1SC | nexus | syntax checker | 56 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| Helios-1E | nexus | emulator | 98 | yes | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| H2-1 | nexus | hardware | 56 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| H2-2SC | nexus | syntax checker | 56 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| H2-2 | nexus | hardware | 56 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| Helios-1 | nexus | hardware | 98 | yes | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| H1-1LE | nexus | local_emulator | 20 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| H2-1LE | nexus | local_emulator | 26 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| H1-Emulator | nexus | local_emulator | 20 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| H2-Emulator | nexus | local_emulator | 26 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | listed_for_authenticated_nexus_account |
+| H1-1 | legacy_pytket_quantinuum | hardware | 20 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | legacy_metadata_accessible_account_access_unverified |
+| H2-1 | legacy_pytket_quantinuum | hardware | 56 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | legacy_metadata_accessible_account_access_unverified |
+| H2-2 | legacy_pytket_quantinuum | hardware | 56 | no | Barrier, ClExpr, CopyBits, ExplicitModifier, ExplicitPredicate, JobShotNum, Measure, MultiBit, PhasedX, RNGBound, RNGIndex, RNGNum, RNGSeed, RangePredicate, Reset, Rz, SetBits, TK2, WASM, ZZMax, ZZPhase | legacy_metadata_accessible_account_access_unverified |

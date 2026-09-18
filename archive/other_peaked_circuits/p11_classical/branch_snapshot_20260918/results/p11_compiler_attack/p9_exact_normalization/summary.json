@@ -1,0 +1,36 @@
+{
+  "schema": "exact-normalization-v1",
+  "input": "data/canonical/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "input_sha256": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35",
+  "output": "results/p11_compiler_attack/p9_exact_normalization/peaked_circuit_P9_Hqap_56x1917.normalized.qasm",
+  "output_sha256": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35",
+  "passes": [
+    "Optimize1qGatesDecomposition",
+    "RemoveIdentityEquivalent",
+    "CommutativeCancellation",
+    "InverseCancellation(CZ)"
+  ],
+  "before": {
+    "total_gates": 5807,
+    "one_qubit_gates": 3890,
+    "two_qubit_gates": 1917,
+    "depth": 207,
+    "operation_counts": {
+      "rzz": 1917,
+      "u": 3890
+    }
+  },
+  "after": {
+    "total_gates": 5807,
+    "one_qubit_gates": 3890,
+    "two_qubit_gates": 1917,
+    "depth": 207,
+    "operation_counts": {
+      "rzz": 1917,
+      "u": 3890
+    }
+  },
+  "two_qubit_reduction_fraction": 0.0,
+  "exact_mode": true,
+  "approximate_synthesis": false
+}

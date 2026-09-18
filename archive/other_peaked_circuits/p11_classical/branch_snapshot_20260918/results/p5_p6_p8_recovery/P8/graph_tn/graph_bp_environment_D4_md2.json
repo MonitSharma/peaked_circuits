@@ -1,0 +1,67 @@
+{
+  "schema": "p12-p8-graph-bp-environment-v1",
+  "problem": "P8",
+  "method_family": "graph-BP",
+  "answer_blind": true,
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "max_bond": 4,
+  "max_distance": 2,
+  "edge_count": 63,
+  "invalid_factor_count": 3,
+  "invalid_factors": [
+    {
+      "edge": [
+        5,
+        6
+      ],
+      "min_factor": -0.15702945177880168,
+      "matrix": [
+        [
+          0.1527120883220262,
+          0.6566811700929603
+        ],
+        [
+          0.3476361933638151,
+          -0.15702945177880168
+        ]
+      ]
+    },
+    {
+      "edge": [
+        14,
+        15
+      ],
+      "min_factor": -0.014090687066999008,
+      "matrix": [
+        [
+          0.488319833624258,
+          0.01990479302933912
+        ],
+        [
+          0.5058660604134019,
+          -0.014090687066999008
+        ]
+      ]
+    },
+    {
+      "edge": [
+        15,
+        23
+      ],
+      "min_factor": -0.005979143540542464,
+      "matrix": [
+        [
+          0.48273944072379565,
+          0.5114464533138643
+        ],
+        [
+          -0.005979143540542464,
+          0.011793249502882575
+        ]
+      ]
+    }
+  ],
+  "factor_min": 0.0005073136894443865,
+  "runtime_s": 7.550124166009482,
+  "promotion": "REJECTED_INVALID_ENVIRONMENT_FACTORS"
+}

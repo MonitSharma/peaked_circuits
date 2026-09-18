@@ -1,0 +1,13 @@
+{
+  "schema": "bluequbit-p1-ordering-comparison-v1",
+  "blind": true,
+  "circuit_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "fixed_parameters": {"max_bond": 64, "cutoff": 0.01, "routing_strategy": "restore", "routing_seed": 0, "samples": 100},
+  "runs": [
+    {"run_id": "mettleq_mps_d64", "ordering": "original", "runtime_s": 77.0933535, "max_bond_ever": 64, "relative_discarded_weight_sum": 131.5869363, "routing_swaps": 31108, "svd_calls": 34203},
+    {"run_id": "mettleq_mps_d64_fiedler", "ordering": "fiedler", "runtime_s": 67.4853320, "max_bond_ever": 64, "relative_discarded_weight_sum": 125.4913053, "routing_swaps": 31108, "svd_calls": 30251},
+    {"run_id": "mettleq_mps_d64_weighted_desc", "ordering": "weighted_degree_desc", "runtime_s": 75.8275943, "max_bond_ever": 64, "relative_discarded_weight_sum": 132.44, "routing_swaps": 31108, "svd_calls": 34203}
+  ],
+  "fiedler_vs_original": {"mean_absolute_marginal_difference": 0.27638888888888885, "same_modal_bits": 15},
+  "decision": "PROMISING exploratory Mac candidate only: improved runtime/discarded weight, but no stable blind output evidence and no reduction in routing swaps."
+}

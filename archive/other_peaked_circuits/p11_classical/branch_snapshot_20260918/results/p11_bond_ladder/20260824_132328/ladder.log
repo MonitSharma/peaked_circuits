@@ -1,0 +1,14 @@
+[13:23:28] === preflight ===
+[13:23:28] solver hardening present (equalize_norms + quimb QR guard)
+[13:23:28] disk free: 81 GiB | threads: 5 | RSS watchdog: 18 GB
+[13:23:28] output: /Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/20260824_132328
+[13:23:28] === stage 0: bounded D4096 probe + full P9 control ===
+[13:23:28] --- START stage0_p9_probe_cut2e3_D4096 (wall cap 15 min) ---
+[13:23:38] --- END stage0_p9_probe_cut2e3_D4096: exit_0 | 0 min | peak RSS 0.0 GB
+    work_consumed=8.0  reason=max_work_gates  peak_bond=256.0  peak_elems=426400.0
+    bond_cap=4096.0  rows_at_cap=0  first_stage_at_cap=None   <-- cap binding?
+[13:23:38] --- START stage0_p9_control_cut6e4_D512 (wall cap 60 min) ---
+[13:28:19] --- END stage0_p9_control_cut6e4_D512: exit_139 | 4 min | peak RSS 1.7 GB
+    work_consumed=108.0  reason=None  peak_bond=508.0  peak_elems=1037144.0
+    bond_cap=512.0  rows_at_cap=0  first_stage_at_cap=None   <-- cap binding?
+[13:28:19] stage 0 FAIL: P9 control did not reproduce. Do NOT trust the ladder.

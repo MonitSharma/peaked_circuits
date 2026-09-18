@@ -1,0 +1,25 @@
+2026-08-25 06:40:56,697 [WARNING] live plot.png generation disabled: No module named 'matplotlib'
+[Cycle 1] 7/1885 gates (0.4 %) after 13 sec
+[Cycle 2] 13/1885 gates (0.7 %) after 24 sec
+[Cycle 3] 16/1885 gates (0.8 %) after 34 sec
+[Cycle 4] 19/1885 gates (1.0 %) after 47 sec
+[Cycle 5] 25/1885 gates (1.3 %) after 57 sec
+[Cycle 6] 35/1885 gates (1.9 %) after 71 sec
+[Cycle 7] 39/1885 gates (2.1 %) after 82 sec
+[Cycle 8] 45/1885 gates (2.4 %) after 90 sec
+[Cycle 9] 60/1885 gates (3.2 %) after 99 sec
+/Users/monitsharma/Code/p12-helios-recovery/.venv-p9-isolated/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
+  warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
+[Cycle 10] 74/1885 gates (3.9 %) after 119 sec
+[Cycle 11] 83/1885 gates (4.4 %) after 133 sec
+[Cycle 12] 86/1885 gates (4.6 %) after 148 sec
+[Cycle 13] 89/1885 gates (4.7 %) after 160 sec
+[Cycle 14] 90/1885 gates (4.8 %) after 175 sec
+[Cycle 15] 93/1885 gates (4.9 %) after 201 sec
+[Cycle 16] 95/1885 gates (5.0 %) after 212 sec
+[Cycle 17] 98/1885 gates (5.2 %) after 225 sec
+[Cycle 18] 101/1885 gates (5.4 %) after 239 sec
+[Cycle 19] 103/1885 gates (5.5 %) after 251 sec
+[Cycle 20] 104/1885 gates (5.5 %) after 268 sec
+[Cycle 21] 105/1885 gates (5.6 %) after 281 sec
+[Cycle 22] 106/1885 gates (5.6 %) after 298 sec

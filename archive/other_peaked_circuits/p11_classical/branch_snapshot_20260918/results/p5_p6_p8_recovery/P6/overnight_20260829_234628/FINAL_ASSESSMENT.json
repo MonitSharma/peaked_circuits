@@ -1,0 +1,32 @@
+{
+  "terminal_campaign_status": "CAMPAIGN_STOPPED_BY_USER",
+  "qasm_sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
+  "total_work_gates": 2593,
+  "best_observed_gate_count": 180,
+  "credible_candidate": null,
+  "portal_submission": false,
+  "stages": [
+    {
+      "name": "stage_a_p6_d512_cut1e3",
+      "status": "terminated_by_no_progress_guard",
+      "work_gates": 180,
+      "completed_all_gates": false,
+      "evidence": "stage_a_p6_d512_cut1e3/"
+    },
+    {
+      "name": "stage_b_p6_pair_cut6e4",
+      "status": "wall_limit",
+      "work_gates": 24,
+      "completed_all_gates": false,
+      "evidence": "stage_b_p6_pair_cut6e4/"
+    },
+    {
+      "name": "stage_c_p6_pair_cut1e3",
+      "status": "stopped_by_user",
+      "work_gates": 24,
+      "completed_all_gates": false,
+      "evidence": "stage_c_p6_pair_cut1e3/"
+    }
+  ],
+  "assessment": "No partial output is a candidate. No run processed all 2593 gates, so no P6 answer is accepted or submitted."
+}

@@ -1,0 +1,213 @@
+{
+  "$defs": {
+    "NexusCostItem": {
+      "additionalProperties": false,
+      "properties": {
+        "api_used": {
+          "default": "qnexus.qir.cost_confidence",
+          "title": "Api Used",
+          "type": "string"
+        },
+        "bitcode_sha256": {
+          "title": "Bitcode Sha256",
+          "type": "string"
+        },
+        "confidence": {
+          "title": "Confidence",
+          "type": "number"
+        },
+        "cost_job_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cost Job Ref"
+        },
+        "estimated_hqcs": {
+          "title": "Estimated Hqcs",
+          "type": "number"
+        },
+        "program_name": {
+          "title": "Program Name",
+          "type": "string"
+        },
+        "provider_timestamp": {
+          "format": "date-time",
+          "title": "Provider Timestamp",
+          "type": "string"
+        },
+        "remote_costing_job_created": {
+          "const": true,
+          "default": true,
+          "title": "Remote Costing Job Created",
+          "type": "boolean"
+        },
+        "shots": {
+          "title": "Shots",
+          "type": "integer"
+        },
+        "target": {
+          "const": "Helios-1E",
+          "title": "Target",
+          "type": "string"
+        }
+      },
+      "required": [
+        "program_name",
+        "bitcode_sha256",
+        "target",
+        "shots",
+        "estimated_hqcs",
+        "confidence"
+      ],
+      "title": "NexusCostItem",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "api_used": {
+      "title": "Api Used",
+      "type": "string"
+    },
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "cost_job_reference_available_from_api": {
+      "default": false,
+      "title": "Cost Job Reference Available From Api",
+      "type": "boolean"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "diagnostics": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Diagnostics",
+      "type": "array"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "items": {
+      "items": {
+        "$ref": "#/$defs/NexusCostItem"
+      },
+      "title": "Items",
+      "type": "array"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "remote_costing_job_created": {
+      "title": "Remote Costing Job Created",
+      "type": "boolean"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "supported",
+        "failed"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "target": {
+      "title": "Target",
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "target",
+    "api_used",
+    "remote_costing_job_created"
+  ],
+  "title": "NexusCostReport",
+  "type": "object"
+}

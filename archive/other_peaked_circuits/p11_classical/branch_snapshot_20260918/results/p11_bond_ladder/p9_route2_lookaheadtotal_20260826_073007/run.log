@@ -1,0 +1,175 @@
+2026-08-26 07:30:10,751 [WARNING] live plot.png generation disabled: No module named 'matplotlib'
+[Cycle 1] 7/1885 gates (0.4 %) after 15 sec
+[Cycle 2] 10/1885 gates (0.5 %) after 26 sec
+[Cycle 3] 17/1885 gates (0.9 %) after 39 sec
+[Cycle 4] 18/1885 gates (1.0 %) after 50 sec
+[Cycle 5] 25/1885 gates (1.3 %) after 67 sec
+[Cycle 6] 31/1885 gates (1.6 %) after 78 sec
+[Cycle 7] 48/1885 gates (2.5 %) after 99 sec
+[Cycle 8] 65/1885 gates (3.4 %) after 122 sec
+[Cycle 9] 78/1885 gates (4.1 %) after 162 sec
+[Cycle 10] 89/1885 gates (4.7 %) after 182 sec
+[Cycle 11] 92/1885 gates (4.9 %) after 194 sec
+[Cycle 12] 95/1885 gates (5.0 %) after 207 sec
+[Cycle 13] 103/1885 gates (5.5 %) after 240 sec
+[Cycle 14] 112/1885 gates (5.9 %) after 258 sec
+[Cycle 15] 128/1885 gates (6.8 %) after 282 sec
+[Cycle 16] 133/1885 gates (7.1 %) after 311 sec
+[Cycle 17] 137/1885 gates (7.3 %) after 336 sec
+[Cycle 18] 156/1885 gates (8.3 %) after 356 sec
+[Cycle 19] 171/1885 gates (9.1 %) after 371 sec
+[Cycle 20] 175/1885 gates (9.3 %) after 396 sec
+[Cycle 21] 178/1885 gates (9.4 %) after 435 sec
+[Cycle 22] 180/1885 gates (9.5 %) after 498 sec
+[Cycle 23] 185/1885 gates (9.8 %) after 519 sec
+[Cycle 24] 191/1885 gates (10.1 %) after 538 sec
+[Cycle 25] 198/1885 gates (10.5 %) after 547 sec
+[Cycle 26] 211/1885 gates (11.2 %) after 560 sec
+[Cycle 27] 236/1885 gates (12.5 %) after 598 sec
+[Cycle 28] 247/1885 gates (13.1 %) after 633 sec
+2026-08-26 07:40:41,943 [WARNING] samples.png generation disabled: No module named 'matplotlib'
+{
+  "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "tag": "run",
+  "num_qubits": 56,
+  "initial_ops": {
+    "u": 3890,
+    "rzz": 1917
+  },
+  "consolidated_ops": {
+    "unitary": 1885
+  },
+  "compress_time_s": 632.9500818749948,
+  "stats_rows": 1811,
+  "run_status": "complete",
+  "environment": {
+    "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:37:53) [Clang 19.1.7 ]",
+    "python_executable": "~/.conda/envs/p9-openblas/bin/python",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "qiskit": "1.4.5",
+    "quimb": "1.11.2",
+    "numpy": "2.2.6",
+    "numpy_config": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"18.1.8\",\n      \"commands\": \"arm64-apple-darwin20.0.0-clang\",\n      \"args\": \"-ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/numpy_1747544633931/work=/usr/local/src/conda/numpy-2.2.6, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\",\n      \"linker args\": \"-Wl,-headerpad_max_install_names, -Wl,-dead_strip_dylibs, -Wl,-rpath,~/.conda/envs/p9-openblas/lib, -L~/.conda/envs/p9-openblas/lib, -ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/numpy_1747544633931/work=/usr/local/src/conda/numpy-2.2.6, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.1.0\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"18.1.8\",\n      \"commands\": \"arm64-apple-darwin20.0.0-clang++\",\n      \"args\": \"-ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -stdlib=libc++, -fvisibility-inlines-hidden, -fmessage-length=0, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/numpy_1747544633931/work=/usr/local/src/conda/numpy-2.2.6, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\",\n      \"linker args\": \"-Wl,-headerpad_max_install_names, -Wl,-dead_strip_dylibs, -Wl,-rpath,~/.conda/envs/p9-openblas/lib, -L~/.conda/envs/p9-openblas/lib, -ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -stdlib=libc++, -fvisibility-inlines-hidden, -fmessage-length=0, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/numpy_1747544633931/work=/usr/local/src/conda/numpy-2.2.6, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"arm64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"build\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"cross-compiled\": true\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"blas\",\n      \"found\": true,\n      \"version\": \"3.9.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"~/.conda/envs/p9-openblas/include\",\n      \"lib directory\": \"~/.conda/envs/p9-openblas/lib\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"~/.conda/envs/p9-openblas/lib/pkgconfig\"\n    },\n    \"lapack\": {\n      \"name\": \"lapack\",\n      \"found\": true,\n      \"version\": \"3.9.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"~/.conda/envs/p9-openblas/include\",\n      \"lib directory\": \"~/.conda/envs/p9-openblas/lib\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"~/.conda/envs/p9-openblas/lib/pkgconfig\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"~/.conda/envs/p9-openblas/bin/python\",\n    \"version\": \"3.10\"\n  },\n  \"SIMD Extensions\": {\n    \"baseline\": [\n      \"NEON\",\n      \"NEON_FP16\",\n      \"NEON_VFPV4\",\n      \"ASIMD\"\n    ],\n    \"found\": [\n      \"ASIMDHP\"\n    ],\n    \"not found\": [\n      \"ASIMDFHM\"\n    ]\n  }\n}\n",
+    "thread_env": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "numpy_runtime": "WARNING: `threadpoolctl` not found in system! Install it by `pip install threadpoolctl`. Once installed, try `np.show_runtime` again for more detailed build information\n[{'numpy_version': '2.2.6',\n  'python': '3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:37:53) '\n            '[Clang 19.1.7 ]',\n  'uname': uname_result(system='Darwin', node='<redacted>', release='25.5.0', version='Darwin Kernel Version 25.5.0: Tue Jun  9 22:28:29 PDT 2026; root:xnu-12377.121.10~1/RELEASE_ARM64_T6030', machine='arm64')},\n {'simd_extensions': {'baseline': ['NEON', 'NEON_FP16', 'NEON_VFPV4', 'ASIMD'],\n                      'found': ['ASIMDHP'],\n                      'not_found': ['ASIMDFHM']}}]\n",
+    "numpy_multiarray_umath": "~/.conda/envs/p9-openblas/lib/python3.10/site-packages/numpy/_core/_multiarray_umath.cpython-310-darwin.so",
+    "scipy": "1.15.2",
+    "scipy_config": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"18.1.8\",\n      \"commands\": \"arm64-apple-darwin20.0.0-clang\",\n      \"args\": \"-ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/work=/usr/local/src/conda/scipy-split-1.15.2, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\",\n      \"linker args\": \"-Wl,-headerpad_max_install_names, -Wl,-dead_strip_dylibs, -Wl,-rpath,~/.conda/envs/p9-openblas/lib, -L~/.conda/envs/p9-openblas/lib, -ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/work=/usr/local/src/conda/scipy-split-1.15.2, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.0.12\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"18.1.8\",\n      \"commands\": \"arm64-apple-darwin20.0.0-clang++\",\n      \"args\": \"-ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -stdlib=libc++, -fvisibility-inlines-hidden, -fmessage-length=0, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/work=/usr/local/src/conda/scipy-split-1.15.2, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\",\n      \"linker args\": \"-Wl,-headerpad_max_install_names, -Wl,-dead_strip_dylibs, -Wl,-rpath,~/.conda/envs/p9-openblas/lib, -L~/.conda/envs/p9-openblas/lib, -ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -stdlib=libc++, -fvisibility-inlines-hidden, -fmessage-length=0, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/work=/usr/local/src/conda/scipy-split-1.15.2, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\"\n    },\n    \"fortran\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld64\",\n      \"version\": \"13.2.0\",\n      \"commands\": \"/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/_build_env/bin/arm64-apple-darwin20.0.0-gfortran\",\n      \"args\": \"-march=armv8.3-a, -ftree-vectorize, -fPIC, -fno-stack-protector, -O2, -pipe, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/work=/usr/local/src/conda/scipy-split-1.15.2, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix\",\n      \"linker args\": \"-Wl,-headerpad_max_install_names, -Wl,-dead_strip_dylibs, -Wl,-rpath,~/.conda/envs/p9-openblas/lib, -L~/.conda/envs/p9-openblas/lib, -march=armv8.3-a, -ftree-vectorize, -fPIC, -fno-stack-protector, -O2, -pipe, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/work=/usr/local/src/conda/scipy-split-1.15.2, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix\"\n    },\n    \"pythran\": {\n      \"version\": \"0.17.0\",\n      \"include directory\": \"../../_build_env/venv/lib/python3.10/site-packages/pythran\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"arm64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"build\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"cross-compiled\": true\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"blas\",\n      \"found\": true,\n      \"version\": \"3.9.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"~/.conda/envs/p9-openblas/include\",\n      \"lib directory\": \"~/.conda/envs/p9-openblas/lib\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"~/.conda/envs/p9-openblas/lib/pkgconfig\"\n    },\n    \"lapack\": {\n      \"name\": \"lapack\",\n      \"found\": true,\n      \"version\": \"3.9.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"~/.conda/envs/p9-openblas/include\",\n      \"lib directory\": \"~/.conda/envs/p9-openblas/lib\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"~/.conda/envs/p9-openblas/lib/pkgconfig\"\n    },\n    \"pybind11\": {\n      \"name\": \"pybind11\",\n      \"version\": \"2.13.6\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"~/.conda/envs/p9-openblas/include\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/_build_env/bin/python3.10\",\n    \"version\": \"3.10\"\n  }\n}\n",
+    "scipy_flapack": "~/.conda/envs/p9-openblas/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-darwin.so"
+  },
+  "parameters": {
+    "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+    "outdir": "/Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/p9_route2_lookaheadtotal_20260826_073007",
+    "tag": "run",
+    "samples": 1000,
+    "expected_bitstring": "01101110111001100000100000001010011100101101010111110111",
+    "seed": 123,
+    "max_bond": 512,
+    "cutoff": 0.0006,
+    "unswap_threshold": 1000000.0,
+    "center_ratio": 0.5,
+    "max_its": 20,
+    "sabre_trials": 90,
+    "post_sabre_trials": 20,
+    "absorb_score": "total_elems",
+    "route_candidates": 2,
+    "route_score": "lookahead_total",
+    "route_score_lookahead": 8,
+    "parallel_route_candidates": false,
+    "route_candidate_workers": null,
+    "route_seed_stride": 1009,
+    "unswap_select_mode": "bond",
+    "unswap_alignment_weight": 0.0,
+    "unswap_alignment_protect_gain": null,
+    "unswap_alignment_max_replacements": null,
+    "unswap_alignment_tie_loss": 1.0,
+    "unswap_route_proxy_weight": 0.0,
+    "unswap_route_proxy_lookahead": 8,
+    "unswap_route_proxy_include_swaps": false,
+    "unswap_route_proxy_allow_nonbond": false,
+    "unswap_route_proxy_policy": "veto",
+    "unswap_route_proxy_min_benefit": 1.0,
+    "unswap_route_proxy_max_bond_loss": 0.0,
+    "unswap_route_proxy_protect_gain": null,
+    "unswap_route_proxy_max_cycles": null,
+    "unswap_pair_lookahead_limit": 8,
+    "swap_gate_representation": "current",
+    "max_unswap_cycles": null,
+    "max_work_gates": 250,
+    "abort_after_no_progress_unswap_cycles": 40,
+    "parallel_absorb_probes": false,
+    "parallel_rewire": false,
+    "adaptive_parallel_rewire": false,
+    "adaptive_parallel_rewire_min_speedup": 1.15,
+    "unswap_probe_max_bond": null,
+    "unswap_probe_cutoff": null,
+    "reuse_full_swap_probe": true,
+    "unswap_trigger_max_bond": 128,
+    "unswap_max_swaps_per_step": null,
+    "unswap_hot_bonds": 0,
+    "unswap_hot_radius": 0,
+    "unswap_adaptive_stop_max_bond": null,
+    "unswap_adaptive_stop_min_rel_improvement": null,
+    "unswap_adaptive_stop_min_iteration": 0,
+    "skip_sampling": true,
+    "plots": true,
+    "plot_interval_s": 30.0,
+    "console_log_level": "WARNING"
+  },
+  "partial": false,
+  "leftover_left_layers": 1300,
+  "leftover_right_layers": 1250,
+  "final_max_bond": 16,
+  "final_total_elems": 10144,
+  "stage_rows": {
+    "rewiring": 58,
+    "absorbing": 597,
+    "unswapping": 1098,
+    "unswap_cycle_summary": 28,
+    "cycle_progress": 28,
+    "termination": 1,
+    "timing_summary": 1
+  },
+  "peak_max_bond": 512.0,
+  "peak_total_elems": 1068384.0,
+  "peak_total_shapes": 5970.0,
+  "last_work_consumed": 252.0,
+  "termination_reason": "max_work_gates",
+  "termination_detail": "consumed 252 work gates; target was 250",
+  "termination_unswap_cycle": 28,
+  "initial_rewire_time_s": 1.6595417080097832,
+  "initial_rewire_wall_time_s": 1.659835458995076,
+  "post_unswap_rewire_time_s": 250.19736067010672,
+  "post_unswap_rewire_wall_time_s": 250.2060970409657,
+  "absorb_probe_time_s": 107.87614962813677,
+  "absorb_probe_wall_time_s": 108.39086019404931,
+  "absorb_lookahead_time_s": 0.0,
+  "unswap_time_s": 270.2612166290055,
+  "rewire_time_s": 251.8569023781165,
+  "accounted_time_s": 630.5089792011713,
+  "rewire_wall_time_s": 251.86593249996076,
+  "accounted_wall_time_s": 630.5180093230156,
+  "truncation_diagnostics": {
+    "max_bond_limit": 512.0,
+    "rows_at_max_bond": 1,
+    "rows_at_max_bond_by_stage": {
+      "unswapping": 1
+    },
+    "absorb_probe_left_hits_max_bond": 3,
+    "absorb_probe_right_hits_max_bond": 0,
+    "selected_absorbs_hit_max_bond": 0,
+    "absorb_probe_left_over_unswap_threshold": 4,
+    "absorb_probe_right_over_unswap_threshold": 0,
+    "first_stage_at_max_bond": "unswapping",
+    "first_unswap_cycle_at_max_bond": null,
+    "first_time_at_max_bond_s": 227.71196983399568
+  },
+  "sampling_skipped_reason": "disabled"
+}

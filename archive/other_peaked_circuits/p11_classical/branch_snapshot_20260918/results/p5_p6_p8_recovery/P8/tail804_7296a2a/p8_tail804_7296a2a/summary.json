@@ -1,0 +1,504 @@
+{
+  "qasm": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P8_grid_888_iswap.qasm",
+  "tag": "p8_tail804_7296a2a",
+  "num_qubits": 40,
+  "initial_ops": {
+    "u3": 1816,
+    "iswap": 888
+  },
+  "consolidated_ops": {
+    "unitary": 808
+  },
+  "compress_time_s": 3662.7470105840002,
+  "stats_rows": 4832,
+  "run_status": "complete",
+  "environment": {
+    "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:37:53) [Clang 19.1.7 ]",
+    "python_executable": "~/.conda/envs/p9-openblas/bin/python",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "qiskit": "1.4.5",
+    "quimb": "1.11.2",
+    "numpy": "2.2.6",
+    "numpy_config": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"18.1.8\",\n      \"commands\": \"arm64-apple-darwin20.0.0-clang\",\n      \"args\": \"-ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/numpy_1747544633931/work=/usr/local/src/conda/numpy-2.2.6, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\",\n      \"linker args\": \"-Wl,-headerpad_max_install_names, -Wl,-dead_strip_dylibs, -Wl,-rpath,~/.conda/envs/p9-openblas/lib, -L~/.conda/envs/p9-openblas/lib, -ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/numpy_1747544633931/work=/usr/local/src/conda/numpy-2.2.6, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.1.0\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"18.1.8\",\n      \"commands\": \"arm64-apple-darwin20.0.0-clang++\",\n      \"args\": \"-ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -stdlib=libc++, -fvisibility-inlines-hidden, -fmessage-length=0, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/numpy_1747544633931/work=/usr/local/src/conda/numpy-2.2.6, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\",\n      \"linker args\": \"-Wl,-headerpad_max_install_names, -Wl,-dead_strip_dylibs, -Wl,-rpath,~/.conda/envs/p9-openblas/lib, -L~/.conda/envs/p9-openblas/lib, -ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -stdlib=libc++, -fvisibility-inlines-hidden, -fmessage-length=0, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/numpy_1747544633931/work=/usr/local/src/conda/numpy-2.2.6, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"arm64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"build\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"cross-compiled\": true\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"blas\",\n      \"found\": true,\n      \"version\": \"3.9.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"~/.conda/envs/p9-openblas/include\",\n      \"lib directory\": \"~/.conda/envs/p9-openblas/lib\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"~/.conda/envs/p9-openblas/lib/pkgconfig\"\n    },\n    \"lapack\": {\n      \"name\": \"lapack\",\n      \"found\": true,\n      \"version\": \"3.9.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"~/.conda/envs/p9-openblas/include\",\n      \"lib directory\": \"~/.conda/envs/p9-openblas/lib\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"~/.conda/envs/p9-openblas/lib/pkgconfig\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"~/.conda/envs/p9-openblas/bin/python\",\n    \"version\": \"3.10\"\n  },\n  \"SIMD Extensions\": {\n    \"baseline\": [\n      \"NEON\",\n      \"NEON_FP16\",\n      \"NEON_VFPV4\",\n      \"ASIMD\"\n    ],\n    \"found\": [\n      \"ASIMDHP\"\n    ],\n    \"not found\": [\n      \"ASIMDFHM\"\n    ]\n  }\n}\n",
+    "thread_env": {
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3",
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3"
+    },
+    "numpy_runtime": "WARNING: `threadpoolctl` not found in system! Install it by `pip install threadpoolctl`. Once installed, try `np.show_runtime` again for more detailed build information\n[{'numpy_version': '2.2.6',\n  'python': '3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:37:53) '\n            '[Clang 19.1.7 ]',\n  'uname': uname_result(system='Darwin', node='<redacted>', release='25.6.0', version='Darwin Kernel Version 25.6.0: Fri Jul 31 19:16:36 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6030', machine='arm64')},\n {'simd_extensions': {'baseline': ['NEON', 'NEON_FP16', 'NEON_VFPV4', 'ASIMD'],\n                      'found': ['ASIMDHP'],\n                      'not_found': ['ASIMDFHM']}}]\n",
+    "numpy_multiarray_umath": "~/.conda/envs/p9-openblas/lib/python3.10/site-packages/numpy/_core/_multiarray_umath.cpython-310-darwin.so",
+    "scipy": "1.15.2",
+    "scipy_config": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"18.1.8\",\n      \"commands\": \"arm64-apple-darwin20.0.0-clang\",\n      \"args\": \"-ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/work=/usr/local/src/conda/scipy-split-1.15.2, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\",\n      \"linker args\": \"-Wl,-headerpad_max_install_names, -Wl,-dead_strip_dylibs, -Wl,-rpath,~/.conda/envs/p9-openblas/lib, -L~/.conda/envs/p9-openblas/lib, -ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/work=/usr/local/src/conda/scipy-split-1.15.2, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.0.12\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"18.1.8\",\n      \"commands\": \"arm64-apple-darwin20.0.0-clang++\",\n      \"args\": \"-ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -stdlib=libc++, -fvisibility-inlines-hidden, -fmessage-length=0, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/work=/usr/local/src/conda/scipy-split-1.15.2, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\",\n      \"linker args\": \"-Wl,-headerpad_max_install_names, -Wl,-dead_strip_dylibs, -Wl,-rpath,~/.conda/envs/p9-openblas/lib, -L~/.conda/envs/p9-openblas/lib, -ftree-vectorize, -fPIC, -fstack-protector-strong, -O2, -pipe, -stdlib=libc++, -fvisibility-inlines-hidden, -fmessage-length=0, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/work=/usr/local/src/conda/scipy-split-1.15.2, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix, -D_FORTIFY_SOURCE=2, -isystem, ~/.conda/envs/p9-openblas/include, -mmacosx-version-min=11.0, -mmacosx-version-min=11.0\"\n    },\n    \"fortran\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld64\",\n      \"version\": \"13.2.0\",\n      \"commands\": \"/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/_build_env/bin/arm64-apple-darwin20.0.0-gfortran\",\n      \"args\": \"-march=armv8.3-a, -ftree-vectorize, -fPIC, -fno-stack-protector, -O2, -pipe, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/work=/usr/local/src/conda/scipy-split-1.15.2, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix\",\n      \"linker args\": \"-Wl,-headerpad_max_install_names, -Wl,-dead_strip_dylibs, -Wl,-rpath,~/.conda/envs/p9-openblas/lib, -L~/.conda/envs/p9-openblas/lib, -march=armv8.3-a, -ftree-vectorize, -fPIC, -fno-stack-protector, -O2, -pipe, -isystem, ~/.conda/envs/p9-openblas/include, -fdebug-prefix-map=/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/work=/usr/local/src/conda/scipy-split-1.15.2, -fdebug-prefix-map=~/.conda/envs/p9-openblas=/usr/local/src/conda-prefix\"\n    },\n    \"pythran\": {\n      \"version\": \"0.17.0\",\n      \"include directory\": \"../../_build_env/venv/lib/python3.10/site-packages/pythran\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"arm64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"build\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"cross-compiled\": true\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"blas\",\n      \"found\": true,\n      \"version\": \"3.9.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"~/.conda/envs/p9-openblas/include\",\n      \"lib directory\": \"~/.conda/envs/p9-openblas/lib\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"~/.conda/envs/p9-openblas/lib/pkgconfig\"\n    },\n    \"lapack\": {\n      \"name\": \"lapack\",\n      \"found\": true,\n      \"version\": \"3.9.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"~/.conda/envs/p9-openblas/include\",\n      \"lib directory\": \"~/.conda/envs/p9-openblas/lib\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"~/.conda/envs/p9-openblas/lib/pkgconfig\"\n    },\n    \"pybind11\": {\n      \"name\": \"pybind11\",\n      \"version\": \"2.13.6\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"~/.conda/envs/p9-openblas/include\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/Users/runner/miniforge3/conda-bld/scipy-split_1739790705989/_build_env/bin/python3.10\",\n    \"version\": \"3.10\"\n  }\n}\n",
+    "scipy_flapack": "~/.conda/envs/p9-openblas/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-darwin.so"
+  },
+  "parameters": {
+    "qasm": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P8_grid_888_iswap.qasm",
+    "outdir": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P8/tail804_7296a2a",
+    "tag": "p8_tail804_7296a2a",
+    "samples": 1000,
+    "decoder": "beam",
+    "decoder_beam_width": 8,
+    "tail_materialize": true,
+    "tail_limit": 8,
+    "materialize_max_bond": 512,
+    "materialize_cutoff": 0.0006,
+    "expected_bitstring": "01101110111001100000100000001010011100101101010111110111",
+    "seed": 2024,
+    "max_bond": 512,
+    "cutoff": 0.0006,
+    "unswap_threshold": 500000.0,
+    "center_ratio": 0.5,
+    "flip_freq": 2,
+    "flip_schedule": null,
+    "flip_schedule_switch_gate": 760,
+    "absorb_policy": "greedy",
+    "absorb_balance_delta": 0.05,
+    "cycle_memory": false,
+    "cycle_tabu_cycles": 1,
+    "cycle_protect_cycles": 2,
+    "max_its": 20,
+    "sabre_trials": 90,
+    "post_sabre_trials": 50,
+    "absorb_score": "total_elems",
+    "route_candidates": 4,
+    "route_score": "bond_profile",
+    "route_score_lookahead": 8,
+    "parallel_route_candidates": false,
+    "route_candidate_workers": null,
+    "route_seed_stride": 1009,
+    "unswap_select_mode": "bond",
+    "unswap_alignment_weight": 0.0,
+    "unswap_alignment_protect_gain": null,
+    "unswap_alignment_max_replacements": null,
+    "unswap_alignment_tie_loss": 1.0,
+    "unswap_route_proxy_weight": 0.0,
+    "unswap_route_proxy_lookahead": 8,
+    "unswap_route_proxy_include_swaps": false,
+    "unswap_route_proxy_allow_nonbond": false,
+    "unswap_route_proxy_policy": "veto",
+    "unswap_route_proxy_min_benefit": 1.0,
+    "unswap_route_proxy_max_bond_loss": 0.0,
+    "unswap_route_proxy_protect_gain": null,
+    "unswap_route_proxy_max_cycles": null,
+    "unswap_pair_lookahead_limit": 8,
+    "late_gate_beam": false,
+    "late_gate_beam_remaining": 40,
+    "late_gate_beam_width": 16,
+    "late_gate_beam_depth": 24,
+    "late_gate_beam_no_progress_trigger": 1,
+    "swap_gate_representation": "current",
+    "max_unswap_cycles": null,
+    "max_work_gates": null,
+    "abort_after_no_progress_unswap_cycles": 60,
+    "parallel_absorb_probes": false,
+    "parallel_rewire": false,
+    "adaptive_parallel_rewire": false,
+    "adaptive_parallel_rewire_min_speedup": 1.15,
+    "unswap_probe_max_bond": null,
+    "unswap_probe_cutoff": null,
+    "reuse_full_swap_probe": true,
+    "unswap_trigger_max_bond": null,
+    "unswap_max_swaps_per_step": null,
+    "unswap_hot_bonds": 0,
+    "unswap_hot_radius": 0,
+    "unswap_adaptive_stop_max_bond": null,
+    "unswap_adaptive_stop_min_rel_improvement": null,
+    "unswap_adaptive_stop_min_iteration": 0,
+    "skip_sampling": false,
+    "plots": false,
+    "plot_interval_s": 30.0,
+    "console_log_level": "WARNING"
+  },
+  "partial": false,
+  "leftover_left_layers": 2,
+  "leftover_right_layers": 17,
+  "final_max_bond": 105,
+  "final_total_elems": 215604,
+  "stage_rows": {
+    "rewiring": 193,
+    "absorbing": 1315,
+    "unswapping": 3060,
+    "unswap_cycle_summary": 131,
+    "cycle_progress": 131,
+    "termination": 1,
+    "timing_summary": 1
+  },
+  "peak_max_bond": 272.0,
+  "peak_total_elems": 688728.0,
+  "peak_total_shapes": 4266.0,
+  "last_work_consumed": 804.0,
+  "termination_reason": "no_progress_cycle_limit",
+  "termination_detail": "60 consecutive unswap cycles consumed zero work gates at cutoff=0.0006 [mode=swap_thrash]. The MPO is small at the stall (max_bond=105 vs cap 512, elems=215604 vs unswap_threshold 500000) -- the last cycles absorbed only routing SWAP layers before reaching the next 2q block, so zero work gates were consumed. Changing --cutoff will NOT help. Raise --abort-after-no-progress-unswap-cycles (e.g. 20) or set it negative to disable the guard and let the reroute push past this patch.",
+  "termination_unswap_cycle": 131,
+  "initial_rewire_time_s": 0.5852266249930835,
+  "initial_rewire_wall_time_s": 0.5860084169980837,
+  "post_unswap_rewire_time_s": 38.55256774693771,
+  "post_unswap_rewire_wall_time_s": 38.598619541993685,
+  "absorb_probe_time_s": 586.302770580849,
+  "absorb_probe_wall_time_s": 587.9597722450235,
+  "absorb_lookahead_time_s": 0.0,
+  "unswap_time_s": 2431.880221255,
+  "rewire_time_s": 39.137794371930795,
+  "accounted_time_s": 3058.977787871954,
+  "rewire_wall_time_s": 39.18462795899177,
+  "accounted_wall_time_s": 3059.024621459015,
+  "truncation_diagnostics": {
+    "max_bond_limit": 512.0,
+    "rows_at_max_bond": 0,
+    "rows_at_max_bond_by_stage": {},
+    "absorb_probe_left_hits_max_bond": 0,
+    "absorb_probe_right_hits_max_bond": 0,
+    "selected_absorbs_hit_max_bond": 0,
+    "absorb_probe_left_over_unswap_threshold": 7,
+    "absorb_probe_right_over_unswap_threshold": 21,
+    "first_stage_at_max_bond": null,
+    "first_unswap_cycle_at_max_bond": null,
+    "first_time_at_max_bond_s": null
+  },
+  "tail_materialize_requested": true,
+  "tail_materialize_eligible": true,
+  "tail_materialize_used": true,
+  "tail_materialize_remaining_work_gates": 4,
+  "materialize_max_bond": 512,
+  "materialize_cutoff": 0.0006,
+  "materialize_time_s": 0.3090211669987184,
+  "sample_time_s": 7.092251250000118,
+  "sample_total_time_s": 7.401272416998836,
+  "samples": 1000,
+  "sample_unique_raw": 933,
+  "sample_unique_permuted": 933,
+  "sample_peak_count": 38,
+  "sample_peak_fraction": 0.038,
+  "predicted_bitstring": "1000011001010101101111011100000111000111",
+  "top_permuted_samples": [
+    [
+      "1000011001010101101111011100000111000111",
+      38
+    ],
+    [
+      "1000011001010101101111011100000011000111",
+      4
+    ],
+    [
+      "1000111001010101101111011100000111000111",
+      4
+    ],
+    [
+      "1111011001010101101111011100000111000111",
+      3
+    ],
+    [
+      "1000011001010101101101011101011111010111",
+      3
+    ],
+    [
+      "1000111001010101101111011100000011000111",
+      3
+    ],
+    [
+      "1000011001010101101111011110000011000111",
+      3
+    ],
+    [
+      "1000011001010111101111011110000011000111",
+      2
+    ],
+    [
+      "1000011001010111101111011000000101000010",
+      2
+    ],
+    [
+      "1000011001010101101111011100000101000001",
+      2
+    ]
+  ],
+  "measurement_perm": [
+    0,
+    2,
+    1,
+    3,
+    13,
+    6,
+    7,
+    5,
+    4,
+    11,
+    14,
+    9,
+    8,
+    22,
+    24,
+    25,
+    17,
+    10,
+    12,
+    15,
+    30,
+    21,
+    23,
+    26,
+    16,
+    20,
+    19,
+    27,
+    36,
+    31,
+    32,
+    18,
+    28,
+    34,
+    35,
+    33,
+    29,
+    38,
+    37,
+    39
+  ],
+  "samples_path": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P8/tail804_7296a2a/p8_tail804_7296a2a/samples.tsv",
+  "decoder": "beam",
+  "decoder_bitwise_map": "1000010001010101101101011100111011000101",
+  "decoder_marginals": [
+    {
+      "p0": 0.10082648712783897,
+      "p1": 0.899173512872161,
+      "bias": 0.798347025744322
+    },
+    {
+      "p0": 0.577094031929034,
+      "p1": 0.4229059680709661,
+      "bias": -0.15418806385806788
+    },
+    {
+      "p0": 0.604676164979968,
+      "p1": 0.395323835020032,
+      "bias": -0.20935232995993602
+    },
+    {
+      "p0": 0.5340675182462138,
+      "p1": 0.46593248175378627,
+      "bias": -0.06813503649242753
+    },
+    {
+      "p0": 0.5421618087962026,
+      "p1": 0.45783819120379743,
+      "bias": -0.08432361759240514
+    },
+    {
+      "p0": 0.2848816276923295,
+      "p1": 0.7151183723076706,
+      "bias": 0.4302367446153411
+    },
+    {
+      "p0": 0.505453695671205,
+      "p1": 0.4945463043287949,
+      "bias": -0.010907391342410144
+    },
+    {
+      "p0": 0.5003162809909474,
+      "p1": 0.49968371900905256,
+      "bias": -0.0006325619818948192
+    },
+    {
+      "p0": 0.5430823710786851,
+      "p1": 0.4569176289213148,
+      "bias": -0.08616474215737024
+    },
+    {
+      "p0": 0.31559610103743896,
+      "p1": 0.684403898962561,
+      "bias": 0.3688077979251221
+    },
+    {
+      "p0": 0.7786627022985767,
+      "p1": 0.22133729770142327,
+      "bias": -0.5573254045971534
+    },
+    {
+      "p0": 0.45909551781689006,
+      "p1": 0.5409044821831099,
+      "bias": 0.08180896436621987
+    },
+    {
+      "p0": 0.551891544717304,
+      "p1": 0.44810845528269594,
+      "bias": -0.10378308943460801
+    },
+    {
+      "p0": 0.44296703638668566,
+      "p1": 0.5570329636133143,
+      "bias": 0.11406592722662867
+    },
+    {
+      "p0": 0.6759044155401656,
+      "p1": 0.32409558445983444,
+      "bias": -0.3518088310803311
+    },
+    {
+      "p0": 0.3230052230744756,
+      "p1": 0.6769947769255245,
+      "bias": 0.35398955385104885
+    },
+    {
+      "p0": 0.43273803463072913,
+      "p1": 0.567261965369271,
+      "bias": 0.13452393073854185
+    },
+    {
+      "p0": 0.6036773829376254,
+      "p1": 0.3963226170623747,
+      "bias": -0.2073547658752507
+    },
+    {
+      "p0": 0.2971636576198483,
+      "p1": 0.7028363423801517,
+      "bias": 0.4056726847603034
+    },
+    {
+      "p0": 0.3834842792718882,
+      "p1": 0.6165157207281119,
+      "bias": 0.23303144145622368
+    },
+    {
+      "p0": 0.5029402915780575,
+      "p1": 0.49705970842194247,
+      "bias": -0.00588058315611506
+    },
+    {
+      "p0": 0.017837651449480837,
+      "p1": 0.9821623485505191,
+      "bias": 0.9643246971010383
+    },
+    {
+      "p0": 0.5647085370843739,
+      "p1": 0.43529146291562626,
+      "bias": -0.1294170741687476
+    },
+    {
+      "p0": 0.40644036712470655,
+      "p1": 0.5935596328752935,
+      "bias": 0.1871192657505869
+    },
+    {
+      "p0": 0.3358930648379168,
+      "p1": 0.6641069351620832,
+      "bias": 0.3282138703241664
+    },
+    {
+      "p0": 0.46987311710122026,
+      "p1": 0.5301268828987798,
+      "bias": 0.06025376579755959
+    },
+    {
+      "p0": 0.5084376573111422,
+      "p1": 0.49156234268885785,
+      "bias": -0.016875314622284365
+    },
+    {
+      "p0": 0.5532429588987365,
+      "p1": 0.44675704110126346,
+      "bias": -0.10648591779747307
+    },
+    {
+      "p0": 0.47027690940380384,
+      "p1": 0.5297230905961962,
+      "bias": 0.05944618119239231
+    },
+    {
+      "p0": 0.4468203303346552,
+      "p1": 0.5531796696653448,
+      "bias": 0.10635933933068964
+    },
+    {
+      "p0": 0.46696158996273,
+      "p1": 0.5330384100372699,
+      "bias": 0.06607682007453991
+    },
+    {
+      "p0": 0.5118694880294251,
+      "p1": 0.48813051197057494,
+      "bias": -0.02373897605885017
+    },
+    {
+      "p0": 0.25015625487550036,
+      "p1": 0.7498437451244996,
+      "bias": 0.4996874902489992
+    },
+    {
+      "p0": 0.49632387923477683,
+      "p1": 0.5036761207652232,
+      "bias": 0.007352241530446335
+    },
+    {
+      "p0": 0.5016633751605292,
+      "p1": 0.49833662483947083,
+      "bias": -0.003326750321058336
+    },
+    {
+      "p0": 0.5093364251165735,
+      "p1": 0.49066357488342643,
+      "bias": -0.018672850233147076
+    },
+    {
+      "p0": 0.5779696358202175,
+      "p1": 0.4220303641797825,
+      "bias": -0.15593927164043503
+    },
+    {
+      "p0": 0.5,
+      "p1": 0.5000000000000001,
+      "bias": 1.1102230246251565e-16
+    },
+    {
+      "p0": 0.5000000000000001,
+      "p1": 0.5,
+      "bias": -1.1102230246251565e-16
+    },
+    {
+      "p0": 0.49999999999999994,
+      "p1": 0.5,
+      "bias": 5.551115123125783e-17
+    }
+  ],
+  "decoder_time_s": 0.011896916999830864,
+  "decoder_beam_width": 8,
+  "decoder_topk": [
+    {
+      "bitstring": "1000011001010101101111011100000111000111",
+      "probability": 0.02860698330171965
+    },
+    {
+      "bitstring": "1000011001010111101111011100000111000111",
+      "probability": 0.004442178491078266
+    },
+    {
+      "bitstring": "1000011001010101101111011100000110000111",
+      "probability": 0.0031615003409985847
+    },
+    {
+      "bitstring": "1000011001010101101111011100000111100111",
+      "probability": 0.0024320639239488683
+    },
+    {
+      "bitstring": "1000011001010101101111011000100011100001",
+      "probability": 0.0015000762981364096
+    },
+    {
+      "bitstring": "1000011001010101101111011000000011000111",
+      "probability": 0.0012151426860125684
+    },
+    {
+      "bitstring": "1000011001010101101111011100000101000100",
+      "probability": 0.0008575034378372996
+    },
+    {
+      "bitstring": "1000011001010101101111011100000101000001",
+      "probability": 0.0008442421009028171
+    }
+  ],
+  "expected_bitstring": "01101110111001100000100000001010011100101101010111110111",
+  "matches_expected_bitstring": false
+}

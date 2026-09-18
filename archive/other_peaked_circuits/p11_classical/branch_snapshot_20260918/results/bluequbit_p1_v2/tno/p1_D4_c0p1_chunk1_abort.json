@@ -1,0 +1,14 @@
+{
+  "schema": "bluequbit-p1-v2-tno-run-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "configuration": {"max_bond": 4, "cutoff": 0.1, "chunk_size": 1, "max_seconds": 120.0, "method": "public_mirrored_tno_cpu", "optimize": "greedy"},
+  "n_qubits": 36,
+  "layer_count": 307,
+  "aborted": "external_wall_watchdog",
+  "progress": "The first compression call did not return before the 120-second method budget; no candidate was produced.",
+  "observed_runtime_s": 133.0,
+  "observed_peak_rss_bytes": 874352000,
+  "observed_host": "Apple arm64 macOS",
+  "decision": "REJECTED_TNO_CPU_FEASIBILITY"
+}

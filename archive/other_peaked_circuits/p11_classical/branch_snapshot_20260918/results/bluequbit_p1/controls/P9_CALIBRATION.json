@@ -1,0 +1,26 @@
+{
+  "schema": "bluequbit-p1-p9-calibration-v1",
+  "post_hoc_only": true,
+  "circuit_sha256": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35",
+  "configuration": {"max_bond": 64, "cutoff": 0.01, "ordering": "fiedler", "routing_strategy": "lookahead", "routing_lookahead": 4, "routing_seed": 0, "samples": 100},
+  "run_id": "p9_mps_d64_fiedler_lookahead4",
+  "runtime_s": 70.4276903,
+  "max_bond_ever": 64,
+  "relative_discarded_weight_sum": 190.7212672,
+  "routing_swaps": 23420,
+  "predicted_bitstring": "10110110000010001010100010110000111111000011001111110111",
+  "reference_bitstring": "01101110111001100000100000001010011100101101010111110111",
+  "hamming_distance": 26,
+  "decision": "FAIL: same configuration does not pass the P9 positive-control gate.",
+  "follow_up": {
+    "run_id": "p9_mps_d64_fiedler_lookahead4_cut002",
+    "cutoff": 0.002,
+    "runtime_s": 71.33175679197302,
+    "max_bond_ever": 64,
+    "relative_discarded_weight_sum": 197.10788396159666,
+    "routing_swaps": 23420,
+    "predicted_bitstring": "01000001010101101101000000001101000000101010101101010100",
+    "hamming_distance": 28,
+    "decision": "FAIL: tightening the cutoff did not pass the P9 positive-control gate."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "input": "results/peaked_portal_p1_p10/mettleq/p6_D64_c1e2_seed123/samples.tsv",
+  "bits": 62,
+  "shots": 1000,
+  "unique_strings": 1000,
+  "modal_frequency": 1,
+  "majority_candidate": "11011011110101011010100010111011001100010100000011100001110010",
+  "gate": {
+    "candidate": "11011011110101011010100010111011001100010100000011100001110010",
+    "split_half_hamming": 0,
+    "bootstrap_bits_ge_0_90": 62
+  }
+}

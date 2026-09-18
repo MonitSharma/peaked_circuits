@@ -1,0 +1,49 @@
+{
+  "architecture": "arm64",
+  "arguments": [
+    "export-mapping-qir"
+  ],
+  "backend_mode": "local_qir_mapping_export",
+  "command": "export-mapping-qir",
+  "configuration_hash": null,
+  "configuration_path": null,
+  "created_at": "2026-07-12T08:42:13.221190Z",
+  "credentials_detected": false,
+  "dirty_working_tree": true,
+  "end_timestamp": "2026-07-12T08:42:13.171233Z",
+  "exit_status": 0,
+  "git_commit": "08cd2b40f5a711f2af2d623482a02786df859f93",
+  "git_dirty": true,
+  "hardware_execution_attempted": false,
+  "input_hashes": {},
+  "input_paths": {},
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "output_paths": {
+    "results/qir/mapping_cases/mapping_qir_export_report.json": "44041557921c0ecfe0fd7c75cbded3d684421c2f94b8d8622e2e225d6f5c5086"
+  },
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.1",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "2.3.3",
+    "pydantic": "2.13.4",
+    "pyqir": "0.12.5",
+    "pytket": "2.18.1",
+    "pytket-qir": "2.0.0",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.1",
+    "qiskit": null,
+    "qnexus": "0.46.0",
+    "rich": "13.9.4",
+    "scipy": "1.18.0",
+    "typer": "0.26.8"
+  },
+  "paid_resources_consumed": false,
+  "python_version": "3.13.7",
+  "random_seed": null,
+  "run_id": "20260712T084211Z-1a250f34",
+  "schema_version": "1.0",
+  "start_timestamp": "2026-07-12T08:42:11.499078Z"
+}

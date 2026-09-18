@@ -1,0 +1,8 @@
+2026-08-26 08:04:24,103 [WARNING] live plot.png generation disabled: No module named 'matplotlib'
+[Cycle 1] 7/1984 gates (0.4 %) after 44 sec
+[Cycle 2] 14/1984 gates (0.7 %) after 389 sec
+[Cycle 3] 14/1984 gates (0.7 %) after 576 sec
+[Cycle 4] 16/1984 gates (0.8 %) after 759 sec
+[Cycle 5] 16/1984 gates (0.8 %) after 875 sec
+[Cycle 6] 19/1984 gates (1.0 %) after 1003 sec
+[Cycle 7] 19/1984 gates (1.0 %) after 1137 sec

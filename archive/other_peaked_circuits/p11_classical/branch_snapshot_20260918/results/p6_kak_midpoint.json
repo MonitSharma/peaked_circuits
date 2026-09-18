@@ -1,0 +1,12 @@
+{
+  "midpoint": 5243,
+  "window": 500,
+  "left_blocks": 1319,
+  "right_blocks": 1353,
+  "observed_mean_nearest_weyl_distance": 0.013560653687989024,
+  "null_mean": 0.013751316025658322,
+  "null_sd": 0.0006800180507011452,
+  "z_improvement": 0.2803783480051923,
+  "exact_nearest_matches": 1080,
+  "controls": 100
+}

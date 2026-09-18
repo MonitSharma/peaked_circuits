@@ -1,0 +1,1022 @@
+{
+  "schema": "p8-native-graph-2norm-bp-v1",
+  "qasm": "/home/hclau/p12-helios-recovery/external/p8-sparse-src/P8.qasm",
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "n_qubits": 40,
+  "edge_count": 63,
+  "native_edge_assertion": true,
+  "configuration": {
+    "max_bond": 8,
+    "cutoff": 1e-10,
+    "max_seconds": 600.0,
+    "max_events": 100
+  },
+  "events_completed": 100,
+  "events_total": 2704,
+  "aborted": "event_limit",
+  "runtime_s": 5.287643660791218,
+  "final_norm": 0.9705696303248839,
+  "final_max_bond": 8,
+  "trace": [
+    {
+      "event": 0,
+      "gate": "u",
+      "max_bond": 1,
+      "norm": 1.0,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": false,
+      "bp_skipped_product_bonds": true
+    },
+    {
+      "event": 1,
+      "gate": "u",
+      "max_bond": 1,
+      "norm": 1.0,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": false,
+      "bp_skipped_product_bonds": true
+    },
+    {
+      "event": 2,
+      "gate": "u",
+      "max_bond": 1,
+      "norm": 1.0,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": false,
+      "bp_skipped_product_bonds": true
+    },
+    {
+      "event": 3,
+      "gate": "u",
+      "max_bond": 1,
+      "norm": 1.0,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": false,
+      "bp_skipped_product_bonds": true
+    },
+    {
+      "event": 4,
+      "gate": "u",
+      "max_bond": 1,
+      "norm": 1.0,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": false,
+      "bp_skipped_product_bonds": true
+    },
+    {
+      "event": 5,
+      "gate": "u",
+      "max_bond": 1,
+      "norm": 1.0,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": false,
+      "bp_skipped_product_bonds": true
+    },
+    {
+      "event": 6,
+      "gate": "iswap",
+      "max_bond": 2,
+      "norm": 0.9999999999999997,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 7,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.999999999999999,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 8,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.9999999999999988,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 9,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.9999999999999984,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 10,
+      "gate": "iswap",
+      "max_bond": 2,
+      "norm": 0.9999999999999992,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 11,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.9999999999999997,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 12,
+      "gate": "iswap",
+      "max_bond": 2,
+      "norm": 1.0000000000000024,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 13,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 1.0000000000000018,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 14,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 1.0000000000000024,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 15,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 1.000000000000003,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 16,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 1.0000000000000044,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 17,
+      "gate": "iswap",
+      "max_bond": 2,
+      "norm": 1.0000000000000044,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 18,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 1.0000000000000056,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 19,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000073,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 20,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000082,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 21,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000115,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 22,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000109,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 23,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000109,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 24,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000109,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 25,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000124,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 26,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000147,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 27,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000142,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 28,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000155,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 29,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000144,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 30,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000149,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 31,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000153,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 32,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000019,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 33,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000204,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 34,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000207,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 35,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000209,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 36,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000178,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 37,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000198,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 38,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000189,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 39,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000021,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 40,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000021,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 41,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000202,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 42,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000207,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 43,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000218,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 44,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000213,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 45,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000224,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 46,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000269,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 47,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000289,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 48,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000028,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 49,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000278,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 50,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000304,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 51,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000333,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 52,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000322,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 53,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000373,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 54,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000364,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 55,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000406,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 56,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000041,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 57,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000417,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 58,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000449,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 59,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000457,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 60,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000502,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 61,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.00000000000005,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 62,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000497,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 63,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.00000000000005,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 64,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000526,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 65,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000052,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 66,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000537,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 67,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000568,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 68,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000582,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 69,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000588,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 70,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000615,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 71,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000657,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 72,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000065,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 73,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000617,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 74,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000633,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 75,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000648,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 76,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000693,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 77,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000702,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 78,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000702,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 79,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.000000000000072,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 80,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000075,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 81,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.000000000000084,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 82,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000875,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 83,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000926,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 84,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000096,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 85,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.000000000000097,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 86,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000001004,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 87,
+      "gate": "iswap",
+      "max_bond": 8,
+      "norm": 0.9942600984891881,
+      "max_tensor_axis_before": 16,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 88,
+      "gate": "u",
+      "max_bond": 8,
+      "norm": 0.9942600984891883,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 89,
+      "gate": "u",
+      "max_bond": 8,
+      "norm": 0.99426009848919,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 90,
+      "gate": "u",
+      "max_bond": 8,
+      "norm": 0.9942600984891865,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 91,
+      "gate": "u",
+      "max_bond": 8,
+      "norm": 0.9942600984891895,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 92,
+      "gate": "iswap",
+      "max_bond": 8,
+      "norm": 0.9942600984891975,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 93,
+      "gate": "u",
+      "max_bond": 8,
+      "norm": 0.9942600984892032,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 94,
+      "gate": "iswap",
+      "max_bond": 8,
+      "norm": 0.9942600984892067,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 95,
+      "gate": "u",
+      "max_bond": 8,
+      "norm": 0.9942600984892178,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 96,
+      "gate": "iswap",
+      "max_bond": 8,
+      "norm": 0.9705696303248731,
+      "max_tensor_axis_before": 16,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 97,
+      "gate": "u",
+      "max_bond": 8,
+      "norm": 0.9705696303248763,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 98,
+      "gate": "u",
+      "max_bond": 8,
+      "norm": 0.9705696303248786,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 99,
+      "gate": "iswap",
+      "max_bond": 8,
+      "norm": 0.9705696303248839,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 8,
+      "bp_info_present": true,
+      "bp_finite": true
+    }
+  ]
+}

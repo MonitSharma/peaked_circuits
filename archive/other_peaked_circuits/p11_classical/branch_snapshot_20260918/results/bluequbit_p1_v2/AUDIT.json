@@ -1,0 +1,65 @@
+{
+  "schema": "bluequbit-p1-v2-audit-v1",
+  "branch": "bluequbit-p1-mac-portfolio",
+  "starting_head": "efd24d3e3d46f2f038d3bfddd7bfa09a50a52bd2",
+  "historical_p1_screening_branch": "bluequbit-p1-classical",
+  "p1_path": "/Users/monitsharma/Downloads/P1_little_dimple.qasm",
+  "p1_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "p1_size_bytes": 219814,
+  "blind": true,
+  "forbidden_actions_performed": {
+    "p9_run": false,
+    "p11_run": false,
+    "p12_run": false,
+    "hpc_job": false,
+    "qpu_or_cloud_job": false,
+    "answer_lookup": false
+  },
+  "host": {
+    "platform": "macOS 26.5.2",
+    "architecture": "arm64",
+    "memory_bytes": 38654705664,
+    "python_system": "3.13.7",
+    "python_experiment": "3.10.16",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "qiskit": "1.4.5",
+    "quimb": "1.15.0",
+    "mlx": "0.32.2",
+    "julia": "/Users/monitsharma/.juliaup/bin/julia"
+  },
+  "external_methods": {
+    "qstvec_path": "external/qstvec",
+    "qstvec_commit": "545614fa196e2a77d96d408e0cdf39520684b251",
+    "public_tno_reference": "d-kremer/peaked-circuit-simulation (method study only)",
+    "public_distillation_reference": "d-kremer/peaked-circuit-simulation/peaked-circuit-distillation.ipynb (method study only)",
+    "public_spd_reference": "tbegusic/spd (method study only)",
+    "qiskit_quimb": "0.0.10",
+    "pps_path": "julia/pps",
+    "existing_mps_patch": "hpc/solver_patches/mettleq_initial_layout.patch"
+  },
+  "verified_p1_structure": {
+    "n_qubits": 36,
+    "n_events": 4407,
+    "u_gates": 2950,
+    "cz_gates": 1457,
+    "depth": 307,
+    "two_qubit_depth": 153,
+    "unique_interacting_pairs": 564,
+    "simple_mean_degree": 31.333333333333332,
+    "weighted_mean_interaction_frequency": 80.94444444444444
+  },
+  "reuse_decisions": {
+    "qasm_event_parser": "reuse",
+    "structural_fingerprints": "reuse_as_controls_only",
+    "existing_mps": "weak_secondary_signal_only",
+    "qstvec": "adapter_and_specialized_kernels_required",
+    "pps": "existing_julia_adapter_requires_p1_stream",
+    "bp": "not_yet_implemented",
+    "amplitude": "gated_until_candidate_exists",
+    "public_tno": "bounded_cpu_probe",
+    "spd": "bounded_sparse_pauli_probe",
+    "randomized_pps": "bounded_resource_probe"
+  },
+  "initial_decision": "Proceed with sparse-state and lightcone-guided PPS profiling; Clifford perturbation is low priority."
+}

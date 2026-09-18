@@ -1,0 +1,1052 @@
+{
+  "accepted": 0,
+  "block_size": 3,
+  "blocks": 20,
+  "new_two_qubit": 0,
+  "offset": 0,
+  "old_two_qubit": 40,
+  "permutation_candidates": 120,
+  "qasm": "data/canonical/peaked_circuit_P11_Hqap_98x1999.qasm",
+  "results": [
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        15,
+        26,
+        40
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 255,
+      "status": "unavailable_no_bqskit",
+      "stop": 265,
+      "tried_permutations": [
+        [
+          15,
+          26,
+          40
+        ],
+        [
+          15,
+          40,
+          26
+        ],
+        [
+          26,
+          15,
+          40
+        ],
+        [
+          26,
+          40,
+          15
+        ],
+        [
+          40,
+          15,
+          26
+        ],
+        [
+          40,
+          26,
+          15
+        ]
+      ],
+      "wires": [
+        15,
+        26,
+        40
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        26,
+        31,
+        88
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 285,
+      "status": "unavailable_no_bqskit",
+      "stop": 297,
+      "tried_permutations": [
+        [
+          26,
+          31,
+          88
+        ],
+        [
+          26,
+          88,
+          31
+        ],
+        [
+          31,
+          26,
+          88
+        ],
+        [
+          31,
+          88,
+          26
+        ],
+        [
+          88,
+          26,
+          31
+        ],
+        [
+          88,
+          31,
+          26
+        ]
+      ],
+      "wires": [
+        26,
+        31,
+        88
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        9,
+        37,
+        48
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 1820,
+      "status": "unavailable_no_bqskit",
+      "stop": 1830,
+      "tried_permutations": [
+        [
+          9,
+          37,
+          48
+        ],
+        [
+          9,
+          48,
+          37
+        ],
+        [
+          37,
+          9,
+          48
+        ],
+        [
+          37,
+          48,
+          9
+        ],
+        [
+          48,
+          9,
+          37
+        ],
+        [
+          48,
+          37,
+          9
+        ]
+      ],
+      "wires": [
+        9,
+        37,
+        48
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        9,
+        27,
+        37
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 1870,
+      "status": "unavailable_no_bqskit",
+      "stop": 1882,
+      "tried_permutations": [
+        [
+          9,
+          27,
+          37
+        ],
+        [
+          9,
+          37,
+          27
+        ],
+        [
+          27,
+          9,
+          37
+        ],
+        [
+          27,
+          37,
+          9
+        ],
+        [
+          37,
+          9,
+          27
+        ],
+        [
+          37,
+          27,
+          9
+        ]
+      ],
+      "wires": [
+        9,
+        27,
+        37
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        9,
+        27,
+        37
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 1882,
+      "status": "unavailable_no_bqskit",
+      "stop": 1890,
+      "tried_permutations": [
+        [
+          9,
+          27,
+          37
+        ],
+        [
+          9,
+          37,
+          27
+        ],
+        [
+          27,
+          9,
+          37
+        ],
+        [
+          27,
+          37,
+          9
+        ],
+        [
+          37,
+          9,
+          27
+        ],
+        [
+          37,
+          27,
+          9
+        ]
+      ],
+      "wires": [
+        9,
+        27,
+        37
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        14,
+        26,
+        44
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 4555,
+      "status": "unavailable_no_bqskit",
+      "stop": 4567,
+      "tried_permutations": [
+        [
+          14,
+          26,
+          44
+        ],
+        [
+          14,
+          44,
+          26
+        ],
+        [
+          26,
+          14,
+          44
+        ],
+        [
+          26,
+          44,
+          14
+        ],
+        [
+          44,
+          14,
+          26
+        ],
+        [
+          44,
+          26,
+          14
+        ]
+      ],
+      "wires": [
+        14,
+        26,
+        44
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        14,
+        44,
+        59
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 4567,
+      "status": "unavailable_no_bqskit",
+      "stop": 4575,
+      "tried_permutations": [
+        [
+          14,
+          44,
+          59
+        ],
+        [
+          14,
+          59,
+          44
+        ],
+        [
+          44,
+          14,
+          59
+        ],
+        [
+          44,
+          59,
+          14
+        ],
+        [
+          59,
+          14,
+          44
+        ],
+        [
+          59,
+          44,
+          14
+        ]
+      ],
+      "wires": [
+        14,
+        44,
+        59
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        6,
+        13,
+        17
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 5299,
+      "status": "unavailable_no_bqskit",
+      "stop": 5311,
+      "tried_permutations": [
+        [
+          6,
+          13,
+          17
+        ],
+        [
+          6,
+          17,
+          13
+        ],
+        [
+          13,
+          6,
+          17
+        ],
+        [
+          13,
+          17,
+          6
+        ],
+        [
+          17,
+          6,
+          13
+        ],
+        [
+          17,
+          13,
+          6
+        ]
+      ],
+      "wires": [
+        6,
+        13,
+        17
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        0,
+        22,
+        33
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 5315,
+      "status": "unavailable_no_bqskit",
+      "stop": 5326,
+      "tried_permutations": [
+        [
+          0,
+          22,
+          33
+        ],
+        [
+          0,
+          33,
+          22
+        ],
+        [
+          22,
+          0,
+          33
+        ],
+        [
+          22,
+          33,
+          0
+        ],
+        [
+          33,
+          0,
+          22
+        ],
+        [
+          33,
+          22,
+          0
+        ]
+      ],
+      "wires": [
+        0,
+        22,
+        33
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        13,
+        73,
+        83
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 7750,
+      "status": "unavailable_no_bqskit",
+      "stop": 7760,
+      "tried_permutations": [
+        [
+          13,
+          73,
+          83
+        ],
+        [
+          13,
+          83,
+          73
+        ],
+        [
+          73,
+          13,
+          83
+        ],
+        [
+          73,
+          83,
+          13
+        ],
+        [
+          83,
+          13,
+          73
+        ],
+        [
+          83,
+          73,
+          13
+        ]
+      ],
+      "wires": [
+        13,
+        73,
+        83
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        36,
+        54,
+        92
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 8030,
+      "status": "unavailable_no_bqskit",
+      "stop": 8041,
+      "tried_permutations": [
+        [
+          36,
+          54,
+          92
+        ],
+        [
+          36,
+          92,
+          54
+        ],
+        [
+          54,
+          36,
+          92
+        ],
+        [
+          54,
+          92,
+          36
+        ],
+        [
+          92,
+          36,
+          54
+        ],
+        [
+          92,
+          54,
+          36
+        ]
+      ],
+      "wires": [
+        36,
+        54,
+        92
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        70,
+        84,
+        86
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 8065,
+      "status": "unavailable_no_bqskit",
+      "stop": 8075,
+      "tried_permutations": [
+        [
+          70,
+          84,
+          86
+        ],
+        [
+          70,
+          86,
+          84
+        ],
+        [
+          84,
+          70,
+          86
+        ],
+        [
+          84,
+          86,
+          70
+        ],
+        [
+          86,
+          70,
+          84
+        ],
+        [
+          86,
+          84,
+          70
+        ]
+      ],
+      "wires": [
+        70,
+        84,
+        86
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        51,
+        70,
+        90
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 8849,
+      "status": "unavailable_no_bqskit",
+      "stop": 8861,
+      "tried_permutations": [
+        [
+          51,
+          70,
+          90
+        ],
+        [
+          51,
+          90,
+          70
+        ],
+        [
+          70,
+          51,
+          90
+        ],
+        [
+          70,
+          90,
+          51
+        ],
+        [
+          90,
+          51,
+          70
+        ],
+        [
+          90,
+          70,
+          51
+        ]
+      ],
+      "wires": [
+        51,
+        70,
+        90
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        44,
+        71,
+        90
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 8861,
+      "status": "unavailable_no_bqskit",
+      "stop": 8871,
+      "tried_permutations": [
+        [
+          44,
+          71,
+          90
+        ],
+        [
+          44,
+          90,
+          71
+        ],
+        [
+          71,
+          44,
+          90
+        ],
+        [
+          71,
+          90,
+          44
+        ],
+        [
+          90,
+          44,
+          71
+        ],
+        [
+          90,
+          71,
+          44
+        ]
+      ],
+      "wires": [
+        44,
+        71,
+        90
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        70,
+        71,
+        90
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 8871,
+      "status": "unavailable_no_bqskit",
+      "stop": 8880,
+      "tried_permutations": [
+        [
+          70,
+          71,
+          90
+        ],
+        [
+          70,
+          90,
+          71
+        ],
+        [
+          71,
+          70,
+          90
+        ],
+        [
+          71,
+          90,
+          70
+        ],
+        [
+          90,
+          70,
+          71
+        ],
+        [
+          90,
+          71,
+          70
+        ]
+      ],
+      "wires": [
+        70,
+        71,
+        90
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        14,
+        81,
+        82
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 9780,
+      "status": "unavailable_no_bqskit",
+      "stop": 9790,
+      "tried_permutations": [
+        [
+          14,
+          81,
+          82
+        ],
+        [
+          14,
+          82,
+          81
+        ],
+        [
+          81,
+          14,
+          82
+        ],
+        [
+          81,
+          82,
+          14
+        ],
+        [
+          82,
+          14,
+          81
+        ],
+        [
+          82,
+          81,
+          14
+        ]
+      ],
+      "wires": [
+        14,
+        81,
+        82
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        50,
+        81,
+        93
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 9885,
+      "status": "unavailable_no_bqskit",
+      "stop": 9895,
+      "tried_permutations": [
+        [
+          50,
+          81,
+          93
+        ],
+        [
+          50,
+          93,
+          81
+        ],
+        [
+          81,
+          50,
+          93
+        ],
+        [
+          81,
+          93,
+          50
+        ],
+        [
+          93,
+          50,
+          81
+        ],
+        [
+          93,
+          81,
+          50
+        ]
+      ],
+      "wires": [
+        50,
+        81,
+        93
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        53,
+        72,
+        93
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 9920,
+      "status": "unavailable_no_bqskit",
+      "stop": 9930,
+      "tried_permutations": [
+        [
+          53,
+          72,
+          93
+        ],
+        [
+          53,
+          93,
+          72
+        ],
+        [
+          72,
+          53,
+          93
+        ],
+        [
+          72,
+          93,
+          53
+        ],
+        [
+          93,
+          53,
+          72
+        ],
+        [
+          93,
+          72,
+          53
+        ]
+      ],
+      "wires": [
+        53,
+        72,
+        93
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        33,
+        50,
+        72
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 9965,
+      "status": "unavailable_no_bqskit",
+      "stop": 9976,
+      "tried_permutations": [
+        [
+          33,
+          50,
+          72
+        ],
+        [
+          33,
+          72,
+          50
+        ],
+        [
+          50,
+          33,
+          72
+        ],
+        [
+          50,
+          72,
+          33
+        ],
+        [
+          72,
+          33,
+          50
+        ],
+        [
+          72,
+          50,
+          33
+        ]
+      ],
+      "wires": [
+        33,
+        50,
+        72
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": null,
+      "new_two_qubit": null,
+      "old_two_qubit": 2,
+      "permutation": [
+        50,
+        53,
+        72
+      ],
+      "reason": "qiskit fallback is exact for two wires only; BQSKit unavailable",
+      "start": 9976,
+      "status": "unavailable_no_bqskit",
+      "stop": 9985,
+      "tried_permutations": [
+        [
+          50,
+          53,
+          72
+        ],
+        [
+          50,
+          72,
+          53
+        ],
+        [
+          53,
+          50,
+          72
+        ],
+        [
+          53,
+          72,
+          50
+        ],
+        [
+          72,
+          50,
+          53
+        ],
+        [
+          72,
+          53,
+          50
+        ]
+      ],
+      "wires": [
+        50,
+        53,
+        72
+      ]
+    }
+  ]
+}

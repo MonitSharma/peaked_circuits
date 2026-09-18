@@ -1,0 +1,14 @@
+{
+  "schema": "bluequbit-p1-v2-amplitude-path-v1",
+  "blind": true,
+  "qasm_path": "/Users/monitsharma/Downloads/P1_little_dimple.qasm",
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "candidate_source": "sparse_k65536_top1",
+  "candidate": "011110000101000000011110110110111001",
+  "algorithm": "quimb.Circuit.amplitude(rehearse=true)",
+  "wall_guard_seconds": 120,
+  "status": "AMPLITUDE_VERIFIER_NO_GO",
+  "result": null,
+  "observed_behavior": "Cotengra path search spawned multiple workers and did not return a path estimate or amplitude within the bounded 120-second Mac probe.",
+  "decision": "Do not evaluate additional candidates or attempt a Hamming-neighborhood amplitude scan."
+}

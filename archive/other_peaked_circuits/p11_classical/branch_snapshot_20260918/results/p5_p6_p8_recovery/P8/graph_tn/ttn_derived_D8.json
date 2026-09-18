@@ -1,0 +1,20 @@
+{
+  "schema": "p12-p8-ttn-derived-graph-bp-v1",
+  "problem": "P8",
+  "method_family": "TTN-derived-graph-BP",
+  "answer_blind": true,
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "n_qubits": 40,
+  "max_bond": 8,
+  "cutoff": 0.01,
+  "tree_mode": "weighted",
+  "edge_count": 63,
+  "approximate_total_mass": 1.305169955925139e-45,
+  "factor_min": 4.926262338323988e-05,
+  "converged": true,
+  "iterations": 18,
+  "max_message_delta": 3.144395854803861e-11,
+  "diagnostic_bitstring": "1110001001101101111100100110000000010010",
+  "joint_map_claim": false,
+  "promotion": "METHOD_REJECTED_CORRELATED_DIAGNOSTIC"
+}

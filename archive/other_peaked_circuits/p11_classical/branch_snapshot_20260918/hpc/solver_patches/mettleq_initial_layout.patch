@@ -1,0 +1,36 @@
+diff --git a/src/mettleq/mps_routing.py b/src/mettleq/mps_routing.py
+--- a/src/mettleq/mps_routing.py
++++ b/src/mettleq/mps_routing.py
+@@
+ def _python_plan_routing(
+     n_qubits: int,
+     pairs: Sequence[tuple[int, int]],
+     lookahead: int,
++    initial_order: Sequence[int] | None = None,
+ ) -> tuple[list[list[int]], list[int], int]:
+-    order = list(range(int(n_qubits)))
++    order = list(initial_order) if initial_order is not None else list(range(int(n_qubits)))
++    if sorted(order) != list(range(int(n_qubits))):
++        raise ValueError("initial_order must be a permutation of logical qubits")
+@@
+ def plan_routing(
+     n_qubits: int,
+     pairs: Sequence[tuple[int, int]],
+     lookahead: int,
++    initial_order: Sequence[int] | None = None,
+ ) -> tuple[list[list[int]], list[int], int, str]:
+@@
+-    if _native_plan_routing is not None:
++    identity = initial_order is None or list(initial_order) == list(range(int(n_qubits)))
++    if _native_plan_routing is not None and identity:
+@@
+-    plan, order, count = _python_plan_routing(n_qubits, pairs, lookahead)
++    plan, order, count = _python_plan_routing(n_qubits, pairs, lookahead, initial_order)
+diff --git a/src/mettleq/mps_state.py b/src/mettleq/mps_state.py
+--- a/src/mettleq/mps_state.py
++++ b/src/mettleq/mps_state.py
+@@
+         plan, _order, routed_swaps, planner = _plan_routing(
+-            self.n, pairs, self.opts.routing_lookahead
++            self.n, pairs, self.opts.routing_lookahead, self.site_to_logical
+         )

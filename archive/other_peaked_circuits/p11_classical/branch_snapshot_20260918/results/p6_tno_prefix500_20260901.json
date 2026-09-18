@@ -1,0 +1,73 @@
+{
+  "answer_blind": true,
+  "runs": [
+    {
+      "answer_blind": true,
+      "configuration": {
+        "chunk_size": 4,
+        "cutoff": 0.01,
+        "max_bond": 16,
+        "max_seconds": 120.0,
+        "method": "local-late",
+        "optimize": "greedy"
+      },
+      "environment": {
+        "platform": "Windows-10-10.0.26200-SP0",
+        "python": "3.11.5"
+      },
+      "layers": 67,
+      "qubits": 62,
+      "runtime_s": 163.2970000000205,
+      "schema": "p6-public-tno-screen-v1",
+      "source": "C:\\Users\\monitsharma\\Downloads\\SMU-Quantum\\p12-helios-recovery\\results\\expert_review_p5_p6_p8_20260828\\inputs\\P6_titan_pinnacle.qasm",
+      "source_sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
+      "status": "CORE_TIMEOUT",
+      "trace": [
+        {
+          "distance": 0,
+          "elapsed_s": 0.18799999996554106,
+          "max_bond": 4,
+          "num_tensors": 62
+        },
+        {
+          "distance": 4,
+          "elapsed_s": 0.43799999996554106,
+          "max_bond": 8,
+          "num_tensors": 62
+        },
+        {
+          "distance": 8,
+          "elapsed_s": 0.8910000000614673,
+          "max_bond": 13,
+          "num_tensors": 62
+        },
+        {
+          "distance": 12,
+          "elapsed_s": 2.6570000000065193,
+          "max_bond": 15,
+          "num_tensors": 62
+        },
+        {
+          "distance": 16,
+          "elapsed_s": 17.625,
+          "max_bond": 16,
+          "num_tensors": 62
+        },
+        {
+          "distance": 20,
+          "elapsed_s": 64.65700000000652,
+          "max_bond": 16,
+          "num_tensors": 62
+        },
+        {
+          "distance": 24,
+          "elapsed_s": 162.0470000000205,
+          "max_bond": 16,
+          "num_tensors": 62
+        }
+      ],
+      "twoq_prefix": 500
+    }
+  ],
+  "schema": "p6-public-tno-screen-v1"
+}

@@ -1,0 +1,6 @@
+{
+  "canonical_order": "logical_q0_to_q97_left_to_right",
+  "case_name": "non_palindromic_blocks",
+  "expected_canonical_string": "11100000000000111111111111111110000000000000000000000000000011111110000000000000000000000000000000",
+  "provider_result_position": null
+}

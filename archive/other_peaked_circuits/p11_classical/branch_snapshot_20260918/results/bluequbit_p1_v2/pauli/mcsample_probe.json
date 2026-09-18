@@ -1,0 +1,13 @@
+{
+  "schema": "bluequbit-p1-v2-mcsample-probe-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "observable_q_zero_based": 5,
+  "configuration": {"walkers": 4096, "squared": false, "thread": false},
+  "status": "COMPLETED",
+  "runtime_s": 2.70511794090271,
+  "peak_rss_bytes": 532267008,
+  "expectation": 0.0,
+  "retained_terms": 4096,
+  "decision": "REJECTED_NO_OBSERVABLE_SUPPORT_IN_SAMPLE"
+}

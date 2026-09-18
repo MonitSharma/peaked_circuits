@@ -1,0 +1,42 @@
+schema_version: "2.0"
+status: draft
+tracker_protocol_confirmed: false
+circuit:
+  id: peaked_circuit_P12_Hqap_98x2457
+  source_hash: 868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d
+  compiled_hash: null
+backend:
+  api_surface: nexus
+  system_name: null
+  device_name: null
+  target_type: null
+compilation:
+  preserve_qubit_names: true
+  allow_implicit_swaps: false
+  optimization_level: 1
+primary_analysis:
+  method: bitwise_majority
+  tie_policy: deterministic_zero_with_uncertainty_flag
+secondary_methods:
+  - most_frequent_string
+  - weighted_observed_medoid
+  - cluster_consensus
+primary_shots: 2000
+pilot_shots: 100
+smoke_test_shots: 20
+primary_endpoint:
+  name: percentage_bits_correct
+  total_bits: 98
+secondary_endpoints:
+  - exact_match
+  - hamming_distance
+  - bootstrap_stability
+  - per_bit_confidence
+  - method_agreement
+valid_shot_policy:
+  exclude_only:
+    - malformed_provider_record
+    - provider_declared_incomplete_record
+  never_exclude_for_recovery_quality: true
+target_blinded: true
+hardware_execution: false

@@ -1,0 +1,31 @@
+{
+  "schema": "p12-p5-mpo-candidate-freeze-v2",
+  "problem": "P5",
+  "answer_blind": true,
+  "candidate": "11110000001110100101110011111101010001100001",
+  "candidate_sha256": "6f4e059f95df7bda7a0ea8eb3f290e1af70cc09a9500a364c2e630289097770f",
+  "source": "sampling path (top_permuted_samples[0]); permutation applied inside p9solver.cli",
+  "corroborating_decoder_top1": "11110000001110100101110011111101010001100001",
+  "decoder_top1_probability": 0.01092575081559505,
+  "sample_peak_count": 12,
+  "sample_peak_fraction": 0.012,
+  "sample_unique_raw": 973,
+  "run_status": "complete",
+  "termination_reason": "completed",
+  "work_gates": 902.0,
+  "peak_max_bond": 407.0,
+  "settings": {
+    "max_bond": 512,
+    "cutoff": 0.0006,
+    "unswap_threshold": 500000.0,
+    "seed": 123,
+    "route_candidates": 4,
+    "route_score": "bond_profile",
+    "abort_after_no_progress_unswap_cycles": 15
+  },
+  "solver_commit": "b1bed0a5621f99d95ca7834a82d72dfd5db46cf4",
+  "qasm_sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+  "frozen_at": "2026-08-29T09:39:02Z",
+  "evaluation_status": "NOT_RUN_AT_FREEZE",
+  "note": "First P5 MPO run to consume all 902 work gates and reach sampling. Generated with no access to any score or target answer."
+}

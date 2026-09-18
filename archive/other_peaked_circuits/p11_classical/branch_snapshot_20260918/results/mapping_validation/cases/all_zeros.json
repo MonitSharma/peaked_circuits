@@ -1,0 +1,10 @@
+{
+  "canonical_output": null,
+  "case_name": "all_zeros",
+  "compiled_circuit_hash": null,
+  "mapping_correct": null,
+  "prepared_circuit_hash": "7a2024f8a60312ac494dccc929c0cf73bb70c6f7b953fdabc4537b5a6c574cc6",
+  "prepared_logical_string": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "raw_provider_output": null,
+  "status": "prepared"
+}

@@ -1,0 +1,7 @@
+# P11 HPC architecture
+
+The repository is self-contained at the source level. `hpc/bootstrap_solver.sh` clones the upstream `peaked-mpo-solver` at commit `3bcdc1e5bfd6abb9425f71bd43e560d2b27f45c1` and applies `hpc/solver_patches/0001-research-hardening.patch`, plus the checked-in NumPy QR compatibility module. `hpc/bootstrap_circuits.sh` fetches only the canonical P9/P11 QASM inputs from a pinned public source and records their hashes.
+
+`scripts/run_p11_mpo.py` is the portable process boundary: it resolves the solver relative to the repository, sets BLAS/Numba thread budgets, writes a manifest, forwards termination signals, and enforces a process-tree RSS/wall watchdog. The actual tensor work is upstream `p9solver` MPO construction, gate absorption, compression, swap routing, and sampling. `src/p12_recovery/real_mpo_beam.py` provides a copy-on-write/checkpointable adapter for candidate schedules: each probe snapshots the MPO, applies real swap/work layers, scores useful-gate drain and tensor growth, then commits only the selected candidate.
+
+The shell NUMA launcher binds one-node and two-node profiles with `numactl` when available and uses interleaved memory for the four-node profile. The orchestrator persists `RUN_STATE.json` before and after every stage, so resume skips completed stages and never relies on an in-memory decision. Every P11 stage is answer-blind; P9 expected-bitstring checking exists only in the explicitly named P9 calibration gate.

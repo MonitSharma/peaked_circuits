@@ -1,0 +1,51 @@
+{
+  "schema": "bluequbit-p1-v2-compile-summary-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "source": {
+    "gate_count": 4407,
+    "gate_counts": {
+      "u": 2950,
+      "cz": 1457
+    },
+    "depth": 307,
+    "two_qubit_depth": 153
+  },
+  "candidates": [
+    {
+      "tool": "qiskit_transpile",
+      "optimization_level": 1,
+      "gate_count": 4407,
+      "gate_counts": {
+        "u": 2950,
+        "cz": 1457
+      },
+      "depth": 307,
+      "two_qubit_depth": 153
+    },
+    {
+      "tool": "qiskit_transpile",
+      "optimization_level": 2,
+      "gate_count": 4407,
+      "gate_counts": {
+        "u": 2950,
+        "cz": 1457
+      },
+      "depth": 307,
+      "two_qubit_depth": 153
+    },
+    {
+      "tool": "qiskit_transpile",
+      "optimization_level": 3,
+      "gate_count": 4407,
+      "gate_counts": {
+        "u": 2950,
+        "cz": 1457
+      },
+      "depth": 307,
+      "two_qubit_depth": 153
+    }
+  ],
+  "runtime_s": 0.24055133404908702,
+  "decision": "NO_MATERIAL_EXACT_QISKIT_SIMPLIFICATION"
+}

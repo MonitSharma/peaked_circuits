@@ -1,0 +1,442 @@
+{
+  "schema": "sop-rank-width-v1",
+  "answer_blind": true,
+  "results": [
+    {
+      "circuit": "P5_granite_summit.qasm",
+      "n_qubits": 44,
+      "n_vertices": 7700,
+      "n_edges": 9548,
+      "h_gates": 7656,
+      "quadratic_phase_terms": 1892,
+      "diagonal_blocks": 11484,
+      "max_cut_rank_time_order": 44,
+      "implied_cost_log2": 88,
+      "profile": [
+        {
+          "k": 308,
+          "cut_rank": 44
+        },
+        {
+          "k": 616,
+          "cut_rank": 44
+        },
+        {
+          "k": 924,
+          "cut_rank": 44
+        },
+        {
+          "k": 1232,
+          "cut_rank": 44
+        },
+        {
+          "k": 1540,
+          "cut_rank": 44
+        },
+        {
+          "k": 1848,
+          "cut_rank": 44
+        },
+        {
+          "k": 2156,
+          "cut_rank": 44
+        },
+        {
+          "k": 2464,
+          "cut_rank": 44
+        },
+        {
+          "k": 2772,
+          "cut_rank": 44
+        },
+        {
+          "k": 3080,
+          "cut_rank": 44
+        },
+        {
+          "k": 3388,
+          "cut_rank": 44
+        },
+        {
+          "k": 3696,
+          "cut_rank": 44
+        },
+        {
+          "k": 4004,
+          "cut_rank": 44
+        },
+        {
+          "k": 4312,
+          "cut_rank": 44
+        },
+        {
+          "k": 4620,
+          "cut_rank": 44
+        },
+        {
+          "k": 4928,
+          "cut_rank": 44
+        },
+        {
+          "k": 5236,
+          "cut_rank": 44
+        },
+        {
+          "k": 5544,
+          "cut_rank": 44
+        },
+        {
+          "k": 5852,
+          "cut_rank": 44
+        },
+        {
+          "k": 6160,
+          "cut_rank": 44
+        },
+        {
+          "k": 6468,
+          "cut_rank": 44
+        },
+        {
+          "k": 6776,
+          "cut_rank": 44
+        },
+        {
+          "k": 7084,
+          "cut_rank": 44
+        },
+        {
+          "k": 7392,
+          "cut_rank": 30
+        }
+      ]
+    },
+    {
+      "circuit": "P8_grid_888_iswap.qasm",
+      "n_qubits": 40,
+      "n_vertices": 3672,
+      "n_edges": 4520,
+      "h_gates": 3632,
+      "quadratic_phase_terms": 888,
+      "diagonal_blocks": 7224,
+      "max_cut_rank_time_order": 40,
+      "implied_cost_log2": 80,
+      "profile": [
+        {
+          "k": 147,
+          "cut_rank": 40
+        },
+        {
+          "k": 294,
+          "cut_rank": 40
+        },
+        {
+          "k": 441,
+          "cut_rank": 40
+        },
+        {
+          "k": 588,
+          "cut_rank": 40
+        },
+        {
+          "k": 734,
+          "cut_rank": 40
+        },
+        {
+          "k": 881,
+          "cut_rank": 40
+        },
+        {
+          "k": 1028,
+          "cut_rank": 40
+        },
+        {
+          "k": 1175,
+          "cut_rank": 40
+        },
+        {
+          "k": 1322,
+          "cut_rank": 40
+        },
+        {
+          "k": 1469,
+          "cut_rank": 40
+        },
+        {
+          "k": 1616,
+          "cut_rank": 40
+        },
+        {
+          "k": 1763,
+          "cut_rank": 40
+        },
+        {
+          "k": 1909,
+          "cut_rank": 40
+        },
+        {
+          "k": 2056,
+          "cut_rank": 40
+        },
+        {
+          "k": 2203,
+          "cut_rank": 40
+        },
+        {
+          "k": 2350,
+          "cut_rank": 40
+        },
+        {
+          "k": 2497,
+          "cut_rank": 40
+        },
+        {
+          "k": 2644,
+          "cut_rank": 40
+        },
+        {
+          "k": 2791,
+          "cut_rank": 40
+        },
+        {
+          "k": 2938,
+          "cut_rank": 40
+        },
+        {
+          "k": 3084,
+          "cut_rank": 40
+        },
+        {
+          "k": 3231,
+          "cut_rank": 37
+        },
+        {
+          "k": 3378,
+          "cut_rank": 29
+        },
+        {
+          "k": 3525,
+          "cut_rank": 18
+        }
+      ]
+    },
+    {
+      "circuit": "P6_titan_pinnacle.qasm",
+      "n_qubits": 62,
+      "n_vertices": 14046,
+      "n_edges": 17478,
+      "h_gates": 13984,
+      "quadratic_phase_terms": 3494,
+      "diagonal_blocks": 20976,
+      "max_cut_rank_time_order": 62,
+      "implied_cost_log2": 124,
+      "profile": [
+        {
+          "k": 562,
+          "cut_rank": 62
+        },
+        {
+          "k": 1124,
+          "cut_rank": 62
+        },
+        {
+          "k": 1686,
+          "cut_rank": 62
+        },
+        {
+          "k": 2247,
+          "cut_rank": 62
+        },
+        {
+          "k": 2809,
+          "cut_rank": 62
+        },
+        {
+          "k": 3371,
+          "cut_rank": 62
+        },
+        {
+          "k": 3933,
+          "cut_rank": 62
+        },
+        {
+          "k": 4495,
+          "cut_rank": 62
+        },
+        {
+          "k": 5057,
+          "cut_rank": 62
+        },
+        {
+          "k": 5618,
+          "cut_rank": 62
+        },
+        {
+          "k": 6180,
+          "cut_rank": 62
+        },
+        {
+          "k": 6742,
+          "cut_rank": 62
+        },
+        {
+          "k": 7304,
+          "cut_rank": 62
+        },
+        {
+          "k": 7866,
+          "cut_rank": 62
+        },
+        {
+          "k": 8428,
+          "cut_rank": 62
+        },
+        {
+          "k": 8989,
+          "cut_rank": 62
+        },
+        {
+          "k": 9551,
+          "cut_rank": 62
+        },
+        {
+          "k": 10113,
+          "cut_rank": 62
+        },
+        {
+          "k": 10675,
+          "cut_rank": 62
+        },
+        {
+          "k": 11237,
+          "cut_rank": 62
+        },
+        {
+          "k": 11799,
+          "cut_rank": 62
+        },
+        {
+          "k": 12360,
+          "cut_rank": 62
+        },
+        {
+          "k": 12922,
+          "cut_rank": 62
+        },
+        {
+          "k": 13484,
+          "cut_rank": 56
+        }
+      ]
+    },
+    {
+      "circuit": "peaked_circuit_P9_Hqap_56x1917.qasm",
+      "n_qubits": 56,
+      "n_vertices": 7836,
+      "n_edges": 9697,
+      "h_gates": 7780,
+      "quadratic_phase_terms": 1917,
+      "diagonal_blocks": 11670,
+      "max_cut_rank_time_order": 56,
+      "implied_cost_log2": 112,
+      "profile": [
+        {
+          "k": 313,
+          "cut_rank": 56
+        },
+        {
+          "k": 627,
+          "cut_rank": 56
+        },
+        {
+          "k": 940,
+          "cut_rank": 56
+        },
+        {
+          "k": 1254,
+          "cut_rank": 56
+        },
+        {
+          "k": 1567,
+          "cut_rank": 56
+        },
+        {
+          "k": 1881,
+          "cut_rank": 56
+        },
+        {
+          "k": 2194,
+          "cut_rank": 56
+        },
+        {
+          "k": 2508,
+          "cut_rank": 56
+        },
+        {
+          "k": 2821,
+          "cut_rank": 56
+        },
+        {
+          "k": 3134,
+          "cut_rank": 56
+        },
+        {
+          "k": 3448,
+          "cut_rank": 56
+        },
+        {
+          "k": 3761,
+          "cut_rank": 56
+        },
+        {
+          "k": 4075,
+          "cut_rank": 56
+        },
+        {
+          "k": 4388,
+          "cut_rank": 56
+        },
+        {
+          "k": 4702,
+          "cut_rank": 56
+        },
+        {
+          "k": 5015,
+          "cut_rank": 56
+        },
+        {
+          "k": 5328,
+          "cut_rank": 56
+        },
+        {
+          "k": 5642,
+          "cut_rank": 56
+        },
+        {
+          "k": 5955,
+          "cut_rank": 56
+        },
+        {
+          "k": 6269,
+          "cut_rank": 56
+        },
+        {
+          "k": 6582,
+          "cut_rank": 56
+        },
+        {
+          "k": 6896,
+          "cut_rank": 56
+        },
+        {
+          "k": 7209,
+          "cut_rank": 56
+        },
+        {
+          "k": 7523,
+          "cut_rank": 54
+        }
+      ]
+    }
+  ]
+}

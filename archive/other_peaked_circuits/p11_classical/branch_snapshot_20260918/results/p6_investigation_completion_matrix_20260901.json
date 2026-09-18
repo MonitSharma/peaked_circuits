@@ -1,0 +1,62 @@
+{
+  "schema": "p6-investigation-completion-matrix-v1",
+  "answer_blind": true,
+  "specification": "C:\\Users\\monitsharma\\.codex\\attachments\\4eecd0bc-86b5-45c0-9e96-f67372bb4451\\pasted-text-1.txt",
+  "phases": {
+    "phase_0_repository_audit": {
+      "status": "complete",
+      "evidence": ["docs/P6_REPOSITORY_AUDIT_20260901.md"]
+    },
+    "phase_a_exact_pyzx": {
+      "status": "complete_with_validation_limit",
+      "evidence": [
+        "scripts/run_pyzx_p6.py",
+        "scripts/measure_pyzx_p6.py",
+        "results/p6_followup_pyzx_20260901/pyzx_p6_results.json",
+        "results/p6_pyzx_structural_metrics_20260901.json"
+      ],
+      "limitation": "Exact graph rewrites and exact-basis extraction were used; the full 62-qubit independent equality verifier did not finish within a bounded observation window."
+    },
+    "phase_b_clifford_residual": {
+      "status": "complete_negative_screen",
+      "evidence": [
+        "scripts/p6_clifford_diagnostic.py",
+        "results/p6_clifford_diagnostic_20260901.json"
+      ],
+      "limitation": "The nullity statistic is a heuristic screening proxy, not a CAMPS/OFD theorem."
+    },
+    "phase_c_split_cutoff": {
+      "status": "stopped_after_p5_regression",
+      "evidence": [
+        "results/p6_split_control_p5_20260901/p5_split_control/summary.json",
+        "docs/P6_REPRESENTATION_INVESTIGATION_20260901.md"
+      ],
+      "limitation": "The local adaptive unswap pulse was verified operationally on P5 and P6 smoke/bounded runs, but the high-search P5 calibration was stopped at 182/902 gates and the P6 bounded run stalled at 26/2,593 gates after the first pulse. It is not promoted as a solution; no P9 full same-controller correctness run is claimed."
+    },
+    "phase_d_scalar_cutoff": {
+      "status": "complete_negative_stall",
+      "evidence": [
+        "results/p6_scalar_1p875e3_20260901/p6_c1p875e3_flip2/endpoint_audit.json",
+        "results/p6_scalar_1p875e3_20260901/p6_c1p875e3_flip2/stats.json",
+        "results/p6_scalar_1p875e3_20260901/p6_c1p875e3_flip2/run.log"
+      ]
+    },
+    "phase_e_secondary_diagnostics": {
+      "status": "partial_bounded_tno_screen",
+      "evidence": [
+        "scripts/run_tno_p5_p6_p9.py",
+        "results/p5_tno_prefix100_20260901.json",
+        "results/p5_tno_prefix250_20260901.json",
+        "results/p5_tno_prefix500_20260901.json",
+        "results/p6_tno_prefix100_20260901.json",
+        "results/p6_tno_prefix250_20260901.json",
+        "results/p6_tno_prefix500_20260901.json",
+        "results/p9_tno_prefix100_20260901.json",
+        "results/p9_tno_prefix250_20260901.json",
+        "docs/P6_REPRESENTATION_INVESTIGATION_20260901.md"
+      ],
+      "limitation": "The official-style TNO core completed 100- and 250-event prefixes, but 500-event runs reached bond 16 and became too slow for the local safe bound. No quantum Tsim or Stim implementation is available; PyZX rank-width graphs are 29,988–101,898 vertices and the available greedy implementation was not launched unbounded."
+    }
+  },
+  "final_recommendation": "Run a bounded answer-blind ZX/Tsim-style contraction screen on a machine with suitable tooling, beginning with P5/P9 controls and short P6 prefixes."
+}

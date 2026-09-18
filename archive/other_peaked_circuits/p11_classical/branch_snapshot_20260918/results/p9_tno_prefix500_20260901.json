@@ -1,0 +1,67 @@
+{
+  "answer_blind": true,
+  "runs": [
+    {
+      "answer_blind": true,
+      "configuration": {
+        "chunk_size": 4,
+        "cutoff": 0.01,
+        "max_bond": 16,
+        "max_seconds": 120.0,
+        "method": "local-late",
+        "optimize": "greedy"
+      },
+      "environment": {
+        "platform": "Windows-10-10.0.26200-SP0",
+        "python": "3.11.5"
+      },
+      "layers": 61,
+      "qubits": 56,
+      "runtime_s": 120.70299999997951,
+      "schema": "p6-public-tno-screen-v1",
+      "source": "C:\\Users\\monitsharma\\Downloads\\SMU-Quantum\\p12-helios-recovery\\_upstream_peaked_mpo_solver\\circ\\peaked_circuit_P9_Hqap_56x1917.qasm",
+      "source_sha256": "f043c6cdf9e1a1ba9b3e68ea3b893277e8acacab80319d6a8524cc022886a3f9",
+      "status": "CORE_TIMEOUT",
+      "trace": [
+        {
+          "distance": 0,
+          "elapsed_s": 0.2029999999795109,
+          "max_bond": 4,
+          "num_tensors": 56
+        },
+        {
+          "distance": 4,
+          "elapsed_s": 0.5779999999795109,
+          "max_bond": 4,
+          "num_tensors": 56
+        },
+        {
+          "distance": 8,
+          "elapsed_s": 1.437000000034459,
+          "max_bond": 4,
+          "num_tensors": 56
+        },
+        {
+          "distance": 12,
+          "elapsed_s": 3.484000000054948,
+          "max_bond": 4,
+          "num_tensors": 56
+        },
+        {
+          "distance": 16,
+          "elapsed_s": 18.09299999999348,
+          "max_bond": 4,
+          "num_tensors": 56
+        },
+        {
+          "distance": 20,
+          "elapsed_s": 120.51500000001397,
+          "max_bond": 8,
+          "num_tensors": 56
+        }
+      ],
+      "twoq_prefix": 500
+    }
+  ],
+  "schema": "p6-public-tno-screen-v1"
+}

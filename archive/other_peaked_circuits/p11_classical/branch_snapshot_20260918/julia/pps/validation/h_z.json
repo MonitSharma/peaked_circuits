@@ -1,0 +1,22 @@
+{
+  "schema": "pps_validation_v1",
+  "name": "h_z",
+  "num_qubits": 1,
+  "observable_qiskit_zero_based": 0,
+  "expected": 0.0,
+  "gates": [
+    {
+      "instruction_index": 0,
+      "gate_name": "h",
+      "qargs_qiskit_zero_based": [
+        0
+      ],
+      "qargs_julia_one_based": [
+        1
+      ],
+      "parameters": [],
+      "native_pps_mapping": "CliffordGate:H",
+      "fallback": null
+    }
+  ]
+}

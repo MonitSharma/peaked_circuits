@@ -1,0 +1,62 @@
+{
+  "architecture": "arm64",
+  "arguments": [
+    "export-qir",
+    "--source",
+    "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm",
+    "--output",
+    "results/qir/p12.ll"
+  ],
+  "backend_mode": "local_qir_export",
+  "command": "export-qir",
+  "configuration_hash": null,
+  "configuration_path": null,
+  "created_at": "2026-07-12T08:57:24.976213Z",
+  "credentials_detected": false,
+  "dirty_working_tree": true,
+  "end_timestamp": "2026-07-12T08:57:24.905300Z",
+  "exit_status": 0,
+  "git_commit": "08cd2b40f5a711f2af2d623482a02786df859f93",
+  "git_dirty": true,
+  "hardware_execution_attempted": false,
+  "input_hashes": {
+    "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
+  },
+  "input_paths": {
+    "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
+  },
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "output_paths": {
+    "results/qir/p12.bc": "a02876441d254defc67f111878baa986ebc2f5142e435a0a2dca6cbd531fa9cd",
+    "results/qir/p12.ll": "f54bfe839ae0ec0280acd82998161b660fe90183e88264cc049d74f7f85ce336",
+    "results/qir/qir_export_report.json": "7cc8fd9d6cdcf21b40ce17c78087e40f46040c4f82048a412e640af14fe635b4",
+    "results/qir/qir_export_report.md": "70d4a26259d912dd2aaa9105fa25252d2b578a7b9299bc18df7c02edf89ef734",
+    "results/qir/qir_manifest.json": "d0a2c6888f2226092a7ef598b590f053d3d4b3d7aa0afc642fcd3ef03ec006e8",
+    "results/qir/qir_output_mapping.json": "e95d9c998bf3f30aebbe72a134d2f6566cac8e3160f37e2eb971a634e92da717"
+  },
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.1",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "2.3.3",
+    "pydantic": "2.13.4",
+    "pyqir": "0.12.5",
+    "pytket": "2.18.1",
+    "pytket-qir": "2.0.0",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.1",
+    "qiskit": null,
+    "qnexus": "0.46.0",
+    "rich": "13.9.4",
+    "scipy": "1.18.0",
+    "typer": "0.26.8"
+  },
+  "paid_resources_consumed": false,
+  "python_version": "3.13.7",
+  "random_seed": null,
+  "run_id": "20260712T085720Z-7913c70c",
+  "schema_version": "1.0",
+  "start_timestamp": "2026-07-12T08:57:20.864759Z"
+}

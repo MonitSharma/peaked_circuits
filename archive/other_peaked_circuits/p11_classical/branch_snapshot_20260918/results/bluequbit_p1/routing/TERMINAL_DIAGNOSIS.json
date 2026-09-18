@@ -1,0 +1,34 @@
+{
+  "schema": "bluequbit-p1-terminal-diagnosis-v1",
+  "blind": true,
+  "run_id": "mpo_baseline_300",
+  "circuit_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "configuration": {
+    "dtype": "complex64",
+    "max_bond": 512,
+    "cutoff": 0.006,
+    "center_ratio": 0.5,
+    "seed": 123,
+    "no_progress_limit": 20,
+    "wall_guard_s": 120
+  },
+  "total_work_gates": 1413,
+  "observed_gates_completed": 114,
+  "observed_gates_remaining": 1299,
+  "observed_at_s": 105,
+  "termination": "bounded_wall_timeout",
+  "observed_cycles": 6,
+  "observed_events": {
+    "native_svd_convergence_failures": 2,
+    "last_progress_message": "cycle 6: 114/1413 work gates"
+  },
+  "diagnosis": {
+    "tensor_capacity": "not demonstrated; no bond-ceiling telemetry was persisted",
+    "numerical_precision": "possible contributor; native complex64 SVD convergence failed",
+    "routing": "not isolated by this short run",
+    "permutation_cycling": "not established by this short run",
+    "guard_condition": "external wall guard fired before the solver's terminal no-progress guard",
+    "classification": "mixed numerical/throughput limitation; insufficient evidence for terminal permutation cycling"
+  },
+  "claim_audit": "This run does not substantiate the reported 97-99% P1 progress claim. No valid in-repository P1 trajectory artifact for that claim was found."
+}

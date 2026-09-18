@@ -1,0 +1,20 @@
+{
+  "schema": "bluequbit-p8-helios1e-v1",
+  "qasm": "/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm",
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "source_qubits": 40,
+  "source_gates": 2704,
+  "prepared_gates": 23248,
+  "prepared_operation_counts": {
+    "Rz": 11624,
+    "Rx": 9808,
+    "CZ": 1776,
+    "Measure": 40
+  },
+  "qir_sha256": "1afed53f3a8a0663028c18bf9350197433d3337793ecbba804c06faeecc9374f",
+  "bitcode_sha256": "c974c416f1acff91bda7d7eecef65e6c62d1f773d91191f26198ffc732ccd6b5",
+  "target": "Helios-1E",
+  "shots_requested": 20,
+  "max_cost": 100.0,
+  "executed": false
+}

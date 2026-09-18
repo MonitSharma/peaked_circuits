@@ -1,0 +1,16 @@
+schema_version: "1.0"
+nexus:
+  project_name: p12-helios-recovery
+  target: Helios-1SC
+  require_authenticated_discovery: true
+  timeout_seconds: 1800
+artifact:
+  qir_path: results/qir/p12.ll
+  expected_qir_sha256: null
+authorization:
+  require_cli_flag: true
+  require_environment_variable: true
+  environment_variable: P12_ENABLE_NEXUS_SYNTAX_CHECK
+  require_interactive_confirmation: true
+output:
+  directory: results/nexus/syntax_check

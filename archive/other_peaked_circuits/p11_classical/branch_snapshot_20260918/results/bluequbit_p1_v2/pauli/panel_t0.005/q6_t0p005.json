@@ -1,0 +1,14 @@
+{
+  "observable_q_julia_one_based": 6,
+  "unresolved": true,
+  "stream": "results/bluequbit_p1_v2/pauli/p1_stream.json",
+  "expectation": 0.0,
+  "elapsed_seconds": 0.9740269184112549,
+  "min_abs_coeff": 0.005,
+  "julia_threads": 1,
+  "sign": 0,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "num_qubits": 36,
+  "inferred_bit": null,
+  "terms": 0
+}

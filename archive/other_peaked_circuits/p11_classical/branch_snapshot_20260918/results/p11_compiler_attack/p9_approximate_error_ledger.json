@@ -1,0 +1,769 @@
+{
+  "ledger": [
+    {
+      "accepted": 0,
+      "rows": [
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 41,
+          "stop": 48,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 453,
+          "stop": 460,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 643,
+          "stop": 650,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 726,
+          "stop": 732,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1159,
+          "stop": 1166,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1520,
+          "stop": 1527,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1690,
+          "stop": 1696,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1844,
+          "stop": 1850,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1934,
+          "stop": 1941,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1946,
+          "stop": 1953,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1992,
+          "stop": 1999,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 2092,
+          "stop": 2099,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 2297,
+          "stop": 2304,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 2372,
+          "stop": 2379,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 2550,
+          "stop": 2556,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3208,
+          "stop": 3215,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3308,
+          "stop": 3315,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3315,
+          "stop": 3321,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3612,
+          "stop": 3619,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3708,
+          "stop": 3714,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3775,
+          "stop": 3782,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3829,
+          "stop": 3834,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3972,
+          "stop": 3978,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4250,
+          "stop": 4257,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4267,
+          "stop": 4273,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4494,
+          "stop": 4499,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4550,
+          "stop": 4556,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4953,
+          "stop": 4960,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 5023,
+          "stop": 5030,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 5236,
+          "stop": 5243,
+          "tolerance": 1e-08
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 5737,
+          "stop": 5742,
+          "tolerance": 1e-08
+        }
+      ],
+      "tolerance": 1e-08
+    },
+    {
+      "accepted": 0,
+      "rows": [
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 41,
+          "stop": 48,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 453,
+          "stop": 460,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 643,
+          "stop": 650,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 726,
+          "stop": 732,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1159,
+          "stop": 1166,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1520,
+          "stop": 1527,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1690,
+          "stop": 1696,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1844,
+          "stop": 1850,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1934,
+          "stop": 1941,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1946,
+          "stop": 1953,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1992,
+          "stop": 1999,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 2092,
+          "stop": 2099,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 2297,
+          "stop": 2304,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 2372,
+          "stop": 2379,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 2550,
+          "stop": 2556,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3208,
+          "stop": 3215,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3308,
+          "stop": 3315,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3315,
+          "stop": 3321,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3612,
+          "stop": 3619,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3708,
+          "stop": 3714,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3775,
+          "stop": 3782,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3829,
+          "stop": 3834,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3972,
+          "stop": 3978,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4250,
+          "stop": 4257,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4267,
+          "stop": 4273,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4494,
+          "stop": 4499,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4550,
+          "stop": 4556,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4953,
+          "stop": 4960,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 5023,
+          "stop": 5030,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 5236,
+          "stop": 5243,
+          "tolerance": 1e-06
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 5737,
+          "stop": 5742,
+          "tolerance": 1e-06
+        }
+      ],
+      "tolerance": 1e-06
+    },
+    {
+      "accepted": 0,
+      "rows": [
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 41,
+          "stop": 48,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 453,
+          "stop": 460,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 643,
+          "stop": 650,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 726,
+          "stop": 732,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1159,
+          "stop": 1166,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1520,
+          "stop": 1527,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1690,
+          "stop": 1696,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1844,
+          "stop": 1850,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1934,
+          "stop": 1941,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1946,
+          "stop": 1953,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 1992,
+          "stop": 1999,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 2092,
+          "stop": 2099,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 2297,
+          "stop": 2304,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 2372,
+          "stop": 2379,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 2550,
+          "stop": 2556,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3208,
+          "stop": 3215,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3308,
+          "stop": 3315,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3315,
+          "stop": 3321,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3612,
+          "stop": 3619,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3708,
+          "stop": 3714,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3775,
+          "stop": 3782,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3829,
+          "stop": 3834,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 3972,
+          "stop": 3978,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4250,
+          "stop": 4257,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4267,
+          "stop": 4273,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4494,
+          "stop": 4499,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4550,
+          "stop": 4556,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 1.1102230246251565e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 4953,
+          "stop": 4960,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 5023,
+          "stop": 5030,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 2.220446049250313e-16,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 5236,
+          "stop": 5243,
+          "tolerance": 0.0001
+        },
+        {
+          "accepted": false,
+          "error": 0.0,
+          "reason": "strict 2q gate and tolerance gate",
+          "start": 5737,
+          "stop": 5742,
+          "tolerance": 0.0001
+        }
+      ],
+      "tolerance": 0.0001
+    }
+  ],
+  "p9_56_of_56_preserved": true,
+  "source": "results/p11_compiler_attack/p9_local_synthesis_q2/summary.json",
+  "verdict": "BRANCH_NO_GO"
+}

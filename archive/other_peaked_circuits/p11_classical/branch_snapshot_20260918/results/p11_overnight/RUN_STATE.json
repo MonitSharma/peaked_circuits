@@ -1,0 +1,86 @@
+{
+  "schema": "p11-overnight-run-state-v1",
+  "current_phase": "finalized_exhaustive_local_no_go",
+  "current_sub_branch": "compiler_attack",
+  "completed_branches": ["phase_0_audit", "path_a_exact_normalization", "path_b_exact_local_synthesis", "path_c_virtual_permutation_ledger", "path_d_offset_sweep", "path_e_middle_out_peeling", "path_f_direct_local_verification", "path_g_approximate_error_ledger", "path_h_dd_pilot", "path_i_local_fallbacks"],
+  "branch_verdicts": {
+    "phase_0_audit": "PASS",
+    "path_a_exact_normalization": {
+      "verdict": "BRANCH_NO_GO",
+      "p9_two_qubit_reduction_fraction": 0.0,
+      "p9_output_hash_equals_input": true,
+      "verification": "deterministic exact-mode pass stack; small-circuit Operator regression passed"
+    },
+    "path_b_exact_local_synthesis": {
+      "verdict": "BRANCH_NO_GO",
+      "p9": {
+        "q2_blocks": 31,
+        "q2_old_interactions": 62,
+        "q2_accepted": 0,
+        "q3_q4_status": "unavailable_no_bqskit",
+        "offsets": {"0": 0, "1": 0, "2": 0}
+      },
+      "p11": {
+        "q2_blocks": 1,
+        "q2_old_interactions": 2,
+        "q2_accepted": 0,
+        "q3_q4_status": "unavailable_no_bqskit",
+        "offsets": {"0": 0, "1": 0, "2": 0}
+      },
+      "verification": "Qiskit TwoQubitBasisDecomposer Operator fidelity >= 1-1e-10 for verified candidates; accepted only strict 2q reductions"
+    },
+    "path_c_virtual_permutation_ledger": {
+      "verdict": "BRANCH_NO_GO",
+      "p9_permutation_candidates": 62,
+      "p11_permutation_candidates": 2,
+      "accepted": 0,
+      "verification": "identity plus all wire-order permutations enumerated per bounded local block; no exact reducing replacement"
+    },
+    "path_d_offset_sweep": {
+      "verdict": "BRANCH_NO_GO",
+      "offsets": [0, 1, 2],
+      "p9_accepted": 0,
+      "p11_accepted": 0,
+      "verification": "same bounded exact local search at each offset"
+    },
+    "path_e_middle_out_peeling": {
+      "verdict": "BRANCH_NO_GO",
+      "p9_accepted": 0,
+      "p11_accepted": 0,
+      "verification": "middle-out temporal ordering applied to all extracted blocks; no exact reducing replacement"
+    },
+    "path_f_direct_local_verification": {
+      "verdict": "PASS_NO_REDUCTION",
+      "method": "dense local Operator comparison for q<=4; QCEC unavailable",
+      "tolerance": 1e-10
+    },
+    "path_g_approximate_error_ledger": {
+      "verdict": "BRANCH_NO_GO",
+      "tolerances": [1e-8, 1e-6, 1e-4],
+      "p9_accepted_by_tolerance": [0, 0, 0],
+      "p11_accepted_by_tolerance": [0, 0, 0],
+      "p9_56_of_56_preserved": true,
+      "verification": "explicit error ledger; strict reduction gate plus tolerance gate"
+    },
+    "path_h_dd_pilot": {
+      "verdict": "UNAVAILABLE_LOCAL_FALLBACK",
+      "p9_first": true,
+      "reason": "no decision-diagram package installed"
+    },
+    "path_i_local_fallbacks": {
+      "verdict": "UNAVAILABLE_LOCAL_FALLBACK",
+      "qcec": false,
+      "pyzx": false,
+      "bqskit": false,
+      "direct_dense_q1_to_q4": "PASS"
+    }
+  },
+  "active_processes": {
+    "goal_sentinel_pid_file": "results/p11_overnight/goal_sentinel.pid",
+    "caffeinate_pid_file": "results/p11_overnight/caffeinate.pid"
+  },
+  "best_p9_reduction": 0.0,
+  "best_p11_reduction": 0.0,
+  "final_verdict": "EXHAUSTIVE_LOCAL_NO_GO",
+  "next_action": "write final status and create GOAL_COMPLETE as the last action"
+}

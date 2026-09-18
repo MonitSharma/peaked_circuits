@@ -1,0 +1,109 @@
+{
+  "schema": "p6-patch-candidate-family-v1",
+  "family_size": 6,
+  "warning": "structural hypotheses only; not validated answers",
+  "candidates": [
+    {
+      "source": "seed123",
+      "transform": "identity",
+      "bitstring": "11100011000101111010111111011011010100110110010010010010101000",
+      "patch_left_wires": [
+        22,
+        25,
+        36
+      ],
+      "patch_right_order": [
+        21,
+        58,
+        6
+      ],
+      "adjoint_right": true,
+      "fidelity": 0.9977993799338968
+    },
+    {
+      "source": "seed123",
+      "transform": "patch_cycle",
+      "bitstring": "11100011000101111010111111011011010110110110010010010010100000",
+      "patch_left_wires": [
+        22,
+        25,
+        36
+      ],
+      "patch_right_order": [
+        21,
+        58,
+        6
+      ],
+      "adjoint_right": true,
+      "fidelity": 0.9977993799338968
+    },
+    {
+      "source": "seed123",
+      "transform": "patch_cycle_inverse",
+      "bitstring": "11100001000101111010111111011011010110110110010010010010101000",
+      "patch_left_wires": [
+        22,
+        25,
+        36
+      ],
+      "patch_right_order": [
+        21,
+        58,
+        6
+      ],
+      "adjoint_right": true,
+      "fidelity": 0.9977993799338968
+    },
+    {
+      "source": "seed456",
+      "transform": "identity",
+      "bitstring": "11111100011101000101100111111010100101110111100100111101110101",
+      "patch_left_wires": [
+        22,
+        25,
+        36
+      ],
+      "patch_right_order": [
+        21,
+        58,
+        6
+      ],
+      "adjoint_right": true,
+      "fidelity": 0.9977993799338968
+    },
+    {
+      "source": "seed456",
+      "transform": "patch_cycle",
+      "bitstring": "11111100011101000101110110111010100101110111100100111101110101",
+      "patch_left_wires": [
+        22,
+        25,
+        36
+      ],
+      "patch_right_order": [
+        21,
+        58,
+        6
+      ],
+      "adjoint_right": true,
+      "fidelity": 0.9977993799338968
+    },
+    {
+      "source": "seed456",
+      "transform": "patch_cycle_inverse",
+      "bitstring": "11111100011101000101100110111010100101110111100100111101111101",
+      "patch_left_wires": [
+        22,
+        25,
+        36
+      ],
+      "patch_right_order": [
+        21,
+        58,
+        6
+      ],
+      "adjoint_right": true,
+      "fidelity": 0.9977993799338968
+    }
+  ]
+}

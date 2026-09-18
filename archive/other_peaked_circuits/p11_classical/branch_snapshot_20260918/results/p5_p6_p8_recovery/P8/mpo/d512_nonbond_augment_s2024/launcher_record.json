@@ -1,0 +1,10 @@
+{
+  "termination_reason": "exit_-15",
+  "wall_time_s": 1747.296010082995,
+  "peak_process_tree_rss_bytes": 5728632832,
+  "peak_process_tree_rss_gb": 5.335,
+  "peak_process_tree_vmhwm_bytes": 0,
+  "peak_process_tree_vmhwm_gb": 0.0,
+  "rss_soft_gb": 20.0,
+  "rss_soft_exceeded": false
+}

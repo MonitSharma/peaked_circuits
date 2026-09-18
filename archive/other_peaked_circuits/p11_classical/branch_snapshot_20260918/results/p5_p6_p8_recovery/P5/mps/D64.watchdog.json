@@ -1,0 +1,24 @@
+{
+  "problem": "P5",
+  "bond": 64,
+  "command": [
+    "/Users/monitsharma/Code/p12-helios-recovery/.venv/bin/python",
+    "/Users/monitsharma/Code/p12-helios-recovery/scripts/run_peak_mps.py",
+    "--qasm",
+    "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
+    "--out",
+    "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P5/mps/D64.json",
+    "--bond",
+    "64",
+    "--checkpoint",
+    "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P5/mps/D64.checkpoint.json",
+    "--wall-seconds",
+    "21600"
+  ],
+  "log": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/logs/P5_D64.log",
+  "exit_code": 0,
+  "peak_process_tree_rss_bytes": 462143488,
+  "runtime_s": 201.6897986670374,
+  "status": "COMPLETE",
+  "reason": null
+}

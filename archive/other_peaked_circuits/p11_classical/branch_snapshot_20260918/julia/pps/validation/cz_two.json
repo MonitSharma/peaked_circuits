@@ -1,0 +1,37 @@
+{
+  "schema": "pps_validation_v1",
+  "name": "cz_two",
+  "num_qubits": 2,
+  "observable_qiskit_zero_based": 1,
+  "expected": 0.9999999999999998,
+  "gates": [
+    {
+      "instruction_index": 0,
+      "gate_name": "cz",
+      "qargs_qiskit_zero_based": [
+        0,
+        1
+      ],
+      "qargs_julia_one_based": [
+        1,
+        2
+      ],
+      "parameters": [],
+      "native_pps_mapping": "CliffordGate:CZ",
+      "fallback": null
+    },
+    {
+      "instruction_index": 1,
+      "gate_name": "h",
+      "qargs_qiskit_zero_based": [
+        0
+      ],
+      "qargs_julia_one_based": [
+        1
+      ],
+      "parameters": [],
+      "native_pps_mapping": "CliffordGate:H",
+      "fallback": null
+    }
+  ]
+}

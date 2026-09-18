@@ -1,0 +1,15 @@
+{
+  "schema": "bluequbit-p1-v2-spd-probe-v1",
+  "blind": true,
+  "reference": "tbegusic/spd",
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "decomposition": "U=Rz(lambda) Ry(theta) Rz(phi); CZ=Rz(pi/2) on each endpoint plus exp(+i*pi/4*ZZ), represented as Pauli rotations",
+  "fixture_validation": "matched Qiskit Z expectation to approximately 1e-16 on p1_u_cz.qasm and tiny.qasm",
+  "p1_probe": [
+    {"observable_q_zero_based": 5, "threshold": 0.01, "expectation": 0.0, "terms": 0, "runtime_s": 6.56},
+    {"observable_q_zero_based": 5, "threshold": 0.005, "expectation": 0.0, "terms": 0, "runtime_s": 0.57},
+    {"observable_q_zero_based": 5, "threshold": 0.001, "expectation": 0.0, "terms": 0, "runtime_s": 4.51}
+  ],
+  "lower_threshold_probe": {"threshold": 0.0001, "status": "ABORTED_EXTERNAL_WALL_WATCHDOG", "observed_runtime_s": 2160.0, "observed_peak_rss_bytes": 10700000000, "expectation": null},
+  "decision": "REJECTED_SPD_NO_SIGNAL_AND_LOWER_THRESHOLD_INFEASIBLE"
+}

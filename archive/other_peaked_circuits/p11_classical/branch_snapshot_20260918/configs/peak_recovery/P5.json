@@ -1,0 +1,18 @@
+{
+  "schema": "p12-peak-circuit-manifest-v1",
+  "problem": "P5",
+  "source_qasm_path": "results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
+  "sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+  "qubit_count": 44,
+  "gate_counts": {"cz": 1892, "u": 3828},
+  "gate_vocabulary": ["cz", "u"],
+  "gate_count": 5720,
+  "two_qubit_gate_count": 1892,
+  "depth": 173,
+  "two_qubit_depth": 86,
+  "unique_interaction_edges": 578,
+  "graph_density": 0.6109936575052854,
+  "canonical_logical_bit_order": "q0_first",
+  "method_eligibility": {"mps": true, "tno": true, "mpo": true, "geometry": false},
+  "provenance": {"original_file_preserved": true, "answer_blind": true}
+}

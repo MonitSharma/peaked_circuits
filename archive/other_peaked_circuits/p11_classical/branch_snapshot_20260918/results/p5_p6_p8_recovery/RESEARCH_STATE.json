@@ -1,0 +1,30 @@
+{
+  "result_classes": [
+    "BLOCKED_MISSING_INPUT",
+    "CONTROL_FAILED",
+    "METHOD_REJECTED",
+    "METHOD_RESOURCE_NO_GO",
+    "UNCONVERGED",
+    "PROMISING_CANDIDATE_FAMILY",
+    "STRONG_PROVISIONAL_CANDIDATE",
+    "CROSS_METHOD_CONVERGED_CANDIDATE",
+    "CURRENT_METHODS_EXHAUSTED"
+  ],
+  "candidate": {
+    "problem": "P5",
+    "status": "PROMISING_CANDIDATE_FAMILY",
+    "freeze": "P5/consensus/frozen_family_consensus.json",
+    "freezes": [
+      "P5/freezes/P5_CANDIDATE_FREEZE.json",
+      "P5/freezes/P5_MPO_CANDIDATE_FREEZE.json"
+    ],
+    "consensus": "P5/consensus/frozen_family_consensus.json",
+    "reliability": "P5/reliability/ensemble.json",
+    "evaluation_status": "NOT_RUN_AT_FREEZE"
+  },
+  "p9_bit_order_validated": true,
+  "p9_mpo_gate_passed": true,
+  "target_answer_accessed": false,
+  "current_git_head": "29453c8",
+  "updated_at": "2026-08-29T11:00:00Z"
+}

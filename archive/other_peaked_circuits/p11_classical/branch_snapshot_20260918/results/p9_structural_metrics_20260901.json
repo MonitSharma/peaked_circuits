@@ -1,0 +1,45 @@
+{
+  "answer_blind": true,
+  "circuits": [
+    {
+      "depth": 207,
+      "gate_counts": {
+        "rzz": 1917,
+        "u": 3890
+      },
+      "interaction_edge_events": 1917,
+      "interaction_edges": 1069,
+      "interaction_span_max": 55,
+      "interaction_span_mean": 18.82524778299426,
+      "natural_order_cutwidth": 543,
+      "natural_order_cutwidth_mean": 368.5272727272727,
+      "one_qubit_ops": 3890,
+      "path": "C:\\Users\\monitsharma\\Downloads\\SMU-Quantum\\p12-helios-recovery\\results\\p11_compiler_attack\\p9_exact_normalization\\peaked_circuit_P9_Hqap_56x1917.normalized.qasm",
+      "qubits": 56,
+      "sha256": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35",
+      "total_ops": 5807,
+      "two_qubit_ops": 1917,
+      "work_gate_proxy": 5807
+    },
+    {
+      "depth": 207,
+      "gate_counts": {
+        "rzz": 1917,
+        "u": 3890
+      },
+      "interaction_edge_events": 1917,
+      "interaction_edges": 1069,
+      "interaction_span_max": 55,
+      "interaction_span_mean": 18.82524778299426,
+      "natural_order_cutwidth": 543,
+      "natural_order_cutwidth_mean": 368.5272727272727,
+      "one_qubit_ops": 3890,
+      "path": "C:\\Users\\monitsharma\\Downloads\\SMU-Quantum\\p12-helios-recovery\\results\\p11_compiler_attack\\p9_exact_normalization\\peaked_circuit_P9_Hqap_56x1917.normalized.qasm",
+      "qubits": 56,
+      "sha256": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35",
+      "total_ops": 5807,
+      "two_qubit_ops": 1917,
+      "work_gate_proxy": 5807
+    }
+  ]
+}

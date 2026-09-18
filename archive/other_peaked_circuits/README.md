@@ -12,8 +12,10 @@ recovery presentation. Nothing here is used by the active reviewer workflow.
 - `hardware_campaign/` — historical campaign records;
 - `project_support/` — archived circuits, configs, data, schemas, experiments,
   and tests associated with the broader exploratory project.
+- `p11_classical/branch_snapshot_20260918/` — complete tracked snapshot of the
+  historical `p11_classical` branch, retained for provenance but excluded from
+  the active P11/P12 reviewer workflow.
 
 The archive is recoverable and intentionally retained for provenance. The
 active public-facing workflow is limited to `problems/P11`, `problems/P12`,
 `results/tracker_submissions`, `src`, and the reviewer tools in `tools/`.
-

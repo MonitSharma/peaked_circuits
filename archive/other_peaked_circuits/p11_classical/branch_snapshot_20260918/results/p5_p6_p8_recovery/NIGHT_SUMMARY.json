@@ -1,0 +1,39 @@
+{
+  "night": 38,
+  "start": "2026-08-29T02:50:49Z",
+  "execute": false,
+  "planned_stages": [],
+  "completed": [
+    "P8:STRUCTURE_PROFILE",
+    "P6:STRUCTURE_PROFILE",
+    "P5:STRUCTURE_PROFILE",
+    "P5:ENSEMBLE_RELIABILITY"
+  ],
+  "blocked": [],
+  "aborted": [],
+  "candidates_observed": [],
+  "candidate_promoted": false,
+  "human_review_required": true,
+  "budget_seconds": 25200.0,
+  "cooldown_minutes": 5.0,
+  "synthetic_controls": {
+    "P8": {
+      "passed": true,
+      "certified": true
+    },
+    "P6": {
+      "passed": true,
+      "certified": true
+    },
+    "P5": {
+      "passed": true,
+      "certified": true
+    }
+  },
+  "total_heavy_compute_time_s": 1498.535518040997,
+  "budget_exhausted": false,
+  "budget_elapsed_s": 0.5549634579801932,
+  "max_process_tree_rss_bytes": 4009869312,
+  "next_recommended_command": "PYTHONPATH=src .venv/bin/python scripts/run_peak_recovery_portfolio.py --resume",
+  "next_reason": "P6 calibrated MPO/MPS and P8 MPS/MPO/TNO/TTN routes are exhausted or rejected; inspect-only resume is safe, while further recovery requires a materially different validated representation."
+}

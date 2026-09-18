@@ -1,0 +1,12 @@
+2026-08-26 12:04:00,979 [INFO] loaded /Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm: qubits=56 ops={'u': 3890, 'rzz': 1917}
+2026-08-26 12:04:00,985 [INFO] Pass: Collect2qBlocks - 2.73299 (ms)
+2026-08-26 12:04:00,995 [INFO] Pass: ConsolidateBlocks - 10.27489 (ms)
+2026-08-26 12:04:00,996 [INFO] after two-qubit block consolidation: ops={'unitary': 1885}
+2026-08-26 12:04:01,024 [INFO] environment: python=3.10.21 qiskit=1.4.5 quimb=1.11.2 numpy=2.2.6 scipy=1.15.2 machine=arm64
+2026-08-26 12:04:01,172 [INFO] Total unitaries: 1885 = 942 (left) + 943 (right)
+2026-08-26 12:04:01,172 [INFO] Rewiring with SabreSwap(trials=90, heuristic='decay', seed=123)
+2026-08-26 12:04:01,172 [INFO] Post-unswap rewire candidate scoring enabled: candidates=2, score='lookahead_total', lookahead=8, seed_stride=1009
+2026-08-26 12:04:01,172 [INFO] No-progress fail-fast guardrail enabled: abort after 40 consecutive zero-work unswap cycle(s)
+2026-08-26 12:04:01,172 [INFO] [start rewire](phase=initial, side=left, layers=59, trials=90, seed=123, parallel=False)
+2026-08-26 12:04:02,327 [INFO] [end rewire](phase=initial, side=left, routed_layers=1355, elapsed_s=1.16)
+2026-08-26 12:04:02,328 [INFO] [start rewire](phase=initial, side=right, layers=58, trials=90, seed=123, parallel=False)

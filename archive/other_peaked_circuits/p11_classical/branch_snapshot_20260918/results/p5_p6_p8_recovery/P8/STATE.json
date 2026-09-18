@@ -1,0 +1,194 @@
+{
+  "stages": {
+    "GEOMETRY_D4_MD2": {
+      "answer_blind": true,
+      "bond": 4,
+      "command": [
+        "/Users/monitsharma/Code/p12-helios-recovery/.venv/bin/python",
+        "/Users/monitsharma/Code/p12-helios-recovery/scripts/run_peak_geometry.py",
+        "--qasm",
+        "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P8_grid_888_iswap.qasm",
+        "--out",
+        "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P8/geometry/D4_md2.json",
+        "--max-bond",
+        "4",
+        "--cutoff",
+        "1e-10",
+        "--max-distance",
+        "2"
+      ],
+      "exit_code": 0,
+      "joint_map_claim": false,
+      "log": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/logs/P8_geometry_D4_md2.log",
+      "max_distance": 2,
+      "peak_process_tree_rss_bytes": 1085210624,
+      "problem": "P8",
+      "product_marginal_diagnostic": "0111000101000100010010011111101100111001",
+      "reason": null,
+      "runtime_s": 4.106534041988198,
+      "scientific_decision": "PROMOTE_NEXT_GEOMETRY_RUNG",
+      "stage": "GEOMETRY_D4_MD2",
+      "status": "COMPLETE"
+    },
+    "GEOMETRY_D4_MD3": {
+      "answer_blind": true,
+      "bond": 4,
+      "command": [
+        "/Users/monitsharma/Code/p12-helios-recovery/.venv/bin/python",
+        "/Users/monitsharma/Code/p12-helios-recovery/scripts/run_peak_geometry.py",
+        "--qasm",
+        "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P8_grid_888_iswap.qasm",
+        "--out",
+        "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P8/geometry/D4_md3.json",
+        "--max-bond",
+        "4",
+        "--cutoff",
+        "1e-10",
+        "--max-distance",
+        "3"
+      ],
+      "exit_code": 0,
+      "joint_map_claim": false,
+      "log": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/logs/P8_geometry_D4_md3.log",
+      "max_distance": 3,
+      "peak_process_tree_rss_bytes": 4009869312,
+      "problem": "P8",
+      "product_marginal_diagnostic": "0111001101001110010010011111101100110001",
+      "reason": null,
+      "runtime_s": 14.40734216599958,
+      "scientific_decision": "GEOMETRY_UNSTABLE",
+      "stage": "GEOMETRY_D4_MD3",
+      "status": "COMPLETE"
+    },
+    "GEOMETRY_D8_MD2": {
+      "answer_blind": true,
+      "bond": 8,
+      "joint_map_claim": false,
+      "max_distance": 2,
+      "problem": "P8",
+      "stage": "GEOMETRY_D8_MD2",
+      "status": "PLANNED"
+    },
+    "GEOMETRY_PROBE": {
+      "answer_blind": true,
+      "degree_max": 4,
+      "degree_mean": 3.15,
+      "degree_min": 1,
+      "geometry_path_status": "DIAGNOSTIC_ONLY",
+      "n_qubits": 40,
+      "problem": "P8",
+      "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+      "scientific_decision": "METHOD_STOP_GEOMETRY_DIAGNOSTIC_ONLY",
+      "stage": "GEOMETRY_PROBE",
+      "status": "COMPLETE",
+      "unique_edges": 63
+    },
+    "MPS_D128": {
+      "answer_blind": true,
+      "bond": 128,
+      "command": [
+        "/Users/monitsharma/Code/p12-helios-recovery/.venv/bin/python",
+        "/Users/monitsharma/Code/p12-helios-recovery/scripts/run_peak_mps.py",
+        "--qasm",
+        "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P8_grid_888_iswap.qasm",
+        "--out",
+        "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P8/mps/D128.json",
+        "--bond",
+        "128",
+        "--checkpoint",
+        "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P8/mps/D128.checkpoint.json",
+        "--wall-seconds",
+        "21600"
+      ],
+      "decision_reason": "retained_norm_proxy below conservative truncation diagnostic threshold",
+      "exit_code": 0,
+      "log": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/logs/P8_D128.log",
+      "peak_process_tree_rss_bytes": 691437568,
+      "problem": "P8",
+      "reason": null,
+      "resource_gates": {
+        "rss_hard_gib": 24,
+        "threads": 4
+      },
+      "retained_norm_proxy": 1.1888301937638416e-19,
+      "runtime_s": 135.6990168329794,
+      "scientific_decision": "METHOD_REJECTED",
+      "stage": "MPS_D128",
+      "status": "METHOD_REJECTED"
+    },
+    "MPS_D128_SPECTRAL": {
+      "answer_blind": true,
+      "bond": 128,
+      "cutoff": 0.005,
+      "ordering": "spectral",
+      "problem": "P8",
+      "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+      "retained_norm_proxy": 1.0065453262190072e-21,
+      "max_bond_reached": 128,
+      "runtime_s": 96.410149000003,
+      "candidate": null,
+      "scientific_decision": "METHOD_REJECTED",
+      "decision_reason": "Spectral-order MPS completed but emitted no MAP record and retained a collapsed norm proxy; it is not a recovery candidate.",
+      "stage": "MPS_D128_SPECTRAL",
+      "status": "METHOD_REJECTED"
+    },
+    "TNO_D4_PROBE": {
+      "answer_blind": true,
+      "problem": "P8",
+      "method_family": "TNO",
+      "max_bond": 4,
+      "cutoff": 0.01,
+      "status": "RESOURCE_NO_GO",
+      "candidate": null,
+      "environment_probe": {"p9_openblas": "ABORTED_MISSING_OPTIONAL_MODULE_quimb.tensor.tnag", "main_venv": "TIMEOUT", "runtime_s": 133.54530645895284, "artifact": "P8/tno/D4_c1e2_probe.json"},
+      "decision_reason": "The mirrored-TNO feasibility probe timed out before its bounded core completed; it is not promoted to a target candidate route."
+    },
+    "TTN_D2_D4_D8": {
+      "answer_blind": true,
+      "problem": "P8",
+      "method_family": "TTN",
+      "status": "METHOD_REJECTED",
+      "candidate": null,
+      "freeze": "P8/ttn/P8_TTN_CANDIDATE_FREEZE.json",
+      "pairwise_hamming_distances": {"D2_D4": 15, "D2_D8": 24, "D4_D8": 17},
+      "decision_reason": "Target-capable TTN runs completed at D2, D4, and D8, but candidate strings were unstable and discarded-weight proxies were large; no candidate is promoted."
+    },
+    "TTN_D4_UNWEIGHTED": {
+      "answer_blind": true,
+      "problem": "P8",
+      "method_family": "TTN",
+      "status": "METHOD_REJECTED",
+      "candidate": null,
+      "tree_mode": "unweighted",
+      "pairwise_hamming_to_weighted_D4": 17,
+      "decision_reason": "Changing the tree weighting produced a different candidate at the same bond level; topology sensitivity confirms the TTN family is not converged."
+    },
+    "MPS_D256": {
+      "answer_blind": true,
+      "problem": "P8",
+      "resource_gates": {
+        "rss_hard_gib": 24,
+        "threads": 4
+      },
+      "stage": "MPS_D256",
+      "status": "PLANNED"
+    },
+    "MPS_D512": {
+      "answer_blind": true,
+      "problem": "P8",
+      "resource_gates": {
+        "rss_hard_gib": 24,
+        "threads": 4
+      },
+      "stage": "MPS_D512",
+      "status": "PLANNED"
+    },
+    "STRUCTURE_PROFILE": {
+      "problem": "P8",
+      "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+      "stage": "STRUCTURE_PROFILE",
+      "status": "COMPLETE"
+    }
+  },
+  "status": "PROFILED_NO_PROMOTED_CANDIDATE"
+}

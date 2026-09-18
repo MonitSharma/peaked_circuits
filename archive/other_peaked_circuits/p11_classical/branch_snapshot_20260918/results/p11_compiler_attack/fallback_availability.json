@@ -1,0 +1,21 @@
+{
+  "path_h_dd_pilot": {
+    "fixture": "P9",
+    "status": "unavailable",
+    "reason": "no decision-diagram package is installed in the local environment"
+  },
+  "path_i_local_dd_zx_qcec": {
+    "status": "unavailable",
+    "packages": {
+      "pyzx": false,
+      "bqskit": false,
+      "qcec": false,
+      "mqt_ddsim": false
+    },
+    "fallback": "direct dense local verification for q<=4 completed"
+  },
+  "p11_blind_transfer": {
+    "status": "not_run",
+    "reason": "P9 exact/approximate gate did not freeze a successful protocol"
+  }
+}

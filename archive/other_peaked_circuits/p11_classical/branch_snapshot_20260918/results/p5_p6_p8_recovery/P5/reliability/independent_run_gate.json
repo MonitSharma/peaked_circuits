@@ -1,0 +1,17 @@
+{
+  "schema": "p12-p5-independent-run-gate-v1",
+  "answer_blind": true,
+  "run": "P5/mps/D128_spectral.json",
+  "method_family": "MPS",
+  "configuration": {
+    "bond": 128,
+    "cutoff": 0.005,
+    "ordering": "spectral",
+    "engine": "CircuitPermMPS"
+  },
+  "retained_norm_proxy": 3.6429502244809696e-26,
+  "map_emitted": false,
+  "decision": "METHOD_REJECTED",
+  "reason": "independent spectral MPS state is not a reliable full-state reconstruction",
+  "promotion": "KEEP_P5_ENSEMBLE_WAITING_FOR_VALID_INDEPENDENT_FAMILY"
+}

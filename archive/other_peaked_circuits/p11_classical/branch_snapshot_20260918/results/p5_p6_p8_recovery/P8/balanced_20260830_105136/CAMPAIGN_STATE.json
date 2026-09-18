@@ -1,0 +1,7 @@
+{
+  "campaign_start_time": "2026-08-30T02:51:36.533479+00:00",
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "solver_root": "/Users/monitsharma/code_projects/qat/peaked-mpo-solver-p8-beam",
+  "current_stage": "waiting_for_idle",
+  "experiments": []
+}

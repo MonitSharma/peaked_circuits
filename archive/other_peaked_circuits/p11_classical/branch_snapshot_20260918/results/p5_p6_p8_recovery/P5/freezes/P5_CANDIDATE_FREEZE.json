@@ -1,0 +1,13 @@
+{
+  "answer_blind": true,
+  "candidate": "00010110000100100101100011011101110010110011",
+  "candidate_sha256": "50b972b18e0c1e4c3109aab68914aac6130d495b3b13fe6950112768eedc66b8",
+  "evaluation_status": "NOT_RUN_AT_FREEZE",
+  "frozen_at": "2026-08-29T02:03:24Z",
+  "git_head": "a986b261fc2bc250135150dd87757405a9a64781",
+  "qasm": "results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
+  "qasm_sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+  "rationale": "candidate generated from frozen approximation outputs; no target answer or score oracle was provided",
+  "reliability_source": "results/p5_p6_p8_recovery/P5/reliability/ensemble.json",
+  "schema": "p12-p5-candidate-freeze-v1"
+}

@@ -1,0 +1,10 @@
+{
+  "method": "bass_adaptive",
+  "k": 16384,
+  "circuit": "data/canonical/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "status": "bounded_timeout",
+  "observation_seconds": 630,
+  "peak_rss_observed_bytes": 294000000,
+  "termination_reason": "manually stopped after no completion within bounded observation; stack was in compute_all_1qubit_rdms",
+  "p9_target_used_only_for_calibration": true
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "p12-peak-recovery-campaign-v1",
+  "priority": ["P8", "P6", "P5"],
+  "safety": {"threads": 4, "rss_soft_gib": 20, "rss_hard_gib": 24, "swap_growth_gib": 2, "cooldown_minutes": 5, "heavy_budget_hours": 7, "max_children": 8},
+  "defaults": {"dtype": "complex128", "cutoff": 1e-14, "dry_run": true, "answer_blind": true},
+  "ladders": {"P8": [128, 256, 512], "P6": [64, 128, 256], "P5": [64, 128, 256]},
+  "promotion": {"p8_to_1024_hamming": 2, "panel_p_peak": [0.01, 0.02, 0.05, 0.10], "require_cross_method_for_strong": true},
+  "forbidden": ["quantinuum", "ibm", "helios", "qpu", "cloud", "hpc", "challenge_answer"]
+}

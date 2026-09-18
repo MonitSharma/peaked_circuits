@@ -1,0 +1,174 @@
+{
+  "schema": "bluequbit-p1-v2-sparse-convergence-v1",
+  "blind": true,
+  "runs": [
+    {
+      "top_k": 4096,
+      "status": "COMPLETE",
+      "top1": "110011001101000101010101000101100101",
+      "top1_probability_renormalized": 0.00625578693335031,
+      "max_support": 4096,
+      "discarded_mass_proxy": 252.93135798107232,
+      "runtime_s": 2.6214721249998547,
+      "peak_rss_bytes": 75792384
+    },
+    {
+      "top_k": 16384,
+      "status": "COMPLETE",
+      "top1": "011010000100001110100000001110010101",
+      "top1_probability_renormalized": 0.00995637263382544,
+      "max_support": 16384,
+      "discarded_mass_proxy": 235.3205713931225,
+      "runtime_s": 11.278925666003488,
+      "peak_rss_bytes": 80969728
+    },
+    {
+      "top_k": 65536,
+      "status": "COMPLETE",
+      "top1": "011110000101000000011110110110111001",
+      "top1_probability_renormalized": 0.002011831927782882,
+      "max_support": 65536,
+      "discarded_mass_proxy": 209.70476541001722,
+      "runtime_s": 50.29643154103542,
+      "peak_rss_bytes": 94748672
+    },
+    {
+      "top_k": 262144,
+      "status": "ABORTED",
+      "top1": null,
+      "top1_probability_renormalized": null,
+      "max_support": null,
+      "discarded_mass_proxy": null,
+      "runtime_s": 120.0,
+      "peak_rss_bytes": 176848896
+    }
+  ],
+  "adjacent_comparisons": [
+    {
+      "lower_top_k": 4096,
+      "higher_top_k": 16384,
+      "top1_same": false,
+      "top5_jaccard": 0.0
+    },
+    {
+      "lower_top_k": 16384,
+      "higher_top_k": 65536,
+      "top1_same": false,
+      "top5_jaccard": 0.0
+    }
+  ],
+  "block_runs": [
+    {
+      "run": "blocks_k16384_q2",
+      "top_k": 16384,
+      "max_qubits_per_block": 2,
+      "priority": "cz_first",
+      "status": "COMPLETE",
+      "top1": "100100101101111110100001101111100110",
+      "discarded_mass_proxy": 229.0029979802515,
+      "runtime_s": 9.865691875049379,
+      "final_norm": 1.0
+    },
+    {
+      "run": "blocks_k262144_q3_fixed",
+      "top_k": 262144,
+      "max_qubits_per_block": 3,
+      "priority": "cz_first",
+      "status": "ABORTED",
+      "top1": "001011011111010000001101111100100000",
+      "discarded_mass_proxy": 101.6237603688522,
+      "runtime_s": 120.30356291600037,
+      "final_norm": 1.0
+    },
+    {
+      "run": "blocks_k4096_q2",
+      "top_k": 4096,
+      "max_qubits_per_block": 2,
+      "priority": "cz_first",
+      "status": "COMPLETE",
+      "top1": "010011000101110001111111001110101011",
+      "discarded_mass_proxy": 258.79391984044656,
+      "runtime_s": 2.304540166980587,
+      "final_norm": 1.0
+    },
+    {
+      "run": "blocks_k4096_q3",
+      "top_k": 4096,
+      "max_qubits_per_block": 3,
+      "priority": "cz_first",
+      "status": "COMPLETE",
+      "top1": "111100100011011010001000101000000101",
+      "discarded_mass_proxy": 218.26730474822938,
+      "runtime_s": 2.1532944169593975,
+      "final_norm": 1.0
+    },
+    {
+      "run": "blocks_k65536_q2",
+      "top_k": 65536,
+      "max_qubits_per_block": 2,
+      "priority": "cz_first",
+      "status": "COMPLETE",
+      "top1": "001000000111001101000101011111011110",
+      "discarded_mass_proxy": 199.8590674996262,
+      "runtime_s": 44.43048537499271,
+      "final_norm": 0.9999999999999999
+    },
+    {
+      "run": "blocks_k65536_q2_p99",
+      "top_k": 65536,
+      "max_qubits_per_block": 2,
+      "priority": "cz_first",
+      "status": "COMPLETE",
+      "top1": "100111101101011001111000100010000001",
+      "discarded_mass_proxy": 204.45466007596488,
+      "runtime_s": 56.519639750011265,
+      "final_norm": 0.9999999999999998
+    },
+    {
+      "run": "blocks_k65536_q3",
+      "top_k": 65536,
+      "max_qubits_per_block": 3,
+      "priority": "cz_first",
+      "status": "COMPLETE",
+      "top1": "101101000011100000110001111011000011",
+      "discarded_mass_proxy": 187.74398289416703,
+      "runtime_s": 41.84003504202701,
+      "final_norm": 1.0
+    },
+    {
+      "run": "blocks_k65536_q3_ufirst",
+      "top_k": 65536,
+      "max_qubits_per_block": 3,
+      "priority": "u_first",
+      "status": "COMPLETE",
+      "top1": "010001101010000001011110000010110101",
+      "discarded_mass_proxy": 182.99890011883875,
+      "runtime_s": 41.13563883298775,
+      "final_norm": 0.9999999999999998
+    }
+  ],
+  "qstvec_sharp_runs": [
+    {
+      "run": "qstvec_sharp_p1_k16384",
+      "top_k": 16384,
+      "status": "COMPLETE",
+      "top1": "001110000111110111000100000111101100",
+      "top1_probability_renormalized": 0.0017203005525796699,
+      "runtime_s": 12.740306249994319,
+      "final_support": 16384,
+      "block_count": 1427
+    },
+    {
+      "run": "qstvec_sharp_p1_k65536",
+      "top_k": 65536,
+      "status": "COMPLETE",
+      "top1": "001001111000110000100010001111001001",
+      "top1_probability_renormalized": 0.0014618918342481626,
+      "runtime_s": 56.5614392090356,
+      "final_support": 65536,
+      "block_count": 1427
+    }
+  ],
+  "qstvec_sharp_top1_converged": false,
+  "decision": "REJECTED_UNCONVERGED_OR_INCONCLUSIVE"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "p9-sparse-ladder-v1",
+  "qasm": "data/canonical/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "qasm_sha256": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35",
+  "n_qubits": 56,
+  "n_events": 5807,
+  "target_is_p9_supervised_calibration": true,
+  "target_bitstring_sha256": "9e4d6f27f3c419d0db82a48c7c319c10cd721ded88c03ec69d6b698319d7f079",
+  "retained_ladder": [
+    4096,
+    16384,
+    65536,
+    262144,
+    1048576
+  ],
+  "max_seconds_per_run": 20.0,
+  "rows": [
+    {
+      "retained_states": 4096,
+      "steps": 5807,
+      "complete": true,
+      "timed_out": false,
+      "target_probability": 0.0,
+      "retained_probability": 1.0000000000000002,
+      "cumulative_discarded_probability": 417.4981085941168,
+      "runtime_s": 3.6002279159147292,
+      "peak_rss_bytes": 76349440,
+      "wall_s": 3.6002831250661984
+    },
+    {
+      "retained_states": 16384,
+      "steps": 5807,
+      "complete": true,
+      "timed_out": false,
+      "target_probability": 0.0,
+      "retained_probability": 1.0,
+      "cumulative_discarded_probability": 386.55990094886323,
+      "runtime_s": 15.194733832962811,
+      "peak_rss_bytes": 80510976,
+      "wall_s": 15.194818041985855
+    },
+    {
+      "retained_states": 65536,
+      "steps": 1746,
+      "complete": false,
+      "timed_out": true,
+      "target_probability": 0.0,
+      "retained_probability": 0.9999999999999999,
+      "cumulative_discarded_probability": 109.85814547562372,
+      "runtime_s": 20.010629582917318,
+      "peak_rss_bytes": 109101056,
+      "wall_s": 20.010857832967304
+    }
+  ],
+  "decision": "stop_no_signal_or_incomplete"
+}

@@ -1,0 +1,18 @@
+{
+  "bitcode_sha256": "c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d",
+  "hidden_target_scored": false,
+  "job_ref": "7c57c28e-7828-4733-9720-c467188c84be",
+  "max_cost": 13.0,
+  "project_ref": "19ca0391-b7f1-4cb1-b001-4a60e2552ee9",
+  "qir_artifact_ref": "9a612408-66dc-4447-9854-621054e63c36",
+  "shots": 1,
+  "simulator_configuration": {
+    "approximation_warning": "Bounded-MPS pilot configuration; suitable for pipeline validation only, not fidelity or accuracy claims.",
+    "backend": "auto",
+    "chi": 128,
+    "precision": 32,
+    "type": "MatrixProductStateSimulator",
+    "zero_threshold": 0.01
+  },
+  "target": "Helios-1E"
+}

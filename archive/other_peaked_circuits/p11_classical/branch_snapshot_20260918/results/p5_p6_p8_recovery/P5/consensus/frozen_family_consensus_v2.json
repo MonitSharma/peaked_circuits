@@ -1,0 +1,70 @@
+{
+  "answer_blind": true,
+  "consensus": {
+    "candidate": "00010110000100100101100011011101110010110011",
+    "independent_family_count": 2,
+    "method_families": {
+      "MPO": [
+        "00111110010101001100101011000101010101100010",
+        "11011100100001000001100111000001011110100001"
+      ],
+      "MPS": [
+        "00010110000100100101100011011101110010110011"
+      ]
+    },
+    "ranked": [
+      [
+        "00010110000100100101100011011101110010110011",
+        1
+      ],
+      [
+        "00111110010101001100101011000101010101100010",
+        1
+      ],
+      [
+        "11011100100001000001100111000001011110100001",
+        1
+      ]
+    ],
+    "status": "PROMISING_CANDIDATE_FAMILY"
+  },
+  "evaluation_status": "NOT_RUN",
+  "pairwise_hamming": [
+    {
+      "hamming": 18,
+      "left": 0,
+      "right": 1
+    },
+    {
+      "hamming": 16,
+      "left": 0,
+      "right": 2
+    },
+    {
+      "hamming": 18,
+      "left": 1,
+      "right": 2
+    }
+  ],
+  "runs": [
+    {
+      "answer_blind": true,
+      "candidate": "00010110000100100101100011011101110010110011",
+      "method_family": "MPS",
+      "source": "results/p5_p6_p8_recovery/P5/freezes/P5_CANDIDATE_FREEZE.json"
+    },
+    {
+      "answer_blind": true,
+      "candidate": "11011100100001000001100111000001011110100001",
+      "method_family": "MPO",
+      "source": "results/p5_p6_p8_recovery/P5/freezes/P5_MPO_CANDIDATE_FREEZE.json"
+    },
+    {
+      "answer_blind": true,
+      "candidate": "00111110010101001100101011000101010101100010",
+      "method_family": "MPO",
+      "source": "results/p5_p6_p8_recovery/P5/freezes/P5_MPO_CANDIDATE_FREEZE_CUTOFF01.json"
+    }
+  ],
+  "schema": "p12-p5-answer-blind-consensus-v1"
+}

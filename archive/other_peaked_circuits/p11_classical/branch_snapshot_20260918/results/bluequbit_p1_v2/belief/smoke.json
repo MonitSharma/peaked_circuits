@@ -1,0 +1,27 @@
+{
+  "schema": "bluequbit-p1-v2-bp-probe-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "algorithm": "quimb.contract_d1bp",
+  "max_iterations": 20,
+  "backend": {
+    "python": "3.13.7",
+    "quimb": "1.15.0"
+  },
+  "circuit_tensors": 5900,
+  "status": "REJECTED_FEASIBILITY",
+  "open_indices": 7357,
+  "error_type": "KeyError",
+  "error": "('k9', 5899)",
+  "traceback_tail": [
+    "    result = self.iterate(tol=tol)",
+    "  File \"/Users/monitsharma/Code/p12-helios-recovery/.venv/lib/python3.13/site-packages/quimb/tensor/belief_propagation/d1bp.py\", line 206, in iterate",
+    "    keys, new_ms = _compute_ms(tid)",
+    "                   ~~~~~~~~~~~^^^^^",
+    "  File \"/Users/monitsharma/Code/p12-helios-recovery/.venv/lib/python3.13/site-packages/quimb/tensor/belief_propagation/d1bp.py\", line 171, in _compute_ms",
+    "    [self.messages[ix, tid] for ix in t.inds],",
+    "     ~~~~~~~~~~~~~^^^^^^^^^",
+    "KeyError: ('k9', 5899)"
+  ],
+  "runtime_s": 0.7064841659739614
+}

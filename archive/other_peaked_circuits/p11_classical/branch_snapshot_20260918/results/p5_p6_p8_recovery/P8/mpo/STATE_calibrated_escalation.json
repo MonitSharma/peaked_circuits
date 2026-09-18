@@ -1,0 +1,36 @@
+{
+  "schema": "p12-p8-mpo-escalation-state-v1",
+  "problem": "P8",
+  "method_family": "MPO/unswap",
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "answer_blind": true,
+  "status": "CURRENT_ROUTE_EXHAUSTED",
+  "candidate": null,
+  "runs": [
+    {
+      "tag": "p8_d512_c6e4",
+      "max_bond": 512,
+      "cutoff": 0.0006,
+      "termination_reason": "no_progress_cycle_limit",
+      "last_work_consumed": 785,
+      "total_work_gates": 808,
+      "peak_max_bond": 314,
+      "final_max_bond": 103,
+      "peak_rss_gb": 1.93,
+      "sampling": "skipped"
+    },
+    {
+      "tag": "p8_d1024_c1e4",
+      "max_bond": 1024,
+      "cutoff": 0.0001,
+      "termination_reason": "keyboard_interrupt",
+      "last_work_consumed": 774,
+      "total_work_gates": 808,
+      "peak_max_bond": 318,
+      "final_max_bond": 120,
+      "peak_rss_gb": 2.042,
+      "sampling": "skipped"
+    }
+  ],
+  "reason": "The calibrated MPO route reached the terminal late-circuit region but produced no decoded candidate before no-progress or bounded interruption; escalating bond/cutoff did not open a viable extraction path."
+}

@@ -1,0 +1,535 @@
+{
+  "canonical_logical_bit_order": "q0_first",
+  "connected_components": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ]
+  ],
+  "custom_gate_definitions": [
+    "iswap"
+  ],
+  "degree_statistics": {
+    "max": 4,
+    "mean": 3.15,
+    "min": 1
+  },
+  "depth": 129,
+  "gate_count": 2704,
+  "gate_counts": {
+    "iswap": 888,
+    "u": 1816
+  },
+  "gate_vocabulary": [
+    "iswap",
+    "u"
+  ],
+  "graph_density": 0.08076923076923077,
+  "iswap_direct_handling": "direct_matrix",
+  "method_eligibility": {
+    "geometry": true,
+    "mpo": true,
+    "mps": true,
+    "tno": true
+  },
+  "problem": "P8",
+  "provenance": {
+    "answer_blind": true,
+    "original_file_preserved": true
+  },
+  "qasm_version": "2.0",
+  "qubit_count": 40,
+  "schema": "p12-peak-circuit-manifest-v1",
+  "sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "source_file_size_bytes": 142684,
+  "source_qasm_path": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P8_grid_888_iswap.qasm",
+  "two_qubit_depth": 64,
+  "two_qubit_gate_count": 888,
+  "unique_interaction_edges": 63,
+  "weighted_degree_statistics": {
+    "max": 64,
+    "mean": 44.4,
+    "min": 17
+  },
+  "weighted_edges": [
+    {
+      "count": 21,
+      "qubits": [
+        0,
+        2
+      ]
+    },
+    {
+      "count": 17,
+      "qubits": [
+        1,
+        2
+      ]
+    },
+    {
+      "count": 15,
+      "qubits": [
+        1,
+        5
+      ]
+    },
+    {
+      "count": 16,
+      "qubits": [
+        2,
+        3
+      ]
+    },
+    {
+      "count": 10,
+      "qubits": [
+        2,
+        6
+      ]
+    },
+    {
+      "count": 15,
+      "qubits": [
+        3,
+        7
+      ]
+    },
+    {
+      "count": 14,
+      "qubits": [
+        4,
+        5
+      ]
+    },
+    {
+      "count": 17,
+      "qubits": [
+        4,
+        10
+      ]
+    },
+    {
+      "count": 13,
+      "qubits": [
+        5,
+        6
+      ]
+    },
+    {
+      "count": 12,
+      "qubits": [
+        5,
+        11
+      ]
+    },
+    {
+      "count": 10,
+      "qubits": [
+        6,
+        7
+      ]
+    },
+    {
+      "count": 13,
+      "qubits": [
+        6,
+        12
+      ]
+    },
+    {
+      "count": 17,
+      "qubits": [
+        7,
+        8
+      ]
+    },
+    {
+      "count": 14,
+      "qubits": [
+        7,
+        13
+      ]
+    },
+    {
+      "count": 16,
+      "qubits": [
+        8,
+        14
+      ]
+    },
+    {
+      "count": 14,
+      "qubits": [
+        9,
+        10
+      ]
+    },
+    {
+      "count": 13,
+      "qubits": [
+        9,
+        17
+      ]
+    },
+    {
+      "count": 12,
+      "qubits": [
+        10,
+        11
+      ]
+    },
+    {
+      "count": 13,
+      "qubits": [
+        10,
+        18
+      ]
+    },
+    {
+      "count": 15,
+      "qubits": [
+        11,
+        12
+      ]
+    },
+    {
+      "count": 13,
+      "qubits": [
+        11,
+        19
+      ]
+    },
+    {
+      "count": 12,
+      "qubits": [
+        12,
+        13
+      ]
+    },
+    {
+      "count": 8,
+      "qubits": [
+        12,
+        20
+      ]
+    },
+    {
+      "count": 15,
+      "qubits": [
+        13,
+        14
+      ]
+    },
+    {
+      "count": 11,
+      "qubits": [
+        13,
+        21
+      ]
+    },
+    {
+      "count": 16,
+      "qubits": [
+        14,
+        15
+      ]
+    },
+    {
+      "count": 15,
+      "qubits": [
+        14,
+        22
+      ]
+    },
+    {
+      "count": 15,
+      "qubits": [
+        15,
+        23
+      ]
+    },
+    {
+      "count": 17,
+      "qubits": [
+        16,
+        17
+      ]
+    },
+    {
+      "count": 12,
+      "qubits": [
+        17,
+        18
+      ]
+    },
+    {
+      "count": 12,
+      "qubits": [
+        17,
+        24
+      ]
+    },
+    {
+      "count": 12,
+      "qubits": [
+        18,
+        19
+      ]
+    },
+    {
+      "count": 12,
+      "qubits": [
+        18,
+        25
+      ]
+    },
+    {
+      "count": 12,
+      "qubits": [
+        19,
+        20
+      ]
+    },
+    {
+      "count": 14,
+      "qubits": [
+        19,
+        26
+      ]
+    },
+    {
+      "count": 16,
+      "qubits": [
+        20,
+        21
+      ]
+    },
+    {
+      "count": 13,
+      "qubits": [
+        20,
+        27
+      ]
+    },
+    {
+      "count": 14,
+      "qubits": [
+        21,
+        22
+      ]
+    },
+    {
+      "count": 17,
+      "qubits": [
+        21,
+        28
+      ]
+    },
+    {
+      "count": 16,
+      "qubits": [
+        22,
+        23
+      ]
+    },
+    {
+      "count": 14,
+      "qubits": [
+        22,
+        29
+      ]
+    },
+    {
+      "count": 28,
+      "qubits": [
+        23,
+        30
+      ]
+    },
+    {
+      "count": 15,
+      "qubits": [
+        24,
+        25
+      ]
+    },
+    {
+      "count": 12,
+      "qubits": [
+        25,
+        26
+      ]
+    },
+    {
+      "count": 15,
+      "qubits": [
+        25,
+        31
+      ]
+    },
+    {
+      "count": 12,
+      "qubits": [
+        26,
+        27
+      ]
+    },
+    {
+      "count": 11,
+      "qubits": [
+        26,
+        32
+      ]
+    },
+    {
+      "count": 14,
+      "qubits": [
+        27,
+        28
+      ]
+    },
+    {
+      "count": 7,
+      "qubits": [
+        27,
+        33
+      ]
+    },
+    {
+      "count": 16,
+      "qubits": [
+        28,
+        29
+      ]
+    },
+    {
+      "count": 13,
+      "qubits": [
+        28,
+        34
+      ]
+    },
+    {
+      "count": 15,
+      "qubits": [
+        29,
+        30
+      ]
+    },
+    {
+      "count": 15,
+      "qubits": [
+        29,
+        35
+      ]
+    },
+    {
+      "count": 12,
+      "qubits": [
+        31,
+        32
+      ]
+    },
+    {
+      "count": 14,
+      "qubits": [
+        32,
+        33
+      ]
+    },
+    {
+      "count": 17,
+      "qubits": [
+        32,
+        36
+      ]
+    },
+    {
+      "count": 14,
+      "qubits": [
+        33,
+        34
+      ]
+    },
+    {
+      "count": 8,
+      "qubits": [
+        33,
+        37
+      ]
+    },
+    {
+      "count": 16,
+      "qubits": [
+        34,
+        35
+      ]
+    },
+    {
+      "count": 17,
+      "qubits": [
+        34,
+        38
+      ]
+    },
+    {
+      "count": 13,
+      "qubits": [
+        36,
+        37
+      ]
+    },
+    {
+      "count": 14,
+      "qubits": [
+        37,
+        38
+      ]
+    },
+    {
+      "count": 17,
+      "qubits": [
+        37,
+        39
+      ]
+    }
+  ]
+}

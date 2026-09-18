@@ -1,0 +1,13 @@
+{
+  "schema": "bluequbit-p1-cutoff-comparison-v1",
+  "blind": true,
+  "circuit_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "fixed_parameters": {"max_bond": 64, "ordering": "original", "routing_strategy": "restore", "routing_seed": 0, "samples": 100},
+  "runs": [
+    {"run_id": "mettleq_mps_d64", "cutoff": 0.01, "runtime_s": 77.0933535, "max_bond_ever": 64, "relative_discarded_weight_sum": 131.58693631385728, "routing_swaps": 31108},
+    {"run_id": "mettleq_mps_d64_cut002", "cutoff": 0.002, "runtime_s": 76.6543813, "max_bond_ever": 64, "relative_discarded_weight_sum": 132.4127098780522, "routing_swaps": 31108}
+  ],
+  "mean_absolute_marginal_difference": 0.2727777777777777,
+  "same_modal_bits": 20,
+  "decision": "REJECTED: tighter cutoff did not reduce discarded weight or routing debt and did not produce stable marginal information."
+}

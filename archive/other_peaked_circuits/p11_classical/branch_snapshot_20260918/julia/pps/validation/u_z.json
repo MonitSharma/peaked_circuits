@@ -1,0 +1,48 @@
+{
+  "schema": "pps_validation_v1",
+  "name": "u_z",
+  "num_qubits": 1,
+  "observable_qiskit_zero_based": 0,
+  "expected": 0.9780309147241482,
+  "gates": [
+    {
+      "instruction_index": 0,
+      "gate_name": "u",
+      "qargs_qiskit_zero_based": [
+        0
+      ],
+      "qargs_julia_one_based": [
+        1
+      ],
+      "parameters": [
+        0.21,
+        -0.48,
+        0.73
+      ],
+      "native_pps_mapping": null,
+      "fallback": "TransferMapGate",
+      "matrix_01_basis": [
+        [
+          [
+            0.9944925627484974,
+            0.0
+          ],
+          [
+            -0.07809961939352043,
+            -0.06989271842268781
+          ]
+        ],
+        [
+          [
+            0.09296342662209002,
+            -0.048397768012638356
+          ],
+          [
+            0.963576197345872,
+            0.24604139747315534
+          ]
+        ]
+      ]
+    }
+  ]
+}

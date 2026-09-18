@@ -1,0 +1,8 @@
+Selene error: Panic (#100001): ErrorModelPlugin: handle_operations failed
+----- stderr -----
+Error: Failed to apply RZZ gate
+CuTensornet Error #15: NOT_SUPPORTED
+Error: Failed to handle operations
+SimulatorPlugin(Unknown): rzz failed
+
+------------------ (code: 1000)

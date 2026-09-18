@@ -1,0 +1,4759 @@
+{
+  "stages": {
+    "ENSEMBLE_RELIABILITY": {
+      "answer_blind": true,
+      "bits": [
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 0,
+          "margin_iqr": 0.0,
+          "median_margin": 0.14400000000000002,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "UNCERTAIN",
+          "index": 1,
+          "margin_iqr": 0.0,
+          "median_margin": 0.014000000000000012,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 2,
+          "margin_iqr": 0.0,
+          "median_margin": 0.6819999999999999,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 3,
+          "margin_iqr": 0.0,
+          "median_margin": 0.17199999999999993,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 4,
+          "margin_iqr": 0.0,
+          "median_margin": 0.33999999999999997,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 5,
+          "margin_iqr": 0.0,
+          "median_margin": 0.6100000000000001,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 6,
+          "margin_iqr": 0.0,
+          "median_margin": 0.18599999999999994,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 7,
+          "margin_iqr": 0.0,
+          "median_margin": 0.862,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 8,
+          "margin_iqr": 0.0,
+          "median_margin": 0.73,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 9,
+          "margin_iqr": 0.0,
+          "median_margin": 0.404,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 10,
+          "margin_iqr": 0.0,
+          "median_margin": 0.616,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 11,
+          "margin_iqr": 0.0,
+          "median_margin": 0.266,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 12,
+          "margin_iqr": 0.0,
+          "median_margin": 0.14800000000000002,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 13,
+          "margin_iqr": 0.0,
+          "median_margin": 0.958,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 14,
+          "margin_iqr": 0.0,
+          "median_margin": 0.1459999999999999,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "UNCERTAIN",
+          "index": 15,
+          "margin_iqr": 0.0,
+          "median_margin": 0.0,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 16,
+          "margin_iqr": 0.0,
+          "median_margin": 0.18200000000000005,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 17,
+          "margin_iqr": 0.0,
+          "median_margin": 0.25,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 18,
+          "margin_iqr": 0.0,
+          "median_margin": 0.19199999999999995,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 19,
+          "margin_iqr": 0.0,
+          "median_margin": 0.45399999999999996,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 20,
+          "margin_iqr": 0.0,
+          "median_margin": 0.246,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 21,
+          "margin_iqr": 0.0,
+          "median_margin": 0.484,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 22,
+          "margin_iqr": 0.0,
+          "median_margin": 0.714,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "UNCERTAIN",
+          "index": 23,
+          "margin_iqr": 0.0,
+          "median_margin": 0.07199999999999995,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "UNCERTAIN",
+          "index": 24,
+          "margin_iqr": 0.0,
+          "median_margin": 0.02400000000000002,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 25,
+          "margin_iqr": 0.0,
+          "median_margin": 0.1519999999999999,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 26,
+          "margin_iqr": 0.0,
+          "median_margin": 0.52,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 27,
+          "margin_iqr": 0.0,
+          "median_margin": 0.3440000000000001,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 28,
+          "margin_iqr": 0.0,
+          "median_margin": 0.688,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 29,
+          "margin_iqr": 0.0,
+          "median_margin": 0.706,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 30,
+          "margin_iqr": 0.0,
+          "median_margin": 0.11399999999999999,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 31,
+          "margin_iqr": 0.0,
+          "median_margin": 0.1140000000000001,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 32,
+          "margin_iqr": 0.0,
+          "median_margin": 0.6339999999999999,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "UNCERTAIN",
+          "index": 33,
+          "margin_iqr": 0.0,
+          "median_margin": 0.014000000000000012,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "UNCERTAIN",
+          "index": 34,
+          "margin_iqr": 0.0,
+          "median_margin": 0.008000000000000007,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 35,
+          "margin_iqr": 0.0,
+          "median_margin": 0.30200000000000005,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "UNCERTAIN",
+          "index": 36,
+          "margin_iqr": 0.0,
+          "median_margin": 0.08600000000000008,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 37,
+          "margin_iqr": 0.0,
+          "median_margin": 0.618,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 38,
+          "margin_iqr": 0.0,
+          "median_margin": 0.76,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "UNCERTAIN",
+          "index": 39,
+          "margin_iqr": 0.0,
+          "median_margin": 0.06800000000000006,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 40,
+          "margin_iqr": 0.0,
+          "median_margin": 0.22399999999999998,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 41,
+          "margin_iqr": 0.0,
+          "median_margin": 0.46599999999999997,
+          "method_family_count": 1,
+          "predicted_bit": "0"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "UNCERTAIN",
+          "index": 42,
+          "margin_iqr": 0.0,
+          "median_margin": 0.08800000000000008,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        },
+        {
+          "agreement_fraction": 1.0,
+          "classification": "LIKELY",
+          "index": 43,
+          "margin_iqr": 0.0,
+          "median_margin": 0.44999999999999996,
+          "method_family_count": 1,
+          "predicted_bit": "1"
+        }
+      ],
+      "candidate": "00010110000100100101100011011101110010110011",
+      "counts": {
+        "LIKELY": 35,
+        "UNCERTAIN": 9
+      },
+      "evaluation_status": "NOT_RUN_CANDIDATE_GENERATION_ONLY",
+      "method_families": [
+        "mettleq"
+      ],
+      "promotion": "WAIT_INDEPENDENT_FAMILY",
+      "qasm_sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+      "run_count": 1,
+      "runs": [
+        {
+          "answer_blind": true,
+          "bits": 44,
+          "candidate": "00010110000100100101100011011101110010110011",
+          "margins": [
+            0.14400000000000002,
+            0.014000000000000012,
+            0.6819999999999999,
+            0.17199999999999993,
+            0.33999999999999997,
+            0.6100000000000001,
+            0.18599999999999994,
+            0.862,
+            0.73,
+            0.404,
+            0.616,
+            0.266,
+            0.14800000000000002,
+            0.958,
+            0.1459999999999999,
+            0.0,
+            0.18200000000000005,
+            0.25,
+            0.19199999999999995,
+            0.45399999999999996,
+            0.246,
+            0.484,
+            0.714,
+            0.07199999999999995,
+            0.02400000000000002,
+            0.1519999999999999,
+            0.52,
+            0.3440000000000001,
+            0.688,
+            0.706,
+            0.11399999999999999,
+            0.1140000000000001,
+            0.6339999999999999,
+            0.014000000000000012,
+            0.008000000000000007,
+            0.30200000000000005,
+            0.08600000000000008,
+            0.618,
+            0.76,
+            0.06800000000000006,
+            0.22399999999999998,
+            0.46599999999999997,
+            0.08800000000000008,
+            0.44999999999999996
+          ],
+          "method_family": "mettleq",
+          "p1": [
+            0.428,
+            0.493,
+            0.159,
+            0.586,
+            0.33,
+            0.805,
+            0.593,
+            0.069,
+            0.135,
+            0.298,
+            0.192,
+            0.633,
+            0.426,
+            0.021,
+            0.573,
+            0.5,
+            0.409,
+            0.625,
+            0.404,
+            0.727,
+            0.623,
+            0.258,
+            0.143,
+            0.464,
+            0.512,
+            0.576,
+            0.24,
+            0.672,
+            0.844,
+            0.853,
+            0.443,
+            0.557,
+            0.817,
+            0.507,
+            0.496,
+            0.349,
+            0.543,
+            0.191,
+            0.88,
+            0.534,
+            0.388,
+            0.267,
+            0.544,
+            0.725
+          ],
+          "run_id": "p5_D64_c1e2_seed123",
+          "shots": 1000,
+          "source": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/results/mettleq/p5_D64_c1e2_seed123/samples.tsv",
+          "source_sha256": "66ab159e1f1a169a20998dfb38944e107557319c45abf0d5726f7e236053df74",
+          "unique_strings": 1000
+        }
+      ],
+      "schema": "p12-p5-answer-blind-reliability-v1",
+      "scientific_decision": "WAIT_INDEPENDENT_FAMILY",
+      "stage": "P5_ENSEMBLE_RELIABILITY",
+      "status": "COMPLETE"
+    },
+    "MPO_PREFIX": {
+      "answer_blind": true,
+      "command": [
+        "/Users/monitsharma/Code/p12-helios-recovery/.venv-p9-isolated/bin/python",
+        "/Users/monitsharma/Code/p12-helios-recovery/scripts/run_p11_mpo.py",
+        "--solver-root",
+        "/Users/monitsharma/code_projects/qat/peaked-mpo-solver",
+        "--qasm",
+        "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
+        "--outdir",
+        "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P5/mpo/prefix100",
+        "--tag",
+        "p5_prefix100",
+        "--threads",
+        "4",
+        "--rss-limit-gb",
+        "24.0",
+        "--wall-limit-s",
+        "900",
+        "--samples",
+        "0",
+        "--decoder",
+        "none",
+        "--skip-sampling",
+        "--max-bond",
+        "64",
+        "--cutoff",
+        "0.005",
+        "--max-work-gates",
+        "100",
+        "--abort-after-no-progress-unswap-cycles",
+        "3",
+        "--no-plots"
+      ],
+      "exit_code": 0,
+      "joint_map_claim": false,
+      "log": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/logs/P5_MPO_prefix100.log",
+      "p9_calibration_passed": true,
+      "peak_process_tree_rss_bytes": 447971328,
+      "problem": "P5",
+      "reason": null,
+      "runtime_s": 30.849801959004253,
+      "scientific_decision": "PREFIX_COMPATIBILITY_ONLY",
+      "solver_git_commit": "b1bed0a5621f99d95ca7834a82d72dfd5db46cf4",
+      "solver_path": "/Users/monitsharma/code_projects/qat/peaked-mpo-solver/src/p9solver/cli.py",
+      "solver_root": "/Users/monitsharma/code_projects/qat/peaked-mpo-solver",
+      "stage": "MPO_PREFIX",
+      "status": "COMPLETE",
+      "summary_path": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P5/mpo/prefix100/p5_prefix100/summary.json"
+    },
+    "MPO_UNSWAP": {
+      "answer_blind": true,
+      "joint_map_claim": false,
+      "problem": "P5",
+      "reason": "local MPO solver checkout is unavailable; no remote fetch permitted",
+      "solver_path": "/Users/monitsharma/Code/p12-helios-recovery/external/peaked-mpo-solver/src/p9solver/cli.py",
+      "stage": "MPO_UNSWAP",
+      "status": "BLOCKED_MISSING_INPUT"
+    },
+    "MPS_D128": {
+      "answer_blind": true,
+      "problem": "P5",
+      "resource_gates": {
+        "rss_hard_gib": 24,
+        "threads": 4
+      },
+      "stage": "MPS_D128",
+      "status": "PLANNED"
+    },
+    "MPS_D256": {
+      "answer_blind": true,
+      "problem": "P5",
+      "resource_gates": {
+        "rss_hard_gib": 24,
+        "threads": 4
+      },
+      "stage": "MPS_D256",
+      "status": "PLANNED"
+    },
+    "MPS_D64": {
+      "answer_blind": true,
+      "bond": 64,
+      "command": [
+        "/Users/monitsharma/Code/p12-helios-recovery/.venv/bin/python",
+        "/Users/monitsharma/Code/p12-helios-recovery/scripts/run_peak_mps.py",
+        "--qasm",
+        "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
+        "--out",
+        "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P5/mps/D64.json",
+        "--bond",
+        "64",
+        "--checkpoint",
+        "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P5/mps/D64.checkpoint.json",
+        "--wall-seconds",
+        "21600"
+      ],
+      "decision_reason": "retained_norm_proxy below conservative truncation diagnostic threshold",
+      "exit_code": 0,
+      "log": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/logs/P5_D64.log",
+      "peak_process_tree_rss_bytes": 462143488,
+      "problem": "P5",
+      "reason": null,
+      "resource_gates": {
+        "rss_hard_gib": 24,
+        "threads": 4
+      },
+      "retained_norm_proxy": 8.934340511785678e-25,
+      "runtime_s": 201.6897986670374,
+      "scientific_decision": "METHOD_REJECTED",
+      "stage": "MPS_D64",
+      "status": "METHOD_REJECTED"
+    },
+    "STRUCTURE_PROBE": {
+      "answer_blind": true,
+      "backbone": {
+        "answer_blind": true,
+        "top_edge_count": 18,
+        "weighted_edges": [
+          {
+            "count": 18,
+            "qubits": [
+              1,
+              21
+            ]
+          },
+          {
+            "count": 14,
+            "qubits": [
+              4,
+              8
+            ]
+          },
+          {
+            "count": 14,
+            "qubits": [
+              18,
+              23
+            ]
+          },
+          {
+            "count": 10,
+            "qubits": [
+              3,
+              15
+            ]
+          },
+          {
+            "count": 10,
+            "qubits": [
+              8,
+              42
+            ]
+          },
+          {
+            "count": 10,
+            "qubits": [
+              10,
+              35
+            ]
+          },
+          {
+            "count": 10,
+            "qubits": [
+              11,
+              28
+            ]
+          },
+          {
+            "count": 10,
+            "qubits": [
+              19,
+              28
+            ]
+          },
+          {
+            "count": 10,
+            "qubits": [
+              24,
+              39
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              0,
+              26
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              1,
+              41
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              2,
+              17
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              2,
+              37
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              4,
+              42
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              5,
+              19
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              7,
+              16
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              7,
+              24
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              8,
+              32
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              9,
+              34
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              10,
+              41
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              14,
+              17
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              16,
+              30
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              19,
+              30
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              22,
+              34
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              25,
+              38
+            ]
+          },
+          {
+            "count": 8,
+            "qubits": [
+              31,
+              32
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              0,
+              39
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              0,
+              40
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              2,
+              27
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              2,
+              29
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              2,
+              43
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              3,
+              11
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              3,
+              38
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              3,
+              39
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              3,
+              42
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              4,
+              6
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              4,
+              32
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              5,
+              15
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              5,
+              39
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              5,
+              40
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              6,
+              20
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              7,
+              11
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              7,
+              37
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              8,
+              36
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              9,
+              40
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              9,
+              43
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              10,
+              12
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              11,
+              24
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              12,
+              30
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              12,
+              35
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              13,
+              17
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              13,
+              22
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              13,
+              29
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              13,
+              31
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              13,
+              34
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              14,
+              26
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              14,
+              33
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              16,
+              33
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              16,
+              35
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              17,
+              22
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              17,
+              26
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              17,
+              34
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              17,
+              36
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              18,
+              32
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              18,
+              33
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              19,
+              25
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              20,
+              30
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              20,
+              33
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              20,
+              38
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              23,
+              26
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              23,
+              32
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              24,
+              38
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              26,
+              38
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              27,
+              31
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              27,
+              36
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              28,
+              37
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              29,
+              33
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              29,
+              43
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              31,
+              40
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              32,
+              40
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              32,
+              42
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              33,
+              43
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              35,
+              41
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              36,
+              40
+            ]
+          },
+          {
+            "count": 6,
+            "qubits": [
+              41,
+              43
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              0,
+              3
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              0,
+              7
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              0,
+              16
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              0,
+              19
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              0,
+              21
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              0,
+              27
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              0,
+              29
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              0,
+              32
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              0,
+              34
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              1,
+              5
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              1,
+              10
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              1,
+              11
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              1,
+              12
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              1,
+              25
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              1,
+              31
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              1,
+              35
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              1,
+              39
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              2,
+              6
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              2,
+              9
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              2,
+              10
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              2,
+              14
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              2,
+              15
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              2,
+              40
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              3,
+              16
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              3,
+              18
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              3,
+              21
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              3,
+              25
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              3,
+              30
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              4,
+              11
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              4,
+              12
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              4,
+              15
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              4,
+              19
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              4,
+              20
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              4,
+              28
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              4,
+              33
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              5,
+              12
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              5,
+              20
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              5,
+              27
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              5,
+              34
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              5,
+              41
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              6,
+              9
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              6,
+              14
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              6,
+              23
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              6,
+              25
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              6,
+              27
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              6,
+              31
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              6,
+              33
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              6,
+              35
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              6,
+              37
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              7,
+              9
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              7,
+              13
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              7,
+              14
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              7,
+              25
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              7,
+              34
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              7,
+              38
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              7,
+              40
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              8,
+              22
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              8,
+              28
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              8,
+              30
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              8,
+              38
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              9,
+              13
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              9,
+              18
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              9,
+              22
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              9,
+              26
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              9,
+              36
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              10,
+              26
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              10,
+              28
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              10,
+              29
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              10,
+              36
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              10,
+              43
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              11,
+              13
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              11,
+              18
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              11,
+              20
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              11,
+              29
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              11,
+              37
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              11,
+              42
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              11,
+              43
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              12,
+              13
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              12,
+              14
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              12,
+              16
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              12,
+              29
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              12,
+              33
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              12,
+              41
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              12,
+              43
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              13,
+              27
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              13,
+              35
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              13,
+              43
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              14,
+              21
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              14,
+              29
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              14,
+              30
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              14,
+              31
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              14,
+              32
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              15,
+              21
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              15,
+              23
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              15,
+              25
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              15,
+              28
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              15,
+              37
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              15,
+              38
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              15,
+              40
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              16,
+              19
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              16,
+              23
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              16,
+              24
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              16,
+              41
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              17,
+              21
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              17,
+              32
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              17,
+              35
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              17,
+              41
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              18,
+              21
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              18,
+              22
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              18,
+              24
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              18,
+              36
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              19,
+              24
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              19,
+              41
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              20,
+              34
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              20,
+              37
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              20,
+              42
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              20,
+              43
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              21,
+              23
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              21,
+              34
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              21,
+              35
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              21,
+              38
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              21,
+              40
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              22,
+              28
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              22,
+              36
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              22,
+              43
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              23,
+              33
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              23,
+              42
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              24,
+              30
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              24,
+              41
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              25,
+              28
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              25,
+              31
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              25,
+              33
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              25,
+              36
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              25,
+              42
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              25,
+              43
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              26,
+              27
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              26,
+              31
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              26,
+              32
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              26,
+              36
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              27,
+              32
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              27,
+              37
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              27,
+              41
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              28,
+              29
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              28,
+              33
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              29,
+              31
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              29,
+              34
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              30,
+              37
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              30,
+              40
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              30,
+              41
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              31,
+              36
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              35,
+              38
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              35,
+              39
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              36,
+              38
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              36,
+              39
+            ]
+          },
+          {
+            "count": 4,
+            "qubits": [
+              41,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              1
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              4
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              5
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              9
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              10
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              12
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              13
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              15
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              23
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              24
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              31
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              0,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              2
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              8
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              16
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              19
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              24
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              26
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              27
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              28
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              29
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              30
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              40
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              1,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              4
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              5
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              8
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              11
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              16
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              18
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              20
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              30
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              32
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              35
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              2,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              5
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              6
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              7
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              8
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              9
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              14
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              23
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              27
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              29
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              33
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              40
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              41
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              3,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              4,
+              10
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              4,
+              18
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              4,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              4,
+              26
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              4,
+              27
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              4,
+              29
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              4,
+              31
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              4,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              4,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              4,
+              40
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              8
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              10
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              18
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              21
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              25
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              26
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              28
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              29
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              30
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              31
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              32
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              5,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              7
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              10
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              11
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              12
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              15
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              17
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              18
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              24
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              26
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              28
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              6,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              7,
+              15
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              7,
+              18
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              7,
+              19
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              7,
+              20
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              7,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              7,
+              23
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              7,
+              27
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              7,
+              30
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              7,
+              31
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              7,
+              35
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              7,
+              41
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              8,
+              15
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              8,
+              18
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              8,
+              19
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              8,
+              20
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              8,
+              24
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              8,
+              27
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              8,
+              31
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              8,
+              33
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              8,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              8,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              8,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              8,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              10
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              12
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              14
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              20
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              21
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              23
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              24
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              25
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              28
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              29
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              32
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              41
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              9,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              10,
+              16
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              10,
+              18
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              10,
+              19
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              10,
+              20
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              10,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              10,
+              23
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              10,
+              24
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              10,
+              30
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              10,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              10,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              10,
+              40
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              10,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              11,
+              14
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              11,
+              16
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              11,
+              30
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              11,
+              33
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              11,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              11,
+              35
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              11,
+              36
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              11,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              11,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              12,
+              17
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              12,
+              19
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              12,
+              21
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              12,
+              24
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              12,
+              25
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              12,
+              28
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              12,
+              31
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              12,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              12,
+              36
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              12,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              12,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              16
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              18
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              20
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              23
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              24
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              25
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              26
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              28
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              33
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              36
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              13,
+              40
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              14,
+              15
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              14,
+              16
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              14,
+              19
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              14,
+              20
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              14,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              14,
+              25
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              14,
+              27
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              14,
+              35
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              14,
+              36
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              14,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              14,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              14,
+              41
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              15,
+              16
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              15,
+              18
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              15,
+              19
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              15,
+              20
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              15,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              15,
+              24
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              15,
+              30
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              15,
+              35
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              15,
+              36
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              15,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              15,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              15,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              16,
+              17
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              16,
+              18
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              16,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              16,
+              25
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              16,
+              26
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              16,
+              27
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              16,
+              28
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              16,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              17,
+              18
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              17,
+              20
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              17,
+              23
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              17,
+              25
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              17,
+              27
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              17,
+              29
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              17,
+              30
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              17,
+              31
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              17,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              18,
+              19
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              18,
+              25
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              18,
+              26
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              18,
+              31
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              18,
+              40
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              19,
+              21
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              19,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              19,
+              29
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              19,
+              31
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              19,
+              32
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              19,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              19,
+              35
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              19,
+              40
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              19,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              20,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              20,
+              23
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              20,
+              25
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              20,
+              27
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              20,
+              31
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              20,
+              32
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              20,
+              35
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              20,
+              36
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              21,
+              22
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              21,
+              24
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              21,
+              27
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              21,
+              28
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              21,
+              36
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              21,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              21,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              21,
+              41
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              22,
+              23
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              22,
+              27
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              22,
+              32
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              22,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              22,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              22,
+              40
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              22,
+              41
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              22,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              23,
+              24
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              23,
+              28
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              23,
+              29
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              23,
+              30
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              23,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              23,
+              36
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              23,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              23,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              23,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              24,
+              26
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              24,
+              28
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              24,
+              31
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              24,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              24,
+              35
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              24,
+              36
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              24,
+              40
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              25,
+              26
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              25,
+              27
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              25,
+              29
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              25,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              25,
+              41
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              26,
+              28
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              26,
+              33
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              26,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              26,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              26,
+              41
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              26,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              27,
+              33
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              27,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              27,
+              35
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              27,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              27,
+              40
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              27,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              28,
+              35
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              28,
+              40
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              28,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              29,
+              30
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              29,
+              32
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              29,
+              36
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              29,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              29,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              29,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              30,
+              32
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              30,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              30,
+              35
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              30,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              30,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              31,
+              33
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              31,
+              34
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              31,
+              35
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              31,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              31,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              32,
+              33
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              32,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              33,
+              36
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              33,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              33,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              33,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              33,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              34,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              34,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              34,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              34,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              35,
+              36
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              35,
+              37
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              35,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              36,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              37,
+              38
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              37,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              37,
+              41
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              37,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              38,
+              39
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              38,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              39,
+              40
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              39,
+              41
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              39,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              40,
+              41
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              40,
+              42
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              40,
+              43
+            ]
+          },
+          {
+            "count": 2,
+            "qubits": [
+              42,
+              43
+            ]
+          }
+        ]
+      },
+      "mirror": {
+        "answer_blind": true,
+        "direct_agreement": 0.0021141649048625794,
+        "edge_count": 1892,
+        "midpoint": 946,
+        "permutation": [
+          27,
+          4,
+          16,
+          19,
+          28,
+          32,
+          9,
+          18,
+          1,
+          21,
+          23,
+          2,
+          30,
+          14,
+          36,
+          5,
+          12,
+          39,
+          13,
+          43,
+          15,
+          17,
+          11,
+          7,
+          24,
+          38,
+          20,
+          22,
+          25,
+          35,
+          33,
+          40,
+          10,
+          26,
+          37,
+          41,
+          42,
+          34,
+          3,
+          31,
+          29,
+          0,
+          6,
+          8
+        ],
+        "permuted_agreement": 0.0412262156448203,
+        "status": "MIRROR_WEAK"
+      },
+      "problem": "P5",
+      "qasm_sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+      "scientific_decision": "SELECT_METHOD_FROM_STRUCTURE",
+      "stage": "STRUCTURE_PROBE",
+      "status": "COMPLETE"
+    },
+    "STRUCTURE_PROFILE": {
+      "problem": "P5",
+      "qasm_sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+      "stage": "STRUCTURE_PROFILE",
+      "status": "COMPLETE"
+    }
+  },
+  "status": "PROFILED"
+}

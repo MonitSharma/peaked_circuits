@@ -1,0 +1,18 @@
+{
+  "host": "LHC-104-070",
+  "os": "Ubuntu 24.04",
+  "architecture": "x86_64",
+  "cpu": "4 x Intel Xeon Gold 6154 @ 3.00GHz",
+  "physical_cores": 72,
+  "logical_cpus": 144,
+  "ram_gib": 503,
+  "numa_nodes": 4,
+  "julia": "1.10.10",
+  "pauli_propagation_commit": "5c7bf06b95904e7cc8b327165963e616265ecd71",
+  "manifest_sha256": "d545c625eab3d0bacc68e256861a224f8b88770257f7ba8dbf52ab8266bb3dbc",
+  "blas_threads": 1,
+  "existing_python_tests": "146 passed in 61.15s",
+  "hpc_checkout_sha_at_start": "dec79c47112543c028e0af68bed47e57ff46409f",
+  "p9_canonical_stream_sha256": "45e526abdd74991d02faa28cb996ce9ce229dbfee0b617ef67e108757b1e0216",
+  "p11_canonical_stream_sha256": "91065a00c3015d2e009d63c418db77abd6a7a20bcb62e20616cb37fbdc9d84a8"
+}

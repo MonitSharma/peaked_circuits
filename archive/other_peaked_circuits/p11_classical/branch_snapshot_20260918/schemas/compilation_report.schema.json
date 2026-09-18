@@ -1,0 +1,384 @@
+{
+  "$defs": {
+    "BackendDescriptor": {
+      "additionalProperties": false,
+      "properties": {
+        "access_status": {
+          "default": "unknown",
+          "title": "Access Status",
+          "type": "string"
+        },
+        "available": {
+          "default": true,
+          "title": "Available",
+          "type": "boolean"
+        },
+        "backend_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Backend Version"
+        },
+        "classical_register_limit": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Classical Register Limit"
+        },
+        "credentials_detected": {
+          "default": false,
+          "title": "Credentials Detected",
+          "type": "boolean"
+        },
+        "device_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Device Name"
+        },
+        "gate_set": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Gate Set",
+          "type": "array"
+        },
+        "has_at_least_98_qubits": {
+          "default": false,
+          "title": "Has At Least 98 Qubits",
+          "type": "boolean"
+        },
+        "metadata_source": {
+          "default": "unknown",
+          "enum": [
+            "live_api",
+            "cached",
+            "offline",
+            "unknown"
+          ],
+          "title": "Metadata Source",
+          "type": "string"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        },
+        "p12_compatible": {
+          "default": false,
+          "title": "P12 Compatible",
+          "type": "boolean"
+        },
+        "provider": {
+          "title": "Provider",
+          "type": "string"
+        },
+        "provider_api": {
+          "default": "unknown",
+          "title": "Provider Api",
+          "type": "string"
+        },
+        "provider_metadata": {
+          "additionalProperties": true,
+          "title": "Provider Metadata",
+          "type": "object"
+        },
+        "qubit_capacity": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Qubit Capacity"
+        },
+        "sdk_versions": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Sdk Versions",
+          "type": "object"
+        },
+        "target_type": {
+          "default": "unknown",
+          "title": "Target Type",
+          "type": "string"
+        },
+        "target_type_source": {
+          "default": "unknown",
+          "title": "Target Type Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "provider"
+      ],
+      "title": "BackendDescriptor",
+      "type": "object"
+    },
+    "ValidationResult": {
+      "additionalProperties": false,
+      "properties": {
+        "diagnostics": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Diagnostics",
+          "type": "array"
+        },
+        "passed": {
+          "title": "Passed",
+          "type": "boolean"
+        },
+        "predicates": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Predicates",
+          "type": "object"
+        }
+      },
+      "required": [
+        "passed",
+        "predicates"
+      ],
+      "title": "ValidationResult",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "backend": {
+      "$ref": "#/$defs/BackendDescriptor"
+    },
+    "compiled": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Compiled"
+    },
+    "configuration": {
+      "additionalProperties": true,
+      "title": "Configuration",
+      "type": "object"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "effective_compilation_config": {
+      "additionalProperties": true,
+      "title": "Effective Compilation Config",
+      "type": "object"
+    },
+    "end_timestamp": {
+      "format": "date-time",
+      "title": "End Timestamp",
+      "type": "string"
+    },
+    "failure": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Failure"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "mapping_complete": {
+      "default": false,
+      "title": "Mapping Complete",
+      "type": "boolean"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "original": {
+      "additionalProperties": true,
+      "title": "Original",
+      "type": "object"
+    },
+    "overhead": {
+      "additionalProperties": true,
+      "title": "Overhead",
+      "type": "object"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "start_timestamp": {
+      "format": "date-time",
+      "title": "Start Timestamp",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "success",
+        "blocked",
+        "failed"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "unknown_permutation_count": {
+      "default": 0,
+      "title": "Unknown Permutation Count",
+      "type": "integer"
+    },
+    "validation": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ValidationResult"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "wall_clock_seconds": {
+      "title": "Wall Clock Seconds",
+      "type": "number"
+    }
+  },
+  "required": [
+    "status",
+    "backend",
+    "original",
+    "start_timestamp",
+    "end_timestamp",
+    "wall_clock_seconds",
+    "configuration"
+  ],
+  "title": "CompilationReport",
+  "type": "object"
+}

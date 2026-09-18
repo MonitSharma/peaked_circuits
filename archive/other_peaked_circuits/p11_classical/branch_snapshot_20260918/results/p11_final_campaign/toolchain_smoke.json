@@ -1,0 +1,28 @@
+{
+  "results": {
+    "bqskit": {
+      "fidelity": 1.0,
+      "operations": 10,
+      "status": "PASS"
+    },
+    "circuitpermmps": {
+      "state_norm": 0.9999999999999999,
+      "status": "PASS"
+    },
+    "ddsim": {
+      "state_norm": 1.0,
+      "status": "PASS"
+    },
+    "pyzx": {
+      "before_vertices": 8,
+      "reduced_gates": 0,
+      "status": "PASS"
+    },
+    "qcec": {
+      "equivalent": "EquivalenceCriterion.equivalent",
+      "non_equivalent": "EquivalenceCriterion.not_equivalent",
+      "status": "PASS"
+    }
+  },
+  "timestamp": 1787261504.28362
+}

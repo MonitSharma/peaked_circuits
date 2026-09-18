@@ -1,0 +1,11 @@
+{
+  "problem": "P8",
+  "method_family": "graph-BP",
+  "configuration": {"max_bond": 4, "max_distance": 3, "cutoff": 1e-10},
+  "status": "ABORTED",
+  "reason": "bounded manual stop after 351 seconds without completing environment factor derivation",
+  "peak_observed_process_rss_bytes": 6375344128,
+  "answer_blind": true,
+  "candidate_emitted": false,
+  "promotion": "NONCONVERGED"
+}

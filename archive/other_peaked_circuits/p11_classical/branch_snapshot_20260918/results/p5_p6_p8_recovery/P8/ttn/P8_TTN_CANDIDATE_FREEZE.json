@@ -1,0 +1,51 @@
+{
+  "schema": "p12-p8-ttn-candidate-freeze-v1",
+  "problem": "P8",
+  "method_family": "TTN",
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "code_commit": "2a53661",
+  "answer_blind": true,
+  "evaluation_status": "NOT_RUN_AT_FREEZE",
+  "promotion_status": "METHOD_REJECTED_UNSTABLE_CANDIDATE_FAMILY",
+  "candidates": [
+    {
+      "bond": 2,
+      "cutoff": 0.01,
+      "candidate": "0001101101011000100010011101010110001110",
+      "candidate_sha256": "d726fa2800818b8a54aabebd4390be27700f5685d29deff3e6a59d9dbf2e0e3b",
+      "probability_in_approximate_ttn": 1.427327026692217e-05,
+      "truncation_events": 2781,
+      "discarded_weight_proxy": 140.65818982782378
+    },
+    {
+      "bond": 4,
+      "cutoff": 0.01,
+      "candidate": "0100001111010010101100100111010111000110",
+      "candidate_sha256": "442f66520633898e7f6186597dd4773fd7934227c44519d425a6ab95cbdc75af",
+      "probability_in_approximate_ttn": 3.2142326270314846e-06,
+      "truncation_events": 1904,
+      "discarded_weight_proxy": 235.7542919573809
+    },
+    {
+      "bond": 8,
+      "cutoff": 0.01,
+      "candidate": "0111110001010110100100100111101011100001",
+      "candidate_sha256": "aca080b22dd9e51fe2d59c8f83897bccec8fb9209e2bc7604a2f2df1c7f801db",
+      "probability_in_approximate_ttn": 5.1593064258527006e-05,
+      "truncation_events": 1252,
+      "discarded_weight_proxy": 929.1722922619255
+    },
+    {
+      "bond": 4,
+      "cutoff": 0.01,
+      "tree_mode": "unweighted",
+      "candidate": "0110000010111010001110000100100000010110",
+      "candidate_sha256": "e6bc12c17c3eb71bb4216e9cc8a184b37a085b674bdbb87025993e67658434f9",
+      "probability_in_approximate_ttn": 0.0001243525024058793,
+      "truncation_events": 1984,
+      "discarded_weight_proxy": 236.19508552658993
+    }
+  ],
+  "pairwise_hamming_distances": {"D2_D4": 15, "D2_D8": 24, "D4_D8": 17, "D4_weighted_D4_unweighted": 17},
+  "reason": "No candidate is stable across bond levels or the tested weighted/unweighted topologies; outputs are retained for provenance only and were not externally evaluated before this freeze."
+}

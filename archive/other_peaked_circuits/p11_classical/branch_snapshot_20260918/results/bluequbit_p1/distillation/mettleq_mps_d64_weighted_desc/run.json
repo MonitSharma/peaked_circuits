@@ -1,0 +1,443 @@
+{
+  "schema": "p11-distillation-run-v1",
+  "circuit": {
+    "path": "/Users/monitsharma/Downloads/P1_little_dimple.qasm",
+    "sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+    "n_qubits": 36,
+    "n_operations": 4407
+  },
+  "configuration": {
+    "max_bond": 64,
+    "cutoff": 0.01,
+    "dtype": "complex64",
+    "routing_strategy": "restore",
+    "routing_lookahead": 8,
+    "ordering": "weighted_degree_desc",
+    "routing_seed": 0,
+    "sampling_seed": 20260828,
+    "samples": 100,
+    "svd_driver": "auto"
+  },
+  "marginals": [
+    {
+      "logical_qubit": 0,
+      "p0": 0.44054784694719407,
+      "p1": 0.5594521530528059,
+      "margin": 0.059452153052805934,
+      "confidence": 0.11890430610561187,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.05
+    },
+    {
+      "logical_qubit": 1,
+      "p0": 0.6562676880937085,
+      "p1": 0.3437323119062915,
+      "margin": -0.1562676880937085,
+      "confidence": 0.312535376187417,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.044395945760846225
+    },
+    {
+      "logical_qubit": 2,
+      "p0": 0.5498319739659179,
+      "p1": 0.4501680260340822,
+      "margin": -0.04983197396591782,
+      "confidence": 0.09966394793183564,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.04983974317750845
+    },
+    {
+      "logical_qubit": 3,
+      "p0": 0.019517864501053195,
+      "p1": 0.9804821354989468,
+      "margin": 0.4804821354989468,
+      "confidence": 0.9609642709978936,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.0
+    },
+    {
+      "logical_qubit": 4,
+      "p0": 0.33385384177935706,
+      "p1": 0.6661461582206429,
+      "margin": 0.16614615822064294,
+      "confidence": 0.3322923164412859,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.04702127178203499
+    },
+    {
+      "logical_qubit": 5,
+      "p0": 0.32381703726513145,
+      "p1": 0.6761829627348686,
+      "margin": 0.17618296273486855,
+      "confidence": 0.3523659254697371,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.0466476151587624
+    },
+    {
+      "logical_qubit": 6,
+      "p0": 0.5434711600690715,
+      "p1": 0.4565288399309285,
+      "margin": -0.04347116006907148,
+      "confidence": 0.08694232013814296,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.04998999899979995
+    },
+    {
+      "logical_qubit": 7,
+      "p0": 0.686607046203386,
+      "p1": 0.313392953796614,
+      "margin": -0.18660704620338597,
+      "confidence": 0.37321409240677195,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.042083250825001625
+    },
+    {
+      "logical_qubit": 8,
+      "p0": 0.6109111964196942,
+      "p1": 0.38908880358030584,
+      "margin": -0.11091119641969416,
+      "confidence": 0.22182239283938832,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.04935585071701227
+    },
+    {
+      "logical_qubit": 9,
+      "p0": 0.49017916869103373,
+      "p1": 0.5098208313089663,
+      "margin": 0.009820831308966271,
+      "confidence": 0.019641662617932543,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.04950757517794625
+    },
+    {
+      "logical_qubit": 10,
+      "p0": 0.5857526458120967,
+      "p1": 0.4142473541879032,
+      "margin": -0.0857526458120968,
+      "confidence": 0.1715052916241936,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.04935585071701227
+    },
+    {
+      "logical_qubit": 11,
+      "p0": 0.01084249220400979,
+      "p1": 0.9891575077959902,
+      "margin": 0.4891575077959902,
+      "confidence": 0.9783150155919804,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.009949874371066205
+    },
+    {
+      "logical_qubit": 12,
+      "p0": 0.998105041800577,
+      "p1": 0.0018949581994229248,
+      "margin": -0.4981050418005771,
+      "confidence": 0.9962100836011542,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.0099498743710662
+    },
+    {
+      "logical_qubit": 13,
+      "p0": 0.26593673405934015,
+      "p1": 0.7340632659406598,
+      "margin": 0.23406326594065985,
+      "confidence": 0.4681265318813197,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.04386342439892262
+    },
+    {
+      "logical_qubit": 14,
+      "p0": 0.038016531293771916,
+      "p1": 0.9619834687062281,
+      "margin": 0.4619834687062281,
+      "confidence": 0.9239669374124562,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.0
+    },
+    {
+      "logical_qubit": 15,
+      "p0": 0.6413489742522182,
+      "p1": 0.35865102574778185,
+      "margin": -0.14134897425221815,
+      "confidence": 0.2826979485044363,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.048280430818293245
+    },
+    {
+      "logical_qubit": 16,
+      "p0": 0.48928657432689426,
+      "p1": 0.5107134256731057,
+      "margin": 0.010713425673105736,
+      "confidence": 0.021426851346211473,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.049959983987187186
+    },
+    {
+      "logical_qubit": 17,
+      "p0": 0.9479636836907523,
+      "p1": 0.05203631630924771,
+      "margin": -0.4479636836907523,
+      "confidence": 0.8959273673815046,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.01705872210923198
+    },
+    {
+      "logical_qubit": 18,
+      "p0": 0.4841906005462333,
+      "p1": 0.5158093994537667,
+      "margin": 0.015809399453766693,
+      "confidence": 0.031618798907533385,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.04983974317750845
+    },
+    {
+      "logical_qubit": 19,
+      "p0": 0.30057369397857636,
+      "p1": 0.6994263060214236,
+      "margin": 0.19942630602142364,
+      "confidence": 0.3988526120428473,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.0466476151587624
+    },
+    {
+      "logical_qubit": 20,
+      "p0": 0.28958633728279515,
+      "p1": 0.7104136627172049,
+      "margin": 0.21041366271720485,
+      "confidence": 0.4208273254344097,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.03923009049186606
+    },
+    {
+      "logical_qubit": 21,
+      "p0": 0.6650092206718969,
+      "p1": 0.33499077932810306,
+      "margin": -0.16500922067189694,
+      "confidence": 0.3300184413437939,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.04963869458396343
+    },
+    {
+      "logical_qubit": 22,
+      "p0": 0.6127750321191026,
+      "p1": 0.3872249678808975,
+      "margin": -0.1127750321191025,
+      "confidence": 0.225550064238205,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.048538644398046386
+    },
+    {
+      "logical_qubit": 23,
+      "p0": 0.4960500686162006,
+      "p1": 0.5039499313837994,
+      "margin": 0.003949931383799399,
+      "confidence": 0.007899862767598798,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.05
+    },
+    {
+      "logical_qubit": 24,
+      "p0": 0.6582787308763107,
+      "p1": 0.34172126912368933,
+      "margin": -0.15827873087631067,
+      "confidence": 0.31655746175262134,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.04624932431938871
+    },
+    {
+      "logical_qubit": 25,
+      "p0": 0.3176661097932667,
+      "p1": 0.6823338902067333,
+      "margin": 0.1823338902067333,
+      "confidence": 0.3646677804134666,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.048
+    },
+    {
+      "logical_qubit": 26,
+      "p0": 0.9927441276450297,
+      "p1": 0.0072558723549703275,
+      "margin": -0.4927441276450297,
+      "confidence": 0.9854882552900593,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.0
+    },
+    {
+      "logical_qubit": 27,
+      "p0": 0.3259048008211052,
+      "p1": 0.6740951991788948,
+      "margin": 0.17409519917889482,
+      "confidence": 0.34819039835778964,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.048
+    },
+    {
+      "logical_qubit": 28,
+      "p0": 0.5434015120033409,
+      "p1": 0.4565984879966591,
+      "margin": -0.043401512003340914,
+      "confidence": 0.08680302400668183,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.04963869458396343
+    },
+    {
+      "logical_qubit": 29,
+      "p0": 0.8883959081820026,
+      "p1": 0.11160409181799735,
+      "margin": -0.38839590818200265,
+      "confidence": 0.7767918163640053,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.03363034344160047
+    },
+    {
+      "logical_qubit": 30,
+      "p0": 0.4283114663790084,
+      "p1": 0.5716885336209916,
+      "margin": 0.07168853362099159,
+      "confidence": 0.14337706724198318,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.04702127178203499
+    },
+    {
+      "logical_qubit": 31,
+      "p0": 0.3079109768523851,
+      "p1": 0.6920890231476149,
+      "margin": 0.1920890231476149,
+      "confidence": 0.3841780462952298,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.04624932431938871
+    },
+    {
+      "logical_qubit": 32,
+      "p0": 0.43691643150297055,
+      "p1": 0.5630835684970295,
+      "margin": 0.06308356849702945,
+      "confidence": 0.1261671369940589,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.04935585071701227
+    },
+    {
+      "logical_qubit": 33,
+      "p0": 0.4771937022845435,
+      "p1": 0.5228062977154565,
+      "margin": 0.022806297715456503,
+      "confidence": 0.045612595430913006,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.04935585071701227
+    },
+    {
+      "logical_qubit": 34,
+      "p0": 0.6352447977827033,
+      "p1": 0.36475520221729674,
+      "margin": -0.13524479778270326,
+      "confidence": 0.2704895955654065,
+      "predicted_bit": 0,
+      "sample_standard_error": 0.048774993593028795
+    },
+    {
+      "logical_qubit": 35,
+      "p0": 0.4217958426456845,
+      "p1": 0.5782041573543155,
+      "margin": 0.07820415735431552,
+      "confidence": 0.15640831470863104,
+      "predicted_bit": 1,
+      "sample_standard_error": 0.04898979485566356
+    }
+  ],
+  "final_logical_to_site": [
+    25,
+    15,
+    11,
+    9,
+    31,
+    10,
+    2,
+    7,
+    3,
+    35,
+    16,
+    32,
+    17,
+    4,
+    0,
+    8,
+    26,
+    5,
+    33,
+    22,
+    12,
+    27,
+    23,
+    18,
+    1,
+    28,
+    19,
+    20,
+    34,
+    6,
+    29,
+    30,
+    13,
+    24,
+    21,
+    14
+  ],
+  "diagnostics": {
+    "max_bond_ever": 64,
+    "mean_bond_final": 45.542857142857144,
+    "truncation_events": 31739,
+    "relative_discarded_weight_sum": 132.4415769825683,
+    "relative_discarded_weight_max": 0.17180734396886513,
+    "local_discarded_weight_sum": 132.44158252736236,
+    "local_discarded_weight_max": 0.1718073513868787,
+    "norm": 0.9999999966078629,
+    "routing_swaps": 31108,
+    "svd_calls": 34199
+  },
+  "runtime_s": 75.82759429200087,
+  "peak_rss_bytes": 216317952,
+  "environment": {
+    "python": "3.10.16 (main, Feb 12 2025, 15:03:04) [Clang 19.1.6 ]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "git_commit": null
+  },
+  "sample_marginals": [
+    0.5,
+    0.27,
+    0.46,
+    1.0,
+    0.67,
+    0.68,
+    0.51,
+    0.23,
+    0.42,
+    0.57,
+    0.42,
+    0.99,
+    0.01,
+    0.74,
+    1.0,
+    0.37,
+    0.48,
+    0.03,
+    0.54,
+    0.68,
+    0.81,
+    0.44,
+    0.38,
+    0.5,
+    0.31,
+    0.64,
+    0.0,
+    0.64,
+    0.44,
+    0.13,
+    0.67,
+    0.69,
+    0.58,
+    0.58,
+    0.39,
+    0.6
+  ]
+}

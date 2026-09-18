@@ -1,0 +1,18 @@
+{
+  "schema": "p12-p6-mps-fallback-state-v1",
+  "problem": "P6",
+  "method_family": "MPS",
+  "method": "CircuitPermMPS",
+  "ordering": "heavy_greedy",
+  "qasm_sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
+  "bond": 128,
+  "cutoff": 0.005,
+  "answer_blind": true,
+  "status": "METHOD_REJECTED",
+  "candidate": null,
+  "retained_norm_proxy": 1.1829070618647547e-30,
+  "max_bond_reached": 8,
+  "runtime_s": 299.8456675419584,
+  "peak_process_tree_rss_bytes": 228704256,
+  "reason": "The weighted-backbone fallback completed without a MAP bitstring and retained an effectively collapsed state; it is not evidence for candidate generation."
+}

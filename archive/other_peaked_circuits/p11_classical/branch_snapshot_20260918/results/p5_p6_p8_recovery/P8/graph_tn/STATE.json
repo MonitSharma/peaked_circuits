@@ -1,0 +1,20 @@
+{
+  "problem": "P8",
+  "method_family": "graph-BP",
+  "answer_blind": true,
+  "controls": {
+    "graph_bp_exact_control": "PASS",
+    "ttn_exact_control": "PASS"
+  },
+  "target_runs": {
+    "D4_md2": "REJECTED_INVALID_ENVIRONMENT_FACTORS",
+    "D4_md3": "NONCONVERGED_BOUNDED_STOP",
+    "D4_md2_projected": "CONVERGED_BUT_REJECTED_LARGE_PROJECTION",
+    "TTN_derived_D4": "CONVERGED_BUT_REJECTED_CORRELATED_DIAGNOSTIC",
+    "TTN_derived_D8": "CONVERGED_BUT_REJECTED_CORRELATED_DIAGNOSTIC"
+  },
+  "candidate_promoted": false,
+  "status": "METHOD_REJECTED",
+  "freeze": "P8/graph_tn/P8_TTN_GRAPH_BP_FREEZE.json",
+  "next_action": "Do not promote TTN-derived BP or increase simple-update radius blindly; require a new independent environment construction or close P8 as unresolved."
+}

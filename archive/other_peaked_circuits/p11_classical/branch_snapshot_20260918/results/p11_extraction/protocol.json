@@ -1,0 +1,68 @@
+{
+  "protocol_version": "1.0",
+  "created_utc": "2026-08-27",
+  "scope": "blind extraction from existing completed P11 sample datasets",
+  "hypotheses": {
+    "H0": "the approximate P11 samples contain no reproducible latent 98-bit center across independent approximation levels",
+    "H1": "the independent 5e-3 and 4e-3 runs preserve statistically reproducible bitwise structure even though full strings are diffuse"
+  },
+  "inputs": {
+    "cutoffs": [0.005, 0.004],
+    "max_bond": 4096,
+    "shots_per_run": 1000,
+    "bits": 98,
+    "expected_bitstring": ""
+  },
+  "metrics": [
+    "per_bit_marginals",
+    "per_bit_entropy",
+    "wilson_95_intervals",
+    "deterministic_majority_candidate",
+    "bootstrap_majority_stability",
+    "bootstrap_candidate_hamming_distance",
+    "subsample_convergence",
+    "within_run_pairwise_hamming",
+    "cross_run_candidate_hamming",
+    "held_out_cross_run_hamming",
+    "per_bit_cross_run_agreement"
+  ],
+  "bootstrap": {
+    "replicates": 2000,
+    "rng": "numpy PCG64",
+    "seed": 20260827,
+    "ci": 0.95
+  },
+  "subsampling": {
+    "sizes": [50, 100, 200, 400, 600, 800],
+    "replicates": 2000,
+    "rng": "numpy PCG64",
+    "seed": 20260828
+  },
+  "null": {
+    "distribution": "Binomial(98, 0.5)",
+    "mean_hamming": 49.0,
+    "sd_hamming": 4.9497474683
+  },
+  "gates": {
+    "strong": {
+      "majority_hamming_max": 12,
+      "majority_sign_agreement_min": 80,
+      "held_out_ci_upper_strictly_below": 48,
+      "stable_bits_min": 60,
+      "stable_bit_probability_min": 0.90
+    },
+    "moderate": {
+      "majority_hamming_max": 20,
+      "majority_sign_agreement_min": 70,
+      "held_out_mean_below_null": true
+    }
+  },
+  "candidate_tie_rule": "mark uncertain and choose 0 only for machine-readable candidate",
+  "canonical_column": "permuted",
+  "outputs": "results/p11_extraction/existing_samples/",
+  "blindness": {
+    "p11_expected_bitstring": "",
+    "external_target_used": false,
+    "external_verifier_used": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "p12-p5-posthoc-evaluation-v1",
+  "problem": "P5",
+  "candidate": "11110000001110100101110011111101010001100001",
+  "candidate_freeze": "P5/freezes/P5_D512_C6E4_CONDA_FREEZE.json",
+  "evaluation_source": "explicit user assertion in conversation",
+  "user_asserted_correct": true,
+  "overlap_count": null,
+  "overlap_denominator": 44,
+  "used_for_recovery_generation": false,
+  "used_for_candidate_selection": false,
+  "note": "This post-hoc assertion is recorded after the candidate freeze and must not be fed back into P5/P6/P8 recovery code or adaptive search."
+}

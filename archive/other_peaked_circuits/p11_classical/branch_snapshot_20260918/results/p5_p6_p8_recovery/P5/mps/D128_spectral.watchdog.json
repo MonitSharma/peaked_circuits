@@ -1,0 +1,13 @@
+{
+  "problem": "P5",
+  "method_family": "MPS",
+  "bond": 128,
+  "order": "spectral",
+  "status": "COMPLETE_METHOD_REJECTED",
+  "runtime_s": 224.42532508296426,
+  "peak_process_tree_rss_bytes": 236552192,
+  "retained_norm_proxy": 3.6429502244809696e-26,
+  "map_emitted": false,
+  "answer_blind": true,
+  "reason": "retained norm proxy is far below the conservative promotion gate; no candidate was promoted"
+}

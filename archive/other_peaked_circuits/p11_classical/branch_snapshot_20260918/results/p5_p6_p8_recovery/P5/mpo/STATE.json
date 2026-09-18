@@ -1,0 +1,19 @@
+{
+  "problem": "P5",
+  "method_family": "MPO",
+  "answer_blind": true,
+  "p9_calibration_passed": true,
+  "full_run": {
+    "status": "COMPLETE",
+    "work_gates": 902,
+    "unswap_cycles": 7,
+    "peak_bond": 128,
+    "final_bond": 26,
+    "peak_process_tree_rss_gib": 0.836,
+    "sampling_run": "full_d128_decode/p5_full_d128_decode/summary.json"
+  },
+  "candidate_freeze": "../freezes/P5_MPO_CANDIDATE_FREEZE.json",
+  "candidate_promoted": false,
+  "status": "PROMISING_CANDIDATE_FAMILY",
+  "reason": "full calibrated MPO decoder completed, but it differs from the frozen MPS family by Hamming distance 22"
+}

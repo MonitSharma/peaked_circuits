@@ -1,0 +1,59 @@
+diff --git a/src/p9solver/__init__.py b/src/p9solver/__init__.py
+index 4387438..7a786a3 100644
+--- a/src/p9solver/__init__.py
++++ b/src/p9solver/__init__.py
+@@ -3,0 +4,6 @@
++
++# Guard against a numba complex64 qr_stabilized edge case that can abort long
++# solves mid-run (see p9solver/_quimb_compat.py).
++from . import _quimb_compat as _quimb_compat  # noqa: E402
++
++_quimb_compat.apply()
+diff --git a/src/p9solver/cli.py b/src/p9solver/cli.py
+index 87e760f..aa91983 100644
+--- a/src/p9solver/cli.py
++++ b/src/p9solver/cli.py
+@@ -573,0 +574,10 @@
++    parser.add_argument(
++        "--unswap-max-swaps-per-step",
++        type=int,
++        default=None,
++        help=(
++            "Cap the number of swaps applied per (side, parity) unswap sub-step. "
++            "Bounds routing/SWAP debt from unbounded greedy unswapping; 1-2 "
++            "sustains far higher work-drain on P11."
++        ),
++    )
+@@ -866,0 +877,1 @@
++        unswap_max_swaps_per_step=args.unswap_max_swaps_per_step,
+diff --git a/src/p9solver/pipeline.py b/src/p9solver/pipeline.py
+index a1f5cf1..67f9651 100644
+--- a/src/p9solver/pipeline.py
++++ b/src/p9solver/pipeline.py
+@@ -950,0 +951,1 @@
++    unswap_max_swaps_per_step=None,
+@@ -1141,0 +1143,20 @@
++                    if (
++                        unswap_max_swaps_per_step is not None
++                        and len(new_swaps) > int(unswap_max_swaps_per_step)
++                    ):
++                        cap = max(1, int(unswap_max_swaps_per_step))
++                        ranked = False
++                        if bond_gains is not None:
++                            pair_to_id = {all_pairs[i]: i for i in range(len(all_pairs))}
++                            try:
++                                new_swaps = sorted(
++                                    new_swaps,
++                                    key=lambda pr: float(bond_gains[pair_to_id[pr]]),
++                                    reverse=True,
++                                )[:cap]
++                                ranked = True
++                            except (KeyError, IndexError, TypeError):
++                                ranked = False
++                        if not ranked:
++                            new_swaps = new_swaps[:cap]
++
+@@ -1357,0 +1388,1 @@
++    unswap_max_swaps_per_step=None,
+@@ -1881,0 +1913,1 @@
++                    unswap_max_swaps_per_step=unswap_max_swaps_per_step,

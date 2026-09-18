@@ -1,0 +1,40 @@
+{
+  "accepted": 0,
+  "block_size": 2,
+  "blocks": 1,
+  "new_two_qubit": 0,
+  "offset": 0,
+  "old_two_qubit": 2,
+  "permutation_candidates": 2,
+  "qasm": "data/canonical/peaked_circuit_P11_Hqap_98x1999.qasm",
+  "results": [
+    {
+      "accepted": false,
+      "fidelity": 0.9999999999999999,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        6,
+        13
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 5300,
+      "status": "verified_no_improvement",
+      "stop": 5310,
+      "tried_permutations": [
+        [
+          6,
+          13
+        ],
+        [
+          13,
+          6
+        ]
+      ],
+      "wires": [
+        6,
+        13
+      ]
+    }
+  ]
+}

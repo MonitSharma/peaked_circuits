@@ -1,0 +1,6 @@
+{
+  "canonical_order": "logical_q0_to_q97_left_to_right",
+  "case_name": "alternating_q0_one",
+  "expected_canonical_string": "10101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010",
+  "provider_result_position": null
+}

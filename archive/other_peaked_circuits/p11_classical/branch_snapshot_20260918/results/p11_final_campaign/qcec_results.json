@@ -1,0 +1,12 @@
+{
+  "whole_p9_normalized": {
+    "status": "TECHNICAL_TIMEOUT",
+    "wall_clock_limit_s": 360,
+    "observed_rss_kib_at_stop": 3559648,
+    "observed_rss_bytes_at_stop": 3645079552,
+    "reason": "QCEC full-circuit verification did not return within the bounded wall-clock budget"
+  },
+  "local_equivalent_and_non_equivalent_smoke": "PASS",
+  "pyzx_full_circuit": "exact_graph_rewrite",
+  "verdict": "TECHNICALLY_UNAVAILABLE_WITH_FULL_EVIDENCE_FOR_WHOLE_P9"
+}

@@ -1,0 +1,28 @@
+{
+  "decision": "NO_GO_MAP_DECODER",
+  "blindness": "P11 remained blind; P9 target used only for calibration",
+  "solver_worktree": "/Users/monitsharma/code_projects/qat/peaked-mpo-solver",
+  "runs": {
+    "tight_control": {
+      "tag": "p9_beam_calibration_20260827",
+      "cutoff": 0.0006,
+      "work_gates": "1885/1885",
+      "beam_width": 8,
+      "beam_top1_hamming_to_known_p9": 0,
+      "direct_marginal_hamming_to_known_p9": 2,
+      "random_sample_mode_hamming_to_known_p9": 0
+    },
+    "p11_comparable_loose": {
+      "tag": "p9_loose_beam_calibration_20260827",
+      "cutoff": 0.005,
+      "work_gates": "1885/1885",
+      "beam_width": 8,
+      "work_gates_completed": true,
+      "beam_top1_hamming_to_known_p9": 25,
+      "beam_top8_contains_known_p9": false,
+      "direct_marginal_hamming_to_known_p9": 29,
+      "random_sample_mode_hamming_to_known_p9": 29
+    }
+  },
+  "reason": "The deterministic MAP decoder fails the preregistered P9 gate at a fidelity comparable to P11. Do not rerun P11 or enter route replay."
+}

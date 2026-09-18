@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P5 P6 P8 Peak Audit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#FBFBFC; --surface:#F2F3F6; --surface-2:#E9EBF0;
+  --ink:#16181D; --ink-2:#565C6B; --ink-3:#7C8393;
+  --rule:#DCDFE6; --rule-strong:#C3C8D2;
+  --s1:#005FB0; --s2:#B05A10;
+  --crit:#A32B23; --crit-bg:#FBEEEC;
+  --ok:#2C6A4A; --ok-bg:#EDF5F0;
+  --warn:#8A6100; --warn-bg:#FBF3E2;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#101216; --surface:#171A20; --surface-2:#1E222A;
+    --ink:#E3E6EC; --ink-2:#9AA2B1; --ink-3:#79808E;
+    --rule:#272B34; --rule-strong:#39404C;
+    --s1:#3A8CC4; --s2:#CC8040;
+    --crit:#E0736A; --crit-bg:#26191A;
+    --ok:#5FAF86; --ok-bg:#16211C;
+    --warn:#D6A340; --warn-bg:#221D12;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#101216; --surface:#171A20; --surface-2:#1E222A;
+  --ink:#E3E6EC; --ink-2:#9AA2B1; --ink-3:#79808E;
+  --rule:#272B34; --rule-strong:#39404C;
+  --s1:#3A8CC4; --s2:#CC8040;
+  --crit:#E0736A; --crit-bg:#26191A;
+  --ok:#5FAF86; --ok-bg:#16211C;
+  --warn:#D6A340; --warn-bg:#221D12;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground); color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16.5px; line-height:1.62; margin:0;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding:0 28px 120px}
+.col{max-width:64ch}
+h1,h2,h3{font-family:Spectral,Georgia,serif; text-wrap:balance; margin:0}
+h1{font-size:clamp(2.1rem,5vw,3.05rem); font-weight:600; line-height:1.08; letter-spacing:-.015em}
+h2{font-size:1.62rem; font-weight:600; line-height:1.2; letter-spacing:-.01em}
+h3{font-size:1.12rem; font-weight:600; line-height:1.3}
+p{margin:0}
+a{color:var(--s1)}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.87em}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---- rhythm: gaps, never margins ---- */
+header{display:flex; flex-direction:column; gap:18px; padding:76px 0 40px}
+section{display:flex; flex-direction:column; gap:20px; padding:44px 0; border-top:1px solid var(--rule)}
+.stack{display:flex; flex-direction:column; gap:14px}
+.stack-s{display:flex; flex-direction:column; gap:8px}
+
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace; font-size:.7rem; font-weight:500;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3);
+}
+.lede{font-size:1.14rem; color:var(--ink-2); max-width:60ch}
+.meta{font-family:"IBM Plex Mono",monospace; font-size:.76rem; color:var(--ink-3); letter-spacing:.02em}
+
+/* ---- verdict ---- */
+.verdict{
+  background:var(--surface); border:1px solid var(--rule);
+  border-left:3px solid var(--crit);
+  padding:26px 28px; display:flex; flex-direction:column; gap:14px;
+}
+.verdict h2{font-size:1.3rem}
+.verdict .col{max-width:66ch}
+.tag{
+  display:inline-flex; align-items:center; gap:7px; align-self:flex-start;
+  font-family:"IBM Plex Mono",monospace; font-size:.7rem; font-weight:500;
+  letter-spacing:.1em; text-transform:uppercase;
+  padding:4px 10px; border-radius:2px;
+}
+.tag.crit{background:var(--crit-bg); color:var(--crit)}
+.tag.ok{background:var(--ok-bg); color:var(--ok)}
+.tag.warn{background:var(--warn-bg); color:var(--warn)}
+.dot{width:6px;height:6px;border-radius:50%;background:currentColor}
+
+/* ---- tables ---- */
+.tbl-wrap{overflow-x:auto; border:1px solid var(--rule); background:var(--surface)}
+table{border-collapse:collapse; width:100%; font-size:.87rem}
+th,td{padding:9px 14px; text-align:left; border-bottom:1px solid var(--rule); white-space:nowrap}
+thead th{
+  font-family:"IBM Plex Mono",monospace; font-size:.68rem; font-weight:500;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3);
+  background:var(--surface-2); border-bottom:1px solid var(--rule-strong);
+}
+tbody tr:last-child td{border-bottom:none}
+td.n{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums}
+td.bits{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:-.01em}
+.caption{font-size:.8rem; color:var(--ink-3); max-width:70ch}
+
+/* ---- callouts ---- */
+.note{
+  border-left:2px solid var(--rule-strong); padding:2px 0 2px 18px;
+  color:var(--ink-2); font-size:.95rem; max-width:62ch;
+  display:flex; flex-direction:column; gap:10px;
+}
+.pull{
+  font-family:Spectral,Georgia,serif; font-size:1.3rem; line-height:1.42;
+  color:var(--ink); max-width:52ch; font-style:italic;
+}
+
+/* ---- code ---- */
+pre{
+  background:var(--surface); border:1px solid var(--rule);
+  padding:16px 18px; overflow-x:auto; margin:0;
+  font-family:"IBM Plex Mono",monospace; font-size:.78rem; line-height:1.65;
+  color:var(--ink-2);
+}
+pre b{color:var(--ink); font-weight:500}
+
+/* ---- steps ---- */
+ol.steps{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:22px; counter-reset:s}
+ol.steps>li{
+  counter-increment:s; display:grid; grid-template-columns:34px 1fr; gap:16px; align-items:start;
+}
+ol.steps>li::before{
+  content:counter(s,decimal-leading-zero);
+  font-family:"IBM Plex Mono",monospace; font-size:.78rem; font-weight:500;
+  color:var(--s1); padding-top:3px; letter-spacing:.04em;
+}
+ol.steps .col{max-width:60ch}
+ul.plain{margin:0; padding-left:1.1em; display:flex; flex-direction:column; gap:7px; color:var(--ink-2); max-width:62ch}
+
+.grid2{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule)}
+.grid2>div{background:var(--surface); padding:20px; display:flex; flex-direction:column; gap:8px}
+.stat{font-family:"IBM Plex Mono",monospace; font-size:1.6rem; font-variant-numeric:tabular-nums; letter-spacing:-.02em}
+.stat.crit{color:var(--crit)} .stat.ok{color:var(--ok)}
+
+/* ---- chart ---- */
+figure{margin:0; display:flex; flex-direction:column; gap:12px}
+.legend{display:flex; gap:20px; flex-wrap:wrap; font-size:.8rem; color:var(--ink-2); font-family:"IBM Plex Mono",monospace}
+.legend span{display:inline-flex; align-items:center; gap:8px}
+.swatch{width:22px; height:2px; display:inline-block}
+.chart-scroll{overflow-x:auto}
+svg{display:block; min-width:600px}
+svg text{font-family:"IBM Plex Mono",monospace; font-size:10.5px; fill:var(--ink-3)}
+svg text.lbl{font-size:11px; font-weight:500}
+svg .grid{stroke:var(--rule); stroke-width:1}
+svg .axis{stroke:var(--rule-strong); stroke-width:1}
+svg .ref{stroke:var(--ink-3); stroke-width:1; stroke-dasharray:2 4}
+svg circle.hit{fill:transparent}
+
+@media (prefers-reduced-motion:no-preference){
+  a{transition:opacity .15s}
+}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--s1); outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Independent review &middot; p12-helios-recovery &middot; 28 Aug 2026</div>
+  <h1>Why P5, P6 and P8 haven&rsquo;t cracked</h1>
+  <p class="lede">The extraction step is measuring the wrong thing, and the validation apparatus around it cannot detect the error that dominates. Both are fixable. The compute gap underneath is real but smaller than it first looked — for P8 it is an overnight run away.</p>
+  <div class="meta">Reviewed: EXPERT_REVIEW.md, MANIFEST.json, the three input QASM files, tools/run_mps_distillation.py, scripts/analyze_distillation.py, and results/expert_review_p5_p6_p8_20260828/</div>
+</header>
+
+<section>
+  <div class="verdict">
+    <span class="tag crit"><span class="dot"></span>Candidates not supported by their evidence</span>
+    <div class="col stack">
+      <p>The P5, P6 and P8 candidate bitstrings are consistent with containing <strong>no information at all</strong> about the hidden peaks. That is a statement about the evidence, not a claim that the strings are wrong &mdash; but nothing in the package distinguishes them from what a peak-free null model produces.</p>
+      <p>Three independent lines lead there: the confidence statistics are reproduced by a no-peak simulation; at most 1&ndash;4&nbsp;% of the reported marginal signal could physically come from a peak; and the MPS fidelity, which was never recorded, is around <span class="mono num">10<sup>&minus;21</sup></span> when you measure it &mdash; twelve orders of magnitude below the level at which a 40-qubit peak is detectable.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Ground truth</div>
+  <h2>What the three circuits actually are</h2>
+  <p class="col">Worth stating up front, because the three problems are not variations on one another. P8 is a sparse planar lattice; P5 and P6 are close to all-to-all. That difference decides which method can work.</p>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>&nbsp;</th><th>Qubits</th><th>2q gates</th><th>Unique edges</th><th>Graph</th><th>Depth</th><th>SWAPs / 2q gate<sup>&dagger;</sup></th></tr></thead>
+    <tbody>
+      <tr><td><strong>P5</strong> granite_summit</td><td class="n">44</td><td class="n">1&thinsp;892 cz</td><td class="n">578 &nbsp;<span style="color:var(--ink-3)">(61&thinsp;% of K<sub>44</sub>)</span></td><td>dense, no structure</td><td class="n">173</td><td class="n">10.11</td></tr>
+      <tr><td><strong>P6</strong> titan_pinnacle</td><td class="n">62</td><td class="n">3&thinsp;494 cz</td><td class="n">658 &nbsp;<span style="color:var(--ink-3)">(35&thinsp;% of K<sub>62</sub>)</span></td><td>1D backbone + long range</td><td class="n">416</td><td class="n">10.51</td></tr>
+      <tr><td><strong>P8</strong> grid_888_iswap</td><td class="n">40</td><td class="n">888 iswap</td><td class="n">63</td><td>planar, treewidth 5, max deg 4</td><td class="n">129</td><td class="n">2.30</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="caption"><sup>&dagger;</sup> Mean SWAP distance per two-qubit gate under the best site ordering I could find (simulated annealing on total SWAP distance, seeded from spectral and RCM orderings). Shipped as <code>mps_orderings.json</code>.</p>
+
+  <div class="note">
+    <p><strong>P6 has a hidden 1D backbone.</strong> The 62 heaviest edges (multiplicity &ge;&nbsp;20) form a single path visiting every qubit, and carry 48&thinsp;% of all CZ mass. Your runs use logical order <span class="mono">0&hellip;61</span>, which is a random permutation relative to that path &mdash; so nearly every heavy gate is routed the long way. Reordering along the backbone cuts total SWAP distance by 47&thinsp;% (68&thinsp;510&nbsp;&rarr;&nbsp;36&thinsp;716).</p>
+    <p><strong>P8&rsquo;s geometry is being ignored.</strong> A planar treewidth-5 graph is exactly the case a 2D ansatz exists for. An MPS flattens it; that&rsquo;s a choice worth revisiting (see step&nbsp;5).</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Finding 1</div>
+  <h2>The confidence statistics can&rsquo;t see the error that matters</h2>
+  <div class="col stack">
+    <p><code>analyze_distillation.py</code> reports three things: unique-strings / modal frequency, split-half Hamming distance, and bootstrap bit-sign stability. All three are <em>resampling</em> statistics computed on the same 1&thinsp;000 shots. They estimate Monte-Carlo error.</p>
+    <p>Monte-Carlo error is not your dominant error term. Truncation bias is. Resampling the same biased samples cannot detect bias &mdash; every replicate inherits it. So the apparatus is structurally incapable of failing, whatever the MPS did.</p>
+  </div>
+
+  <p class="col">Here is what those statistics report on synthetic data containing <strong>no peak whatsoever</strong>:</p>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Data</th><th>Bits &ge; 0.90 bootstrap stability</th><th>Split-half Hamming</th><th>Unique strings / 1000</th></tr></thead>
+    <tbody>
+      <tr><td>Null A &mdash; uniform bits, no peak</td><td class="n">9&ndash;13 of 62</td><td class="n">31&ndash;34</td><td class="n">1000</td></tr>
+      <tr><td>Null B &mdash; no peak, biased marginals<sup>&Dagger;</sup></td><td class="n">50&ndash;59 of 62</td><td class="n">3&ndash;9</td><td class="n">1000</td></tr>
+      <tr style="background:var(--crit-bg)"><td><strong>Your P6 run</strong></td><td class="n"><strong>62 of 62</strong></td><td class="n"><strong>0</strong></td><td class="n"><strong>1000</strong></td></tr>
+      <tr style="background:var(--crit-bg)"><td><strong>Your P5 run</strong></td><td class="n"><strong>39 of 44</strong></td><td class="n"><strong>5</strong></td><td class="n"><strong>1000</strong></td></tr>
+      <tr style="background:var(--crit-bg)"><td><strong>Your P8 run</strong></td><td class="n"><strong>38 of 40</strong></td><td class="n"><strong>0</strong></td><td class="n"><strong>1000</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="caption"><sup>&Dagger;</sup> Null B draws each qubit&rsquo;s marginal from <span class="mono">0.5 + N(0, 0.12)</span> and samples independently &mdash; a state with strongly biased single-qubit marginals and no joint peak. This is what SVD truncation produces: collapsing onto a few dominant Schmidt vectors leaves marginals far from 0.5 for reasons that have nothing to do with the hidden string.</p>
+
+  <p class="pull">Your three headline results all sit inside the null-model band. &ldquo;62 of 62 bits above threshold&rdquo; is the signature of a low-rank artifact, not of a recovered peak.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Finding 2</div>
+  <h2>At most 1&ndash;4&thinsp;% of the reported signal could be the peak</h2>
+  <div class="col stack">
+    <p>This one follows from your own numbers with no simulation at all. Two facts are in tension.</p>
+    <p><strong>Fact one.</strong> All 1&thinsp;000 sampled strings were unique; modal frequency was 1. If the peak carried effective weight <span class="mono">q</span> in the sampled distribution you would expect roughly <span class="mono">1000&thinsp;q</span> copies of it. Zero repeats bounds <span class="mono">q &lesssim; 0.003</span>. The peak&rsquo;s own contribution to any single-qubit marginal is then at most <span class="mono">q/2 &approx; 0.0015</span>.</p>
+    <p><strong>Fact two.</strong> For two independent halves of 500 shots to produce majority votes agreeing on all 62 bits, the per-bit marginals must sit at least <span class="mono">0.179</span> away from 0.5. That is over a hundred times what the peak can supply.</p>
+  </div>
+
+  <div class="grid2">
+    <div><div class="eyebrow">P6 &mdash; split-half 0</div><div class="stat crit num">&ge; 99.2&thinsp;%</div><p style="color:var(--ink-2);font-size:.9rem">of the marginal signal driving the candidate is truncation artifact, not peak</p></div>
+    <div><div class="eyebrow">P8 &mdash; split-half 0</div><div class="stat crit num">&ge; 99.2&thinsp;%</div><p style="color:var(--ink-2);font-size:.9rem">same bound, same reasoning</p></div>
+    <div><div class="eyebrow">P5 &mdash; split-half 5</div><div class="stat crit num">&ge; 95.7&thinsp;%</div><p style="color:var(--ink-2);font-size:.9rem">weaker internal statistics, same conclusion</p></div>
+  </div>
+
+  <p class="caption">Reproduce with <code>python scripts/audit_null_model.py --bits 62 --shots 1000 --observed-split-half 0 --observed-ge90 62</code>.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Finding 3</div>
+  <h2>Sampling and voting is the wrong estimator by ten orders of magnitude</h2>
+  <div class="col stack">
+    <p>You want <span class="mono">argmax<sub>x</sub> |&lang;x|&psi;&rang;|<sup>2</sup></span>. That is a <em>joint</em> property of the state. Per-bit marginals and majority votes over samples are the one family of estimators that throws away exactly the joint information you need.</p>
+    <p>Write <span class="mono">q = F &middot; p<sub>peak</sub></span> for the peak&rsquo;s weight in the approximate state, with <span class="mono">F</span> the MPS fidelity. Then:</p>
+  </div>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Estimator</th><th>Detects the peak when</th><th>P8, n=40</th><th>P5, n=44</th><th>P6, n=62</th></tr></thead>
+    <tbody>
+      <tr><td>Majority vote over 1000 shots</td><td class="n">q &gtrsim; 0.03</td><td class="n">0.03</td><td class="n">0.03</td><td class="n">0.03</td></tr>
+      <tr><td><strong>Beam-search argmax over the MPS</strong></td><td class="n">q &gtrsim; 2<sup>&minus;n</sup></td><td class="n">9.1&times;10<sup>&minus;13</sup></td><td class="n">5.7&times;10<sup>&minus;14</sup></td><td class="n">2.2&times;10<sup>&minus;19</sup></td></tr>
+      <tr><td colspan="2"><strong>Extra slack bought by changing estimator</strong></td><td class="n"><strong>3&times;10<sup>10</sup></strong></td><td class="n"><strong>5&times;10<sup>11</sup></strong></td><td class="n"><strong>1&times;10<sup>17</sup></strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p class="col">Beam search over an MPS is cheap and exact: right-canonicalise, sweep left to right keeping the best <span class="mono">K</span> prefixes by <span class="mono">&#8214;v&#8214;<sup>2</sup></span>, cost <span class="mono">O(n K D<sup>2</sup>)</span>. There is no reason to sample.</p>
+
+  <h3>Calibrated on a circuit where the answer is known</h3>
+  <p class="col">I built a peaked circuit by planting a string: <span class="mono">C = X<sup>s</sup>&thinsp;V&prime;<sup>&dagger;</sup>V</span> with <span class="mono">V&prime;</span> a noise-perturbed copy of a random <span class="mono">V</span>, so <span class="mono">&lang;s|C|0&rang; = &lang;0|V&prime;<sup>&dagger;</sup>V|0&rang;</span> and <span class="mono">p<sub>peak</sub></span> is tunable. At n=22 the exact statevector confirms <span class="mono">p<sub>peak</sub> = 0.0864</span> on the planted string.</p>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Bond D</th><th>Fidelity F</th><th>Beam-search top-1</th><th>Correct?</th></tr></thead>
+    <tbody>
+      <tr><td class="n">2</td><td class="n">1.5&times;10<sup>&minus;5</sup></td><td class="bits">1001110000110001111000</td><td><span class="tag crit">1 bit off</span></td></tr>
+      <tr><td class="n">4</td><td class="n">1.6&times;10<sup>&minus;4</sup></td><td class="bits">1001110000110000011000</td><td><span class="tag crit">1 bit off</span></td></tr>
+      <tr><td class="n">6</td><td class="n">5.9&times;10<sup>&minus;4</sup></td><td class="bits">1001110000110000111000</td><td><span class="tag ok">exact</span></td></tr>
+      <tr><td class="n">8</td><td class="n">1.1&times;10<sup>&minus;3</sup></td><td class="bits">1001110000110000111000</td><td><span class="tag ok">exact</span></td></tr>
+      <tr><td class="n">16</td><td class="n">4.4&times;10<sup>&minus;3</sup></td><td class="bits">1001110000110000111000</td><td><span class="tag ok">exact</span></td></tr>
+      <tr><td class="n">32</td><td class="n">1.8&times;10<sup>&minus;2</sup></td><td class="bits">1001110000110000111000</td><td><span class="tag ok">exact</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="caption">Planted string <span class="mono">1001110000110000111000</span>. At the same D, majority voting over 1&thinsp;000 samples got 0&ndash;1 bits wrong here <em>only because</em> p<sub>peak</sub> is large and n small; push n up and it collapses, while beam search does not.</p>
+
+  <div class="note">
+    <p>The useful part is the crossover. Recovery locks in at <span class="mono">F &approx; 6&times;10<sup>&minus;4</sup></span>, i.e. <span class="mono">F &middot; p<sub>peak</sub> &approx; 200 &times; 2<sup>&minus;n</sup></span>. That gives a concrete, answer-blind admission threshold to hold every real run to:</p>
+    <p class="pull" style="font-size:1.15rem;font-style:normal">F &gtrsim; 100 &middot; 2<sup>&minus;n</sup> / p<sub>peak</sub></p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Finding 4</div>
+  <h2>Nobody measured the fidelity &mdash; and it is 10<sup>&minus;21</sup></h2>
+  <div class="col stack">
+    <p>Not one of the four run directories records a discarded weight, truncation error, or fidelity estimate. What they do record is that 38&ndash;41&thinsp;% of compressions saturated the bond cap (P8: 184 of 484; P5 at D=128: 310 of 763), so truncation was being forced hard and silently.</p>
+    <p>I re-ran P8 tracking retained Schmidt weight through the evolution &mdash; <span class="mono">&prod;<sub>k</sub>(1 &minus; &epsilon;<sub>k</sub>)</span>, the standard fidelity proxy. It falls below the 2<sup>&minus;40</sup> uniform floor <em>before the circuit is half applied</em>.</p>
+  </div>
+
+  <figure>
+    <div class="legend">
+      <span><span class="swatch" style="background:var(--s1)"></span> D = 64 (complete)</span>
+      <span><span class="swatch" style="background:var(--s2); border-top:2px dashed var(--s2); height:0"></span> D = 128 (complete)</span>
+      <span style="color:var(--ink-3)">&middot;&middot;&middot;&middot; reference levels</span>
+    </div>
+    <div class="chart-scroll">
+    <svg viewBox="0 0 740 320" role="img" aria-label="P8 MPS retained weight decaying from 1 to 1.8e-21 over 2704 gates, crossing below the 2^-40 detection floor around gate 1100">
+      <!-- gridlines -->
+      <line class="grid" x1="64" y1="24"  x2="700" y2="24"/>
+      <line class="grid" x1="64" y1="82"  x2="700" y2="82"/>
+      <line class="grid" x1="64" y1="140" x2="700" y2="140"/>
+      <line class="grid" x1="64" y1="199" x2="700" y2="199"/>
+      <line class="grid" x1="64" y1="257" x2="700" y2="257"/>
+      <text x="56" y="28"  text-anchor="end">1</text>
+      <text x="56" y="86"  text-anchor="end">1e-5</text>
+      <text x="56" y="144" text-anchor="end">1e-10</text>
+      <text x="56" y="203" text-anchor="end">1e-15</text>
+      <text x="56" y="261" text-anchor="end">1e-20</text>
+
+      <!-- reference levels -->
+      <line class="ref" x1="64" y1="140.8" x2="700" y2="140.8"/>
+      <text x="700" y="136" text-anchor="end" style="fill:var(--ink-2)">detection threshold  100 &#215; 2⁻⁴⁰ / p</text>
+      <line class="ref" x1="64" y1="164.1" x2="700" y2="164.1"/>
+      <text x="700" y="177" text-anchor="end">uniform floor  2⁻⁴⁰</text>
+
+      <!-- axes -->
+      <line class="axis" x1="64" y1="290" x2="700" y2="290"/>
+      <line class="axis" x1="64" y1="24"  x2="64"  y2="290"/>
+      <text x="64"  y="305" text-anchor="middle">0</text>
+      <text x="182" y="305" text-anchor="middle">500</text>
+      <text x="299" y="305" text-anchor="middle">1000</text>
+      <text x="417" y="305" text-anchor="middle">1500</text>
+      <text x="534" y="305" text-anchor="middle">2000</text>
+      <text x="652" y="305" text-anchor="middle">2500</text>
+      <text x="382" y="319" text-anchor="middle" style="fill:var(--ink-3)">gates applied</text>
+
+      <!-- D=64 -->
+      <polyline fill="none" stroke="var(--s1)" stroke-width="2" stroke-linejoin="round"
+        points="64,24 182,57 299,137 417,180 534,192 652,251 700,265"/>
+      <g fill="var(--s1)">
+        <circle cx="182" cy="57"  r="3.5"/><circle cx="299" cy="137" r="3.5"/>
+        <circle cx="417" cy="180" r="3.5"/><circle cx="534" cy="192" r="3.5"/>
+        <circle cx="652" cy="251" r="3.5"/><circle cx="700" cy="265" r="3.5"/>
+      </g>
+      <g class="hit">
+        <circle class="hit" cx="182" cy="57"  r="12"><title>D=64, gate 500: retained 1.48e-3</title></circle>
+        <circle class="hit" cx="299" cy="137" r="12"><title>D=64, gate 1000: retained 1.93e-10</title></circle>
+        <circle class="hit" cx="417" cy="180" r="12"><title>D=64, gate 1500: retained 4.18e-14</title></circle>
+        <circle class="hit" cx="534" cy="192" r="12"><title>D=64, gate 2000: retained 3.81e-15</title></circle>
+        <circle class="hit" cx="652" cy="251" r="12"><title>D=64, gate 2500: retained 3.02e-20</title></circle>
+        <circle class="hit" cx="700" cy="265" r="12"><title>D=64, gate 2704 (final): retained 1.85e-21</title></circle>
+      </g>
+      <text class="lbl" x="694" y="282" text-anchor="end" style="fill:var(--s1)">D = 64</text>
+
+      <!-- D=128 -->
+      <polyline fill="none" stroke="var(--s2)" stroke-width="2" stroke-dasharray="6 4" stroke-linejoin="round"
+        points="64,24 182,51 299,128 417,168 534,176 652,231 700,245"/>
+      <g fill="var(--s2)">
+        <circle cx="182" cy="51" r="3.5"/><circle cx="299" cy="128" r="3.5"/>
+        <circle cx="417" cy="168" r="3.5"/><circle cx="534" cy="176" r="3.5"/>
+        <circle cx="652" cy="231" r="3.5"/><circle cx="700" cy="245" r="3.5"/>
+      </g>
+      <g class="hit">
+        <circle class="hit" cx="182" cy="51"  r="12"><title>D=128, gate 500: retained 4.79e-3</title></circle>
+        <circle class="hit" cx="299" cy="128" r="12"><title>D=128, gate 1000: retained 1.26e-9</title></circle>
+        <circle class="hit" cx="417" cy="168" r="12"><title>D=128, gate 1500: retained 4.08e-13</title></circle>
+        <circle class="hit" cx="534" cy="176" r="12"><title>D=128, gate 2000: retained 8.26e-14</title></circle>
+        <circle class="hit" cx="652" cy="231" r="12"><title>D=128, gate 2500: retained 1.67e-18</title></circle>
+        <circle class="hit" cx="700" cy="245" r="12"><title>D=128, gate 2704 (final): retained 1.11e-19</title></circle>
+      </g>
+      <text class="lbl" x="310" y="122" style="fill:var(--s2)">D = 128</text>
+    </svg>
+    </div>
+    <figcaption class="caption">P8 (40 qubits, 888 iSWAP), permutation-tracking MPS, annealed site order, cutoff 1e-14. Retained weight is the product of retained Schmidt weights &mdash; the standard fidelity proxy. Doubling the bond dimension lifts the whole curve by roughly two decades.</figcaption>
+  </figure>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Bond D</th><th>P8 final retained weight</th><th>P5 final retained weight</th><th>Required (p<sub>peak</sub> = 0.05)</th></tr></thead>
+    <tbody>
+      <tr><td class="n">8</td><td class="n">1.01&times;10<sup>&minus;30</sup></td><td class="n">2.64&times;10<sup>&minus;30</sup></td><td class="n" rowspan="5" style="vertical-align:middle">&asymp; 2&times;10<sup>&minus;9</sup> (P8)<br>&asymp; 1&times;10<sup>&minus;10</sup> (P5)</td></tr>
+      <tr><td class="n">16</td><td class="n">7.11&times;10<sup>&minus;27</sup></td><td class="n">2.01&times;10<sup>&minus;29</sup></td></tr>
+      <tr><td class="n">32</td><td class="n">2.45&times;10<sup>&minus;25</sup></td><td class="n">2.49&times;10<sup>&minus;26</sup></td></tr>
+      <tr><td class="n">64</td><td class="n">1.85&times;10<sup>&minus;21</sup></td><td class="n">&mdash;</td></tr>
+      <tr><td class="n">128</td><td class="n">1.11&times;10<sup>&minus;19</sup></td><td class="n">&mdash;</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="note">
+    <p><strong>A subtlety that matters.</strong> At D=64 the P8 beam search still returns a top candidate at <span class="mono">1.6&times;10<sup>&minus;7</sup></span> &mdash; 180&thinsp;000&times; above the uniform floor. That looks like a peak and is not one. A heavily truncated MPS is a low-rank object and is <em>always</em> strongly peaked on its own. So &ldquo;my candidate has high probability&rdquo; is necessary but nowhere near sufficient; the fidelity gate and stability across bond dimensions are what separate a real peak from the ansatz&rsquo;s own shadow. This is also, I think, why your two CircuitPermMPS seeds disagreed &mdash; each found its own artifact.</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Revised &middot; how far away is it</div>
+  <h2>Closer than I first said</h2>
+  <div class="col stack">
+    <p>My first pass extrapolated from a mid-circuit measurement and concluded bond dimension of order <span class="mono">10<sup>5</sup>&ndash;10<sup>6</sup></span> &mdash; effectively hopeless. The D=128 run finished afterwards and the endpoint contradicts that. Correcting it here rather than quietly.</p>
+    <p>Final retained weight across the ladder gains <strong>2.75 decades per doubling of D</strong> on a least-squares fit &mdash; not the 0.81 decades I read off the mid-circuit slope. The gap is still twelve decades, but at that rate it closes in four to five more doublings.</p>
+  </div>
+
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>P8 bond D</th><th>Final retained weight</th><th>Gain over previous</th><th>Top-1 candidate at that D</th></tr></thead>
+    <tbody>
+      <tr><td class="n">8</td><td class="n">1.01&times;10<sup>&minus;30</sup></td><td class="n">&mdash;</td><td class="n">&mdash;</td></tr>
+      <tr><td class="n">16</td><td class="n">7.11&times;10<sup>&minus;27</sup></td><td class="n">+3.85 dec</td><td class="n">&mdash;</td></tr>
+      <tr><td class="n">32</td><td class="n">2.45&times;10<sup>&minus;25</sup></td><td class="n">+1.54 dec</td><td class="n">&mdash;</td></tr>
+      <tr><td class="n">64</td><td class="n">1.85&times;10<sup>&minus;21</sup></td><td class="n">+3.88 dec</td><td class="bits">1010101000111110010010101000011011110110</td></tr>
+      <tr><td class="n">128</td><td class="n">1.11&times;10<sup>&minus;19</sup></td><td class="n">+1.78 dec</td><td class="bits">1111101110010011100101101101000011010111</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="caption">The two candidates share 21 of 40 bits &mdash; chance agreement. Neither is a peak; this is the stability criterion doing its job.</p>
+
+  <div class="grid2">
+    <div><div class="eyebrow">Extrapolated target</div><div class="stat ok num">D &asymp; 2k&ndash;4k</div><p style="color:var(--ink-2);font-size:.9rem">to clear the fidelity gate at p<sub>peak</sub> = 0.05, and to clear the artifact level measured at D=64</p></div>
+    <div><div class="eyebrow">MPS memory there</div><div class="stat ok num">2&ndash;9 GiB</div><p style="color:var(--ink-2);font-size:.9rem">40 sites, complex64. Fits on your Mac.</p></div>
+    <div><div class="eyebrow">Wall time, rough</div><div class="stat num">overnight</div><p style="color:var(--ink-2);font-size:.9rem">SVD cost grows as D&sup3;, but small-D runs are Python-overhead bound, so they understate throughput badly. Expect BLAS-bound hours, not weeks.</p></div>
+  </div>
+
+  <div class="note">
+    <p><strong>Caveats, stated plainly.</strong> The per-doubling gain is noisy (1.54 to 3.88 decades) and this is a four-doubling extrapolation. Diminishing returns are likely as D approaches the true Schmidt rank. And the target itself is soft &mdash; it depends on p<sub>peak</sub>, which nobody knows. The point is not that D=4096 will work; it is that <strong>D=4096 is cheap enough to just try</strong>, which the earlier estimate said it wasn&rsquo;t.</p>
+    <p>P5 and P6 have no comparable ladder yet. P5&rsquo;s slope is being measured now; P6 has not been run past D=32 with a sane ordering. Both carry ~10 SWAPs per gate against P8&rsquo;s 2.3, so expect them to be materially harder.</p>
+  </div>
+
+  <div class="col stack">
+    <p>Exact contraction remains out. A cotengra search on the P8 single-amplitude network found nothing better than contraction width 50 &mdash; worse than plain statevector, which is what you expect for a depth-129 circuit where the minimum width is bounded below by the qubit count. Roughly <span class="mono">10<sup>20</sup></span> flops. Your original estimate of &ldquo;too expensive&rdquo; was correct.</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Credit where due</div>
+  <h2>What holds up</h2>
+  <ul class="plain">
+    <li><strong>The iSWAP patch is correct.</strong> I verified the QASM gate body <span class="mono">s&middot;s&middot;h&middot;cx&middot;cx&middot;h</span> numerically against the standard iSWAP matrix: identical, not a conjugate, no phase discrepancy. The explicit 4&times;4 matrix in the patched PEPS/PEPO runners is the right one. One worry you can drop.</li>
+    <li><strong>The package&rsquo;s framing is honest.</strong> EXPERT_REVIEW.md says plainly that there is no validated answer and that the candidates are not submission-grade. That is the correct call, and it is why this review can be useful rather than embarrassing.</li>
+    <li><strong>Deferring the sparse tensor network and exact slicing was right.</strong> The cost estimates hold up.</li>
+    <li><strong>The provenance discipline</strong> &mdash; hashes, manifests, environment capture, refusing to claim hardware results &mdash; is better than most research code. Keep it.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="eyebrow">What to do</div>
+  <h2>A protocol that can fail</h2>
+  <p class="col">In order. Steps 1&ndash;3 are cheap and change what you can claim today; 4&ndash;6 are where the real work is.</p>
+
+  <ol class="steps">
+    <li>
+      <div class="col stack-s">
+        <h3>Calibrate the pipeline before trusting it</h3>
+        <p>Nothing in the package has ever been shown to recover a peak it didn&rsquo;t already know. <code>make_synthetic_peaked.py</code> plants one at any n with a tunable height and computes the exact answer up to n&thinsp;&asymp;&thinsp;26. Any method that cannot recover a planted p<sub>peak</sub>&thinsp;=&thinsp;0.05 at n=24 does not get run on P5.</p>
+      </div>
+    </li>
+    <li>
+      <div class="col stack-s">
+        <h3>Replace sampling with beam search</h3>
+        <p><code>peakfind.py</code> does this. It also prints the retained weight, the ratio to the uniform floor, the gap to the runner-up, and the Hamming spread of the top-k. Every run gets a fidelity number or it doesn&rsquo;t count.</p>
+        <p>Then run the P8 ladder to where it actually matters: <span class="mono">D = 256, 512, 1024, 2048, 4096</span>, one per night, stopping when the retained weight clears the gate and the candidate stops moving between rungs. This is the single run most likely to produce a real answer.</p>
+        <pre>python scripts/peakfind.py inputs/P8_grid_888_iswap.qasm \
+    --bond 512 --cutoff 1e-14 --engine perm \
+    --order-json results/p8_protocol_20260828/mps_orderings.json \
+    --order-key P8/annealed --beam 1024 --out p8_D512.json</pre>
+      </div>
+    </li>
+    <li>
+      <div class="col stack-s">
+        <h3>Retire the bootstrap gate, keep the null model</h3>
+        <p>Bootstrap bit-stability and split-half Hamming should not appear in a submission argument again &mdash; ship <code>audit_null_model.py</code> output alongside any statistic you do quote, so a reader can see the null band. Replace the gate with two conditions: fidelity above <span class="mono">100&middot;2<sup>&minus;n</sup>/p</span>, and the candidate unchanged across two consecutive doublings of D.</p>
+      </div>
+    </li>
+    <li>
+      <div class="col stack-s">
+        <h3>Fix the site ordering, and use the permutation engine</h3>
+        <p>For P6 this is nearly free and worth 47&thinsp;% of the SWAP cost. Use <code>CircuitPermMPS</code> rather than swap-routed <code>CircuitMPS</code> for P5 and P6 &mdash; at ~10 SWAPs per gate the routing, not the gates, is what destroys the fidelity.</p>
+      </div>
+    </li>
+    <li>
+      <div class="col stack-s">
+        <h3>For P8, use the geometry &mdash; but not simple update</h3>
+        <p>A planar treewidth-5 lattice is the one case here where a 2D ansatz genuinely fits, and an MPS is throwing that away. Simple-update PEPS was never going to be stable on a deep circuit; it neglects the environment entirely, which is exactly what your unstable ladder shows. The right tool is boundary-MPS contraction of the 2+1D network with a controlled boundary bond &chi; (quimb&rsquo;s <code>TensorNetwork2D</code> contraction machinery), or full-update PEPS. Same beam-search extraction on top, same fidelity gate. P8 is the one of the three where I would expect real progress.</p>
+      </div>
+    </li>
+    <li>
+      <div class="col stack-s">
+        <h3>Multi-run consensus, with a null</h3>
+        <p>Artifacts differ between independent approximations; a real peak does not. Run several orderings and seeds, intersect the top-k lists, and compare the overlap against what independent random top-k lists would give. Under this test your two disagreeing CircuitPermMPS seeds are already evidence of failure &mdash; make that a designed check rather than an incidental observation.</p>
+      </div>
+    </li>
+  </ol>
+
+  <div class="note">
+    <p><strong>Bit ordering is a real question but not today&rsquo;s.</strong> It is a two-way choice between q0-first and Qiskit&rsquo;s little-endian counts convention, and <code>peakfind.py</code> emits both. It cannot matter until there is a converged peak to order. Resolve it with a deterministic single-X reference circuit through the identical export path, once you have something to submit.</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Delivered</div>
+  <h2>Files</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Path</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td class="n">scripts/peakfind.py</td><td>MPS evolution with fidelity tracking + exact beam-search argmax + go/no-go gate</td></tr>
+      <tr><td class="n">scripts/make_synthetic_peaked.py</td><td>Planted-peak circuit generator with exact answer, for calibration</td></tr>
+      <tr><td class="n">scripts/audit_null_model.py</td><td>Null-model control for the distillation statistics; peak-share bound</td></tr>
+      <tr><td class="n">results/p8_protocol_20260828/mps_orderings.json</td><td>Annealed, spectral and RCM site orderings for all three circuits</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="caption">All four are written into the repo working tree, not committed. <code>peakfind.py</code> and the harness are validated end to end against a planted peak at n=20 and n=22.</p>
+</section>
+
+</div>
+</body>
+</html>

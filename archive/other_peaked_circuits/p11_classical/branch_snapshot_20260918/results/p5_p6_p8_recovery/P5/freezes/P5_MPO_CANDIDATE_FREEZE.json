@@ -1,0 +1,103 @@
+{
+  "answer_blind": true,
+  "candidate": "11011100100001000001100111000001011110100001",
+  "candidate_raw_measurement_order": "00000011110011111011000001110101000000110100",
+  "candidate_sha256": "449da75683032974b8dbe77becc1eafc312be77763ee0d8ae5205f91fec36864",
+  "evaluation_status": "NOT_RUN_AT_FREEZE",
+  "frozen_at": "2026-08-29T03:19:13Z",
+  "git_head": "57fd93048907de671fde8fa026da2c16cfdf5f9f",
+  "mapping_source": "MPO decoder_bitwise_map converted from measurement order with run measurement_perm; P9-calibrated",
+  "measurement_permutation": [
+    19,
+    14,
+    10,
+    38,
+    39,
+    26,
+    40,
+    42,
+    9,
+    43,
+    5,
+    33,
+    34,
+    13,
+    36,
+    11,
+    20,
+    24,
+    2,
+    18,
+    29,
+    17,
+    3,
+    7,
+    31,
+    15,
+    37,
+    22,
+    4,
+    35,
+    28,
+    12,
+    0,
+    6,
+    27,
+    25,
+    8,
+    21,
+    41,
+    32,
+    1,
+    23,
+    30,
+    16
+  ],
+  "problem": "P5",
+  "qasm": "results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
+  "qasm_sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+  "schema": "p12-p5-mpo-candidate-freeze-v1",
+  "summary": "results/p5_p6_p8_recovery/P5/mpo/full_d128_decode/p5_full_d128_decode/summary.json",
+  "top_k": [
+    {
+      "bitstring": "11011100110001011001100011100001011110100011",
+      "bitstring_raw_measurement_order": "00000010110111111011100001110111000001110101",
+      "probability": 7.703408005434293e-07
+    },
+    {
+      "bitstring": "11001100010001011001100111100001011110100011",
+      "bitstring_raw_measurement_order": "00000011100111111011100001110111000001010101",
+      "probability": 7.573442685691046e-07
+    },
+    {
+      "bitstring": "11011100110001011001100011100001011110100010",
+      "bitstring_raw_measurement_order": "00000010110111110011100001110111000001110101",
+      "probability": 7.270611032612348e-07
+    },
+    {
+      "bitstring": "11011100110001011001100011100001011100100011",
+      "bitstring_raw_measurement_order": "00000010010111111011100001110111000001110101",
+      "probability": 7.017021067370491e-07
+    },
+    {
+      "bitstring": "11011100110001011001100011100001001110100011",
+      "bitstring_raw_measurement_order": "00000000110111111011100001110111000001110101",
+      "probability": 6.98108449265024e-07
+    },
+    {
+      "bitstring": "11011100110001011001100011100001011100100010",
+      "bitstring_raw_measurement_order": "00000010010111110011100001110111000001110101",
+      "probability": 6.627189766565973e-07
+    },
+    {
+      "bitstring": "11011100110001011001100011100001001110100010",
+      "bitstring_raw_measurement_order": "00000000110111110011100001110111000001110101",
+      "probability": 6.588789281930221e-07
+    },
+    {
+      "bitstring": "11011000110001011001100011100001011110100001",
+      "bitstring_raw_measurement_order": "00000010110111111011100001010101000001110101",
+      "probability": 6.201446433220028e-07
+    }
+  ]
+}

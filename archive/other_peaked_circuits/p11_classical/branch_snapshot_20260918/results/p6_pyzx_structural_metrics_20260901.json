@@ -1,0 +1,72 @@
+{
+  "answer_blind": true,
+  "circuits": [
+    {
+      "depth": 416,
+      "gate_counts": {
+        "cz": 3494,
+        "u3": 6992
+      },
+      "interaction_edge_events": 3494,
+      "interaction_edges": 658,
+      "interaction_span_max": 61,
+      "interaction_span_mean": 20.6078992558672,
+      "natural_order_cutwidth": 329,
+      "natural_order_cutwidth_mean": 216.95081967213116,
+      "one_qubit_ops": 6992,
+      "path": "C:\\Users\\monitsharma\\Downloads\\SMU-Quantum\\p12-helios-recovery\\results\\expert_review_p5_p6_p8_20260828\\inputs\\P6_titan_pinnacle.qasm",
+      "qubits": 62,
+      "sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
+      "total_ops": 10486,
+      "two_qubit_ops": 3494,
+      "work_gate_proxy": 10486
+    },
+    {
+      "depth": 1119,
+      "gate_counts": {
+        "cx": 15,
+        "cz": 3576,
+        "h": 11281,
+        "rz": 11161,
+        "swap": 40
+      },
+      "interaction_edge_events": 3631,
+      "interaction_edges": 710,
+      "interaction_span_max": 61,
+      "interaction_span_mean": 21.390526025888185,
+      "natural_order_cutwidth": 380,
+      "natural_order_cutwidth_mean": 247.55737704918033,
+      "one_qubit_ops": 22442,
+      "path": "C:\\Users\\monitsharma\\Downloads\\SMU-Quantum\\p12-helios-recovery\\results\\p5_p6_p8_recovery\\P6\\pyzx\\p6_pyzx_full_reduce.qasm",
+      "qubits": 62,
+      "sha256": "a77c07f20dfb2745f5aa2b157ea61793e348badb0c2fdba00c4e2188c41664c3",
+      "total_ops": 26073,
+      "two_qubit_ops": 3631,
+      "work_gate_proxy": 26073
+    },
+    {
+      "depth": 3611,
+      "gate_counts": {
+        "cx": 3494,
+        "h": 41944,
+        "rz": 13135,
+        "s": 35665,
+        "sdg": 548,
+        "z": 3494
+      },
+      "interaction_edge_events": 3494,
+      "interaction_edges": 658,
+      "interaction_span_max": 61,
+      "interaction_span_mean": 20.6078992558672,
+      "natural_order_cutwidth": 329,
+      "natural_order_cutwidth_mean": 216.95081967213116,
+      "one_qubit_ops": 94786,
+      "path": "C:\\Users\\monitsharma\\Downloads\\SMU-Quantum\\p12-helios-recovery\\results\\p6_followup_pyzx_20260901\\p6_pyzx_teleport_reduce.qasm",
+      "qubits": 62,
+      "sha256": "6b0c43c5c5b0d203791b3c058188be4bd43a852979bd51b952142b216b174376",
+      "total_ops": 98280,
+      "two_qubit_ops": 3494,
+      "work_gate_proxy": 98280
+    }
+  ]
+}

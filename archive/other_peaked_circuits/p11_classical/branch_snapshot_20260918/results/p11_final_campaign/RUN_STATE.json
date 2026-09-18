@@ -1,0 +1,24 @@
+{
+  "schema": "p11-final-classical-campaign-v1",
+  "branch": "p11_classical",
+  "head": "e54653e",
+  "current_phase": "finalized_exhaustive_p9_audit",
+  "blindness": {"p11_answer_read": false, "p11_processed": false},
+  "completed_stages": ["phase_0_audit", "toolchain_installation", "toolchain_smoke", "p9_patch_panel_frozen", "q3_q4_synthesis_panel", "pyzx", "qcec", "ddsim", "circuitpermmps", "beam_controller"],
+  "active_processes": {"sentinel_pid_file": "results/p11_final_campaign/sentinel.pid", "caffeinate_pid_file": "results/p11_final_campaign/caffeinate.pid"},
+  "p9_sha256": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35",
+  "p11_sha256": "1373d50c8a42b1ca745d202391767c417ddac56db95182ac2aced019231b3372",
+  "panel_summary": "results/p11_final_campaign/synthesis_panel_summary.json",
+  "p9_gate_1": "NO_GO",
+  "p9_gate_2": "NOT_RUN_NO_FROZEN_GLOBAL_REWRITE",
+  "p11_processed": false,
+  "p11_answer_contamination": false,
+  "final_verdict": "P9_METHODS_EXHAUSTED",
+  "verification": {
+    "pytest": "133 passed in 42.18s",
+    "ruff_new_campaign_files": "PASS",
+    "sha256sums": "27 files verified",
+    "heavy_subprocesses_remaining": false
+  },
+  "next_action": "write final report, audit, FINAL_STATUS, SHA256SUMS, run tests/lint, then completion marker"
+}

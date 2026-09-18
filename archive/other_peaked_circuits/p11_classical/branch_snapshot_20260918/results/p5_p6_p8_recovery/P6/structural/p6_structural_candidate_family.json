@@ -1,0 +1,140 @@
+{
+  "schema": "p6-structural-candidate-family-v1",
+  "source_scan": "results/p5_p6_p8_recovery/P6/structural/p6_structural_bounded.json",
+  "family_size": 12,
+  "warning": "hypothesis family only; no candidate is validated",
+  "candidates": [
+    {
+      "source": "seed123",
+      "transform": "identity",
+      "bitstring": "11100011000101111010111111011011010100110110010010010010101000",
+      "structural_lead": {
+        "center_layer": 207,
+        "span": 16,
+        "adjoint_right": true,
+        "score": 0.7596367158759568
+      }
+    },
+    {
+      "source": "seed123",
+      "transform": "unitary_perm",
+      "bitstring": "11010110011100001101001011111110011110010001001100111100011000",
+      "structural_lead": {
+        "center_layer": 207,
+        "span": 16,
+        "adjoint_right": true,
+        "score": 0.7596367158759568
+      }
+    },
+    {
+      "source": "seed123",
+      "transform": "unitary_inverse",
+      "bitstring": "00110110111001101000100000111110101101000010011111010001111101",
+      "structural_lead": {
+        "center_layer": 207,
+        "span": 16,
+        "adjoint_right": true,
+        "score": 0.7596367158759568
+      }
+    },
+    {
+      "source": "seed123",
+      "transform": "reverse",
+      "bitstring": "00010101001001001001101100101011011011111101011110100011000111",
+      "structural_lead": {
+        "center_layer": 207,
+        "span": 16,
+        "adjoint_right": true,
+        "score": 0.7596367158759568
+      }
+    },
+    {
+      "source": "seed123",
+      "transform": "complement",
+      "bitstring": "00011100111010000101000000100100101011001001101101101101010111",
+      "structural_lead": {
+        "center_layer": 207,
+        "span": 16,
+        "adjoint_right": true,
+        "score": 0.7596367158759568
+      }
+    },
+    {
+      "source": "seed123",
+      "transform": "perm_complement",
+      "bitstring": "00101001100011110010110100000001100001101110110011000011100111",
+      "structural_lead": {
+        "center_layer": 207,
+        "span": 16,
+        "adjoint_right": true,
+        "score": 0.7596367158759568
+      }
+    },
+    {
+      "source": "seed456",
+      "transform": "identity",
+      "bitstring": "11111100011101000101100111111010100101110111100100111101110101",
+      "structural_lead": {
+        "center_layer": 207,
+        "span": 16,
+        "adjoint_right": true,
+        "score": 0.7596367158759568
+      }
+    },
+    {
+      "source": "seed456",
+      "transform": "unitary_perm",
+      "bitstring": "10110101100010111110101111101111101100111100011111110001000011",
+      "structural_lead": {
+        "center_layer": 207,
+        "span": 16,
+        "adjoint_right": true,
+        "score": 0.7596367158759568
+      }
+    },
+    {
+      "source": "seed456",
+      "transform": "unitary_inverse",
+      "bitstring": "11010010000111010011111001011111111110011111010101010111011010",
+      "structural_lead": {
+        "center_layer": 207,
+        "span": 16,
+        "adjoint_right": true,
+        "score": 0.7596367158759568
+      }
+    },
+    {
+      "source": "seed456",
+      "transform": "reverse",
+      "bitstring": "10101110111100100111101110100101011111100110100010111000111111",
+      "structural_lead": {
+        "center_layer": 207,
+        "span": 16,
+        "adjoint_right": true,
+        "score": 0.7596367158759568
+      }
+    },
+    {
+      "source": "seed456",
+      "transform": "complement",
+      "bitstring": "00000011100010111010011000000101011010001000011011000010001010",
+      "structural_lead": {
+        "center_layer": 207,
+        "span": 16,
+        "adjoint_right": true,
+        "score": 0.7596367158759568
+      }
+    },
+    {
+      "source": "seed456",
+      "transform": "perm_complement",
+      "bitstring": "01001010011101000001010000010000010011000011100000001110111100",
+      "structural_lead": {
+        "center_layer": 207,
+        "span": 16,
+        "adjoint_right": true,
+        "score": 0.7596367158759568
+      }
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "schema": "p12-p8-ttn-exact-control-v1",
+  "method_family": "TTN",
+  "status": "CONTROL_ONLY",
+  "answer_blind": true,
+  "n_qubits": 10,
+  "depth": 6,
+  "tree": {
+    "leaves": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "cut_weight": 3.0,
+    "children": [
+      {
+        "leaves": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "cut_weight": 3.0,
+        "children": [
+          {
+            "leaves": [
+              0,
+              1
+            ],
+            "cut_weight": 3.0,
+            "children": [
+              {
+                "leaves": [
+                  0
+                ],
+                "cut_weight": 0.0,
+                "children": []
+              },
+              {
+                "leaves": [
+                  1
+                ],
+                "cut_weight": 0.0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "leaves": [
+              2,
+              3,
+              4
+            ],
+            "cut_weight": 3.0,
+            "children": [
+              {
+                "leaves": [
+                  2
+                ],
+                "cut_weight": 0.0,
+                "children": []
+              },
+              {
+                "leaves": [
+                  3,
+                  4
+                ],
+                "cut_weight": 3.0,
+                "children": [
+                  {
+                    "leaves": [
+                      3
+                    ],
+                    "cut_weight": 0.0,
+                    "children": []
+                  },
+                  {
+                    "leaves": [
+                      4
+                    ],
+                    "cut_weight": 0.0,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "leaves": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "cut_weight": 3.0,
+        "children": [
+          {
+            "leaves": [
+              5,
+              6
+            ],
+            "cut_weight": 3.0,
+            "children": [
+              {
+                "leaves": [
+                  5
+                ],
+                "cut_weight": 0.0,
+                "children": []
+              },
+              {
+                "leaves": [
+                  6
+                ],
+                "cut_weight": 0.0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "leaves": [
+              7,
+              8,
+              9
+            ],
+            "cut_weight": 3.0,
+            "children": [
+              {
+                "leaves": [
+                  7
+                ],
+                "cut_weight": 0.0,
+                "children": []
+              },
+              {
+                "leaves": [
+                  8,
+                  9
+                ],
+                "cut_weight": 3.0,
+                "children": [
+                  {
+                    "leaves": [
+                      8
+                    ],
+                    "cut_weight": 0.0,
+                    "children": []
+                  },
+                  {
+                    "leaves": [
+                      9
+                    ],
+                    "cut_weight": 0.0,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cut_rank_profile": [
+    {
+      "leaves": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rank": 32,
+      "largest_singular": 0.5354616916984052,
+      "cut_weight": 3.0
+    },
+    {
+      "leaves": [
+        0,
+        1
+      ],
+      "rank": 4,
+      "largest_singular": 0.5948785894259759,
+      "cut_weight": 3.0
+    },
+    {
+      "leaves": [
+        0
+      ],
+      "rank": 2,
+      "largest_singular": 0.7424768331504848,
+      "cut_weight": 0.0
+    },
+    {
+      "leaves": [
+        1
+      ],
+      "rank": 2,
+      "largest_singular": 0.7508162624005914,
+      "cut_weight": 0.0
+    },
+    {
+      "leaves": [
+        2,
+        3,
+        4
+      ],
+      "rank": 8,
+      "largest_singular": 0.5946546493096817,
+      "cut_weight": 3.0
+    },
+    {
+      "leaves": [
+        2
+      ],
+      "rank": 2,
+      "largest_singular": 0.7255090739000222,
+      "cut_weight": 0.0
+    },
+    {
+      "leaves": [
+        3,
+        4
+      ],
+      "rank": 4,
+      "largest_singular": 0.6765429662082859,
+      "cut_weight": 3.0
+    },
+    {
+      "leaves": [
+        3
+      ],
+      "rank": 2,
+      "largest_singular": 0.8092671754847669,
+      "cut_weight": 0.0
+    },
+    {
+      "leaves": [
+        4
+      ],
+      "rank": 2,
+      "largest_singular": 0.736539718505521,
+      "cut_weight": 0.0
+    },
+    {
+      "leaves": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "rank": 32,
+      "largest_singular": 0.5354616916984051,
+      "cut_weight": 3.0
+    },
+    {
+      "leaves": [
+        5,
+        6
+      ],
+      "rank": 4,
+      "largest_singular": 0.7018131232837272,
+      "cut_weight": 3.0
+    },
+    {
+      "leaves": [
+        5
+      ],
+      "rank": 2,
+      "largest_singular": 0.9212920163749578,
+      "cut_weight": 0.0
+    },
+    {
+      "leaves": [
+        6
+      ],
+      "rank": 2,
+      "largest_singular": 0.7175908787776992,
+      "cut_weight": 0.0
+    },
+    {
+      "leaves": [
+        7,
+        8,
+        9
+      ],
+      "rank": 8,
+      "largest_singular": 0.7321122078332387,
+      "cut_weight": 3.0
+    },
+    {
+      "leaves": [
+        7
+      ],
+      "rank": 2,
+      "largest_singular": 0.946955064642813,
+      "cut_weight": 0.0
+    },
+    {
+      "leaves": [
+        8,
+        9
+      ],
+      "rank": 4,
+      "largest_singular": 0.738703158596891,
+      "cut_weight": 3.0
+    },
+    {
+      "leaves": [
+        8
+      ],
+      "rank": 2,
+      "largest_singular": 0.7926698994136675,
+      "cut_weight": 0.0
+    },
+    {
+      "leaves": [
+        9
+      ],
+      "rank": 2,
+      "largest_singular": 0.9107939364963968,
+      "cut_weight": 0.0
+    }
+  ],
+  "top_k": [
+    {
+      "bitstring": "1100100000",
+      "probability": 0.03762808427439759
+    },
+    {
+      "bitstring": "1000100000",
+      "probability": 0.03036916710781605
+    },
+    {
+      "bitstring": "1110100010",
+      "probability": 0.02312135615448194
+    },
+    {
+      "bitstring": "0000000000",
+      "probability": 0.019279265121352984
+    },
+    {
+      "bitstring": "1000000000",
+      "probability": 0.01899846610303195
+    },
+    {
+      "bitstring": "0110101000",
+      "probability": 0.017296733864469113
+    },
+    {
+      "bitstring": "0100001000",
+      "probability": 0.015735923366635766
+    },
+    {
+      "bitstring": "1111101010",
+      "probability": 0.013899303643240123
+    },
+    {
+      "bitstring": "0110100000",
+      "probability": 0.012777774572800283
+    },
+    {
+      "bitstring": "1101101000",
+      "probability": 0.011604826751769546
+    },
+    {
+      "bitstring": "0010101000",
+      "probability": 0.01156609359006068
+    },
+    {
+      "bitstring": "0011101000",
+      "probability": 0.011290492022245283
+    },
+    {
+      "bitstring": "1001101000",
+      "probability": 0.0105420455157085
+    },
+    {
+      "bitstring": "1110001000",
+      "probability": 0.010540715160995437
+    },
+    {
+      "bitstring": "0100000000",
+      "probability": 0.010203397351001123
+    },
+    {
+      "bitstring": "0100101000",
+      "probability": 0.009805642391071607
+    },
+    {
+      "bitstring": "1100001010",
+      "probability": 0.00944326872401336
+    },
+    {
+      "bitstring": "0010000000",
+      "probability": 0.009377032051003252
+    },
+    {
+      "bitstring": "1100101000",
+      "probability": 0.009076986357609102
+    },
+    {
+      "bitstring": "1000101000",
+      "probability": 0.008913617154543542
+    },
+    {
+      "bitstring": "1010001000",
+      "probability": 0.008780875241108606
+    },
+    {
+      "bitstring": "1110000010",
+      "probability": 0.008598026019231583
+    },
+    {
+      "bitstring": "0010001000",
+      "probability": 0.008460024330335708
+    },
+    {
+      "bitstring": "0000001000",
+      "probability": 0.008424894033216468
+    },
+    {
+      "bitstring": "1111000010",
+      "probability": 0.008222291583902652
+    },
+    {
+      "bitstring": "0010101010",
+      "probability": 0.008070288609519954
+    },
+    {
+      "bitstring": "0011001000",
+      "probability": 0.007520873573839143
+    },
+    {
+      "bitstring": "1100000001",
+      "probability": 0.007484798298115153
+    },
+    {
+      "bitstring": "0000100000",
+      "probability": 0.007085700209089876
+    },
+    {
+      "bitstring": "1111001000",
+      "probability": 0.0068408405799395
+    },
+    {
+      "bitstring": "0111101010",
+      "probability": 0.006750849231580862
+    },
+    {
+      "bitstring": "0001000000",
+      "probability": 0.006731109485471036
+    }
+  ],
+  "tree_leaf_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "statevector_sha256": "4f738833a7aad45572edbe87e0024001f591785a8cf244ac00dfa8f6bd212f3a",
+  "runtime_s": 0.005881333025172353,
+  "production_promotion": "NOT_ALLOWED_FROM_EXACT_CONTROL_ALONE"
+}

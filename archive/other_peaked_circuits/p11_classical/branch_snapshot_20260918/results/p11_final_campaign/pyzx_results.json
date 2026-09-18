@@ -1,0 +1,17 @@
+{
+  "after_2q": 1878,
+  "after_gates": 16923,
+  "basis": [
+    "rz",
+    "sx",
+    "x",
+    "cx"
+  ],
+  "before_2q": 3834,
+  "before_vertices": 29147,
+  "equivalence": "exact_graph_rewrite",
+  "reduced_qasm": "results/p11_final_campaign/p9_pyzx_reduced.qasm",
+  "runtime_s": 54.349746542051435,
+  "source_sha256": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35",
+  "verdict": "MATERIAL_REDUCTION"
+}

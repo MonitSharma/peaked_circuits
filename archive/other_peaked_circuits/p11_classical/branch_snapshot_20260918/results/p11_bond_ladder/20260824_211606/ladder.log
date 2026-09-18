@@ -1,0 +1,11 @@
+[21:16:06] === preflight ===
+[21:16:06] solver hardening present (equalize_norms + quimb QR guard)
+[21:16:06] disk free: 80 GiB | threads: 1 | RSS watchdog: 12 GB
+[21:16:06] python: /tmp/p9solver-isolated.TzqUkE/venv/bin/python
+[21:16:06] output: /Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/20260824_211606
+[21:16:06] === stage 0: bounded D4096 probe + full P9 control ===
+[21:16:06] --- START stage0_p9_probe_cut2e3_D4096 (wall cap 15 min) ---
+[21:16:16] --- END stage0_p9_probe_cut2e3_D4096: exit_0 | 0 min | peak RSS 0.0 GB
+    work_consumed=8.0  reason=max_work_gates  peak_bond=256.0  peak_elems=426400.0
+    bond_cap=4096.0  rows_at_cap=0  first_stage_at_cap=None   <-- cap binding?
+[21:16:16] --- START stage0_p9_control_cut6e4_D512 (wall cap 60 min) ---

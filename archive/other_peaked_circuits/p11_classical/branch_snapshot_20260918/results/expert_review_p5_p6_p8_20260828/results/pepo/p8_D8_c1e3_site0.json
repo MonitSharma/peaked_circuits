@@ -1,0 +1,22 @@
+{
+  "schema": "bluequbit-p8-pepo-simple-update-v1",
+  "qasm": "/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm",
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "n_qubits": 40,
+  "gate_count": 2704,
+  "unique_edges": 63,
+  "max_bond": 8,
+  "cutoff": 0.001,
+  "sites": [
+    0
+  ],
+  "dtype": "complex128",
+  "iswap_definition": "explicit_matrix_q0q1=[1, iSWAP, iSWAP, 1]",
+  "p0": [
+    -0.00010331366367363903
+  ],
+  "bitstring_q0_first": "1",
+  "reversed": "1",
+  "weakest_margin": 0.5001033136636737,
+  "elapsed_s": 4.115115291962866
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "bluequbit-p1-v2-sparse-run-v1",
+  "blind": true,
+  "qasm_path": "/Users/monitsharma/Downloads/P1_little_dimple.qasm",
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "configuration": {
+    "top_k": 262144,
+    "dtype": "complex128",
+    "schedule": "original",
+    "max_rss_bytes": 30064771072,
+    "max_seconds": 120.0
+  },
+  "progress": {
+    "events_completed": null,
+    "events_total": 4407,
+    "aborted": "external_wall_time_abort_at_120s",
+    "partial_state_not_persisted_by_driver": true
+  },
+  "runtime_s": 120.0,
+  "peak_rss_bytes": 176848896,
+  "max_support": null,
+  "final_support": null,
+  "cumulative_discarded_mass_proxy": null,
+  "final_norm": null,
+  "top_candidates": [],
+  "trace": [],
+  "decision": "INCONCLUSIVE_TIMEOUT; do not extend this rung without a checkpointed scheduler or measured convergence evidence."
+}

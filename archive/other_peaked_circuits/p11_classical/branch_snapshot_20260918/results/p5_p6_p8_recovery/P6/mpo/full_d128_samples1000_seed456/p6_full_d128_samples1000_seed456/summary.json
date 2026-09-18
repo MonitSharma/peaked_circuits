@@ -1,0 +1,608 @@
+{
+  "qasm": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
+  "tag": "p6_full_d128_samples1000_seed456",
+  "num_qubits": 62,
+  "initial_ops": {
+    "u3": 6992,
+    "cz": 3494
+  },
+  "consolidated_ops": {
+    "unitary": 2593
+  },
+  "compress_time_s": 769.8596254590002,
+  "stats_rows": 4120,
+  "run_status": "complete",
+  "environment": {
+    "python": "3.10.16 (main, Feb 12 2025, 15:03:04) [Clang 19.1.6 ]",
+    "python_executable": "<repo>/.venv-p9-isolated/bin/python",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "qiskit": "1.4.5",
+    "quimb": "1.11.2",
+    "numpy": "2.2.6",
+    "numpy_config": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"15.0.0\",\n      \"commands\": \"cc\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.1.0\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"15.0.0\",\n      \"commands\": \"c++\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"build\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    }\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"accelerate\",\n      \"found\": true,\n      \"version\": \"unknown\",\n      \"detection method\": \"system\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    },\n    \"lapack\": {\n      \"name\": \"accelerate\",\n      \"found\": true,\n      \"version\": \"unknown\",\n      \"detection method\": \"system\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/private/var/folders/<redacted>\",\n    \"version\": \"3.10\"\n  },\n  \"SIMD Extensions\": {\n    \"baseline\": [\n      \"NEON\",\n      \"NEON_FP16\",\n      \"NEON_VFPV4\",\n      \"ASIMD\"\n    ],\n    \"found\": [\n      \"ASIMDHP\"\n    ],\n    \"not found\": [\n      \"ASIMDFHM\"\n    ]\n  }\n}\n",
+    "thread_env": {},
+    "numpy_runtime": "WARNING: `threadpoolctl` not found in system! Install it by `pip install threadpoolctl`. Once installed, try `np.show_runtime` again for more detailed build information\n[{'numpy_version': '2.2.6',\n  'python': '3.10.16 (main, Feb 12 2025, 15:03:04) [Clang 19.1.6 ]',\n  'uname': uname_result(system='Darwin', node='<redacted>', release='25.6.0', version='Darwin Kernel Version 25.6.0: Fri Jul 31 19:16:36 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6030', machine='arm64')},\n {'simd_extensions': {'baseline': ['NEON', 'NEON_FP16', 'NEON_VFPV4', 'ASIMD'],\n                      'found': ['ASIMDHP'],\n                      'not_found': ['ASIMDFHM']}}]\n",
+    "numpy_multiarray_umath": "<repo>/.venv-p9-isolated/lib/python3.10/site-packages/numpy/_core/_multiarray_umath.cpython-310-darwin.so",
+    "scipy": "1.15.3",
+    "scipy_config": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"15.0.0\",\n      \"commands\": \"cc\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.0.12\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"15.0.0\",\n      \"commands\": \"c++\"\n    },\n    \"fortran\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld64\",\n      \"version\": \"13.3.0\",\n      \"commands\": \"gfortran\"\n    },\n    \"pythran\": {\n      \"version\": \"0.17.0\",\n      \"include directory\": \"../../../../../../private/var/folders/<redacted>\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"build\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"cross-compiled\": false\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"Accelerate\",\n      \"found\": true,\n      \"version\": \"unknown\",\n      \"detection method\": \"extraframeworks\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    },\n    \"lapack\": {\n      \"name\": \"Accelerate\",\n      \"found\": true,\n      \"version\": \"unknown\",\n      \"detection method\": \"extraframeworks\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    },\n    \"pybind11\": {\n      \"name\": \"pybind11\",\n      \"version\": \"2.13.6\",\n      \"detection method\": \"config-tool\",\n      \"include directory\": \"unknown\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/private/var/folders/<redacted>\",\n    \"version\": \"3.10\"\n  }\n}\n",
+    "scipy_flapack": "<repo>/.venv-p9-isolated/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-darwin.so"
+  },
+  "parameters": {
+    "qasm": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
+    "outdir": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P6/mpo/full_d128_samples1000_seed456",
+    "tag": "p6_full_d128_samples1000_seed456",
+    "samples": 1000,
+    "decoder": "beam",
+    "decoder_beam_width": 8,
+    "expected_bitstring": "",
+    "seed": 456,
+    "max_bond": 128,
+    "cutoff": 0.005,
+    "unswap_threshold": 500000.0,
+    "center_ratio": 0.5,
+    "max_its": 20,
+    "sabre_trials": 90,
+    "post_sabre_trials": 50,
+    "absorb_score": "total_elems",
+    "route_candidates": 1,
+    "route_score": "none",
+    "route_score_lookahead": 8,
+    "parallel_route_candidates": false,
+    "route_candidate_workers": null,
+    "route_seed_stride": 1009,
+    "unswap_select_mode": "bond",
+    "unswap_alignment_weight": 0.0,
+    "unswap_alignment_protect_gain": null,
+    "unswap_alignment_max_replacements": null,
+    "unswap_alignment_tie_loss": 1.0,
+    "unswap_route_proxy_weight": 0.0,
+    "unswap_route_proxy_lookahead": 8,
+    "unswap_route_proxy_include_swaps": false,
+    "unswap_route_proxy_allow_nonbond": false,
+    "unswap_route_proxy_policy": "veto",
+    "unswap_route_proxy_min_benefit": 1.0,
+    "unswap_route_proxy_max_bond_loss": 0.0,
+    "unswap_route_proxy_protect_gain": null,
+    "unswap_route_proxy_max_cycles": null,
+    "unswap_pair_lookahead_limit": 8,
+    "swap_gate_representation": "current",
+    "max_unswap_cycles": null,
+    "max_work_gates": null,
+    "abort_after_no_progress_unswap_cycles": 20,
+    "parallel_absorb_probes": false,
+    "parallel_rewire": false,
+    "adaptive_parallel_rewire": false,
+    "adaptive_parallel_rewire_min_speedup": 1.15,
+    "unswap_probe_max_bond": null,
+    "unswap_probe_cutoff": null,
+    "reuse_full_swap_probe": true,
+    "unswap_trigger_max_bond": null,
+    "unswap_max_swaps_per_step": null,
+    "unswap_hot_bonds": 0,
+    "unswap_hot_radius": 0,
+    "unswap_adaptive_stop_max_bond": null,
+    "unswap_adaptive_stop_min_rel_improvement": null,
+    "unswap_adaptive_stop_min_iteration": 0,
+    "skip_sampling": false,
+    "plots": false,
+    "plot_interval_s": 30.0,
+    "console_log_level": "WARNING"
+  },
+  "partial": false,
+  "leftover_left_layers": 2,
+  "leftover_right_layers": 2,
+  "final_max_bond": 12,
+  "final_total_elems": 7100,
+  "stage_rows": {
+    "rewiring": 20,
+    "absorbing": 3720,
+    "unswapping": 360,
+    "unswap_cycle_summary": 9,
+    "cycle_progress": 9,
+    "termination": 1,
+    "timing_summary": 1
+  },
+  "peak_max_bond": 128.0,
+  "peak_total_elems": 489376.0,
+  "peak_total_shapes": 4814.0,
+  "last_work_consumed": 2593.0,
+  "termination_reason": "completed",
+  "termination_detail": null,
+  "termination_unswap_cycle": 9,
+  "initial_rewire_time_s": 2.001050917000157,
+  "initial_rewire_wall_time_s": 2.0018427089999022,
+  "post_unswap_rewire_time_s": 23.939614249999522,
+  "post_unswap_rewire_wall_time_s": 23.948648833000334,
+  "absorb_probe_time_s": 344.3459077569985,
+  "absorb_probe_wall_time_s": 346.52001575900863,
+  "absorb_lookahead_time_s": 0.0,
+  "unswap_time_s": 49.10635425100031,
+  "rewire_time_s": 25.94066516699968,
+  "accounted_time_s": 421.5670351770086,
+  "rewire_wall_time_s": 25.950491542000236,
+  "accounted_wall_time_s": 421.5768615520092,
+  "truncation_diagnostics": {
+    "max_bond_limit": 128.0,
+    "rows_at_max_bond": 96,
+    "rows_at_max_bond_by_stage": {
+      "absorbing": 88,
+      "unswapping": 8
+    },
+    "absorb_probe_left_hits_max_bond": 137,
+    "absorb_probe_right_hits_max_bond": 115,
+    "selected_absorbs_hit_max_bond": 88,
+    "absorb_probe_left_over_unswap_threshold": 13,
+    "absorb_probe_right_over_unswap_threshold": 2,
+    "first_stage_at_max_bond": "absorbing",
+    "first_unswap_cycle_at_max_bond": null,
+    "first_time_at_max_bond_s": 3.0302068329999656
+  },
+  "materialize_time_s": 0.021831041000041296,
+  "sample_time_s": 13.60795645799999,
+  "sample_total_time_s": 13.629787499000031,
+  "samples": 1000,
+  "sample_unique_raw": 1000,
+  "sample_unique_permuted": 1000,
+  "sample_peak_count": 1,
+  "sample_peak_fraction": 0.001,
+  "predicted_bitstring": "11111100011101000101100111111010100101110111100100111101110101",
+  "top_permuted_samples": [
+    [
+      "11111100011101000101100111111010100101110111100100111101110101",
+      1
+    ],
+    [
+      "11111100111111000101100111111010001100010111000100110100110101",
+      1
+    ],
+    [
+      "11111000111111000101110101111011110001111111110001111101110001",
+      1
+    ],
+    [
+      "11011110101001000001100011111001000001110110100000111000110101",
+      1
+    ],
+    [
+      "11011100101101000001000101011010000101011110001111111100110101",
+      1
+    ],
+    [
+      "11011110111111000001100111111011010001110111010000100101110101",
+      1
+    ],
+    [
+      "11110000101001000101100111011001000101010111000001111001010001",
+      1
+    ],
+    [
+      "11111100101111000101100101011001001101110110010111101101010111",
+      1
+    ],
+    [
+      "11111110111101000101100111111001000001100110100000111101011101",
+      1
+    ],
+    [
+      "11111100101101100101100011011011000101110011110001111100110101",
+      1
+    ]
+  ],
+  "measurement_perm": [
+    21,
+    50,
+    10,
+    8,
+    14,
+    1,
+    26,
+    29,
+    13,
+    47,
+    15,
+    60,
+    28,
+    36,
+    48,
+    5,
+    49,
+    0,
+    22,
+    33,
+    56,
+    16,
+    57,
+    37,
+    52,
+    43,
+    3,
+    20,
+    45,
+    31,
+    40,
+    41,
+    51,
+    32,
+    53,
+    59,
+    42,
+    39,
+    61,
+    55,
+    38,
+    23,
+    24,
+    25,
+    6,
+    34,
+    7,
+    30,
+    18,
+    2,
+    19,
+    46,
+    12,
+    9,
+    54,
+    44,
+    58,
+    35,
+    17,
+    11,
+    27,
+    4
+  ],
+  "samples_path": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P6/mpo/full_d128_samples1000_seed456/p6_full_d128_samples1000_seed456/samples.tsv",
+  "decoder": "beam",
+  "decoder_bitwise_map": "11111100101101000101100111111011000101011111100001110101110101",
+  "decoder_marginals": [
+    {
+      "p0": 0.00463638128562002,
+      "p1": 0.99536361871438,
+      "bias": 0.9907272374287599
+    },
+    {
+      "p0": 0.003222772280739298,
+      "p1": 0.9967772277192607,
+      "bias": 0.9935544554385214
+    },
+    {
+      "p0": 0.024033866906830615,
+      "p1": 0.9759661330931694,
+      "bias": 0.9519322661863387
+    },
+    {
+      "p0": 0.07190702367880342,
+      "p1": 0.9280929763211966,
+      "bias": 0.8561859526423932
+    },
+    {
+      "p0": 0.029188569299931532,
+      "p1": 0.9708114307000685,
+      "bias": 0.941622861400137
+    },
+    {
+      "p0": 0.49882465966225814,
+      "p1": 0.5011753403377419,
+      "bias": 0.002350680675483774
+    },
+    {
+      "p0": 0.7624314380191677,
+      "p1": 0.23756856198083243,
+      "bias": -0.5248628760383353
+    },
+    {
+      "p0": 0.9457485528422663,
+      "p1": 0.05425144715773373,
+      "bias": -0.8914971056845326
+    },
+    {
+      "p0": 0.09386703586757117,
+      "p1": 0.9061329641324288,
+      "bias": 0.8122659282648577
+    },
+    {
+      "p0": 0.5066141247923301,
+      "p1": 0.49338587520766986,
+      "bias": -0.01322824958466029
+    },
+    {
+      "p0": 0.012236798501876712,
+      "p1": 0.9877632014981232,
+      "bias": 0.9755264029962465
+    },
+    {
+      "p0": 0.2966624050576499,
+      "p1": 0.70333759494235,
+      "bias": 0.40667518988470014
+    },
+    {
+      "p0": 0.6512523497805366,
+      "p1": 0.34874765021946347,
+      "bias": -0.3025046995610731
+    },
+    {
+      "p0": 0.014054339826035944,
+      "p1": 0.985945660173964,
+      "bias": 0.971891320347928
+    },
+    {
+      "p0": 0.7601319994531346,
+      "p1": 0.23986800054686547,
+      "bias": -0.5202639989062692
+    },
+    {
+      "p0": 0.9408972300705216,
+      "p1": 0.05910276992947831,
+      "bias": -0.8817944601410433
+    },
+    {
+      "p0": 0.9981103493366027,
+      "p1": 0.0018896506633973493,
+      "bias": -0.9962206986732054
+    },
+    {
+      "p0": 0.2792895711780856,
+      "p1": 0.7207104288219144,
+      "bias": 0.44142085764382877
+    },
+    {
+      "p0": 0.9855842114769165,
+      "p1": 0.01441578852308342,
+      "bias": -0.9711684229538331
+    },
+    {
+      "p0": 0.010722929398133631,
+      "p1": 0.9892770706018664,
+      "bias": 0.9785541412037327
+    },
+    {
+      "p0": 0.015117711355696225,
+      "p1": 0.9848822886443038,
+      "bias": 0.9697645772886077
+    },
+    {
+      "p0": 0.9601009522958942,
+      "p1": 0.03989904770410582,
+      "bias": -0.9202019045917884
+    },
+    {
+      "p0": 0.9985648918907879,
+      "p1": 0.0014351081092121084,
+      "bias": -0.9971297837815758
+    },
+    {
+      "p0": 0.14090118654853465,
+      "p1": 0.8590988134514653,
+      "bias": 0.7181976269029307
+    },
+    {
+      "p0": 0.11372765014919403,
+      "p1": 0.8862723498508059,
+      "bias": 0.7725446997016119
+    },
+    {
+      "p0": 5.66849856090146e-07,
+      "p1": 0.999999433150144,
+      "bias": 0.9999988663002879
+    },
+    {
+      "p0": 0.4999999999999999,
+      "p1": 0.5000000000000001,
+      "bias": 2.220446049250313e-16
+    },
+    {
+      "p0": 0.006236507079015209,
+      "p1": 0.9937634929209849,
+      "bias": 0.9875269858419696
+    },
+    {
+      "p0": 0.009546850335837619,
+      "p1": 0.9904531496641624,
+      "bias": 0.9809062993283248
+    },
+    {
+      "p0": 0.9986502949149102,
+      "p1": 0.0013497050850897138,
+      "bias": -0.9973005898298205
+    },
+    {
+      "p0": 0.3140601236601864,
+      "p1": 0.6859398763398136,
+      "bias": 0.3718797526796272
+    },
+    {
+      "p0": 0.23853785331909286,
+      "p1": 0.7614621466809071,
+      "bias": 0.5229242933618142
+    },
+    {
+      "p0": 0.7462014656984324,
+      "p1": 0.25379853430156757,
+      "bias": -0.4924029313968648
+    },
+    {
+      "p0": 0.883975093989338,
+      "p1": 0.1160249060106619,
+      "bias": -0.7679501879786761
+    },
+    {
+      "p0": 0.5,
+      "p1": 0.5,
+      "bias": 0.0
+    },
+    {
+      "p0": 0.4693131818959425,
+      "p1": 0.5306868181040575,
+      "bias": 0.06137363620811498
+    },
+    {
+      "p0": 0.9009248183027445,
+      "p1": 0.09907518169725552,
+      "bias": -0.801849636605489
+    },
+    {
+      "p0": 0.14396107161708893,
+      "p1": 0.8560389283829111,
+      "bias": 0.7120778567658221
+    },
+    {
+      "p0": 0.5,
+      "p1": 0.5,
+      "bias": 0.0
+    },
+    {
+      "p0": 0.1041487669604427,
+      "p1": 0.8958512330395574,
+      "bias": 0.7917024660791147
+    },
+    {
+      "p0": 0.5,
+      "p1": 0.5000000000000001,
+      "bias": 1.1102230246251565e-16
+    },
+    {
+      "p0": 0.27786056754710775,
+      "p1": 0.7221394324528922,
+      "bias": 0.4442788649057845
+    },
+    {
+      "p0": 0.0006731988231399869,
+      "p1": 0.99932680117686,
+      "bias": 0.99865360235372
+    },
+    {
+      "p0": 0.2818855724209792,
+      "p1": 0.7181144275790208,
+      "bias": 0.43622885515804155
+    },
+    {
+      "p0": 0.49999999999999994,
+      "p1": 0.5,
+      "bias": 5.551115123125783e-17
+    },
+    {
+      "p0": 0.7578559718490248,
+      "p1": 0.24214402815097533,
+      "bias": -0.5157119436980494
+    },
+    {
+      "p0": 0.8932611010772723,
+      "p1": 0.10673889892272781,
+      "bias": -0.7865222021545445
+    },
+    {
+      "p0": 0.6205560373184575,
+      "p1": 0.37944396268154257,
+      "bias": -0.24111207463691497
+    },
+    {
+      "p0": 0.8719557687391861,
+      "p1": 0.1280442312608139,
+      "bias": -0.7439115374783722
+    },
+    {
+      "p0": 0.4255882365626739,
+      "p1": 0.574411763437326,
+      "bias": 0.1488235268746521
+    },
+    {
+      "p0": 0.027432991281806835,
+      "p1": 0.9725670087181931,
+      "bias": 0.9451340174363863
+    },
+    {
+      "p0": 0.24392001868508223,
+      "p1": 0.7560799813149178,
+      "bias": 0.5121599626298357
+    },
+    {
+      "p0": 0.5,
+      "p1": 0.4999999999999999,
+      "bias": -1.1102230246251565e-16
+    },
+    {
+      "p0": 0.2139859285617134,
+      "p1": 0.7860140714382866,
+      "bias": 0.5720281428765732
+    },
+    {
+      "p0": 0.8888970755765659,
+      "p1": 0.11110292442343399,
+      "bias": -0.777794151153132
+    },
+    {
+      "p0": 0.24198264062164945,
+      "p1": 0.7580173593783506,
+      "bias": 0.5160347187567011
+    },
+    {
+      "p0": 0.33635919588663765,
+      "p1": 0.6636408041133625,
+      "bias": 0.3272816082267248
+    },
+    {
+      "p0": 0.017142734011207087,
+      "p1": 0.982857265988793,
+      "bias": 0.9657145319775858
+    },
+    {
+      "p0": 0.963737708908176,
+      "p1": 0.03626229109182398,
+      "bias": -0.927475417816352
+    },
+    {
+      "p0": 0.20237655534336393,
+      "p1": 0.7976234446566361,
+      "bias": 0.5952468893132722
+    },
+    {
+      "p0": 0.9108838057207682,
+      "p1": 0.08911619427923177,
+      "bias": -0.8217676114415364
+    },
+    {
+      "p0": 0.036741042158338975,
+      "p1": 0.963258957841661,
+      "bias": 0.9265179156833221
+    }
+  ],
+  "decoder_time_s": 0.01828137499978766,
+  "decoder_beam_width": 8,
+  "decoder_topk": [
+    {
+      "bitstring": "11111100101101000101100111011011000101110111000001111101110101",
+      "probability": 2.9070008144573938e-05
+    },
+    {
+      "bitstring": "11111100111101000101100111011011000101110111000001111101110101",
+      "probability": 2.8310958397743032e-05
+    },
+    {
+      "bitstring": "11111100101101000101100111011011000101110111100001111101110101",
+      "probability": 2.7163874272275253e-05
+    },
+    {
+      "bitstring": "11111100111101000101100111011011000101110111100001111101110101",
+      "probability": 2.645459576823171e-05
+    },
+    {
+      "bitstring": "11111100101101000101100111011011000001110111000001111101110101",
+      "probability": 2.5708077824152974e-05
+    },
+    {
+      "bitstring": "11111100111101000101100111011011000001110111000001111101110101",
+      "probability": 2.5036811759593063e-05
+    },
+    {
+      "bitstring": "11111100101101000101100111011011000001110111100001111101110101",
+      "probability": 2.4022387277090806e-05
+    },
+    {
+      "bitstring": "11111100111101000101100111011011000001110111100001111101110101",
+      "probability": 2.3395136438692472e-05
+    }
+  ]
+}

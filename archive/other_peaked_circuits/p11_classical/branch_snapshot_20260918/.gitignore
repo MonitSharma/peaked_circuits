@@ -1,0 +1,92 @@
+# Environments & Virtual Environments
+.venv/
+.venv-mpo/
+.venv-mpo-mac/
+.venv-hpc/
+.venv-p9-isolated/
+external/
+_upstream_peaked_mpo_solver/
+vendor/peaked-mpo-solver/
+
+# Python Cache & Testing
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# OS & Editor
+.DS_Store
+._*
+.vscode/
+.idea/
+.claude/
+*.swp
+
+# Secrets & Credentials
+.env
+.qnx/
+.qnexus/
+nexus_auth*
+nexus_tokens*
+
+# Logs & Console Dumps
+*.log
+*.out
+
+# Local Experiment Runs & Sweeps
+experiments/runs/
+experiments/**/*.log
+experiments/**/*.out
+cutoff*/
+mps_*/
+layer_*/
+lazyproxy_*/
+maxbond256_*/
+stopbond256_*/
+threshold*/
+p9_regression_*/
+
+# Documentation Whitelists
+!experiments/README.md
+!results/README.md
+!tools/README.md
+!scripts/README.md
+
+# Data Whitelists
+data/hardware/*
+!data/hardware/.gitkeep
+data/provider_raw/*
+!data/provider_raw/.gitkeep
+!data/provider_raw/mapping/
+!data/provider_raw/mapping/**
+!data/provider_raw/p12_emulator/
+!data/provider_raw/p12_emulator/**
+data/canonical/*
+!data/canonical/.gitkeep
+!data/canonical/p12_emulator/
+!data/canonical/p12_emulator/**
+
+# Results
+results/**/*.tmp
+results/cpu_server_probe.json
+results/simulation/
+results/jobs/*
+!results/jobs/.gitkeep
+results/p9_optimization/
+results/p9_rescale*/
+results/p11_diagnosis/
+results/p11_research/
+results/p11_hpc/
+results/hpc_preflight/
+results/**/.numba_cache/
+results/**/cache_smoke/
+
+# Auditable P11 ladder and HPC follow-up telemetry
+!results/p11_bond_ladder/
+!results/p11_bond_ladder/**
+!results/hpc_followup/
+!results/hpc_followup/**

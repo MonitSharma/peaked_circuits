@@ -1,0 +1,6402 @@
+{
+  "schema": "bluequbit-p1-v2-sparse-block-run-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "configuration": {
+    "top_k": 262144,
+    "max_qubits_per_block": 3,
+    "max_seconds": 120.0,
+    "schedule": "qstvec_style_dependency_ready",
+    "priority": "cz_first"
+  },
+  "block_count": 819,
+  "progress": {
+    "blocks_completed": 490,
+    "blocks_total": 819,
+    "events_completed": 2711,
+    "events_total": 4407,
+    "aborted": "wall_time_abort"
+  },
+  "runtime_s": 120.30356291600037,
+  "peak_rss_bytes": 556466176,
+  "max_support": 262144,
+  "final_support": 262144,
+  "cumulative_discarded_mass_proxy": 101.6237603688522,
+  "final_norm": 1.0,
+  "top_candidates": [
+    {
+      "bitstring": "001011011111010000001101111100100000",
+      "probability_renormalized": 0.0002013536011189302
+    },
+    {
+      "bitstring": "001101011111010000001111111001100000",
+      "probability_renormalized": 0.0001983192160990938
+    },
+    {
+      "bitstring": "001011010111010000001101011100100000",
+      "probability_renormalized": 0.0001710684434815154
+    },
+    {
+      "bitstring": "001011011111010000001111111100100000",
+      "probability_renormalized": 0.0001551186578383524
+    },
+    {
+      "bitstring": "001011011111010000001111111001100000",
+      "probability_renormalized": 0.00015144106742157547
+    },
+    {
+      "bitstring": "001101011101010000001111111101100000",
+      "probability_renormalized": 0.00015037560122806734
+    },
+    {
+      "bitstring": "001011011111010000011101111100100000",
+      "probability_renormalized": 0.00013073387161167466
+    },
+    {
+      "bitstring": "001101011111010000011111111001100000",
+      "probability_renormalized": 0.0001287637210933863
+    },
+    {
+      "bitstring": "001011011101010000001111111100100000",
+      "probability_renormalized": 0.0001258022069232045
+    },
+    {
+      "bitstring": "001011011111010000001101111100100001",
+      "probability_renormalized": 0.0001229725541995971
+    },
+    {
+      "bitstring": "001011011001010000001101111000101000",
+      "probability_renormalized": 0.00012018678803937093
+    },
+    {
+      "bitstring": "001011011101010000001111111001110000",
+      "probability_renormalized": 0.00012014250352915423
+    },
+    {
+      "bitstring": "011011011111010000001101111100100000",
+      "probability_renormalized": 0.00011997740084978531
+    },
+    {
+      "bitstring": "001011011011010000001101111000100000",
+      "probability_renormalized": 0.00011746994609270678
+    },
+    {
+      "bitstring": "001011011011010000001101111100100000",
+      "probability_renormalized": 0.00011645031187988526
+    },
+    {
+      "bitstring": "001011011101010000001111111001110001",
+      "probability_renormalized": 0.00011550670591358772
+    },
+    {
+      "bitstring": "011101011111010000001111111001100000",
+      "probability_renormalized": 0.00011449223638089393
+    },
+    {
+      "bitstring": "001011011111010000001111111000110000",
+      "probability_renormalized": 0.0001115115927298423
+    },
+    {
+      "bitstring": "001011010111010000011101011100100000",
+      "probability_renormalized": 0.00011107047404487099
+    },
+    {
+      "bitstring": "001011001111010000001111111001100000",
+      "probability_renormalized": 0.00011064019292657616
+    },
+    {
+      "bitstring": "001101011011010000001111111000110000",
+      "probability_renormalized": 0.00010962207872293801
+    },
+    {
+      "bitstring": "001011011111010000001111111101110000",
+      "probability_renormalized": 0.00010663771764078666
+    },
+    {
+      "bitstring": "001011011101010000001111111000100000",
+      "probability_renormalized": 0.0001059582945082844
+    },
+    {
+      "bitstring": "001011010111010000001101011000100000",
+      "probability_renormalized": 0.00010533593400907084
+    },
+    {
+      "bitstring": "001011011111010000001101111000100000",
+      "probability_renormalized": 0.00010268214846752166
+    },
+    {
+      "bitstring": "001011011001010000001001111000101000",
+      "probability_renormalized": 0.00010191278066553646
+    },
+    {
+      "bitstring": "001011011111010000001111111101110001",
+      "probability_renormalized": 0.00010120489057798008
+    },
+    {
+      "bitstring": "001011011111010000011111111100100000",
+      "probability_renormalized": 0.00010071467600143107
+    },
+    {
+      "bitstring": "001011011111010000001111111000100000",
+      "probability_renormalized": 0.00010040776335128986
+    },
+    {
+      "bitstring": "011011011111010000001111111001100000",
+      "probability_renormalized": 0.00010019981760784442
+    },
+    {
+      "bitstring": "001101011111010000001111111101100000",
+      "probability_renormalized": 9.964699540482717e-05
+    },
+    {
+      "bitstring": "001011011111010000011111111001100000",
+      "probability_renormalized": 9.83269082599281e-05
+    }
+  ],
+  "trace": [
+    {
+      "block": 0,
+      "events": 3,
+      "event_index_last": 2,
+      "local_qubits": [
+        0,
+        1,
+        2
+      ],
+      "support": 8,
+      "support_before_truncation": 8,
+      "discarded_mass_before_renormalization": 0.0
+    },
+    {
+      "block": 1,
+      "events": 5,
+      "event_index_last": 7,
+      "local_qubits": [
+        1,
+        3,
+        4
+      ],
+      "support": 32,
+      "support_before_truncation": 32,
+      "discarded_mass_before_renormalization": 0.0
+    },
+    {
+      "block": 2,
+      "events": 5,
+      "event_index_last": 12,
+      "local_qubits": [
+        4,
+        5,
+        6
+      ],
+      "support": 128,
+      "support_before_truncation": 128,
+      "discarded_mass_before_renormalization": 0.0
+    },
+    {
+      "block": 3,
+      "events": 4,
+      "event_index_last": 16,
+      "local_qubits": [
+        0,
+        7,
+        8
+      ],
+      "support": 512,
+      "support_before_truncation": 512,
+      "discarded_mass_before_renormalization": 0.0
+    },
+    {
+      "block": 4,
+      "events": 4,
+      "event_index_last": 19,
+      "local_qubits": [
+        0,
+        6,
+        8
+      ],
+      "support": 512,
+      "support_before_truncation": 512,
+      "discarded_mass_before_renormalization": 0.0
+    },
+    {
+      "block": 5,
+      "events": 9,
+      "event_index_last": 28,
+      "local_qubits": [
+        0,
+        1,
+        6
+      ],
+      "support": 512,
+      "support_before_truncation": 512,
+      "discarded_mass_before_renormalization": 0.0
+    },
+    {
+      "block": 6,
+      "events": 8,
+      "event_index_last": 36,
+      "local_qubits": [
+        5,
+        9,
+        10
+      ],
+      "support": 2048,
+      "support_before_truncation": 2048,
+      "discarded_mass_before_renormalization": 0.0
+    },
+    {
+      "block": 7,
+      "events": 5,
+      "event_index_last": 41,
+      "local_qubits": [
+        9,
+        11,
+        12
+      ],
+      "support": 8192,
+      "support_before_truncation": 8192,
+      "discarded_mass_before_renormalization": 0.0
+    },
+    {
+      "block": 8,
+      "events": 3,
+      "event_index_last": 45,
+      "local_qubits": [
+        13,
+        14,
+        15
+      ],
+      "support": 65536,
+      "support_before_truncation": 65536,
+      "discarded_mass_before_renormalization": 0.0
+    },
+    {
+      "block": 9,
+      "events": 3,
+      "event_index_last": 48,
+      "local_qubits": [
+        16,
+        17,
+        18
+      ],
+      "support": 262144,
+      "support_before_truncation": 524288,
+      "discarded_mass_before_renormalization": 0.000307070216071903
+    },
+    {
+      "block": 10,
+      "events": 5,
+      "event_index_last": 52,
+      "local_qubits": [
+        7,
+        19,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 1200648,
+      "discarded_mass_before_renormalization": 0.020336228488522123
+    },
+    {
+      "block": 11,
+      "events": 3,
+      "event_index_last": 56,
+      "local_qubits": [
+        21,
+        22,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 2097152,
+      "discarded_mass_before_renormalization": 0.15030901729566803
+    },
+    {
+      "block": 12,
+      "events": 5,
+      "event_index_last": 61,
+      "local_qubits": [
+        16,
+        24,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 1369792,
+      "discarded_mass_before_renormalization": 0.13043627316388662
+    },
+    {
+      "block": 13,
+      "events": 4,
+      "event_index_last": 65,
+      "local_qubits": [
+        14,
+        25,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 1900496,
+      "discarded_mass_before_renormalization": 0.2973452762200428
+    },
+    {
+      "block": 14,
+      "events": 5,
+      "event_index_last": 70,
+      "local_qubits": [
+        21,
+        27,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1220688,
+      "discarded_mass_before_renormalization": 0.18505821513471865
+    },
+    {
+      "block": 15,
+      "events": 6,
+      "event_index_last": 79,
+      "local_qubits": [
+        13,
+        18,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1218024,
+      "discarded_mass_before_renormalization": 0.36222688376426193
+    },
+    {
+      "block": 16,
+      "events": 4,
+      "event_index_last": 80,
+      "local_qubits": [
+        10,
+        13,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 804360,
+      "discarded_mass_before_renormalization": 0.12328375117127277
+    },
+    {
+      "block": 17,
+      "events": 6,
+      "event_index_last": 85,
+      "local_qubits": [
+        15,
+        24,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1680576,
+      "discarded_mass_before_renormalization": 0.4683920506214898
+    },
+    {
+      "block": 18,
+      "events": 6,
+      "event_index_last": 92,
+      "local_qubits": [
+        12,
+        17,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 922336,
+      "discarded_mass_before_renormalization": 0.10566566849967751
+    },
+    {
+      "block": 19,
+      "events": 7,
+      "event_index_last": 99,
+      "local_qubits": [
+        3,
+        21,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 817288,
+      "discarded_mass_before_renormalization": 0.1411269926108566
+    },
+    {
+      "block": 20,
+      "events": 4,
+      "event_index_last": 103,
+      "local_qubits": [
+        8,
+        30,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1218864,
+      "discarded_mass_before_renormalization": 0.21811884475482923
+    },
+    {
+      "block": 21,
+      "events": 6,
+      "event_index_last": 112,
+      "local_qubits": [
+        19,
+        25,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1241216,
+      "discarded_mass_before_renormalization": 0.26663084136298876
+    },
+    {
+      "block": 22,
+      "events": 3,
+      "event_index_last": 111,
+      "local_qubits": [
+        25,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 578276,
+      "discarded_mass_before_renormalization": 0.155894568239338
+    },
+    {
+      "block": 23,
+      "events": 9,
+      "event_index_last": 120,
+      "local_qubits": [
+        10,
+        23,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1047424,
+      "discarded_mass_before_renormalization": 0.17259982795066153
+    },
+    {
+      "block": 24,
+      "events": 4,
+      "event_index_last": 125,
+      "local_qubits": [
+        9,
+        19,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1314048,
+      "discarded_mass_before_renormalization": 0.2683092135759655
+    },
+    {
+      "block": 25,
+      "events": 7,
+      "event_index_last": 132,
+      "local_qubits": [
+        18,
+        22,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1895336,
+      "discarded_mass_before_renormalization": 0.34322358321833557
+    },
+    {
+      "block": 26,
+      "events": 4,
+      "event_index_last": 136,
+      "local_qubits": [
+        9,
+        33,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1272264,
+      "discarded_mass_before_renormalization": 0.3360147092124164
+    },
+    {
+      "block": 27,
+      "events": 6,
+      "event_index_last": 146,
+      "local_qubits": [
+        11,
+        26,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 807512,
+      "discarded_mass_before_renormalization": 0.2082909402282359
+    },
+    {
+      "block": 28,
+      "events": 9,
+      "event_index_last": 150,
+      "local_qubits": [
+        11,
+        25,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 959880,
+      "discarded_mass_before_renormalization": 0.15966621520129576
+    },
+    {
+      "block": 29,
+      "events": 6,
+      "event_index_last": 159,
+      "local_qubits": [
+        22,
+        29,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1523488,
+      "discarded_mass_before_renormalization": 0.1638180614130631
+    },
+    {
+      "block": 30,
+      "events": 3,
+      "event_index_last": 158,
+      "local_qubits": [
+        0,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 800528,
+      "discarded_mass_before_renormalization": 0.189729132755047
+    },
+    {
+      "block": 31,
+      "events": 6,
+      "event_index_last": 166,
+      "local_qubits": [
+        25,
+        27,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 949280,
+      "discarded_mass_before_renormalization": 0.09193087533986533
+    },
+    {
+      "block": 32,
+      "events": 6,
+      "event_index_last": 175,
+      "local_qubits": [
+        14,
+        32,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1286784,
+      "discarded_mass_before_renormalization": 0.14860230410801656
+    },
+    {
+      "block": 33,
+      "events": 4,
+      "event_index_last": 174,
+      "local_qubits": [
+        14,
+        16,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1719160,
+      "discarded_mass_before_renormalization": 0.1359673354323121
+    },
+    {
+      "block": 34,
+      "events": 6,
+      "event_index_last": 182,
+      "local_qubits": [
+        15,
+        19,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1198456,
+      "discarded_mass_before_renormalization": 0.231626381590058
+    },
+    {
+      "block": 35,
+      "events": 6,
+      "event_index_last": 187,
+      "local_qubits": [
+        15,
+        27,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 994568,
+      "discarded_mass_before_renormalization": 0.1686476815625313
+    },
+    {
+      "block": 36,
+      "events": 9,
+      "event_index_last": 197,
+      "local_qubits": [
+        7,
+        14,
+        16
+      ],
+      "support": 262144,
+      "support_before_truncation": 2011312,
+      "discarded_mass_before_renormalization": 0.2985962082995277
+    },
+    {
+      "block": 37,
+      "events": 6,
+      "event_index_last": 208,
+      "local_qubits": [
+        7,
+        14,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 638840,
+      "discarded_mass_before_renormalization": 0.07884484314191598
+    },
+    {
+      "block": 38,
+      "events": 6,
+      "event_index_last": 207,
+      "local_qubits": [
+        14,
+        21,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1365384,
+      "discarded_mass_before_renormalization": 0.2261794338964036
+    },
+    {
+      "block": 39,
+      "events": 6,
+      "event_index_last": 213,
+      "local_qubits": [
+        26,
+        31,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1358592,
+      "discarded_mass_before_renormalization": 0.12729651006467813
+    },
+    {
+      "block": 40,
+      "events": 6,
+      "event_index_last": 219,
+      "local_qubits": [
+        13,
+        25,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1544464,
+      "discarded_mass_before_renormalization": 0.2867670502872586
+    },
+    {
+      "block": 41,
+      "events": 6,
+      "event_index_last": 226,
+      "local_qubits": [
+        26,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 548496,
+      "discarded_mass_before_renormalization": 0.09037923305748952
+    },
+    {
+      "block": 42,
+      "events": 6,
+      "event_index_last": 237,
+      "local_qubits": [
+        7,
+        16,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 1583568,
+      "discarded_mass_before_renormalization": 0.20169811038165997
+    },
+    {
+      "block": 43,
+      "events": 9,
+      "event_index_last": 272,
+      "local_qubits": [
+        2,
+        16,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1289464,
+      "discarded_mass_before_renormalization": 0.273213646718492
+    },
+    {
+      "block": 44,
+      "events": 6,
+      "event_index_last": 244,
+      "local_qubits": [
+        12,
+        17,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 1942136,
+      "discarded_mass_before_renormalization": 0.2910369378339628
+    },
+    {
+      "block": 45,
+      "events": 3,
+      "event_index_last": 273,
+      "local_qubits": [
+        12,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 632032,
+      "discarded_mass_before_renormalization": 0.08072977174206653
+    },
+    {
+      "block": 46,
+      "events": 6,
+      "event_index_last": 250,
+      "local_qubits": [
+        18,
+        19,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 1300200,
+      "discarded_mass_before_renormalization": 0.1670343544091648
+    },
+    {
+      "block": 47,
+      "events": 6,
+      "event_index_last": 277,
+      "local_qubits": [
+        13,
+        19,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1207712,
+      "discarded_mass_before_renormalization": 0.1874238358083663
+    },
+    {
+      "block": 48,
+      "events": 6,
+      "event_index_last": 258,
+      "local_qubits": [
+        1,
+        18,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 1076392,
+      "discarded_mass_before_renormalization": 0.15057943859817025
+    },
+    {
+      "block": 49,
+      "events": 6,
+      "event_index_last": 265,
+      "local_qubits": [
+        20,
+        21,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 1678008,
+      "discarded_mass_before_renormalization": 0.27576413761525276
+    },
+    {
+      "block": 50,
+      "events": 3,
+      "event_index_last": 271,
+      "local_qubits": [
+        0,
+        2
+      ],
+      "support": 262144,
+      "support_before_truncation": 825284,
+      "discarded_mass_before_renormalization": 0.16225568249034594
+    },
+    {
+      "block": 51,
+      "events": 6,
+      "event_index_last": 283,
+      "local_qubits": [
+        3,
+        4,
+        16
+      ],
+      "support": 262144,
+      "support_before_truncation": 1709728,
+      "discarded_mass_before_renormalization": 0.35411146491817314
+    },
+    {
+      "block": 52,
+      "events": 6,
+      "event_index_last": 289,
+      "local_qubits": [
+        4,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 513252,
+      "discarded_mass_before_renormalization": 0.047140268828334775
+    },
+    {
+      "block": 53,
+      "events": 6,
+      "event_index_last": 319,
+      "local_qubits": [
+        6,
+        7,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 1653408,
+      "discarded_mass_before_renormalization": 0.19212103148382131
+    },
+    {
+      "block": 54,
+      "events": 6,
+      "event_index_last": 299,
+      "local_qubits": [
+        17,
+        22,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 1661840,
+      "discarded_mass_before_renormalization": 0.1840203658992292
+    },
+    {
+      "block": 55,
+      "events": 6,
+      "event_index_last": 304,
+      "local_qubits": [
+        11,
+        13,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 1682664,
+      "discarded_mass_before_renormalization": 0.30906888843374747
+    },
+    {
+      "block": 56,
+      "events": 6,
+      "event_index_last": 311,
+      "local_qubits": [
+        12,
+        21,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 1274408,
+      "discarded_mass_before_renormalization": 0.24745191275916156
+    },
+    {
+      "block": 57,
+      "events": 3,
+      "event_index_last": 318,
+      "local_qubits": [
+        21,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 713352,
+      "discarded_mass_before_renormalization": 0.0914143075945768
+    },
+    {
+      "block": 58,
+      "events": 3,
+      "event_index_last": 317,
+      "local_qubits": [
+        2,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 650288,
+      "discarded_mass_before_renormalization": 0.12965438193557532
+    },
+    {
+      "block": 59,
+      "events": 6,
+      "event_index_last": 389,
+      "local_qubits": [
+        6,
+        8
+      ],
+      "support": 262144,
+      "support_before_truncation": 975936,
+      "discarded_mass_before_renormalization": 0.2977682496779366
+    },
+    {
+      "block": 60,
+      "events": 6,
+      "event_index_last": 342,
+      "local_qubits": [
+        5,
+        7,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1417280,
+      "discarded_mass_before_renormalization": 0.2416684062663974
+    },
+    {
+      "block": 61,
+      "events": 6,
+      "event_index_last": 334,
+      "local_qubits": [
+        19,
+        23,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1571304,
+      "discarded_mass_before_renormalization": 0.3240141150677881
+    },
+    {
+      "block": 62,
+      "events": 3,
+      "event_index_last": 333,
+      "local_qubits": [
+        12,
+        19
+      ],
+      "support": 262144,
+      "support_before_truncation": 650248,
+      "discarded_mass_before_renormalization": 0.06286718798612134
+    },
+    {
+      "block": 63,
+      "events": 6,
+      "event_index_last": 340,
+      "local_qubits": [
+        1,
+        2,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 985672,
+      "discarded_mass_before_renormalization": 0.16973291041787752
+    },
+    {
+      "block": 64,
+      "events": 6,
+      "event_index_last": 352,
+      "local_qubits": [
+        7,
+        15,
+        16
+      ],
+      "support": 262144,
+      "support_before_truncation": 1123376,
+      "discarded_mass_before_renormalization": 0.19868319056824668
+    },
+    {
+      "block": 65,
+      "events": 6,
+      "event_index_last": 364,
+      "local_qubits": [
+        15,
+        24,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1147232,
+      "discarded_mass_before_renormalization": 0.21608697377131125
+    },
+    {
+      "block": 66,
+      "events": 6,
+      "event_index_last": 360,
+      "local_qubits": [
+        16,
+        17,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 1566168,
+      "discarded_mass_before_renormalization": 0.30964025821962327
+    },
+    {
+      "block": 67,
+      "events": 6,
+      "event_index_last": 368,
+      "local_qubits": [
+        13,
+        17,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 1390568,
+      "discarded_mass_before_renormalization": 0.16226701070408145
+    },
+    {
+      "block": 68,
+      "events": 3,
+      "event_index_last": 363,
+      "local_qubits": [
+        2,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 687544,
+      "discarded_mass_before_renormalization": 0.13131281341630374
+    },
+    {
+      "block": 69,
+      "events": 12,
+      "event_index_last": 382,
+      "local_qubits": [
+        7,
+        10,
+        15
+      ],
+      "support": 262144,
+      "support_before_truncation": 1286456,
+      "discarded_mass_before_renormalization": 0.24817845851032794
+    },
+    {
+      "block": 70,
+      "events": 9,
+      "event_index_last": 404,
+      "local_qubits": [
+        5,
+        6,
+        8
+      ],
+      "support": 262144,
+      "support_before_truncation": 926968,
+      "discarded_mass_before_renormalization": 0.09933931703827426
+    },
+    {
+      "block": 71,
+      "events": 6,
+      "event_index_last": 396,
+      "local_qubits": [
+        0,
+        6,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1606336,
+      "discarded_mass_before_renormalization": 0.2121986659605688
+    },
+    {
+      "block": 72,
+      "events": 3,
+      "event_index_last": 399,
+      "local_qubits": [
+        27,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 883472,
+      "discarded_mass_before_renormalization": 0.2653000684003344
+    },
+    {
+      "block": 73,
+      "events": 6,
+      "event_index_last": 411,
+      "local_qubits": [
+        8,
+        18,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1669480,
+      "discarded_mass_before_renormalization": 0.39261479075478256
+    },
+    {
+      "block": 74,
+      "events": 3,
+      "event_index_last": 421,
+      "local_qubits": [
+        18,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 751508,
+      "discarded_mass_before_renormalization": 0.23100718559383915
+    },
+    {
+      "block": 75,
+      "events": 9,
+      "event_index_last": 419,
+      "local_qubits": [
+        19,
+        30,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1016344,
+      "discarded_mass_before_renormalization": 0.18656176241421996
+    },
+    {
+      "block": 76,
+      "events": 6,
+      "event_index_last": 427,
+      "local_qubits": [
+        3,
+        9,
+        14
+      ],
+      "support": 262144,
+      "support_before_truncation": 1668624,
+      "discarded_mass_before_renormalization": 0.41951285881648825
+    },
+    {
+      "block": 77,
+      "events": 6,
+      "event_index_last": 442,
+      "local_qubits": [
+        3,
+        4,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1753224,
+      "discarded_mass_before_renormalization": 0.40666010721856294
+    },
+    {
+      "block": 78,
+      "events": 3,
+      "event_index_last": 434,
+      "local_qubits": [
+        1,
+        3
+      ],
+      "support": 262144,
+      "support_before_truncation": 688680,
+      "discarded_mass_before_renormalization": 0.14771813318636384
+    },
+    {
+      "block": 79,
+      "events": 6,
+      "event_index_last": 440,
+      "local_qubits": [
+        31,
+        32,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1917752,
+      "discarded_mass_before_renormalization": 0.4197704077780766
+    },
+    {
+      "block": 80,
+      "events": 3,
+      "event_index_last": 445,
+      "local_qubits": [
+        4,
+        11
+      ],
+      "support": 262144,
+      "support_before_truncation": 709000,
+      "discarded_mass_before_renormalization": 0.22256788345877543
+    },
+    {
+      "block": 81,
+      "events": 6,
+      "event_index_last": 456,
+      "local_qubits": [
+        6,
+        8,
+        14
+      ],
+      "support": 262144,
+      "support_before_truncation": 1219264,
+      "discarded_mass_before_renormalization": 0.18960500009577752
+    },
+    {
+      "block": 82,
+      "events": 6,
+      "event_index_last": 454,
+      "local_qubits": [
+        1,
+        14,
+        18
+      ],
+      "support": 262144,
+      "support_before_truncation": 999080,
+      "discarded_mass_before_renormalization": 0.15379169327826192
+    },
+    {
+      "block": 83,
+      "events": 6,
+      "event_index_last": 461,
+      "local_qubits": [
+        6,
+        17,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 1355224,
+      "discarded_mass_before_renormalization": 0.1464212445818055
+    },
+    {
+      "block": 84,
+      "events": 3,
+      "event_index_last": 464,
+      "local_qubits": [
+        19,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 770996,
+      "discarded_mass_before_renormalization": 0.16489179231586693
+    },
+    {
+      "block": 85,
+      "events": 3,
+      "event_index_last": 468,
+      "local_qubits": [
+        6,
+        18
+      ],
+      "support": 262144,
+      "support_before_truncation": 566508,
+      "discarded_mass_before_renormalization": 0.09190976126728756
+    },
+    {
+      "block": 86,
+      "events": 6,
+      "event_index_last": 475,
+      "local_qubits": [
+        9,
+        25,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1706888,
+      "discarded_mass_before_renormalization": 0.291728608999533
+    },
+    {
+      "block": 87,
+      "events": 6,
+      "event_index_last": 482,
+      "local_qubits": [
+        20,
+        21,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1696536,
+      "discarded_mass_before_renormalization": 0.45105486969391206
+    },
+    {
+      "block": 88,
+      "events": 3,
+      "event_index_last": 486,
+      "local_qubits": [
+        20,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 420520,
+      "discarded_mass_before_renormalization": 0.13877358779807025
+    },
+    {
+      "block": 89,
+      "events": 3,
+      "event_index_last": 487,
+      "local_qubits": [
+        28,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 887404,
+      "discarded_mass_before_renormalization": 0.2396299311865253
+    },
+    {
+      "block": 90,
+      "events": 3,
+      "event_index_last": 490,
+      "local_qubits": [
+        7,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 581784,
+      "discarded_mass_before_renormalization": 0.17992577105350405
+    },
+    {
+      "block": 91,
+      "events": 6,
+      "event_index_last": 500,
+      "local_qubits": [
+        8,
+        24,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 1600720,
+      "discarded_mass_before_renormalization": 0.2799991041661901
+    },
+    {
+      "block": 92,
+      "events": 6,
+      "event_index_last": 499,
+      "local_qubits": [
+        14,
+        24,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1389336,
+      "discarded_mass_before_renormalization": 0.2341567662542532
+    },
+    {
+      "block": 93,
+      "events": 3,
+      "event_index_last": 503,
+      "local_qubits": [
+        13,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 784312,
+      "discarded_mass_before_renormalization": 0.21498977003272757
+    },
+    {
+      "block": 94,
+      "events": 6,
+      "event_index_last": 513,
+      "local_qubits": [
+        8,
+        16,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1181264,
+      "discarded_mass_before_renormalization": 0.17958397924467173
+    },
+    {
+      "block": 95,
+      "events": 3,
+      "event_index_last": 512,
+      "local_qubits": [
+        1,
+        16
+      ],
+      "support": 262144,
+      "support_before_truncation": 760176,
+      "discarded_mass_before_renormalization": 0.13283033042519077
+    },
+    {
+      "block": 96,
+      "events": 3,
+      "event_index_last": 516,
+      "local_qubits": [
+        18,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 636440,
+      "discarded_mass_before_renormalization": 0.13079677581577587
+    },
+    {
+      "block": 97,
+      "events": 3,
+      "event_index_last": 520,
+      "local_qubits": [
+        8,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 912020,
+      "discarded_mass_before_renormalization": 0.23238369889265287
+    },
+    {
+      "block": 98,
+      "events": 6,
+      "event_index_last": 550,
+      "local_qubits": [
+        5,
+        9,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1784480,
+      "discarded_mass_before_renormalization": 0.36904233690875166
+    },
+    {
+      "block": 99,
+      "events": 6,
+      "event_index_last": 530,
+      "local_qubits": [
+        11,
+        12,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1828960,
+      "discarded_mass_before_renormalization": 0.48923737068700657
+    },
+    {
+      "block": 100,
+      "events": 3,
+      "event_index_last": 533,
+      "local_qubits": [
+        12,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 568464,
+      "discarded_mass_before_renormalization": 0.12495783368336988
+    },
+    {
+      "block": 101,
+      "events": 6,
+      "event_index_last": 541,
+      "local_qubits": [
+        2,
+        21,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1161320,
+      "discarded_mass_before_renormalization": 0.22031083690393571
+    },
+    {
+      "block": 102,
+      "events": 3,
+      "event_index_last": 542,
+      "local_qubits": [
+        2,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 656160,
+      "discarded_mass_before_renormalization": 0.0851154718287448
+    },
+    {
+      "block": 103,
+      "events": 6,
+      "event_index_last": 548,
+      "local_qubits": [
+        1,
+        32,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 975192,
+      "discarded_mass_before_renormalization": 0.1853827003346834
+    },
+    {
+      "block": 104,
+      "events": 6,
+      "event_index_last": 558,
+      "local_qubits": [
+        0,
+        5,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1459808,
+      "discarded_mass_before_renormalization": 0.3301466213739037
+    },
+    {
+      "block": 105,
+      "events": 3,
+      "event_index_last": 557,
+      "local_qubits": [
+        0,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 961548,
+      "discarded_mass_before_renormalization": 0.4095570913846833
+    },
+    {
+      "block": 106,
+      "events": 6,
+      "event_index_last": 565,
+      "local_qubits": [
+        5,
+        7,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 1411288,
+      "discarded_mass_before_renormalization": 0.31082592472099235
+    },
+    {
+      "block": 107,
+      "events": 3,
+      "event_index_last": 568,
+      "local_qubits": [
+        7,
+        18
+      ],
+      "support": 262144,
+      "support_before_truncation": 611352,
+      "discarded_mass_before_renormalization": 0.02572530314535726
+    },
+    {
+      "block": 108,
+      "events": 6,
+      "event_index_last": 574,
+      "local_qubits": [
+        8,
+        16,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1046784,
+      "discarded_mass_before_renormalization": 0.14642033038915547
+    },
+    {
+      "block": 109,
+      "events": 6,
+      "event_index_last": 580,
+      "local_qubits": [
+        9,
+        22,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1997656,
+      "discarded_mass_before_renormalization": 0.31985904154756095
+    },
+    {
+      "block": 110,
+      "events": 6,
+      "event_index_last": 587,
+      "local_qubits": [
+        3,
+        25,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1140048,
+      "discarded_mass_before_renormalization": 0.3148595904755276
+    },
+    {
+      "block": 111,
+      "events": 6,
+      "event_index_last": 643,
+      "local_qubits": [
+        7,
+        25,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1056368,
+      "discarded_mass_before_renormalization": 0.2870540081925016
+    },
+    {
+      "block": 112,
+      "events": 6,
+      "event_index_last": 593,
+      "local_qubits": [
+        3,
+        27,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1617640,
+      "discarded_mass_before_renormalization": 0.3889166948525422
+    },
+    {
+      "block": 113,
+      "events": 6,
+      "event_index_last": 603,
+      "local_qubits": [
+        20,
+        30,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1441536,
+      "discarded_mass_before_renormalization": 0.2696743150487608
+    },
+    {
+      "block": 114,
+      "events": 3,
+      "event_index_last": 602,
+      "local_qubits": [
+        2,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 580104,
+      "discarded_mass_before_renormalization": 0.09139837575096477
+    },
+    {
+      "block": 115,
+      "events": 6,
+      "event_index_last": 612,
+      "local_qubits": [
+        4,
+        11,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 1628272,
+      "discarded_mass_before_renormalization": 0.33819108871834835
+    },
+    {
+      "block": 116,
+      "events": 3,
+      "event_index_last": 611,
+      "local_qubits": [
+        11,
+        14
+      ],
+      "support": 262144,
+      "support_before_truncation": 864544,
+      "discarded_mass_before_renormalization": 0.24254021223208255
+    },
+    {
+      "block": 117,
+      "events": 6,
+      "event_index_last": 618,
+      "local_qubits": [
+        12,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 527688,
+      "discarded_mass_before_renormalization": 0.09366541368396575
+    },
+    {
+      "block": 118,
+      "events": 6,
+      "event_index_last": 629,
+      "local_qubits": [
+        0,
+        4,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 1216776,
+      "discarded_mass_before_renormalization": 0.179774760024219
+    },
+    {
+      "block": 119,
+      "events": 6,
+      "event_index_last": 630,
+      "local_qubits": [
+        0,
+        16,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 958680,
+      "discarded_mass_before_renormalization": 0.1279058941136373
+    },
+    {
+      "block": 120,
+      "events": 6,
+      "event_index_last": 639,
+      "local_qubits": [
+        4,
+        24,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1337288,
+      "discarded_mass_before_renormalization": 0.3609661392815823
+    },
+    {
+      "block": 121,
+      "events": 3,
+      "event_index_last": 638,
+      "local_qubits": [
+        0,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 524712,
+      "discarded_mass_before_renormalization": 0.1328006513165395
+    },
+    {
+      "block": 122,
+      "events": 6,
+      "event_index_last": 648,
+      "local_qubits": [
+        8,
+        23,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 1611304,
+      "discarded_mass_before_renormalization": 0.35820950206485225
+    },
+    {
+      "block": 123,
+      "events": 6,
+      "event_index_last": 659,
+      "local_qubits": [
+        9,
+        10,
+        15
+      ],
+      "support": 262144,
+      "support_before_truncation": 2067384,
+      "discarded_mass_before_renormalization": 0.4581993117483052
+    },
+    {
+      "block": 124,
+      "events": 9,
+      "event_index_last": 663,
+      "local_qubits": [
+        10,
+        19,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1655648,
+      "discarded_mass_before_renormalization": 0.3049275556640709
+    },
+    {
+      "block": 125,
+      "events": 6,
+      "event_index_last": 668,
+      "local_qubits": [
+        0,
+        2,
+        19
+      ],
+      "support": 262144,
+      "support_before_truncation": 1297720,
+      "discarded_mass_before_renormalization": 0.30780008748153265
+    },
+    {
+      "block": 126,
+      "events": 6,
+      "event_index_last": 675,
+      "local_qubits": [
+        11,
+        17,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1322912,
+      "discarded_mass_before_renormalization": 0.3499530366200745
+    },
+    {
+      "block": 127,
+      "events": 6,
+      "event_index_last": 682,
+      "local_qubits": [
+        11,
+        14,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1149976,
+      "discarded_mass_before_renormalization": 0.22321705997838137
+    },
+    {
+      "block": 128,
+      "events": 6,
+      "event_index_last": 694,
+      "local_qubits": [
+        6,
+        15,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 1377432,
+      "discarded_mass_before_renormalization": 0.28687152694746887
+    },
+    {
+      "block": 129,
+      "events": 6,
+      "event_index_last": 693,
+      "local_qubits": [
+        18,
+        20,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 1587440,
+      "discarded_mass_before_renormalization": 0.19574497109478728
+    },
+    {
+      "block": 130,
+      "events": 3,
+      "event_index_last": 697,
+      "local_qubits": [
+        7,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 762700,
+      "discarded_mass_before_renormalization": 4.800284503225782e-09
+    },
+    {
+      "block": 131,
+      "events": 6,
+      "event_index_last": 702,
+      "local_qubits": [
+        8,
+        10,
+        16
+      ],
+      "support": 262144,
+      "support_before_truncation": 1512176,
+      "discarded_mass_before_renormalization": 0.34226343117465874
+    },
+    {
+      "block": 132,
+      "events": 6,
+      "event_index_last": 718,
+      "local_qubits": [
+        9,
+        13,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1655848,
+      "discarded_mass_before_renormalization": 0.3312160034711833
+    },
+    {
+      "block": 133,
+      "events": 6,
+      "event_index_last": 714,
+      "local_qubits": [
+        1,
+        13,
+        15
+      ],
+      "support": 262144,
+      "support_before_truncation": 1297112,
+      "discarded_mass_before_renormalization": 0.21622743994910765
+    },
+    {
+      "block": 134,
+      "events": 3,
+      "event_index_last": 717,
+      "local_qubits": [
+        15,
+        18
+      ],
+      "support": 262144,
+      "support_before_truncation": 780504,
+      "discarded_mass_before_renormalization": 0.044542677915413
+    },
+    {
+      "block": 135,
+      "events": 6,
+      "event_index_last": 723,
+      "local_qubits": [
+        13,
+        28,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1134472,
+      "discarded_mass_before_renormalization": 0.15496379462344034
+    },
+    {
+      "block": 136,
+      "events": 6,
+      "event_index_last": 733,
+      "local_qubits": [
+        4,
+        12,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1505752,
+      "discarded_mass_before_renormalization": 0.2701359903537298
+    },
+    {
+      "block": 137,
+      "events": 3,
+      "event_index_last": 732,
+      "local_qubits": [
+        12,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 665260,
+      "discarded_mass_before_renormalization": 0.0885373901363723
+    },
+    {
+      "block": 138,
+      "events": 6,
+      "event_index_last": 738,
+      "local_qubits": [
+        7,
+        21,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1243024,
+      "discarded_mass_before_renormalization": 0.07837134755233599
+    },
+    {
+      "block": 139,
+      "events": 9,
+      "event_index_last": 751,
+      "local_qubits": [
+        7,
+        14,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 1319352,
+      "discarded_mass_before_renormalization": 0.13301891540499144
+    },
+    {
+      "block": 140,
+      "events": 3,
+      "event_index_last": 750,
+      "local_qubits": [
+        14,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 636356,
+      "discarded_mass_before_renormalization": 0.09738568340914322
+    },
+    {
+      "block": 141,
+      "events": 6,
+      "event_index_last": 766,
+      "local_qubits": [
+        5,
+        9,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 2069728,
+      "discarded_mass_before_renormalization": 0.36197767664925384
+    },
+    {
+      "block": 142,
+      "events": 6,
+      "event_index_last": 764,
+      "local_qubits": [
+        3,
+        26,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1117328,
+      "discarded_mass_before_renormalization": 0.15450819554510709
+    },
+    {
+      "block": 143,
+      "events": 3,
+      "event_index_last": 765,
+      "local_qubits": [
+        3,
+        4
+      ],
+      "support": 262144,
+      "support_before_truncation": 763160,
+      "discarded_mass_before_renormalization": 0.12887809427941355
+    },
+    {
+      "block": 144,
+      "events": 6,
+      "event_index_last": 780,
+      "local_qubits": [
+        5,
+        13,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1793016,
+      "discarded_mass_before_renormalization": 0.2932143254892744
+    },
+    {
+      "block": 145,
+      "events": 9,
+      "event_index_last": 779,
+      "local_qubits": [
+        13,
+        15,
+        16
+      ],
+      "support": 262144,
+      "support_before_truncation": 1546712,
+      "discarded_mass_before_renormalization": 0.3435239890234266
+    },
+    {
+      "block": 146,
+      "events": 6,
+      "event_index_last": 789,
+      "local_qubits": [
+        5,
+        27,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1279152,
+      "discarded_mass_before_renormalization": 0.248759503954459
+    },
+    {
+      "block": 147,
+      "events": 3,
+      "event_index_last": 788,
+      "local_qubits": [
+        12,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 766020,
+      "discarded_mass_before_renormalization": 0.07560386388935636
+    },
+    {
+      "block": 148,
+      "events": 3,
+      "event_index_last": 792,
+      "local_qubits": [
+        14,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 493324,
+      "discarded_mass_before_renormalization": 0.08102556486380486
+    },
+    {
+      "block": 149,
+      "events": 6,
+      "event_index_last": 798,
+      "local_qubits": [
+        5,
+        7,
+        10
+      ],
+      "support": 262144,
+      "support_before_truncation": 1440864,
+      "discarded_mass_before_renormalization": 0.2520720952592791
+    },
+    {
+      "block": 150,
+      "events": 3,
+      "event_index_last": 801,
+      "local_qubits": [
+        5,
+        14
+      ],
+      "support": 262144,
+      "support_before_truncation": 477168,
+      "discarded_mass_before_renormalization": 0.051138956290865956
+    },
+    {
+      "block": 151,
+      "events": 6,
+      "event_index_last": 807,
+      "local_qubits": [
+        7,
+        8,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1108344,
+      "discarded_mass_before_renormalization": 0.12091712423824186
+    },
+    {
+      "block": 152,
+      "events": 6,
+      "event_index_last": 835,
+      "local_qubits": [
+        6,
+        9,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1959120,
+      "discarded_mass_before_renormalization": 0.4635113677104369
+    },
+    {
+      "block": 153,
+      "events": 6,
+      "event_index_last": 821,
+      "local_qubits": [
+        18,
+        26,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1234584,
+      "discarded_mass_before_renormalization": 0.33945635886485503
+    },
+    {
+      "block": 154,
+      "events": 3,
+      "event_index_last": 820,
+      "local_qubits": [
+        18,
+        19
+      ],
+      "support": 262144,
+      "support_before_truncation": 826508,
+      "discarded_mass_before_renormalization": 0.22662523975725035
+    },
+    {
+      "block": 155,
+      "events": 6,
+      "event_index_last": 826,
+      "local_qubits": [
+        3,
+        12,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 1629312,
+      "discarded_mass_before_renormalization": 0.344125337631776
+    },
+    {
+      "block": 156,
+      "events": 3,
+      "event_index_last": 829,
+      "local_qubits": [
+        13,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 688152,
+      "discarded_mass_before_renormalization": 0.21773942882056496
+    },
+    {
+      "block": 157,
+      "events": 6,
+      "event_index_last": 865,
+      "local_qubits": [
+        8,
+        25,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1306152,
+      "discarded_mass_before_renormalization": 0.24723997940199172
+    },
+    {
+      "block": 158,
+      "events": 6,
+      "event_index_last": 843,
+      "local_qubits": [
+        6,
+        11,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1422584,
+      "discarded_mass_before_renormalization": 0.1763023255089453
+    },
+    {
+      "block": 159,
+      "events": 3,
+      "event_index_last": 842,
+      "local_qubits": [
+        11,
+        15
+      ],
+      "support": 262144,
+      "support_before_truncation": 942236,
+      "discarded_mass_before_renormalization": 0.2065038761260083
+    },
+    {
+      "block": 160,
+      "events": 9,
+      "event_index_last": 852,
+      "local_qubits": [
+        4,
+        6,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 1387680,
+      "discarded_mass_before_renormalization": 0.31334569379309907
+    },
+    {
+      "block": 161,
+      "events": 6,
+      "event_index_last": 857,
+      "local_qubits": [
+        4,
+        12,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 1087944,
+      "discarded_mass_before_renormalization": 0.1776924062428249
+    },
+    {
+      "block": 162,
+      "events": 3,
+      "event_index_last": 864,
+      "local_qubits": [
+        3,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 674272,
+      "discarded_mass_before_renormalization": 0.10622558114627223
+    },
+    {
+      "block": 163,
+      "events": 6,
+      "event_index_last": 889,
+      "local_qubits": [
+        1,
+        9,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1714048,
+      "discarded_mass_before_renormalization": 0.16952657165814577
+    },
+    {
+      "block": 164,
+      "events": 6,
+      "event_index_last": 882,
+      "local_qubits": [
+        1,
+        17,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 2017960,
+      "discarded_mass_before_renormalization": 0.4020288529699706
+    },
+    {
+      "block": 165,
+      "events": 6,
+      "event_index_last": 880,
+      "local_qubits": [
+        1,
+        17,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1549464,
+      "discarded_mass_before_renormalization": 0.2001143183739279
+    },
+    {
+      "block": 166,
+      "events": 6,
+      "event_index_last": 887,
+      "local_qubits": [
+        25,
+        29,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 791344,
+      "discarded_mass_before_renormalization": 0.24371794802943025
+    },
+    {
+      "block": 167,
+      "events": 6,
+      "event_index_last": 904,
+      "local_qubits": [
+        20,
+        21,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 2034816,
+      "discarded_mass_before_renormalization": 0.2771026331313702
+    },
+    {
+      "block": 168,
+      "events": 6,
+      "event_index_last": 898,
+      "local_qubits": [
+        11,
+        17,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 1524888,
+      "discarded_mass_before_renormalization": 0.3026607034725949
+    },
+    {
+      "block": 169,
+      "events": 6,
+      "event_index_last": 909,
+      "local_qubits": [
+        13,
+        17,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1231840,
+      "discarded_mass_before_renormalization": 0.1545809445989852
+    },
+    {
+      "block": 170,
+      "events": 3,
+      "event_index_last": 905,
+      "local_qubits": [
+        20,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 543880,
+      "discarded_mass_before_renormalization": 0.03642854494524195
+    },
+    {
+      "block": 171,
+      "events": 6,
+      "event_index_last": 915,
+      "local_qubits": [
+        19,
+        32,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 2004800,
+      "discarded_mass_before_renormalization": 0.47263774967223804
+    },
+    {
+      "block": 172,
+      "events": 6,
+      "event_index_last": 922,
+      "local_qubits": [
+        18,
+        19,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 895432,
+      "discarded_mass_before_renormalization": 0.23495915479655405
+    },
+    {
+      "block": 173,
+      "events": 6,
+      "event_index_last": 927,
+      "local_qubits": [
+        8,
+        21,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1138624,
+      "discarded_mass_before_renormalization": 0.2043081705362394
+    },
+    {
+      "block": 174,
+      "events": 6,
+      "event_index_last": 933,
+      "local_qubits": [
+        8,
+        14,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 1553512,
+      "discarded_mass_before_renormalization": 0.28847204036554186
+    },
+    {
+      "block": 175,
+      "events": 6,
+      "event_index_last": 940,
+      "local_qubits": [
+        9,
+        22,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 1975096,
+      "discarded_mass_before_renormalization": 0.44429736499683237
+    },
+    {
+      "block": 176,
+      "events": 6,
+      "event_index_last": 945,
+      "local_qubits": [
+        23,
+        27,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1679808,
+      "discarded_mass_before_renormalization": 0.35311691189861927
+    },
+    {
+      "block": 177,
+      "events": 6,
+      "event_index_last": 952,
+      "local_qubits": [
+        16,
+        28,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1880680,
+      "discarded_mass_before_renormalization": 0.3780561782665388
+    },
+    {
+      "block": 178,
+      "events": 6,
+      "event_index_last": 957,
+      "local_qubits": [
+        5,
+        23,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 1575264,
+      "discarded_mass_before_renormalization": 0.3065326016589548
+    },
+    {
+      "block": 179,
+      "events": 9,
+      "event_index_last": 966,
+      "local_qubits": [
+        6,
+        22,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1702216,
+      "discarded_mass_before_renormalization": 0.37994437310935714
+    },
+    {
+      "block": 180,
+      "events": 6,
+      "event_index_last": 971,
+      "local_qubits": [
+        23,
+        28,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1434336,
+      "discarded_mass_before_renormalization": 0.32374945263264276
+    },
+    {
+      "block": 181,
+      "events": 6,
+      "event_index_last": 978,
+      "local_qubits": [
+        1,
+        6,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1211616,
+      "discarded_mass_before_renormalization": 0.15451440648534487
+    },
+    {
+      "block": 182,
+      "events": 3,
+      "event_index_last": 981,
+      "local_qubits": [
+        26,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 923072,
+      "discarded_mass_before_renormalization": 0.24216648159353427
+    },
+    {
+      "block": 183,
+      "events": 6,
+      "event_index_last": 988,
+      "local_qubits": [
+        8,
+        16,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1350328,
+      "discarded_mass_before_renormalization": 0.17797339686968028
+    },
+    {
+      "block": 184,
+      "events": 3,
+      "event_index_last": 991,
+      "local_qubits": [
+        8,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 797076,
+      "discarded_mass_before_renormalization": 0.23452798558968024
+    },
+    {
+      "block": 185,
+      "events": 6,
+      "event_index_last": 999,
+      "local_qubits": [
+        2,
+        9,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 2084512,
+      "discarded_mass_before_renormalization": 0.4567410432162692
+    },
+    {
+      "block": 186,
+      "events": 3,
+      "event_index_last": 1024,
+      "local_qubits": [
+        2,
+        7
+      ],
+      "support": 262144,
+      "support_before_truncation": 999024,
+      "discarded_mass_before_renormalization": 0.35542602738382134
+    },
+    {
+      "block": 187,
+      "events": 6,
+      "event_index_last": 1010,
+      "local_qubits": [
+        27,
+        31,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1533472,
+      "discarded_mass_before_renormalization": 0.3544749339425922
+    },
+    {
+      "block": 188,
+      "events": 6,
+      "event_index_last": 1009,
+      "local_qubits": [
+        16,
+        20,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 1431760,
+      "discarded_mass_before_renormalization": 0.38871223791477494
+    },
+    {
+      "block": 189,
+      "events": 6,
+      "event_index_last": 1019,
+      "local_qubits": [
+        29,
+        31,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1219112,
+      "discarded_mass_before_renormalization": 0.2648073977337122
+    },
+    {
+      "block": 190,
+      "events": 6,
+      "event_index_last": 1027,
+      "local_qubits": [
+        8,
+        26,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1258232,
+      "discarded_mass_before_renormalization": 0.3476881911800067
+    },
+    {
+      "block": 191,
+      "events": 3,
+      "event_index_last": 1023,
+      "local_qubits": [
+        3,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 892552,
+      "discarded_mass_before_renormalization": 0.2551216131840026
+    },
+    {
+      "block": 192,
+      "events": 6,
+      "event_index_last": 1040,
+      "local_qubits": [
+        0,
+        9,
+        15
+      ],
+      "support": 262144,
+      "support_before_truncation": 1264688,
+      "discarded_mass_before_renormalization": 0.28453923582116536
+    },
+    {
+      "block": 193,
+      "events": 9,
+      "event_index_last": 1049,
+      "local_qubits": [
+        0,
+        11,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 1408992,
+      "discarded_mass_before_renormalization": 0.1345554958382229
+    },
+    {
+      "block": 194,
+      "events": 3,
+      "event_index_last": 1071,
+      "local_qubits": [
+        11,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 771712,
+      "discarded_mass_before_renormalization": 0.2301611405758749
+    },
+    {
+      "block": 195,
+      "events": 6,
+      "event_index_last": 1048,
+      "local_qubits": [
+        0,
+        5,
+        11
+      ],
+      "support": 262144,
+      "support_before_truncation": 603784,
+      "discarded_mass_before_renormalization": 0.09031407886611154
+    },
+    {
+      "block": 196,
+      "events": 6,
+      "event_index_last": 1060,
+      "local_qubits": [
+        17,
+        22,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1544592,
+      "discarded_mass_before_renormalization": 0.35976762694433206
+    },
+    {
+      "block": 197,
+      "events": 6,
+      "event_index_last": 1067,
+      "local_qubits": [
+        2,
+        15,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1554192,
+      "discarded_mass_before_renormalization": 0.2932454494782233
+    },
+    {
+      "block": 198,
+      "events": 3,
+      "event_index_last": 1066,
+      "local_qubits": [
+        29,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 817940,
+      "discarded_mass_before_renormalization": 0.2593538534616785
+    },
+    {
+      "block": 199,
+      "events": 6,
+      "event_index_last": 1070,
+      "local_qubits": [
+        3,
+        15,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1198800,
+      "discarded_mass_before_renormalization": 0.39049689358417783
+    },
+    {
+      "block": 200,
+      "events": 6,
+      "event_index_last": 1076,
+      "local_qubits": [
+        2,
+        11,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 884944,
+      "discarded_mass_before_renormalization": 0.16744222288326516
+    },
+    {
+      "block": 201,
+      "events": 3,
+      "event_index_last": 1080,
+      "local_qubits": [
+        32,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 750368,
+      "discarded_mass_before_renormalization": 0.10031105101603532
+    },
+    {
+      "block": 202,
+      "events": 6,
+      "event_index_last": 1088,
+      "local_qubits": [
+        5,
+        16,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 1832664,
+      "discarded_mass_before_renormalization": 0.3537362394790079
+    },
+    {
+      "block": 203,
+      "events": 3,
+      "event_index_last": 1092,
+      "local_qubits": [
+        16,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 577560,
+      "discarded_mass_before_renormalization": 0.15268053291011585
+    },
+    {
+      "block": 204,
+      "events": 3,
+      "event_index_last": 1091,
+      "local_qubits": [
+        11,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 794656,
+      "discarded_mass_before_renormalization": 0.1530206027180827
+    },
+    {
+      "block": 205,
+      "events": 3,
+      "event_index_last": 1096,
+      "local_qubits": [
+        5,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 754160,
+      "discarded_mass_before_renormalization": 0.18073584265723974
+    },
+    {
+      "block": 206,
+      "events": 6,
+      "event_index_last": 1111,
+      "local_qubits": [
+        7,
+        9,
+        10
+      ],
+      "support": 262144,
+      "support_before_truncation": 1888752,
+      "discarded_mass_before_renormalization": 0.461577066051285
+    },
+    {
+      "block": 207,
+      "events": 6,
+      "event_index_last": 1109,
+      "local_qubits": [
+        10,
+        19,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 1262984,
+      "discarded_mass_before_renormalization": 0.24871005557836467
+    },
+    {
+      "block": 208,
+      "events": 3,
+      "event_index_last": 1110,
+      "local_qubits": [
+        10,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 669928,
+      "discarded_mass_before_renormalization": 0.20123612491827547
+    },
+    {
+      "block": 209,
+      "events": 6,
+      "event_index_last": 1116,
+      "local_qubits": [
+        7,
+        12,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 1773336,
+      "discarded_mass_before_renormalization": 0.4487388897876178
+    },
+    {
+      "block": 210,
+      "events": 6,
+      "event_index_last": 1126,
+      "local_qubits": [
+        7,
+        20,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 936496,
+      "discarded_mass_before_renormalization": 0.0719838780311749
+    },
+    {
+      "block": 211,
+      "events": 3,
+      "event_index_last": 1125,
+      "local_qubits": [
+        21,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 648020,
+      "discarded_mass_before_renormalization": 0.03756600638867946
+    },
+    {
+      "block": 212,
+      "events": 6,
+      "event_index_last": 1131,
+      "local_qubits": [
+        7,
+        29,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1074720,
+      "discarded_mass_before_renormalization": 0.28453015314887575
+    },
+    {
+      "block": 213,
+      "events": 3,
+      "event_index_last": 1135,
+      "local_qubits": [
+        7,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 754756,
+      "discarded_mass_before_renormalization": 0.22657422676151961
+    },
+    {
+      "block": 214,
+      "events": 6,
+      "event_index_last": 1162,
+      "local_qubits": [
+        6,
+        9,
+        18
+      ],
+      "support": 262144,
+      "support_before_truncation": 1941120,
+      "discarded_mass_before_renormalization": 0.4724381197980909
+    },
+    {
+      "block": 215,
+      "events": 6,
+      "event_index_last": 1145,
+      "local_qubits": [
+        0,
+        14,
+        18
+      ],
+      "support": 262144,
+      "support_before_truncation": 1601568,
+      "discarded_mass_before_renormalization": 0.24315318614662373
+    },
+    {
+      "block": 216,
+      "events": 3,
+      "event_index_last": 1161,
+      "local_qubits": [
+        14,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 872800,
+      "discarded_mass_before_renormalization": 0.05610508588337548
+    },
+    {
+      "block": 217,
+      "events": 6,
+      "event_index_last": 1154,
+      "local_qubits": [
+        18,
+        20,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1611888,
+      "discarded_mass_before_renormalization": 0.35485171101590496
+    },
+    {
+      "block": 218,
+      "events": 6,
+      "event_index_last": 1159,
+      "local_qubits": [
+        14,
+        24,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1115712,
+      "discarded_mass_before_renormalization": 0.22936400892749886
+    },
+    {
+      "block": 219,
+      "events": 12,
+      "event_index_last": 1186,
+      "local_qubits": [
+        1,
+        3,
+        6
+      ],
+      "support": 262144,
+      "support_before_truncation": 1383504,
+      "discarded_mass_before_renormalization": 0.2860297662916417
+    },
+    {
+      "block": 220,
+      "events": 6,
+      "event_index_last": 1175,
+      "local_qubits": [
+        0,
+        3,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1669856,
+      "discarded_mass_before_renormalization": 0.37300858176245744
+    },
+    {
+      "block": 221,
+      "events": 6,
+      "event_index_last": 1181,
+      "local_qubits": [
+        0,
+        32,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1283688,
+      "discarded_mass_before_renormalization": 0.29053779718193884
+    },
+    {
+      "block": 222,
+      "events": 9,
+      "event_index_last": 1194,
+      "local_qubits": [
+        6,
+        12,
+        19
+      ],
+      "support": 262144,
+      "support_before_truncation": 1351176,
+      "discarded_mass_before_renormalization": 0.2326093595455474
+    },
+    {
+      "block": 223,
+      "events": 6,
+      "event_index_last": 1204,
+      "local_qubits": [
+        1,
+        6,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 1068480,
+      "discarded_mass_before_renormalization": 0.1724763535376872
+    },
+    {
+      "block": 224,
+      "events": 3,
+      "event_index_last": 1203,
+      "local_qubits": [
+        18,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 755108,
+      "discarded_mass_before_renormalization": 0.16084964486191788
+    },
+    {
+      "block": 225,
+      "events": 6,
+      "event_index_last": 1239,
+      "local_qubits": [
+        4,
+        9,
+        13
+      ],
+      "support": 262144,
+      "support_before_truncation": 2029520,
+      "discarded_mass_before_renormalization": 0.4855190573667896
+    },
+    {
+      "block": 226,
+      "events": 6,
+      "event_index_last": 1235,
+      "local_qubits": [
+        13,
+        22,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1626512,
+      "discarded_mass_before_renormalization": 0.33845055978205263
+    },
+    {
+      "block": 227,
+      "events": 6,
+      "event_index_last": 1252,
+      "local_qubits": [
+        2,
+        8,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 1817568,
+      "discarded_mass_before_renormalization": 0.18070448464681843
+    },
+    {
+      "block": 228,
+      "events": 6,
+      "event_index_last": 1230,
+      "local_qubits": [
+        2,
+        13,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 1268464,
+      "discarded_mass_before_renormalization": 0.17757709483098782
+    },
+    {
+      "block": 229,
+      "events": 6,
+      "event_index_last": 1234,
+      "local_qubits": [
+        16,
+        22,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1695024,
+      "discarded_mass_before_renormalization": 0.3917690339123616
+    },
+    {
+      "block": 230,
+      "events": 3,
+      "event_index_last": 1233,
+      "local_qubits": [
+        22,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 529016,
+      "discarded_mass_before_renormalization": 0.0706658020890304
+    },
+    {
+      "block": 231,
+      "events": 3,
+      "event_index_last": 1238,
+      "local_qubits": [
+        11,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 736128,
+      "discarded_mass_before_renormalization": 0.15194684180141094
+    },
+    {
+      "block": 232,
+      "events": 6,
+      "event_index_last": 1246,
+      "local_qubits": [
+        4,
+        15,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 1310312,
+      "discarded_mass_before_renormalization": 0.24952837140490514
+    },
+    {
+      "block": 233,
+      "events": 6,
+      "event_index_last": 1250,
+      "local_qubits": [
+        15,
+        28,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1126304,
+      "discarded_mass_before_renormalization": 0.11376376549352851
+    },
+    {
+      "block": 234,
+      "events": 6,
+      "event_index_last": 1257,
+      "local_qubits": [
+        2,
+        8,
+        13
+      ],
+      "support": 262144,
+      "support_before_truncation": 1388752,
+      "discarded_mass_before_renormalization": 0.1893213116048993
+    },
+    {
+      "block": 235,
+      "events": 6,
+      "event_index_last": 1262,
+      "local_qubits": [
+        2,
+        16,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1051432,
+      "discarded_mass_before_renormalization": 0.1365470558836024
+    },
+    {
+      "block": 236,
+      "events": 6,
+      "event_index_last": 1269,
+      "local_qubits": [
+        8,
+        23,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 1567960,
+      "discarded_mass_before_renormalization": 0.20634353827772256
+    },
+    {
+      "block": 237,
+      "events": 6,
+      "event_index_last": 1299,
+      "local_qubits": [
+        9,
+        17,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 1505168,
+      "discarded_mass_before_renormalization": 0.28484388110361225
+    },
+    {
+      "block": 238,
+      "events": 6,
+      "event_index_last": 1300,
+      "local_qubits": [
+        1,
+        17,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1540424,
+      "discarded_mass_before_renormalization": 0.21448032567650943
+    },
+    {
+      "block": 239,
+      "events": 6,
+      "event_index_last": 1288,
+      "local_qubits": [
+        12,
+        13,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 1496872,
+      "discarded_mass_before_renormalization": 0.2892374790435851
+    },
+    {
+      "block": 240,
+      "events": 6,
+      "event_index_last": 1297,
+      "local_qubits": [
+        13,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 679488,
+      "discarded_mass_before_renormalization": 0.12448636843377825
+    },
+    {
+      "block": 241,
+      "events": 6,
+      "event_index_last": 1293,
+      "local_qubits": [
+        16,
+        17,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 1241328,
+      "discarded_mass_before_renormalization": 0.23560748166335066
+    },
+    {
+      "block": 242,
+      "events": 3,
+      "event_index_last": 1303,
+      "local_qubits": [
+        31,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1038148,
+      "discarded_mass_before_renormalization": 0.22553706627108094
+    },
+    {
+      "block": 243,
+      "events": 6,
+      "event_index_last": 1308,
+      "local_qubits": [
+        5,
+        19,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 1183576,
+      "discarded_mass_before_renormalization": 0.10511652005955219
+    },
+    {
+      "block": 244,
+      "events": 6,
+      "event_index_last": 1317,
+      "local_qubits": [
+        5,
+        21,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1524784,
+      "discarded_mass_before_renormalization": 0.17910019771775565
+    },
+    {
+      "block": 245,
+      "events": 3,
+      "event_index_last": 1316,
+      "local_qubits": [
+        14,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 971060,
+      "discarded_mass_before_renormalization": 0.08094524703938788
+    },
+    {
+      "block": 246,
+      "events": 6,
+      "event_index_last": 1327,
+      "local_qubits": [
+        0,
+        5,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1371632,
+      "discarded_mass_before_renormalization": 0.2949492494575976
+    },
+    {
+      "block": 247,
+      "events": 3,
+      "event_index_last": 1326,
+      "local_qubits": [
+        26,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 455208,
+      "discarded_mass_before_renormalization": 0.0791790775845358
+    },
+    {
+      "block": 248,
+      "events": 6,
+      "event_index_last": 1338,
+      "local_qubits": [
+        7,
+        25,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1396888,
+      "discarded_mass_before_renormalization": 0.26185990816998783
+    },
+    {
+      "block": 249,
+      "events": 6,
+      "event_index_last": 1336,
+      "local_qubits": [
+        2,
+        13,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 1236280,
+      "discarded_mass_before_renormalization": 0.1878090349328233
+    },
+    {
+      "block": 250,
+      "events": 3,
+      "event_index_last": 1342,
+      "local_qubits": [
+        7,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 854568,
+      "discarded_mass_before_renormalization": 0.2567871117167517
+    },
+    {
+      "block": 251,
+      "events": 6,
+      "event_index_last": 1354,
+      "local_qubits": [
+        9,
+        10,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 1902776,
+      "discarded_mass_before_renormalization": 0.19855036596869413
+    },
+    {
+      "block": 252,
+      "events": 6,
+      "event_index_last": 1352,
+      "local_qubits": [
+        1,
+        10,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 1568120,
+      "discarded_mass_before_renormalization": 0.14070928159927298
+    },
+    {
+      "block": 253,
+      "events": 6,
+      "event_index_last": 1359,
+      "local_qubits": [
+        3,
+        20,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 1365352,
+      "discarded_mass_before_renormalization": 0.1378111517315903
+    },
+    {
+      "block": 254,
+      "events": 6,
+      "event_index_last": 1364,
+      "local_qubits": [
+        1,
+        23,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 1552184,
+      "discarded_mass_before_renormalization": 0.23527799853324038
+    },
+    {
+      "block": 255,
+      "events": 3,
+      "event_index_last": 1369,
+      "local_qubits": [
+        3,
+        12
+      ],
+      "support": 262144,
+      "support_before_truncation": 912112,
+      "discarded_mass_before_renormalization": 0.2726512599005828
+    },
+    {
+      "block": 256,
+      "events": 3,
+      "event_index_last": 1372,
+      "local_qubits": [
+        8,
+        10
+      ],
+      "support": 262144,
+      "support_before_truncation": 1018668,
+      "discarded_mass_before_renormalization": 0.3857498986117045
+    },
+    {
+      "block": 257,
+      "events": 6,
+      "event_index_last": 1401,
+      "local_qubits": [
+        4,
+        9,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1994552,
+      "discarded_mass_before_renormalization": 0.5132795615965715
+    },
+    {
+      "block": 258,
+      "events": 6,
+      "event_index_last": 1396,
+      "local_qubits": [
+        11,
+        30,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1614072,
+      "discarded_mass_before_renormalization": 0.24849739386921965
+    },
+    {
+      "block": 259,
+      "events": 6,
+      "event_index_last": 1386,
+      "local_qubits": [
+        11,
+        26,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1193776,
+      "discarded_mass_before_renormalization": 0.3591478524150882
+    },
+    {
+      "block": 260,
+      "events": 6,
+      "event_index_last": 1402,
+      "local_qubits": [
+        0,
+        7,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1719216,
+      "discarded_mass_before_renormalization": 0.33068670923819554
+    },
+    {
+      "block": 261,
+      "events": 3,
+      "event_index_last": 1400,
+      "local_qubits": [
+        31,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 574404,
+      "discarded_mass_before_renormalization": 0.09947039295750737
+    },
+    {
+      "block": 262,
+      "events": 3,
+      "event_index_last": 1399,
+      "local_qubits": [
+        10,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 832120,
+      "discarded_mass_before_renormalization": 0.2034932721652739
+    },
+    {
+      "block": 263,
+      "events": 3,
+      "event_index_last": 1405,
+      "local_qubits": [
+        1,
+        7
+      ],
+      "support": 262144,
+      "support_before_truncation": 970396,
+      "discarded_mass_before_renormalization": 0.28426462859107304
+    },
+    {
+      "block": 264,
+      "events": 6,
+      "event_index_last": 1420,
+      "local_qubits": [
+        6,
+        9,
+        15
+      ],
+      "support": 262144,
+      "support_before_truncation": 1457984,
+      "discarded_mass_before_renormalization": 0.33285002423577914
+    },
+    {
+      "block": 265,
+      "events": 6,
+      "event_index_last": 1416,
+      "local_qubits": [
+        14,
+        15,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1074016,
+      "discarded_mass_before_renormalization": 0.19340822348421272
+    },
+    {
+      "block": 266,
+      "events": 3,
+      "event_index_last": 1419,
+      "local_qubits": [
+        0,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 802260,
+      "discarded_mass_before_renormalization": 0.22344112190686516
+    },
+    {
+      "block": 267,
+      "events": 6,
+      "event_index_last": 1425,
+      "local_qubits": [
+        6,
+        12,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 1775976,
+      "discarded_mass_before_renormalization": 0.24881423396855817
+    },
+    {
+      "block": 268,
+      "events": 9,
+      "event_index_last": 1547,
+      "local_qubits": [
+        4,
+        9,
+        18
+      ],
+      "support": 262144,
+      "support_before_truncation": 1589496,
+      "discarded_mass_before_renormalization": 0.23132359059187868
+    },
+    {
+      "block": 269,
+      "events": 6,
+      "event_index_last": 1446,
+      "local_qubits": [
+        18,
+        28,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1424680,
+      "discarded_mass_before_renormalization": 0.25959998762255354
+    },
+    {
+      "block": 270,
+      "events": 6,
+      "event_index_last": 1442,
+      "local_qubits": [
+        12,
+        26,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1026096,
+      "discarded_mass_before_renormalization": 0.15830339377591818
+    },
+    {
+      "block": 271,
+      "events": 6,
+      "event_index_last": 1453,
+      "local_qubits": [
+        26,
+        28,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 688856,
+      "discarded_mass_before_renormalization": 0.06243797906078297
+    },
+    {
+      "block": 272,
+      "events": 3,
+      "event_index_last": 1449,
+      "local_qubits": [
+        25,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 838104,
+      "discarded_mass_before_renormalization": 0.18207579457854584
+    },
+    {
+      "block": 273,
+      "events": 6,
+      "event_index_last": 1459,
+      "local_qubits": [
+        6,
+        18,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1612696,
+      "discarded_mass_before_renormalization": 0.3195840807136795
+    },
+    {
+      "block": 274,
+      "events": 3,
+      "event_index_last": 1462,
+      "local_qubits": [
+        6,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 554428,
+      "discarded_mass_before_renormalization": 0.05648320400834339
+    },
+    {
+      "block": 275,
+      "events": 3,
+      "event_index_last": 1465,
+      "local_qubits": [
+        7,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 688692,
+      "discarded_mass_before_renormalization": 0.06936782656813778
+    },
+    {
+      "block": 276,
+      "events": 6,
+      "event_index_last": 1481,
+      "local_qubits": [
+        4,
+        19,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 1748112,
+      "discarded_mass_before_renormalization": 0.23402731856712522
+    },
+    {
+      "block": 277,
+      "events": 6,
+      "event_index_last": 1492,
+      "local_qubits": [
+        15,
+        19,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 1322960,
+      "discarded_mass_before_renormalization": 0.14630475036562418
+    },
+    {
+      "block": 278,
+      "events": 3,
+      "event_index_last": 1479,
+      "local_qubits": [
+        13,
+        15
+      ],
+      "support": 262144,
+      "support_before_truncation": 958696,
+      "discarded_mass_before_renormalization": 0.15255890363600488
+    },
+    {
+      "block": 279,
+      "events": 6,
+      "event_index_last": 1489,
+      "local_qubits": [
+        17,
+        20,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 1868736,
+      "discarded_mass_before_renormalization": 0.3431420673956278
+    },
+    {
+      "block": 280,
+      "events": 3,
+      "event_index_last": 1488,
+      "local_qubits": [
+        1,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 580160,
+      "discarded_mass_before_renormalization": 0.19408078681496765
+    },
+    {
+      "block": 281,
+      "events": 3,
+      "event_index_last": 1494,
+      "local_qubits": [
+        20,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 759468,
+      "discarded_mass_before_renormalization": 0.17036654598448642
+    },
+    {
+      "block": 282,
+      "events": 6,
+      "event_index_last": 1508,
+      "local_qubits": [
+        4,
+        27,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1632808,
+      "discarded_mass_before_renormalization": 0.18646061242749656
+    },
+    {
+      "block": 283,
+      "events": 6,
+      "event_index_last": 1512,
+      "local_qubits": [
+        22,
+        27,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1837536,
+      "discarded_mass_before_renormalization": 0.3236454814494806
+    },
+    {
+      "block": 284,
+      "events": 3,
+      "event_index_last": 1506,
+      "local_qubits": [
+        13,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 782892,
+      "discarded_mass_before_renormalization": 0.20059306371669028
+    },
+    {
+      "block": 285,
+      "events": 3,
+      "event_index_last": 1511,
+      "local_qubits": [
+        16,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 825832,
+      "discarded_mass_before_renormalization": 0.2157730192953421
+    },
+    {
+      "block": 286,
+      "events": 6,
+      "event_index_last": 1521,
+      "local_qubits": [
+        4,
+        14,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1346496,
+      "discarded_mass_before_renormalization": 0.2637510158325871
+    },
+    {
+      "block": 287,
+      "events": 3,
+      "event_index_last": 1520,
+      "local_qubits": [
+        14,
+        16
+      ],
+      "support": 262144,
+      "support_before_truncation": 409020,
+      "discarded_mass_before_renormalization": 0.030434942753989946
+    },
+    {
+      "block": 288,
+      "events": 6,
+      "event_index_last": 1527,
+      "local_qubits": [
+        21,
+        25,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1245864,
+      "discarded_mass_before_renormalization": 0.048607505371471404
+    },
+    {
+      "block": 289,
+      "events": 6,
+      "event_index_last": 1543,
+      "local_qubits": [
+        2,
+        4,
+        19
+      ],
+      "support": 262144,
+      "support_before_truncation": 958528,
+      "discarded_mass_before_renormalization": 0.07732468549278904
+    },
+    {
+      "block": 290,
+      "events": 6,
+      "event_index_last": 1542,
+      "local_qubits": [
+        2,
+        12,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1450600,
+      "discarded_mass_before_renormalization": 0.1929412381310489
+    },
+    {
+      "block": 291,
+      "events": 3,
+      "event_index_last": 1541,
+      "local_qubits": [
+        2,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 686592,
+      "discarded_mass_before_renormalization": 0.12804625548564064
+    },
+    {
+      "block": 292,
+      "events": 3,
+      "event_index_last": 1546,
+      "local_qubits": [
+        4,
+        7
+      ],
+      "support": 262144,
+      "support_before_truncation": 722248,
+      "discarded_mass_before_renormalization": 0.18719026699695662
+    },
+    {
+      "block": 293,
+      "events": 6,
+      "event_index_last": 1579,
+      "local_qubits": [
+        3,
+        5,
+        9
+      ],
+      "support": 262144,
+      "support_before_truncation": 2093448,
+      "discarded_mass_before_renormalization": 0.3266635589755238
+    },
+    {
+      "block": 294,
+      "events": 6,
+      "event_index_last": 1556,
+      "local_qubits": [
+        3,
+        17,
+        18
+      ],
+      "support": 262144,
+      "support_before_truncation": 1148752,
+      "discarded_mass_before_renormalization": 0.25951604860436583
+    },
+    {
+      "block": 295,
+      "events": 6,
+      "event_index_last": 1562,
+      "local_qubits": [
+        16,
+        18,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 1556752,
+      "discarded_mass_before_renormalization": 0.2679868727773188
+    },
+    {
+      "block": 296,
+      "events": 3,
+      "event_index_last": 1565,
+      "local_qubits": [
+        25,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 860620,
+      "discarded_mass_before_renormalization": 0.12119676136932367
+    },
+    {
+      "block": 297,
+      "events": 6,
+      "event_index_last": 1571,
+      "local_qubits": [
+        3,
+        20,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1147360,
+      "discarded_mass_before_renormalization": 0.15909828428223227
+    },
+    {
+      "block": 298,
+      "events": 6,
+      "event_index_last": 1578,
+      "local_qubits": [
+        21,
+        22,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1593312,
+      "discarded_mass_before_renormalization": 0.336730630688706
+    },
+    {
+      "block": 299,
+      "events": 6,
+      "event_index_last": 1588,
+      "local_qubits": [
+        0,
+        5,
+        10
+      ],
+      "support": 262144,
+      "support_before_truncation": 2093032,
+      "discarded_mass_before_renormalization": 0.5304445060684418
+    },
+    {
+      "block": 300,
+      "events": 6,
+      "event_index_last": 1590,
+      "local_qubits": [
+        0,
+        15,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 1173416,
+      "discarded_mass_before_renormalization": 0.2279290260926523
+    },
+    {
+      "block": 301,
+      "events": 12,
+      "event_index_last": 1609,
+      "local_qubits": [
+        5,
+        6,
+        11
+      ],
+      "support": 262144,
+      "support_before_truncation": 1706704,
+      "discarded_mass_before_renormalization": 0.38777930583853004
+    },
+    {
+      "block": 302,
+      "events": 6,
+      "event_index_last": 1605,
+      "local_qubits": [
+        11,
+        30,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1431504,
+      "discarded_mass_before_renormalization": 0.15827977281324834
+    },
+    {
+      "block": 303,
+      "events": 6,
+      "event_index_last": 1618,
+      "local_qubits": [
+        6,
+        7,
+        11
+      ],
+      "support": 262144,
+      "support_before_truncation": 946624,
+      "discarded_mass_before_renormalization": 0.1570283691265334
+    },
+    {
+      "block": 304,
+      "events": 3,
+      "event_index_last": 1617,
+      "local_qubits": [
+        11,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 732836,
+      "discarded_mass_before_renormalization": 0.05895255705726943
+    },
+    {
+      "block": 305,
+      "events": 6,
+      "event_index_last": 1642,
+      "local_qubits": [
+        8,
+        9,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 1791600,
+      "discarded_mass_before_renormalization": 0.28982739866133256
+    },
+    {
+      "block": 306,
+      "events": 6,
+      "event_index_last": 1635,
+      "local_qubits": [
+        24,
+        34,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1512360,
+      "discarded_mass_before_renormalization": 0.22447221220789926
+    },
+    {
+      "block": 307,
+      "events": 6,
+      "event_index_last": 1633,
+      "local_qubits": [
+        13,
+        24,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1450776,
+      "discarded_mass_before_renormalization": 0.3144622499406744
+    },
+    {
+      "block": 308,
+      "events": 6,
+      "event_index_last": 1641,
+      "local_qubits": [
+        7,
+        15,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1276160,
+      "discarded_mass_before_renormalization": 0.18555759827307916
+    },
+    {
+      "block": 309,
+      "events": 6,
+      "event_index_last": 1647,
+      "local_qubits": [
+        8,
+        27,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1917176,
+      "discarded_mass_before_renormalization": 0.3172357672368269
+    },
+    {
+      "block": 310,
+      "events": 6,
+      "event_index_last": 1652,
+      "local_qubits": [
+        20,
+        30,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1406584,
+      "discarded_mass_before_renormalization": 0.20608719948628662
+    },
+    {
+      "block": 311,
+      "events": 6,
+      "event_index_last": 1658,
+      "local_qubits": [
+        21,
+        24,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1450656,
+      "discarded_mass_before_renormalization": 0.17442253023349497
+    },
+    {
+      "block": 312,
+      "events": 9,
+      "event_index_last": 1674,
+      "local_qubits": [
+        3,
+        8,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1763672,
+      "discarded_mass_before_renormalization": 0.3640770864691789
+    },
+    {
+      "block": 313,
+      "events": 6,
+      "event_index_last": 1673,
+      "local_qubits": [
+        11,
+        24,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1355096,
+      "discarded_mass_before_renormalization": 0.3770021417627578
+    },
+    {
+      "block": 314,
+      "events": 9,
+      "event_index_last": 1683,
+      "local_qubits": [
+        3,
+        4,
+        8
+      ],
+      "support": 262144,
+      "support_before_truncation": 1313600,
+      "discarded_mass_before_renormalization": 0.3081750420785989
+    },
+    {
+      "block": 315,
+      "events": 6,
+      "event_index_last": 1690,
+      "local_qubits": [
+        9,
+        19,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 1182712,
+      "discarded_mass_before_renormalization": 0.23376797924209514
+    },
+    {
+      "block": 316,
+      "events": 6,
+      "event_index_last": 1705,
+      "local_qubits": [
+        6,
+        23,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1551112,
+      "discarded_mass_before_renormalization": 0.3345918997193853
+    },
+    {
+      "block": 317,
+      "events": 6,
+      "event_index_last": 1704,
+      "local_qubits": [
+        13,
+        29,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1455088,
+      "discarded_mass_before_renormalization": 0.3955109553144315
+    },
+    {
+      "block": 318,
+      "events": 3,
+      "event_index_last": 1703,
+      "local_qubits": [
+        29,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 652472,
+      "discarded_mass_before_renormalization": 0.14579423472103592
+    },
+    {
+      "block": 319,
+      "events": 9,
+      "event_index_last": 1781,
+      "local_qubits": [
+        1,
+        9,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 1377736,
+      "discarded_mass_before_renormalization": 0.2721454584161286
+    },
+    {
+      "block": 320,
+      "events": 6,
+      "event_index_last": 1759,
+      "local_qubits": [
+        1,
+        10,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 972352,
+      "discarded_mass_before_renormalization": 0.21820814460927018
+    },
+    {
+      "block": 321,
+      "events": 6,
+      "event_index_last": 1729,
+      "local_qubits": [
+        1,
+        10,
+        16
+      ],
+      "support": 262144,
+      "support_before_truncation": 757408,
+      "discarded_mass_before_renormalization": 0.14454220423500352
+    },
+    {
+      "block": 322,
+      "events": 6,
+      "event_index_last": 1728,
+      "local_qubits": [
+        1,
+        7,
+        13
+      ],
+      "support": 262144,
+      "support_before_truncation": 900904,
+      "discarded_mass_before_renormalization": 0.14899203406302752
+    },
+    {
+      "block": 323,
+      "events": 6,
+      "event_index_last": 1755,
+      "local_qubits": [
+        17,
+        19,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 1496808,
+      "discarded_mass_before_renormalization": 0.26551408594568704
+    },
+    {
+      "block": 324,
+      "events": 6,
+      "event_index_last": 1751,
+      "local_qubits": [
+        12,
+        19,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 1230976,
+      "discarded_mass_before_renormalization": 0.17433265596414005
+    },
+    {
+      "block": 325,
+      "events": 6,
+      "event_index_last": 1745,
+      "local_qubits": [
+        2,
+        10,
+        12
+      ],
+      "support": 262144,
+      "support_before_truncation": 1453792,
+      "discarded_mass_before_renormalization": 0.32981824493633904
+    },
+    {
+      "block": 326,
+      "events": 6,
+      "event_index_last": 1763,
+      "local_qubits": [
+        2,
+        3,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1154736,
+      "discarded_mass_before_renormalization": 0.11344494819905582
+    },
+    {
+      "block": 327,
+      "events": 6,
+      "event_index_last": 1766,
+      "local_qubits": [
+        3,
+        12,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 1393024,
+      "discarded_mass_before_renormalization": 0.33795774839089576
+    },
+    {
+      "block": 328,
+      "events": 3,
+      "event_index_last": 1758,
+      "local_qubits": [
+        18,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 911704,
+      "discarded_mass_before_renormalization": 0.2601448286393564
+    },
+    {
+      "block": 329,
+      "events": 3,
+      "event_index_last": 1762,
+      "local_qubits": [
+        0,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 591968,
+      "discarded_mass_before_renormalization": 0.19678362948166805
+    },
+    {
+      "block": 330,
+      "events": 3,
+      "event_index_last": 1770,
+      "local_qubits": [
+        30,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 494356,
+      "discarded_mass_before_renormalization": 0.09694338074789077
+    },
+    {
+      "block": 331,
+      "events": 9,
+      "event_index_last": 1780,
+      "local_qubits": [
+        8,
+        16,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1437208,
+      "discarded_mass_before_renormalization": 0.28571490997459614
+    },
+    {
+      "block": 332,
+      "events": 6,
+      "event_index_last": 1786,
+      "local_qubits": [
+        9,
+        14,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 1674640,
+      "discarded_mass_before_renormalization": 0.35437470212808464
+    },
+    {
+      "block": 333,
+      "events": 6,
+      "event_index_last": 1794,
+      "local_qubits": [
+        17,
+        26,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1856888,
+      "discarded_mass_before_renormalization": 0.3135102562073524
+    },
+    {
+      "block": 334,
+      "events": 3,
+      "event_index_last": 1793,
+      "local_qubits": [
+        17,
+        19
+      ],
+      "support": 262144,
+      "support_before_truncation": 773432,
+      "discarded_mass_before_renormalization": 0.16992325466587999
+    },
+    {
+      "block": 335,
+      "events": 3,
+      "event_index_last": 1798,
+      "local_qubits": [
+        20,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 968996,
+      "discarded_mass_before_renormalization": 0.26482607945063474
+    },
+    {
+      "block": 336,
+      "events": 6,
+      "event_index_last": 1803,
+      "local_qubits": [
+        6,
+        14,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 1460776,
+      "discarded_mass_before_renormalization": 0.3770547886718201
+    },
+    {
+      "block": 337,
+      "events": 6,
+      "event_index_last": 1816,
+      "local_qubits": [
+        0,
+        4,
+        6
+      ],
+      "support": 262144,
+      "support_before_truncation": 1097152,
+      "discarded_mass_before_renormalization": 0.28146904524669725
+    },
+    {
+      "block": 338,
+      "events": 6,
+      "event_index_last": 1815,
+      "local_qubits": [
+        3,
+        4,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 1027288,
+      "discarded_mass_before_renormalization": 0.05515495392517278
+    },
+    {
+      "block": 339,
+      "events": 6,
+      "event_index_last": 1821,
+      "local_qubits": [
+        7,
+        22,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 1269264,
+      "discarded_mass_before_renormalization": 0.24072359592395376
+    },
+    {
+      "block": 340,
+      "events": 3,
+      "event_index_last": 1825,
+      "local_qubits": [
+        7,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 562988,
+      "discarded_mass_before_renormalization": 0.08516392480493828
+    },
+    {
+      "block": 341,
+      "events": 6,
+      "event_index_last": 1863,
+      "local_qubits": [
+        5,
+        9,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1873632,
+      "discarded_mass_before_renormalization": 0.43616743611113384
+    },
+    {
+      "block": 342,
+      "events": 6,
+      "event_index_last": 1841,
+      "local_qubits": [
+        18,
+        29,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1672560,
+      "discarded_mass_before_renormalization": 0.4542154592598975
+    },
+    {
+      "block": 343,
+      "events": 6,
+      "event_index_last": 1840,
+      "local_qubits": [
+        18,
+        19,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 1456088,
+      "discarded_mass_before_renormalization": 0.3629638919156011
+    },
+    {
+      "block": 344,
+      "events": 6,
+      "event_index_last": 1885,
+      "local_qubits": [
+        2,
+        7,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1640808,
+      "discarded_mass_before_renormalization": 0.3021020966910437
+    },
+    {
+      "block": 345,
+      "events": 6,
+      "event_index_last": 1882,
+      "local_qubits": [
+        0,
+        6,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 843496,
+      "discarded_mass_before_renormalization": 0.12407087611653977
+    },
+    {
+      "block": 346,
+      "events": 6,
+      "event_index_last": 1862,
+      "local_qubits": [
+        0,
+        3,
+        4
+      ],
+      "support": 262144,
+      "support_before_truncation": 1190264,
+      "discarded_mass_before_renormalization": 0.11822654948566547
+    },
+    {
+      "block": 347,
+      "events": 6,
+      "event_index_last": 1861,
+      "local_qubits": [
+        26,
+        28,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 1649384,
+      "discarded_mass_before_renormalization": 0.3629605487083807
+    },
+    {
+      "block": 348,
+      "events": 6,
+      "event_index_last": 1868,
+      "local_qubits": [
+        5,
+        11,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 1293224,
+      "discarded_mass_before_renormalization": 0.1648899482942373
+    },
+    {
+      "block": 349,
+      "events": 6,
+      "event_index_last": 1876,
+      "local_qubits": [
+        5,
+        11,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 1180888,
+      "discarded_mass_before_renormalization": 0.24860205719816775
+    },
+    {
+      "block": 350,
+      "events": 6,
+      "event_index_last": 1880,
+      "local_qubits": [
+        11,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 847272,
+      "discarded_mass_before_renormalization": 0.19312283898656024
+    },
+    {
+      "block": 351,
+      "events": 6,
+      "event_index_last": 1915,
+      "local_qubits": [
+        9,
+        15,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 1790984,
+      "discarded_mass_before_renormalization": 0.4231230247245229
+    },
+    {
+      "block": 352,
+      "events": 12,
+      "event_index_last": 1909,
+      "local_qubits": [
+        10,
+        14,
+        15
+      ],
+      "support": 262144,
+      "support_before_truncation": 1374264,
+      "discarded_mass_before_renormalization": 0.3106491820535575
+    },
+    {
+      "block": 353,
+      "events": 6,
+      "event_index_last": 1928,
+      "local_qubits": [
+        1,
+        10,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 823648,
+      "discarded_mass_before_renormalization": 0.11433796023002696
+    },
+    {
+      "block": 354,
+      "events": 3,
+      "event_index_last": 1927,
+      "local_qubits": [
+        1,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 570928,
+      "discarded_mass_before_renormalization": 0.1311495181349881
+    },
+    {
+      "block": 355,
+      "events": 6,
+      "event_index_last": 1942,
+      "local_qubits": [
+        5,
+        15,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1088312,
+      "discarded_mass_before_renormalization": 0.1938464825209204
+    },
+    {
+      "block": 356,
+      "events": 3,
+      "event_index_last": 1914,
+      "local_qubits": [
+        2,
+        10
+      ],
+      "support": 262144,
+      "support_before_truncation": 590880,
+      "discarded_mass_before_renormalization": 0.05514238143907313
+    },
+    {
+      "block": 357,
+      "events": 6,
+      "event_index_last": 1920,
+      "local_qubits": [
+        17,
+        21,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 1433944,
+      "discarded_mass_before_renormalization": 0.21298573676552712
+    },
+    {
+      "block": 358,
+      "events": 6,
+      "event_index_last": 1926,
+      "local_qubits": [
+        21,
+        23,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1309632,
+      "discarded_mass_before_renormalization": 0.1590662595859036
+    },
+    {
+      "block": 359,
+      "events": 6,
+      "event_index_last": 1934,
+      "local_qubits": [
+        0,
+        3,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1322624,
+      "discarded_mass_before_renormalization": 0.14083804435319014
+    },
+    {
+      "block": 360,
+      "events": 3,
+      "event_index_last": 1937,
+      "local_qubits": [
+        3,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 466184,
+      "discarded_mass_before_renormalization": 0.0
+    },
+    {
+      "block": 361,
+      "events": 9,
+      "event_index_last": 1951,
+      "local_qubits": [
+        5,
+        6,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 1213600,
+      "discarded_mass_before_renormalization": 0.07374718682047798
+    },
+    {
+      "block": 362,
+      "events": 3,
+      "event_index_last": 1954,
+      "local_qubits": [
+        7,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 797220,
+      "discarded_mass_before_renormalization": 0.20310508736716448
+    },
+    {
+      "block": 363,
+      "events": 6,
+      "event_index_last": 1959,
+      "local_qubits": [
+        4,
+        8,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 1066128,
+      "discarded_mass_before_renormalization": 0.2166036428316931
+    },
+    {
+      "block": 364,
+      "events": 6,
+      "event_index_last": 1972,
+      "local_qubits": [
+        8,
+        18,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 771448,
+      "discarded_mass_before_renormalization": 0.1771415334870966
+    },
+    {
+      "block": 365,
+      "events": 6,
+      "event_index_last": 1971,
+      "local_qubits": [
+        7,
+        18,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 404965,
+      "discarded_mass_before_renormalization": 0.0
+    },
+    {
+      "block": 366,
+      "events": 6,
+      "event_index_last": 1990,
+      "local_qubits": [
+        9,
+        16,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1850744,
+      "discarded_mass_before_renormalization": 0.19606197743169207
+    },
+    {
+      "block": 367,
+      "events": 6,
+      "event_index_last": 1986,
+      "local_qubits": [
+        15,
+        16,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 673216,
+      "discarded_mass_before_renormalization": 0.09914655589397503
+    },
+    {
+      "block": 368,
+      "events": 3,
+      "event_index_last": 1985,
+      "local_qubits": [
+        11,
+        16
+      ],
+      "support": 262144,
+      "support_before_truncation": 388390,
+      "discarded_mass_before_renormalization": 0.08282967213627535
+    },
+    {
+      "block": 369,
+      "events": 3,
+      "event_index_last": 1989,
+      "local_qubits": [
+        29,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 666492,
+      "discarded_mass_before_renormalization": 0.01564624574815643
+    },
+    {
+      "block": 370,
+      "events": 6,
+      "event_index_last": 1997,
+      "local_qubits": [
+        13,
+        19,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1400792,
+      "discarded_mass_before_renormalization": 0.2564172768720109
+    },
+    {
+      "block": 371,
+      "events": 6,
+      "event_index_last": 2032,
+      "local_qubits": [
+        8,
+        13,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 995968,
+      "discarded_mass_before_renormalization": 0.036078353811858865
+    },
+    {
+      "block": 372,
+      "events": 6,
+      "event_index_last": 2004,
+      "local_qubits": [
+        12,
+        31,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1158968,
+      "discarded_mass_before_renormalization": 0.24967362096777157
+    },
+    {
+      "block": 373,
+      "events": 6,
+      "event_index_last": 2009,
+      "local_qubits": [
+        12,
+        31,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 380676,
+      "discarded_mass_before_renormalization": 0.021854754447961255
+    },
+    {
+      "block": 374,
+      "events": 6,
+      "event_index_last": 2017,
+      "local_qubits": [
+        6,
+        19,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 1379064,
+      "discarded_mass_before_renormalization": 0.247950030370525
+    },
+    {
+      "block": 375,
+      "events": 12,
+      "event_index_last": 2029,
+      "local_qubits": [
+        5,
+        6,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 799624,
+      "discarded_mass_before_renormalization": 0.18861600279306812
+    },
+    {
+      "block": 376,
+      "events": 6,
+      "event_index_last": 2058,
+      "local_qubits": [
+        9,
+        14,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 1595864,
+      "discarded_mass_before_renormalization": 0.3257873479796578
+    },
+    {
+      "block": 377,
+      "events": 6,
+      "event_index_last": 2045,
+      "local_qubits": [
+        2,
+        14,
+        15
+      ],
+      "support": 262144,
+      "support_before_truncation": 1659376,
+      "discarded_mass_before_renormalization": 0.14376661179324657
+    },
+    {
+      "block": 378,
+      "events": 6,
+      "event_index_last": 2057,
+      "local_qubits": [
+        2,
+        14,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 2019904,
+      "discarded_mass_before_renormalization": 0.10407380179572723
+    },
+    {
+      "block": 379,
+      "events": 6,
+      "event_index_last": 2056,
+      "local_qubits": [
+        0,
+        14,
+        19
+      ],
+      "support": 262144,
+      "support_before_truncation": 1380376,
+      "discarded_mass_before_renormalization": 0.14963508139499337
+    },
+    {
+      "block": 380,
+      "events": 9,
+      "event_index_last": 2164,
+      "local_qubits": [
+        8,
+        13,
+        14
+      ],
+      "support": 262144,
+      "support_before_truncation": 1595280,
+      "discarded_mass_before_renormalization": 0.2127244704514657
+    },
+    {
+      "block": 381,
+      "events": 6,
+      "event_index_last": 2063,
+      "local_qubits": [
+        10,
+        27,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1126976,
+      "discarded_mass_before_renormalization": 0.3188114587089267
+    },
+    {
+      "block": 382,
+      "events": 6,
+      "event_index_last": 2069,
+      "local_qubits": [
+        3,
+        15,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 1519312,
+      "discarded_mass_before_renormalization": 0.45192763527257296
+    },
+    {
+      "block": 383,
+      "events": 3,
+      "event_index_last": 2073,
+      "local_qubits": [
+        22,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1048576,
+      "discarded_mass_before_renormalization": 0.2870784545627786
+    },
+    {
+      "block": 384,
+      "events": 9,
+      "event_index_last": 2083,
+      "local_qubits": [
+        2,
+        22,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 783584,
+      "discarded_mass_before_renormalization": 0.08238408499636929
+    },
+    {
+      "block": 385,
+      "events": 3,
+      "event_index_last": 2086,
+      "local_qubits": [
+        6,
+        19
+      ],
+      "support": 262144,
+      "support_before_truncation": 733792,
+      "discarded_mass_before_renormalization": 0.0694951719162834
+    },
+    {
+      "block": 386,
+      "events": 6,
+      "event_index_last": 2118,
+      "local_qubits": [
+        14,
+        15,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1802624,
+      "discarded_mass_before_renormalization": 0.11464899302540876
+    },
+    {
+      "block": 387,
+      "events": 6,
+      "event_index_last": 2105,
+      "local_qubits": [
+        13,
+        14,
+        15
+      ],
+      "support": 262144,
+      "support_before_truncation": 839872,
+      "discarded_mass_before_renormalization": 0.1614240731641685
+    },
+    {
+      "block": 388,
+      "events": 6,
+      "event_index_last": 2114,
+      "local_qubits": [
+        13,
+        17,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 889216,
+      "discarded_mass_before_renormalization": 0.09056186087275031
+    },
+    {
+      "block": 389,
+      "events": 6,
+      "event_index_last": 2113,
+      "local_qubits": [
+        0,
+        14,
+        19
+      ],
+      "support": 262144,
+      "support_before_truncation": 867968,
+      "discarded_mass_before_renormalization": 0.1509062728440851
+    },
+    {
+      "block": 390,
+      "events": 6,
+      "event_index_last": 2139,
+      "local_qubits": [
+        3,
+        5,
+        15
+      ],
+      "support": 262144,
+      "support_before_truncation": 873789,
+      "discarded_mass_before_renormalization": 1.4149534877105907e-09
+    },
+    {
+      "block": 391,
+      "events": 6,
+      "event_index_last": 2124,
+      "local_qubits": [
+        22,
+        32,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 524288,
+      "discarded_mass_before_renormalization": 9.042360582522946e-08
+    },
+    {
+      "block": 392,
+      "events": 9,
+      "event_index_last": 2133,
+      "local_qubits": [
+        4,
+        13,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 754176,
+      "discarded_mass_before_renormalization": 0.0650837897308486
+    },
+    {
+      "block": 393,
+      "events": 3,
+      "event_index_last": 2138,
+      "local_qubits": [
+        13,
+        15
+      ],
+      "support": 262144,
+      "support_before_truncation": 952064,
+      "discarded_mass_before_renormalization": 0.15441350573777635
+    },
+    {
+      "block": 394,
+      "events": 6,
+      "event_index_last": 2145,
+      "local_qubits": [
+        5,
+        13,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 1258752,
+      "discarded_mass_before_renormalization": 0.12831683204661493
+    },
+    {
+      "block": 395,
+      "events": 6,
+      "event_index_last": 2154,
+      "local_qubits": [
+        5,
+        15,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 834304,
+      "discarded_mass_before_renormalization": 0.2547729395866035
+    },
+    {
+      "block": 396,
+      "events": 3,
+      "event_index_last": 2153,
+      "local_qubits": [
+        4,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 454208,
+      "discarded_mass_before_renormalization": 0.09532310732989191
+    },
+    {
+      "block": 397,
+      "events": 3,
+      "event_index_last": 2157,
+      "local_qubits": [
+        5,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 512000,
+      "discarded_mass_before_renormalization": 0.029621831270811305
+    },
+    {
+      "block": 398,
+      "events": 6,
+      "event_index_last": 2162,
+      "local_qubits": [
+        7,
+        22,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 524288,
+      "discarded_mass_before_renormalization": 1.1102230246251565e-16
+    },
+    {
+      "block": 399,
+      "events": 6,
+      "event_index_last": 2169,
+      "local_qubits": [
+        8,
+        29,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1048576,
+      "discarded_mass_before_renormalization": 0.012005647331756908
+    },
+    {
+      "block": 400,
+      "events": 6,
+      "event_index_last": 2175,
+      "local_qubits": [
+        29,
+        31,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 2042368,
+      "discarded_mass_before_renormalization": 0.2962766024954999
+    },
+    {
+      "block": 401,
+      "events": 6,
+      "event_index_last": 2181,
+      "local_qubits": [
+        8,
+        18,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 894542,
+      "discarded_mass_before_renormalization": 0.2665656072621123
+    },
+    {
+      "block": 402,
+      "events": 6,
+      "event_index_last": 2186,
+      "local_qubits": [
+        7,
+        28,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 892432,
+      "discarded_mass_before_renormalization": 0.09307418940799106
+    },
+    {
+      "block": 403,
+      "events": 3,
+      "event_index_last": 2190,
+      "local_qubits": [
+        7,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 513568,
+      "discarded_mass_before_renormalization": 0.04393287377265609
+    },
+    {
+      "block": 404,
+      "events": 6,
+      "event_index_last": 2196,
+      "local_qubits": [
+        2,
+        8,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 927632,
+      "discarded_mass_before_renormalization": 0.12401330589221837
+    },
+    {
+      "block": 405,
+      "events": 6,
+      "event_index_last": 2202,
+      "local_qubits": [
+        4,
+        8,
+        18
+      ],
+      "support": 262144,
+      "support_before_truncation": 764576,
+      "discarded_mass_before_renormalization": 0.18514762917362937
+    },
+    {
+      "block": 406,
+      "events": 9,
+      "event_index_last": 2214,
+      "local_qubits": [
+        9,
+        20,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 1725824,
+      "discarded_mass_before_renormalization": 0.31708545358553974
+    },
+    {
+      "block": 407,
+      "events": 6,
+      "event_index_last": 2223,
+      "local_qubits": [
+        20,
+        26,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 524288,
+      "discarded_mass_before_renormalization": 0.2509183381405319
+    },
+    {
+      "block": 408,
+      "events": 6,
+      "event_index_last": 2224,
+      "local_qubits": [
+        1,
+        6,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 932992,
+      "discarded_mass_before_renormalization": 0.20322514602158992
+    },
+    {
+      "block": 409,
+      "events": 6,
+      "event_index_last": 2229,
+      "local_qubits": [
+        6,
+        19,
+        21
+      ],
+      "support": 262144,
+      "support_before_truncation": 1130880,
+      "discarded_mass_before_renormalization": 0.17240022334635086
+    },
+    {
+      "block": 410,
+      "events": 6,
+      "event_index_last": 2251,
+      "local_qubits": [
+        9,
+        24,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 856704,
+      "discarded_mass_before_renormalization": 0.17754730978337052
+    },
+    {
+      "block": 411,
+      "events": 9,
+      "event_index_last": 2245,
+      "local_qubits": [
+        11,
+        16,
+        24
+      ],
+      "support": 262144,
+      "support_before_truncation": 1848192,
+      "discarded_mass_before_renormalization": 0.40116886788932504
+    },
+    {
+      "block": 412,
+      "events": 6,
+      "event_index_last": 2250,
+      "local_qubits": [
+        11,
+        21,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1583488,
+      "discarded_mass_before_renormalization": 0.2881638568615328
+    },
+    {
+      "block": 413,
+      "events": 6,
+      "event_index_last": 2262,
+      "local_qubits": [
+        10,
+        27,
+        30
+      ],
+      "support": 259486,
+      "support_before_truncation": 259486,
+      "discarded_mass_before_renormalization": 0.0
+    },
+    {
+      "block": 414,
+      "events": 6,
+      "event_index_last": 2261,
+      "local_qubits": [
+        10,
+        13,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 790976,
+      "discarded_mass_before_renormalization": 1.4981349494291862e-12
+    },
+    {
+      "block": 415,
+      "events": 6,
+      "event_index_last": 2271,
+      "local_qubits": [
+        14,
+        24,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 747264,
+      "discarded_mass_before_renormalization": 2.44582132324922e-13
+    },
+    {
+      "block": 416,
+      "events": 3,
+      "event_index_last": 2270,
+      "local_qubits": [
+        0,
+        14
+      ],
+      "support": 262144,
+      "support_before_truncation": 547600,
+      "discarded_mass_before_renormalization": 9.00612917575927e-13
+    },
+    {
+      "block": 417,
+      "events": 6,
+      "event_index_last": 2277,
+      "local_qubits": [
+        10,
+        27,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1320608,
+      "discarded_mass_before_renormalization": 0.0071332174550641225
+    },
+    {
+      "block": 418,
+      "events": 6,
+      "event_index_last": 2293,
+      "local_qubits": [
+        27,
+        33,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 895040,
+      "discarded_mass_before_renormalization": 0.04717202632881101
+    },
+    {
+      "block": 419,
+      "events": 6,
+      "event_index_last": 2285,
+      "local_qubits": [
+        14,
+        24,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 942864,
+      "discarded_mass_before_renormalization": 0.07483338155628405
+    },
+    {
+      "block": 420,
+      "events": 3,
+      "event_index_last": 2289,
+      "local_qubits": [
+        16,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 351680,
+      "discarded_mass_before_renormalization": 0.008922993585071315
+    },
+    {
+      "block": 421,
+      "events": 6,
+      "event_index_last": 2299,
+      "local_qubits": [
+        4,
+        5,
+        13
+      ],
+      "support": 262144,
+      "support_before_truncation": 1151392,
+      "discarded_mass_before_renormalization": 0.06158625332536405
+    },
+    {
+      "block": 422,
+      "events": 9,
+      "event_index_last": 2447,
+      "local_qubits": [
+        9,
+        20,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 979584,
+      "discarded_mass_before_renormalization": 0.10010248612859285
+    },
+    {
+      "block": 423,
+      "events": 6,
+      "event_index_last": 2310,
+      "local_qubits": [
+        3,
+        20,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 462175,
+      "discarded_mass_before_renormalization": 0.08034254134411978
+    },
+    {
+      "block": 424,
+      "events": 6,
+      "event_index_last": 2315,
+      "local_qubits": [
+        3,
+        15,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 1092736,
+      "discarded_mass_before_renormalization": 0.0754091930133658
+    },
+    {
+      "block": 425,
+      "events": 6,
+      "event_index_last": 2336,
+      "local_qubits": [
+        5,
+        13,
+        22
+      ],
+      "support": 262144,
+      "support_before_truncation": 1057536,
+      "discarded_mass_before_renormalization": 0.08474540999001279
+    },
+    {
+      "block": 426,
+      "events": 3,
+      "event_index_last": 2344,
+      "local_qubits": [
+        3,
+        8
+      ],
+      "support": 262144,
+      "support_before_truncation": 783456,
+      "discarded_mass_before_renormalization": 0.035827810097391666
+    },
+    {
+      "block": 427,
+      "events": 6,
+      "event_index_last": 2329,
+      "local_qubits": [
+        1,
+        26,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 979648,
+      "discarded_mass_before_renormalization": 0.029133204931278356
+    },
+    {
+      "block": 428,
+      "events": 3,
+      "event_index_last": 2337,
+      "local_qubits": [
+        1,
+        6
+      ],
+      "support": 262144,
+      "support_before_truncation": 982592,
+      "discarded_mass_before_renormalization": 0.18012566504023841
+    },
+    {
+      "block": 429,
+      "events": 3,
+      "event_index_last": 2333,
+      "local_qubits": [
+        20,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 495520,
+      "discarded_mass_before_renormalization": 0.14821723205758164
+    },
+    {
+      "block": 430,
+      "events": 6,
+      "event_index_last": 2342,
+      "local_qubits": [
+        7,
+        26,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 1373560,
+      "discarded_mass_before_renormalization": 0.24000214303553125
+    },
+    {
+      "block": 431,
+      "events": 6,
+      "event_index_last": 2377,
+      "local_qubits": [
+        12,
+        25,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 773456,
+      "discarded_mass_before_renormalization": 1.9338360138787536e-06
+    },
+    {
+      "block": 432,
+      "events": 6,
+      "event_index_last": 2359,
+      "local_qubits": [
+        10,
+        12,
+        14
+      ],
+      "support": 262144,
+      "support_before_truncation": 1884960,
+      "discarded_mass_before_renormalization": 6.357320165517599e-06
+    },
+    {
+      "block": 433,
+      "events": 6,
+      "event_index_last": 2362,
+      "local_qubits": [
+        10,
+        14,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 1896352,
+      "discarded_mass_before_renormalization": 0.11797162045335718
+    },
+    {
+      "block": 434,
+      "events": 6,
+      "event_index_last": 2370,
+      "local_qubits": [
+        14,
+        17,
+        19
+      ],
+      "support": 262144,
+      "support_before_truncation": 1477688,
+      "discarded_mass_before_renormalization": 0.12695439253410612
+    },
+    {
+      "block": 435,
+      "events": 6,
+      "event_index_last": 2373,
+      "local_qubits": [
+        17,
+        19,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1519352,
+      "discarded_mass_before_renormalization": 0.3022273119171075
+    },
+    {
+      "block": 436,
+      "events": 3,
+      "event_index_last": 2380,
+      "local_qubits": [
+        6,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 469964,
+      "discarded_mass_before_renormalization": 0.04545101764079684
+    },
+    {
+      "block": 437,
+      "events": 12,
+      "event_index_last": 2392,
+      "local_qubits": [
+        2,
+        8,
+        12
+      ],
+      "support": 262144,
+      "support_before_truncation": 804600,
+      "discarded_mass_before_renormalization": 3.168935826192154e-06
+    },
+    {
+      "block": 438,
+      "events": 6,
+      "event_index_last": 2397,
+      "local_qubits": [
+        2,
+        3,
+        8
+      ],
+      "support": 262144,
+      "support_before_truncation": 929576,
+      "discarded_mass_before_renormalization": 0.007028064002071788
+    },
+    {
+      "block": 439,
+      "events": 6,
+      "event_index_last": 2424,
+      "local_qubits": [
+        3,
+        20,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 993736,
+      "discarded_mass_before_renormalization": 0.024523140650034803
+    },
+    {
+      "block": 440,
+      "events": 6,
+      "event_index_last": 2407,
+      "local_qubits": [
+        20,
+        23,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 1178832,
+      "discarded_mass_before_renormalization": 0.030799900817432446
+    },
+    {
+      "block": 441,
+      "events": 6,
+      "event_index_last": 2417,
+      "local_qubits": [
+        0,
+        3,
+        11
+      ],
+      "support": 262144,
+      "support_before_truncation": 1650416,
+      "discarded_mass_before_renormalization": 0.1958209938081258
+    },
+    {
+      "block": 442,
+      "events": 3,
+      "event_index_last": 2416,
+      "local_qubits": [
+        11,
+        20
+      ],
+      "support": 262144,
+      "support_before_truncation": 466852,
+      "discarded_mass_before_renormalization": 0.0771716164288373
+    },
+    {
+      "block": 443,
+      "events": 6,
+      "event_index_last": 2423,
+      "local_qubits": [
+        3,
+        13,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1022936,
+      "discarded_mass_before_renormalization": 0.2087836368585756
+    },
+    {
+      "block": 444,
+      "events": 6,
+      "event_index_last": 2433,
+      "local_qubits": [
+        15,
+        31,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1635624,
+      "discarded_mass_before_renormalization": 0.30783384596262486
+    },
+    {
+      "block": 445,
+      "events": 3,
+      "event_index_last": 2431,
+      "local_qubits": [
+        15,
+        17
+      ],
+      "support": 262144,
+      "support_before_truncation": 583384,
+      "discarded_mass_before_renormalization": 0.061912290204552245
+    },
+    {
+      "block": 446,
+      "events": 6,
+      "event_index_last": 2443,
+      "local_qubits": [
+        6,
+        8,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1286920,
+      "discarded_mass_before_renormalization": 0.16793420752669963
+    },
+    {
+      "block": 447,
+      "events": 3,
+      "event_index_last": 2442,
+      "local_qubits": [
+        4,
+        6
+      ],
+      "support": 262144,
+      "support_before_truncation": 747836,
+      "discarded_mass_before_renormalization": 0.17641059746297727
+    },
+    {
+      "block": 448,
+      "events": 3,
+      "event_index_last": 2446,
+      "local_qubits": [
+        8,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 593660,
+      "discarded_mass_before_renormalization": 0.08647850574531513
+    },
+    {
+      "block": 449,
+      "events": 6,
+      "event_index_last": 2486,
+      "local_qubits": [
+        9,
+        12,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 879752,
+      "discarded_mass_before_renormalization": 0.005808594517505927
+    },
+    {
+      "block": 450,
+      "events": 6,
+      "event_index_last": 2459,
+      "local_qubits": [
+        1,
+        10,
+        12
+      ],
+      "support": 262144,
+      "support_before_truncation": 2081144,
+      "discarded_mass_before_renormalization": 0.3586539418768968
+    },
+    {
+      "block": 451,
+      "events": 6,
+      "event_index_last": 2521,
+      "local_qubits": [
+        1,
+        31,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 876272,
+      "discarded_mass_before_renormalization": 0.16644741207574842
+    },
+    {
+      "block": 452,
+      "events": 6,
+      "event_index_last": 2466,
+      "local_qubits": [
+        0,
+        2,
+        10
+      ],
+      "support": 262144,
+      "support_before_truncation": 1819328,
+      "discarded_mass_before_renormalization": 0.37923262128797375
+    },
+    {
+      "block": 453,
+      "events": 6,
+      "event_index_last": 2520,
+      "local_qubits": [
+        0,
+        27,
+        31
+      ],
+      "support": 262144,
+      "support_before_truncation": 872424,
+      "discarded_mass_before_renormalization": 0.09513413417116856
+    },
+    {
+      "block": 454,
+      "events": 9,
+      "event_index_last": 2475,
+      "local_qubits": [
+        2,
+        11,
+        18
+      ],
+      "support": 262144,
+      "support_before_truncation": 1725976,
+      "discarded_mass_before_renormalization": 0.2594292756911769
+    },
+    {
+      "block": 455,
+      "events": 6,
+      "event_index_last": 2481,
+      "local_qubits": [
+        17,
+        18
+      ],
+      "support": 262144,
+      "support_before_truncation": 779012,
+      "discarded_mass_before_renormalization": 0.1709332932389941
+    },
+    {
+      "block": 456,
+      "events": 3,
+      "event_index_last": 2485,
+      "local_qubits": [
+        2,
+        23
+      ],
+      "support": 262144,
+      "support_before_truncation": 809104,
+      "discarded_mass_before_renormalization": 0.12822494663564443
+    },
+    {
+      "block": 457,
+      "events": 6,
+      "event_index_last": 2500,
+      "local_qubits": [
+        24,
+        25,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1736368,
+      "discarded_mass_before_renormalization": 0.3699588271216583
+    },
+    {
+      "block": 458,
+      "events": 6,
+      "event_index_last": 2522,
+      "local_qubits": [
+        22,
+        24,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1346384,
+      "discarded_mass_before_renormalization": 0.22623132082674935
+    },
+    {
+      "block": 459,
+      "events": 6,
+      "event_index_last": 2532,
+      "local_qubits": [
+        24,
+        27,
+        35
+      ],
+      "support": 262144,
+      "support_before_truncation": 1684272,
+      "discarded_mass_before_renormalization": 0.2995205549382284
+    },
+    {
+      "block": 460,
+      "events": 6,
+      "event_index_last": 2533,
+      "local_qubits": [
+        1,
+        4,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1512288,
+      "discarded_mass_before_renormalization": 0.317856338098746
+    },
+    {
+      "block": 461,
+      "events": 6,
+      "event_index_last": 2510,
+      "local_qubits": [
+        11,
+        26,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 1149024,
+      "discarded_mass_before_renormalization": 0.22660160697125165
+    },
+    {
+      "block": 462,
+      "events": 3,
+      "event_index_last": 2514,
+      "local_qubits": [
+        2,
+        28
+      ],
+      "support": 262144,
+      "support_before_truncation": 710212,
+      "discarded_mass_before_renormalization": 0.1212406037210999
+    },
+    {
+      "block": 463,
+      "events": 3,
+      "event_index_last": 2525,
+      "local_qubits": [
+        23,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 742972,
+      "discarded_mass_before_renormalization": 0.1778115913099958
+    },
+    {
+      "block": 464,
+      "events": 3,
+      "event_index_last": 2531,
+      "local_qubits": [
+        11,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 835548,
+      "discarded_mass_before_renormalization": 0.25537569762308965
+    },
+    {
+      "block": 465,
+      "events": 6,
+      "event_index_last": 2539,
+      "local_qubits": [
+        6,
+        31,
+        32
+      ],
+      "support": 262144,
+      "support_before_truncation": 1099712,
+      "discarded_mass_before_renormalization": 0.20384300142871548
+    },
+    {
+      "block": 466,
+      "events": 6,
+      "event_index_last": 2544,
+      "local_qubits": [
+        7,
+        12,
+        14
+      ],
+      "support": 262144,
+      "support_before_truncation": 1220320,
+      "discarded_mass_before_renormalization": 0.2013548745368673
+    },
+    {
+      "block": 467,
+      "events": 3,
+      "event_index_last": 2547,
+      "local_qubits": [
+        14,
+        19
+      ],
+      "support": 262144,
+      "support_before_truncation": 867196,
+      "discarded_mass_before_renormalization": 0.2737413267823843
+    },
+    {
+      "block": 468,
+      "events": 6,
+      "event_index_last": 2559,
+      "local_qubits": [
+        5,
+        7,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1708832,
+      "discarded_mass_before_renormalization": 0.3025714932364114
+    },
+    {
+      "block": 469,
+      "events": 6,
+      "event_index_last": 2558,
+      "local_qubits": [
+        22,
+        23,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 909824,
+      "discarded_mass_before_renormalization": 0.22209953631490786
+    },
+    {
+      "block": 470,
+      "events": 6,
+      "event_index_last": 2569,
+      "local_qubits": [
+        8,
+        12,
+        13
+      ],
+      "support": 262144,
+      "support_before_truncation": 1118576,
+      "discarded_mass_before_renormalization": 0.24164028154124972
+    },
+    {
+      "block": 471,
+      "events": 3,
+      "event_index_last": 2568,
+      "local_qubits": [
+        6,
+        13
+      ],
+      "support": 262144,
+      "support_before_truncation": 614360,
+      "discarded_mass_before_renormalization": 0.10605454530504033
+    },
+    {
+      "block": 472,
+      "events": 6,
+      "event_index_last": 2575,
+      "local_qubits": [
+        9,
+        16,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1460824,
+      "discarded_mass_before_renormalization": 0.1555304441689107
+    },
+    {
+      "block": 473,
+      "events": 6,
+      "event_index_last": 2581,
+      "local_qubits": [
+        21,
+        29,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 1142016,
+      "discarded_mass_before_renormalization": 0.09077817997835513
+    },
+    {
+      "block": 474,
+      "events": 3,
+      "event_index_last": 2584,
+      "local_qubits": [
+        24,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 669136,
+      "discarded_mass_before_renormalization": 0.03034532246784516
+    },
+    {
+      "block": 475,
+      "events": 6,
+      "event_index_last": 2589,
+      "local_qubits": [
+        4,
+        24,
+        29
+      ],
+      "support": 262144,
+      "support_before_truncation": 1663952,
+      "discarded_mass_before_renormalization": 0.16092207208175957
+    },
+    {
+      "block": 476,
+      "events": 6,
+      "event_index_last": 2611,
+      "local_qubits": [
+        9,
+        10,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 2063624,
+      "discarded_mass_before_renormalization": 0.412480533005425
+    },
+    {
+      "block": 477,
+      "events": 6,
+      "event_index_last": 2608,
+      "local_qubits": [
+        0,
+        10,
+        19
+      ],
+      "support": 262144,
+      "support_before_truncation": 1744056,
+      "discarded_mass_before_renormalization": 0.31688533026711907
+    },
+    {
+      "block": 478,
+      "events": 6,
+      "event_index_last": 2659,
+      "local_qubits": [
+        0,
+        4,
+        6
+      ],
+      "support": 262144,
+      "support_before_truncation": 1561768,
+      "discarded_mass_before_renormalization": 0.40309464531133876
+    },
+    {
+      "block": 479,
+      "events": 6,
+      "event_index_last": 2615,
+      "local_qubits": [
+        10,
+        14,
+        26
+      ],
+      "support": 262144,
+      "support_before_truncation": 1083112,
+      "discarded_mass_before_renormalization": 0.23034773543140685
+    },
+    {
+      "block": 480,
+      "events": 6,
+      "event_index_last": 2631,
+      "local_qubits": [
+        13,
+        19,
+        33
+      ],
+      "support": 262144,
+      "support_before_truncation": 1445768,
+      "discarded_mass_before_renormalization": 0.2821588133346956
+    },
+    {
+      "block": 481,
+      "events": 6,
+      "event_index_last": 2621,
+      "local_qubits": [
+        3,
+        20,
+        25
+      ],
+      "support": 262144,
+      "support_before_truncation": 1269192,
+      "discarded_mass_before_renormalization": 0.18969361199878576
+    },
+    {
+      "block": 482,
+      "events": 3,
+      "event_index_last": 2618,
+      "local_qubits": [
+        26,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 799616,
+      "discarded_mass_before_renormalization": 0.23462172940488035
+    },
+    {
+      "block": 483,
+      "events": 6,
+      "event_index_last": 2627,
+      "local_qubits": [
+        2,
+        3,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1331720,
+      "discarded_mass_before_renormalization": 0.3351167089876592
+    },
+    {
+      "block": 484,
+      "events": 6,
+      "event_index_last": 2645,
+      "local_qubits": [
+        5,
+        20,
+        34
+      ],
+      "support": 262144,
+      "support_before_truncation": 2092112,
+      "discarded_mass_before_renormalization": 0.5081606003203759
+    },
+    {
+      "block": 485,
+      "events": 6,
+      "event_index_last": 2644,
+      "local_qubits": [
+        10,
+        20,
+        30
+      ],
+      "support": 262144,
+      "support_before_truncation": 1204224,
+      "discarded_mass_before_renormalization": 0.20571053383450155
+    },
+    {
+      "block": 486,
+      "events": 6,
+      "event_index_last": 2657,
+      "local_qubits": [
+        3,
+        5,
+        14
+      ],
+      "support": 262144,
+      "support_before_truncation": 1341192,
+      "discarded_mass_before_renormalization": 0.2930628319570767
+    },
+    {
+      "block": 487,
+      "events": 6,
+      "event_index_last": 2655,
+      "local_qubits": [
+        14,
+        20,
+        27
+      ],
+      "support": 262144,
+      "support_before_truncation": 1022128,
+      "discarded_mass_before_renormalization": 0.19589602823154117
+    },
+    {
+      "block": 488,
+      "events": 3,
+      "event_index_last": 2662,
+      "local_qubits": [
+        6,
+        13
+      ],
+      "support": 262144,
+      "support_before_truncation": 858236,
+      "discarded_mass_before_renormalization": 0.09902734639952815
+    },
+    {
+      "block": 489,
+      "events": 6,
+      "event_index_last": 2710,
+      "local_qubits": [
+        7,
+        9,
+        16
+      ],
+      "support": 262144,
+      "support_before_truncation": 1482208,
+      "discarded_mass_before_renormalization": 0.3220723713502466
+    }
+  ]
+}

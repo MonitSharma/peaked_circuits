@@ -1,0 +1,518 @@
+{
+  "answer_blind": true,
+  "bits": [
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 0,
+      "margin_iqr": 0.0,
+      "median_margin": 0.14400000000000002,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "UNCERTAIN",
+      "index": 1,
+      "margin_iqr": 0.0,
+      "median_margin": 0.014000000000000012,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 2,
+      "margin_iqr": 0.0,
+      "median_margin": 0.6819999999999999,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 3,
+      "margin_iqr": 0.0,
+      "median_margin": 0.17199999999999993,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 4,
+      "margin_iqr": 0.0,
+      "median_margin": 0.33999999999999997,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 5,
+      "margin_iqr": 0.0,
+      "median_margin": 0.6100000000000001,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 6,
+      "margin_iqr": 0.0,
+      "median_margin": 0.18599999999999994,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 7,
+      "margin_iqr": 0.0,
+      "median_margin": 0.862,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 8,
+      "margin_iqr": 0.0,
+      "median_margin": 0.73,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 9,
+      "margin_iqr": 0.0,
+      "median_margin": 0.404,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 10,
+      "margin_iqr": 0.0,
+      "median_margin": 0.616,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 11,
+      "margin_iqr": 0.0,
+      "median_margin": 0.266,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 12,
+      "margin_iqr": 0.0,
+      "median_margin": 0.14800000000000002,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 13,
+      "margin_iqr": 0.0,
+      "median_margin": 0.958,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 14,
+      "margin_iqr": 0.0,
+      "median_margin": 0.1459999999999999,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "UNCERTAIN",
+      "index": 15,
+      "margin_iqr": 0.0,
+      "median_margin": 0.0,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 16,
+      "margin_iqr": 0.0,
+      "median_margin": 0.18200000000000005,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 17,
+      "margin_iqr": 0.0,
+      "median_margin": 0.25,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 18,
+      "margin_iqr": 0.0,
+      "median_margin": 0.19199999999999995,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 19,
+      "margin_iqr": 0.0,
+      "median_margin": 0.45399999999999996,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 20,
+      "margin_iqr": 0.0,
+      "median_margin": 0.246,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 21,
+      "margin_iqr": 0.0,
+      "median_margin": 0.484,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 22,
+      "margin_iqr": 0.0,
+      "median_margin": 0.714,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "UNCERTAIN",
+      "index": 23,
+      "margin_iqr": 0.0,
+      "median_margin": 0.07199999999999995,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "UNCERTAIN",
+      "index": 24,
+      "margin_iqr": 0.0,
+      "median_margin": 0.02400000000000002,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 25,
+      "margin_iqr": 0.0,
+      "median_margin": 0.1519999999999999,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 26,
+      "margin_iqr": 0.0,
+      "median_margin": 0.52,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 27,
+      "margin_iqr": 0.0,
+      "median_margin": 0.3440000000000001,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 28,
+      "margin_iqr": 0.0,
+      "median_margin": 0.688,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 29,
+      "margin_iqr": 0.0,
+      "median_margin": 0.706,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 30,
+      "margin_iqr": 0.0,
+      "median_margin": 0.11399999999999999,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 31,
+      "margin_iqr": 0.0,
+      "median_margin": 0.1140000000000001,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 32,
+      "margin_iqr": 0.0,
+      "median_margin": 0.6339999999999999,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "UNCERTAIN",
+      "index": 33,
+      "margin_iqr": 0.0,
+      "median_margin": 0.014000000000000012,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "UNCERTAIN",
+      "index": 34,
+      "margin_iqr": 0.0,
+      "median_margin": 0.008000000000000007,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 35,
+      "margin_iqr": 0.0,
+      "median_margin": 0.30200000000000005,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "UNCERTAIN",
+      "index": 36,
+      "margin_iqr": 0.0,
+      "median_margin": 0.08600000000000008,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 37,
+      "margin_iqr": 0.0,
+      "median_margin": 0.618,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 38,
+      "margin_iqr": 0.0,
+      "median_margin": 0.76,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "UNCERTAIN",
+      "index": 39,
+      "margin_iqr": 0.0,
+      "median_margin": 0.06800000000000006,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 40,
+      "margin_iqr": 0.0,
+      "median_margin": 0.22399999999999998,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 41,
+      "margin_iqr": 0.0,
+      "median_margin": 0.46599999999999997,
+      "method_family_count": 1,
+      "predicted_bit": "0"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "UNCERTAIN",
+      "index": 42,
+      "margin_iqr": 0.0,
+      "median_margin": 0.08800000000000008,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    },
+    {
+      "agreement_fraction": 1.0,
+      "classification": "LIKELY",
+      "index": 43,
+      "margin_iqr": 0.0,
+      "median_margin": 0.44999999999999996,
+      "method_family_count": 1,
+      "predicted_bit": "1"
+    }
+  ],
+  "candidate": "00010110000100100101100011011101110010110011",
+  "counts": {
+    "LIKELY": 35,
+    "UNCERTAIN": 9
+  },
+  "evaluation_status": "NOT_RUN_CANDIDATE_GENERATION_ONLY",
+  "method_families": [
+    "mettleq"
+  ],
+  "promotion": "WAIT_INDEPENDENT_FAMILY",
+  "run_count": 1,
+  "runs": [
+    {
+      "answer_blind": true,
+      "bits": 44,
+      "candidate": "00010110000100100101100011011101110010110011",
+      "margins": [
+        0.14400000000000002,
+        0.014000000000000012,
+        0.6819999999999999,
+        0.17199999999999993,
+        0.33999999999999997,
+        0.6100000000000001,
+        0.18599999999999994,
+        0.862,
+        0.73,
+        0.404,
+        0.616,
+        0.266,
+        0.14800000000000002,
+        0.958,
+        0.1459999999999999,
+        0.0,
+        0.18200000000000005,
+        0.25,
+        0.19199999999999995,
+        0.45399999999999996,
+        0.246,
+        0.484,
+        0.714,
+        0.07199999999999995,
+        0.02400000000000002,
+        0.1519999999999999,
+        0.52,
+        0.3440000000000001,
+        0.688,
+        0.706,
+        0.11399999999999999,
+        0.1140000000000001,
+        0.6339999999999999,
+        0.014000000000000012,
+        0.008000000000000007,
+        0.30200000000000005,
+        0.08600000000000008,
+        0.618,
+        0.76,
+        0.06800000000000006,
+        0.22399999999999998,
+        0.46599999999999997,
+        0.08800000000000008,
+        0.44999999999999996
+      ],
+      "method_family": "mettleq",
+      "p1": [
+        0.428,
+        0.493,
+        0.159,
+        0.586,
+        0.33,
+        0.805,
+        0.593,
+        0.069,
+        0.135,
+        0.298,
+        0.192,
+        0.633,
+        0.426,
+        0.021,
+        0.573,
+        0.5,
+        0.409,
+        0.625,
+        0.404,
+        0.727,
+        0.623,
+        0.258,
+        0.143,
+        0.464,
+        0.512,
+        0.576,
+        0.24,
+        0.672,
+        0.844,
+        0.853,
+        0.443,
+        0.557,
+        0.817,
+        0.507,
+        0.496,
+        0.349,
+        0.543,
+        0.191,
+        0.88,
+        0.534,
+        0.388,
+        0.267,
+        0.544,
+        0.725
+      ],
+      "run_id": "p5_D64_c1e2_seed123",
+      "shots": 1000,
+      "source": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/results/mettleq/p5_D64_c1e2_seed123/samples.tsv",
+      "source_sha256": "66ab159e1f1a169a20998dfb38944e107557319c45abf0d5726f7e236053df74",
+      "unique_strings": 1000
+    }
+  ],
+  "schema": "p12-p5-answer-blind-reliability-v1"
+}

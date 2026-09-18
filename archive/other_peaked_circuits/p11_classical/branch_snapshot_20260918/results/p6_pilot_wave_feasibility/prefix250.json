@@ -1,0 +1,42 @@
+{
+  "schema": "p6-pilot-wave-feasibility-v1",
+  "qasm": "results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
+  "source_counts": {
+    "u3": 185,
+    "cz": 65
+  },
+  "source_prefix_limit": 250,
+  "pilot_wave_operations": 471,
+  "num_qubits": 62,
+  "schedule": "greedy",
+  "cotengra_repeats": 4,
+  "planner_seconds": 29.864498124996317,
+  "rows": [
+    {
+      "prefix": 0,
+      "plan_contractions": 61,
+      "peak_elements": 1,
+      "peak_complex128_bytes": 16,
+      "peak_gib": 1.4901161193847656e-08
+    },
+    {
+      "prefix": 100,
+      "plan_contractions": 161,
+      "peak_elements": 4,
+      "peak_complex128_bytes": 64,
+      "peak_gib": 5.960464477539063e-08
+    },
+    {
+      "prefix": 471,
+      "plan_contractions": 532,
+      "peak_elements": 8,
+      "peak_complex128_bytes": 128,
+      "peak_gib": 1.1920928955078125e-07
+    }
+  ],
+  "sampling_performed": false,
+  "notes": [
+    "U3 was decomposed into Rz-Ry-Rz; gate-global phases are irrelevant to sampling.",
+    "Peak tensor size excludes repeated amplitude-query count and runtime."
+  ]
+}

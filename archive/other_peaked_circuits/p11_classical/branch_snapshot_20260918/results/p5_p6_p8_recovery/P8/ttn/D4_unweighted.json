@@ -1,0 +1,23 @@
+{
+  "schema": "p12-p8-ttn-run-v1",
+  "problem": "P8",
+  "method_family": "TTN",
+  "status": "COMPLETE",
+  "answer_blind": true,
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "n_qubits": 40,
+  "gate_count": 2704,
+  "max_bond": 4,
+  "cutoff": 0.01,
+  "tree_mode": "unweighted",
+  "beam_width": 64,
+  "candidate": "0110000010111010001110000100100000010110",
+  "candidate_probability_in_approximate_ttn": 0.0001243525024058793,
+  "approximate_total_mass": 3.692793832516877e-55,
+  "nodes_expanded": 4478,
+  "truncation_events": 1984,
+  "discarded_weight_proxy": 236.19508552658993,
+  "runtime_s": 45.815678207960445,
+  "peak_process_tree_rss_bytes": 97484800,
+  "joint_map_claim": "heuristic_beam_over_approximate_ttn"
+}

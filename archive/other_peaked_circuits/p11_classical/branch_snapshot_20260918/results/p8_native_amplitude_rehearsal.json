@@ -1,0 +1,71 @@
+{
+  "schema": "p8-native-amplitude-contraction-rehearsal-v1",
+  "qasm": "/home/hclau/p12-helios-recovery/data/external_inputs/p8/P8_grid_888_iswap.qasm",
+  "n_qubits": 40,
+  "event_count": 2704,
+  "gate_counts": {
+    "u": 1816,
+    "iswap": 888,
+    "cz": 0
+  },
+  "input_bitstring": "0000000000000000000000000000000000000000",
+  "output_bitstring": "0000000000000000000000000000000000000000",
+  "optimizer": {
+    "methods": [
+      "greedy",
+      "random-greedy"
+    ],
+    "minimize": "combo",
+    "max_repeats": 32,
+    "max_time_s": 300.0
+  },
+  "network_tensors_after_rehearsal": 3632,
+  "contraction_width_log2": 56.0,
+  "estimated_flops": 196745287698351665447848,
+  "largest_tensor_elements": 72057594037927936,
+  "largest_tensor_bytes_complex128": 1152921504606846976,
+  "slices": {
+    "4GB": {
+      "budget_bytes": 4294967296,
+      "target_elements_complex128": 268435456,
+      "number_of_slices": 21267647932558653966460912964485513216,
+      "max_tensor_elements": 268435456,
+      "contraction_width_log2": 28.0,
+      "estimated_flops": 11337329087951342273356755906761046139969608876032,
+      "slicing_overhead_flops_ratio": 5.762439965186687e+25,
+      "slicing_overhead_log2_flops": 85.57488218737834
+    },
+    "16GB": {
+      "budget_bytes": 17179869184,
+      "target_elements_complex128": 1073741824,
+      "number_of_slices": 10384593717069655257060992658440192,
+      "max_tensor_elements": 1073741824,
+      "contraction_width_log2": 30.0,
+      "estimated_flops": 27938370439283881496132960557638732612045373440,
+      "slicing_overhead_flops_ratio": 1.420027425618385e+23,
+      "slicing_overhead_log2_flops": 76.91026497581643
+    },
+    "32GB": {
+      "budget_bytes": 34359738368,
+      "target_elements_complex128": 2147483648,
+      "number_of_slices": 324518553658426726783156020576256,
+      "max_tensor_elements": 2147483648,
+      "contraction_width_log2": 31.000000000000004,
+      "estimated_flops": 1900664214718962109579377452131034664097808384,
+      "slicing_overhead_flops_ratio": 9.660532340845925e+21,
+      "slicing_overhead_log2_flops": 73.0325926831799
+    },
+    "64GB": {
+      "budget_bytes": 68719476736,
+      "target_elements_complex128": 4294967296,
+      "number_of_slices": 20282409603651670423947251286016,
+      "max_tensor_elements": 4294967296,
+      "contraction_width_log2": 32.0,
+      "estimated_flops": 225514630885593961943411702661298139003092992,
+      "slicing_overhead_flops_ratio": 1.1462263392623219e+21,
+      "slicing_overhead_log2_flops": 69.95738194623141
+    }
+  },
+  "rehearsal_runtime_s": 176.95330118620768,
+  "contracted": false
+}

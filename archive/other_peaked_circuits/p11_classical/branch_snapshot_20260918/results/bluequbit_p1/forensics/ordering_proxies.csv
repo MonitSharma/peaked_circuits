@@ -1,0 +1,7 @@
+ordering,weighted_edge_span,mean_interaction_span,max_interaction_span,max_weighted_cut
+original,17011,12.0177304964539,34,711
+reversed,17011,12.0177304964539,34,711
+weighted_degree_desc,17828,12.418439716312056,35,745
+weighted_degree_asc,17880,12.390070921985815,35,765
+fiedler,15854,11.953900709219859,33,647
+rcm,17011,12.0177304964539,34,711

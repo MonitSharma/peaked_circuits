@@ -1,0 +1,15 @@
+{
+  "observable_q_julia_one_based": 16,
+  "unresolved": true,
+  "stream": "results/p11_pps_campaign/structural_audit/p9_gate_stream.json",
+  "expectation": 0.0,
+  "elapsed_seconds": 1.947638988494873,
+  "min_abs_coeff": 0.001,
+  "julia_threads": 18,
+  "sign": 0,
+  "qasm_sha256": "f043c6cdf9e1a1ba9b3e68ea3b893277e8acacab80319d6a8524cc022886a3f9",
+  "num_qubits": 56,
+  "inferred_bit": null,
+  "terms": 0
+}
+

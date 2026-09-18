@@ -1,0 +1,15 @@
+{
+  "schema": "bluequbit-p1-research-state-v1",
+  "branch": "bluequbit-p1-classical",
+  "base_commit": "1151be3bbf952fc8a8edb642cdd95e290a4e25c1",
+  "circuit_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "blind": true,
+  "hpc_jobs_launched": false,
+  "qpu_or_cloud_jobs_launched": false,
+  "status": "mac_screening_no_hpc_survivor",
+  "strongest_finding": "P1 is dense: 564 unique interaction pairs, simple mean degree 31.333, weighted mean degree 80.944, and 153 two-qubit layers.",
+  "current_hpc_shortlist": [],
+  "mac_candidates": [{"method": "MPS", "ordering": "fiedler", "routing": "restore", "status": "PROMISING_EXPLORATORY", "reason": "lower runtime and discarded weight, but no cross-run stability and no swap reduction"}, {"method": "MPS", "ordering": "fiedler", "routing": "lookahead4", "status": "REJECTED_P9_POSITIVE_CONTROL", "reason": "reproducible 11,316 swaps and 31-second P1 runtime, but same-method P9 control failed at cutoff 0.01 (26/56) and 0.002 (28/56)"}],
+  "native_mps_screen": {"runs": 3, "same_modal_bits": 11, "mean_absolute_marginal_difference": 0.25296296296296297, "both_same_side_at_confidence_0.90": [], "promoted": false},
+  "next_gate": "No current Mac-surviving configuration is eligible for HPC; any future method must first pass the P9 positive-control gate and then show cross-seed blind P1 stability."
+}

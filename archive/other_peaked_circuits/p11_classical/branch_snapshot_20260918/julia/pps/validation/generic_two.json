@@ -1,0 +1,100 @@
+{
+  "schema": "pps_validation_v1",
+  "name": "generic_two",
+  "num_qubits": 2,
+  "observable_qiskit_zero_based": 0,
+  "expected": 1.0,
+  "gates": [
+    {
+      "instruction_index": 0,
+      "gate_name": "unitary",
+      "qargs_qiskit_zero_based": [
+        0,
+        1
+      ],
+      "qargs_julia_one_based": [
+        1,
+        2
+      ],
+      "parameters": [
+        "[[1.+0.j 0.+0.j 0.+0.j 0.+0.j]\n [0.+0.j 0.+0.j 1.+0.j 0.+0.j]\n [0.+0.j 1.+0.j 0.+0.j 0.+0.j]\n [0.+0.j 0.+0.j 0.+0.j 1.+0.j]]"
+      ],
+      "native_pps_mapping": null,
+      "fallback": "TransferMapGate",
+      "matrix_01_basis": [
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "phase": "p9_smoke",
+  "threshold": 0.001,
+  "positions_julia_one_based": [1, 8, 16, 24, 32, 40, 48, 56],
+  "resolved_positions": 0,
+  "unresolved_positions": 8,
+  "correct_resolved_signs": 0,
+  "status": "NO_GO_PPS_P9_SMOKE",
+  "reason": "all eight observables ended with zero surviving Pauli terms and unresolved zero expectation",
+  "p11_executed": false,
+  "blindness": "INTACT"
+}

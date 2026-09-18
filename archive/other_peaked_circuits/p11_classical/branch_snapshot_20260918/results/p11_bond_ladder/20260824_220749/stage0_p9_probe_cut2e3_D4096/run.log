@@ -1,0 +1,172 @@
+2026-08-25 06:07:50,097 [INFO] loaded /Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm: qubits=56 ops={'u': 3890, 'rzz': 1917}
+2026-08-25 06:07:50,103 [INFO] Pass: Collect2qBlocks - 2.68579 (ms)
+2026-08-25 06:07:50,112 [INFO] Pass: ConsolidateBlocks - 8.91685 (ms)
+2026-08-25 06:07:50,113 [INFO] after two-qubit block consolidation: ops={'unitary': 1885}
+2026-08-25 06:07:50,132 [INFO] environment: python=3.10.16 qiskit=1.4.5 quimb=1.11.2 numpy=2.2.6 scipy=1.15.3 machine=arm64
+2026-08-25 06:07:50,282 [INFO] Total unitaries: 1885 = 942 (left) + 943 (right)
+2026-08-25 06:07:50,282 [INFO] Rewiring with SabreSwap(trials=90, heuristic='decay', seed=123)
+2026-08-25 06:07:50,282 [INFO] No-progress fail-fast guardrail enabled: abort after 40 consecutive zero-work unswap cycle(s)
+2026-08-25 06:07:50,282 [INFO] [start rewire](phase=initial, side=left, layers=59, trials=90, seed=123, parallel=False)
+2026-08-25 06:07:51,534 [INFO] [end rewire](phase=initial, side=left, routed_layers=1355, elapsed_s=1.25)
+2026-08-25 06:07:51,534 [INFO] [start rewire](phase=initial, side=right, layers=58, trials=90, seed=123, parallel=False)
+2026-08-25 06:07:52,815 [INFO] [end rewire](phase=initial, side=right, routed_layers=1561, elapsed_s=1.28)
+2026-08-25 06:07:52,829 [INFO] [start compressing] -> {'max_bond': 1, 'max_links': 4, 'total_elems': 224, 'total_shapes': 334, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:52,889 [INFO] [1L/1353](swap: 11, u: 0 | c_u: 0 | t_u_l: 0/942 | t_u_r: 0/943 | t_u: 0/1885) -> {'max_bond': 1, 'max_links': 4, 'total_elems': 224, 'total_shapes': 334, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:52,892 [WARNING] live plot.png generation disabled: No module named 'matplotlib'
+2026-08-25 06:07:52,945 [INFO] [1R/1559](swap: 12, u: 0 | c_u: 0 | t_u_l: 0/942 | t_u_r: 0/943 | t_u: 0/1885) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 512, 'total_shapes': 406, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:53,001 [INFO] [2L/1353](swap: 11, u: 1 | c_u: 1 | t_u_l: 1/942 | t_u_r: 0/943 | t_u: 1/1885) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 844, 'total_shapes': 450, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:53,056 [INFO] [2R/1559](swap: 10, u: 1 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 1456, 'total_shapes': 504, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:53,109 [INFO] [3L/1353](swap: 14, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2464, 'total_shapes': 576, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:53,165 [INFO] [3R/1559](swap: 13, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 4316, 'total_shapes': 700, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:53,223 [INFO] [4R/1559](swap: 13, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 9464, 'total_shapes': 844, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:53,286 [INFO] [5R/1559](swap: 13, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 13496, 'total_shapes': 988, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:53,349 [INFO] [6R/1559](swap: 12, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 17516, 'total_shapes': 1102, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:53,417 [INFO] [4L/1353](swap: 14, u: 1 | c_u: 3 | t_u_l: 2/942 | t_u_r: 1/943 | t_u: 3/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 33200, 'total_shapes': 1360, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:53,503 [INFO] [7R/1559](swap: 12, u: 0 | c_u: 3 | t_u_l: 2/942 | t_u_r: 1/943 | t_u: 3/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 50120, 'total_shapes': 1666, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:53,610 [INFO] [8R/1559](swap: 10, u: 1 | c_u: 4 | t_u_l: 2/942 | t_u_r: 2/943 | t_u: 4/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 85444, 'total_shapes': 1968, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:53,773 [INFO] [5L/1353](swap: 13, u: 1 | c_u: 5 | t_u_l: 3/942 | t_u_r: 2/943 | t_u: 5/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 124352, 'total_shapes': 2254, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:53,978 [INFO] [6L/1353](swap: 8, u: 1 | c_u: 6 | t_u_l: 4/942 | t_u_r: 2/943 | t_u: 6/1885) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 154672, 'total_shapes': 2488, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:54,236 [INFO] [9R/1559](swap: 9, u: 1 | c_u: 7 | t_u_l: 4/942 | t_u_r: 3/943 | t_u: 7/1885) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 230320, 'total_shapes': 2992, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:54,629 [INFO] [10R/1559](swap: 9, u: 1 | c_u: 8 | t_u_l: 4/942 | t_u_r: 4/943 | t_u: 8/1885) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 426400, 'total_shapes': 3876, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:54,630 [INFO] [end compressing](left: 1349, right: 1551) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 426400, 'total_shapes': 3876, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 06:07:54,634 [WARNING] samples.png generation disabled: No module named 'matplotlib'
+{
+  "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "tag": "r",
+  "num_qubits": 56,
+  "initial_ops": {
+    "u": 3890,
+    "rzz": 1917
+  },
+  "consolidated_ops": {
+    "unitary": 1885
+  },
+  "compress_time_s": 4.498572999989847,
+  "stats_rows": 20,
+  "run_status": "complete",
+  "environment": {
+    "python": "3.10.16 (main, Feb 12 2025, 15:03:04) [Clang 19.1.6 ]",
+    "python_executable": "~/Code/p12-helios-recovery/.venv-p9-isolated/bin/python",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "qiskit": "1.4.5",
+    "quimb": "1.11.2",
+    "numpy": "2.2.6",
+    "numpy_config": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"15.0.0\",\n      \"commands\": \"cc\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.1.0\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"15.0.0\",\n      \"commands\": \"c++\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"build\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    }\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"accelerate\",\n      \"found\": true,\n      \"version\": \"unknown\",\n      \"detection method\": \"system\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    },\n    \"lapack\": {\n      \"name\": \"accelerate\",\n      \"found\": true,\n      \"version\": \"unknown\",\n      \"detection method\": \"system\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/private/var/folders/<redacted>\",\n    \"version\": \"3.10\"\n  },\n  \"SIMD Extensions\": {\n    \"baseline\": [\n      \"NEON\",\n      \"NEON_FP16\",\n      \"NEON_VFPV4\",\n      \"ASIMD\"\n    ],\n    \"found\": [\n      \"ASIMDHP\"\n    ],\n    \"not found\": [\n      \"ASIMDFHM\"\n    ]\n  }\n}\n",
+    "thread_env": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "numpy_runtime": "WARNING: `threadpoolctl` not found in system! Install it by `pip install threadpoolctl`. Once installed, try `np.show_runtime` again for more detailed build information\n[{'numpy_version': '2.2.6',\n  'python': '3.10.16 (main, Feb 12 2025, 15:03:04) [Clang 19.1.6 ]',\n  'uname': uname_result(system='Darwin', node='<redacted>', release='25.5.0', version='Darwin Kernel Version 25.5.0: Tue Jun  9 22:28:29 PDT 2026; root:xnu-12377.121.10~1/RELEASE_ARM64_T6030', machine='arm64')},\n {'simd_extensions': {'baseline': ['NEON', 'NEON_FP16', 'NEON_VFPV4', 'ASIMD'],\n                      'found': ['ASIMDHP'],\n                      'not_found': ['ASIMDFHM']}}]\n",
+    "numpy_multiarray_umath": "~/Code/p12-helios-recovery/.venv-p9-isolated/lib/python3.10/site-packages/numpy/_core/_multiarray_umath.cpython-310-darwin.so",
+    "scipy": "1.15.3",
+    "scipy_config": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"15.0.0\",\n      \"commands\": \"cc\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.0.12\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"clang\",\n      \"linker\": \"ld64\",\n      \"version\": \"15.0.0\",\n      \"commands\": \"c++\"\n    },\n    \"fortran\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld64\",\n      \"version\": \"13.3.0\",\n      \"commands\": \"gfortran\"\n    },\n    \"pythran\": {\n      \"version\": \"0.17.0\",\n      \"include directory\": \"../../../../../../private/var/folders/<redacted>\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"build\": {\n      \"cpu\": \"aarch64\",\n      \"family\": \"aarch64\",\n      \"endian\": \"little\",\n      \"system\": \"darwin\"\n    },\n    \"cross-compiled\": false\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"Accelerate\",\n      \"found\": true,\n      \"version\": \"unknown\",\n      \"detection method\": \"extraframeworks\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    },\n    \"lapack\": {\n      \"name\": \"Accelerate\",\n      \"found\": true,\n      \"version\": \"unknown\",\n      \"detection method\": \"extraframeworks\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    },\n    \"pybind11\": {\n      \"name\": \"pybind11\",\n      \"version\": \"2.13.6\",\n      \"detection method\": \"config-tool\",\n      \"include directory\": \"unknown\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/private/var/folders/<redacted>\",\n    \"version\": \"3.10\"\n  }\n}\n",
+    "scipy_flapack": "~/Code/p12-helios-recovery/.venv-p9-isolated/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-darwin.so"
+  },
+  "parameters": {
+    "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+    "outdir": "/Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/20260824_220749/stage0_p9_probe_cut2e3_D4096",
+    "tag": "r",
+    "samples": 1000,
+    "expected_bitstring": "01101110111001100000100000001010011100101101010111110111",
+    "seed": 123,
+    "max_bond": 4096,
+    "cutoff": 0.002,
+    "unswap_threshold": 1000000.0,
+    "center_ratio": 0.5,
+    "max_its": 20,
+    "sabre_trials": 90,
+    "post_sabre_trials": 20,
+    "absorb_score": "total_elems",
+    "route_candidates": 1,
+    "route_score": "none",
+    "route_score_lookahead": 8,
+    "parallel_route_candidates": false,
+    "route_candidate_workers": null,
+    "route_seed_stride": 1009,
+    "unswap_select_mode": "bond",
+    "unswap_alignment_weight": 0.0,
+    "unswap_alignment_protect_gain": null,
+    "unswap_alignment_max_replacements": null,
+    "unswap_alignment_tie_loss": 1.0,
+    "unswap_route_proxy_weight": 0.0,
+    "unswap_route_proxy_lookahead": 8,
+    "unswap_route_proxy_include_swaps": false,
+    "unswap_route_proxy_allow_nonbond": false,
+    "unswap_route_proxy_policy": "veto",
+    "unswap_route_proxy_min_benefit": 1.0,
+    "unswap_route_proxy_max_bond_loss": 0.0,
+    "unswap_route_proxy_protect_gain": null,
+    "unswap_route_proxy_max_cycles": null,
+    "unswap_pair_lookahead_limit": 8,
+    "swap_gate_representation": "current",
+    "max_unswap_cycles": null,
+    "max_work_gates": 8,
+    "abort_after_no_progress_unswap_cycles": 40,
+    "parallel_absorb_probes": false,
+    "parallel_rewire": false,
+    "adaptive_parallel_rewire": false,
+    "adaptive_parallel_rewire_min_speedup": 1.15,
+    "unswap_probe_max_bond": null,
+    "unswap_probe_cutoff": null,
+    "reuse_full_swap_probe": true,
+    "unswap_trigger_max_bond": null,
+    "unswap_max_swaps_per_step": null,
+    "unswap_hot_bonds": 0,
+    "unswap_hot_radius": 0,
+    "unswap_adaptive_stop_max_bond": null,
+    "unswap_adaptive_stop_min_rel_improvement": null,
+    "unswap_adaptive_stop_min_iteration": 0,
+    "skip_sampling": true,
+    "plots": true,
+    "plot_interval_s": 30.0,
+    "console_log_level": "INFO"
+  },
+  "partial": false,
+  "leftover_left_layers": 1349,
+  "leftover_right_layers": 1551,
+  "final_max_bond": 256,
+  "final_total_elems": 426400,
+  "stage_rows": {
+    "rewiring": 2,
+    "absorbing": 16,
+    "termination": 1,
+    "timing_summary": 1
+  },
+  "peak_max_bond": 256.0,
+  "peak_total_elems": 426400.0,
+  "peak_total_shapes": 3876.0,
+  "last_work_consumed": 8.0,
+  "termination_reason": "max_work_gates",
+  "termination_detail": "consumed 8 work gates; target was 8",
+  "termination_unswap_cycle": 0,
+  "initial_rewire_time_s": 2.5320194580126554,
+  "initial_rewire_wall_time_s": 2.532788790995255,
+  "post_unswap_rewire_time_s": 0.0,
+  "post_unswap_rewire_wall_time_s": 0.0,
+  "absorb_probe_time_s": 1.7610699179786025,
+  "absorb_probe_wall_time_s": 1.7699720450327732,
+  "absorb_lookahead_time_s": 0.0,
+  "unswap_time_s": 0.0,
+  "rewire_time_s": 2.5320194580126554,
+  "accounted_time_s": 4.3019915030454285,
+  "rewire_wall_time_s": 2.532788790995255,
+  "accounted_wall_time_s": 4.302760836028028,
+  "truncation_diagnostics": {
+    "max_bond_limit": 4096.0,
+    "rows_at_max_bond": 0,
+    "rows_at_max_bond_by_stage": {},
+    "absorb_probe_left_hits_max_bond": 0,
+    "absorb_probe_right_hits_max_bond": 0,
+    "selected_absorbs_hit_max_bond": 0,
+    "absorb_probe_left_over_unswap_threshold": 0,
+    "absorb_probe_right_over_unswap_threshold": 0,
+    "first_stage_at_max_bond": null,
+    "first_unswap_cycle_at_max_bond": null,
+    "first_time_at_max_bond_s": null
+  },
+  "sampling_skipped_reason": "disabled"
+}

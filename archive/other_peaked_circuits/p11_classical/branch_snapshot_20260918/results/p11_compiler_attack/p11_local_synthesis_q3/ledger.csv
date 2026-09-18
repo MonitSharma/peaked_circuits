@@ -1,0 +1,21 @@
+start,stop,wires,status,accepted,old_two_qubit,new_two_qubit,fidelity,permutation,reason
+255,265,"(15, 26, 40)",unavailable_no_bqskit,False,2,,,"(15, 26, 40)",qiskit fallback is exact for two wires only; BQSKit unavailable
+285,297,"(26, 31, 88)",unavailable_no_bqskit,False,2,,,"(26, 31, 88)",qiskit fallback is exact for two wires only; BQSKit unavailable
+1820,1830,"(9, 37, 48)",unavailable_no_bqskit,False,2,,,"(9, 37, 48)",qiskit fallback is exact for two wires only; BQSKit unavailable
+1870,1882,"(9, 27, 37)",unavailable_no_bqskit,False,2,,,"(9, 27, 37)",qiskit fallback is exact for two wires only; BQSKit unavailable
+1882,1890,"(9, 27, 37)",unavailable_no_bqskit,False,2,,,"(9, 27, 37)",qiskit fallback is exact for two wires only; BQSKit unavailable
+4555,4567,"(14, 26, 44)",unavailable_no_bqskit,False,2,,,"(14, 26, 44)",qiskit fallback is exact for two wires only; BQSKit unavailable
+4567,4575,"(14, 44, 59)",unavailable_no_bqskit,False,2,,,"(14, 44, 59)",qiskit fallback is exact for two wires only; BQSKit unavailable
+5299,5311,"(6, 13, 17)",unavailable_no_bqskit,False,2,,,"(6, 13, 17)",qiskit fallback is exact for two wires only; BQSKit unavailable
+5315,5326,"(0, 22, 33)",unavailable_no_bqskit,False,2,,,"(0, 22, 33)",qiskit fallback is exact for two wires only; BQSKit unavailable
+7750,7760,"(13, 73, 83)",unavailable_no_bqskit,False,2,,,"(13, 73, 83)",qiskit fallback is exact for two wires only; BQSKit unavailable
+8030,8041,"(36, 54, 92)",unavailable_no_bqskit,False,2,,,"(36, 54, 92)",qiskit fallback is exact for two wires only; BQSKit unavailable
+8065,8075,"(70, 84, 86)",unavailable_no_bqskit,False,2,,,"(70, 84, 86)",qiskit fallback is exact for two wires only; BQSKit unavailable
+8849,8861,"(51, 70, 90)",unavailable_no_bqskit,False,2,,,"(51, 70, 90)",qiskit fallback is exact for two wires only; BQSKit unavailable
+8861,8871,"(44, 71, 90)",unavailable_no_bqskit,False,2,,,"(44, 71, 90)",qiskit fallback is exact for two wires only; BQSKit unavailable
+8871,8880,"(70, 71, 90)",unavailable_no_bqskit,False,2,,,"(70, 71, 90)",qiskit fallback is exact for two wires only; BQSKit unavailable
+9780,9790,"(14, 81, 82)",unavailable_no_bqskit,False,2,,,"(14, 81, 82)",qiskit fallback is exact for two wires only; BQSKit unavailable
+9885,9895,"(50, 81, 93)",unavailable_no_bqskit,False,2,,,"(50, 81, 93)",qiskit fallback is exact for two wires only; BQSKit unavailable
+9920,9930,"(53, 72, 93)",unavailable_no_bqskit,False,2,,,"(53, 72, 93)",qiskit fallback is exact for two wires only; BQSKit unavailable
+9965,9976,"(33, 50, 72)",unavailable_no_bqskit,False,2,,,"(33, 50, 72)",qiskit fallback is exact for two wires only; BQSKit unavailable
+9976,9985,"(50, 53, 72)",unavailable_no_bqskit,False,2,,,"(50, 53, 72)",qiskit fallback is exact for two wires only; BQSKit unavailable

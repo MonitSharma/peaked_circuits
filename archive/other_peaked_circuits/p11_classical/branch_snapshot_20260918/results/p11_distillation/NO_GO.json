@@ -1,0 +1,7 @@
+{
+  "gate": "P9_A",
+  "decision": "NO-GO",
+  "p11_run": false,
+  "reason": "completed D16/D32/D64 ladder degraded; D128 stopped under resource policy; no protocol freeze",
+  "blind": true
+}

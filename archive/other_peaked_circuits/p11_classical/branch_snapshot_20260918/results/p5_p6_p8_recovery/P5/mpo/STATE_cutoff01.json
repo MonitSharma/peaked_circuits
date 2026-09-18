@@ -1,0 +1,17 @@
+{
+  "schema": "p12-p5-mpo-cutoff-control-v1",
+  "problem": "P5",
+  "answer_blind": true,
+  "path": "P5/mpo/full_d128_cutoff01",
+  "cutoff": 0.01,
+  "status": "COMPLETE",
+  "all_consolidated_gates": 902,
+  "unswap_cycles": 7,
+  "peak_bond": 128,
+  "final_bond": 28,
+  "peak_rss_gib": 0.873,
+  "candidate_freeze": "P5/freezes/P5_MPO_CANDIDATE_FREEZE_CUTOFF01.json",
+  "comparison": {"baseline_cutoff": 0.005, "baseline_freeze": "P5/freezes/P5_MPO_CANDIDATE_FREEZE.json", "hamming_distance": 26, "stability": "FAIL"},
+  "scientific_decision": "MPO_CUTOFF_SENSITIVE",
+  "reason": "The run is numerically complete but the decoded candidate changes substantially with cutoff; no exact or converged claim is allowed."
+}

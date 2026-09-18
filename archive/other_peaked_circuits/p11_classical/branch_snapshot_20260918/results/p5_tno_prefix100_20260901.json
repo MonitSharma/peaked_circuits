@@ -1,0 +1,49 @@
+{
+  "answer_blind": true,
+  "runs": [
+    {
+      "answer_blind": true,
+      "configuration": {
+        "chunk_size": 4,
+        "cutoff": 0.01,
+        "max_bond": 16,
+        "max_seconds": 120.0,
+        "method": "local-late",
+        "optimize": "greedy"
+      },
+      "environment": {
+        "platform": "Windows-10-10.0.26200-SP0",
+        "python": "3.11.5"
+      },
+      "layers": 21,
+      "qubits": 44,
+      "runtime_s": 0.75,
+      "schema": "p6-public-tno-screen-v1",
+      "source": "C:\\Users\\monitsharma\\Downloads\\SMU-Quantum\\p12-helios-recovery\\results\\expert_review_p5_p6_p8_20260828\\inputs\\P5_granite_summit.qasm",
+      "source_sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+      "status": "CORE_COMPLETE",
+      "trace": [
+        {
+          "distance": 0,
+          "elapsed_s": 0.14000000001396984,
+          "max_bond": 2,
+          "num_tensors": 44
+        },
+        {
+          "distance": 4,
+          "elapsed_s": 0.26500000001396984,
+          "max_bond": 4,
+          "num_tensors": 44
+        },
+        {
+          "distance": 8,
+          "elapsed_s": 0.3279999999795109,
+          "max_bond": 4,
+          "num_tensors": 44
+        }
+      ],
+      "twoq_prefix": 100
+    }
+  ],
+  "schema": "p6-public-tno-screen-v1"
+}

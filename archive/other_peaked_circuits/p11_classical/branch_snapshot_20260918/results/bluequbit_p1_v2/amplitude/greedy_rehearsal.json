@@ -1,0 +1,14 @@
+{
+  "schema": "bluequbit-p1-v2-amplitude-greedy-rehearsal-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "candidate": "101100011111001001010111101000110100",
+  "optimizer": "greedy",
+  "rehearse_seconds": 1.0276664580451325,
+  "contraction_width": 60.0,
+  "cost_log10": 24.393544471250845,
+  "peak_intermediate_elements": 1315051091192185544,
+  "total_flops": 2474824867553142853320488,
+  "actual_contraction_probe": {"runtime_s": 62.26, "peak_rss_bytes": 19486146560, "returned": false},
+  "decision": "AMPLITUDE_VERIFIER_NO_GO_GREEDY_WIDTH_60"
+}

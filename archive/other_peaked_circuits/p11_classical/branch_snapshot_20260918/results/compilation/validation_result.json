@@ -1,0 +1,14 @@
+{
+  "diagnostics": [
+    "Compilation, mapping, or target validation remains incomplete"
+  ],
+  "passed": false,
+  "predicates": {
+    "backend_validation_passed": false,
+    "compilation_succeeded": false,
+    "hardware_not_attempted": true,
+    "mapping_complete": false,
+    "paid_resources_not_consumed": true,
+    "unknown_permutation_count_zero": false
+  }
+}

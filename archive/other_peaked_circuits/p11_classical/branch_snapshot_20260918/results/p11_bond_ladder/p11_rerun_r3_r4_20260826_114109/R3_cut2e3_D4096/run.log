@@ -1,0 +1,30 @@
+2026-08-26 19:41:11,147 [INFO] loaded /Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P11_Hqap_98x1999.qasm: qubits=98 ops={'u': 7996, 'cz': 1999}
+2026-08-26 19:41:11,155 [INFO] Pass: Collect2qBlocks - 4.99392 (ms)
+2026-08-26 19:41:11,167 [INFO] Pass: ConsolidateBlocks - 12.36296 (ms)
+2026-08-26 19:41:11,169 [INFO] after two-qubit block consolidation: ops={'unitary': 1984}
+2026-08-26 19:41:11,198 [INFO] environment: python=3.10.21 qiskit=1.4.5 quimb=1.11.2 numpy=2.2.6 scipy=1.15.2 machine=arm64
+2026-08-26 19:41:11,471 [INFO] Total unitaries: 1984 = 992 (left) + 992 (right)
+2026-08-26 19:41:11,471 [INFO] Rewiring with SabreSwap(trials=90, heuristic='decay', seed=123)
+2026-08-26 19:41:11,471 [INFO] Post-unswap rewire candidate scoring enabled: candidates=2, score='lookahead_total', lookahead=8, seed_stride=1009
+2026-08-26 19:41:11,471 [INFO] No-progress fail-fast guardrail enabled: abort after 40 consecutive zero-work unswap cycle(s)
+2026-08-26 19:41:11,472 [INFO] [start rewire](phase=initial, side=left, layers=57, trials=90, seed=123, parallel=False)
+2026-08-26 19:41:14,564 [INFO] [end rewire](phase=initial, side=left, routed_layers=2367, elapsed_s=3.09)
+2026-08-26 19:41:14,564 [INFO] [start rewire](phase=initial, side=right, layers=71, trials=90, seed=123, parallel=False)
+2026-08-26 19:41:17,056 [INFO] [end rewire](phase=initial, side=right, routed_layers=2266, elapsed_s=2.49)
+2026-08-26 19:41:17,080 [INFO] [start compressing] -> {'max_bond': 1, 'max_links': 4, 'total_elems': 392, 'total_shapes': 586, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:17,181 [INFO] [1L/2365](swap: 19, u: 0 | c_u: 0 | t_u_l: 0/992 | t_u_r: 0/992 | t_u: 0/1984) -> {'max_bond': 1, 'max_links': 4, 'total_elems': 392, 'total_shapes': 586, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:17,185 [WARNING] live plot.png generation disabled: No module named 'matplotlib'
+2026-08-26 19:41:17,274 [INFO] [1R/2264](swap: 14, u: 1 | c_u: 1 | t_u_l: 0/992 | t_u_r: 1/992 | t_u: 1/1984) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 736, 'total_shapes': 672, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:17,364 [INFO] [2L/2365](swap: 21, u: 0 | c_u: 1 | t_u_l: 0/992 | t_u_r: 1/992 | t_u: 1/1984) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 1288, 'total_shapes': 774, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:17,457 [INFO] [2R/2264](swap: 15, u: 0 | c_u: 1 | t_u_l: 0/992 | t_u_r: 1/992 | t_u: 1/1984) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 2164, 'total_shapes': 846, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:17,551 [INFO] [3R/2264](swap: 15, u: 0 | c_u: 1 | t_u_l: 0/992 | t_u_r: 1/992 | t_u: 1/1984) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 3596, 'total_shapes': 946, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:17,644 [INFO] [4R/2264](swap: 16, u: 0 | c_u: 1 | t_u_l: 0/992 | t_u_r: 1/992 | t_u: 1/1984) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 6488, 'total_shapes': 1066, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:17,739 [INFO] [3L/2365](swap: 20, u: 2 | c_u: 3 | t_u_l: 2/992 | t_u_r: 1/992 | t_u: 3/1984) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 10044, 'total_shapes': 1292, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:17,836 [INFO] [5R/2264](swap: 16, u: 0 | c_u: 3 | t_u_l: 2/992 | t_u_r: 1/992 | t_u: 3/1984) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 17040, 'total_shapes': 1520, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:17,940 [INFO] [6R/2264](swap: 15, u: 0 | c_u: 3 | t_u_l: 2/992 | t_u_r: 1/992 | t_u: 3/1984) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 30852, 'total_shapes': 1826, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:18,061 [INFO] [4L/2365](swap: 20, u: 0 | c_u: 3 | t_u_l: 2/992 | t_u_r: 1/992 | t_u: 3/1984) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 55836, 'total_shapes': 2276, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:18,210 [INFO] [7R/2264](swap: 14, u: 1 | c_u: 4 | t_u_l: 2/992 | t_u_r: 2/992 | t_u: 4/1984) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 106904, 'total_shapes': 2758, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:18,444 [INFO] [8R/2264](swap: 15, u: 0 | c_u: 4 | t_u_l: 2/992 | t_u_r: 2/992 | t_u: 4/1984) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 195320, 'total_shapes': 3300, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:18,940 [INFO] [9R/2264](swap: 15, u: 0 | c_u: 4 | t_u_l: 2/992 | t_u_r: 2/992 | t_u: 4/1984) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 304152, 'total_shapes': 3850, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:19,758 [INFO] [5L/2365](swap: 19, u: 0 | c_u: 4 | t_u_l: 2/992 | t_u_r: 2/992 | t_u: 4/1984) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 596304, 'total_shapes': 5094, 'total_links': 390, 'num_tensors': 98}
+2026-08-26 19:41:22,233 [INFO] [6L/2365](swap: 18, u: 1 | c_u: 5 | t_u_l: 3/992 | t_u_r: 2/992 | t_u: 5/1984) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 800396, 'total_shapes': 5980, 'total_links': 390, 'num_tensors': 98}

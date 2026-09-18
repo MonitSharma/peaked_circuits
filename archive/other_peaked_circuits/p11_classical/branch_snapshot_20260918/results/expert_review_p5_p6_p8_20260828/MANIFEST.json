@@ -1,0 +1,47 @@
+{
+  "schema": "p5-p6-p8-expert-review-v1",
+  "assembled": "2026-08-28",
+  "purpose": "Auditable expert-review package for classical P5, P6, and P8 experiments",
+  "validated_answers_present": false,
+  "external_tracker_verification_present": false,
+  "hardware_or_emulator_measurements_present": false,
+  "problems": {
+    "P5": {
+      "candidate": "00010110000100100101100011011101110010110011",
+      "bits": 44,
+      "method": "MettleQ low-bond MPS marginal distillation",
+      "max_bond": 64,
+      "cutoff": 0.01,
+      "shots": 1000,
+      "unique_strings": 1000,
+      "split_half_hamming": 5,
+      "bootstrap_bits_ge_0_90": 39,
+      "status": "candidate_only"
+    },
+    "P6": {
+      "candidate": "11011011110101011010100010111011001100010100000011100001110010",
+      "bits": 62,
+      "method": "MettleQ low-bond MPS marginal distillation",
+      "max_bond": 64,
+      "cutoff": 0.01,
+      "shots": 1000,
+      "unique_strings": 1000,
+      "split_half_hamming": 0,
+      "bootstrap_bits_ge_0_90": 62,
+      "status": "strong_candidate_only"
+    },
+    "P8": {
+      "bits": 40,
+      "methods_tested": ["MettleQ MPS", "CircuitPermMPS", "PEPS", "PEPO bounded probe"],
+      "status": "no_stable_candidate",
+      "p8_peps_completed_points": 3,
+      "p8_pepo_valid_output": false,
+      "p8_valid_tno_output": false
+    }
+  },
+  "notes": [
+    "Candidate strings are not externally verified answers.",
+    "P8 PEPS and PEPO use the explicit iSWAP matrix in the included patched runners.",
+    "A verified logical_to_portal round-trip was not established."
+  ]
+}

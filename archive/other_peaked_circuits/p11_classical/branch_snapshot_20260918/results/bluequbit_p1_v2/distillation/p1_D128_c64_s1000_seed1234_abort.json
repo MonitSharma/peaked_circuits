@@ -1,0 +1,13 @@
+{
+  "schema": "bluequbit-p1-v2-distillation-run-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "configuration": {"max_bond": 128, "cutoff": 1e-12, "samples": 1000, "seed": 1234, "dtype": "complex64", "method": "public_CircuitPermMPS_bitstring_distillation"},
+  "n_qubits": 36,
+  "gate_count": 4407,
+  "aborted": "external_wall_watchdog",
+  "observed_runtime_s": 102.0,
+  "observed_peak_rss_bytes": 108544000,
+  "progress": "Circuit evolution did not return before the bounded tool window; no candidate artifact was emitted.",
+  "decision": "REJECTED_DISTILLATION_BOND128_TIMEOUT"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "p12-p6-mpo-campaign-state-v1",
+  "problem": "P6",
+  "answer_blind": true,
+  "p9_calibration_gate": "PASS",
+  "solver_provenance": "controls/mpo/PROVENANCE.json",
+  "completed_diagnostic": {"path": "P6/mpo/full_d128", "status": "COMPLETE", "work_gates": 2593, "unswap_cycles": 10, "peak_bond": 128, "final_bond": 19, "peak_rss_gib": 1.708, "sampling": "SKIPPED"},
+  "sampled_followup": {"path": "P6/mpo/full_d128_decode", "status": "ABORTED_NO_CANDIDATE", "termination": "manual_interrupt_before_900s_bound_after_stagnation", "partial_work_gates": 2004, "peak_bond": 128, "peak_rss_gib": 1.541, "candidate": null, "sampling": "NOT_REACHED"},
+  "calibrated_d512_attempt": {"path": "P6/mpo/d512_c6e4", "status": "NONCONVERGED", "termination": "no_progress_cycle_limit", "work_gates": 86, "peak_bond": 256, "final_bond": 32, "peak_rss_gib": 2.68, "candidate": null},
+  "calibrated_d512_noprogress20": {"path": "P6/mpo/d512_c6e4_noprogress20", "status": "ABORTED_NO_CANDIDATE", "termination": "bounded_manual_interrupt_after_stagnation", "partial_work_gates": 102, "peak_bond": 256, "peak_rss_gib": 2.917, "candidate": null},
+  "calibrated_d512_no_progress_guard": {"path": "P6/mpo/d512_c6e4_no_progress_guard", "status": "RESOURCE_NO_GO", "termination": "manual_interrupt_after_slow_progress", "partial_work_gates": 35, "peak_bond": 256, "peak_rss_gib": 2.48, "candidate": null, "observed_progress": "26 gates in 128 seconds before interruption"},
+  "weighted_mps_fallback": {"path": "P6/mps/D128_heavy_greedy.json", "status": "METHOD_REJECTED", "bond": 128, "retained_norm_proxy": 1.1829070618647547e-30, "max_bond_reached": 8, "candidate": null},
+  "full_d128_decode_retry": {"path": "P6/mpo/full_d128_decode_retry_isolated", "status": "RESOURCE_NO_GO", "termination": "manual_interrupt_after_stagnation", "partial_work_gates": 122, "peak_bond": 128, "peak_rss_gib": 1.539, "candidate": null, "reason": "Sampling-enabled retry did not reproduce the earlier no-sampling completion trajectory."},
+  "scientific_decision": "NONCONVERGED",
+  "reason": "Full unswapping compression completed once, but calibrated D512 attempts stalled before extraction and the weighted-backbone MPS fallback collapsed without a MAP record; no new P6 candidate is promoted."
+}

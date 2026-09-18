@@ -1,0 +1,29 @@
+{
+  "schema": "p12-p5-mpo-calibrated-state-v2",
+  "problem": "P5",
+  "answer_blind": true,
+  "solver_git_commit": "b1bed0a5621f99d95ca7834a82d72dfd5db46cf4",
+  "python_environment": "/Users/monitsharma/.conda/envs/p9-openblas/bin/python",
+  "path": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_c6e4_conda_noprogress20/p5_d512_c6e4_conda_noprogress20/summary.json",
+  "status": "COMPLETE_BUT_PROMOTION_REJECTED",
+  "work_gates": 902,
+  "unswap_cycles": 66,
+  "peak_bond": 336,
+  "final_bond": 130,
+  "peak_rss_gib": 2.981,
+  "sample_peak_fraction": 0.006,
+  "decoder_top1_probability": 0.01366216711225518,
+  "selected_absorbs_hit_max_bond": 0,
+  "candidate_freeze": "P5/freezes/P5_D512_C6E4_CONDA_FREEZE.json",
+  "health_gate": {
+    "sample_peak_fraction_min": 0.03,
+    "decoder_top1_probability_min": 0.01,
+    "selected_absorbs_hit_max_bond_required": false,
+    "final_bond_requires_strong_collapse": true,
+    "passed": false,
+    "failed_reasons": ["sample_peak_fraction_below_p9_reference", "final_bond_not_strongly_collapsed"]
+  },
+  "scientific_decision": "METHOD_NOT_PROMOTED",
+  "posthoc_evaluation": "USER_ASSERTED_CORRECT; see evaluation/P5_POSTHOC_USER_ASSERTION.json",
+  "reason": "The exact P9 regime transfers numerically and completes P5, but P5 does not reproduce the P9 peaked-sampling signature; retain the frozen string only as an answer-blind diagnostic."
+}

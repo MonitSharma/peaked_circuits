@@ -1,0 +1,8 @@
+{
+  "panel": ["h_z", "rx_z", "u_z", "rzz_two", "cx_rz_x", "cz_two", "u_nonadjacent", "rzz_nonadjacent", "generic_two"],
+  "ground_truth": "Qiskit dense Statevector",
+  "max_absolute_error": 2.220446049250313e-16,
+  "tolerance": 1e-10,
+  "status": "PASS",
+  "validated": ["matrix ordering", "Heisenberg direction", "Qiskit zero-based to Julia one-based indexing", "native gates", "generic one-qubit TransferMapGate", "generic two-qubit TransferMapGate", "nonadjacent qubits", "measurement permutation"]
+}

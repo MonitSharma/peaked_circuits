@@ -1,0 +1,881 @@
+{
+  "accepted": 0,
+  "block_size": 2,
+  "blocks": 31,
+  "middle_out": true,
+  "new_two_qubit": 0,
+  "offset": 0,
+  "old_two_qubit": 62,
+  "permutation_candidates": 62,
+  "qasm": "data/canonical/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "results": [
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        11,
+        22
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 3208,
+      "status": "verified_no_improvement",
+      "stop": 3215,
+      "tried_permutations": [
+        [
+          11,
+          22
+        ],
+        [
+          22,
+          11
+        ]
+      ],
+      "wires": [
+        11,
+        22
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        15,
+        38
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 2550,
+      "status": "verified_no_improvement",
+      "stop": 2556,
+      "tried_permutations": [
+        [
+          15,
+          38
+        ],
+        [
+          38,
+          15
+        ]
+      ],
+      "wires": [
+        15,
+        38
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 0.9999999999999999,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        30,
+        35
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 3308,
+      "status": "verified_no_improvement",
+      "stop": 3315,
+      "tried_permutations": [
+        [
+          30,
+          35
+        ],
+        [
+          35,
+          30
+        ]
+      ],
+      "wires": [
+        30,
+        35
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        6,
+        36
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 3315,
+      "status": "verified_no_improvement",
+      "stop": 3321,
+      "tried_permutations": [
+        [
+          6,
+          36
+        ],
+        [
+          36,
+          6
+        ]
+      ],
+      "wires": [
+        6,
+        36
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        40,
+        44
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 2372,
+      "status": "verified_no_improvement",
+      "stop": 2379,
+      "tried_permutations": [
+        [
+          40,
+          44
+        ],
+        [
+          44,
+          40
+        ]
+      ],
+      "wires": [
+        40,
+        44
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 0.9999999999999998,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        2,
+        51
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 2297,
+      "status": "verified_no_improvement",
+      "stop": 2304,
+      "tried_permutations": [
+        [
+          2,
+          51
+        ],
+        [
+          51,
+          2
+        ]
+      ],
+      "wires": [
+        2,
+        51
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        38,
+        47
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 3612,
+      "status": "verified_no_improvement",
+      "stop": 3619,
+      "tried_permutations": [
+        [
+          38,
+          47
+        ],
+        [
+          47,
+          38
+        ]
+      ],
+      "wires": [
+        38,
+        47
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        19,
+        32
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 3708,
+      "status": "verified_no_improvement",
+      "stop": 3714,
+      "tried_permutations": [
+        [
+          19,
+          32
+        ],
+        [
+          32,
+          19
+        ]
+      ],
+      "wires": [
+        19,
+        32
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        1,
+        4
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 2092,
+      "status": "verified_no_improvement",
+      "stop": 2099,
+      "tried_permutations": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "wires": [
+        1,
+        4
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 0.9999999999999999,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        15,
+        25
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 3775,
+      "status": "verified_no_improvement",
+      "stop": 3782,
+      "tried_permutations": [
+        [
+          15,
+          25
+        ],
+        [
+          25,
+          15
+        ]
+      ],
+      "wires": [
+        15,
+        25
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 0.9999999999999998,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        14,
+        29
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 1992,
+      "status": "verified_no_improvement",
+      "stop": 1999,
+      "tried_permutations": [
+        [
+          14,
+          29
+        ],
+        [
+          29,
+          14
+        ]
+      ],
+      "wires": [
+        14,
+        29
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        12,
+        37
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 3829,
+      "status": "verified_no_improvement",
+      "stop": 3834,
+      "tried_permutations": [
+        [
+          12,
+          37
+        ],
+        [
+          37,
+          12
+        ]
+      ],
+      "wires": [
+        12,
+        37
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0000000000000004,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        22,
+        49
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 1946,
+      "status": "verified_no_improvement",
+      "stop": 1953,
+      "tried_permutations": [
+        [
+          22,
+          49
+        ],
+        [
+          49,
+          22
+        ]
+      ],
+      "wires": [
+        22,
+        49
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0000000000000004,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        11,
+        39
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 1934,
+      "status": "verified_no_improvement",
+      "stop": 1941,
+      "tried_permutations": [
+        [
+          11,
+          39
+        ],
+        [
+          39,
+          11
+        ]
+      ],
+      "wires": [
+        11,
+        39
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        14,
+        42
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 1844,
+      "status": "verified_no_improvement",
+      "stop": 1850,
+      "tried_permutations": [
+        [
+          14,
+          42
+        ],
+        [
+          42,
+          14
+        ]
+      ],
+      "wires": [
+        14,
+        42
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 0.9999999999999999,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        28,
+        37
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 3972,
+      "status": "verified_no_improvement",
+      "stop": 3978,
+      "tried_permutations": [
+        [
+          28,
+          37
+        ],
+        [
+          37,
+          28
+        ]
+      ],
+      "wires": [
+        28,
+        37
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0000000000000004,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        0,
+        55
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 1690,
+      "status": "verified_no_improvement",
+      "stop": 1696,
+      "tried_permutations": [
+        [
+          0,
+          55
+        ],
+        [
+          55,
+          0
+        ]
+      ],
+      "wires": [
+        0,
+        55
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        34,
+        35
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 4250,
+      "status": "verified_no_improvement",
+      "stop": 4257,
+      "tried_permutations": [
+        [
+          34,
+          35
+        ],
+        [
+          35,
+          34
+        ]
+      ],
+      "wires": [
+        34,
+        35
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        26,
+        49
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 4267,
+      "status": "verified_no_improvement",
+      "stop": 4273,
+      "tried_permutations": [
+        [
+          26,
+          49
+        ],
+        [
+          49,
+          26
+        ]
+      ],
+      "wires": [
+        26,
+        49
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0000000000000002,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        20,
+        47
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 1520,
+      "status": "verified_no_improvement",
+      "stop": 1527,
+      "tried_permutations": [
+        [
+          20,
+          47
+        ],
+        [
+          47,
+          20
+        ]
+      ],
+      "wires": [
+        20,
+        47
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        18,
+        43
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 4494,
+      "status": "verified_no_improvement",
+      "stop": 4499,
+      "tried_permutations": [
+        [
+          18,
+          43
+        ],
+        [
+          43,
+          18
+        ]
+      ],
+      "wires": [
+        18,
+        43
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        6,
+        24
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 4550,
+      "status": "verified_no_improvement",
+      "stop": 4556,
+      "tried_permutations": [
+        [
+          6,
+          24
+        ],
+        [
+          24,
+          6
+        ]
+      ],
+      "wires": [
+        6,
+        24
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 0.9999999999999998,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        44,
+        46
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 1159,
+      "status": "verified_no_improvement",
+      "stop": 1166,
+      "tried_permutations": [
+        [
+          44,
+          46
+        ],
+        [
+          46,
+          44
+        ]
+      ],
+      "wires": [
+        44,
+        46
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 0.9999999999999999,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        8,
+        46
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 4953,
+      "status": "verified_no_improvement",
+      "stop": 4960,
+      "tried_permutations": [
+        [
+          8,
+          46
+        ],
+        [
+          46,
+          8
+        ]
+      ],
+      "wires": [
+        8,
+        46
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        1,
+        13
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 5023,
+      "status": "verified_no_improvement",
+      "stop": 5030,
+      "tried_permutations": [
+        [
+          1,
+          13
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "wires": [
+        1,
+        13
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        1,
+        54
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 726,
+      "status": "verified_no_improvement",
+      "stop": 732,
+      "tried_permutations": [
+        [
+          1,
+          54
+        ],
+        [
+          54,
+          1
+        ]
+      ],
+      "wires": [
+        1,
+        54
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 0.9999999999999998,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        5,
+        19
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 643,
+      "status": "verified_no_improvement",
+      "stop": 650,
+      "tried_permutations": [
+        [
+          5,
+          19
+        ],
+        [
+          19,
+          5
+        ]
+      ],
+      "wires": [
+        5,
+        19
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 0.9999999999999998,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        19,
+        34
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 5236,
+      "status": "verified_no_improvement",
+      "stop": 5243,
+      "tried_permutations": [
+        [
+          19,
+          34
+        ],
+        [
+          34,
+          19
+        ]
+      ],
+      "wires": [
+        19,
+        34
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        23,
+        24
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 453,
+      "status": "verified_no_improvement",
+      "stop": 460,
+      "tried_permutations": [
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          23
+        ]
+      ],
+      "wires": [
+        23,
+        24
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 1.0000000000000004,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        37,
+        53
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 5737,
+      "status": "verified_no_improvement",
+      "stop": 5742,
+      "tried_permutations": [
+        [
+          37,
+          53
+        ],
+        [
+          53,
+          37
+        ]
+      ],
+      "wires": [
+        37,
+        53
+      ]
+    },
+    {
+      "accepted": false,
+      "fidelity": 0.9999999999999999,
+      "new_two_qubit": 2,
+      "old_two_qubit": 2,
+      "permutation": [
+        14,
+        16
+      ],
+      "reason": "exact replacement does not reduce 2q count",
+      "start": 41,
+      "status": "verified_no_improvement",
+      "stop": 48,
+      "tried_permutations": [
+        [
+          14,
+          16
+        ],
+        [
+          16,
+          14
+        ]
+      ],
+      "wires": [
+        14,
+        16
+      ]
+    }
+  ]
+}

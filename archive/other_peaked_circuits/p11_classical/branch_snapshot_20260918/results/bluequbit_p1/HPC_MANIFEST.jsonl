@@ -1,0 +1,1 @@
+{"record_type":"manifest_summary","schema":"bluequbit-p1-hpc-manifest-v1","status":"empty_until_mac_survivor","reason":"No P1 configuration has yet met the evidence gate for HPC: the bounded MPO run timed out early and the Aer MPS fallback produced 1000 unique samples.","hpc_jobs_launched":false}

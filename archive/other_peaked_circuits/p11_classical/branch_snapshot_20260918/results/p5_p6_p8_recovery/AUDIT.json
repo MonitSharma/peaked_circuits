@@ -1,0 +1,61 @@
+{
+  "schema": "p12-p5-p6-p8-final-audit-v1",
+  "branch": "p11_classical",
+  "scientific_checkpoint_commit": "29453c8",
+  "tracked_worktree_clean_at_audit": true,
+  "local_only": true,
+  "hardware_or_cloud_submissions": false,
+  "answer_blind_recovery_generation": true,
+  "target_answer_accessed_by_recovery": false,
+  "input_qasm_sha256": {
+    "P5": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+    "P6": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
+    "P8": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484"
+  },
+  "validation": {
+    "p9_bit_order": {"status": "PASS", "artifact": "controls/p9/P9_DECODER_CALIBRATION.json"},
+    "p9_mpo_gate": {"status": "PASS", "artifact": "controls/p9/P9_DECODER_CALIBRATION.json"},
+    "synthetic_controls": {"status": "PASS", "artifact": "CAMPAIGN_STATE.json"},
+    "test_suite": {"status": "PASS", "passed": 201, "warnings": 1},
+    "resource_guards": {"rss_hard_gib": 24, "threads": 4, "swap_growth_limit_gib": 2, "wall_guards_used": true}
+  },
+  "problems": {
+    "P5": {
+      "classification": "PROMISING_CANDIDATE_FAMILY",
+      "candidate_promoted": false,
+      "answer_blind_freezes": ["P5/freezes/P5_CANDIDATE_FREEZE.json", "P5/freezes/P5_MPO_CANDIDATE_FREEZE.json", "P5/freezes/P5_D512_C6E4_CONDA_FREEZE.json"],
+      "posthoc_evaluation_separated": true,
+      "posthoc_user_assertion_artifact": "evaluation/P5_POSTHOC_USER_ASSERTION.json",
+      "posthoc_assertion_used_for_generation": false,
+      "result": "D512/cutoff-0.0006 MPO produced a frozen diagnostic candidate, but it failed the full P9-derived health gate; no exact recovery claim."
+    },
+    "P6": {
+      "classification": "NONCONVERGED",
+      "candidate_promoted": false,
+      "candidate": null,
+      "previous_user_evaluated_candidate_is_prior": false,
+      "routes": ["P9-calibrated MPO stalled/resource-no-go", "weighted-backbone MPS rejected", "sampled D128 retry resource-no-go"],
+      "result": "No new answer-blind bitstring was produced; the inherited 34/62 string remains unpromoted."
+    },
+    "P8": {
+      "classification": "CURRENT_METHODS_EXHAUSTED",
+      "candidate_promoted": false,
+      "candidate": null,
+      "validated_controls": ["exact TTN control", "exact graph-BP control"],
+      "rejected_routes": ["simple-update PEPS", "PEPO positivity", "MPS", "MPO", "TNO", "target TTN bond/topology stability", "TTN-derived graph-BP stability"],
+      "frozen_diagnostic_artifacts": ["P8/ttn/P8_TTN_CANDIDATE_FREEZE.json", "P8/graph_tn/P8_TTN_GRAPH_BP_FREEZE.json"],
+      "result": "Target TTN and derived graph-BP runs completed, but candidate families were unstable across bond/topology levels."
+    }
+  },
+  "resource_summary": {
+    "largest_recorded_peak_rss_gib": 5.9,
+    "largest_target_TTN_peak_rss_gib": 0.94,
+    "known_aborted_or_stopped_stages": true,
+    "aborts_were_recorded": true
+  },
+  "completion_scope": {
+    "solved": false,
+    "classical_impossibility_claim": false,
+    "remaining_work": "A materially different, independently validated representation or environment construction would be required; routine parameter retries are not justified."
+  }
+}

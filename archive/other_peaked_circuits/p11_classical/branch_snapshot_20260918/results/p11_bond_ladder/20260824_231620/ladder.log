@@ -1,0 +1,15 @@
+[23:16:20] === preflight ===
+[23:16:20] solver hardening present (QR guard; unsafe norm mutation absent)
+[23:16:20] disk free: 77 GiB | threads: 1 | RSS watchdog: 12 GB
+[23:16:20] python: /Users/monitsharma/.conda/envs/p9-openblas/bin/python
+[23:16:20] output: /Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/20260824_231620
+[23:16:20] === stage 0: bounded D4096 probe + full P9 control ===
+[23:16:20] --- START stage0_p9_probe_cut2e3_D4096 (wall cap 15 min) ---
+[23:16:30] --- END stage0_p9_probe_cut2e3_D4096: exit_0 | 0 min | peak RSS 0.0 GB
+    work_consumed=8.0  reason=max_work_gates  peak_bond=256.0  peak_elems=426400.0
+    bond_cap=4096.0  rows_at_cap=0  first_stage_at_cap=None   <-- cap binding?
+[23:16:30] --- START stage0_p9_control_cut6e4_D512 (wall cap 240 min) ---
+[23:33:54] --- END stage0_p9_control_cut6e4_D512: exit_0 | 17 min | peak RSS 2.7 GB
+    work_consumed=179.0  reason=no_progress_cycle_limit  peak_bond=256.0  peak_elems=960544.0
+    bond_cap=512.0  rows_at_cap=0  first_stage_at_cap=None   <-- cap binding?
+[23:33:54] stage 0 FAIL: P9 control did not reproduce. Do NOT trust the ladder.

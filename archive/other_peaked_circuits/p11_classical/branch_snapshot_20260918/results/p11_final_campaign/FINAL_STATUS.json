@@ -1,0 +1,19 @@
+{
+  "status": "P9_METHODS_EXHAUSTED",
+  "recommendation": "No remaining tested classical attack with a credible mechanism and tractable resource profile succeeded on this M3 Pro / 36 GB campaign.",
+  "p11_processed": false,
+  "p11_answer_contamination": false,
+  "p9_gate_1": "NO_GO",
+  "p9_gate_2": "NOT_RUN_NO_FROZEN_GLOBAL_REWRITE",
+  "exact_panel_reductions": 2,
+  "panel_blocks": 60,
+  "panel_old_2q": 170,
+  "exact_panel_2q_reduction": 3,
+  "pyzx_verified_graph_rewrite": true,
+  "circuitpermmps_p9_peak": false,
+  "ddsim_first_prefix_status": "TIMEOUT",
+  "qcec_whole_p9_status": "TECHNICAL_TIMEOUT",
+  "beam_controller_status": "TECHNICAL_LIMITATION",
+  "full_regression": "133 passed in 42.18s",
+  "checksums_verified": 27
+}

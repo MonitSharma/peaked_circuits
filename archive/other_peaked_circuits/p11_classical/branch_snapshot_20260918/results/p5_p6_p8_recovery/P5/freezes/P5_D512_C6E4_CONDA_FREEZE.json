@@ -1,0 +1,103 @@
+{
+  "answer_blind": true,
+  "candidate": "11110000001110100101110011111101010001100001",
+  "candidate_sha256": "6f4e059f95df7bda7a0ea8eb3f290e1af70cc09a9500a364c2e630289097770f",
+  "decoder_bitwise_map_diagnostic": "11000010101110100101110011111001000101111001",
+  "evaluation_status": "NOT_RUN_AT_FREEZE",
+  "frozen_at": "2026-08-29T04:08:16Z",
+  "git_head": "57fd93048907de671fde8fa026da2c16cfdf5f9f",
+  "mapping_source": "MPO predicted_bitstring/top_permuted_samples already canonicalized by solver HEAD; P9 decoder and sampling control validated",
+  "measurement_permutation_recorded_in_summary": [
+    27,
+    4,
+    23,
+    40,
+    34,
+    17,
+    35,
+    41,
+    3,
+    42,
+    0,
+    32,
+    30,
+    19,
+    39,
+    22,
+    20,
+    13,
+    7,
+    26,
+    36,
+    5,
+    6,
+    9,
+    28,
+    12,
+    38,
+    10,
+    1,
+    31,
+    37,
+    18,
+    24,
+    8,
+    16,
+    14,
+    2,
+    11,
+    43,
+    29,
+    25,
+    21,
+    33,
+    15
+  ],
+  "problem": "P5",
+  "qasm": "results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
+  "qasm_sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
+  "schema": "p12-p5-mpo-candidate-freeze-v1",
+  "summary": "results/p5_p6_c6e4_conda_noprogress20/p5_d512_c6e4_conda_noprogress20/summary.json",
+  "top_k": [
+    {
+      "bitstring": "11110000001110100101110011111101010001100001",
+      "count": 6
+    },
+    {
+      "bitstring": "11111010011110100101110011111101010001100001",
+      "count": 3
+    },
+    {
+      "bitstring": "11110010011100100101110011111101010001100001",
+      "count": 2
+    },
+    {
+      "bitstring": "11110000001110100101110010111101010000100001",
+      "count": 2
+    },
+    {
+      "bitstring": "11110000001110100101110011111001010001100001",
+      "count": 2
+    },
+    {
+      "bitstring": "11110000001110100101110011011101010001100101",
+      "count": 2
+    },
+    {
+      "bitstring": "11110000001110100101110000101101010001100000",
+      "count": 2
+    },
+    {
+      "bitstring": "10110000001110100101110011111101010001100001",
+      "count": 2
+    },
+    {
+      "bitstring": "11110000001010100101110011111101010001100011",
+      "count": 2
+    },
+    {
+      "bitstring": "11110000001010100101110011111101010001000001",
+      "count": 2
+    }
+  ]
+}

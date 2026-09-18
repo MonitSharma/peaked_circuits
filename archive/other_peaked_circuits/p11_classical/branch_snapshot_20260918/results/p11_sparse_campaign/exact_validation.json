@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "name": "one_qubit",
+      "qasm_n_qubits": 3,
+      "gate_count": 3,
+      "qstvec_fidelity": 1.0,
+      "bass_fixed_fidelity": 1.0,
+      "bass_adaptive_fidelity": 1.0,
+      "qstvec_max_amplitude_error": 0.0,
+      "bass_fixed_max_amplitude_error": 0.0,
+      "bass_adaptive_max_amplitude_error": 0.0,
+      "qstvec_top1": "010",
+      "bass_fixed_top1": "010",
+      "bass_adaptive_top1": "010",
+      "exact_top1": "010",
+      "measurement_permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "nonadjacent_two_qubit",
+      "qasm_n_qubits": 3,
+      "gate_count": 3,
+      "qstvec_fidelity": 1.0000000000000004,
+      "bass_fixed_fidelity": 1.0000000000000004,
+      "bass_adaptive_fidelity": 1.0000000000000004,
+      "qstvec_max_amplitude_error": 0.0,
+      "bass_fixed_max_amplitude_error": 0.0,
+      "bass_adaptive_max_amplitude_error": 0.0,
+      "qstvec_top1": "000",
+      "bass_fixed_top1": "000",
+      "bass_adaptive_top1": "000",
+      "exact_top1": "000",
+      "measurement_permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "arbitrary_and_rzz",
+      "qasm_n_qubits": 3,
+      "gate_count": 3,
+      "qstvec_fidelity": 1.0,
+      "bass_fixed_fidelity": 1.0,
+      "bass_adaptive_fidelity": 1.0,
+      "qstvec_max_amplitude_error": 0.0,
+      "bass_fixed_max_amplitude_error": 0.0,
+      "bass_adaptive_max_amplitude_error": 0.0,
+      "qstvec_top1": "000",
+      "bass_fixed_top1": "000",
+      "bass_adaptive_top1": "000",
+      "exact_top1": "000",
+      "measurement_permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "measurement_permutation",
+      "qasm_n_qubits": 3,
+      "gate_count": 2,
+      "qstvec_fidelity": 1.0000000000000004,
+      "bass_fixed_fidelity": 1.0000000000000004,
+      "bass_adaptive_fidelity": 1.0000000000000004,
+      "qstvec_max_amplitude_error": 0.0,
+      "bass_fixed_max_amplitude_error": 0.0,
+      "bass_adaptive_max_amplitude_error": 0.0,
+      "qstvec_top1": "000",
+      "bass_fixed_top1": "000",
+      "bass_adaptive_top1": "000",
+      "exact_top1": "000",
+      "measurement_permutation": [
+        2,
+        0,
+        1
+      ]
+    }
+  ]
+}

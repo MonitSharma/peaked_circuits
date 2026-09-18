@@ -1,0 +1,18 @@
+{
+  "schema": "pauli-support-growth-v1",
+  "answer_blind": true,
+  "date": "2026-09-01",
+  "observable": "Z_0",
+  "threshold": 1e-08,
+  "cap": 2000000,
+  "note": "Naive sparse Pauli propagation. Terms counted after each event, walking the circuit in reverse (Heisenberg picture). Implementation validated exact to 1e-9 against statevector on 16 small u3+cz cases.",
+  "results": [
+    {"circuit": "P5_granite_summit.qasm", "solved": true, "total_events": 5720,
+     "growth": {"50": 1, "100": 1, "200": 1, "400": 44685},
+     "exceeded_cap_at_event": 440, "fraction_of_circuit_reached": 0.0769},
+    {"circuit": "P6_titan_pinnacle.qasm", "solved": false, "total_events": 10486,
+     "growth": {"50": 7, "100": 154, "200": 154, "400": 1314, "800": 46880},
+     "exceeded_cap_at_event": 1270, "fraction_of_circuit_reached": 0.1211}
+  ],
+  "verdict": "CLOSED. Support explodes on P5, a circuit already solved by the MPO route, at 7.7% of the circuit. A method that cannot compute one <Z_0> on a solved control has no claim on P6."
+}

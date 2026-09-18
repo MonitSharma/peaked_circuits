@@ -1,0 +1,31 @@
+[04:04:21] === preflight ===
+[04:04:21] solver hardening present (QR guard; unsafe norm mutation absent)
+[04:04:21] disk free: 77 GiB | threads: 1 | RSS watchdog: 18 GB
+[04:04:21] python: /Users/monitsharma/.conda/envs/p9-openblas/bin/python
+[04:04:21] output: /Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/20260826_040421
+[04:04:21] === stage 0: bounded D4096 probe + full P9 control ===
+[04:04:21] --- START stage0_p9_probe_cut2e3_D4096 (wall cap 15 min) ---
+[04:04:31] --- END stage0_p9_probe_cut2e3_D4096: exit_0 | 0 min | peak RSS 0.0 GB
+    work_consumed=8.0  reason=max_work_gates  peak_bond=256.0  peak_elems=426400.0
+    bond_cap=4096.0  rows_at_cap=0  first_stage_at_cap=None   <-- cap binding?
+[04:04:31] --- START stage0_p9_control_cut6e4_D512 (wall cap 240 min) ---
+[04:34:38] --- END stage0_p9_control_cut6e4_D512: exit_0 | 30 min | peak RSS 3.6 GB
+    work_consumed=1885.0  reason=completed  peak_bond=512.0  peak_elems=1068384.0
+    bond_cap=512.0  rows_at_cap=4  first_stage_at_cap=unswapping   <-- cap binding?
+[04:34:38] stage 0 PASS: full P9 control reproduced at cutoff 6e-4 / bond 512
+[04:34:38] === stage 1: P11 ladder (4 x 2h, P11 stays blind) ===
+[04:34:38] --- START R1_cut2e3_D512 (wall cap 120 min) ---
+[06:34:40] !! wall cap reached — terminating R1_cut2e3_D512
+[06:34:50] --- END R1_cut2e3_D512: wall_limit | 120 min | peak RSS 6.2 GB
+    work_consumed=77.0  reason=None  peak_bond=512.0  peak_elems=2117264.0
+    bond_cap=512.0  rows_at_cap=1  first_stage_at_cap=unswapping   <-- cap binding?
+[06:34:50] --- START R2_cut6e4_D4096 (wall cap 120 min) ---
+[08:34:52] !! wall cap reached — terminating R2_cut6e4_D4096
+[08:35:02] --- END R2_cut6e4_D4096: wall_limit | 120 min | peak RSS 9.8 GB
+    work_consumed=64.0  reason=None  peak_bond=512.0  peak_elems=2183852.0
+    bond_cap=4096.0  rows_at_cap=0  first_stage_at_cap=None   <-- cap binding?
+[08:35:02] --- START R3_cut2e3_D4096 (wall cap 120 min) ---
+[10:27:36] --- END R3_cut2e3_D4096: exit_143 | 112 min | peak RSS 7.1 GB
+    work_consumed=64.0  reason=None  peak_bond=754.0  peak_elems=2183852.0
+    bond_cap=4096.0  rows_at_cap=0  first_stage_at_cap=None   <-- cap binding?
+[10:27:36] --- START R4_cut5e3_D4096 (wall cap 120 min) ---

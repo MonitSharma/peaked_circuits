@@ -1,0 +1,53 @@
+{
+  "schema": "p12-p8-graph-bp-exact-control-v1",
+  "status": "CONTROL_ONLY",
+  "method_family": "graph-BP",
+  "answer_blind": true,
+  "n_qubits": 10,
+  "converged": true,
+  "iterations": 10,
+  "max_message_delta": 0.0,
+  "top_k": [
+    {
+      "bitstring": "1111111111",
+      "unnormalized_score": 1174522.9545675176,
+      "probability": 0.6120727114259139
+    },
+    {
+      "bitstring": "0000000000",
+      "unnormalized_score": 262144.0,
+      "probability": 0.13660966628201496
+    },
+    {
+      "bitstring": "0111111111",
+      "unnormalized_score": 42761.758054642625,
+      "probability": 0.022284200658710455
+    },
+    {
+      "bitstring": "0011111111",
+      "unnormalized_score": 40341.28118362511,
+      "probability": 0.021022830810104202
+    },
+    {
+      "bitstring": "0001111111",
+      "unnormalized_score": 37010.34970974781,
+      "probability": 0.019287000743214863
+    },
+    {
+      "bitstring": "1111111110",
+      "unnormalized_score": 33880.46984329378,
+      "probability": 0.017655943598824442
+    },
+    {
+      "bitstring": "0000111111",
+      "unnormalized_score": 33044.955097989114,
+      "probability": 0.017220536377870414
+    },
+    {
+      "bitstring": "0000011111",
+      "unnormalized_score": 28734.743563468804,
+      "probability": 0.014974379459017756
+    }
+  ],
+  "production_promotion": "NOT_ALLOWED_FROM_PAIRWISE_CONTROL_ALONE"
+}

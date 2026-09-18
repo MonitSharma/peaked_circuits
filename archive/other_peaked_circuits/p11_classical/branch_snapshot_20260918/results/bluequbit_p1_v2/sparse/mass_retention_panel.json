@@ -1,0 +1,13 @@
+{
+  "schema": "bluequbit-p1-v2-sparse-mass-retention-panel-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "top_k": 65536,
+  "dtype": "complex128",
+  "schedule": "original",
+  "runs": [
+    {"p_frac": 0.999, "runtime_s": 61.0702, "final_support": 63244, "top1": "101110101110101111001111101001010001", "top1_probability_renormalized": 0.0022222307601621463, "cumulative_discarded_mass_proxy": 211.29386651733506},
+    {"p_frac": 0.9999, "runtime_s": 61.2758, "final_support": 65536, "top1": "000000011100111001100001010111011011", "top1_probability_renormalized": 0.0033186727139946403, "cumulative_discarded_mass_proxy": 215.39441312252416}
+  ],
+  "decision": "REJECTED_MASS_RETENTION_NONCONVERGENCE"
+}

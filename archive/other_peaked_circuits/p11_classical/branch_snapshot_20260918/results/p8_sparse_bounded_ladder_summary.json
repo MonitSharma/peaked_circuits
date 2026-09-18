@@ -1,0 +1,25 @@
+{
+  "schema": "p8-sparse-bounded-ladder-v2",
+  "qasm": "P8_grid_888_iswap.qasm",
+  "qubits": 40,
+  "events": 2704,
+  "gate_counts": {"u3": 1816, "iswap": 888},
+  "exact_control": {
+    "environment": "isolated HPC sparse environment",
+    "qubits": 5,
+    "gates": 40,
+    "qiskit_max_abs_error": 1.755e-16
+  },
+  "top_k_runs": [
+    {"k": 65536, "top1": "0111101010100011011101100101010011101011", "top1_probability": 0.0017773219313259895, "top2_probability": 0.0017203357014759287, "top1_top2_ratio": 1.0331250637891027, "hamming_to_previous": null, "minimum_cumulative_retained_mass": 2.4392942125932195e-55, "runtime_s": 29.344048406928778, "peak_rss_gib": 0.051654815673828125, "max_support": 65536, "cumulative_discarded_mass_proxy": 117.13664668870881, "iswap_support_preserved": true},
+    {"k": 262144, "top1": "1100100001001011100101110000100000000111", "top1_probability": 0.0006325513441580899, "top2_probability": 0.0005377372568754885, "top1_top2_ratio": 1.1763204726291736, "hamming_to_previous": 21, "minimum_cumulative_retained_mass": 1.0628565524922575e-50, "runtime_s": 137.25399305531755, "peak_rss_gib": 0.1030120849609375, "max_support": 262144, "cumulative_discarded_mass_proxy": 107.72930594265654, "iswap_support_preserved": true},
+    {"k": 1048576, "top1": "1100100001010000100000101001110010101101", "top1_probability": 0.0002589684793067666, "top2_probability": 0.00023261964840835925, "top1_top2_ratio": 1.113270014285949, "hamming_to_previous": 14, "minimum_cumulative_retained_mass": 3.079565338830492e-46, "runtime_s": 690.8492742930539, "peak_rss_gib": 0.3185920715332031, "max_support": 1048576, "cumulative_discarded_mass_proxy": 98.61882196976087, "iswap_support_preserved": true}
+  ],
+  "probability_mass_runs": [
+    {"p_frac": 0.99, "k_cap": 262144, "top1": "0100010110111001101011001000001011111100", "top1_probability": 0.0016086381688835965, "top2_probability": 0.0011666373430912222, "top1_top2_ratio": 1.3788673733186108, "hamming_to_p999": 19, "minimum_cumulative_retained_mass": 2.3391591895306112e-51, "runtime_s": 144.67107803281397, "peak_rss_gib": 0.0987548828125, "final_support": 152412, "iswap_support_preserved": true},
+    {"p_frac": 0.999, "k_cap": 262144, "top1": "0100101110111000000110110011101001000110", "top1_probability": 0.0002753645366889636, "top2_probability": 0.0002694859819827862, "top1_top2_ratio": 1.0218139535976047, "hamming_to_p099": 19, "minimum_cumulative_retained_mass": 4.651786432558223e-51, "runtime_s": 156.76416932884604, "peak_rss_gib": 0.09978103637695312, "final_support": 262144, "iswap_support_preserved": true}
+  ],
+  "stopped_before": [4194304, 16777216],
+  "decision": "CLOSE_SPARSE_ROUTE",
+  "interpretation": "The exact support-preserving iSWAP idea is correct, but top-1 changes by 21 then 14 bits across k=2^16,2^18,2^20; p=0.99 versus p=0.999 changes 19 bits. Top-1/top-2 separation is weak and cumulative retained mass collapses. No candidate bitstring is submission-safe."
+}

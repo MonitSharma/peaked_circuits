@@ -1,0 +1,23 @@
+{
+  "gate": "P9_A",
+  "decision": "NO-GO",
+  "score_null_separation": "strong",
+  "mapping_stability": 0.017857142857142856,
+  "large_window_stability": 0.023809523809523808,
+  "layer_window_stability": 0.017857142857142856,
+  "sequence_window_stability": 0.017857142857142856,
+  "sequence_best_z": 3.255385980001124,
+  "routed_sequence_window_stability": 0.017857142857142856,
+  "routed_best_score": 0.375,
+  "routed_best_mismatched_score": 0.21875,
+  "sparse_side_experiment_decision": "stop_no_signal_or_incomplete",
+  "sparse_completed_rows": 2,
+  "sparse_max_retained_completed": 16384,
+  "unitary_sequence_window_stability": 0.041666666666666664,
+  "unitary_sequence_best_z": 1.4449400306055196,
+  "dynamic_tracker_best_z": 0.7271892744731013,
+  "dynamic_tracker_max_coherence": 0.07417582417582416,
+  "p11_structural_recovery_started": false,
+  "p11_simulation_started": false,
+  "p11_blindness_preserved": true
+}

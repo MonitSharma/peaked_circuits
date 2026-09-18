@@ -1,0 +1,12 @@
+{
+  "schema": "bluequbit-p1-v2-mcpropagate-probe-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "observable_q_zero_based": 5,
+  "configuration": {"max_size": 4096, "resampling_size": 2048, "min_abs_coeff": 0.0, "thread": false, "squared": false},
+  "status": "ABORTED_RESOURCE_WATCHDOG",
+  "observed_runtime_s": 34.0,
+  "observed_peak_rss_kib": 18625744,
+  "result": null,
+  "decision": "REJECTED_RANDOMIZED_PPS_MEMORY_FEASIBILITY"
+}

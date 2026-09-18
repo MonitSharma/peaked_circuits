@@ -1,0 +1,69 @@
+diff --git a/src/p9solver/cli.py b/src/p9solver/cli.py
+index 8f2a846..c2d26f4 100644
+--- a/src/p9solver/cli.py
++++ b/src/p9solver/cli.py
+@@ -702,6 +702,16 @@ def build_parser():
+             "unswapping and directly absorb the residual layers into the MPO."
+         ),
+     )
++    parser.add_argument(
++        "--terminal-handoff-gates",
++        type=int,
++        default=0,
++        help=(
++            "Stop compression before the final unswap attractor once this many "
++            "or fewer work gates remain. With --save-mpo, serialize the live "
++            "MPO and exact residual layers for a separate tail solver."
++        ),
++    )
+     parser.add_argument(
+         "--virtualize-tail-swaps",
+         action="store_true",
+@@ -1178,6 +1188,7 @@ def main(argv=None):
+         on_stats=handle_live_stats,
+         max_unswap_cycles=args.max_unswap_cycles,
+         max_work_gates=args.max_work_gates,
++        terminal_handoff_gates=args.terminal_handoff_gates,
+         abort_after_no_progress_unswap_cycles=(
+             None
+             if args.abort_after_no_progress_unswap_cycles is not None
+@@ -1277,7 +1288,7 @@ def main(argv=None):
+ 
+     expected = args.expected_bitstring or None
+     terminal_reason = summary.get("termination_reason")
+-    terminal_failure = terminal_reason not in (None, "completed", "max_work_gates", "max_unswap_cycles", "early_stopping_gates")
++    terminal_failure = terminal_reason not in (None, "completed", "max_work_gates", "max_unswap_cycles", "early_stopping_gates", "terminal_handoff")
+     if args.skip_sampling or args.samples <= 0:
+         summary["sampling_skipped_reason"] = "disabled"
+     elif terminal_failure:
+diff --git a/src/p9solver/pipeline.py b/src/p9solver/pipeline.py
+index 99d9fd5..398ea7a 100644
+--- a/src/p9solver/pipeline.py
++++ b/src/p9solver/pipeline.py
+@@ -1402,6 +1402,7 @@ def mpo_compress_unswap(
+     on_stats=None,
+     max_unswap_cycles=None,
+     max_work_gates=None,
++    terminal_handoff_gates=0,
+     abort_after_no_progress_unswap_cycles=2,
+     force_absorb_tail_gates=0,
+     virtualize_tail_swaps=False,
+@@ -1866,6 +1866,18 @@ def mpo_compress_unswap(
+         ):
+             activate_outer_chunks()
+         remaining_work_gates = T_U - total_u_consumed
++        if (
++            terminal_handoff_gates > 0
++            and remaining_work_gates > 0
++            and remaining_work_gates <= terminal_handoff_gates
++        ):
++            termination_reason = "terminal_handoff"
++            termination_detail = (
++                f"{remaining_work_gates} work gates remain; "
++                f"terminal_handoff_gates={terminal_handoff_gates}"
++            )
++            logging.info("[terminal handoff] %s", termination_detail)
++            break
+         if cutoff_schedule:
+             # Sigma-schedule: cutoff keyed to fraction of work consumed, so the
+             # SVD floor is tight only while obfuscation pairs are open. Same

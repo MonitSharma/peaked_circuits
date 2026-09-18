@@ -1,0 +1,43 @@
+{
+  "schema": "p8-sparse-iswap-ladder-summary-v1",
+  "qasm": "P8_grid_888_iswap.qasm",
+  "qubits": 40,
+  "events": 2704,
+  "gate_counts": {"u3": 1816, "iswap": 888},
+  "runs": [
+    {
+      "top_k": 4096,
+      "top1": "0111101101011110001110111010100010101000",
+      "top1_probability_renormalized": 0.00899708677454487,
+      "runtime_s": 1.863341188058257,
+      "max_support": 4096,
+      "cumulative_discarded_mass_proxy": 142.7466987055751,
+      "iswap_support_preserved": true
+    },
+    {
+      "top_k": 16384,
+      "top1": "1011010110111001101001011000110011101110",
+      "top1_probability_renormalized": 0.001970,
+      "runtime_s": 7.273,
+      "max_support": 16384,
+      "cumulative_discarded_mass_proxy": 125.651,
+      "iswap_support_preserved": true
+    },
+    {
+      "top_k": 65536,
+      "top1": "0111101010100011011101100101010011101011",
+      "top1_probability_renormalized": 0.001777,
+      "runtime_s": 28.622,
+      "max_support": 65536,
+      "cumulative_discarded_mass_proxy": 117.137,
+      "iswap_support_preserved": true
+    }
+  ],
+  "hamming_distance_top1": {
+    "4096_vs_16384": 21,
+    "16384_vs_65536": 20,
+    "4096_vs_65536": 21
+  },
+  "decision": "REJECT_UNSTABLE_TOP1",
+  "interpretation": "The direct iSWAP kernel is correct and support-preserving, but top-k truncation is not converged for P8 at these rungs. No candidate bitstring should be submitted."
+}

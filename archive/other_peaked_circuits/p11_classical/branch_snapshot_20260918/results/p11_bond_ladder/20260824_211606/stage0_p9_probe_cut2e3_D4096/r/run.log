@@ -1,0 +1,32 @@
+2026-08-25 05:16:07,310 [INFO] loaded /Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm: qubits=56 ops={'u': 3890, 'rzz': 1917}
+2026-08-25 05:16:07,315 [INFO] Pass: Collect2qBlocks - 2.69604 (ms)
+2026-08-25 05:16:07,324 [INFO] Pass: ConsolidateBlocks - 9.46498 (ms)
+2026-08-25 05:16:07,325 [INFO] after two-qubit block consolidation: ops={'unitary': 1885}
+2026-08-25 05:16:07,346 [INFO] environment: python=3.10.16 qiskit=1.4.5 quimb=1.11.2 numpy=2.2.6 scipy=1.15.3 machine=arm64
+2026-08-25 05:16:07,497 [INFO] Total unitaries: 1885 = 942 (left) + 943 (right)
+2026-08-25 05:16:07,498 [INFO] Rewiring with SabreSwap(trials=90, heuristic='decay', seed=123)
+2026-08-25 05:16:07,498 [INFO] No-progress fail-fast guardrail enabled: abort after 40 consecutive zero-work unswap cycle(s)
+2026-08-25 05:16:07,498 [INFO] [start rewire](phase=initial, side=left, layers=59, trials=90, seed=123, parallel=False)
+2026-08-25 05:16:08,636 [INFO] [end rewire](phase=initial, side=left, routed_layers=1355, elapsed_s=1.14)
+2026-08-25 05:16:08,637 [INFO] [start rewire](phase=initial, side=right, layers=58, trials=90, seed=123, parallel=False)
+2026-08-25 05:16:09,679 [INFO] [end rewire](phase=initial, side=right, routed_layers=1561, elapsed_s=1.04)
+2026-08-25 05:16:09,694 [INFO] [start compressing] -> {'max_bond': 1, 'max_links': 4, 'total_elems': 224, 'total_shapes': 334, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:09,757 [INFO] [1L/1353](swap: 11, u: 0 | c_u: 0 | t_u_l: 0/942 | t_u_r: 0/943 | t_u: 0/1885) -> {'max_bond': 1, 'max_links': 4, 'total_elems': 224, 'total_shapes': 334, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:09,760 [WARNING] live plot.png generation disabled: No module named 'matplotlib'
+2026-08-25 05:16:09,815 [INFO] [1R/1559](swap: 12, u: 0 | c_u: 0 | t_u_l: 0/942 | t_u_r: 0/943 | t_u: 0/1885) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 512, 'total_shapes': 406, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:09,873 [INFO] [2L/1353](swap: 11, u: 1 | c_u: 1 | t_u_l: 1/942 | t_u_r: 0/943 | t_u: 1/1885) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 844, 'total_shapes': 450, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:09,931 [INFO] [2R/1559](swap: 10, u: 1 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 1456, 'total_shapes': 504, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:10,177 [INFO] [3L/1353](swap: 14, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2464, 'total_shapes': 576, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:10,236 [INFO] [3R/1559](swap: 13, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 4316, 'total_shapes': 700, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:10,298 [INFO] [4R/1559](swap: 13, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 9464, 'total_shapes': 844, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:10,364 [INFO] [5R/1559](swap: 13, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 13496, 'total_shapes': 988, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:10,431 [INFO] [6R/1559](swap: 12, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 17516, 'total_shapes': 1102, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:10,503 [INFO] [4L/1353](swap: 14, u: 1 | c_u: 3 | t_u_l: 2/942 | t_u_r: 1/943 | t_u: 3/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 33200, 'total_shapes': 1360, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:10,593 [INFO] [7R/1559](swap: 12, u: 0 | c_u: 3 | t_u_l: 2/942 | t_u_r: 1/943 | t_u: 3/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 50120, 'total_shapes': 1666, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:10,704 [INFO] [8R/1559](swap: 10, u: 1 | c_u: 4 | t_u_l: 2/942 | t_u_r: 2/943 | t_u: 4/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 85444, 'total_shapes': 1968, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:10,874 [INFO] [5L/1353](swap: 13, u: 1 | c_u: 5 | t_u_l: 3/942 | t_u_r: 2/943 | t_u: 5/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 124352, 'total_shapes': 2254, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:11,091 [INFO] [6L/1353](swap: 8, u: 1 | c_u: 6 | t_u_l: 4/942 | t_u_r: 2/943 | t_u: 6/1885) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 154672, 'total_shapes': 2488, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:11,355 [INFO] [9R/1559](swap: 9, u: 1 | c_u: 7 | t_u_l: 4/942 | t_u_r: 3/943 | t_u: 7/1885) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 230320, 'total_shapes': 2992, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:11,760 [INFO] [10R/1559](swap: 9, u: 1 | c_u: 8 | t_u_l: 4/942 | t_u_r: 4/943 | t_u: 8/1885) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 426400, 'total_shapes': 3876, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:11,761 [INFO] [end compressing](left: 1349, right: 1551) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 426400, 'total_shapes': 3876, 'total_links': 222, 'num_tensors': 56}
+2026-08-25 05:16:11,766 [WARNING] samples.png generation disabled: No module named 'matplotlib'

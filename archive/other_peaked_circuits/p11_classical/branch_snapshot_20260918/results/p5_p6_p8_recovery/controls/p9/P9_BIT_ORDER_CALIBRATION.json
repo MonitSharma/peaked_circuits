@@ -1,0 +1,14 @@
+{
+  "schema": "p12-p9-bit-order-calibration-v1",
+  "status": "PASS",
+  "qasm": "data/canonical/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "qasm_sha256": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35",
+  "measurement_permutation": "identity",
+  "logical_order": "q0_first",
+  "portal_order": "q0_first",
+  "reference_control": "official local MPO calibration",
+  "control_result": "published P9 bitstring reproduced exactly",
+  "p9_mpo_gate_passed": true,
+  "target_answer_used": false,
+  "p9_positive_control_exception": true
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "p12-peak-circuit-manifest-v1",
+  "problem": "P8",
+  "source_qasm_path": "results/expert_review_p5_p6_p8_20260828/inputs/P8_grid_888_iswap.qasm",
+  "sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "qubit_count": 40,
+  "gate_counts": {"iswap": 888, "u": 1816},
+  "gate_vocabulary": ["iswap", "u"],
+  "gate_count": 2704,
+  "two_qubit_gate_count": 888,
+  "two_qubit_depth": 64,
+  "unique_interaction_edges": 63,
+  "graph_density": 0.08076923076923077,
+  "canonical_logical_bit_order": "q0_first",
+  "custom_gate_definitions": ["iswap"],
+  "iswap_direct_handling": "direct_matrix",
+  "method_eligibility": {"mps": true, "tno": true, "mpo": true, "geometry": true},
+  "provenance": {"original_file_preserved": true, "answer_blind": true}
+}

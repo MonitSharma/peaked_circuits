@@ -1,0 +1,2 @@
+start,stop,wires,status,accepted,old_two_qubit,new_two_qubit,fidelity,permutation,reason
+5300,5310,"(6, 13)",verified_no_improvement,False,2,2,0.9999999999999999,"(6, 13)",exact replacement does not reduce 2q count

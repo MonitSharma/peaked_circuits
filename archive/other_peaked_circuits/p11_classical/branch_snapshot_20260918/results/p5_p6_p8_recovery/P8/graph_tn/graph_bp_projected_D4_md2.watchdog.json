@@ -1,0 +1,14 @@
+{
+  "problem": "P8",
+  "method_family": "graph-BP",
+  "configuration": {"max_bond": 4, "max_distance": 2, "cutoff": 1e-10, "project_invalid": true},
+  "status": "COMPLETE_DIAGNOSTIC",
+  "runtime_s": 7.494363333040383,
+  "peak_process_tree_rss_bytes": null,
+  "converged": true,
+  "iterations": 21,
+  "projected_factor_count": 3,
+  "candidate_promoted": false,
+  "answer_blind": true,
+  "reason": "positivity projection was required; largest absolute p00 correction was 0.15702945177980135"
+}

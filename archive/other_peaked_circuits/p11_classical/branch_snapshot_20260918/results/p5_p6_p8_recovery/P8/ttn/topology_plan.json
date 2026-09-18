@@ -1,0 +1,821 @@
+{
+  "schema": "p12-p8-ttn-topology-plan-v1",
+  "problem": "P8",
+  "method_family": "TTN",
+  "status": "TOPOLOGY_ONLY",
+  "answer_blind": true,
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "n_qubits": 40,
+  "leaf_order": [
+    12,
+    19,
+    11,
+    4,
+    5,
+    16,
+    17,
+    18,
+    9,
+    10,
+    2,
+    6,
+    0,
+    1,
+    3,
+    7,
+    8,
+    13,
+    14,
+    15,
+    36,
+    38,
+    39,
+    33,
+    37,
+    24,
+    25,
+    26,
+    31,
+    32,
+    29,
+    35,
+    22,
+    23,
+    30,
+    28,
+    34,
+    21,
+    20,
+    27
+  ],
+  "tree": {
+    "leaves": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "cut_weight": 99.0,
+    "children": [
+      {
+        "leaves": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "cut_weight": 53.0,
+        "children": [
+          {
+            "leaves": [
+              4,
+              5,
+              9,
+              10,
+              11,
+              12,
+              16,
+              17,
+              18,
+              19
+            ],
+            "cut_weight": 41.0,
+            "children": [
+              {
+                "leaves": [
+                  4,
+                  5,
+                  11,
+                  12,
+                  19
+                ],
+                "cut_weight": 28.0,
+                "children": [
+                  {
+                    "leaves": [
+                      12,
+                      19
+                    ],
+                    "cut_weight": 0.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          12
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          19
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "leaves": [
+                      4,
+                      5,
+                      11
+                    ],
+                    "cut_weight": 12.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          11
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          4,
+                          5
+                        ],
+                        "cut_weight": 14.0,
+                        "children": [
+                          {
+                            "leaves": [
+                              4
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          },
+                          {
+                            "leaves": [
+                              5
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "leaves": [
+                  9,
+                  10,
+                  16,
+                  17,
+                  18
+                ],
+                "cut_weight": 25.0,
+                "children": [
+                  {
+                    "leaves": [
+                      16,
+                      17
+                    ],
+                    "cut_weight": 17.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          16
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          17
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "leaves": [
+                      9,
+                      10,
+                      18
+                    ],
+                    "cut_weight": 13.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          18
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          9,
+                          10
+                        ],
+                        "cut_weight": 14.0,
+                        "children": [
+                          {
+                            "leaves": [
+                              9
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          },
+                          {
+                            "leaves": [
+                              10
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "leaves": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              7,
+              8,
+              13,
+              14,
+              15
+            ],
+            "cut_weight": 25.0,
+            "children": [
+              {
+                "leaves": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  6
+                ],
+                "cut_weight": 54.0,
+                "children": [
+                  {
+                    "leaves": [
+                      2,
+                      6
+                    ],
+                    "cut_weight": 10.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          2
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          6
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "leaves": [
+                      0,
+                      1,
+                      3
+                    ],
+                    "cut_weight": 0.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          0
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          1,
+                          3
+                        ],
+                        "cut_weight": 0.0,
+                        "children": [
+                          {
+                            "leaves": [
+                              1
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          },
+                          {
+                            "leaves": [
+                              3
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "leaves": [
+                  7,
+                  8,
+                  13,
+                  14,
+                  15
+                ],
+                "cut_weight": 30.0,
+                "children": [
+                  {
+                    "leaves": [
+                      7,
+                      8
+                    ],
+                    "cut_weight": 17.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          7
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          8
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "leaves": [
+                      13,
+                      14,
+                      15
+                    ],
+                    "cut_weight": 15.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          13
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          14,
+                          15
+                        ],
+                        "cut_weight": 16.0,
+                        "children": [
+                          {
+                            "leaves": [
+                              14
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          },
+                          {
+                            "leaves": [
+                              15
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "leaves": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "cut_weight": 50.0,
+        "children": [
+          {
+            "leaves": [
+              24,
+              25,
+              26,
+              31,
+              32,
+              33,
+              36,
+              37,
+              38,
+              39
+            ],
+            "cut_weight": 31.0,
+            "children": [
+              {
+                "leaves": [
+                  33,
+                  36,
+                  37,
+                  38,
+                  39
+                ],
+                "cut_weight": 27.0,
+                "children": [
+                  {
+                    "leaves": [
+                      36,
+                      38
+                    ],
+                    "cut_weight": 0.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          36
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          38
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "leaves": [
+                      33,
+                      37,
+                      39
+                    ],
+                    "cut_weight": 17.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          39
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          33,
+                          37
+                        ],
+                        "cut_weight": 8.0,
+                        "children": [
+                          {
+                            "leaves": [
+                              33
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          },
+                          {
+                            "leaves": [
+                              37
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "leaves": [
+                  24,
+                  25,
+                  26,
+                  31,
+                  32
+                ],
+                "cut_weight": 27.0,
+                "children": [
+                  {
+                    "leaves": [
+                      24,
+                      25
+                    ],
+                    "cut_weight": 15.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          24
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          25
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "leaves": [
+                      26,
+                      31,
+                      32
+                    ],
+                    "cut_weight": 11.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          26
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          31,
+                          32
+                        ],
+                        "cut_weight": 12.0,
+                        "children": [
+                          {
+                            "leaves": [
+                              31
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          },
+                          {
+                            "leaves": [
+                              32
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "leaves": [
+              20,
+              21,
+              22,
+              23,
+              27,
+              28,
+              29,
+              30,
+              34,
+              35
+            ],
+            "cut_weight": 46.0,
+            "children": [
+              {
+                "leaves": [
+                  22,
+                  23,
+                  29,
+                  30,
+                  35
+                ],
+                "cut_weight": 29.0,
+                "children": [
+                  {
+                    "leaves": [
+                      29,
+                      35
+                    ],
+                    "cut_weight": 15.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          29
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          35
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "leaves": [
+                      22,
+                      23,
+                      30
+                    ],
+                    "cut_weight": 16.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          22
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          23,
+                          30
+                        ],
+                        "cut_weight": 28.0,
+                        "children": [
+                          {
+                            "leaves": [
+                              23
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          },
+                          {
+                            "leaves": [
+                              30
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "leaves": [
+                  20,
+                  21,
+                  27,
+                  28,
+                  34
+                ],
+                "cut_weight": 31.0,
+                "children": [
+                  {
+                    "leaves": [
+                      28,
+                      34
+                    ],
+                    "cut_weight": 13.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          28
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          34
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "leaves": [
+                      20,
+                      21,
+                      27
+                    ],
+                    "cut_weight": 16.0,
+                    "children": [
+                      {
+                        "leaves": [
+                          21
+                        ],
+                        "cut_weight": 0.0,
+                        "children": []
+                      },
+                      {
+                        "leaves": [
+                          20,
+                          27
+                        ],
+                        "cut_weight": 13.0,
+                        "children": [
+                          {
+                            "leaves": [
+                              20
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          },
+                          {
+                            "leaves": [
+                              27
+                            ],
+                            "cut_weight": 0.0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "production_promotion": "BLOCKED_UNTIL_EXACT_CONTROLS_AND_ENVIRONMENT_DECODER_PASS"
+}

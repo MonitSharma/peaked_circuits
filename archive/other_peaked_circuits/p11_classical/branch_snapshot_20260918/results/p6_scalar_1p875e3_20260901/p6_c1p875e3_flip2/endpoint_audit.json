@@ -1,0 +1,24 @@
+{
+  "schema": "p6-scalar-endpoint-audit-v1",
+  "answer_blind": true,
+  "source_summary": "summary.json remains a live-run record because the guard-disabled solver was stopped after a verified stall",
+  "cutoff": 0.001875,
+  "flip_freq": 2,
+  "max_bond": 512,
+  "abort_after_no_progress_unswap_cycles": -1,
+  "gates_consumed": 94,
+  "total_work_gates": 2593,
+  "remaining_work_gates": 2499,
+  "unswap_cycle": 22,
+  "last_cycle_work_consumed": 0,
+  "peak_bond": 509,
+  "peak_total_elements": 2279700,
+  "fid10_retained_fraction_last": 0.30392262016799726,
+  "termination_classification": "genuine_no_progress_stall",
+  "evidence": [
+    "stats.json final cycle_progress row",
+    "run.log repeated forced-drain fizzle and unchanged 94/2593 progress"
+  ],
+  "decision": "scalar_cutoff_1p875e3_does_not_unlock_P6",
+  "note": "No readout target, expected bitstring, or post-hoc candidate was used."
+}

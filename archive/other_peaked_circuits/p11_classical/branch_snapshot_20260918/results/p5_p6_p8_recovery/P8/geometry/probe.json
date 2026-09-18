@@ -1,0 +1,12 @@
+{
+  "n_qubits": 40,
+  "unique_edges": 63,
+  "degree_min": 1,
+  "degree_max": 4,
+  "degree_mean": 3.15,
+  "geometry_path_status": "DIAGNOSTIC_ONLY",
+  "answer_blind": true,
+  "stage": "GEOMETRY_PROBE",
+  "status": "COMPLETE",
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484"
+}

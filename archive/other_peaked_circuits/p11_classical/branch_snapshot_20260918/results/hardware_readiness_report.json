@@ -1,0 +1,303 @@
+{
+  "architecture": "arm64",
+  "blockers": [
+    "backend_identified",
+    "backend_has_98_qubits",
+    "target_validity_passed",
+    "compiled_circuit_hash_recorded",
+    "logical_permutation_resolved",
+    "measurement_mapping_complete",
+    "mapping_validation_passed",
+    "cost_estimate_obtained",
+    "shot_protocol_frozen",
+    "recovery_method_frozen",
+    "tracker_protocol_confirmed",
+    "repository_commit_tagged",
+    "p12_emulator_pilot_complete"
+  ],
+  "checks": {
+    "backend_has_98_qubits": false,
+    "backend_identified": false,
+    "compiled_circuit_hash_recorded": false,
+    "compiler_version_frozen": true,
+    "cost_estimate_obtained": false,
+    "emulator_mapping_validation_passed": true,
+    "fixture_semantic_tests_passed": true,
+    "hardware_guard_tests_passed": true,
+    "logical_permutation_resolved": false,
+    "logical_to_qir_mapping_complete": true,
+    "mapping_case_qir_exports_passed": true,
+    "mapping_case_syntax_checks_passed": true,
+    "mapping_validation_passed": false,
+    "measurement_mapping_complete": false,
+    "p12_emulator_pilot_complete": false,
+    "p12_submitted_bitcode_hash_matches": true,
+    "p12_syntax_check_passed": true,
+    "p12_target_is_helios_1sc": true,
+    "provider_result_order_verified": true,
+    "qir_export_completed": true,
+    "qir_hash_recorded": true,
+    "qir_structural_validation_passed": true,
+    "ready_for_p12_emulator_pilot": true,
+    "recovery_method_frozen": false,
+    "repository_commit_recorded": true,
+    "repository_commit_tagged": false,
+    "shot_protocol_frozen": false,
+    "source_hash_frozen": true,
+    "synthetic_tests_passed": true,
+    "target_validity_passed": false,
+    "tracker_protocol_confirmed": false
+  },
+  "configuration_hash": null,
+  "created_at": "2026-07-12T15:50:26.980772Z",
+  "evidence": [
+    {
+      "check": "source_hash_frozen",
+      "details": "Evidence present and valid",
+      "evidence_hash": "be7638e7ca16e15b4fb3f665313a92fcb19ca7e93305c6430c1abcfb5c604cdf",
+      "evidence_path": "circuits/original/SHA256SUMS",
+      "passed": true
+    },
+    {
+      "check": "compiler_version_frozen",
+      "details": "Evidence present and valid",
+      "evidence_hash": "8b7dbc3415352be800abf13a303d2b7934bc7a92b60acab1c655b355ccc8f029",
+      "evidence_path": "results/compilation/compilation_report.json",
+      "passed": true
+    },
+    {
+      "check": "backend_identified",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": "8b7dbc3415352be800abf13a303d2b7934bc7a92b60acab1c655b355ccc8f029",
+      "evidence_path": "results/compilation/compilation_report.json",
+      "passed": false
+    },
+    {
+      "check": "backend_has_98_qubits",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": "8b7dbc3415352be800abf13a303d2b7934bc7a92b60acab1c655b355ccc8f029",
+      "evidence_path": "results/compilation/compilation_report.json",
+      "passed": false
+    },
+    {
+      "check": "target_validity_passed",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": "8b7dbc3415352be800abf13a303d2b7934bc7a92b60acab1c655b355ccc8f029",
+      "evidence_path": "results/compilation/compilation_report.json",
+      "passed": false
+    },
+    {
+      "check": "compiled_circuit_hash_recorded",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": "8b7dbc3415352be800abf13a303d2b7934bc7a92b60acab1c655b355ccc8f029",
+      "evidence_path": "results/compilation/compilation_report.json",
+      "passed": false
+    },
+    {
+      "check": "logical_permutation_resolved",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": "8b7dbc3415352be800abf13a303d2b7934bc7a92b60acab1c655b355ccc8f029",
+      "evidence_path": "results/compilation/compilation_report.json",
+      "passed": false
+    },
+    {
+      "check": "measurement_mapping_complete",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": null,
+      "evidence_path": null,
+      "passed": false
+    },
+    {
+      "check": "mapping_validation_passed",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": "e6ffc103792ed0f9d109bc8459ad75c92a4230d8437f43b98c557450ba85af6e",
+      "evidence_path": "results/mapping_validation/mapping_validation_report.json",
+      "passed": false
+    },
+    {
+      "check": "synthetic_tests_passed",
+      "details": "Evidence present and valid",
+      "evidence_hash": "649b719f7cb8ebf388cbb6b07915cb2703fc0dc91e01c8341856ac1e7c480718",
+      "evidence_path": "results/synthetic/synthetic_report.json",
+      "passed": true
+    },
+    {
+      "check": "fixture_semantic_tests_passed",
+      "details": "Evidence present and valid",
+      "evidence_hash": "639a7059f0aeec12d998f2044aab3f00ea49df71b42946f1672ffaa1487383e0",
+      "evidence_path": "tests/test_qasm_io.py",
+      "passed": true
+    },
+    {
+      "check": "cost_estimate_obtained",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": null,
+      "evidence_path": null,
+      "passed": false
+    },
+    {
+      "check": "shot_protocol_frozen",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": null,
+      "evidence_path": null,
+      "passed": false
+    },
+    {
+      "check": "recovery_method_frozen",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": null,
+      "evidence_path": null,
+      "passed": false
+    },
+    {
+      "check": "tracker_protocol_confirmed",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": null,
+      "evidence_path": null,
+      "passed": false
+    },
+    {
+      "check": "repository_commit_recorded",
+      "details": "Evidence present and valid",
+      "evidence_hash": "8b7dbc3415352be800abf13a303d2b7934bc7a92b60acab1c655b355ccc8f029",
+      "evidence_path": "results/compilation/compilation_report.json",
+      "passed": true
+    },
+    {
+      "check": "repository_commit_tagged",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": null,
+      "evidence_path": ".git/refs/tags",
+      "passed": false
+    },
+    {
+      "check": "hardware_guard_tests_passed",
+      "details": "Evidence present and valid",
+      "evidence_hash": "21d885e516d6cce3f7e9f8ab50a15b45356b0804bc8126e12d766a23b2496d9b",
+      "evidence_path": "tests/test_hardware_guard.py",
+      "passed": true
+    },
+    {
+      "check": "qir_export_completed",
+      "details": "Evidence present and valid",
+      "evidence_hash": "729f4e0b19c6dcd53ce50e3139e9e6a2c7af38348cd847a6ac5c3aee20c21ec7",
+      "evidence_path": "results/qir/qir_export_report.json",
+      "passed": true
+    },
+    {
+      "check": "qir_hash_recorded",
+      "details": "Evidence present and valid",
+      "evidence_hash": "729f4e0b19c6dcd53ce50e3139e9e6a2c7af38348cd847a6ac5c3aee20c21ec7",
+      "evidence_path": "results/qir/qir_export_report.json",
+      "passed": true
+    },
+    {
+      "check": "qir_structural_validation_passed",
+      "details": "Evidence present and valid",
+      "evidence_hash": "bfc4962fa4f31ad41656d9b98c363c7a18404302a7891a20544473df0a8a22c0",
+      "evidence_path": "results/qir/qir_validation_report.json",
+      "passed": true
+    },
+    {
+      "check": "logical_to_qir_mapping_complete",
+      "details": "Evidence present and valid",
+      "evidence_hash": "5f1b9f16a145d65df524f47a9b9e808d625c8063a3cce4e115714aa84af40c60",
+      "evidence_path": "results/qir/qir_output_mapping.json",
+      "passed": true
+    },
+    {
+      "check": "mapping_case_qir_exports_passed",
+      "details": "Evidence present and valid",
+      "evidence_hash": "8b565e255e18b29bc50d9961dd58953a71ede82fabbf1e7ab06e196635c66e7b",
+      "evidence_path": "results/qir/mapping_cases/mapping_qir_export_report.json",
+      "passed": true
+    },
+    {
+      "check": "mapping_case_syntax_checks_passed",
+      "details": "Evidence present and valid",
+      "evidence_hash": "72573976b17b06baef06eb71e9489717a53b592d40e04e85aa134964d83d06ea",
+      "evidence_path": "results/nexus/syntax_check/mapping_cases_report.json",
+      "passed": true
+    },
+    {
+      "check": "p12_syntax_check_passed",
+      "details": "Evidence present and valid",
+      "evidence_hash": "f7a630e30a30257ea10829adad4d78178660bad17904834e3e7e8f390eabce2a",
+      "evidence_path": "results/nexus/syntax_check/p12/syntax_check_report.json",
+      "passed": true
+    },
+    {
+      "check": "p12_submitted_bitcode_hash_matches",
+      "details": "Evidence present and valid",
+      "evidence_hash": "f7a630e30a30257ea10829adad4d78178660bad17904834e3e7e8f390eabce2a",
+      "evidence_path": "results/nexus/syntax_check/p12/syntax_check_report.json",
+      "passed": true
+    },
+    {
+      "check": "p12_target_is_helios_1sc",
+      "details": "Evidence present and valid",
+      "evidence_hash": "f7a630e30a30257ea10829adad4d78178660bad17904834e3e7e8f390eabce2a",
+      "evidence_path": "results/nexus/syntax_check/p12/syntax_check_report.json",
+      "passed": true
+    },
+    {
+      "check": "provider_result_order_verified",
+      "details": "Evidence present and valid",
+      "evidence_hash": "e4a0f86bb39eecb036a4ed31cee960e21a9fcd09b28db005a65d417c7e714526",
+      "evidence_path": "results/nexus/emulator_mapping/provider_output_mapping.json",
+      "passed": true
+    },
+    {
+      "check": "emulator_mapping_validation_passed",
+      "details": "Evidence present and valid",
+      "evidence_hash": "5d710cf1ca4dee8bdaa867482c5f2aad1462919fa28d522304d8afc871aa1654",
+      "evidence_path": "results/nexus/emulator_mapping/emulator_mapping_report.json",
+      "passed": true
+    },
+    {
+      "check": "ready_for_p12_emulator_pilot",
+      "details": "Evidence present and valid",
+      "evidence_hash": "a9e9a7434df304f241b4fcb982a9ae2c141b95820a61e6c960b23cd79158b2aa",
+      "evidence_path": "results/nexus/cost/p12_cost.json",
+      "passed": true
+    },
+    {
+      "check": "p12_emulator_pilot_complete",
+      "details": "Missing or failing prerequisite",
+      "evidence_hash": "7b6f0d3d68eb1dbd1e0e7aceeb05fab6c93e58e6c544bd68e2521f0c185bd4f7",
+      "evidence_path": "results/nexus/p12_emulator/pilot_report.json",
+      "passed": false
+    }
+  ],
+  "git_commit": "c80f72c53d5a183ccc6dfead4296a497534dd789",
+  "git_dirty": true,
+  "hardware_execution_enabled": false,
+  "input_hashes": {
+    "circuits/original/peaked_circuit_P12_Hqap_98x2457.qasm": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d"
+  },
+  "operating_system": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "package_versions": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.1",
+    "p12-helios-recovery": "0.1.0",
+    "pandas": "2.3.3",
+    "pydantic": "2.13.4",
+    "pyqir": "0.12.5",
+    "pytket": "2.18.1",
+    "pytket-qir": "2.0.0",
+    "pytket-qiskit": null,
+    "pytket-quantinuum": "0.59.1",
+    "qiskit": null,
+    "qnexus": "0.46.0",
+    "rich": "13.9.4",
+    "scipy": "1.18.0",
+    "typer": "0.26.8"
+  },
+  "python_version": "3.13.7",
+  "random_seed": null,
+  "ready": false,
+  "schema_version": "1.0",
+  "state": "READY_FOR_P12_EMULATOR_PILOT"
+}

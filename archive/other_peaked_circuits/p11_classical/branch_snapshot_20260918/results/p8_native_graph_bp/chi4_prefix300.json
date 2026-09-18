@@ -1,0 +1,2392 @@
+{
+  "schema": "p8-native-graph-2norm-bp-v1",
+  "qasm": "/home/hclau/p12-helios-recovery/external/p8-sparse-src/P8.qasm",
+  "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
+  "n_qubits": 40,
+  "edge_count": 63,
+  "native_edge_assertion": true,
+  "configuration": {
+    "max_bond": 4,
+    "cutoff": 1e-10,
+    "max_seconds": 300.0,
+    "max_events": 300
+  },
+  "events_completed": 300,
+  "events_total": 2704,
+  "aborted": "event_limit",
+  "runtime_s": 66.52089527621865,
+  "final_norm": 0.03775892275974441,
+  "final_max_bond": 4,
+  "trace": [
+    {
+      "event": 0,
+      "gate": "u",
+      "max_bond": 1,
+      "norm": 1.0,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 1,
+      "gate": "u",
+      "max_bond": 1,
+      "norm": 1.0,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 2,
+      "gate": "u",
+      "max_bond": 1,
+      "norm": 1.0,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 3,
+      "gate": "u",
+      "max_bond": 1,
+      "norm": 1.0,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 4,
+      "gate": "u",
+      "max_bond": 1,
+      "norm": 1.0,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 5,
+      "gate": "u",
+      "max_bond": 1,
+      "norm": 1.0,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 6,
+      "gate": "iswap",
+      "max_bond": 2,
+      "norm": 0.9999999999999997,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 7,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.9999999999999997,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 8,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.9999999999999997,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 9,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.9999999999999994,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 10,
+      "gate": "iswap",
+      "max_bond": 2,
+      "norm": 0.9999999999999991,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 11,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.9999999999999989,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 12,
+      "gate": "iswap",
+      "max_bond": 2,
+      "norm": 0.9999999999999988,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 13,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.9999999999999988,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 14,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.9999999999999987,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 15,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.9999999999999989,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 16,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.9999999999999991,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 17,
+      "gate": "iswap",
+      "max_bond": 2,
+      "norm": 0.9999999999999991,
+      "max_tensor_axis_before": 2,
+      "max_tensor_axis_after": 2,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 18,
+      "gate": "u",
+      "max_bond": 2,
+      "norm": 0.999999999999999,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 19,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000004,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 20,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000007,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 21,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000009,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 22,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000007,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 23,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000007,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 24,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.000000000000001,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 25,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000001,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 26,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000016,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 27,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000013,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 28,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000001,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 29,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000013,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 30,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000013,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 31,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000013,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 32,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000013,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 33,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000016,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 34,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000018,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 35,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000018,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 36,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000018,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 37,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000016,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 38,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000016,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 39,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000016,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 40,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000013,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 41,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000056,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 42,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000056,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 43,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000056,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 44,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000084,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 45,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000084,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 46,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000082,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 47,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000082,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 48,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000008,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 49,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000008,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 50,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000008,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 51,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000093,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 52,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000093,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 53,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000093,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 54,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000093,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 55,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000093,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 56,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000093,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 57,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000093,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 58,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000127,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 59,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000127,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 60,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000127,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 61,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000127,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 62,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.000000000000013,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 63,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000129,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 64,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000153,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 65,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000155,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 66,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000173,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 67,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000173,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 68,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000173,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 69,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000017,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 70,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000215,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 71,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000218,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 72,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000218,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 73,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000218,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 74,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000218,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 75,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000222,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 76,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000222,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 77,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.000000000000022,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 78,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000222,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 79,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000298,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 80,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000295,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 81,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.000000000000036,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 82,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.000000000000036,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 83,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000357,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 84,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000357,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 85,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 1.0000000000000386,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 86,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 1.0000000000000384,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 87,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.7741120987176354,
+      "max_tensor_axis_before": 16,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 88,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.7741120987176358,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 89,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.7741120987176358,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 90,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.7741120987176358,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 91,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.7741120987176355,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 92,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.7741120987176352,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 93,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.7741120987176352,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 94,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.728947126862622,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 95,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.7289471268626219,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 96,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.6349270559021499,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 97,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.6349270559021498,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 98,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.6349270559021499,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 99,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.5664754227651103,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 100,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.5664754227651103,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 101,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.5664754227651115,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 102,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.5664754227651116,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 103,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.5664754227651116,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 104,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.5664754227651116,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 105,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.5037342376745332,
+      "max_tensor_axis_before": 16,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 106,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.5037342376745331,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 107,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.46488314480198467,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 108,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4648831448019848,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 109,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4648831448019848,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 110,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4648831448019845,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 111,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.46488314480198445,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 112,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.46488314480198445,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 113,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.46488314480198456,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 114,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.46488314480198467,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 115,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.46488314480198467,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 116,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.46488314480198467,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 117,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.46488314480198384,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 118,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.46488314480198384,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 119,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.4648831448019848,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 120,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.46488314480198484,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 121,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4648831448019851,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 122,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4648831448019851,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 123,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.46488314480198795,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 124,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.46488314480198795,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 125,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.4648831448019882,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 126,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4648831448019884,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 127,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.4648831448019891,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 128,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.46488314480198906,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 129,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4648831448019891,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 130,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.46488314480198867,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 131,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4648831448019887,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 132,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.45183861984302265,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 133,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.45183861984302265,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 134,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430227,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 135,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430228,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 136,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.45183861984302287,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 137,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.45183861984302487,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 138,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430247,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 139,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430249,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 140,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430249,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 141,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430249,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 142,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.4518386198430256,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 143,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430255,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 144,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.45183861984303036,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 145,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430305,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 146,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430305,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 147,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.45183861984303353,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 148,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430335,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 149,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.45183861984303353,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 150,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.45183861984303353,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 151,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.45183861984303353,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 152,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.45183861984303353,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 153,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.45183861984303497,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 154,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.451838619843035,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 155,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.45183861984303697,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 156,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430371,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 157,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430373,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 158,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430373,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 159,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.451838619843039,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 160,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.451838619843039,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 161,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.4518386198430432,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 162,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430433,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 163,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.4518386198430475,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 164,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4518386198430475,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 165,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.43480432318385664,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 166,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.43480432318385653,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 167,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4348043231838566,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 168,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.43480432318385664,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 169,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.43480432318385676,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 170,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.43480432318385676,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 171,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.43480432318385676,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 172,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.43480432318385676,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 173,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.4348043231838576,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 174,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.43480432318385764,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 175,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.43480432318386264,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 176,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.43480432318386264,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 177,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4348043231838627,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 178,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.43480432318386586,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 179,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4348043231838658,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 180,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.4348043231838705,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 181,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.4348043231838704,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 182,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.43458058583412895,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 183,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.43458058583412884,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 184,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.3548022751341789,
+      "max_tensor_axis_before": 16,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 185,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.35480227513417884,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 186,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.3548022751341789,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 187,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.3464430953133897,
+      "max_tensor_axis_before": 16,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 188,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.3464430953133897,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 189,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.2817518233135182,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 190,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.2817518233135183,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 191,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.20810741842468325,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 192,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.20810741842468325,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 193,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.20810741842468403,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 194,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.20810741842468414,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 195,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.20810741842468414,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 196,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.2081074184246846,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 197,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.20810741842468464,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 198,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.2081074184246846,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 199,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.15930682915723338,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 200,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.1593068291572334,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 201,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.1593068291572334,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 202,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.1593068291572334,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 203,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723343,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 204,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.1593068291572335,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 205,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723343,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 206,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723343,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 207,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723338,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 208,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723343,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 209,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723338,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 210,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723343,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 211,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723343,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 212,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.1593068291572334,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 213,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.1593068291572334,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 214,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723338,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 215,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723338,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 216,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.15930682915723227,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 217,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723227,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 218,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.15930682915723313,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 219,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723313,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 220,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.15930682915723407,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 221,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.15930682915723401,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 222,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.1266199697471562,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 223,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.12661996974715617,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 224,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.12661996974715564,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 225,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.12661996974715564,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 226,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.12661996974715564,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 227,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.12661996974715564,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 228,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.12661996974715564,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 229,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.11334768191304598,
+      "max_tensor_axis_before": 16,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 230,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.11334768191304598,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 231,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.08264026700722041,
+      "max_tensor_axis_before": 16,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 232,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.08264026700722042,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 233,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.07733074861051945,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 234,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.07733074861051945,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 235,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.055873584197107584,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 236,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05587358419710758,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 237,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.0558735841971076,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 238,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.0558735841971076,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 239,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.055873584197107626,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 240,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.05583975886910419,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 241,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05583975886910418,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 242,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.05356545143959407,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 243,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959407,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 244,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959407,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 245,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.05356545143959433,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 246,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.053565451439594326,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 247,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959433,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 248,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.0535654514395947,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 249,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959468,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 250,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959468,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 251,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959469,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 252,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959468,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 253,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959467,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 254,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959468,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 255,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959468,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 256,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.05356545143959477,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 257,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959477,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 258,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.05356545143959526,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 259,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959529,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 260,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.053565451439595874,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 261,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.053565451439595874,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 262,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.05356545143959663,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 263,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959662,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 264,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959662,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 265,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959663,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 266,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959662,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 267,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959664,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 268,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959662,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 269,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959662,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 270,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.05356545143959716,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 271,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.053565451439597164,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 272,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.053565451439597164,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 273,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959718,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 274,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.0535654514395967,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 275,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959668,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 276,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.053565451439596685,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 277,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.053565451439596776,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 278,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.053565451439596776,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 279,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959676,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 280,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.05356545143959688,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 281,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959689,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 282,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959687,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 283,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959687,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 284,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.053565451439597254,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 285,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959725,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 286,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959727,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 287,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.05356545143959719,
+      "max_tensor_axis_before": 4,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 288,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05356545143959721,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 289,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.05240468591191019,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 290,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.05240468591191019,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 291,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.04877772969923423,
+      "max_tensor_axis_before": 16,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 292,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.04877772969923423,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 293,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.04877772969923423,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 294,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.04879926619790714,
+      "max_tensor_axis_before": 16,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 295,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.04879926619790715,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 296,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.04361898107043565,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 297,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.04361898107043565,
+      "bp_skipped_local_gate": true
+    },
+    {
+      "event": 298,
+      "gate": "iswap",
+      "max_bond": 4,
+      "norm": 0.037758922759744414,
+      "max_tensor_axis_before": 8,
+      "max_tensor_axis_after": 4,
+      "bp_info_present": true,
+      "bp_finite": true
+    },
+    {
+      "event": 299,
+      "gate": "u",
+      "max_bond": 4,
+      "norm": 0.03775892275974441,
+      "bp_skipped_local_gate": true
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "p9_q2": 1917,
+  "reason": "The available production MPO runner does not expose a virtual-permutation schedule injection boundary; projected beam results are retained without claiming a P9 peak result.",
+  "rows": [
+    {
+      "best_projected_debt": 27.1,
+      "best_swaps": [
+        13,
+        12
+      ],
+      "depth": 2,
+      "finalists": 8,
+      "width": 8
+    },
+    {
+      "best_projected_debt": 36.1,
+      "best_swaps": [
+        19,
+        18
+      ],
+      "depth": 4,
+      "finalists": 8,
+      "width": 8
+    },
+    {
+      "best_projected_debt": 27.1,
+      "best_swaps": [
+        13,
+        12
+      ],
+      "depth": 2,
+      "finalists": 16,
+      "width": 16
+    },
+    {
+      "best_projected_debt": 36.1,
+      "best_swaps": [
+        19,
+        18
+      ],
+      "depth": 4,
+      "finalists": 16,
+      "width": 16
+    }
+  ],
+  "scientific_verdict": "TECHNICAL_LIMITATION",
+  "technical_verdict": "PROJECTED_BEAM_NOT_INTEGRATED_WITH_METTLEQ_MPO_ROUTING_API"
+}

@@ -1,0 +1,12 @@
+{
+  "prefixes": [
+    {
+      "peak_rss_bytes": 197443584,
+      "prefix_2q": 100,
+      "status": "TIMEOUT",
+      "wall_clock_s": 60.26090083294548
+    }
+  ],
+  "qasm_sha256": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35",
+  "verdict": "DDSIM_PREFIX_LIMITED"
+}

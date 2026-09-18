@@ -1,0 +1,5 @@
+ordering,weighted_edge_span,mean_interaction_span,max_interaction_span,max_weighted_cut
+original,36088,18.96071094480823,55,952
+reversed,36088,18.96071094480823,55,952
+weighted_degree_desc,35911,18.92422825070159,55,971
+weighted_degree_asc,35883,18.984097287184284,54,970

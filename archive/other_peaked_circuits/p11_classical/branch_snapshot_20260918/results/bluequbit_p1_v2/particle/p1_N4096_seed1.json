@@ -1,0 +1,150 @@
+{
+  "schema": "bluequbit-p1-v2-particle-state-run-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "configuration": {
+    "particles": 4096,
+    "seed": 1,
+    "dtype": "complex128",
+    "resampling": "squared_amplitude_unbiased_reweighting",
+    "max_seconds": 120.0
+  },
+  "events_completed": 2679,
+  "events_total": 4407,
+  "aborted": "numerical_weight_overflow",
+  "error": "particle weights became non-finite or zero",
+  "runtime_s": 1.09591683303006,
+  "peak_rss_bytes": 76054528,
+  "final_support": 6344,
+  "top_candidates": [
+    {
+      "bitstring": "000001000111111110110100100101110001",
+      "amplitude_magnitude_squared_estimate": 1.0013737675685689e+306
+    },
+    {
+      "bitstring": "000001010111111110110100100101110001",
+      "amplitude_magnitude_squared_estimate": 7.653028691812356e+305
+    },
+    {
+      "bitstring": "101010111010111101001110101000111101",
+      "amplitude_magnitude_squared_estimate": 7.635980700116327e+305
+    },
+    {
+      "bitstring": "010011100111010010111010010010110000",
+      "amplitude_magnitude_squared_estimate": 7.55293063295067e+305
+    },
+    {
+      "bitstring": "000010111100101111011001010111000010",
+      "amplitude_magnitude_squared_estimate": 7.43762956217184e+305
+    },
+    {
+      "bitstring": "110110001011110011001100011011100111",
+      "amplitude_magnitude_squared_estimate": 6.937319535511847e+305
+    },
+    {
+      "bitstring": "111110011101000011111011110100110110",
+      "amplitude_magnitude_squared_estimate": 6.758144146513209e+305
+    },
+    {
+      "bitstring": "101011101101100011110110101010110111",
+      "amplitude_magnitude_squared_estimate": 6.493830037196743e+305
+    },
+    {
+      "bitstring": "100111000001110010111000111101100111",
+      "amplitude_magnitude_squared_estimate": 6.410104406790886e+305
+    },
+    {
+      "bitstring": "100111010001110010111000111101100111",
+      "amplitude_magnitude_squared_estimate": 6.409943267115981e+305
+    },
+    {
+      "bitstring": "101001100111111101100000001111111000",
+      "amplitude_magnitude_squared_estimate": 6.043174068325816e+305
+    },
+    {
+      "bitstring": "101001110111111101100000001111111000",
+      "amplitude_magnitude_squared_estimate": 6.043022152687167e+305
+    },
+    {
+      "bitstring": "100110111101110100001000101000010111",
+      "amplitude_magnitude_squared_estimate": 6.0082483433851555e+305
+    },
+    {
+      "bitstring": "111110001101000011111011110100110110",
+      "amplitude_magnitude_squared_estimate": 5.982903735416178e+305
+    },
+    {
+      "bitstring": "010101101100110001100011110110110010",
+      "amplitude_magnitude_squared_estimate": 5.975207437938421e+305
+    },
+    {
+      "bitstring": "110110011011110011001100011011100111",
+      "amplitude_magnitude_squared_estimate": 5.956802145716737e+305
+    },
+    {
+      "bitstring": "111001110100110001001001011011010111",
+      "amplitude_magnitude_squared_estimate": 5.712109228401536e+305
+    },
+    {
+      "bitstring": "111001100100110001001001011011010111",
+      "amplitude_magnitude_squared_estimate": 5.7119656351984186e+305
+    },
+    {
+      "bitstring": "010001010110001000011000011110000011",
+      "amplitude_magnitude_squared_estimate": 5.710450051521331e+305
+    },
+    {
+      "bitstring": "010001000110001000011000011110000011",
+      "amplitude_magnitude_squared_estimate": 5.710306500027241e+305
+    },
+    {
+      "bitstring": "010011110111010010111010010010110000",
+      "amplitude_magnitude_squared_estimate": 5.688575417696863e+305
+    },
+    {
+      "bitstring": "100010000110110101001110111011010001",
+      "amplitude_magnitude_squared_estimate": 5.441005598046911e+305
+    },
+    {
+      "bitstring": "101110010000010011101110110110011101",
+      "amplitude_magnitude_squared_estimate": 5.406339921292317e+305
+    },
+    {
+      "bitstring": "101110000000010011101110110110011101",
+      "amplitude_magnitude_squared_estimate": 5.406204014635881e+305
+    },
+    {
+      "bitstring": "101010101010111101001110101000111101",
+      "amplitude_magnitude_squared_estimate": 5.285788965182706e+305
+    },
+    {
+      "bitstring": "110111000001001000000111001001101110",
+      "amplitude_magnitude_squared_estimate": 5.263617298002472e+305
+    },
+    {
+      "bitstring": "110111010001001000000111001001101110",
+      "amplitude_magnitude_squared_estimate": 5.2634849791623404e+305
+    },
+    {
+      "bitstring": "000010101100101111011001010111000010",
+      "amplitude_magnitude_squared_estimate": 5.2344090951654186e+305
+    },
+    {
+      "bitstring": "100101111011000010010011010011100000",
+      "amplitude_magnitude_squared_estimate": 5.1906226810549734e+305
+    },
+    {
+      "bitstring": "001000000101110011111100001010010001",
+      "amplitude_magnitude_squared_estimate": 4.983146141631059e+305
+    },
+    {
+      "bitstring": "010010100011100110110001011111110110",
+      "amplitude_magnitude_squared_estimate": 4.935311777591556e+305
+    },
+    {
+      "bitstring": "010010110011100110110001011111110110",
+      "amplitude_magnitude_squared_estimate": 4.935187711822118e+305
+    }
+  ],
+  "decision": "INCONCLUSIVE_UNLESS_REPEATED_ACROSS_SEEDS"
+}

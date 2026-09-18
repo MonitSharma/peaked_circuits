@@ -1,0 +1,156 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "all_mapping_qir_syntax_checks": {
+      "title": "All Mapping Qir Syntax Checks",
+      "type": "string"
+    },
+    "architecture": {
+      "title": "Architecture",
+      "type": "string"
+    },
+    "case_statuses": {
+      "additionalProperties": true,
+      "title": "Case Statuses",
+      "type": "object"
+    },
+    "configuration_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Configuration Hash"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "git_commit": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Commit"
+    },
+    "git_dirty": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Git Dirty"
+    },
+    "input_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Hashes",
+      "type": "object"
+    },
+    "local_logical_to_qir_mapping": {
+      "title": "Local Logical To Qir Mapping",
+      "type": "string"
+    },
+    "operating_system": {
+      "title": "Operating System",
+      "type": "string"
+    },
+    "ordered_cases": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Ordered Cases",
+      "type": "array"
+    },
+    "p12_qir_syntax_check": {
+      "title": "P12 Qir Syntax Check",
+      "type": "string"
+    },
+    "p12_submission_allowed": {
+      "title": "P12 Submission Allowed",
+      "type": "boolean"
+    },
+    "package_versions": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Package Versions",
+      "type": "object"
+    },
+    "provider_result_order": {
+      "const": "unresolved",
+      "default": "unresolved",
+      "title": "Provider Result Order",
+      "type": "string"
+    },
+    "python_version": {
+      "title": "Python Version",
+      "type": "string"
+    },
+    "random_seed": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Random Seed"
+    },
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "failed",
+        "blocked",
+        "not_submitted"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "target": {
+      "title": "Target",
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "target",
+    "ordered_cases",
+    "case_statuses",
+    "p12_submission_allowed",
+    "local_logical_to_qir_mapping",
+    "all_mapping_qir_syntax_checks",
+    "p12_qir_syntax_check"
+  ],
+  "title": "MappingSyntaxCheckAggregateReport",
+  "type": "object"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "bluequbit-p1-v2-mps-greedy-mode-probe-v1",
+  "blind": true,
+  "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
+  "configuration": {"method": "CircuitPermMPS_sequential_conditional_norm_greedy_mode", "cutoff": 1e-12, "dtype": "complex128"},
+  "runs": [
+    {"max_bond": 16, "runtime_s": 4.9670, "candidate": "100010000000001110110100101100111110"},
+    {"max_bond": 32, "runtime_s": 14.2292, "candidate": "111110110110010001101011011100110001"},
+    {"max_bond": 64, "runtime_s": 46.2097, "candidate": "000001000111001110111011100110110001"}
+  ],
+  "decision": "REJECTED_MPS_GREEDY_MODE_NONCONVERGENCE"
+}

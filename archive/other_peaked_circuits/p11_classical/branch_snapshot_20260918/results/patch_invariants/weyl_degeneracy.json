@@ -1,0 +1,79 @@
+{
+  "schema": "patch-invariant-degeneracy-v1",
+  "answer_blind": true,
+  "invariant": "two-qubit Weyl/Cartan coordinates (a,b,c)",
+  "results": [
+    {
+      "circuit": "P5",
+      "n_patches": 902,
+      "entanglers_per_patch": {
+        "2": 870,
+        "4": 22,
+        "6": 8,
+        "8": 2
+      },
+      "sampled": 800,
+      "distinct_coords": 792,
+      "modal_coord": [
+        0.303318,
+        0.089252,
+        0.0
+      ],
+      "modal_count": 2,
+      "modal_fraction": 0.0025
+    },
+    {
+      "circuit": "P8",
+      "n_patches": 808,
+      "entanglers_per_patch": {
+        "1": 732,
+        "2": 72,
+        "3": 4
+      },
+      "sampled": 800,
+      "distinct_coords": 77,
+      "modal_coord": [
+        0.785398,
+        0.785398,
+        0.0
+      ],
+      "modal_count": 724,
+      "modal_fraction": 0.905
+    },
+    {
+      "circuit": "P6",
+      "n_patches": 2593,
+      "entanglers_per_patch": {
+        "1": 1865,
+        "2": 555,
+        "3": 173
+      },
+      "sampled": 800,
+      "distinct_coords": 137,
+      "modal_coord": [
+        0.785398,
+        0.0,
+        0.0
+      ],
+      "modal_count": 577,
+      "modal_fraction": 0.7212
+    },
+    {
+      "circuit": "P9",
+      "n_patches": 1885,
+      "entanglers_per_patch": {
+        "1": 1853,
+        "2": 32
+      },
+      "sampled": 800,
+      "distinct_coords": 16,
+      "modal_coord": [
+        0.785398,
+        0.0,
+        0.0
+      ],
+      "modal_count": 785,
+      "modal_fraction": 0.9812
+    }
+  ]
+}

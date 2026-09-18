@@ -1,0 +1,994 @@
+{
+  "schema": "camps-nullity-v1",
+  "answer_blind": true,
+  "results": [
+    {
+      "circuit": "P5_granite_summit.qasm",
+      "n_qubits": 44,
+      "n_events": 5720,
+      "clifford_ops": 3786,
+      "nonclifford_rotations": 7700,
+      "clifford_fraction": 0.32961866620233327,
+      "max_nu": 44,
+      "mean_nu": 22.511627906976745,
+      "nu_per_cut": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        42,
+        40,
+        38,
+        36,
+        34,
+        32,
+        30,
+        28,
+        26,
+        24,
+        22,
+        20,
+        18,
+        16,
+        14,
+        12,
+        10,
+        8,
+        6,
+        4,
+        2
+      ],
+      "nu_raw_per_cut": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        42,
+        40,
+        38,
+        36,
+        34,
+        32,
+        30,
+        28,
+        26,
+        24,
+        22,
+        20,
+        18,
+        16,
+        14,
+        12,
+        10,
+        8,
+        6,
+        4,
+        2
+      ],
+      "nu_at_middle_cut": 44,
+      "implied_max_bond_log2": 44,
+      "profile": [
+        {
+          "event": 0,
+          "max_nu": 0,
+          "nonclifford_so_far": 3
+        },
+        {
+          "event": 250,
+          "max_nu": 28,
+          "nonclifford_so_far": 400
+        },
+        {
+          "event": 500,
+          "max_nu": 36,
+          "nonclifford_so_far": 736
+        },
+        {
+          "event": 750,
+          "max_nu": 42,
+          "nonclifford_so_far": 1068
+        },
+        {
+          "event": 1000,
+          "max_nu": 42,
+          "nonclifford_so_far": 1403
+        },
+        {
+          "event": 1250,
+          "max_nu": 44,
+          "nonclifford_so_far": 1738
+        },
+        {
+          "event": 1500,
+          "max_nu": 44,
+          "nonclifford_so_far": 2068
+        },
+        {
+          "event": 1750,
+          "max_nu": 44,
+          "nonclifford_so_far": 2403
+        },
+        {
+          "event": 2000,
+          "max_nu": 44,
+          "nonclifford_so_far": 2738
+        },
+        {
+          "event": 2250,
+          "max_nu": 44,
+          "nonclifford_so_far": 3070
+        },
+        {
+          "event": 2500,
+          "max_nu": 44,
+          "nonclifford_so_far": 3398
+        },
+        {
+          "event": 2750,
+          "max_nu": 44,
+          "nonclifford_so_far": 3738
+        },
+        {
+          "event": 3000,
+          "max_nu": 44,
+          "nonclifford_so_far": 4070
+        },
+        {
+          "event": 3250,
+          "max_nu": 44,
+          "nonclifford_so_far": 4403
+        },
+        {
+          "event": 3500,
+          "max_nu": 44,
+          "nonclifford_so_far": 4740
+        },
+        {
+          "event": 3750,
+          "max_nu": 44,
+          "nonclifford_so_far": 5073
+        },
+        {
+          "event": 4000,
+          "max_nu": 44,
+          "nonclifford_so_far": 5403
+        },
+        {
+          "event": 4250,
+          "max_nu": 44,
+          "nonclifford_so_far": 5736
+        },
+        {
+          "event": 4500,
+          "max_nu": 44,
+          "nonclifford_so_far": 6070
+        },
+        {
+          "event": 4750,
+          "max_nu": 44,
+          "nonclifford_so_far": 6401
+        },
+        {
+          "event": 5000,
+          "max_nu": 44,
+          "nonclifford_so_far": 6738
+        },
+        {
+          "event": 5250,
+          "max_nu": 44,
+          "nonclifford_so_far": 7068
+        },
+        {
+          "event": 5500,
+          "max_nu": 44,
+          "nonclifford_so_far": 7403
+        },
+        {
+          "event": 5720,
+          "max_nu": 44,
+          "nonclifford_so_far": 7700
+        }
+      ]
+    },
+    {
+      "circuit": "P8_grid_888_iswap.qasm",
+      "n_qubits": 40,
+      "n_events": 2704,
+      "clifford_ops": 928,
+      "nonclifford_rotations": 5408,
+      "clifford_fraction": 0.14646464646464646,
+      "max_nu": 40,
+      "mean_nu": 20.512820512820515,
+      "nu_per_cut": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        38,
+        36,
+        34,
+        32,
+        30,
+        28,
+        26,
+        24,
+        22,
+        20,
+        18,
+        16,
+        14,
+        12,
+        10,
+        8,
+        6,
+        4,
+        2
+      ],
+      "nu_raw_per_cut": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        38,
+        36,
+        34,
+        32,
+        30,
+        28,
+        26,
+        24,
+        22,
+        20,
+        18,
+        16,
+        14,
+        12,
+        10,
+        8,
+        6,
+        4,
+        2
+      ],
+      "nu_at_middle_cut": 40,
+      "implied_max_bond_log2": 40,
+      "profile": [
+        {
+          "event": 0,
+          "max_nu": 0,
+          "nonclifford_so_far": 2
+        },
+        {
+          "event": 250,
+          "max_nu": 34,
+          "nonclifford_so_far": 498
+        },
+        {
+          "event": 500,
+          "max_nu": 40,
+          "nonclifford_so_far": 993
+        },
+        {
+          "event": 750,
+          "max_nu": 40,
+          "nonclifford_so_far": 1499
+        },
+        {
+          "event": 1000,
+          "max_nu": 40,
+          "nonclifford_so_far": 1997
+        },
+        {
+          "event": 1250,
+          "max_nu": 40,
+          "nonclifford_so_far": 2495
+        },
+        {
+          "event": 1500,
+          "max_nu": 40,
+          "nonclifford_so_far": 2996
+        },
+        {
+          "event": 1750,
+          "max_nu": 40,
+          "nonclifford_so_far": 3494
+        },
+        {
+          "event": 2000,
+          "max_nu": 40,
+          "nonclifford_so_far": 3995
+        },
+        {
+          "event": 2250,
+          "max_nu": 40,
+          "nonclifford_so_far": 4496
+        },
+        {
+          "event": 2500,
+          "max_nu": 40,
+          "nonclifford_so_far": 4994
+        },
+        {
+          "event": 2704,
+          "max_nu": 40,
+          "nonclifford_so_far": 5408
+        }
+      ]
+    },
+    {
+      "circuit": "P6_titan_pinnacle.qasm",
+      "n_qubits": 62,
+      "n_events": 10486,
+      "clifford_ops": 8295,
+      "nonclifford_rotations": 14308,
+      "clifford_fraction": 0.3669866831836482,
+      "max_nu": 62,
+      "mean_nu": 31.508196721311474,
+      "nu_per_cut": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        60,
+        62,
+        60,
+        58,
+        56,
+        54,
+        52,
+        50,
+        48,
+        46,
+        44,
+        42,
+        40,
+        38,
+        36,
+        34,
+        32,
+        30,
+        28,
+        26,
+        24,
+        22,
+        20,
+        18,
+        16,
+        14,
+        12,
+        10,
+        8,
+        6,
+        4,
+        2
+      ],
+      "nu_raw_per_cut": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        60,
+        62,
+        60,
+        58,
+        56,
+        54,
+        52,
+        50,
+        48,
+        46,
+        44,
+        42,
+        40,
+        38,
+        36,
+        34,
+        32,
+        30,
+        28,
+        26,
+        24,
+        22,
+        20,
+        18,
+        16,
+        14,
+        12,
+        10,
+        8,
+        6,
+        4,
+        2
+      ],
+      "nu_at_middle_cut": 62,
+      "implied_max_bond_log2": 62,
+      "profile": [
+        {
+          "event": 0,
+          "max_nu": 0,
+          "nonclifford_so_far": 3
+        },
+        {
+          "event": 250,
+          "max_nu": 46,
+          "nonclifford_so_far": 430
+        },
+        {
+          "event": 500,
+          "max_nu": 46,
+          "nonclifford_so_far": 773
+        },
+        {
+          "event": 750,
+          "max_nu": 54,
+          "nonclifford_so_far": 1109
+        },
+        {
+          "event": 1000,
+          "max_nu": 60,
+          "nonclifford_so_far": 1450
+        },
+        {
+          "event": 1250,
+          "max_nu": 61,
+          "nonclifford_so_far": 1791
+        },
+        {
+          "event": 1500,
+          "max_nu": 61,
+          "nonclifford_so_far": 2120
+        },
+        {
+          "event": 1750,
+          "max_nu": 61,
+          "nonclifford_so_far": 2456
+        },
+        {
+          "event": 2000,
+          "max_nu": 61,
+          "nonclifford_so_far": 2792
+        },
+        {
+          "event": 2250,
+          "max_nu": 62,
+          "nonclifford_so_far": 3132
+        },
+        {
+          "event": 2500,
+          "max_nu": 62,
+          "nonclifford_so_far": 3468
+        },
+        {
+          "event": 2750,
+          "max_nu": 62,
+          "nonclifford_so_far": 3809
+        },
+        {
+          "event": 3000,
+          "max_nu": 62,
+          "nonclifford_so_far": 4156
+        },
+        {
+          "event": 3250,
+          "max_nu": 62,
+          "nonclifford_so_far": 4489
+        },
+        {
+          "event": 3500,
+          "max_nu": 62,
+          "nonclifford_so_far": 4830
+        },
+        {
+          "event": 3750,
+          "max_nu": 62,
+          "nonclifford_so_far": 5172
+        },
+        {
+          "event": 4000,
+          "max_nu": 62,
+          "nonclifford_so_far": 5504
+        },
+        {
+          "event": 4250,
+          "max_nu": 62,
+          "nonclifford_so_far": 5842
+        },
+        {
+          "event": 4500,
+          "max_nu": 62,
+          "nonclifford_so_far": 6180
+        },
+        {
+          "event": 4750,
+          "max_nu": 62,
+          "nonclifford_so_far": 6524
+        },
+        {
+          "event": 5000,
+          "max_nu": 62,
+          "nonclifford_so_far": 6877
+        },
+        {
+          "event": 5250,
+          "max_nu": 62,
+          "nonclifford_so_far": 7213
+        },
+        {
+          "event": 5500,
+          "max_nu": 62,
+          "nonclifford_so_far": 7545
+        },
+        {
+          "event": 5750,
+          "max_nu": 62,
+          "nonclifford_so_far": 7896
+        },
+        {
+          "event": 6000,
+          "max_nu": 62,
+          "nonclifford_so_far": 8230
+        },
+        {
+          "event": 6250,
+          "max_nu": 62,
+          "nonclifford_so_far": 8570
+        },
+        {
+          "event": 6500,
+          "max_nu": 62,
+          "nonclifford_so_far": 8921
+        },
+        {
+          "event": 6750,
+          "max_nu": 62,
+          "nonclifford_so_far": 9253
+        },
+        {
+          "event": 7000,
+          "max_nu": 62,
+          "nonclifford_so_far": 9589
+        },
+        {
+          "event": 7250,
+          "max_nu": 62,
+          "nonclifford_so_far": 9929
+        },
+        {
+          "event": 7500,
+          "max_nu": 62,
+          "nonclifford_so_far": 10273
+        },
+        {
+          "event": 7750,
+          "max_nu": 62,
+          "nonclifford_so_far": 10614
+        },
+        {
+          "event": 8000,
+          "max_nu": 62,
+          "nonclifford_so_far": 10953
+        },
+        {
+          "event": 8250,
+          "max_nu": 62,
+          "nonclifford_so_far": 11287
+        },
+        {
+          "event": 8500,
+          "max_nu": 62,
+          "nonclifford_so_far": 11626
+        },
+        {
+          "event": 8750,
+          "max_nu": 62,
+          "nonclifford_so_far": 11972
+        },
+        {
+          "event": 9000,
+          "max_nu": 62,
+          "nonclifford_so_far": 12318
+        },
+        {
+          "event": 9250,
+          "max_nu": 62,
+          "nonclifford_so_far": 12648
+        },
+        {
+          "event": 9500,
+          "max_nu": 62,
+          "nonclifford_so_far": 12991
+        },
+        {
+          "event": 9750,
+          "max_nu": 62,
+          "nonclifford_so_far": 13331
+        },
+        {
+          "event": 10000,
+          "max_nu": 62,
+          "nonclifford_so_far": 13668
+        },
+        {
+          "event": 10250,
+          "max_nu": 62,
+          "nonclifford_so_far": 13994
+        },
+        {
+          "event": 10486,
+          "max_nu": 62,
+          "nonclifford_so_far": 14308
+        }
+      ]
+    },
+    {
+      "circuit": "peaked_circuit_P9_Hqap_56x1917.qasm",
+      "n_qubits": 56,
+      "n_events": 5807,
+      "clifford_ops": 2072,
+      "nonclifford_rotations": 11452,
+      "clifford_fraction": 0.15320910973084886,
+      "max_nu": 56,
+      "mean_nu": 28.509090909090908,
+      "nu_per_cut": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        54,
+        52,
+        50,
+        48,
+        46,
+        44,
+        42,
+        40,
+        38,
+        36,
+        34,
+        32,
+        30,
+        28,
+        26,
+        24,
+        22,
+        20,
+        18,
+        16,
+        14,
+        12,
+        10,
+        8,
+        6,
+        4,
+        2
+      ],
+      "nu_raw_per_cut": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        54,
+        52,
+        50,
+        48,
+        46,
+        44,
+        42,
+        40,
+        38,
+        36,
+        34,
+        32,
+        30,
+        28,
+        26,
+        24,
+        22,
+        20,
+        18,
+        16,
+        14,
+        12,
+        10,
+        8,
+        6,
+        4,
+        2
+      ],
+      "nu_at_middle_cut": 56,
+      "implied_max_bond_log2": 56,
+      "profile": [
+        {
+          "event": 0,
+          "max_nu": 0,
+          "nonclifford_so_far": 3
+        },
+        {
+          "event": 250,
+          "max_nu": 42,
+          "nonclifford_so_far": 552
+        },
+        {
+          "event": 500,
+          "max_nu": 54,
+          "nonclifford_so_far": 1056
+        },
+        {
+          "event": 750,
+          "max_nu": 56,
+          "nonclifford_so_far": 1554
+        },
+        {
+          "event": 1000,
+          "max_nu": 56,
+          "nonclifford_so_far": 2055
+        },
+        {
+          "event": 1250,
+          "max_nu": 56,
+          "nonclifford_so_far": 2556
+        },
+        {
+          "event": 1500,
+          "max_nu": 56,
+          "nonclifford_so_far": 3053
+        },
+        {
+          "event": 1750,
+          "max_nu": 56,
+          "nonclifford_so_far": 3554
+        },
+        {
+          "event": 2000,
+          "max_nu": 56,
+          "nonclifford_so_far": 4055
+        },
+        {
+          "event": 2250,
+          "max_nu": 56,
+          "nonclifford_so_far": 4553
+        },
+        {
+          "event": 2500,
+          "max_nu": 56,
+          "nonclifford_so_far": 5052
+        },
+        {
+          "event": 2750,
+          "max_nu": 56,
+          "nonclifford_so_far": 5481
+        },
+        {
+          "event": 3000,
+          "max_nu": 56,
+          "nonclifford_so_far": 5893
+        },
+        {
+          "event": 3250,
+          "max_nu": 56,
+          "nonclifford_so_far": 6342
+        },
+        {
+          "event": 3500,
+          "max_nu": 56,
+          "nonclifford_so_far": 6838
+        },
+        {
+          "event": 3750,
+          "max_nu": 56,
+          "nonclifford_so_far": 7339
+        },
+        {
+          "event": 4000,
+          "max_nu": 56,
+          "nonclifford_so_far": 7837
+        },
+        {
+          "event": 4250,
+          "max_nu": 56,
+          "nonclifford_so_far": 8338
+        },
+        {
+          "event": 4500,
+          "max_nu": 56,
+          "nonclifford_so_far": 8836
+        },
+        {
+          "event": 4750,
+          "max_nu": 56,
+          "nonclifford_so_far": 9337
+        },
+        {
+          "event": 5000,
+          "max_nu": 56,
+          "nonclifford_so_far": 9835
+        },
+        {
+          "event": 5250,
+          "max_nu": 56,
+          "nonclifford_so_far": 10339
+        },
+        {
+          "event": 5500,
+          "max_nu": 56,
+          "nonclifford_so_far": 10837
+        },
+        {
+          "event": 5750,
+          "max_nu": 56,
+          "nonclifford_so_far": 11338
+        },
+        {
+          "event": 5807,
+          "max_nu": 56,
+          "nonclifford_so_far": 11452
+        }
+      ]
+    }
+  ]
+}

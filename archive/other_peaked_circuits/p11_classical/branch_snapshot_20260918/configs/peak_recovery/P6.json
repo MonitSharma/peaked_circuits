@@ -1,0 +1,18 @@
+{
+  "schema": "p12-peak-circuit-manifest-v1",
+  "problem": "P6",
+  "source_qasm_path": "results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
+  "sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
+  "qubit_count": 62,
+  "gate_counts": {"cz": 3494, "u": 6992},
+  "gate_vocabulary": ["cz", "u"],
+  "gate_count": 10486,
+  "two_qubit_gate_count": 3494,
+  "depth": 416,
+  "two_qubit_depth": 208,
+  "unique_interaction_edges": 658,
+  "graph_density": 0.34796404019037547,
+  "canonical_logical_bit_order": "q0_first",
+  "method_eligibility": {"mps": true, "tno": true, "mpo": true, "geometry": false},
+  "provenance": {"original_file_preserved": true, "answer_blind": true}
+}

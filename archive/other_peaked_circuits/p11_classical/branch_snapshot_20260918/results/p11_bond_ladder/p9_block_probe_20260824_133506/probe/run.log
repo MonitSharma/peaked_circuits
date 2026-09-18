@@ -1,0 +1,681 @@
+2026-08-24 21:35:07,369 [INFO] loaded /Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm: qubits=56 ops={'u': 3890, 'rzz': 1917}
+2026-08-24 21:35:07,372 [INFO] Pass: Collect2qBlocks - 2.00081 (ms)
+2026-08-24 21:35:07,378 [INFO] Pass: ConsolidateBlocks - 6.23417 (ms)
+2026-08-24 21:35:07,379 [INFO] after two-qubit block consolidation: ops={'unitary': 1885}
+2026-08-24 21:35:07,390 [INFO] environment: python=3.10.16 qiskit=1.4.5 quimb=1.11.2 numpy=2.2.6 scipy=1.15.3 machine=arm64
+2026-08-24 21:35:07,483 [INFO] Total unitaries: 1885 = 942 (left) + 943 (right)
+2026-08-24 21:35:07,483 [INFO] Rewiring with SabreSwap(trials=90, heuristic='decay', seed=123)
+2026-08-24 21:35:07,483 [INFO] No-progress fail-fast guardrail enabled: abort after 40 consecutive zero-work unswap cycle(s)
+2026-08-24 21:35:07,483 [INFO] [start rewire](phase=initial, side=left, layers=59, trials=90, seed=123, parallel=False)
+2026-08-24 21:35:08,214 [INFO] [end rewire](phase=initial, side=left, routed_layers=1355, elapsed_s=0.73)
+2026-08-24 21:35:08,214 [INFO] [start rewire](phase=initial, side=right, layers=58, trials=90, seed=123, parallel=False)
+2026-08-24 21:35:08,921 [INFO] [end rewire](phase=initial, side=right, routed_layers=1561, elapsed_s=0.71)
+2026-08-24 21:35:08,933 [INFO] [start compressing] -> {'max_bond': 1, 'max_links': 4, 'total_elems': 224, 'total_shapes': 334, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:08,977 [INFO] [1L/1353](swap: 11, u: 0 | c_u: 0 | t_u_l: 0/942 | t_u_r: 0/943 | t_u: 0/1885) -> {'max_bond': 1, 'max_links': 4, 'total_elems': 224, 'total_shapes': 334, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,019 [INFO] [1R/1559](swap: 12, u: 0 | c_u: 0 | t_u_l: 0/942 | t_u_r: 0/943 | t_u: 0/1885) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 512, 'total_shapes': 406, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,062 [INFO] [2L/1353](swap: 11, u: 1 | c_u: 1 | t_u_l: 1/942 | t_u_r: 0/943 | t_u: 1/1885) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 844, 'total_shapes': 450, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,103 [INFO] [2R/1559](swap: 10, u: 1 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 4, 'max_links': 4, 'total_elems': 1456, 'total_shapes': 504, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,250 [INFO] [3L/1353](swap: 14, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 2464, 'total_shapes': 576, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,293 [INFO] [3R/1559](swap: 13, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 4316, 'total_shapes': 700, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,337 [INFO] [4R/1559](swap: 13, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 9464, 'total_shapes': 844, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,386 [INFO] [5R/1559](swap: 13, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 13496, 'total_shapes': 988, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,437 [INFO] [6R/1559](swap: 12, u: 0 | c_u: 2 | t_u_l: 1/942 | t_u_r: 1/943 | t_u: 2/1885) -> {'max_bond': 16, 'max_links': 4, 'total_elems': 17516, 'total_shapes': 1102, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,492 [INFO] [4L/1353](swap: 14, u: 1 | c_u: 3 | t_u_l: 2/942 | t_u_r: 1/943 | t_u: 3/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 33200, 'total_shapes': 1360, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,560 [INFO] [7R/1559](swap: 12, u: 0 | c_u: 3 | t_u_l: 2/942 | t_u_r: 1/943 | t_u: 3/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 50120, 'total_shapes': 1666, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,645 [INFO] [8R/1559](swap: 10, u: 1 | c_u: 4 | t_u_l: 2/942 | t_u_r: 2/943 | t_u: 4/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 85444, 'total_shapes': 1968, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,776 [INFO] [5L/1353](swap: 13, u: 1 | c_u: 5 | t_u_l: 3/942 | t_u_r: 2/943 | t_u: 5/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 124352, 'total_shapes': 2254, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:09,940 [INFO] [6L/1353](swap: 8, u: 1 | c_u: 6 | t_u_l: 4/942 | t_u_r: 2/943 | t_u: 6/1885) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 154672, 'total_shapes': 2488, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:10,144 [INFO] [9R/1559](swap: 9, u: 1 | c_u: 7 | t_u_l: 4/942 | t_u_r: 3/943 | t_u: 7/1885) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 230320, 'total_shapes': 2992, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:10,459 [INFO]     [start unswap] -> {'max_bond': 128, 'max_links': 4, 'total_elems': 230320, 'total_shapes': 2992, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:11,169 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 6 | total: 6) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 287264, 'total_shapes': 3076, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:11,698 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 16 | total: 22) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 125696, 'total_shapes': 2206, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:11,784 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 22) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 125696, 'total_shapes': 2206, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:11,961 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 1 | total: 23) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 195840, 'total_shapes': 2536, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,172 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 15 | total: 38) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 101964, 'total_shapes': 1882, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,276 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 10 | total: 48) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 73208, 'total_shapes': 1494, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,418 [INFO]     [1 | both | 0](candidate_pairs: 28/28 | new_swaps: 4 | total: 4) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,504 [INFO]     [1 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 4) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,532 [INFO]     [1 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 4) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,560 [INFO]     [1 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 4) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,614 [INFO]     [1 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 4) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,671 [INFO]     [1 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 4) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,753 [INFO]     [2 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,839 [INFO]     [2 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,867 [INFO]     [2 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,895 [INFO]     [2 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:12,949 [INFO]     [2 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:13,006 [INFO]     [2 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:13,007 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 71756, 'total_shapes': 1438, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:13,038 [INFO] [start rewire](phase=post_unswap, cycle=1, side=left, layers=1349, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:13,786 [INFO] [end rewire](phase=post_unswap, cycle=1, side=left, routed_layers=1436, elapsed_s=0.75)
+2026-08-24 21:35:13,786 [INFO] [start rewire](phase=post_unswap, cycle=1, side=right, layers=1552, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:14,637 [INFO] [end rewire](phase=post_unswap, cycle=1, side=right, routed_layers=1470, elapsed_s=0.85)
+2026-08-24 21:35:14,721 [INFO] [1L/1434](swap: 15, u: 0 | c_u: 0 | t_u_l: 4/942 | t_u_r: 3/943 | t_u: 7/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 72872, 'total_shapes': 1474, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:14,840 [INFO] [1R/1468](swap: 8, u: 0 | c_u: 0 | t_u_l: 4/942 | t_u_r: 3/943 | t_u: 7/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 98144, 'total_shapes': 1716, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:14,997 [INFO] [2L/1434](swap: 14, u: 1 | c_u: 1 | t_u_l: 5/942 | t_u_r: 3/943 | t_u: 8/1885) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 148672, 'total_shapes': 2074, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:15,166 [INFO] [3L/1434](swap: 15, u: 0 | c_u: 1 | t_u_l: 5/942 | t_u_r: 3/943 | t_u: 8/1885) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 199552, 'total_shapes': 2434, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:15,432 [INFO]     [start unswap] -> {'max_bond': 128, 'max_links': 4, 'total_elems': 199552, 'total_shapes': 2434, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:16,130 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 3 | total: 3) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 371932, 'total_shapes': 3104, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:16,663 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 6 | total: 9) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 257148, 'total_shapes': 2612, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:16,774 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 9) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 257148, 'total_shapes': 2612, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:16,999 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 2 | total: 11) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 217596, 'total_shapes': 2604, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:17,231 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 6 | total: 17) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 180796, 'total_shapes': 2356, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:17,431 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 8 | total: 25) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 146716, 'total_shapes': 2112, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:17,763 [INFO]     [1 | both | 0](candidate_pairs: 28/28 | new_swaps: 6 | total: 6) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 159264, 'total_shapes': 2098, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:18,067 [INFO]     [1 | both | 1](candidate_pairs: 27/27 | new_swaps: 4 | total: 10) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144916, 'total_shapes': 2034, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:18,128 [INFO]     [1 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 10) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144916, 'total_shapes': 2034, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:18,190 [INFO]     [1 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 10) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144916, 'total_shapes': 2034, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:18,336 [INFO]     [1 | right | 0](candidate_pairs: 28/28 | new_swaps: 4 | total: 14) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144388, 'total_shapes': 1992, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:18,493 [INFO]     [1 | right | 1](candidate_pairs: 27/27 | new_swaps: 2 | total: 16) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144304, 'total_shapes': 1982, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:18,650 [INFO]     [2 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144304, 'total_shapes': 1982, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:18,822 [INFO]     [2 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144304, 'total_shapes': 1982, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:18,883 [INFO]     [2 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144304, 'total_shapes': 1982, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:18,944 [INFO]     [2 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144304, 'total_shapes': 1982, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:19,040 [INFO]     [2 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144304, 'total_shapes': 1982, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:19,149 [INFO]     [2 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144304, 'total_shapes': 1982, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:19,150 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144304, 'total_shapes': 1982, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:19,193 [INFO] [start rewire](phase=post_unswap, cycle=2, side=left, layers=1433, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:20,188 [INFO] [end rewire](phase=post_unswap, cycle=2, side=left, routed_layers=1485, elapsed_s=0.99)
+2026-08-24 21:35:20,188 [INFO] [start rewire](phase=post_unswap, cycle=2, side=right, layers=1469, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:21,086 [INFO] [end rewire](phase=post_unswap, cycle=2, side=right, routed_layers=1538, elapsed_s=0.90)
+2026-08-24 21:35:21,260 [INFO] [1L/1483](swap: 12, u: 0 | c_u: 0 | t_u_l: 5/942 | t_u_r: 3/943 | t_u: 8/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 144748, 'total_shapes': 2018, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:21,444 [INFO] [1R/1536](swap: 14, u: 0 | c_u: 0 | t_u_l: 5/942 | t_u_r: 3/943 | t_u: 8/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 168232, 'total_shapes': 2296, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:21,641 [INFO] [2L/1483](swap: 12, u: 1 | c_u: 1 | t_u_l: 6/942 | t_u_r: 3/943 | t_u: 9/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 186000, 'total_shapes': 2322, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:21,892 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 186000, 'total_shapes': 2322, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:22,393 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 3 | total: 3) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 333488, 'total_shapes': 2966, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:22,991 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 6 | total: 9) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 316028, 'total_shapes': 2808, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:23,080 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 9) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 316028, 'total_shapes': 2808, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:23,169 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 9) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 316028, 'total_shapes': 2808, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:23,426 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 7 | total: 16) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 233932, 'total_shapes': 2382, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:23,694 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 2 | total: 18) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 215404, 'total_shapes': 2312, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:24,038 [INFO]     [1 | both | 0](candidate_pairs: 28/28 | new_swaps: 2 | total: 2) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 199588, 'total_shapes': 2358, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:24,358 [INFO]     [1 | both | 1](candidate_pairs: 27/27 | new_swaps: 4 | total: 6) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 154972, 'total_shapes': 2052, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:24,413 [INFO]     [1 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 6) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 154972, 'total_shapes': 2052, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:24,469 [INFO]     [1 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 6) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 154972, 'total_shapes': 2052, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:24,627 [INFO]     [1 | right | 0](candidate_pairs: 28/28 | new_swaps: 2 | total: 8) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 130372, 'total_shapes': 1918, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:24,730 [INFO]     [1 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 8) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 130372, 'total_shapes': 1918, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:24,890 [INFO]     [2 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 130372, 'total_shapes': 1918, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:25,123 [INFO]     [2 | both | 1](candidate_pairs: 27/27 | new_swaps: 1 | total: 1) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 146708, 'total_shapes': 2074, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:25,167 [INFO]     [2 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 1) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 146708, 'total_shapes': 2074, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:25,211 [INFO]     [2 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 1) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 146708, 'total_shapes': 2074, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:25,327 [INFO]     [2 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 1) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 146708, 'total_shapes': 2074, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:25,480 [INFO]     [2 | right | 1](candidate_pairs: 27/27 | new_swaps: 1 | total: 2) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 140564, 'total_shapes': 1978, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:25,633 [INFO]     [3 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 140564, 'total_shapes': 1978, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:25,778 [INFO]     [3 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 140564, 'total_shapes': 1978, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:25,821 [INFO]     [3 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 140564, 'total_shapes': 1978, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:25,863 [INFO]     [3 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 140564, 'total_shapes': 1978, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:25,974 [INFO]     [3 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 140564, 'total_shapes': 1978, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:26,077 [INFO]     [3 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 140564, 'total_shapes': 1978, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:26,077 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 140564, 'total_shapes': 1978, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:26,153 [INFO] [start rewire](phase=post_unswap, cycle=3, side=left, layers=1483, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:27,179 [INFO] [end rewire](phase=post_unswap, cycle=3, side=left, routed_layers=1426, elapsed_s=1.03)
+2026-08-24 21:35:27,179 [INFO] [start rewire](phase=post_unswap, cycle=3, side=right, layers=1537, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:27,912 [INFO] [end rewire](phase=post_unswap, cycle=3, side=right, routed_layers=1640, elapsed_s=0.73)
+2026-08-24 21:35:28,054 [INFO] [1L/1424](swap: 12, u: 1 | c_u: 1 | t_u_l: 7/942 | t_u_r: 3/943 | t_u: 10/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 141028, 'total_shapes': 1998, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:28,226 [INFO] [2L/1424](swap: 12, u: 0 | c_u: 1 | t_u_l: 7/942 | t_u_r: 3/943 | t_u: 10/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 156664, 'total_shapes': 2232, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:28,421 [INFO] [1R/1638](swap: 11, u: 0 | c_u: 1 | t_u_l: 7/942 | t_u_r: 3/943 | t_u: 10/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 170740, 'total_shapes': 2318, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:28,662 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 170740, 'total_shapes': 2318, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:29,170 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 3 | total: 3) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 270140, 'total_shapes': 2856, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:29,686 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 7 | total: 10) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 271016, 'total_shapes': 2724, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:29,772 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 10) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 271016, 'total_shapes': 2724, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:29,858 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 10) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 271016, 'total_shapes': 2724, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:30,078 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 5 | total: 15) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 161576, 'total_shapes': 2188, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:30,279 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 3 | total: 18) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 135592, 'total_shapes': 2068, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:30,543 [INFO]     [1 | both | 0](candidate_pairs: 28/28 | new_swaps: 3 | total: 3) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 150780, 'total_shapes': 2232, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:30,796 [INFO]     [1 | both | 1](candidate_pairs: 27/27 | new_swaps: 6 | total: 9) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 121348, 'total_shapes': 2010, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:30,840 [INFO]     [1 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 9) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 121348, 'total_shapes': 2010, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:30,884 [INFO]     [1 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 9) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 121348, 'total_shapes': 2010, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:31,011 [INFO]     [1 | right | 0](candidate_pairs: 28/28 | new_swaps: 4 | total: 13) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 104932, 'total_shapes': 1860, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:31,137 [INFO]     [1 | right | 1](candidate_pairs: 27/27 | new_swaps: 2 | total: 15) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 98764, 'total_shapes': 1758, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:31,258 [INFO]     [2 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 98764, 'total_shapes': 1758, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:31,463 [INFO]     [2 | both | 1](candidate_pairs: 27/27 | new_swaps: 3 | total: 3) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 104824, 'total_shapes': 1818, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:31,500 [INFO]     [2 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 3) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 104824, 'total_shapes': 1818, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:31,536 [INFO]     [2 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 3) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 104824, 'total_shapes': 1818, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:31,607 [INFO]     [2 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 3) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 104824, 'total_shapes': 1818, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:31,739 [INFO]     [2 | right | 1](candidate_pairs: 27/27 | new_swaps: 2 | total: 5) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 98656, 'total_shapes': 1748, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:31,849 [INFO]     [3 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 98656, 'total_shapes': 1748, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:31,972 [INFO]     [3 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 98656, 'total_shapes': 1748, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:32,007 [INFO]     [3 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 98656, 'total_shapes': 1748, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:32,043 [INFO]     [3 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 98656, 'total_shapes': 1748, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:32,109 [INFO]     [3 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 98656, 'total_shapes': 1748, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:32,197 [INFO]     [3 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 98656, 'total_shapes': 1748, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:32,198 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 98656, 'total_shapes': 1748, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:32,292 [INFO] [start rewire](phase=post_unswap, cycle=4, side=left, layers=1424, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:33,425 [INFO] [end rewire](phase=post_unswap, cycle=4, side=left, routed_layers=1273, elapsed_s=1.13)
+2026-08-24 21:35:33,425 [INFO] [start rewire](phase=post_unswap, cycle=4, side=right, layers=1639, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:34,131 [INFO] [end rewire](phase=post_unswap, cycle=4, side=right, routed_layers=1493, elapsed_s=0.71)
+2026-08-24 21:35:34,255 [INFO] [1L/1271](swap: 12, u: 0 | c_u: 0 | t_u_l: 7/942 | t_u_r: 3/943 | t_u: 10/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 108076, 'total_shapes': 1862, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:34,397 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 108076, 'total_shapes': 1862, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:34,577 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 108076, 'total_shapes': 1862, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:34,877 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 4 | total: 4) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 210408, 'total_shapes': 2328, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:34,937 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 4) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 210408, 'total_shapes': 2328, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:34,996 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 4) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 210408, 'total_shapes': 2328, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:35,179 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 4 | total: 8) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 202152, 'total_shapes': 2208, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:35,356 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 5 | total: 13) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 103224, 'total_shapes': 1782, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:35,545 [INFO]     [1 | both | 0](candidate_pairs: 28/28 | new_swaps: 1 | total: 1) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 95032, 'total_shapes': 1790, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:35,747 [INFO]     [1 | both | 1](candidate_pairs: 27/27 | new_swaps: 3 | total: 4) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 100744, 'total_shapes': 1762, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:35,783 [INFO]     [1 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 4) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 100744, 'total_shapes': 1762, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:35,818 [INFO]     [1 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 4) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 100744, 'total_shapes': 1762, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:35,886 [INFO]     [1 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 4) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 100744, 'total_shapes': 1762, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:35,977 [INFO]     [1 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 4) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 100744, 'total_shapes': 1762, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:36,088 [INFO]     [2 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 100744, 'total_shapes': 1762, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:36,214 [INFO]     [2 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 100744, 'total_shapes': 1762, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:36,250 [INFO]     [2 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 100744, 'total_shapes': 1762, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:36,286 [INFO]     [2 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 100744, 'total_shapes': 1762, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:36,354 [INFO]     [2 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 100744, 'total_shapes': 1762, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:36,444 [INFO]     [2 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 100744, 'total_shapes': 1762, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:36,445 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 100744, 'total_shapes': 1762, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:36,529 [INFO] [start rewire](phase=post_unswap, cycle=5, side=left, layers=1272, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:37,682 [INFO] [end rewire](phase=post_unswap, cycle=5, side=left, routed_layers=1423, elapsed_s=1.15)
+2026-08-24 21:35:37,682 [INFO] [start rewire](phase=post_unswap, cycle=5, side=right, layers=1493, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:38,599 [INFO] [end rewire](phase=post_unswap, cycle=5, side=right, routed_layers=1543, elapsed_s=0.92)
+2026-08-24 21:35:38,727 [INFO] [1L/1421](swap: 12, u: 0 | c_u: 0 | t_u_l: 7/942 | t_u_r: 3/943 | t_u: 10/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 110488, 'total_shapes': 1894, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:38,860 [INFO] [2L/1421](swap: 9, u: 1 | c_u: 1 | t_u_l: 8/942 | t_u_r: 3/943 | t_u: 11/1885) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 164800, 'total_shapes': 2356, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:39,057 [INFO] [3L/1421](swap: 8, u: 1 | c_u: 2 | t_u_l: 9/942 | t_u_r: 3/943 | t_u: 12/1885) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 230368, 'total_shapes': 2704, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:39,351 [INFO]     [start unswap] -> {'max_bond': 128, 'max_links': 4, 'total_elems': 230368, 'total_shapes': 2704, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:40,403 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 1 | total: 1) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 560608, 'total_shapes': 3736, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:41,194 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 7 | total: 8) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 332256, 'total_shapes': 2912, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:41,371 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 8) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 332256, 'total_shapes': 2912, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:41,728 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 1 | total: 9) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 290016, 'total_shapes': 3000, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:42,039 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 6 | total: 15) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 276096, 'total_shapes': 2868, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:42,354 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 8 | total: 23) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 192336, 'total_shapes': 2416, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:42,821 [INFO]     [1 | both | 0](candidate_pairs: 28/28 | new_swaps: 2 | total: 2) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 204528, 'total_shapes': 2472, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:43,185 [INFO]     [1 | both | 1](candidate_pairs: 27/27 | new_swaps: 1 | total: 3) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179952, 'total_shapes': 2344, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:43,244 [INFO]     [1 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 3) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179952, 'total_shapes': 2344, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:43,362 [INFO]     [1 | left | 1](candidate_pairs: 27/27 | new_swaps: 1 | total: 4) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 161520, 'total_shapes': 2248, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:43,539 [INFO]     [1 | right | 0](candidate_pairs: 28/28 | new_swaps: 1 | total: 5) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 161472, 'total_shapes': 2244, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:43,666 [INFO]     [1 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 5) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 161472, 'total_shapes': 2244, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:43,867 [INFO]     [2 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 161472, 'total_shapes': 2244, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:44,053 [INFO]     [2 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 161472, 'total_shapes': 2244, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:44,104 [INFO]     [2 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 161472, 'total_shapes': 2244, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:44,154 [INFO]     [2 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 161472, 'total_shapes': 2244, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:44,280 [INFO]     [2 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 161472, 'total_shapes': 2244, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:44,407 [INFO]     [2 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 161472, 'total_shapes': 2244, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:44,407 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 161472, 'total_shapes': 2244, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:44,506 [INFO] [start rewire](phase=post_unswap, cycle=6, side=left, layers=1420, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:45,540 [INFO] [end rewire](phase=post_unswap, cycle=6, side=left, routed_layers=1380, elapsed_s=1.03)
+2026-08-24 21:35:45,540 [INFO] [start rewire](phase=post_unswap, cycle=6, side=right, layers=1543, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:46,283 [INFO] [end rewire](phase=post_unswap, cycle=6, side=right, routed_layers=1618, elapsed_s=0.74)
+2026-08-24 21:35:46,470 [INFO] [1L/1378](swap: 8, u: 0 | c_u: 0 | t_u_l: 9/942 | t_u_r: 3/943 | t_u: 12/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:46,704 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:47,101 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:47,487 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:47,592 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:47,697 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:47,849 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:47,985 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:47,985 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:48,026 [INFO] [start rewire](phase=post_unswap, cycle=7, side=left, layers=1379, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:49,242 [INFO] [end rewire](phase=post_unswap, cycle=7, side=left, routed_layers=1489, elapsed_s=1.22)
+2026-08-24 21:35:49,242 [INFO] [start rewire](phase=post_unswap, cycle=7, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:50,233 [INFO] [end rewire](phase=post_unswap, cycle=7, side=right, routed_layers=1618, elapsed_s=0.99)
+2026-08-24 21:35:50,479 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:50,876 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:51,261 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:51,366 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:51,472 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:51,626 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:51,761 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:51,762 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:51,803 [INFO] [start rewire](phase=post_unswap, cycle=8, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:52,940 [INFO] [end rewire](phase=post_unswap, cycle=8, side=left, routed_layers=1489, elapsed_s=1.14)
+2026-08-24 21:35:52,940 [INFO] [start rewire](phase=post_unswap, cycle=8, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:53,709 [INFO] [end rewire](phase=post_unswap, cycle=8, side=right, routed_layers=1618, elapsed_s=0.77)
+2026-08-24 21:35:53,957 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:54,353 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:54,740 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:54,845 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:54,951 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:55,103 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:55,238 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:55,238 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:55,281 [INFO] [start rewire](phase=post_unswap, cycle=9, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:56,585 [INFO] [end rewire](phase=post_unswap, cycle=9, side=left, routed_layers=1489, elapsed_s=1.30)
+2026-08-24 21:35:56,585 [INFO] [start rewire](phase=post_unswap, cycle=9, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:35:57,360 [INFO] [end rewire](phase=post_unswap, cycle=9, side=right, routed_layers=1618, elapsed_s=0.78)
+2026-08-24 21:35:58,012 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:58,408 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:58,795 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:58,900 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:59,005 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:59,157 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:59,292 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:59,293 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:35:59,337 [INFO] [start rewire](phase=post_unswap, cycle=10, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:00,199 [INFO] [end rewire](phase=post_unswap, cycle=10, side=left, routed_layers=1489, elapsed_s=0.86)
+2026-08-24 21:36:00,200 [INFO] [start rewire](phase=post_unswap, cycle=10, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:01,206 [INFO] [end rewire](phase=post_unswap, cycle=10, side=right, routed_layers=1618, elapsed_s=1.01)
+2026-08-24 21:36:01,454 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:01,850 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:02,237 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:02,342 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:02,448 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:02,600 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:02,735 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:02,735 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:02,780 [INFO] [start rewire](phase=post_unswap, cycle=11, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:03,706 [INFO] [end rewire](phase=post_unswap, cycle=11, side=left, routed_layers=1489, elapsed_s=0.93)
+2026-08-24 21:36:03,707 [INFO] [start rewire](phase=post_unswap, cycle=11, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:04,686 [INFO] [end rewire](phase=post_unswap, cycle=11, side=right, routed_layers=1618, elapsed_s=0.98)
+2026-08-24 21:36:04,935 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:05,331 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:05,717 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:05,822 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:05,929 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:06,081 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:06,216 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:06,217 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:06,265 [INFO] [start rewire](phase=post_unswap, cycle=12, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:07,549 [INFO] [end rewire](phase=post_unswap, cycle=12, side=left, routed_layers=1489, elapsed_s=1.28)
+2026-08-24 21:36:07,549 [INFO] [start rewire](phase=post_unswap, cycle=12, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:08,586 [INFO] [end rewire](phase=post_unswap, cycle=12, side=right, routed_layers=1618, elapsed_s=1.04)
+2026-08-24 21:36:08,837 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:09,233 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:09,619 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:09,724 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:09,832 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:09,983 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:10,119 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:10,119 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:10,168 [INFO] [start rewire](phase=post_unswap, cycle=13, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:11,121 [INFO] [end rewire](phase=post_unswap, cycle=13, side=left, routed_layers=1489, elapsed_s=0.95)
+2026-08-24 21:36:11,121 [INFO] [start rewire](phase=post_unswap, cycle=13, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:12,124 [INFO] [end rewire](phase=post_unswap, cycle=13, side=right, routed_layers=1618, elapsed_s=1.00)
+2026-08-24 21:36:12,375 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:12,773 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:13,159 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:13,264 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:13,370 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:13,521 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:13,657 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:13,657 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:13,708 [INFO] [start rewire](phase=post_unswap, cycle=14, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:14,831 [INFO] [end rewire](phase=post_unswap, cycle=14, side=left, routed_layers=1489, elapsed_s=1.12)
+2026-08-24 21:36:14,831 [INFO] [start rewire](phase=post_unswap, cycle=14, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:15,847 [INFO] [end rewire](phase=post_unswap, cycle=14, side=right, routed_layers=1618, elapsed_s=1.02)
+2026-08-24 21:36:16,099 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:16,497 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:16,883 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:16,988 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:17,095 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:17,246 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:17,382 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:17,383 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:17,435 [INFO] [start rewire](phase=post_unswap, cycle=15, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:18,573 [INFO] [end rewire](phase=post_unswap, cycle=15, side=left, routed_layers=1489, elapsed_s=1.14)
+2026-08-24 21:36:18,573 [INFO] [start rewire](phase=post_unswap, cycle=15, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:19,578 [INFO] [end rewire](phase=post_unswap, cycle=15, side=right, routed_layers=1618, elapsed_s=1.00)
+2026-08-24 21:36:19,828 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:20,225 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:20,610 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:20,715 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:20,821 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:20,972 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:21,108 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:21,109 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:21,161 [INFO] [start rewire](phase=post_unswap, cycle=16, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:22,276 [INFO] [end rewire](phase=post_unswap, cycle=16, side=left, routed_layers=1489, elapsed_s=1.11)
+2026-08-24 21:36:22,276 [INFO] [start rewire](phase=post_unswap, cycle=16, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:23,263 [INFO] [end rewire](phase=post_unswap, cycle=16, side=right, routed_layers=1618, elapsed_s=0.99)
+2026-08-24 21:36:23,515 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:23,911 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:24,297 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:24,402 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:24,509 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:24,660 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:24,796 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:24,796 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:24,852 [INFO] [start rewire](phase=post_unswap, cycle=17, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:26,172 [INFO] [end rewire](phase=post_unswap, cycle=17, side=left, routed_layers=1489, elapsed_s=1.32)
+2026-08-24 21:36:26,172 [INFO] [start rewire](phase=post_unswap, cycle=17, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:27,216 [INFO] [end rewire](phase=post_unswap, cycle=17, side=right, routed_layers=1618, elapsed_s=1.04)
+2026-08-24 21:36:27,469 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:27,866 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:28,253 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:28,358 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:28,465 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:28,616 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:28,752 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:28,753 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:28,810 [INFO] [start rewire](phase=post_unswap, cycle=18, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:29,782 [INFO] [end rewire](phase=post_unswap, cycle=18, side=left, routed_layers=1489, elapsed_s=0.97)
+2026-08-24 21:36:29,782 [INFO] [start rewire](phase=post_unswap, cycle=18, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:30,802 [INFO] [end rewire](phase=post_unswap, cycle=18, side=right, routed_layers=1618, elapsed_s=1.02)
+2026-08-24 21:36:31,056 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:31,454 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:31,842 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:31,947 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:32,054 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:32,206 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:32,342 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:32,342 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:32,401 [INFO] [start rewire](phase=post_unswap, cycle=19, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:33,590 [INFO] [end rewire](phase=post_unswap, cycle=19, side=left, routed_layers=1489, elapsed_s=1.19)
+2026-08-24 21:36:33,590 [INFO] [start rewire](phase=post_unswap, cycle=19, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:34,660 [INFO] [end rewire](phase=post_unswap, cycle=19, side=right, routed_layers=1618, elapsed_s=1.07)
+2026-08-24 21:36:34,914 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:35,310 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:35,696 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:35,801 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:35,907 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:36,058 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:36,194 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:36,194 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:36,255 [INFO] [start rewire](phase=post_unswap, cycle=20, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:37,227 [INFO] [end rewire](phase=post_unswap, cycle=20, side=left, routed_layers=1489, elapsed_s=0.97)
+2026-08-24 21:36:37,228 [INFO] [start rewire](phase=post_unswap, cycle=20, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:38,248 [INFO] [end rewire](phase=post_unswap, cycle=20, side=right, routed_layers=1618, elapsed_s=1.02)
+2026-08-24 21:36:38,503 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:38,900 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:39,286 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:39,391 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:39,497 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:39,648 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:39,784 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:39,785 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:39,846 [INFO] [start rewire](phase=post_unswap, cycle=21, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:41,005 [INFO] [end rewire](phase=post_unswap, cycle=21, side=left, routed_layers=1489, elapsed_s=1.16)
+2026-08-24 21:36:41,005 [INFO] [start rewire](phase=post_unswap, cycle=21, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:42,040 [INFO] [end rewire](phase=post_unswap, cycle=21, side=right, routed_layers=1618, elapsed_s=1.03)
+2026-08-24 21:36:42,296 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:42,692 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:43,078 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:43,183 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:43,289 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:43,441 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:43,576 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:43,577 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:43,640 [INFO] [start rewire](phase=post_unswap, cycle=22, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:44,809 [INFO] [end rewire](phase=post_unswap, cycle=22, side=left, routed_layers=1489, elapsed_s=1.17)
+2026-08-24 21:36:44,809 [INFO] [start rewire](phase=post_unswap, cycle=22, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:45,834 [INFO] [end rewire](phase=post_unswap, cycle=22, side=right, routed_layers=1618, elapsed_s=1.03)
+2026-08-24 21:36:46,091 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:46,486 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:46,872 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:46,977 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:47,083 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:47,235 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:47,370 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:47,371 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:47,436 [INFO] [start rewire](phase=post_unswap, cycle=23, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:48,598 [INFO] [end rewire](phase=post_unswap, cycle=23, side=left, routed_layers=1489, elapsed_s=1.16)
+2026-08-24 21:36:48,598 [INFO] [start rewire](phase=post_unswap, cycle=23, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:49,641 [INFO] [end rewire](phase=post_unswap, cycle=23, side=right, routed_layers=1618, elapsed_s=1.04)
+2026-08-24 21:36:49,901 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:50,299 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:50,685 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:50,790 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:50,896 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:51,048 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:51,183 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:51,184 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:51,251 [INFO] [start rewire](phase=post_unswap, cycle=24, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:52,455 [INFO] [end rewire](phase=post_unswap, cycle=24, side=left, routed_layers=1489, elapsed_s=1.20)
+2026-08-24 21:36:52,455 [INFO] [start rewire](phase=post_unswap, cycle=24, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:53,243 [INFO] [end rewire](phase=post_unswap, cycle=24, side=right, routed_layers=1618, elapsed_s=0.79)
+2026-08-24 21:36:53,501 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:53,898 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:54,284 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:54,389 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:54,495 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:54,646 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:54,782 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:54,783 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:54,851 [INFO] [start rewire](phase=post_unswap, cycle=25, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:56,209 [INFO] [end rewire](phase=post_unswap, cycle=25, side=left, routed_layers=1489, elapsed_s=1.36)
+2026-08-24 21:36:56,209 [INFO] [start rewire](phase=post_unswap, cycle=25, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:57,285 [INFO] [end rewire](phase=post_unswap, cycle=25, side=right, routed_layers=1618, elapsed_s=1.08)
+2026-08-24 21:36:57,544 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:57,941 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:58,327 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:58,432 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:58,538 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:58,689 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:58,825 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:58,826 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:36:58,896 [INFO] [start rewire](phase=post_unswap, cycle=26, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:36:59,886 [INFO] [end rewire](phase=post_unswap, cycle=26, side=left, routed_layers=1489, elapsed_s=0.99)
+2026-08-24 21:36:59,887 [INFO] [start rewire](phase=post_unswap, cycle=26, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:00,929 [INFO] [end rewire](phase=post_unswap, cycle=26, side=right, routed_layers=1618, elapsed_s=1.04)
+2026-08-24 21:37:01,188 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:01,586 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:01,972 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:02,077 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:02,183 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:02,335 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:02,471 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:02,471 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:02,543 [INFO] [start rewire](phase=post_unswap, cycle=27, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:03,736 [INFO] [end rewire](phase=post_unswap, cycle=27, side=left, routed_layers=1489, elapsed_s=1.19)
+2026-08-24 21:37:03,736 [INFO] [start rewire](phase=post_unswap, cycle=27, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:04,817 [INFO] [end rewire](phase=post_unswap, cycle=27, side=right, routed_layers=1618, elapsed_s=1.08)
+2026-08-24 21:37:05,078 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:05,475 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:05,860 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:05,965 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:06,071 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:06,222 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:06,358 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:06,358 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:06,431 [INFO] [start rewire](phase=post_unswap, cycle=28, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:07,432 [INFO] [end rewire](phase=post_unswap, cycle=28, side=left, routed_layers=1489, elapsed_s=1.00)
+2026-08-24 21:37:07,432 [INFO] [start rewire](phase=post_unswap, cycle=28, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:08,471 [INFO] [end rewire](phase=post_unswap, cycle=28, side=right, routed_layers=1618, elapsed_s=1.04)
+2026-08-24 21:37:08,731 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:09,127 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:09,513 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:09,618 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:09,724 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:09,876 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:10,011 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:10,012 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:10,086 [INFO] [start rewire](phase=post_unswap, cycle=29, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:11,511 [INFO] [end rewire](phase=post_unswap, cycle=29, side=left, routed_layers=1489, elapsed_s=1.42)
+2026-08-24 21:37:11,511 [INFO] [start rewire](phase=post_unswap, cycle=29, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:12,323 [INFO] [end rewire](phase=post_unswap, cycle=29, side=right, routed_layers=1618, elapsed_s=0.81)
+2026-08-24 21:37:12,585 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:12,981 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:13,367 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:13,472 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:13,578 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:13,730 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:13,866 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:13,866 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:13,943 [INFO] [start rewire](phase=post_unswap, cycle=30, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:15,138 [INFO] [end rewire](phase=post_unswap, cycle=30, side=left, routed_layers=1489, elapsed_s=1.20)
+2026-08-24 21:37:15,138 [INFO] [start rewire](phase=post_unswap, cycle=30, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:16,178 [INFO] [end rewire](phase=post_unswap, cycle=30, side=right, routed_layers=1618, elapsed_s=1.04)
+2026-08-24 21:37:16,440 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:16,835 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:17,221 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:17,325 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:17,431 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:17,582 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:17,718 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:17,718 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:17,796 [INFO] [start rewire](phase=post_unswap, cycle=31, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:19,202 [INFO] [end rewire](phase=post_unswap, cycle=31, side=left, routed_layers=1489, elapsed_s=1.41)
+2026-08-24 21:37:19,202 [INFO] [start rewire](phase=post_unswap, cycle=31, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:20,279 [INFO] [end rewire](phase=post_unswap, cycle=31, side=right, routed_layers=1618, elapsed_s=1.08)
+2026-08-24 21:37:20,543 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:20,941 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:21,328 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:21,433 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:21,539 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:21,691 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:21,827 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:21,827 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:21,908 [INFO] [start rewire](phase=post_unswap, cycle=32, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:22,904 [INFO] [end rewire](phase=post_unswap, cycle=32, side=left, routed_layers=1489, elapsed_s=1.00)
+2026-08-24 21:37:22,904 [INFO] [start rewire](phase=post_unswap, cycle=32, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:23,941 [INFO] [end rewire](phase=post_unswap, cycle=32, side=right, routed_layers=1618, elapsed_s=1.04)
+2026-08-24 21:37:24,204 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:24,600 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:24,986 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:25,091 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:25,197 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:25,349 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:25,485 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:25,485 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:25,567 [INFO] [start rewire](phase=post_unswap, cycle=33, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:26,768 [INFO] [end rewire](phase=post_unswap, cycle=33, side=left, routed_layers=1489, elapsed_s=1.20)
+2026-08-24 21:37:26,768 [INFO] [start rewire](phase=post_unswap, cycle=33, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:27,859 [INFO] [end rewire](phase=post_unswap, cycle=33, side=right, routed_layers=1618, elapsed_s=1.09)
+2026-08-24 21:37:28,124 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:28,520 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:28,906 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:29,011 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:29,117 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:29,268 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:29,404 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:29,404 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:29,487 [INFO] [start rewire](phase=post_unswap, cycle=34, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:30,495 [INFO] [end rewire](phase=post_unswap, cycle=34, side=left, routed_layers=1489, elapsed_s=1.01)
+2026-08-24 21:37:30,495 [INFO] [start rewire](phase=post_unswap, cycle=34, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:31,546 [INFO] [end rewire](phase=post_unswap, cycle=34, side=right, routed_layers=1618, elapsed_s=1.05)
+2026-08-24 21:37:31,811 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:32,207 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:32,593 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:32,698 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:32,805 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:32,956 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:33,091 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:33,092 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:33,176 [INFO] [start rewire](phase=post_unswap, cycle=35, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:34,375 [INFO] [end rewire](phase=post_unswap, cycle=35, side=left, routed_layers=1489, elapsed_s=1.20)
+2026-08-24 21:37:34,376 [INFO] [start rewire](phase=post_unswap, cycle=35, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:35,438 [INFO] [end rewire](phase=post_unswap, cycle=35, side=right, routed_layers=1618, elapsed_s=1.06)
+2026-08-24 21:37:35,704 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:36,101 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:36,487 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:36,593 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:36,699 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:36,850 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:36,986 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:36,986 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:37,073 [INFO] [start rewire](phase=post_unswap, cycle=36, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:38,279 [INFO] [end rewire](phase=post_unswap, cycle=36, side=left, routed_layers=1489, elapsed_s=1.21)
+2026-08-24 21:37:38,279 [INFO] [start rewire](phase=post_unswap, cycle=36, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:39,318 [INFO] [end rewire](phase=post_unswap, cycle=36, side=right, routed_layers=1618, elapsed_s=1.04)
+2026-08-24 21:37:39,584 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:39,980 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:40,366 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:40,472 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:40,577 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:40,729 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:40,865 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:40,865 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:40,953 [INFO] [start rewire](phase=post_unswap, cycle=37, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:42,130 [INFO] [end rewire](phase=post_unswap, cycle=37, side=left, routed_layers=1489, elapsed_s=1.18)
+2026-08-24 21:37:42,130 [INFO] [start rewire](phase=post_unswap, cycle=37, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:43,169 [INFO] [end rewire](phase=post_unswap, cycle=37, side=right, routed_layers=1618, elapsed_s=1.04)
+2026-08-24 21:37:43,437 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:43,833 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:44,219 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:44,324 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:44,430 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:44,582 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:44,718 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:44,718 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:44,808 [INFO] [start rewire](phase=post_unswap, cycle=38, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:45,986 [INFO] [end rewire](phase=post_unswap, cycle=38, side=left, routed_layers=1489, elapsed_s=1.18)
+2026-08-24 21:37:45,986 [INFO] [start rewire](phase=post_unswap, cycle=38, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:47,037 [INFO] [end rewire](phase=post_unswap, cycle=38, side=right, routed_layers=1618, elapsed_s=1.05)
+2026-08-24 21:37:47,304 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:47,701 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:48,086 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:48,191 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:48,298 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:48,449 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:48,584 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:48,585 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:48,676 [INFO] [start rewire](phase=post_unswap, cycle=39, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:49,872 [INFO] [end rewire](phase=post_unswap, cycle=39, side=left, routed_layers=1489, elapsed_s=1.20)
+2026-08-24 21:37:49,872 [INFO] [start rewire](phase=post_unswap, cycle=39, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:50,943 [INFO] [end rewire](phase=post_unswap, cycle=39, side=right, routed_layers=1618, elapsed_s=1.07)
+2026-08-24 21:37:51,212 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:51,608 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:51,993 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:52,098 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:52,204 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:52,355 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:52,491 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:52,491 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:52,585 [INFO] [start rewire](phase=post_unswap, cycle=40, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:53,575 [INFO] [end rewire](phase=post_unswap, cycle=40, side=left, routed_layers=1489, elapsed_s=0.99)
+2026-08-24 21:37:53,576 [INFO] [start rewire](phase=post_unswap, cycle=40, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:54,600 [INFO] [end rewire](phase=post_unswap, cycle=40, side=right, routed_layers=1618, elapsed_s=1.02)
+2026-08-24 21:37:54,868 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:55,264 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:55,650 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:55,755 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:55,861 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:56,012 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:56,148 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:56,148 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:56,243 [INFO] [start rewire](phase=post_unswap, cycle=41, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:57,625 [INFO] [end rewire](phase=post_unswap, cycle=41, side=left, routed_layers=1489, elapsed_s=1.38)
+2026-08-24 21:37:57,625 [INFO] [start rewire](phase=post_unswap, cycle=41, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:37:58,718 [INFO] [end rewire](phase=post_unswap, cycle=41, side=right, routed_layers=1618, elapsed_s=1.09)
+2026-08-24 21:37:58,989 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:59,386 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:59,772 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:59,877 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:37:59,983 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:00,135 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:00,270 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:00,271 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:00,366 [INFO] [start rewire](phase=post_unswap, cycle=42, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:38:01,377 [INFO] [end rewire](phase=post_unswap, cycle=42, side=left, routed_layers=1489, elapsed_s=1.01)
+2026-08-24 21:38:01,377 [INFO] [start rewire](phase=post_unswap, cycle=42, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:38:02,433 [INFO] [end rewire](phase=post_unswap, cycle=42, side=right, routed_layers=1618, elapsed_s=1.06)
+2026-08-24 21:38:02,703 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:03,099 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:03,485 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:03,590 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:03,697 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:03,848 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:03,984 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:03,984 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:04,082 [INFO] [start rewire](phase=post_unswap, cycle=43, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:38:05,314 [INFO] [end rewire](phase=post_unswap, cycle=43, side=left, routed_layers=1489, elapsed_s=1.23)
+2026-08-24 21:38:05,315 [INFO] [start rewire](phase=post_unswap, cycle=43, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:38:06,416 [INFO] [end rewire](phase=post_unswap, cycle=43, side=right, routed_layers=1618, elapsed_s=1.10)
+2026-08-24 21:38:06,689 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:07,086 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:07,471 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:07,577 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:07,683 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:07,834 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:07,970 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:07,970 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:08,070 [INFO] [start rewire](phase=post_unswap, cycle=44, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:38:09,093 [INFO] [end rewire](phase=post_unswap, cycle=44, side=left, routed_layers=1489, elapsed_s=1.02)
+2026-08-24 21:38:09,093 [INFO] [start rewire](phase=post_unswap, cycle=44, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:38:10,156 [INFO] [end rewire](phase=post_unswap, cycle=44, side=right, routed_layers=1618, elapsed_s=1.06)
+2026-08-24 21:38:10,428 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:10,823 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:11,209 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:11,313 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:11,420 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:11,571 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:11,707 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:11,707 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:11,809 [INFO] [start rewire](phase=post_unswap, cycle=45, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:38:13,034 [INFO] [end rewire](phase=post_unswap, cycle=45, side=left, routed_layers=1489, elapsed_s=1.23)
+2026-08-24 21:38:13,034 [INFO] [start rewire](phase=post_unswap, cycle=45, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:38:14,113 [INFO] [end rewire](phase=post_unswap, cycle=45, side=right, routed_layers=1618, elapsed_s=1.08)
+2026-08-24 21:38:14,386 [INFO]     [start unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:14,782 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:15,170 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:15,276 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:15,382 [INFO]     [0 | left | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:15,533 [INFO]     [0 | right | 0](candidate_pairs: 28/28 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:15,669 [INFO]     [0 | right | 1](candidate_pairs: 27/27 | new_swaps: 0 | total: 0) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:15,669 [INFO]     [end unswap] -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
+2026-08-24 21:38:15,772 [INFO] [start rewire](phase=post_unswap, cycle=46, side=left, layers=1489, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:38:17,020 [INFO] [end rewire](phase=post_unswap, cycle=46, side=left, routed_layers=1489, elapsed_s=1.25)
+2026-08-24 21:38:17,020 [INFO] [start rewire](phase=post_unswap, cycle=46, side=right, layers=1618, trials=20, seed=123, parallel=False, route_candidates=1, route_score=none)
+2026-08-24 21:38:18,098 [INFO] [end rewire](phase=post_unswap, cycle=46, side=right, routed_layers=1618, elapsed_s=1.08)
+2026-08-24 21:38:18,143 [ERROR] aborting after 40 consecutive no-progress unswap cycles (limit=40, consumed=12/1885, cutoff=0.0006, mode=swap_thrash). The MPO is small at the stall (max_bond=64 vs cap 512, elems=179904 vs unswap_threshold 1000000) -- the last cycles absorbed only routing SWAP layers before reaching the next 2q block, so zero work gates were consumed. Changing --cutoff will NOT help. Raise --abort-after-no-progress-unswap-cycles (e.g. 20) or set it negative to disable the guard and let the reroute push past this patch.
+2026-08-24 21:38:18,158 [INFO] [end compressing](left: 1489, right: 1618) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 179904, 'total_shapes': 2340, 'total_links': 222, 'num_tensors': 56}
