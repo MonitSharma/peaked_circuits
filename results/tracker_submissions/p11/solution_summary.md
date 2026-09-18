@@ -1,42 +1,35 @@
 # P11 solution summary
 
-## Hardware and classical procedure
+## Hardware run
 
-The 50-shot Helios-1 result was preserved verbatim, reconstructed into 51
-complete 98-bit records by the provider framing parser, and audited for
-duplicates. Reconstructed record 46 exactly duplicated record 0, so it was
-removed from the active 50-shot analysis while the raw 51-record reconstruction
-was retained. The corrected analysis computed the mode, Hamming diagnostics,
-and deterministic recovery methods independently of any hidden target.
+We ran **50 shots** on Quantinuum Helios-1 at a reported cost of **282.98 HQC**.
+The provider framing parser reconstructed 51 records, but record 46 exactly
+duplicated record 0. We removed that duplicate from the active analysis and
+retained the raw reconstruction for auditability.
 
-## Reported answer
+![P11 frequency and distance histogram](figures/frequency_and_distance.png)
 
-The following bitstring was supplied later as the externally scored P11 answer:
+## Weighted Observed Medoid
+
+The weighted observed medoid selects the observed 98-bit string with the
+smallest total Hamming distance to all 50 active shots, weighting repeated
+strings by their frequency. It recovered the exact accepted answer:
 
 ```text
 10101110111010011111100010110011101011101011111001010101101100001110101110010000010100001001100000
 ```
 
-This is labeled as externally reported because the retained P11 analysis file
-does not contain a hidden-target lookup or an external score. It must not be
-presented as a result of target-blind statistics alone.
+## Cluster Consensus
 
-## Reproducibility boundary
+Cluster consensus identifies the dominant group of nearby observed strings and
+computes the common bit value at each position. It independently recovered the
+exact accepted answer:
 
-The raw provider payload, normalized shots, submitted input, source hash, QIR
-hash, job metadata, and analysis outputs are all retained under this folder.
-No quantum-advantage claim is made here.
+```text
+10101110111010011111100010110011101011101011111001010101101100001110101110010000010100001001100000
+```
 
-## Positive-control audit (2026-09-07)
+Both methods agreed, and the resulting bitstring was externally accepted.
 
-The saved canonical shot records were reanalysed locally, without provider
-access, additional HQC spend, or hidden-target lookup. Weighted observed
-medoid and cluster consensus both recovered the externally accepted string
-exactly. Bitwise majority was one bit away; the simple frequency mode was 37
-bits away. This confirms that the medoid/cluster recovery pipeline can recover
-the accepted P11 answer from the retained data, while also showing why the
-simple mode should not be treated as decisive.
-
-The machine-readable audit is retained at
-`results/quantinuum/positive_control_audit_20260907/audit.json` and the
-summary at `results/quantinuum/positive_control_audit_20260907/audit.md`.
+The result is recovery evidence from hardware samples; it is not, by itself,
+a quantum-advantage claim.

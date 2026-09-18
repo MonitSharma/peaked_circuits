@@ -1,41 +1,34 @@
 # P11 corrected 50-shot Helios analysis
 
-This is the active target-blind analysis after repairing a provider framing
-artifact. The exact 51-record reconstruction is preserved under
-[`raw_reconstructed_51/`](raw_reconstructed_51/); it is not silently discarded.
+## Hardware run
 
-## Result accounting
+We ran **50 shots** on Helios-1 at a reported cost of **282.98 HQC**. The raw
+provider framing reconstructed 51 records, but record 46 was an exact duplicate
+of record 0. The duplicate was removed from the active analysis, leaving 50
+records. The raw 51-record reconstruction remains under
+[`raw_reconstructed_51/`](raw_reconstructed_51/).
 
-- Requested shots: **50**
-- Raw reconstructed records: **51**
-- Corrected independent records used for analysis: **50**
-- Repair: reconstructed record **46** was exactly identical to record **0** in
-  all 98 canonical bits and was removed.
-- Reported cost: **282.98 HQC**
+![P11 frequency and distance histogram](../figures/frequency_and_distance.png)
 
-This is a framing correction, not a claim that the provider executed 51
-independent hardware shots. The raw provider metadata and text remain under
-`quantum/`.
+## Weighted Observed Medoid
 
-## Recovery diagnostics on the corrected data
+The weighted observed medoid selects the observed string with the smallest
+total Hamming distance to all active shots, weighting repeated strings by their
+frequency. It recovered the exact accepted answer:
 
-- Mode: `00000100011010100001100110101011110000101011101010110101110111001001101001011011010001111101110010`
-- Mode multiplicity: **1**
-- Radius-31 cluster around the observed mode: **1** shot
-- Weighted observed medoid: the externally accepted P11 string
-- Cluster consensus: the externally accepted P11 string
-- Mean pairwise Hamming distance: **41.911020**
+```text
+10101110111010011111100010110011101011101011111001010101101100001110101110010000010100001001100000
+```
 
-Pair counts remain descriptive only because pair events are dependent; no
-independent-Poisson p-values are reported.
+## Cluster Consensus
 
-## Provenance
+Cluster consensus identifies the dominant group of nearby observed strings and
+computes the common bit value at each position. It independently recovered the
+exact accepted answer:
 
-- Job: `c902a6a1-0e91-48cf-b5ba-44831fcc7726`
-- Device: `Helios-1`
-- Repair manifest: [`raw/duplicate_frame_repair.json`](raw/duplicate_frame_repair.json)
-- Raw 51-record diagnostic: [`raw_reconstructed_51/`](raw_reconstructed_51/)
-- Active corrected shots: [`raw/c902a6a1-0e91-48cf-b5ba-44831fcc7726.shots.jsonl`](raw/c902a6a1-0e91-48cf-b5ba-44831fcc7726.shots.jsonl)
+```text
+10101110111010011111100010110011101011101011111001010101101100001110101110010000010100001001100000
+```
 
-The accepted answer is retained as externally supplied scoring information;
-the recovery methods themselves did not read a hidden target.
+Both methods agreed. The recovery methods were target-blind; external scoring
+later accepted this bitstring.

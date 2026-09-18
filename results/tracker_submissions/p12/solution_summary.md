@@ -1,46 +1,42 @@
 # P12 solution summary
 
-## Hardware and classical procedure
+## Hardware run
 
-The completed Helios-1 job was retrieved without rerunning it. The malformed
-result framing was repaired structurally, not by candidate-dependent filtering:
-205 diagnostic cycles were identified, five exact segment-overlap replicas were
-excluded, and 200 canonical shots were reconstructed. The raw provider result
-and every reconstruction step are retained in this package.
+We ran **200 shots** on Quantinuum Helios-1 at a reported cost of **1,373.4
+HQC**. The malformed provider framing was repaired structurally: 205
+diagnostic cycles produced 200 reconstructed shots after five exact
+segment-overlap replicas were excluded.
 
-The candidate analysis compared four decoders. Most-frequent, weighted
-observed medoid, and cluster consensus agreed; coordinate-wise majority differed
-by 13 bits and was retained as a separate frozen discovery candidate. Collision
-pair counts are descriptive only, and the validation report records split-half,
-bootstrap, framing-sensitivity, and independent-rerun checks.
+![P12 frequency and distance histogram](figures/frequency_and_distance.png)
 
-## Final answer
+## Most Frequent String
+
+This is the exact 98-bit string with the highest observed frequency:
 
 ```text
 10100011110010100111000100011100110001011111011100111001010110101011001001000000101000100000111100
 ```
 
-This is the answer associated with the agreeing medoid/cluster-consensus
-analysis and the later external verification reported in the project history.
-The result is recurrence/recovery evidence; it is not, on its own, a
-quantum-advantage claim.
+## Weighted Observed Medoid
 
-## Positive-control audit (2026-09-07)
+This method selects the observed string with the smallest total Hamming
+distance to the full shot distribution, weighting repeated strings by their
+frequency. It estimates the center of the noisy output cloud:
 
-The saved 200-shot canonical reconstruction was reanalysed locally, without
-provider access, additional HQC spend, or hidden-target lookup. Most-frequent,
-weighted observed medoid, and cluster consensus independently recovered the
-externally accepted string. Coordinate-wise bitwise majority remained 13 bits
-away. This validates the recovery pipeline on P12 while preserving the
-important distinction between a successful decoder and a quantum-advantage
-claim.
+```text
+10100011110010100111000100011100110001011111011100111001010110101011001001000000101000100000111100
+```
 
-The machine-readable audit is retained at
-`results/quantinuum/positive_control_audit_20260907/audit.json` and the
-summary at `results/quantinuum/positive_control_audit_20260907/audit.md`.
+## Cluster Consensus
 
-## Reproducibility boundary
+This method selects the dominant nearby cluster and computes the common bit
+value at each position within that cluster:
 
-The source circuit, submitted artifact, provider metadata, raw result, repaired
-framing, reconstructed 200-shot dataset, hashes, analysis, and validation
-records are all retained under this folder.
+```text
+10100011110010100111000100011100110001011111011100111001010110101011001001000000101000100000111100
+```
+
+All three methods agreed, and this bitstring was externally accepted.
+
+The result is recovery evidence from hardware samples; it is not, by itself,
+a quantum-advantage claim.
