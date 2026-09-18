@@ -3,11 +3,11 @@
   "source": "original Nexus chunks parsed independently",
   "provider_submission_performed": false,
   "batch_files": [
-    "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_chunk_audit_20260907/batch1/shots.json",
-    "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_chunk_audit_20260907/batch2/shots.json",
-    "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_chunk_audit_20260907/batch3/shots.json",
-    "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_chunk_audit_20260907/batch4/shots.json",
-    "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907_batch5/shots.json"
+    "<local-user>/Downloads/p12_quantum/results/hardware/p6_chunk_audit_20260907/batch1/shots.json",
+    "<local-user>/Downloads/p12_quantum/results/hardware/p6_chunk_audit_20260907/batch2/shots.json",
+    "<local-user>/Downloads/p12_quantum/results/hardware/p6_chunk_audit_20260907/batch3/shots.json",
+    "<local-user>/Downloads/p12_quantum/results/hardware/p6_chunk_audit_20260907/batch4/shots.json",
+    "<local-user>/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907_batch5/shots.json"
   ],
   "batches": [
     {

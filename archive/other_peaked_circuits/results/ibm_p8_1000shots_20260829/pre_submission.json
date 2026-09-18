@@ -1,7 +1,7 @@
 {
   "schema": "ibm-p8-physical-submission-v1",
   "branch": "p12_quantum",
-  "source_qasm": "/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm",
+  "source_qasm": "<local-user>/Downloads/P8_grid_888_iswap.qasm",
   "source_qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
   "backend": "ibm_fez",
   "backend_num_qubits": 156,

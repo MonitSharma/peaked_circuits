@@ -2,7 +2,7 @@
 
 Checked: 2026-08-28
 
-The supplied `/Users/monitsharma/Downloads/P11_hqap_1999.qasm` was verified against the P11 metadata in this repository:
+The supplied `<local-user>/Downloads/P11_hqap_1999.qasm` was verified against the P11 metadata in this repository:
 
 - Qubits: `98`
 - CZ gates: `1,999`

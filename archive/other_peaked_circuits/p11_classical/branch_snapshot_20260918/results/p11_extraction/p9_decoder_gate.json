@@ -1,7 +1,7 @@
 {
   "decision": "NO_GO_MAP_DECODER",
   "blindness": "P11 remained blind; P9 target used only for calibration",
-  "solver_worktree": "/Users/monitsharma/code_projects/qat/peaked-mpo-solver",
+  "solver_worktree": "<local-user>/code_projects/qat/peaked-mpo-solver",
   "runs": {
     "tight_control": {
       "tag": "p9_beam_calibration_20260827",

@@ -1,4 +1,4 @@
-2026-08-25 05:16:07,310 [INFO] loaded /Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm: qubits=56 ops={'u': 3890, 'rzz': 1917}
+2026-08-25 05:16:07,310 [INFO] loaded <local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm: qubits=56 ops={'u': 3890, 'rzz': 1917}
 2026-08-25 05:16:07,315 [INFO] Pass: Collect2qBlocks - 2.69604 (ms)
 2026-08-25 05:16:07,324 [INFO] Pass: ConsolidateBlocks - 9.46498 (ms)
 2026-08-25 05:16:07,325 [INFO] after two-qubit block consolidation: ops={'unitary': 1885}
@@ -31,7 +31,7 @@
 2026-08-25 05:16:11,761 [INFO] [end compressing](left: 1349, right: 1551) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 426400, 'total_shapes': 3876, 'total_links': 222, 'num_tensors': 56}
 2026-08-25 05:16:11,766 [WARNING] samples.png generation disabled: No module named 'matplotlib'
 {
-  "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "qasm": "<local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
   "tag": "r",
   "num_qubits": 56,
   "initial_ops": {
@@ -67,8 +67,8 @@
     "scipy_flapack": "/tmp/p9solver-isolated.TzqUkE/venv/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-darwin.so"
   },
   "parameters": {
-    "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
-    "outdir": "/Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/20260824_211606/stage0_p9_probe_cut2e3_D4096",
+    "qasm": "<local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+    "outdir": "<local-user>/Code/p12-helios-recovery/results/p11_bond_ladder/20260824_211606/stage0_p9_probe_cut2e3_D4096",
     "tag": "r",
     "samples": 1000,
     "expected_bitstring": "01101110111001100000100000001010011100101101010111110111",

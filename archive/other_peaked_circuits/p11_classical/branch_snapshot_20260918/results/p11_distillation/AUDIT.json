@@ -23,12 +23,12 @@
   },
   "inputs": {
     "p9_qasm": {
-      "expected_path_from_historical_manifest": "/Users/monitsharma/code_projects/Qupertino/src/mettleq/datasets/peaked_circuit_P9_Hqap_56x1917.qasm",
+      "expected_path_from_historical_manifest": "<local-user>/code_projects/Qupertino/src/mettleq/datasets/peaked_circuit_P9_Hqap_56x1917.qasm",
       "available_locally": false,
       "sha256_from_historical_manifest": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35"
     },
     "p11_qasm": {
-      "expected_path_from_historical_manifest": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P11_Hqap_98x1999.qasm",
+      "expected_path_from_historical_manifest": "<local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P11_Hqap_98x1999.qasm",
       "available_locally": false,
       "sha256_from_historical_manifest": "1373d50c8a42b1ca745d202391767c417ddac56db95182ac2aced019231b3372"
     },

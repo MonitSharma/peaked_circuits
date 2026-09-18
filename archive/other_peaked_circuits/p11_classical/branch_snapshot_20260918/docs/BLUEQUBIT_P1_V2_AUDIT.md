@@ -2,7 +2,7 @@
 
 This branch is `bluequbit-p1-mac-portfolio`, created from the verified v1
 screening head `efd24d3e3d46f2f038d3bfddd7bfa09a50a52bd2`. The P1 input remains
-local and uncommitted at `/Users/monitsharma/Downloads/P1_little_dimple.qasm`.
+local and uncommitted at `<local-user>/Downloads/P1_little_dimple.qasm`.
 Its SHA256 is
 `0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8` and its
 size is 219,814 bytes.
@@ -16,7 +16,7 @@ read-only background evidence; P9/P11 conclusions are not reopened.
 The experiment environment is an Apple arm64 Mac running macOS 26.5.2 with
 36,864 MiB nominal unified memory. The pinned experiment Python reports Python
 3.10.16, NumPy 2.2.6, SciPy 1.15.3, Qiskit 1.4.5, Quimb 1.15.0, and MLX
-0.32.2. Julia is available at `/Users/monitsharma/.juliaup/bin/julia`. The
+0.32.2. Julia is available at `<local-user>/.juliaup/bin/julia`. The
 qstvec checkout is local at `external/qstvec`, commit
 `545614fa196e2a77d96d408e0cdf39520684b251`.
 The public mirrored-TNO method was studied as a separate CPU probe using

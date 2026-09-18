@@ -10,7 +10,7 @@ provider result will be retrieved without candidate-dependent filtering.
 ## Frozen submission
 
 - Branch: `p12_quantum`
-- Circuit: `/Users/monitsharma/Downloads/P11_hqap_1999.qasm`
+- Circuit: `<local-user>/Downloads/P11_hqap_1999.qasm`
 - Target: `Helios-1` hardware
 - Requested shots: **50**
 - Maximum cost: **300 HQC**

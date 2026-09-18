@@ -1,5 +1,5 @@
 {
-  "qasm": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
+  "qasm": "<local-user>/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
   "tag": "p6_full_d128_samples1000_seed456",
   "num_qubits": 62,
   "initial_ops": {
@@ -30,8 +30,8 @@
     "scipy_flapack": "<repo>/.venv-p9-isolated/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-darwin.so"
   },
   "parameters": {
-    "qasm": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
-    "outdir": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P6/mpo/full_d128_samples1000_seed456",
+    "qasm": "<local-user>/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
+    "outdir": "<local-user>/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P6/mpo/full_d128_samples1000_seed456",
     "tag": "p6_full_d128_samples1000_seed456",
     "samples": 1000,
     "decoder": "beam",
@@ -254,7 +254,7 @@
     27,
     4
   ],
-  "samples_path": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P6/mpo/full_d128_samples1000_seed456/p6_full_d128_samples1000_seed456/samples.tsv",
+  "samples_path": "<local-user>/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P6/mpo/full_d128_samples1000_seed456/p6_full_d128_samples1000_seed456/samples.tsv",
   "decoder": "beam",
   "decoder_bitwise_map": "11111100101101000101100111111011000101011111100001110101110101",
   "decoder_marginals": [

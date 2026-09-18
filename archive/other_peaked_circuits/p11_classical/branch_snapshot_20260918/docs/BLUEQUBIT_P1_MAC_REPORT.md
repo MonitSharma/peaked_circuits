@@ -6,7 +6,7 @@
 
 The branch is `bluequbit-p1-classical`, created from `p11_classical` at
 `1151be3bbf952fc8a8edb642cdd95e290a4e25c1`. The local P1 input remains outside
-version control at `/Users/monitsharma/Downloads/P1_little_dimple.qasm`.
+version control at `<local-user>/Downloads/P1_little_dimple.qasm`.
 SHA256: `0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8`;
 size: 219,814 bytes. No answer string, oracle, or hidden verifier was read.
 

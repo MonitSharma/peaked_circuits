@@ -88,7 +88,7 @@
   "parameters": {
     "optimize_every": 5
   },
-  "qasm": "/Users/monitsharma/Code/p12-helios-recovery/data/canonical/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "qasm": "<local-user>/Code/p12-helios-recovery/data/canonical/peaked_circuit_P9_Hqap_56x1917.qasm",
   "qasm_sha256": "cff3496c45d9133c1f1693f1d3b0cf1fc2da338f13cd7b339db330a4762d0f35",
   "qstvec": {
     "commit": "545614fa196e2a77d96d408e0cdf39520684b251",

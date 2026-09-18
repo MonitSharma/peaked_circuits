@@ -2,4 +2,4 @@
 [13:42:23] END R3_cut2e3_D4096 termination=wall_limit elapsed_min=120 peak_rss_gb=7.7
 [13:42:23] START R4_cut5e3_D4096
 [14:33:26] END R4_cut5e3_D4096 termination=exit_0 elapsed_min=51 peak_rss_gb=7.5
-[14:33:26] CONTINUATION_COMPLETE output=/Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/p11_rerun_r3_r4_20260826_114202
+[14:33:26] CONTINUATION_COMPLETE output=<local-user>/Code/p12-helios-recovery/results/p11_bond_ladder/p11_rerun_r3_r4_20260826_114202

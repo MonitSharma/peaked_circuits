@@ -1,4 +1,4 @@
-2026-08-26 14:34:51,562 [INFO] loaded /Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P11_Hqap_98x1999.qasm: qubits=98 ops={'u': 7996, 'cz': 1999}
+2026-08-26 14:34:51,562 [INFO] loaded <local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P11_Hqap_98x1999.qasm: qubits=98 ops={'u': 7996, 'cz': 1999}
 2026-08-26 14:34:51,568 [INFO] Pass: Collect2qBlocks - 3.83520 (ms)
 2026-08-26 14:34:51,576 [INFO] Pass: ConsolidateBlocks - 8.37302 (ms)
 2026-08-26 14:34:51,577 [INFO] after two-qubit block consolidation: ops={'unitary': 1984}

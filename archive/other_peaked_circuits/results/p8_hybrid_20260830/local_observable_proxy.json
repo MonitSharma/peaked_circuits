@@ -2,7 +2,7 @@
   "schema": "p8-local-hybrid-diagnostics-v1",
   "answer_blind": true,
   "external_target_scored": false,
-  "sample_source": "/Users/monitsharma/Code/p12-helios-recovery/results/peaked_portal_p1_p10/mettleq/p8_D64_c1e2_seed123/samples.tsv",
+  "sample_source": "<local-user>/Code/p12-helios-recovery/results/peaked_portal_p1_p10/mettleq/p8_D64_c1e2_seed123/samples.tsv",
   "sample_sha256": "da1211e4558a30b82ef0d21f9cc2c417f3194b10731dc210e16c5ca3d7c6b93d",
   "shots": 1000,
   "candidate_pool_frozen": true,

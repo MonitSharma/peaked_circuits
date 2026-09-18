@@ -9,7 +9,7 @@ converted deterministically to measured QIR after decomposing the custom
 ## Frozen submission
 
 - Branch: `p12_quantum`
-- Circuit: `/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm`
+- Circuit: `<local-user>/Downloads/P8_grid_888_iswap.qasm`
 - Target: physical `Helios-1`
 - Requested shots: **5**
 - Maximum cost: **35 HQC**

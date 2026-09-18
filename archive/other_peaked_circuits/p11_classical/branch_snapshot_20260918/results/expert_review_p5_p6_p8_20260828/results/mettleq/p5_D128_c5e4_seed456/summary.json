@@ -1,5 +1,5 @@
 {
-  "qasm": "/Users/monitsharma/Downloads/P5_granite_summit.qasm",
+  "qasm": "<local-user>/Downloads/P5_granite_summit.qasm",
   "tag": "p5_D128_c5e4_seed456",
   "num_qubits": 44,
   "initial_ops": {
@@ -30,7 +30,7 @@
     "scipy_flapack": "<repo>/.venv/lib/python3.13/site-packages/scipy/linalg/_flapack.cpython-313-darwin.so"
   },
   "parameters": {
-    "qasm": "/Users/monitsharma/Downloads/P5_granite_summit.qasm",
+    "qasm": "<local-user>/Downloads/P5_granite_summit.qasm",
     "outdir": "results/peaked_portal_p1_p10/mettleq",
     "tag": "p5_D128_c5e4_seed456",
     "samples": 1000,

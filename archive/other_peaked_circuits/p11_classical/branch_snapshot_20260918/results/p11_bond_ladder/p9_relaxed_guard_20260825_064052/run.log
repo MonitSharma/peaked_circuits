@@ -8,7 +8,7 @@
 [Cycle 7] 39/1885 gates (2.1 %) after 82 sec
 [Cycle 8] 45/1885 gates (2.4 %) after 90 sec
 [Cycle 9] 60/1885 gates (3.2 %) after 99 sec
-/Users/monitsharma/Code/p12-helios-recovery/.venv-p9-isolated/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
+<local-user>/Code/p12-helios-recovery/.venv-p9-isolated/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
   warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
 [Cycle 10] 74/1885 gates (3.9 %) after 119 sec
 [Cycle 11] 83/1885 gates (4.4 %) after 133 sec

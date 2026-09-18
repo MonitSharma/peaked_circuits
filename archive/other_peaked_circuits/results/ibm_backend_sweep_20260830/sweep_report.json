@@ -8,9 +8,9 @@
   "approximation_degree": 1.0,
   "seeds_per_circuit": 30,
   "circuits": [
-    "/Users/monitsharma/Downloads/P6_titan_pinnacle.qasm",
-    "/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm"
+    "<local-user>/Downloads/P6_titan_pinnacle.qasm",
+    "<local-user>/Downloads/P8_grid_888_iswap.qasm"
   ],
   "rows": 60,
-  "results_dir": "/Users/monitsharma/Downloads/p12_quantum/results/ibm_backend_sweep_20260830"
+  "results_dir": "<local-user>/Downloads/p12_quantum/results/ibm_backend_sweep_20260830"
 }

@@ -1,7 +1,7 @@
 [04:03:59] === preflight ===
 [04:03:59] solver hardening present (QR guard; unsafe norm mutation absent)
 [04:03:59] disk free: 77 GiB | threads: 1 | RSS watchdog: 18 GB
-[04:03:59] python: /Users/monitsharma/.conda/envs/p9-openblas/bin/python
-[04:03:59] output: /Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/20260826_040359
+[04:03:59] python: <local-user>/.conda/envs/p9-openblas/bin/python
+[04:03:59] output: <local-user>/Code/p12-helios-recovery/results/p11_bond_ladder/20260826_040359
 [04:03:59] === stage 0: bounded D4096 probe + full P9 control ===
 [04:03:59] --- START stage0_p9_probe_cut2e3_D4096 (wall cap 15 min) ---

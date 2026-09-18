@@ -9,7 +9,7 @@ stress-control conclusions are unchanged. No BlueQubit, Quantinuum, QPU, or HPC
 job is launched by this audit. The P1 answer remains blind; no expected output,
 oracle, or verifier target is read.
 
-The local challenge input is `/Users/monitsharma/Downloads/P1_little_dimple.qasm`.
+The local challenge input is `<local-user>/Downloads/P1_little_dimple.qasm`.
 It remains outside version control. Its SHA256 is
 `0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8` and its
 size is 219,814 bytes.

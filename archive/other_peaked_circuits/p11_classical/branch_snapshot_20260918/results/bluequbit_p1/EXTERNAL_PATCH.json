@@ -1,7 +1,7 @@
 {
   "schema": "bluequbit-p1-external-patch-v1",
   "component": "MettleQ MPS persistent routing",
-  "checkout": "/Users/monitsharma/code_projects/Qupertino",
+  "checkout": "<local-user>/code_projects/Qupertino",
   "base_commit": "a850c793c011ac21cb4ef9ac1db75eb381e6852e",
   "patch_path": "hpc/solver_patches/mettleq_initial_layout.patch",
   "patch_sha256": "4ae0175f4e1062c07281c3129c185efd5d813a903724a9a05fdf7130fd35b4b9",

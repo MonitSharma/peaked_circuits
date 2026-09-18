@@ -509,7 +509,7 @@
       ],
       "run_id": "p5_D64_c1e2_seed123",
       "shots": 1000,
-      "source": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/results/mettleq/p5_D64_c1e2_seed123/samples.tsv",
+      "source": "<local-user>/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/results/mettleq/p5_D64_c1e2_seed123/samples.tsv",
       "source_sha256": "66ab159e1f1a169a20998dfb38944e107557319c45abf0d5726f7e236053df74",
       "unique_strings": 1000
     }

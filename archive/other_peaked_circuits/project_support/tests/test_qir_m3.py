@@ -84,7 +84,7 @@ def test_strict_qir_validation_passes(exported_p12: tuple[Path, QIRExportReport]
             lambda text: text + "\n; /" + "Users/example/private\n",
             "no_absolute_local_paths",
         ),
-        (lambda text: text + "\n; token=super-secret\n", "no_credential_like_material"),
+        (lambda text: text + "\n; token=fixture-secret\n", "no_credential_like_material"),
     ],
 )
 def test_qir_validation_rejects_mutations(

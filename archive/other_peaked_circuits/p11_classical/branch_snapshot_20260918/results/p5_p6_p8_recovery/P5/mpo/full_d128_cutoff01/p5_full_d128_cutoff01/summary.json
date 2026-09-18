@@ -1,5 +1,5 @@
 {
-  "qasm": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
+  "qasm": "<local-user>/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
   "tag": "p5_full_d128_cutoff01",
   "num_qubits": 44,
   "initial_ops": {
@@ -36,8 +36,8 @@
     "scipy_flapack": "~/Code/p12-helios-recovery/.venv-p9-isolated/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-darwin.so"
   },
   "parameters": {
-    "qasm": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
-    "outdir": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P5/mpo/full_d128_cutoff01",
+    "qasm": "<local-user>/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
+    "outdir": "<local-user>/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P5/mpo/full_d128_cutoff01",
     "tag": "p5_full_d128_cutoff01",
     "samples": 256,
     "decoder": "beam",
@@ -241,7 +241,7 @@
     34,
     36
   ],
-  "samples_path": "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P5/mpo/full_d128_cutoff01/p5_full_d128_cutoff01/samples.tsv",
+  "samples_path": "<local-user>/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P5/mpo/full_d128_cutoff01/p5_full_d128_cutoff01/samples.tsv",
   "decoder": "beam",
   "decoder_bitwise_map": "11011100000001010100010001001101011101011101",
   "decoder_marginals": [

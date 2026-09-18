@@ -1,6 +1,6 @@
 {
   "schema": "bluequbit-p1-forensics-v1",
-  "qasm": "/Users/monitsharma/Downloads/P1_little_dimple.qasm",
+  "qasm": "<local-user>/Downloads/P1_little_dimple.qasm",
   "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
   "file_size_bytes": 219814,
   "n_qubits": 36,

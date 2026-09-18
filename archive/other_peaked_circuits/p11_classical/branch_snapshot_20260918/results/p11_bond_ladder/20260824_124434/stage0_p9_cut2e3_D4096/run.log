@@ -1,4 +1,4 @@
-2026-08-24 20:44:35,133 [INFO] loaded /Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm: qubits=56 ops={'u': 3890, 'rzz': 1917}
+2026-08-24 20:44:35,133 [INFO] loaded <local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm: qubits=56 ops={'u': 3890, 'rzz': 1917}
 2026-08-24 20:44:35,139 [INFO] Pass: Collect2qBlocks - 2.99287 (ms)
 2026-08-24 20:44:35,148 [INFO] Pass: ConsolidateBlocks - 9.55796 (ms)
 2026-08-24 20:44:35,149 [INFO] after two-qubit block consolidation: ops={'unitary': 1885}
@@ -442,7 +442,7 @@
 2026-08-24 20:46:34,964 [INFO] [11R/1617](swap: 7, u: 0 | c_u: 8 | t_u_l: 17/942 | t_u_r: 40/943 | t_u: 57/1885) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 857200, 'total_shapes': 6094, 'total_links': 222, 'num_tensors': 56}
 2026-08-24 20:46:35,966 [INFO]     [start unswap] -> {'max_bond': 256, 'max_links': 4, 'total_elems': 857200, 'total_shapes': 6094, 'total_links': 222, 'num_tensors': 56}
 2026-08-24 20:46:42,253 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 8 | total: 8) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 981168, 'total_shapes': 6478, 'total_links': 222, 'num_tensors': 56}
-/Users/monitsharma/code_projects/qat/peaked-mpo-solver/.venv/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
+<local-user>/code_projects/qat/peaked-mpo-solver/.venv/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
   warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
 2026-08-24 20:46:45,292 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 14 | total: 22) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 468192, 'total_shapes': 4632, 'total_links': 222, 'num_tensors': 56}
 2026-08-24 20:46:45,946 [INFO]     [0 | left | 0](candidate_pairs: 28/28 | new_swaps: 8 | total: 30) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 324576, 'total_shapes': 3820, 'total_links': 222, 'num_tensors': 56}

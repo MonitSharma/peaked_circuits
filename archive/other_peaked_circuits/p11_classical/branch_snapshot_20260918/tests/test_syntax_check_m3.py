@@ -78,7 +78,7 @@ class _FakeRef:
         self.cost = cost
 
     def __str__(self) -> str:
-        return "token=should-never-be-stored"
+        return "token=fixture-token"
 
 
 def test_mocked_nexus_submission_is_fixed_to_syntax_checker_and_sanitized(tmp_path: Path) -> None:
@@ -147,7 +147,7 @@ def test_mocked_nexus_submission_is_fixed_to_syntax_checker_and_sanitized(tmp_pa
         for path in (tmp_path / "results/nexus/syntax_check").glob("*")
         if path.is_file()
     )
-    assert "should-never-be-stored" not in stored
+    assert "fixture-token" not in stored
     assert "safe-project" in stored and "safe-job" in stored
     assert '"hqcs_used": false' in stored
 

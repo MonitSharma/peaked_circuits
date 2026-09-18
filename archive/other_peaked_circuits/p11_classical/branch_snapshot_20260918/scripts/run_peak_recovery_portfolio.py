@@ -41,8 +41,8 @@ from p12_recovery.peak.watchdog import (  # noqa: E402
 INPUTS = ROOT / "results/expert_review_p5_p6_p8_20260828/inputs"
 OUT = ROOT / "results/p5_p6_p8_recovery"
 FILES = {"P5": INPUTS / "P5_granite_summit.qasm", "P6": INPUTS / "P6_titan_pinnacle.qasm", "P8": INPUTS / "P8_grid_888_iswap.qasm"}
-MPO_SOLVER = Path("/Users/monitsharma/code_projects/qat/peaked-mpo-solver")
-MPO_PYTHON = Path("/Users/monitsharma/Code/p12-helios-recovery/.venv-p9-isolated/bin/python")
+MPO_SOLVER = Path("<local-user>/code_projects/qat/peaked-mpo-solver")
+MPO_PYTHON = Path("<local-user>/Code/p12-helios-recovery/.venv-p9-isolated/bin/python")
 
 
 def git(*args: str) -> str:

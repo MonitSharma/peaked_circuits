@@ -203,7 +203,7 @@ diagnostic only. A new opt-in controller has instead been implemented directly
 against the production compressor in the isolated solver worktree:
 
 ```
-/Users/monitsharma/code_projects/qat/peaked-mpo-solver-p8-beam
+<local-user>/code_projects/qat/peaked-mpo-solver-p8-beam
 branch: codex/p8-gate-unlock-beam
 ```
 

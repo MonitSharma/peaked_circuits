@@ -22,7 +22,7 @@ P6_SHOTS = [
     ROOT / "results/hardware/p6_helios_100shot_20260907_batch5/shots.json",
 ]
 P6_QASM = ROOT / "results/hardware/p6_helios_50shot_20260829/source.qasm"
-TRACKER = Path("/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit")
+TRACKER = Path("<local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit")
 CONTROLS = {
     "p11": (ROOT / "results/quantinuum/p11/classical/raw/c902a6a1-0e91-48cf-b5ba-44831fcc7726.shots.jsonl",
             TRACKER / "peaked_circuit_P11_Hqap_98x1999.qasm",

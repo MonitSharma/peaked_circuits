@@ -4,67 +4,67 @@
     "PROFILE": {
       "status": "COMPLETE_ARTIFACT_REUSED",
       "artifacts": [
-        "/Users/monitsharma/Code/p12-helios-recovery/results/bluequbit_p1_v2/profile/circuit.json",
-        "/Users/monitsharma/Code/p12-helios-recovery/results/bluequbit_p1_v2/profile/clifford_proximity.json",
-        "/Users/monitsharma/Code/p12-helios-recovery/results/bluequbit_p1_v2/profile/lightcones.json"
+        "<local-user>/Code/p12-helios-recovery/results/bluequbit_p1_v2/profile/circuit.json",
+        "<local-user>/Code/p12-helios-recovery/results/bluequbit_p1_v2/profile/clifford_proximity.json",
+        "<local-user>/Code/p12-helios-recovery/results/bluequbit_p1_v2/profile/lightcones.json"
       ]
     },
     "COMPILE": {
       "status": "COMPLETE_ARTIFACT_REUSED",
       "artifacts": [
-        "/Users/monitsharma/Code/p12-helios-recovery/results/bluequbit_p1_v2/compile/summary.json"
+        "<local-user>/Code/p12-helios-recovery/results/bluequbit_p1_v2/compile/summary.json"
       ]
     },
     "SPARSE_LADDER": {
       "status": "COMPLETE_ARTIFACT_REUSED",
       "artifacts": [
-        "/Users/monitsharma/Code/p12-helios-recovery/results/bluequbit_p1_v2/sparse/convergence.json"
+        "<local-user>/Code/p12-helios-recovery/results/bluequbit_p1_v2/sparse/convergence.json"
       ]
     },
     "PPS_SMOKE": {
       "status": "COMPLETE_ARTIFACT_REUSED",
       "artifacts": [
-        "/Users/monitsharma/Code/p12-helios-recovery/results/bluequbit_p1_v2/pauli/convergence.json"
+        "<local-user>/Code/p12-helios-recovery/results/bluequbit_p1_v2/pauli/convergence.json"
       ]
     },
     "BP_SMOKE": {
       "status": "COMPLETE_ARTIFACT_REUSED",
       "artifacts": [
-        "/Users/monitsharma/Code/p12-helios-recovery/results/bluequbit_p1_v2/belief/smoke.json"
+        "<local-user>/Code/p12-helios-recovery/results/bluequbit_p1_v2/belief/smoke.json"
       ]
     },
     "AMPLITUDE_PATH": {
       "status": "COMPLETE_ARTIFACT_REUSED",
       "artifacts": [
-        "/Users/monitsharma/Code/p12-helios-recovery/results/bluequbit_p1_v2/amplitude/path.json"
+        "<local-user>/Code/p12-helios-recovery/results/bluequbit_p1_v2/amplitude/path.json"
       ]
     },
     "CONSENSUS": {
       "status": "COMPLETE_ARTIFACT_REUSED",
       "artifacts": [
-        "/Users/monitsharma/Code/p12-helios-recovery/results/bluequbit_p1_v2/consensus/candidates.json"
+        "<local-user>/Code/p12-helios-recovery/results/bluequbit_p1_v2/consensus/candidates.json"
       ]
     },
     "AUDIT": {
       "status": "COMPLETE_ARTIFACT_REUSED",
       "artifacts": [
-        "/Users/monitsharma/Code/p12-helios-recovery/results/bluequbit_p1_v2/AUDIT.json"
+        "<local-user>/Code/p12-helios-recovery/results/bluequbit_p1_v2/AUDIT.json"
       ]
     },
     "SPARSE_SMOKE": {
       "status": "COMPLETE_ARTIFACT_REUSED",
       "artifacts": [
-        "/Users/monitsharma/Code/p12-helios-recovery/results/bluequbit_p1_v2/sparse/k4096/run.json"
+        "<local-user>/Code/p12-helios-recovery/results/bluequbit_p1_v2/sparse/k4096/run.json"
       ]
     },
     "MPS_WEAK_SIGNAL": {
       "status": "COMPLETE_ARTIFACT_REUSED",
       "artifacts": [
-        "/Users/monitsharma/Code/p12-helios-recovery/results/bluequbit_p1/distillation/CONSENSUS.json"
+        "<local-user>/Code/p12-helios-recovery/results/bluequbit_p1/distillation/CONSENSUS.json"
       ]
     }
   },
-  "qasm_path": "/Users/monitsharma/Downloads/P1_little_dimple.qasm",
+  "qasm_path": "<local-user>/Downloads/P1_little_dimple.qasm",
   "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
   "blind": true,
   "hpc_jobs_launched": false,

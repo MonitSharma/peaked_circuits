@@ -8,7 +8,7 @@
 [Cycle 7] 39/1885 gates (2.1 %) after 81 sec
 [Cycle 8] 45/1885 gates (2.4 %) after 89 sec
 [Cycle 9] 60/1885 gates (3.2 %) after 101 sec
-/Users/monitsharma/Code/p12-helios-recovery/.venv-p9-isolated/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
+<local-user>/Code/p12-helios-recovery/.venv-p9-isolated/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
   warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
 [Cycle 10] 74/1885 gates (3.9 %) after 121 sec
 [Cycle 11] 83/1885 gates (4.4 %) after 135 sec
@@ -20,7 +20,7 @@
 [Cycle 17] 98/1885 gates (5.2 %) after 225 sec
 2026-08-25 06:32:19,178 [WARNING] samples.png generation disabled: No module named 'matplotlib'
 {
-  "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "qasm": "<local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
   "tag": "run",
   "num_qubits": 56,
   "initial_ops": {
@@ -56,8 +56,8 @@
     "scipy_flapack": "<repo>/.venv-p9-isolated/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-darwin.so"
   },
   "parameters": {
-    "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
-    "outdir": "/Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/scaling_2t_20260825_062831",
+    "qasm": "<local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+    "outdir": "<local-user>/Code/p12-helios-recovery/results/p11_bond_ladder/scaling_2t_20260825_062831",
     "tag": "run",
     "samples": 1000,
     "expected_bitstring": "01101110111001100000100000001010011100101101010111110111",

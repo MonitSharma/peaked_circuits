@@ -5,11 +5,11 @@ from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-ROOT = Path('/Users/monitsharma/Code/p12-helios-recovery')
+ROOT = Path('<local-user>/Code/p12-helios-recovery')
 CAMPAIGN = ROOT / 'results/p5_p6_p8_recovery/P6/overnight_20260829_234628'
 QASM = ROOT / 'results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm'
-SOLVER = Path('/Users/monitsharma/code_projects/qat/peaked-mpo-solver')
-PYTHON = '/Users/monitsharma/.conda/envs/p9-openblas/bin/python'
+SOLVER = Path('<local-user>/code_projects/qat/peaked-mpo-solver')
+PYTHON = '<local-user>/.conda/envs/p9-openblas/bin/python'
 EXPECTED_SHA = '206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4'
 TOTAL_GATES = 2593
 STATE = CAMPAIGN / 'CAMPAIGN_STATE.json'

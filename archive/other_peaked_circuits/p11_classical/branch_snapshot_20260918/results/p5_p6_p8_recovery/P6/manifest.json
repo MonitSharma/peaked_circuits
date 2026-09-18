@@ -100,7 +100,7 @@
   "schema": "p12-peak-circuit-manifest-v1",
   "sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
   "source_file_size_bytes": 466995,
-  "source_qasm_path": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
+  "source_qasm_path": "<local-user>/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
   "two_qubit_depth": 208,
   "two_qubit_gate_count": 3494,
   "unique_interaction_edges": 658,

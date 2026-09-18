@@ -220,7 +220,7 @@
     "candidate_sha256": "7b0c741082ffc3cfa1702fc3d9574892b1f8173f7381c149eee66a6c7b5c7403",
     "canonical_input_sha256": "3d17e4cff73a6e09c2750debbbe8a8743f19a0728a39850b284402635fab431e",
     "source_hashes": {
-      "/Users/monitsharma/Downloads/p12_quantum/hardware_campaign/batch_001/reconstruction/reconstructed_counts.json": "b28ba3f8f40f860e186add9b70d03d01c18a732a9b2f14d667adc658bd85ab1b"
+      "<local-user>/Downloads/p12_quantum/hardware_campaign/batch_001/reconstruction/reconstructed_counts.json": "b28ba3f8f40f860e186add9b70d03d01c18a732a9b2f14d667adc658bd85ab1b"
     },
     "protocol_hash": "d88ea05069834adad820c75046022a678cda2a43ba9944ebf6793133a41898c5",
     "external_target_scored": false,

@@ -2,7 +2,7 @@
   "schema_version": "p6-cpu-feasibility-v1",
   "provider_calls": 0,
   "gpu_calls": 0,
-  "source_qasm": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_50shot_20260829/source.qasm",
+  "source_qasm": "<local-user>/Downloads/p12_quantum/results/hardware/p6_helios_50shot_20260829/source.qasm",
   "qubits": 62,
   "u3_count": 6992,
   "cz_count": 3494,

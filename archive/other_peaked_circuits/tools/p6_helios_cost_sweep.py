@@ -12,7 +12,7 @@ import qnexus as qnx
 
 ROOT = Path(__file__).resolve().parents[1]
 QIR = ROOT / "results/hardware/p6_helios_50shot_20260829/submitted.qir.bc"
-QASM = Path("/Users/monitsharma/Downloads/P6_titan_pinnacle.qasm")
+QASM = Path("<local-user>/Downloads/P6_titan_pinnacle.qasm")
 SHOTS = [1, 5, 10, 20, 50, 100, 150, 200, 300, 400]
 
 

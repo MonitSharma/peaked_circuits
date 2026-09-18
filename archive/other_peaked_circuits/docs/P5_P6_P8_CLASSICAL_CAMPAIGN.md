@@ -4,7 +4,7 @@ Status: classical exploration completed for this pass; no emulator or real
 hardware jobs were submitted.
 
 The source package was reviewed from
-`/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/`.
+`<local-user>/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/`.
 The latest online `p11_classical` branch was also checked at commit
 `1ff7a975347fdef43c9b1f2ae04df36d9812ba42`. The branch contains substantial
 P9/P11 work and the supplied expert-review package, but no externally verified

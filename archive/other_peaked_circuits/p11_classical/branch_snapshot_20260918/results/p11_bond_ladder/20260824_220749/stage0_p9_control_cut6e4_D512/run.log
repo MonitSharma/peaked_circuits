@@ -1,4 +1,4 @@
-2026-08-25 06:08:00,198 [INFO] loaded /Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm: qubits=56 ops={'u': 3890, 'rzz': 1917}
+2026-08-25 06:08:00,198 [INFO] loaded <local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm: qubits=56 ops={'u': 3890, 'rzz': 1917}
 2026-08-25 06:08:00,203 [INFO] Pass: Collect2qBlocks - 2.75397 (ms)
 2026-08-25 06:08:00,212 [INFO] Pass: ConsolidateBlocks - 9.02390 (ms)
 2026-08-25 06:08:00,213 [INFO] after two-qubit block consolidation: ops={'unitary': 1885}
@@ -551,7 +551,7 @@
 2026-08-25 06:09:38,481 [INFO] [14R/1595](swap: 7, u: 1 | c_u: 13 | t_u_l: 22/942 | t_u_r: 51/943 | t_u: 73/1885) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 362016, 'total_shapes': 4072, 'total_links': 222, 'num_tensors': 56}
 2026-08-25 06:09:38,994 [INFO] [15R/1595](swap: 7, u: 1 | c_u: 14 | t_u_l: 22/942 | t_u_r: 52/943 | t_u: 74/1885) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 461856, 'total_shapes': 4664, 'total_links': 222, 'num_tensors': 56}
 2026-08-25 06:09:39,644 [INFO]     [start unswap] -> {'max_bond': 128, 'max_links': 4, 'total_elems': 461856, 'total_shapes': 4664, 'total_links': 222, 'num_tensors': 56}
-/Users/monitsharma/Code/p12-helios-recovery/.venv-p9-isolated/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
+<local-user>/Code/p12-helios-recovery/.venv-p9-isolated/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
   warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
 2026-08-25 06:09:47,568 [INFO]     [0 | both | 0](candidate_pairs: 28/28 | new_swaps: 5 | total: 5) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 641824, 'total_shapes': 5128, 'total_links': 222, 'num_tensors': 56}
 2026-08-25 06:09:49,246 [INFO]     [0 | both | 1](candidate_pairs: 27/27 | new_swaps: 13 | total: 18) -> {'max_bond': 128, 'max_links': 4, 'total_elems': 291488, 'total_shapes': 3864, 'total_links': 222, 'num_tensors': 56}
@@ -2887,7 +2887,7 @@
 2026-08-25 06:24:06,196 [INFO] [end compressing](left: 1516, right: 1679) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 130276, 'total_shapes': 1818, 'total_links': 222, 'num_tensors': 56}
 2026-08-25 06:24:06,302 [WARNING] samples.png generation disabled: No module named 'matplotlib'
 {
-  "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "qasm": "<local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
   "tag": "r",
   "num_qubits": 56,
   "initial_ops": {
@@ -2923,8 +2923,8 @@
     "scipy_flapack": "~/Code/p12-helios-recovery/.venv-p9-isolated/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-darwin.so"
   },
   "parameters": {
-    "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
-    "outdir": "/Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/20260824_220749/stage0_p9_control_cut6e4_D512",
+    "qasm": "<local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+    "outdir": "<local-user>/Code/p12-helios-recovery/results/p11_bond_ladder/20260824_220749/stage0_p9_control_cut6e4_D512",
     "tag": "r",
     "samples": 1000,
     "expected_bitstring": "01101110111001100000100000001010011100101101010111110111",

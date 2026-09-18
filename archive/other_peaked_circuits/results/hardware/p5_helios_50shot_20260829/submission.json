@@ -2,7 +2,7 @@
   "schema": "p5-helios-physical-submission-v1",
   "branch": "p12_quantum",
   "problem": "P5",
-  "source_qasm": "/Users/monitsharma/Downloads/P5_granite_summit.qasm",
+  "source_qasm": "<local-user>/Downloads/P5_granite_summit.qasm",
   "source_qasm_sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
   "submitted_qir_sha256": "d1833a31e803f19da1c34ebc5f3669418023f394894b47b69ba38f2ab07258ba",
   "submitted_bitcode_sha256": "44fbb59d51a8f0e427866c7e7b9c087ccf40843be6d339397ae39f823b21e982",

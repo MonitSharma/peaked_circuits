@@ -1,12 +1,12 @@
 {
   "schema": "hqap-sequence-structure-v1",
   "label": "bluequbit_p1",
-  "qasm": "/Users/monitsharma/Downloads/P1_little_dimple.qasm",
+  "qasm": "<local-user>/Downloads/P1_little_dimple.qasm",
   "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
   "n_qubits": 36,
   "n_two_qubit": 1457,
   "search": {
-    "qasm": "/Users/monitsharma/Downloads/P1_little_dimple.qasm",
+    "qasm": "<local-user>/Downloads/P1_little_dimple.qasm",
     "label": "bluequbit_p1",
     "output": "results/bluequbit_p1/structural/sequence",
     "radius": 300,

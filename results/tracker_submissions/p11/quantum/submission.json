@@ -14,7 +14,7 @@
   },
   "qir_qubits": 98,
   "requested_shots": 50,
-  "source_path": "/Users/monitsharma/Downloads/P11_hqap_1999.qasm",
+  "source_path": "<local-user>/Downloads/P11_hqap_1999.qasm",
   "source_qasm_sha256": "1373d50c8a42b1ca745d202391767c417ddac56db95182ac2aced019231b3372",
   "submitted_at": "2026-08-28T10:33:43.804421+00:00",
   "target": "Helios-1",

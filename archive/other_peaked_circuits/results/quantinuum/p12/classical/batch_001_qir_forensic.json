@@ -1441,7 +1441,7 @@
   ],
   "framed_groups_with_98_outputs": 37,
   "framed_groups_with_end": 37,
-  "framing_repaired_path": "/Users/monitsharma/Downloads/p12_quantum/hardware_campaign/batch_001/provider/raw_result_framing_repaired.qir",
+  "framing_repaired_path": "<local-user>/Downloads/p12_quantum/hardware_campaign/batch_001/provider/raw_result_framing_repaired.qir",
   "framing_repaired_sha256": "4574f32a59af083ba3f4f859af79aaf9acae392b5fc613d758c5ac430cf12c38",
   "frozen_bitcode_sha256": "c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d",
   "fused_end_lines": [
@@ -1456,7 +1456,7 @@
   "payload_sha256": "c45634e68b839e18e3eef0748aac99d8da02e515449053056cb4677e4335ac82",
   "record_cycle_count": 205,
   "record_width": 98,
-  "source_path": "/Users/monitsharma/Downloads/p12_quantum/hardware_campaign/batch_001/provider/raw_result.json",
+  "source_path": "<local-user>/Downloads/p12_quantum/hardware_campaign/batch_001/provider/raw_result.json",
   "start_count": 42,
   "submitted_input_bitcode_sha256": "c6996dfba55a45549b5c8d3017797f4b561f0af58e7610e5ba3fac8882ae371d",
   "submitted_input_matches_frozen": true

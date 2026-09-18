@@ -17,7 +17,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-QASM = Path("/Users/monitsharma/Downloads/P1_little_dimple.qasm")
+QASM = Path("<local-user>/Downloads/P1_little_dimple.qasm")
 OUT = ROOT / "results/bluequbit_p1_v2"
 EXPECTED_SHA256 = "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8"
 

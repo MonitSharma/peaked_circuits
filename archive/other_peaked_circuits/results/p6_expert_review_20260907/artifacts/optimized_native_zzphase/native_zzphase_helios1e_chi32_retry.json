@@ -20,6 +20,6 @@
   "physical_hardware_submitted": false,
   "result_id": "f430b711-e409-4e95-b0ff-de538ea6fa6b",
   "reported_hqc": 13.96,
-  "raw_result_path": "/Users/monitsharma/Code/p12-helios-recovery/.claude/worktrees/p6-peaked-circuit-classical-8be972/results/hardware/p6_optimized_compile_20260907/native_zzphase_helios1e_chi32_retry/raw_result.txt",
+  "raw_result_path": "<local-user>/Code/p12-helios-recovery/.claude/worktrees/p6-peaked-circuit-classical-8be972/results/hardware/p6_optimized_compile_20260907/native_zzphase_helios1e_chi32_retry/raw_result.txt",
   "raw_result_sha256": "ff1f38c610bf6dcface8e36d00fb546fc3dd556fb03fd5e380c270ea7a2ec2fa"
 }

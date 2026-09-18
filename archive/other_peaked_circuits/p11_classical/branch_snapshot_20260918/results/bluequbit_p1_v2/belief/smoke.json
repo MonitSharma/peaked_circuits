@@ -15,10 +15,10 @@
   "error": "('k9', 5899)",
   "traceback_tail": [
     "    result = self.iterate(tol=tol)",
-    "  File \"/Users/monitsharma/Code/p12-helios-recovery/.venv/lib/python3.13/site-packages/quimb/tensor/belief_propagation/d1bp.py\", line 206, in iterate",
+    "  File \"<local-user>/Code/p12-helios-recovery/.venv/lib/python3.13/site-packages/quimb/tensor/belief_propagation/d1bp.py\", line 206, in iterate",
     "    keys, new_ms = _compute_ms(tid)",
     "                   ~~~~~~~~~~~^^^^^",
-    "  File \"/Users/monitsharma/Code/p12-helios-recovery/.venv/lib/python3.13/site-packages/quimb/tensor/belief_propagation/d1bp.py\", line 171, in _compute_ms",
+    "  File \"<local-user>/Code/p12-helios-recovery/.venv/lib/python3.13/site-packages/quimb/tensor/belief_propagation/d1bp.py\", line 171, in _compute_ms",
     "    [self.messages[ix, tid] for ix in t.inds],",
     "     ~~~~~~~~~~~~~^^^^^^^^^",
     "KeyError: ('k9', 5899)"

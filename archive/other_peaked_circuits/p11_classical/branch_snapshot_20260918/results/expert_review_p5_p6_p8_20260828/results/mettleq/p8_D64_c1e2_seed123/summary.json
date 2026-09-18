@@ -1,5 +1,5 @@
 {
-  "qasm": "/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm",
+  "qasm": "<local-user>/Downloads/P8_grid_888_iswap.qasm",
   "tag": "p8_D64_c1e2_seed123",
   "num_qubits": 40,
   "initial_ops": {
@@ -30,7 +30,7 @@
     "scipy_flapack": "<repo>/.venv/lib/python3.13/site-packages/scipy/linalg/_flapack.cpython-313-darwin.so"
   },
   "parameters": {
-    "qasm": "/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm",
+    "qasm": "<local-user>/Downloads/P8_grid_888_iswap.qasm",
     "outdir": "results/peaked_portal_p1_p10/mettleq",
     "tag": "p8_D64_c1e2_seed123",
     "samples": 1000,

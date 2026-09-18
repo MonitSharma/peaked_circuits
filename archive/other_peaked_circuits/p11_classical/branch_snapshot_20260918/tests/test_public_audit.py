@@ -19,7 +19,7 @@ def test_public_audit_passes_clean_fixture(tmp_path: Path) -> None:
 
 def test_public_audit_detects_env_token_paths_and_wrong_url(tmp_path: Path) -> None:
     clean_fixture(tmp_path)
-    (tmp_path / ".env").write_text("TOKEN=" + "github" + "_pat_1234567890123456789012345")
+    (tmp_path / ".env").write_text("TOKEN=" + "github" + "_token_fixture")
     local_path = "/" + "Users/example/private"
     (tmp_path / "report.json").write_text('{"path":"' + local_path + '"}')
     (tmp_path / "CITATION.cff").write_text("repository-code: https://wrong.example\n")
@@ -38,7 +38,7 @@ def test_public_audit_detects_nexus_cache_and_unsafe_qir(tmp_path: Path) -> None
     (tmp_path / ".qnx").mkdir()
     qir = tmp_path / "results/qir/unsafe.ll"
     qir.parent.mkdir(parents=True)
-    qir.write_text("; token=" + "unsafe-value")
+    qir.write_text("; token=" + "fixture-value")
     report = run_public_audit(tmp_path)
     failures = {item.check for item in report.findings if not item.passed}
     assert {"no_local_nexus_auth_cache", "qir_artifacts_sanitized"}.issubset(failures)

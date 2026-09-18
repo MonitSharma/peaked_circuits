@@ -1,7 +1,7 @@
 {
   "schema": "hqap-structural-analysis-v1",
   "label": "bluequbit_p1",
-  "qasm": "/Users/monitsharma/Downloads/P1_little_dimple.qasm",
+  "qasm": "<local-user>/Downloads/P1_little_dimple.qasm",
   "qasm_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
   "n_qubits": 36,
   "n_events": 4407,

@@ -9,7 +9,7 @@ It passes the actual `site_to_logical` permutation into the portable planner,
 validates it, and keeps the optional native planner for identity-layout calls.
 The patch is not part of the frozen P9/P11 solver path.
 
-External checkout: `/Users/monitsharma/code_projects/Qupertino`.
+External checkout: `<local-user>/code_projects/Qupertino`.
 Base checkout commit: `a850c793c011ac21cb4ef9ac1db75eb381e6852e`.
 The checkout had unrelated pre-existing local modifications; only the two
 targeted changes above are attributed to this P1 experiment.

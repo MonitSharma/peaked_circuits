@@ -3,7 +3,7 @@
 Status: provider-reported `ERROR`; no hardware execution.
 
 - Branch: `p12_quantum`
-- Circuit: `/Users/monitsharma/Downloads/P5_granite_summit.qasm`
+- Circuit: `<local-user>/Downloads/P5_granite_summit.qasm`
 - Target: `Helios-1E` emulator
 - Requested shots: **3**
 - Maximum cost: **100 HQC**

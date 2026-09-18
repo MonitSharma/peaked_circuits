@@ -2,7 +2,7 @@
   "schema": "p6-helios-physical-submission-v1",
   "branch": "p12_quantum",
   "problem": "P6",
-  "source_qasm": "/Users/monitsharma/Downloads/P6_titan_pinnacle.qasm",
+  "source_qasm": "<local-user>/Downloads/P6_titan_pinnacle.qasm",
   "source_qasm_sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
   "submitted_qir_sha256": "df85f59d7885f8b166326f459c39eedd0faf605300591b6825e897d5e1caba77",
   "submitted_bitcode_sha256": "0109765b16777c76347857cf91860cd99f7ad6c42ae5a7a991399e484a16f155",

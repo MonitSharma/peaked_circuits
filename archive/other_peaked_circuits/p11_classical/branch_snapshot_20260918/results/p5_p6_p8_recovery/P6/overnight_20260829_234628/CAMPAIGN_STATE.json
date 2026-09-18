@@ -8,14 +8,14 @@
   "idle_checks": 2,
   "campaign_machine_free_time": "2026-08-29T16:39:08.426529+00:00",
   "exact_command": [
-    "/Users/monitsharma/.conda/envs/p9-openblas/bin/python",
-    "/Users/monitsharma/Code/p12-helios-recovery/scripts/run_p11_mpo.py",
+    "<local-user>/.conda/envs/p9-openblas/bin/python",
+    "<local-user>/Code/p12-helios-recovery/scripts/run_p11_mpo.py",
     "--solver-root",
-    "/Users/monitsharma/code_projects/qat/peaked-mpo-solver",
+    "<local-user>/code_projects/qat/peaked-mpo-solver",
     "--qasm",
-    "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
+    "<local-user>/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P6_titan_pinnacle.qasm",
     "--outdir",
-    "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P6/overnight_20260829_234628/stage_c_p6_pair_cut1e3",
+    "<local-user>/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P6/overnight_20260829_234628/stage_c_p6_pair_cut1e3",
     "--tag",
     "stage_c_p6_pair_cut1e3",
     "--threads",
@@ -69,7 +69,7 @@
   "peak_tensor_elements": null,
   "peak_rss": null,
   "output_paths": [
-    "/Users/monitsharma/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P6/overnight_20260829_234628/stage_c_p6_pair_cut1e3"
+    "<local-user>/Code/p12-helios-recovery/results/p5_p6_p8_recovery/P6/overnight_20260829_234628/stage_c_p6_pair_cut1e3"
   ],
   "completed_all_gates": false,
   "candidate_assessment": "campaign_stopped_before_completion"

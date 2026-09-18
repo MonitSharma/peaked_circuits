@@ -82,7 +82,7 @@
   "schema": "p12-peak-circuit-manifest-v1",
   "sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
   "source_file_size_bytes": 249834,
-  "source_qasm_path": "/Users/monitsharma/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
+  "source_qasm_path": "<local-user>/Code/p12-helios-recovery/results/expert_review_p5_p6_p8_20260828/inputs/P5_granite_summit.qasm",
   "two_qubit_depth": 86,
   "two_qubit_gate_count": 1892,
   "unique_interaction_edges": 578,

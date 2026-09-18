@@ -60,7 +60,7 @@ Sampling was skipped because the no-progress guard fired.
 The committed launcher manifest identifies the solver as:
 
 ```text
-/Users/monitsharma/code_projects/qat/peaked-mpo-solver-p8-beam
+<local-user>/code_projects/qat/peaked-mpo-solver-p8-beam
 ```
 
 and records a macOS arm64 runtime with Python 3.10.21, NumPy 2.2.6, SciPy
@@ -136,7 +136,7 @@ Three blocking claims were checked and all three were incorrect:
 | claim above | finding |
 |---|---|
 | "`e1a6eef` and `7296a2a` ... are not present as objects in this repository's Git database" | Correct but misleading. They are commits in the **solver** repo (`peaked-mpo-solver`), not in `p12-helios-recovery`. Both resolve: `git cat-file -t e1a6eef` -> `commit`. |
-| "The manifest does not record the solver Git SHA." | It does. `results/p5_p6_p8_recovery/P8/flip_freq_20260830_082118/p8_d512_c6e4_bp_seed2024_flip2/launcher_manifest.json` records `solver_git_commit=e1a6eef36e71816c08da1d9a9319195db3d98baf`, `solver_git_dirty=True`, and `solver_root=/Users/monitsharma/code_projects/qat/peaked-mpo-solver-p8-beam`. |
+| "The manifest does not record the solver Git SHA." | It does. `results/p5_p6_p8_recovery/P8/flip_freq_20260830_082118/p8_d512_c6e4_bp_seed2024_flip2/launcher_manifest.json` records `solver_git_commit=e1a6eef36e71816c08da1d9a9319195db3d98baf`, `solver_git_dirty=True`, and `solver_root=<local-user>/code_projects/qat/peaked-mpo-solver-p8-beam`. |
 | "the historical Mac checkout does not exist" | It exists. The worktree is still on disk, **clean**, on branch `codex/p8-gate-unlock-beam` at `7296a2a`. |
 
 ## What the dirty state actually was

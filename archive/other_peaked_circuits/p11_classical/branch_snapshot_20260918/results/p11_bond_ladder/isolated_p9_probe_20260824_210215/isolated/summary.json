@@ -1,5 +1,5 @@
 {
-  "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "qasm": "<local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
   "tag": "isolated",
   "num_qubits": 56,
   "initial_ops": {
@@ -35,8 +35,8 @@
     "scipy_flapack": "/tmp/p9solver-isolated.TzqUkE/venv/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-darwin.so"
   },
   "parameters": {
-    "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
-    "outdir": "/Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/isolated_p9_probe_20260824_210215",
+    "qasm": "<local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+    "outdir": "<local-user>/Code/p12-helios-recovery/results/p11_bond_ladder/isolated_p9_probe_20260824_210215",
     "tag": "isolated",
     "samples": 0,
     "expected_bitstring": "01101110111001100000100000001010011100101101010111110111",

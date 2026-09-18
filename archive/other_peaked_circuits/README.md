@@ -3,6 +3,20 @@
 This directory preserves material that is outside the focused P11/P12 quantum
 recovery presentation. Nothing here is used by the active reviewer workflow.
 
+## Public-archive notice
+
+This is a historical, provenance-only archive. It contains exploratory runs,
+failed experiments, superseded plans, and legacy implementation snapshots. The
+P5, P6, and P8 material is not an externally verified solution and must not be
+read as a current claim about the active P11/P12 results. Historical runtime,
+provider, and simulator records may use different schemas from the active
+tracker packages.
+
+Paths and contact details in older records have been anonymized for public
+distribution. The scientific artifacts and historical conclusions are retained,
+but local machine locations and personal contact information are not part of
+the reproducibility claim.
+
 ## Contents
 
 - `p11_classical/` — earlier classical P11 planning, audits, and method history;

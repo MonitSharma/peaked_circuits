@@ -5,6 +5,10 @@ and method-exhaustion reports before the successful Helios-1 hardware
 recovery. The files were imported from the `p11_classical` branch without
 rewriting their historical conclusions.
 
+This is historical research material, not the canonical P11 result. The
+methods documented here did not produce a verified blind candidate; the later
+Helios-1 recovery is documented only in the active P11 package.
+
 The historical classical branch concluded that its tested local methods did
 not produce a defensible blind 98-bit candidate. That is complementary to the
 later hardware recovery recorded in the main [P11 package](../../../results/tracker_submissions/p11/).
@@ -21,4 +25,3 @@ Use these documents as the starting points:
 The historical documents may contain links relative to their original branch
 layout. The canonical current artifacts and reproducibility commands are in
 the tracker package and repository-level `src/` and `tools/` directories.
-

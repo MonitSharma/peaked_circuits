@@ -1,13 +1,13 @@
 {
   "answer_blind": true,
-  "solver_root": "/Users/monitsharma/code_projects/qat/peaked-mpo-solver",
+  "solver_root": "<local-user>/code_projects/qat/peaked-mpo-solver",
   "origin": "https://github.com/alexgalda-m/peaked-mpo-solver.git",
   "solver_git_commit": "b1bed0a5621f99d95ca7834a82d72dfd5db46cf4",
   "checkout_status": "DIRTY_UNTRACKED_ONLY",
   "untracked_paths": ["results/", "runs_p11_probe.log"],
-  "p9_calibration_summary": "/Users/monitsharma/code_projects/qat/peaked-mpo-solver/runs/p9_beam_calibration_20260827/summary.json",
+  "p9_calibration_summary": "<local-user>/code_projects/qat/peaked-mpo-solver/runs/p9_beam_calibration_20260827/summary.json",
   "p9_calibration_gate": "PASS",
-  "validated_runtime": "/Users/monitsharma/.conda/envs/p9-openblas/bin/python",
+  "validated_runtime": "<local-user>/.conda/envs/p9-openblas/bin/python",
   "p9_decoder_control": "controls/p9/P9_DECODER_CALIBRATION.json",
   "purpose": "Record the exact local solver provenance for P5/P6 MPO extraction; no remote fetch or target-answer access was used."
 }

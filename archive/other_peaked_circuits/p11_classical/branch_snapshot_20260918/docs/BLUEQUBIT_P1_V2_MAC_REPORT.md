@@ -9,7 +9,7 @@ Apple M3 Pro.
 
 The branch is `bluequbit-p1-mac-portfolio`, created from v1 head
 `efd24d3e3d46f2f038d3bfddd7bfa09a50a52bd2`. The local input is
-`/Users/monitsharma/Downloads/P1_little_dimple.qasm`, SHA256
+`<local-user>/Downloads/P1_little_dimple.qasm`, SHA256
 `0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8`, size
 219,814 bytes. The P1 answer remained blind. No P9, P11, P12, HPC, cloud,
 QPU, hardware, or answer lookup was performed in v2.

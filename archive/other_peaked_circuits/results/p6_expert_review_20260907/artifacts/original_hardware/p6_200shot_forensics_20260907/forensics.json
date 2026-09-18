@@ -4,7 +4,7 @@
   "provider_submission_performed": false,
   "framing": {
     "batch1": {
-      "path": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907/raw_result.json",
+      "path": "<local-user>/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907/raw_result.json",
       "raw_sha256": "15dfee36868d296a6791fc07a976c0012d228864868658766c74fb1221f9e7ad",
       "provider_reported_shots": 100,
       "measurement_records": 6386,
@@ -14,7 +14,7 @@
       "analysis_frames_used": 100
     },
     "batch2": {
-      "path": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907_batch2/raw_result.json",
+      "path": "<local-user>/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907_batch2/raw_result.json",
       "raw_sha256": "8dca0fe3a6e4cc6aeb376df4a2fa7e252ac85f2d8aabbc143f1609e8dd230b5a",
       "provider_reported_shots": 100,
       "measurement_records": 6448,

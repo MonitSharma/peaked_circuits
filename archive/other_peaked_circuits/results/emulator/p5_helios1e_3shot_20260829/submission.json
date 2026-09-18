@@ -1,7 +1,7 @@
 {
   "schema": "p5-helios1e-emulator-v1",
   "branch": "p12_quantum",
-  "source_qasm": "/Users/monitsharma/Downloads/P5_granite_summit.qasm",
+  "source_qasm": "<local-user>/Downloads/P5_granite_summit.qasm",
   "source_qasm_sha256": "cee80b7bcdb61c87729853adcfd80e0aa3a20da54e29127eef180cfa65e6c386",
   "submitted_qir_sha256": "6ad242faa0facbf8184164ff5846912aa79c5c3aaece08cbdb6a9304799fd58b",
   "submitted_bitcode_sha256": "c21ea71e6433e5d95d1b8494e5a98675717a96e61a41b4e529353c1b99b0ad9a",

@@ -1,9 +1,9 @@
 {
   "schema": "p6-helios-cost-sweep-v1",
   "checked_at_utc": "2026-09-01T08:38:24.010057+00:00",
-  "source_qasm": "/Users/monitsharma/Downloads/P6_titan_pinnacle.qasm",
+  "source_qasm": "<local-user>/Downloads/P6_titan_pinnacle.qasm",
   "source_qasm_sha256": "206b3c04173975143083e41152ca0d7612045cc43a44cc5f2a964340712f4ee4",
-  "bitcode_path": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_50shot_20260829/submitted.qir.bc",
+  "bitcode_path": "<local-user>/Downloads/p12_quantum/results/hardware/p6_helios_50shot_20260829/submitted.qir.bc",
   "bitcode_sha256": "0109765b16777c76347857cf91860cd99f7ad6c42ae5a7a991399e484a16f155",
   "syntax_checker_target": "Helios-1SC",
   "cost_endpoint_target": "Helios-1",

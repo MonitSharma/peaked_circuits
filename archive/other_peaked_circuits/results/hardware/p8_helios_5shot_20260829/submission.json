@@ -1,7 +1,7 @@
 {
   "schema": "p8-helios-physical-submission-v1",
   "branch": "p12_quantum",
-  "source_qasm": "/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm",
+  "source_qasm": "<local-user>/Downloads/P8_grid_888_iswap.qasm",
   "source_qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
   "submitted_qir_sha256": "ed36e11775ffb2b0009a9218ee284c614b3a55e0db01056f71a997d010c35e05",
   "submitted_bitcode_sha256": "a5c3df07b4e08db4a2a5a18c12b84d7b5c925719568ec1b837a4ec3d15bb70bf",

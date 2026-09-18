@@ -3,7 +3,7 @@
   "provider_calls": 0,
   "gpu_calls": 0,
   "path_optimizer": "opt_einsum.greedy",
-  "source_qasm": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_50shot_20260829/source.qasm",
+  "source_qasm": "<local-user>/Downloads/p12_quantum/results/hardware/p6_helios_50shot_20260829/source.qasm",
   "gate_counts": {
     "u3": 6992,
     "cz": 3494

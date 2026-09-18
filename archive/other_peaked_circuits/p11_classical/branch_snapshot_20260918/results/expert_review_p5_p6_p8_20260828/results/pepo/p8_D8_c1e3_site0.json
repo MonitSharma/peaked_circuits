@@ -1,6 +1,6 @@
 {
   "schema": "bluequbit-p8-pepo-simple-update-v1",
-  "qasm": "/Users/monitsharma/Downloads/P8_grid_888_iswap.qasm",
+  "qasm": "<local-user>/Downloads/P8_grid_888_iswap.qasm",
   "qasm_sha256": "ba42c338478fdfbc0241ec2289b3159bfde5dffc71603ac588ec0755fba1a484",
   "n_qubits": 40,
   "gate_count": 2704,

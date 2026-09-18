@@ -4,17 +4,17 @@
   "external_overlap_scores_used_for_selection": false,
   "framing": [
     {
-      "path": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907/raw_result.json",
+      "path": "<local-user>/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907/raw_result.json",
       "raw_sha256": "15dfee36868d296a6791fc07a976c0012d228864868658766c74fb1221f9e7ad",
       "frames_used": 100
     },
     {
-      "path": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907_batch2/raw_result.json",
+      "path": "<local-user>/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907_batch2/raw_result.json",
       "raw_sha256": "8dca0fe3a6e4cc6aeb376df4a2fa7e252ac85f2d8aabbc143f1609e8dd230b5a",
       "frames_used": 100
     },
     {
-      "path": "/Users/monitsharma/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907_batch3/raw_result.json",
+      "path": "<local-user>/Downloads/p12_quantum/results/hardware/p6_helios_100shot_20260907_batch3/raw_result.json",
       "raw_sha256": "763d0d01aab1c0611d8138eaf540f26cf9ce8581f5bf4a34942e03581df91249",
       "frames_used": 100
     }

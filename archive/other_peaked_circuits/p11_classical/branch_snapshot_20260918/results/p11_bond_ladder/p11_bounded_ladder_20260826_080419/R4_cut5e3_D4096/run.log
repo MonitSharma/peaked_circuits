@@ -1,5 +1,5 @@
 2026-08-26 09:04:28,590 [WARNING] live plot.png generation disabled: No module named 'matplotlib'
-/Users/monitsharma/.conda/envs/p9-openblas/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
+<local-user>/.conda/envs/p9-openblas/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
   warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
 [Cycle 1] 7/1984 gates (0.4 %) after 61 sec
 [Cycle 2] 14/1984 gates (0.7 %) after 167 sec

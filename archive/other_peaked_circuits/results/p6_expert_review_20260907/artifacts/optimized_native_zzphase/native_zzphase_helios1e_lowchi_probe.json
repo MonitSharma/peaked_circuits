@@ -21,6 +21,6 @@
   "result_id": "3eb90b34-ea66-48a6-97b7-befa08e65018",
   "reported_hqc": 13.96,
   "completed_at_utc": "2026-09-07T09:30:20.570421+00:00",
-  "raw_result_path": "/Users/monitsharma/Code/p12-helios-recovery/.claude/worktrees/p6-peaked-circuit-classical-8be972/results/hardware/p6_optimized_compile_20260907/native_zzphase_helios1e_lowchi_probe/raw_result.txt",
+  "raw_result_path": "<local-user>/Code/p12-helios-recovery/.claude/worktrees/p6-peaked-circuit-classical-8be972/results/hardware/p6_optimized_compile_20260907/native_zzphase_helios1e_lowchi_probe/raw_result.txt",
   "raw_result_sha256": "5a9ceee94fd8af0070e5744859ddf8469d2c510017a30113d6ba91f53c60b509"
 }

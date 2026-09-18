@@ -1,5 +1,5 @@
 {
-  "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+  "qasm": "<local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
   "tag": "r",
   "num_qubits": 56,
   "initial_ops": {
@@ -35,8 +35,8 @@
     "scipy_flapack": "<repo>/.venv/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-darwin.so"
   },
   "parameters": {
-    "qasm": "/Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
-    "outdir": "/Users/monitsharma/Code/p12-helios-recovery/results/p11_bond_ladder/20260824_125945/stage0_p9_control_cut6e4_D512",
+    "qasm": "<local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm",
+    "outdir": "<local-user>/Code/p12-helios-recovery/results/p11_bond_ladder/20260824_125945/stage0_p9_control_cut6e4_D512",
     "tag": "r",
     "samples": 1000,
     "expected_bitstring": "01101110111001100000100000001010011100101101010111110111",

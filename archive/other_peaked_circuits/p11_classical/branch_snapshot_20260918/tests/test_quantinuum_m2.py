@@ -36,14 +36,14 @@ def test_metadata_driven_device_descriptor() -> None:
 
 def test_discovery_authentication_failure_is_sanitized(monkeypatch: pytest.MonkeyPatch) -> None:
     def fail() -> list[object]:
-        raise RuntimeError("token=super-secret person@example.com")
+        raise RuntimeError("token=fixture-secret person@example.com")
 
     monkeypatch.setattr(quantinuum, "discover_quantinuum_devices", fail)
     monkeypatch.setattr(quantinuum, "discover_nexus_devices", fail)
     report = discover_quantinuum_report()
     assert report.status == "failed"
     rendered = report.model_dump_json()
-    assert "super-secret" not in rendered
+    assert "fixture-secret" not in rendered
     assert "person@example.com" not in rendered
 
 

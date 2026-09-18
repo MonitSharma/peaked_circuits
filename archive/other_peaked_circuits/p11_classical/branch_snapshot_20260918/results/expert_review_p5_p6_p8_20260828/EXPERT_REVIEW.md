@@ -22,7 +22,7 @@ The exact input QASM files copied into `inputs/` are:
 | P6 | `P6_titan_pinnacle.qasm` | 62-qubit peaked circuit |
 | P8 | `P8_grid_888_iswap.qasm` | 40-qubit grid/iSWAP circuit |
 
-The input files are copied from `/Users/monitsharma/Downloads/` and their hashes are recorded in `MANIFEST.json` and `SHA256SUMS`.
+The input files are copied from `<local-user>/Downloads/` and their hashes are recorded in `MANIFEST.json` and `SHA256SUMS`.
 
 ## Results by problem
 

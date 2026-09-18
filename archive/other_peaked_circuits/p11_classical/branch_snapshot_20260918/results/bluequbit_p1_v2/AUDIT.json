@@ -3,7 +3,7 @@
   "branch": "bluequbit-p1-mac-portfolio",
   "starting_head": "efd24d3e3d46f2f038d3bfddd7bfa09a50a52bd2",
   "historical_p1_screening_branch": "bluequbit-p1-classical",
-  "p1_path": "/Users/monitsharma/Downloads/P1_little_dimple.qasm",
+  "p1_path": "<local-user>/Downloads/P1_little_dimple.qasm",
   "p1_sha256": "0a02afffbdcf6755d5ed16b3a10cddd40cde4ee072d6072dbe7013e1c42f2ff8",
   "p1_size_bytes": 219814,
   "blind": true,
@@ -26,7 +26,7 @@
     "qiskit": "1.4.5",
     "quimb": "1.15.0",
     "mlx": "0.32.2",
-    "julia": "/Users/monitsharma/.juliaup/bin/julia"
+    "julia": "<local-user>/.juliaup/bin/julia"
   },
   "external_methods": {
     "qstvec_path": "external/qstvec",

@@ -76,7 +76,7 @@
     "unswap_threshold": 500000.0
   },
   "status": "PASS",
-  "summary": "/Users/monitsharma/code_projects/qat/peaked-mpo-solver/runs/p9_beam_calibration_20260827/summary.json",
+  "summary": "<local-user>/code_projects/qat/peaked-mpo-solver/runs/p9_beam_calibration_20260827/summary.json",
   "summary_sha256": "4d8c8b5ab4da4fd1e17688f5455eccb1f50154ed193c1074f9fe34a41e0ee63c",
   "target_answer_used": false
 }

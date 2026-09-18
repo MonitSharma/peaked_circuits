@@ -1,4 +1,4 @@
-2026-08-24 20:59:56,285 [INFO] loaded /Users/monitsharma/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm: qubits=56 ops={'u': 3890, 'rzz': 1917}
+2026-08-24 20:59:56,285 [INFO] loaded <local-user>/code_projects/qat/tracker/data/classically-verifiable-problems/circuit-models/peaked_circuit/peaked_circuit_P9_Hqap_56x1917.qasm: qubits=56 ops={'u': 3890, 'rzz': 1917}
 2026-08-24 20:59:56,290 [INFO] Pass: Collect2qBlocks - 2.68173 (ms)
 2026-08-24 20:59:56,299 [INFO] Pass: ConsolidateBlocks - 8.98480 (ms)
 2026-08-24 20:59:56,300 [INFO] after two-qubit block consolidation: ops={'unitary': 1885}
@@ -369,7 +369,7 @@
 2026-08-24 21:01:26,472 [INFO] [8L/1400](swap: 11, u: 1 | c_u: 5 | t_u_l: 16/942 | t_u_r: 26/943 | t_u: 42/1885) -> {'max_bond': 64, 'max_links': 4, 'total_elems': 195928, 'total_shapes': 2908, 'total_links': 222, 'num_tensors': 56}
 2026-08-24 21:01:26,807 [INFO] [5R/1504](swap: 10, u: 4 | c_u: 9 | t_u_l: 16/942 | t_u_r: 30/943 | t_u: 46/1885) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 394840, 'total_shapes': 3972, 'total_links': 222, 'num_tensors': 56}
 2026-08-24 21:01:27,480 [INFO] [6R/1504](swap: 10, u: 3 | c_u: 12 | t_u_l: 16/942 | t_u_r: 33/943 | t_u: 49/1885) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 713432, 'total_shapes': 4924, 'total_links': 222, 'num_tensors': 56}
-/Users/monitsharma/code_projects/qat/peaked-mpo-solver/.venv/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
+<local-user>/code_projects/qat/peaked-mpo-solver/.venv/lib/python3.10/site-packages/quimb/tensor/decomp.py:363: UserWarning: Got: Internal algorithm failed to converge., falling back to scipy gesvd driver.
   warnings.warn(f"Got: {e}, falling back to scipy gesvd driver.")
 2026-08-24 21:01:29,030 [INFO] [7R/1504](swap: 9, u: 2 | c_u: 14 | t_u_l: 16/942 | t_u_r: 35/943 | t_u: 51/1885) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 819608, 'total_shapes': 5528, 'total_links': 222, 'num_tensors': 56}
 2026-08-24 21:01:30,234 [INFO] [8R/1504](swap: 10, u: 0 | c_u: 14 | t_u_l: 16/942 | t_u_r: 35/943 | t_u: 51/1885) -> {'max_bond': 256, 'max_links': 4, 'total_elems': 970976, 'total_shapes': 6228, 'total_links': 222, 'num_tensors': 56}
