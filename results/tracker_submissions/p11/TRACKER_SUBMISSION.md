@@ -8,7 +8,7 @@
 - Method: `Quantinuum Helios-1 hardware, 50 requested shots`
 - Quantum runtime: `229.924343 seconds` of provider execution time
 - Quantum queue/submission time: `10732.063968 seconds` (reported separately)
-- Classical runtime: `0.005715375 seconds` measured wall time for the packaged reanalysis
+- Classical runtime: `0.004782625 seconds` measured wall time for the packaged reanalysis
 - Quantum compute resource: `Quantinuum Helios-1`
 - Classical compute resource: `Apple Silicon Mac, local deterministic post-processing`
 - Authors: `Monit Sharma`
@@ -41,7 +41,8 @@ those procedures.
 
 The classical runtime was freshly measured with
 `tools/run_tracker_classical_audit.py`. It covers shot loading, validation,
-count construction, and all four deterministic recovery methods on the stated
+count construction, weighted observed medoid, and cluster-consensus recovery
+methods on the stated
 Apple Silicon Mac. It does not include Python interpreter startup, plotting, or
 provider time.
 

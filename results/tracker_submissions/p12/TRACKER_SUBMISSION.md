@@ -41,7 +41,8 @@ an auditor can inspect this decision rather than relying on a hidden transform.
 
 The classical runtime was freshly measured with
 `tools/run_tracker_classical_audit.py`. It covers shot loading, validation,
-count construction, and all four deterministic recovery methods on the stated
+count construction, most-frequent string, weighted observed medoid, and cluster
+consensus recovery methods on the stated
 Apple Silicon Mac. It does not include Python interpreter startup, plotting, or
 provider time.
 
@@ -50,6 +51,6 @@ from each shot to the recovered candidate. The candidate is fixed by the
 packaged recovery record before plotting; the figure is descriptive supporting
 evidence, not a hidden-target lookup.
 
-Mode, weighted observed medoid, and cluster consensus agreed on the recovered
-string. Bitwise majority differed at 13 positions. The recovery evidence is
-reported separately from any quantum-advantage claim.
+The most-frequent string, weighted observed medoid, and cluster consensus
+agreed on the recovered string. The recovery evidence is reported separately
+from any quantum-advantage claim.

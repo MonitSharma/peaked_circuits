@@ -10,6 +10,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1] / "results" / "tracker_submissions"
 PACKAGES = ("p11", "p12")
+EXPECTED_SHOTS = {
+    "p11": {"requestedShots": 50, "independentShotsAnalyzed": 50, "returnedShots": 51},
+    "p12": {"requestedShots": 200, "reconstructedShots": 200},
+}
 
 
 def sha256(path: Path) -> str:
@@ -36,6 +40,12 @@ def verify_package(name: str) -> None:
         fail(f"{name}: answer is not a 98-bit binary string")
     if record["value"] != "100%" or record["quantumAdvantageClaim"] is not False:
         fail(f"{name}: tracker claim fields are inconsistent")
+    for field, expected in EXPECTED_SHOTS[name].items():
+        if record.get(field) != expected:
+            fail(f"{name}: {field}={record.get(field)!r}, expected {expected!r}")
+    expected_proof = f"https://github.com/MonitSharma/peaked_circuits/tree/main/results/tracker_submissions/{name}"
+    if record.get("methodProof") != expected_proof:
+        fail(f"{name}: methodProof must point to the reviewed main-branch package")
 
     # The exact source and canonical shot files are the minimum evidence that
     # must survive packaging. The full provider artifacts are also hashed.
@@ -50,6 +60,19 @@ def verify_package(name: str) -> None:
     for path in required:
         if not path.exists():
             fail(f"{name}: missing required evidence {path.relative_to(package)}")
+
+    shot_file = {
+        "p11": package / "classical/raw/c902a6a1-0e91-48cf-b5ba-44831fcc7726.shots.jsonl",
+        "p12": package / "classical/raw/reconstructed_200_shots.jsonl",
+    }[name]
+    if not shot_file.is_file():
+        fail(f"{name}: missing active canonical shot file")
+    shot_count = sum(1 for line in shot_file.read_text().splitlines() if line.strip())
+    expected_active = EXPECTED_SHOTS[name].get("independentShotsAnalyzed")
+    if expected_active is None:
+        expected_active = EXPECTED_SHOTS[name]["reconstructedShots"]
+    if shot_count != expected_active:
+        fail(f"{name}: active canonical shot count {shot_count}, expected {expected_active}")
 
     hashes = package / "SHA256SUMS"
     if not hashes.is_file():
@@ -79,4 +102,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

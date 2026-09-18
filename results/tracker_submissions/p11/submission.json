@@ -5,11 +5,11 @@
   "circuit": "peaked_circuit_P11_Hqap_98x1999",
   "value": "100%",
   "method": "Quantinuum Helios-1 hardware, 50 requested shots",
-  "methodProof": "https://github.com/monitsharma/p12-helios-recovery/tree/p12_quantum/results/tracker_submissions/p11",
+  "methodProof": "https://github.com/MonitSharma/peaked_circuits/tree/main/results/tracker_submissions/p11",
   "authors": ["Monit Sharma"],
   "institutions": ["Independent researcher"],
   "runtimeQuantum": 229.924343,
-  "runtimeClassical": 0.005715375,
+  "runtimeClassical": 0.004782625,
   "computeResourcesQuantum": "Quantinuum Helios-1",
   "computeResourcesClassical": "Apple Silicon Mac, local deterministic post-processing",
   "notes": "Accepted P11 recovery; no quantum-advantage claim."

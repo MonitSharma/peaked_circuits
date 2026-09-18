@@ -32,7 +32,7 @@ Quantinuum Helios-1 hardware; deterministic classical recovery from 51 returned 
 ### Method proof
 
 Complete reproducibility package:
-https://github.com/MonitSharma/p12-helios-recovery/tree/p12_quantum/results/tracker_submissions/p11
+https://github.com/MonitSharma/peaked_circuits/tree/main/results/tracker_submissions/p11
 
 The package includes the exact submitted QASM, provider job metadata, raw provider result, canonical shot records, SHA256 manifests, the recovery implementation, measured classical runtime, and plots. The provider job ID was `c902a6a1-0e91-48cf-b5ba-44831fcc7726`; 50 shots were requested and 51 complete records were returned. The recovered 98-bit string was:
 
@@ -54,7 +54,7 @@ Independent researcher
 
 ### Classical runtime (seconds)
 
-0.005715375
+0.004782625
 
 ### Compute resources (quantum)
 
@@ -86,18 +86,18 @@ peaked_circuit_P12_Hqap_98x2457
 
 ### Method
 
-Quantinuum Helios-1 hardware; deterministic reconstruction and classical recovery from 200 normalized records using mode, weighted observed medoid, and cluster consensus.
+Quantinuum Helios-1 hardware; deterministic reconstruction and classical recovery from 200 normalized records using the most-frequent string, weighted observed medoid, and cluster consensus.
 
 ### Method proof
 
 Complete reproducibility package:
-https://github.com/MonitSharma/p12-helios-recovery/tree/p12_quantum/results/tracker_submissions/p12
+https://github.com/MonitSharma/peaked_circuits/tree/main/results/tracker_submissions/p12
 
 The package includes the exact submitted QASM, provider job metadata, byte-preserved raw result, the repaired framing artifact, reconstruction manifest, normalized shots, SHA256 manifests, the recovery implementation, measured classical runtime, and plots. The provider job ID was `d5cba0df-a7aa-459e-ac51-8092645c059f`; 200 normalized shots were reconstructed from a response containing 205 framed cycles and five excluded segment-overlap replicas. The recovered 98-bit string was:
 
 `10100011110010100111000100011100110001011111011100111001010110101011001001000000101000100000111100`
 
-The mode, weighted observed medoid, and cluster consensus agree on the externally accepted string. Bitwise majority differs at 13 positions. The frequency plot is descriptive supporting evidence, not a hidden-target lookup.
+The most-frequent string, weighted observed medoid, and cluster consensus agree on the externally accepted string. The frequency plot is descriptive supporting evidence, not a hidden-target lookup.
 
 ### Authors
 

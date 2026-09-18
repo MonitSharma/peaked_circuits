@@ -23,9 +23,13 @@ quantum advantage.
 
 The results were submitted through the [BlueQubit Peaked Portal leaderboard](https://app.bluequbit.io/hackathons/oEOtLSSrPSVH60Ah?tab=leaderboard).
 The supplied leaderboard screenshot shows Monit Sharma ranked first with a
-score of **2570/2570**, confirming that the submitted P11/P12 solutions were
-accepted by the portal. The raw hardware records and the deterministic
-recovery evidence remain available in the linked P11 and P12 packages below.
+score of **2570/2570**, providing corroborating evidence that the hackathon
+submissions were accepted by the portal. The screenshot does not independently
+attribute individual score points to P11 versus P12; the raw hardware records,
+deterministic recovery evidence, and per-problem accepted-answer records remain
+available in the linked P11 and P12 packages below.
+
+![BlueQubit Peaked Portal leaderboard evidence](docs/assets/bluequbit_leaderboard_20260918.png)
 
 ## What was run
 
