@@ -25,6 +25,8 @@ htmlcov/
 
 # Secrets & Credentials
 .env
+*.env
+!.env.example
 .qnx/
 .qnexus/
 nexus_auth*
@@ -70,6 +72,9 @@ data/canonical/*
 # Results
 results/**/*.tmp
 results/cpu_server_probe.json
+external/
+results/new_runtime_preflight_20260831/
+results/p5_p6_p8_recovery/
 results/simulation/
 results/jobs/*
 !results/jobs/.gitkeep

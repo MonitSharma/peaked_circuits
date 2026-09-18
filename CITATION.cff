@@ -8,4 +8,7 @@ license: Apache-2.0
 authors:
   - family-names: Sharma
     given-names: Monit
+  - family-names: Lau
+    given-names: Hoong Chuin
+    affiliation: Singapore Management University
 repository-code: "https://github.com/MonitSharma/peaked_circuits"
