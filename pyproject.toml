@@ -3,9 +3,9 @@ requires = ["hatchling>=1.25"]
 build-backend = "hatchling.build"
 
 [project]
-name = "peaked_circuits"
+name = "peaked-circuit"
 version = "0.1.0"
-description = "Reproducible, auditable P11 and P12 peaked-circuit recovery records"
+description = "Reproducible, auditable recovery records for the P11 and P12 peaked circuits"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "Apache-2.0" }

@@ -1,4 +1,4 @@
-name: peaked_circuits-ci
+name: peaked-circuit-review
 
 on:
   push:

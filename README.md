@@ -1,12 +1,13 @@
-# peaked_circuits — P11/P12 quantum recovery
+# Peaked Circuit — P11/P12 quantum recovery
 
 This repository is the focused, reproducible research record for the P11 and
 P12 peaked circuits run on Quantinuum Helios-1 hardware. The hardware produced
 noisy 98-bit samples; deterministic classical decoding was then used to recover
 the accepted bitstrings.
 
-The repository is titled **peaked_circuits**. The active research scope is
-limited to P11 and P12; earlier circuit work remains archived for provenance.
+The active research scope is limited to P11 and P12; earlier circuit work
+remains archived for provenance. The GitHub repository name is
+`peaked_circuits`.
 
 ## Executive summary
 
