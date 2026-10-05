@@ -9,7 +9,20 @@ The active research scope is limited to P11 and P12; earlier circuit work
 remains archived for provenance. The GitHub repository name is
 `peaked_circuits`.
 
-## Executive summary
+## Classical circuit simulations
+
+An independent, circuit-only classical reproduction is available in
+[classical_simulations/p11_p12](classical_simulations/p11_p12/). It builds on
+[Dylan Neve / qsim-lab's original solver](https://github.com/dylanneve1/qsim-lab/blob/03e5774/research/data/peaked-circuits/solve_peaked.py)
+and [tracker issue #251](https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io/issues/251),
+with explicit attribution, the upstream MIT notice, caching improvements,
+tests, and reproducible timing records. Both recovered strings match the
+published answers. The probability calculations and numerical certificates
+apply to the inferred reduced cores only, not a proven exact simulation of
+the full obfuscated circuits. This is separate from the hardware-sample
+recovery records below.
+
+## Hardware summary
 
 | Problem | Hardware run | Cost | Recovery result |
 |---|---:|---:|---|

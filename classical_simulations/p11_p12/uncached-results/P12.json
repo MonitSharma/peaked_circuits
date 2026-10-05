@@ -1,0 +1,316 @@
+{
+  "circuit": "P12.qasm",
+  "sha256": "868ff86a396f86a8cbca48f7127e49c4c4f951a5a955295e5010a92b76be961d",
+  "peak": "10100011110010100111000100011100110001011111011100111001010110101011001001000000101000100000111100",
+  "qubit_order": "qubit 0 leftmost",
+  "core_probability": 0.2365594512543195,
+  "initial_core_probability": 0.0052126618321177995,
+  "sections": [
+    [
+      0,
+      59
+    ],
+    [
+      60,
+      1140
+    ],
+    [
+      1141,
+      1366
+    ],
+    [
+      1367,
+      2015
+    ],
+    [
+      2016,
+      2239
+    ],
+    [
+      2240,
+      2456
+    ]
+  ],
+  "anchors": 569,
+  "repairs": [
+    {
+      "side": "R",
+      "gate": 60,
+      "probability": 0.05420725302482679
+    },
+    {
+      "side": "R",
+      "gate": 64,
+      "probability": 0.2365594512543195
+    }
+  ],
+  "solver_seconds": 86.3397802920008,
+  "certificate": {
+    "scope": "reduced_core",
+    "candidate_probability": 0.2365594512543195,
+    "ambiguous_core_wires": [
+      17,
+      39,
+      48,
+      63,
+      87
+    ],
+    "numerical_tolerance": 1e-10,
+    "status": "unique_global_mode",
+    "certified": true,
+    "competitors": [
+      {
+        "flipped_core_wires": [
+          87
+        ],
+        "probability": 0.01862214359464013
+      },
+      {
+        "flipped_core_wires": [
+          63
+        ],
+        "probability": 0.0011076009737462846
+      },
+      {
+        "flipped_core_wires": [
+          63,
+          87
+        ],
+        "probability": 0.0015450583203528595
+      },
+      {
+        "flipped_core_wires": [
+          48
+        ],
+        "probability": 0.03508298229726168
+      },
+      {
+        "flipped_core_wires": [
+          48,
+          87
+        ],
+        "probability": 0.016482688370019195
+      },
+      {
+        "flipped_core_wires": [
+          48,
+          63
+        ],
+        "probability": 0.018308934073704652
+      },
+      {
+        "flipped_core_wires": [
+          48,
+          63,
+          87
+        ],
+        "probability": 0.010647321104333933
+      },
+      {
+        "flipped_core_wires": [
+          39
+        ],
+        "probability": 0.011333064559170379
+      },
+      {
+        "flipped_core_wires": [
+          39,
+          87
+        ],
+        "probability": 0.0019779573027171957
+      },
+      {
+        "flipped_core_wires": [
+          39,
+          63
+        ],
+        "probability": 0.0805250192846743
+      },
+      {
+        "flipped_core_wires": [
+          39,
+          63,
+          87
+        ],
+        "probability": 0.00014412948456942444
+      },
+      {
+        "flipped_core_wires": [
+          39,
+          48
+        ],
+        "probability": 0.04266928941792825
+      },
+      {
+        "flipped_core_wires": [
+          39,
+          48,
+          87
+        ],
+        "probability": 0.018780875262313035
+      },
+      {
+        "flipped_core_wires": [
+          39,
+          48,
+          63
+        ],
+        "probability": 0.04455867814669937
+      },
+      {
+        "flipped_core_wires": [
+          39,
+          48,
+          63,
+          87
+        ],
+        "probability": 0.02770475919214999
+      },
+      {
+        "flipped_core_wires": [
+          17
+        ],
+        "probability": 0.0006019197262643452
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          87
+        ],
+        "probability": 0.02920605036611344
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          63
+        ],
+        "probability": 0.0006574251730868626
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          63,
+          87
+        ],
+        "probability": 0.0024298801360972803
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          48
+        ],
+        "probability": 0.009029656194542452
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          48,
+          87
+        ],
+        "probability": 0.025907714579623906
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          48,
+          63
+        ],
+        "probability": 0.006991790712744101
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          48,
+          63,
+          87
+        ],
+        "probability": 0.016725234578051227
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          39
+        ],
+        "probability": 0.00016767346456429767
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          39,
+          87
+        ],
+        "probability": 0.0031158203944148272
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          39,
+          63
+        ],
+        "probability": 0.001587625500113884
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          39,
+          63,
+          87
+        ],
+        "probability": 0.00022536079040076177
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          39,
+          48
+        ],
+        "probability": 0.003254952848176097
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          39,
+          48,
+          87
+        ],
+        "probability": 0.029552167292565965
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          39,
+          48,
+          63
+        ],
+        "probability": 0.005295260118611479
+      },
+      {
+        "flipped_core_wires": [
+          17,
+          39,
+          48,
+          63,
+          87
+        ],
+        "probability": 0.043585534731902076
+      }
+    ],
+    "unenumerated_competitors_upper_bound": 0.21838661938712578,
+    "all_competitors_upper_bound": 0.21838661938712578,
+    "seconds": 1.8830288329991163
+  },
+  "cache_validation": null,
+  "total_seconds": 88.22360274999664,
+  "statistics": {
+    "core_evaluations": 32,
+    "marginal_computations": 3136,
+    "marginal_cache_hits": 0,
+    "amplitude_computations": 32
+  },
+  "path_cache": {
+    "enabled": false,
+    "hits": 0,
+    "misses": 0
+  },
+  "marginal_cache_enabled": false
+}

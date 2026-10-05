@@ -1,0 +1,85 @@
+{
+  "circuit": "P11.qasm",
+  "sha256": "1373d50c8a42b1ca745d202391767c417ddac56db95182ac2aced019231b3372",
+  "peak": "10101110111010011111100010110011101011101011111001010101101100001110101110010000010100001001100000",
+  "qubit_order": "qubit 0 leftmost",
+  "core_probability": 0.3028933569909316,
+  "initial_core_probability": 0.12785969463652297,
+  "sections": [
+    [
+      0,
+      58
+    ],
+    [
+      59,
+      376
+    ],
+    [
+      377,
+      913
+    ],
+    [
+      914,
+      1069
+    ],
+    [
+      1070,
+      1613
+    ],
+    [
+      1614,
+      1774
+    ],
+    [
+      1775,
+      1998
+    ]
+  ],
+  "anchors": 419,
+  "repairs": [
+    {
+      "side": "R",
+      "gate": 59,
+      "probability": 0.3028933569909316
+    }
+  ],
+  "solver_seconds": 17.088820083001337,
+  "certificate": {
+    "scope": "reduced_core",
+    "candidate_probability": 0.3028933569909316,
+    "ambiguous_core_wires": [
+      35
+    ],
+    "numerical_tolerance": 1e-10,
+    "status": "unique_global_mode",
+    "certified": true,
+    "competitors": [
+      {
+        "flipped_core_wires": [
+          35
+        ],
+        "probability": 0.13862113755132324
+      }
+    ],
+    "unenumerated_competitors_upper_bound": 0.2812163782433085,
+    "all_competitors_upper_bound": 0.2812163782433085,
+    "seconds": 0.056907167003373615
+  },
+  "cache_validation": {
+    "max_absolute_marginal_error": 0,
+    "seconds": 2.6687961670031655
+  },
+  "total_seconds": 19.815087165996374,
+  "statistics": {
+    "core_evaluations": 16,
+    "marginal_computations": 343,
+    "marginal_cache_hits": 1225,
+    "amplitude_computations": 16
+  },
+  "path_cache": {
+    "enabled": true,
+    "hits": 87,
+    "misses": 273
+  },
+  "marginal_cache_enabled": true
+}

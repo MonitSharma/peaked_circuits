@@ -1,0 +1,61 @@
+{
+  "environment": {
+    "python": "3.13.2",
+    "architecture": "arm64",
+    "packages": {
+      "numpy": "2.2.6",
+      "scipy": "1.18.1",
+      "quimb": "1.11.2",
+      "cotengra": "0.8.2"
+    }
+  },
+  "timing_scope": "One local run per mode; solver times exclude imports, certification, and cache validation.",
+  "baseline": "Same deterministic solver search with marginal/path caches disabled; PYTHONHASHSEED=27.",
+  "certification_scope": "Reduced core only, to numerical tolerance 1e-10.",
+  "results": [
+    {
+      "circuit": "P11",
+      "matching_bits": 98,
+      "core_probability": 0.3028933569909316,
+      "repair_path": [
+        [
+          "R",
+          59
+        ]
+      ],
+      "solver_seconds": 17.088820083001337,
+      "uncached_solver_seconds": 50.2852395000009,
+      "speedup_vs_same_search_uncached": 2.942581129402892,
+      "certificate_seconds": 0.056907167003373615,
+      "solve_plus_certificate_seconds": 17.14572725000471,
+      "total_including_cache_validation_seconds": 19.815087165996374,
+      "marginal_reuse_percent": 78.125,
+      "core_unique_global_mode_certified": true,
+      "cache_validation_max_error": 0
+    },
+    {
+      "circuit": "P12",
+      "matching_bits": 98,
+      "core_probability": 0.2365594512543195,
+      "repair_path": [
+        [
+          "R",
+          60
+        ],
+        [
+          "R",
+          64
+        ]
+      ],
+      "solver_seconds": 27.940926666997257,
+      "uncached_solver_seconds": 86.3397802920008,
+      "speedup_vs_same_search_uncached": 3.090082921050074,
+      "certificate_seconds": 1.7731284999972559,
+      "solve_plus_certificate_seconds": 29.714055166994513,
+      "total_including_cache_validation_seconds": 32.253364749994944,
+      "marginal_reuse_percent": 82.8125,
+      "core_unique_global_mode_certified": true,
+      "cache_validation_max_error": 0
+    }
+  ]
+}
