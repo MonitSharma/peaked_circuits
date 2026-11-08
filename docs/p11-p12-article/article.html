@@ -1,34 +1,135 @@
 <!doctype html>
-<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>How We Recovered Two 98-Qubit Peaks</title><style>body{max-width:780px;margin:60px auto;padding:0 24px;font:19px/1.65 Georgia,serif;color:#172b3d;background:#f8f7f3}h1,h2,h3,h4{font-family:Arial,sans-serif;line-height:1.25}h1{font-size:42px}h3{margin-top:2.2em}h4{font-weight:400;color:#4e5f6b;font-size:22px}a{color:#22628a}figure{margin:40px 0}img{max-width:100%;height:auto}figcaption{font:14px/1.5 Arial,sans-serif;color:#4e5f6b;margin-top:10px}</style><article>
-<h1>How We Recovered Two 98-Qubit&nbsp;Peaks</h1>
-<h4>What noisy Helios-1 shots revealed about P11 and P12, and what a CPU found hidden in the circuit&nbsp;files</h4>
-<p>Every one of the 50 shots I analyzed for P11 was different. One of them was the right 98-bit answer. If I had ranked those shots by frequency alone, every string would have tied for first place.</p>
-<p>That was the puzzle inside the BlueQubit Peaked Portal challenge. On Quantinuum Helios-1, I recovered the accepted bitstrings for P11 and P12 by looking for agreement across noisy measurements. Later, Dylan Neve’s qsim-lab recovered both answers from the circuit files on a CPU. The original tracker submission credits Dylan Neve and Claude (Anthropic). I reproduced that method and contributed a cache that qsim-lab adopted in its second solver. The two approaches found the same strings by looking for structure in different places.</p>
-<h3>What is a peaked&nbsp;circuit?</h3>
-<p>Run a quantum circuit, measure all 98 qubits, and you get one string of zeros and ones. The circuit defines a probability distribution over 2⁹⁸ possible strings. P11 and P12 were built so that the ideal distribution gives a hidden string unusually high probability. The challenge is to recover that string from the published circuit.</p>
-<p>Each circuit has two kinds of structure. There is an output signal we can look for in repeated measurements. There is also a long obfuscated middle in the circuit itself. P11 has 1,999 two-qubit units and P12 has 2,457. The middle adds apparent complexity while leaving clues about how it was constructed.</p>
-<h3>On Helios-1, the signal was in the neighborhood</h3>
-<p>I analyzed 50 P11 shots at a reported cost of 282.98 HQC and 200 P12 shots at 1,373.4 HQC. Before decoding, I repaired the provider’s result framing. In P11, the parser produced 51 records, including a duplicated frame. In P12, five segment overlaps inflated the diagnostic count to 205. The raw output is preserved, and every valid shot after structural repair went into the analysis.</p>
-<figure><img src="01-hardware-distances.png" alt="Histograms of corrected Helios-1 shots by Hamming distance from the accepted answer. P11 has one exact match among 50 shots. P12 has three among 200. Both have many more distant shots."><figcaption>Figure 1. Corrected shots by Hamming distance to the accepted answer, measured after recovery. The orange bar marks exact matches.</figcaption></figure>
-<p>Hamming distance counts the positions where two strings differ. The plot shows a small group of shots close to the answer and a much broader group farther away. P11’s accepted string occurred once. P12’s occurred three times and was its only repeated string. The nearby shots matter because each can preserve a different subset of the answer’s bits.</p>
-<p>For the <strong>weighted observed medoid</strong>, I scored each observed string by its total Hamming distance to all shots, counting repeated strings each time they occurred. The observed string with the smallest total distance is the medoid. For <strong>cluster consensus</strong>, I used a local group of nearby strings and voted separately on each bit inside that group. Restricting the vote keeps distant shots from overwhelming the local signal.</p>
-<p>Both decoders produced the accepted answer for P11. For P12, both agreed with the most frequent string, while a majority vote over all 200 shots differed from the accepted answer in 13 positions. The decoders used the shots alone and the portal provided the external check. The Quantum Advantage Tracker verified both hardware submissions. <a href="https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io/issues/246">P11 hardware record</a> · <a href="https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io/issues/247">P12 hardware record</a></p>
-<h3>On a CPU, the clue was a&nbsp;mirror</h3>
-<p>qsim-lab’s solver starts with the published QASM and looks between controlled-Z gates. Some single-qubit rotations survive the obfuscation and appear again as their exact inverses, up to global phase. These pairs act as anchors. Following the anchors across the wires reveals nested forward-and-inverse blocks and gives a consistent mapping of the wires through them.</p>
-<figure><img src="02-structural-reduction.png" alt="Schematic of a prefix, a long obfuscated middle, and a suffix. Inverse rotation anchors allow the middle to be approximated by a wire permutation. Frontier gates are retained in the reduced core."><figcaption>Figure 2. Inverse-pair anchors let the solver approximate the obfuscated middle by a wire permutation.</figcaption></figure>
-<p>A circuit followed by its exact inverse cancels. If the wires are permuted between the halves and the mirror follows that permutation, the same idea lets you track the wire labels through the middle. The published circuits have residual operations, so qsim-lab uses the permutation as an approximation. What remains is a shallow model with roughly 280 two-qubit units. Its contraction is tractable because the circuit graph admits small intermediate tensors, even though it still has 98 wires.</p>
-<p>The solver uses quimb and cotengra to contract the reduced model and find each bit’s marginal, the probability of seeing a zero or a one at that position. It joins the more likely bit from each marginal to get a candidate. Correlations can make that candidate different from the most probable joint string, so the solver contracts its amplitude directly to score it.</p>
-<h3>Where the boundary goes&nbsp;matters</h3>
-<p>Obfuscation can blur the boundary between the useful core and the middle. The search tests frontier gates that could belong in the core and scores the candidate for each trial. My reproduction’s stable search kept gate 59 for P11 and gates 60 and 64 for P12. P12’s candidate score rose from 0.52% to 5.42% and then 23.66%. P11 rose from 12.79% to 30.29%.</p>
-<figure><img src="03-boundary-repair.png" alt="Reduced-core candidate probability increases with boundary repair. P11 rises from 12.79 to 30.29 percent after gate 59. P12 rises from 0.52 to 5.42 and then 23.66 percent after gates 60 and 64."><figcaption>Figure 3. Candidate probabilities at each boundary move. Each point belongs to a different reduced model.</figcaption></figure>
-<p>qsim-lab added boundary repair after an early P12 attempt missed four bits. The finished solver takes the QASM as input, and the answer comparison happens after the solve. My reproduction also numerically certifies the final modes of the reduced cores to a tolerance of 10⁻¹⁰. If a competing string flips a bit with a sufficiently small opposite-bit marginal, that marginal already bounds the competitor’s entire probability. Only the remaining ambiguous positions need explicit checks. That left one competing amplitude to check for P11 and 31 for P12.</p>
-<p>The certificate and probabilities apply to the reduced model. The full circuit retains the residual operations that the permutation approximation leaves out.</p>
-<h3>What I contributed to the classical solver</h3>
-<p>In the boundary search, moving one gate often affects only a fraction of the output bits. To see why, trace a bit backwards through the circuit. Gates outside that bit’s backward causal cone cancel from the marginal calculation. If the ordered cone stays the same, the previous exact marginal still applies. If the network geometry and dimensions match, we can reuse the contraction order as well, even when the tensor values change.</p>
-<figure><img src="04-caching-benchmark.png" alt="Horizontal bars compare the same classical search. Caching reduces P11 from 50.3 to 17.1 seconds and P12 from 86.3 to 27.9 seconds, about a threefold speedup."><figcaption>Figure 4. Cached and uncached runs of the same deterministic search on a MacBook M3 Pro.</figcaption></figure>
-<p>In my local runs, caching cut P11’s solve from 50.3 to 17.1 seconds and P12’s from 86.3 to 27.9 seconds, about a threefold improvement. Those times cover the search and exclude imports, certification, and cache validation. A fresh contraction of every final marginal agreed with the cached values. Both solves matched all 98 bits of the corresponding accepted hardware answer.</p>
-<p>qsim-lab’s original single-process VM runs took 89 seconds for P11 and 182 seconds for P12. The tracker verified the P11 submission, and a reviewer reproduced both P12 solver versions in its open issue. <a href="https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io/issues/251">Classical P11 submission</a> · <a href="https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io/issues/252">Classical P12 submission and caching discussion</a></p>
-<h3>What the two recoveries establish</h3>
-<p>These are successful recoveries of two specific instances. The quantum experiment shows that a small set of noisy hardware shots can retain enough local structure to recover a hidden 98-bit answer. The CPU result shows that the obfuscation in these two circuit files left enough of the mirror structure visible to reconstruct a tractable model. That classical route matters when interpreting these instances as tests of quantum advantage.</p>
-<p>The hardware records include the raw provider output and corrected shots. The classical directory includes the QASM, the credited upstream implementation, my solver, and the cached and uncached run records. <a href="https://monitsharma.github.io/portfolio/work/peaked-circuits/">Project page</a> · <a href="https://github.com/MonitSharma/peaked_circuits/blob/main/REPRODUCIBILITY_QUANTUM.md">Hardware reproduction guide</a> · <a href="https://github.com/MonitSharma/peaked_circuits/tree/40ed7d33b45d91f95db9e3fbdd446247ba792006/classical_simulations/p11_p12">Classical code and reproduction guide</a></p>
-</article></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two 98-Qubit Peaks, Found Two Ways</title>
+  <style>
+    body {
+      max-width: 780px;
+      margin: 60px auto;
+      padding: 0 24px;
+      font: 19px/1.7 Georgia, serif;
+      color: #172d3a;
+      background: white;
+    }
+    h1, h2, h3, h4 {
+      font-family: Arial, sans-serif;
+      line-height: 1.25;
+    }
+    h1 { font-size: 42px; }
+    h3 { margin-top: 2.2em; font-size: 29px; }
+    h4 { margin-top: 1.8em; font-size: 22px; }
+    .subtitle { font-weight: 400; color: #586974; }
+    a { color: #286a98; }
+    figure { margin: 38px 0; }
+    img { max-width: 100%; height: auto; }
+    figcaption {
+      margin-top: 10px;
+      font: 14px/1.5 Arial, sans-serif;
+      color: #586974;
+      text-align: center;
+    }
+    .equation { margin: 25px 0; }
+  </style>
+</head>
+<body>
+<article>
+<h1>Two 98-Qubit Peaks, Found Two Ways</h1>
+<h4 class="subtitle">Quantum recovery on Helios-1 and the structure that made P11 and P12 classically tractable</h4>
+<figure data-asset="00-project-overview">
+  <img src="00-project-overview.png" alt="Project overview. Corrected Helios-1 shots lead to decoded answers. Classical structural reduction retains 284 of 1,999 units for P11 and 279 of 2,457 for P12. Both routes recover the same 98 bits for each circuit. The bottom strips encode the actual accepted answers.">
+  <figcaption>Two approaches to the same P11 and P12 answers. The curves use recorded hardware shots, and the bars use the inferred classical core sizes.</figcaption>
+</figure>
+
+<p>Every one of the 50 hardware shots analyzed for P11 was different. The accepted 98-bit answer was among them, but frequency alone could not distinguish it from the other 49 strings. P12 offered a slightly stronger clue. Its accepted answer appeared three times among 200 shots, with 198 distinct strings in total.</p>
+<p>These were two instances of the BlueQubit Peaked Portal challenge. Both were recovered on Quantinuum Helios-1 and accepted by the portal. A later classical method also recovered the answers directly from the circuit files. Understanding both routes means looking at two kinds of structure, the neighborhood of a bitstring in the measurements and the hidden organization of the circuit that produced it.</p>
+<p>A peaked circuit assigns unusually high ideal probability to a particular output string. For 98 qubits there are 2⁹⁸ possible strings. The mathematical target is a maximizer of the circuit’s output probability. Hardware measurements instead sample the distribution of the physical device’s final state.</p>
+<figure class="equation" data-asset="eq-01-problem">
+  <img src="eq-01-problem.png" alt="The ideal probability p_U(x) is the squared amplitude of x after U acts on the all-zero 98-qubit state. The target maximizes p_U over all 98-bit strings. Hardware shots sample q_H(x), the diagonal of the physical output density matrix.">
+</figure>
+<p>Here U is the ideal circuit, x★ is the target, and ρH is the device’s output density matrix. The distinction explains why recovering an answer can require more than selecting the most frequent hardware sample.</p>
+
+<h3>The quantum route</h3>
+<h4>Run the circuit, then read the geometry of the shots</h4>
+<p>The hardware runs produced 50 active P11 shots at a reported cost of 282.98 HQC and 200 P12 shots at 1,373.4 HQC. The source circuits, submitted artifacts, job records, raw results, and corrected datasets are preserved in the repository.</p>
+<p>Result framing needed repair before decoding. P11’s initial reconstruction contained 51 records, including one duplicated frame. P12 contained five overlapping frame replicas, producing 205 diagnostic records before repair. The final analyses use all 50 and 200 valid shots respectively. The repairs follow the provider’s output structure, before any candidate is scored.</p>
+<figure data-asset="01-hardware-distances">
+  <img src="01-hardware-distances.png" alt="Hardware shot counts over the full range of 0 to 98 bit differences from the accepted answer. P11 has one exact match out of 50. P12 has three out of 200. Most observations are farther away. Nonzero distances are grouped into five-bit bins.">
+  <figcaption>Figure 1. The complete corrected hardware datasets. Distances are computed against the accepted answers after recovery. The broad tail can reflect both ideal off-peak mass and hardware noise.</figcaption>
+</figure>
+<p>Hamming distance counts the positions in which two strings disagree. It lets us ask whether a shot sits near other shots even when their exact strings differ. A peak can leave a neighborhood of partially agreeing observations, while the exact answer itself remains rare.</p>
+<p>The <strong>weighted observed medoid</strong> considers each observed string as a possible center and sums its Hamming distances to the whole dataset. Repeated strings receive their observed multiplicity c(y). The candidate with the smallest total distance is selected.</p>
+<p><strong>Cluster consensus</strong> first identifies a group C of mutually close observations, then votes on each bit within that group. The formulas below make the difference explicit. Sobs is the set of distinct observed strings, while c(y) records how often each occurred.</p>
+<figure class="equation" data-asset="eq-02-decoders">
+  <img src="eq-02-decoders.png" alt="Hamming distance sums unequal bit positions. The observed medoid minimizes count-weighted total Hamming distance over observed candidates. Cluster consensus chooses one at a bit when its weighted count exceeds half of the selected cluster’s total weight, with zero on a tie.">
+</figure>
+<p>The restriction to observed candidates matters. If the Hamming-distance objective were minimized over every possible string, each bit could be chosen independently, giving a whole-dataset majority vote. Restricting the center to an actual shot preserves a complete bit pattern that the device produced. That constraint can help when independent bit votes combine fragments from different parts of the distribution.</p>
+<p>The deterministic cluster decoder uses average-linkage clustering of normalized Hamming distances, with a cut at 0.15, then selects the cluster with the greatest shot weight. In the reproduced analysis the selected cluster contains seven shots for each circuit, including repeated observations. The cluster’s mean distance to its consensus is about 3.57 bits for P11 and 4.71 for P12.</p>
+<figure data-asset="05-decoder-bits">
+  <img src="05-decoder-bits.png" alt="A bit-by-bit comparison with the accepted answers. Whole-dataset majority differs at two P11 positions and thirteen P12 positions. The observed medoid and cluster consensus agree at all 98 positions for both circuits.">
+  <figcaption>Figure 2. Coral cells identify the bits missed by whole-dataset majority. Both the observed medoid and the cluster consensus recover all 98 accepted bits.</figcaption>
+</figure>
+<p>This is why the decoders succeeded on these datasets. The accepted string was present and centrally placed among the observations under the medoid objective. A compact group also retained enough agreement for the cluster vote to reconstruct the same answer. Whole-dataset majority missed two P11 bits and thirteen P12 bits. On P11 every exact string tied in frequency. On P12 the accepted string was also the unique frequency mode.</p>
+<p>The resulting candidates were checked externally by the portal. Both hardware recovery submissions were subsequently verified in the Quantum Advantage Tracker. The measurements and their decoding establish successful answer recovery for these instances. <a href="https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io/issues/246">P11 hardware record</a> · <a href="https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io/issues/247">P12 hardware record</a></p>
+
+<h3>The classical route</h3>
+<h4>Identify the construction hidden inside the circuit</h4>
+<p>The published P11 and P12 files contain 1,999 and 2,457 atomic two-qubit units. Each parsed unit contains a controlled-Z gate and its surrounding one-qubit rotations. Much of the length comes from an obfuscated middle placed between a prefix R and a suffix P.</p>
+<p>The classical solver examines the single-qubit rotations between consecutive controlled-Z gates. It fingerprints these rotations up to global phase, looking for a rotation A that later reappears as an inverse B. Such a pair would cancel if brought together. Several surviving inverse pairs reveal a larger mirrored arrangement of gates.</p>
+<p>The circuit has nested blocks, and a mirror can connect different wire labels. The solver therefore uses inverse-pair anchors to infer a consistent wire permutation through each block. The recorded runs find 419 inverse-pair anchors for P11 and 569 for P12. Composing the inferred maps yields a permutation Π for the middle.</p>
+<figure class="equation" data-asset="eq-03-mirror">
+  <img src="eq-03-mirror.png" alt="A gate B approximately equal to A dagger up to phase approximately cancels A. Writing the full circuit as P M R, the solver approximates M by a wire permutation Pi and uses P Pi R as its reduced model.">
+</figure>
+<p>In this equation operations act from right to left. The input passes through R, then M, then P. A wire permutation can be absorbed into the labels of the suffix tensors, so the tensor network can be assembled without simulating a long sequence of explicit swap gates.</p>
+<p>The approximation sign is essential. Residual operations survive the obfuscation. Inferring a permutation gives a reduced model whose predictions must be evaluated. Its probability calculations describe that model.</p>
+<figure data-asset="02-structural-reduction">
+  <img src="02-structural-reduction.png" alt="Bars show the size of each published circuit and its inferred reduced core. P11 goes from 1,999 to 284 atomic two-qubit units, including one boundary move. P12 goes from 2,457 to 279, including two boundary moves.">
+  <figcaption>Figure 3. Counts are taken from the recorded section boundaries and accepted frontier moves. They describe atomic two-qubit units in the QASM-based models.</figcaption>
+</figure>
+
+<h4>Contract the small core instead of enumerating the output space</h4>
+<p>The first major speed gain comes from reducing the circuit before contracting it. Tensor-network contraction sums shared indices in a chosen order. Its cost is governed by the intermediate tensor sizes along that order. Removing the long mirrored middle leaves a shallow network with manageable intermediates for these instances.</p>
+<p>The solver then computes each output bit’s expectation of the Pauli-Z operator. A positive expectation favors zero, and a negative expectation favors one. The one-bit probabilities follow directly from that expectation. Combining the preferred bits gives a candidate whose amplitude is contracted separately.</p>
+<figure class="equation" data-asset="eq-04-marginals">
+  <img src="eq-04-marginals.png" alt="The core expectation z_j is the all-zero-state expectation of U_core dagger Z_j U_core. The marginal probabilities of zero and one are (1+z_j)/2 and (1-z_j)/2. A candidate chooses one when z_j is nonpositive and is scored by its squared core amplitude.">
+</figure>
+<p>These marginal calculations avoid constructing an array of 2⁹⁸ amplitudes. They also give a useful starting candidate. Correlations still matter, so separately maximizing each marginal does not by itself prove that the joint string is the most probable one.</p>
+
+<h4>Repair the boundary where the mirror model is incomplete</h4>
+<p>Some obfuscation patches cross the inferred boundary between the prefix and the middle. Leaving the wrong frontier gate outside the core can weaken a marginal or change the candidate. Boundary repair tests adding accessible frontier gates to the retained model and scores the resulting candidates.</p>
+<p>In the recorded deterministic reproduction, the search chooses the best trial that improves the current candidate probability by at least 30%. It retains gate 59 for P11, and gates 60 then 64 for P12. This produces final models with 284 and 279 two-qubit units respectively. The upstream v2 implementation uses a different deterministic selection rule and reaches the same moves on these instances.</p>
+<figure data-asset="03-boundary-repair">
+  <img src="03-boundary-repair.png" alt="Candidate probability in the reduced core increases from 12.79 to 30.29 percent after gate 59 for P11. For P12 it increases from 0.52 to 5.42 and then 23.66 percent after gates 60 and 64.">
+  <figcaption>Figure 4. Boundary repair changes the model and may change its candidate. The displayed probabilities belong to the core at each stage.</figcaption>
+</figure>
+<p>The probability is a model-selection objective. It helped the search choose a useful boundary on P11 and P12. The repair procedure was developed after an initial P12 result missed the accepted answer by four bits. Runtime execution uses the QASM, with the published-answer comparison performed afterwards.</p>
+
+<h4>Reuse marginals whose causal cones did not change</h4>
+<p>Boundary search evaluates several very similar circuits. Recomputing every one-bit expectation from scratch repeats much of the same work. The second speed gain comes from recognizing which calculations remain identical across trials.</p>
+<p>Trace an output bit backward through the gates that can affect its Z expectation. These gates form its backward causal cone. Unitaries outside that cone cancel between the forward and conjugate networks in the expectation calculation. For fixed input and fixed gate matrices, an unchanged ordered cone gives exactly the same marginal.</p>
+<figure class="equation" data-asset="eq-05-cone">
+  <img src="eq-05-cone.png" alt="K_j is the ordered sequence of gates in the backward causal cone of Z_j. For fixed inputs and gate matrices, identical ordered cones in two trial circuits imply identical z_j expectations.">
+</figure>
+<p>The evaluator caches the marginal under that cone signature. It also reuses a contraction path when the ordered connectivity, index dimensions, and requested output match. Path reuse saves the search for a contraction order. The tensor values are still contracted for the current trial whenever a fresh expectation is needed.</p>
+<figure data-asset="04-caching-benchmark">
+  <img src="04-caching-benchmark.png" alt="The same search without caches takes 50.3 seconds for P11 and 86.3 for P12. With caches it takes 17.1 and 27.9 seconds. Marginal reuse is 78.1 and 82.8 percent respectively.">
+  <figcaption>Figure 5. The same deterministic search, measured once per mode on a MacBook M3 Pro. Times cover solving and exclude imports, certification, and the additional cache-validation contractions.</figcaption>
+</figure>
+<p>For P11, sixteen core evaluations request 1,568 marginals, of which only 343 require a fresh contraction. For P12, thirty-two evaluations request 3,136, of which only 539 are new. Those counts explain the 78.1% and 82.8% reuse. In the recorded local comparison, solve time falls from 50.3 to 17.1 seconds for P11 and from 86.3 to 27.9 seconds for P12, giving 2.94× and 3.09× speedups. Independently recomputed final marginals agree with the cached results.</p>
+
+<h4>Check whether the candidate is the core’s global mode</h4>
+<p>A final numerical certificate addresses the joint-probability question. Any competitor y that differs from the candidate at bit j has probability at most the marginal probability of that opposite bit. If that marginal is already smaller than the candidate’s complete probability, every competitor with that difference is eliminated at once.</p>
+<figure class="equation" data-asset="eq-06-certificate">
+  <img src="eq-06-certificate.png" alt="If y differs from the candidate at bit j, its core probability is bounded by the opposite-bit marginal. When that marginal is smaller than the candidate probability, y cannot win.">
+</figure>
+<p>Only differences on the remaining ambiguous wires need explicit amplitude checks. P11 has one such wire, leaving one competing string. P12 has five, leaving 31. The calculation certifies a unique global mode of each reduced core to a numerical tolerance of 10⁻¹⁰. The final candidate probabilities are approximately 0.302893 and 0.236559, and both recovered strings match all 98 bits of the corresponding accepted hardware answer.</p>
+<p>The structural approximation limits what follows from this certificate. It certifies the reduced model’s mode. Establishing an equally strong statement about the full obfuscated circuit would also require control of the operations discarded by that approximation.</p>
+
+<h3>Sources and implementation note</h3>
+<p>Dylan Neve’s qsim-lab proposed the structural reduction and classical recovery method, with original VM runtimes of 89 seconds for P11 and 182 seconds for P12. The tracker submission credits Dylan Neve and Claude (Anthropic). I reproduced the method and improved its evaluation loop with exact marginal caching, compatible contraction-path reuse, stable trial ordering, and reuse of an accepted trial. The reproduction also includes the reduced-core certificate described above. The cache changes and selection rule together improved the local implementation, and qsim-lab subsequently adopted my cached evaluator in its v2 solver. The issue discussion records that adoption and a separate same-VM comparison. <a href="https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io/issues/251">P11 classical submission</a> · <a href="https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io/issues/252">P12 classical submission and implementation discussion</a></p>
+<p>The timings in Figure 5 compare the same search with its caches off and on, using the local benchmark records. The original VM timings belong to a different environment. The tracker has verified the classical P11 submission, and its reviewer reproduced both P12 solver versions in the open P12 issue.</p>
+<p>The hardware and classical records answer complementary questions. The hardware run shows what could be recovered from its actual measurements. The classical analysis identifies the surviving construction that made these particular files tractable. The repository contains the inputs and intermediate records behind both results. <a href="https://monitsharma.github.io/portfolio/work/peaked-circuits/">Project page</a> · <a href="https://github.com/MonitSharma/peaked_circuits/blob/main/REPRODUCIBILITY_QUANTUM.md">Hardware reproduction guide</a> · <a href="https://github.com/MonitSharma/peaked_circuits/tree/40ed7d33b45d91f95db9e3fbdd446247ba792006/classical_simulations/p11_p12">Classical code, inputs, and benchmark records</a></p>
+</article>
+</body>
+</html>

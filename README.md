@@ -24,9 +24,10 @@ recovery records below.
 
 The illustrated [P11/P12 article](docs/p11-p12-article/article.html) explains the
 hardware decoding, structural classical reduction, boundary repair, and caching
-results. Its four figures are generated from the checked-in records with
+results. Its six figures and six LaTeX equation panels are generated with
 `python tools/generate_p11_p12_article_figures.py` in an environment with
-Matplotlib installed. Open the HTML locally to view the article with its figures.
+Matplotlib, `pdflatex`, and `pdftoppm` installed. All plotted values come from
+the checked-in records. Open the HTML locally to view the illustrated article.
 
 ## Hardware summary
 
