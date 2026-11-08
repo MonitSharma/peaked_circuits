@@ -22,6 +22,12 @@ apply to the inferred reduced cores only, not a proven exact simulation of
 the full obfuscated circuits. This is separate from the hardware-sample
 recovery records below.
 
+The illustrated [P11/P12 article](docs/p11-p12-article/article.html) explains the
+hardware decoding, structural classical reduction, boundary repair, and caching
+results. Its four figures are generated from the checked-in records with
+`python tools/generate_p11_p12_article_figures.py` in an environment with
+Matplotlib installed. Open the HTML locally to view the article with its figures.
+
 ## Hardware summary
 
 | Problem | Hardware run | Cost | Recovery result |
